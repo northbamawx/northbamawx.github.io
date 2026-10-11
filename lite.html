@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NorthBamaWX Lite: Weather Alerts</title>
+<meta name="description" content="Text-only weather alerts and forecast for North Alabama and Southern Tennessee. Loads fast on a weak signal.">
+<link rel="canonical" href="https://northbamawx.github.io/lite.html">
+<meta name="theme-color" content="#0a1626">
+<style>
+:root { color-scheme: dark; }
+body { margin: 0 auto; max-width: 720px; padding: 12px 16px 40px; background: #0a1626; color: #e8f0fa; font: 16px/1.5 system-ui, sans-serif; }
+a { color: #33d6ff; }
+h1 { font-size: 22px; margin: 4px 0; }
+h2 { font-size: 18px; margin: 22px 0 8px; border-bottom: 1px solid #1f3a5c; padding-bottom: 4px; }
+.al { border-left: 6px solid var(--k, #8a99ad); background: #10223a; padding: 8px 12px; margin: 8px 0; }
+.al b { color: var(--k, #fff); font-size: 18px; }
+.al p { margin: 6px 0 0; font-size: 14px; white-space: pre-line; }
+.dim { color: #93a8c2; font-size: 13px; }
+.ok { color: #4be38a; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>NorthBamaWX Lite</h1>
+<div class="dim">Text-only alerts for North Alabama &amp; Southern Tennessee. Refreshes every 2 minutes. <a href="./">Full site</a></div>
+
+<h2>Active alerts</h2>
+<div id="alerts">Loading…</div>
+
+<h2>Huntsville now</h2>
+<div id="now">Loading…</div>
+
+<h2>Forecast</h2>
+<div id="fc">Loading…</div>
+
+<p class="dim">Tornado warning? Go to the lowest floor, in a small interior room away from windows. Leave mobile homes before storms arrive. <a href="safety.html">Safety tips</a></p>
+<p class="dim">NorthBamaWX is not affiliated with the National Weather Service. Always follow official warnings.</p>
+<script>
+const ZONES = ['ALC033','ALC043','ALC049','ALC059','ALC071','ALC079','ALC077','ALC083','ALC089','ALC095','ALC103',
+  'ALZ001','ALZ002','ALZ003','ALZ004','ALZ005','ALZ006','ALZ007','ALZ008','ALZ009','ALZ010','ALZ016',
+  'TNC051','TNC055','TNC103','TNC127','TNZ076','TNZ095','TNZ096','TNZ097'];
+const ZONE_NAMES = {
+  ALC077: 'Lauderdale', ALZ001: 'Lauderdale', ALC033: 'Colbert', ALZ002: 'Colbert', ALC059: 'Franklin', ALZ003: 'Franklin',
+  ALC079: 'Lawrence', ALZ004: 'Lawrence', ALC083: 'Limestone', ALZ005: 'Limestone', ALC089: 'Madison', ALZ006: 'Madison',
+  ALC103: 'Morgan', ALZ007: 'Morgan', ALC095: 'Marshall', ALZ008: 'Marshall', ALC071: 'Jackson', ALZ009: 'Jackson',
+  ALC049: 'DeKalb', ALZ010: 'DeKalb', ALC043: 'Cullman', ALZ016: 'Cullman',
+  TNC127: 'Moore, TN', TNZ076: 'Moore, TN', TNC055: 'Giles, TN', TNZ095: 'Giles, TN',
+  TNC103: 'Lincoln, TN', TNZ096: 'Lincoln, TN', TNC051: 'Franklin, TN', TNZ097: 'Franklin, TN',
+};
+const H = { headers: { Accept: 'application/geo+json' } };
+const RANK = e => /emergency/i.test(e) ? 0 : /^tornado warning/i.test(e) ? 1 : /warning/i.test(e) ? 2 : /watch/i.test(e) ? 3 : 4;
+const COLOR = e => /tornado/i.test(e) ? (/watch/i.test(e) ? '#FF8C00' : '#FF2B2B') : /severe thunderstorm/i.test(e) ? (/watch/i.test(e) ? '#FFD700' : '#FFA500') : /flood/i.test(e) ? '#22e05a' : '#8a99ad';
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+async function alerts() {
+  const box = document.getElementById('alerts');
+  try {
+    const d = await (await fetch('https://api.weather.gov/alerts/active?zone=' + ZONES.join(','), H)).json();
+    const list = (d.features || []).map(f => f.properties).filter(p => p.messageType !== 'Cancel').sort((a, b) => RANK(a.event) - RANK(b.event));
+    box.textContent = '';
+    if (!list.length) { box.append(el('div', 'ok', 'No watches, warnings or advisories for our counties right now.')); }
+    const seen = new Set();
+    list.forEach(p => {
+      const areas = [...new Set(((p.geocode || {}).UGC || []).map(c => ZONE_NAMES[c]).filter(Boolean))].join(', ') || p.areaDesc;
+      const key = p.event + areas; if (seen.has(key)) return; seen.add(key);
+      const a = el('div', 'al'); a.style.setProperty('--k', COLOR(p.event));
+      a.append(el('b', '', p.event), el('div', 'dim', areas + ' · until ' + new Date(p.ends || p.expires).toLocaleString([], { weekday: 'short', hour: 'numeric', minute: '2-digit' })));
+      if (/warning|emergency/i.test(p.event)) a.append(el('p', '', (p.instruction || p.description || '').trim()));
+      box.append(a);
+    });
+    box.append(el('div', 'dim', 'Checked ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })));
+  } catch (e) { box.textContent = 'Could not reach the National Weather Service. Pull down to refresh.'; }
+}
+async function now() {
+  try {
+    const p = (await (await fetch('https://api.weather.gov/stations/KHSV/observations/latest', H)).json()).properties;
+    const f = c => c == null ? '--' : Math.round(c * 9 / 5 + 32) + '°';
+    document.getElementById('now').textContent = `${f(p.temperature.value)}, ${p.textDescription || ''}. Wind ${p.windSpeed.value == null ? '--' : Math.round(p.windSpeed.value * 0.621371) + ' mph'}. Humidity ${p.relativeHumidity.value == null ? '--' : Math.round(p.relativeHumidity.value) + '%'}.`;
+  } catch (e) { document.getElementById('now').textContent = 'Unavailable.'; }
+}
+async function fc() {
+  const box = document.getElementById('fc');
+  try {
+    const d = await (await fetch('https://api.weather.gov/gridpoints/HUN/63,43/forecast', H)).json();
+    box.textContent = '';
+    d.properties.periods.slice(0, 4).forEach(p => { const x = el('p'); x.append(el('b', '', p.name + ': ')); x.append(p.detailedForecast); box.append(x); });
+  } catch (e) { box.textContent = 'Unavailable.'; }
+}
+alerts(); now(); fc();
+setInterval(alerts, 120000); setInterval(now, 600000); setInterval(fc, 1800000);
+</script>
+</body>
+</html>

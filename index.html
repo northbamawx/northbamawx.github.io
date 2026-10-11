@@ -488,6 +488,11 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .town-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 14px; }
 .town-links a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-weight: 600; }
 
+/* Live chat */
+.chat-box { border-top: 1px solid var(--rule); }
+.chat-head { padding: 10px 18px 6px; font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); }
+.chat-box iframe { display: block; width: 100%; height: 460px; border: 0; background: #fff; }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -601,6 +606,8 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <a class="back-link" href="safety.html">Storm safety</a>
   <a class="back-link" href="glossary.html">Glossary</a>
   <a class="back-link" href="archive.html">Storm archive</a>
+  <a class="back-link" href="more.html">More weather</a>
+  <a class="back-link" href="lite.html">Lite page</a>
   <a class="back-link" href="alertas.html" lang="es">Español</a>
   <span class="visits" id="visits" hidden><b id="visits-n"></b> visits</span>
   <a class="live-pill" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA/live" target="_blank" rel="noopener">Live 24/7</a>
@@ -634,16 +641,15 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#power">Power</a></li>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#outlook">Outlook</a></li>
-    <li><a href="#climate">Climate</a></li>
-    <li><a href="#seasonal">Seasonal</a></li>
-    <li><a href="#photos">Photos</a></li>
-    <li><a href="#sky-events">Sky events</a></li>
     <li><a href="#videos">Videos</a></li>
     <li><a href="#weather-news">News</a></li>
     <li><a href="#phone-alerts">Phone alerts</a></li>
     <li><a href="#weather-radio">Weather radio</a></li>
     <li><a href="#shelters">Shelters</a></li>
     <li><a href="safety.html">Safety</a></li>
+    <li><a href="more.html">More weather</a></li>
+    <li><a href="get-alerts.html">Get alerts</a></li>
+    <li><a href="lite.html">Lite page</a></li>
     <li><a href="glossary.html">Glossary</a></li>
     <li><a href="archive.html">Archive</a></li>
     <li><a href="alertas.html" lang="es">Español</a></li>
@@ -709,7 +715,12 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div class="locate">
       <button type="button" id="locate-btn">Am I in a warning?</button>
       <p style="margin:10px 0 0;text-align:center"><button type="button" class="share-btn" data-share="alerts">Share these alerts</button></p>
+      <p style="margin:8px 0 0;text-align:center;font-size:13px"><a href="lite.html">Weak signal? Use the lite page</a> · <a href="get-alerts.html">Get alerts</a></p>
       <div class="locate-out" id="locate-out" aria-live="polite"></div>
+    </div>
+    <div class="chat-box" id="chat-box" hidden>
+      <div class="chat-head">Live chat</div>
+      <iframe id="chat" title="YouTube live chat" loading="lazy"></iframe>
     </div>
     <div class="board-foot">From the National Weather Service for our 15 counties. Updates every 2 minutes. Tap an alert for details.</div>
   </aside>
@@ -1065,55 +1076,20 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <button type="button" role="tab" aria-selected="false" data-day="2">Tomorrow</button>
     <button type="button" role="tab" aria-selected="false" data-day="3">Day 3</button>
   </div>
+  <div class="tabs" role="tablist" aria-label="Outlook hazard" id="haz-tabs">
+    <button type="button" role="tab" aria-selected="true" data-haz="cat">Overall risk</button>
+    <button type="button" role="tab" aria-selected="false" data-haz="torn">Tornado</button>
+    <button type="button" role="tab" aria-selected="false" data-haz="hail">Hail</button>
+    <button type="button" role="tab" aria-selected="false" data-haz="wind">Wind</button>
+  </div>
   <a href="https://www.spc.noaa.gov/products/outlook/" target="_blank" rel="noopener">
     <img class="outlook-img" id="spc-img" src="https://www.spc.noaa.gov/products/outlook/day1otlk.png" alt="Storm Prediction Center Day 1 convective outlook map" width="815" height="555">
   </a>
-  <div class="outlook-key" aria-label="Risk levels">
+  <p class="lsr-src" id="haz-note" hidden>Percent chance of that hazard within 25 miles of any point. Hatched areas mean the strongest storms (EF2+ tornadoes, 2-inch hail or 75 mph winds) are possible.</p>
+  <div class="outlook-key" aria-label="Risk levels" id="cat-key">
     <span style="--k:#c1e9c1">General thunder</span><span style="--k:#66a366">1 Marginal</span><span style="--k:#ffe066">2 Slight</span>
     <span style="--k:#ffa366">3 Enhanced</span><span style="--k:#e06666">4 Moderate</span><span style="--k:#ee99ee">5 High</span>
   </div>
-</section>
-
-<section class="band" aria-labelledby="clim-title" id="climate">
-  <h2 id="clim-title">Monthly Climate</h2>
-  <p class="lede">How Huntsville's temperatures and rainfall compare with normal, from the official weather station at Huntsville International Airport.</p>
-  <div class="climate" id="climate-cards"><p class="news-empty">Loading climate data…</p></div>
-  <div class="lsr-src">Data: NOAA Regional Climate Centers (ACIS). Normals are 1991–2020.</div>
-</section>
-
-<section class="band" aria-labelledby="season-title" id="seasonal">
-  <h2 id="season-title">Seasonal Outlook</h2>
-  <p class="lede">NOAA's outlook for whether temperatures and rainfall will be above or below normal. Look for where North Alabama and Southern Tennessee fall on each map.</p>
-  <div class="tabs" role="tablist" aria-label="Seasonal outlook period" id="season-tabs">
-    <button type="button" role="tab" aria-selected="true" data-p="30">Next 30 days</button>
-    <button type="button" role="tab" aria-selected="false" data-p="90">Next 3 months</button>
-  </div>
-  <div class="season-imgs">
-    <figure><a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/" target="_blank" rel="noopener" id="season-a1"><img id="season-temp" src="https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_temp.gif" alt="NOAA 30-day temperature outlook map" width="900" height="695" loading="lazy"></a><figcaption>Temperature</figcaption></figure>
-    <figure><a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/" target="_blank" rel="noopener" id="season-a2"><img id="season-prcp" src="https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_prcp.gif" alt="NOAA 30-day precipitation outlook map" width="900" height="695" loading="lazy"></a><figcaption>Rain and snow</figcaption></figure>
-  </div>
-  <div class="lsr-src">Outlooks: NOAA Climate Prediction Center.</div>
-</section>
-
-<section class="band" aria-labelledby="photos-title" id="photos">
-  <h2 id="photos-title">Viewer Photos</h2>
-  <p class="lede">Storms, skies and weather from around North Alabama and Southern Tennessee, sent in by viewers.</p>
-  <div class="photos" id="photo-grid" hidden></div>
-  <div class="photo-cta">
-    <p><strong>Send us your weather photos!</strong> Message them to NorthBamaWX on Facebook with your first name and where and when you took them. Never go out in dangerous weather to get a picture.</p>
-    <a class="btn" href="https://m.me/NorthBamaWeather" target="_blank" rel="noopener">Send a photo on Facebook</a>
-  </div>
-</section>
-
-<section class="band" aria-labelledby="skyev-title" id="sky-events">
-  <h2 id="skyev-title">Sky Events</h2>
-  <p class="lede">What to look for in the night sky over North Alabama and Southern Tennessee. Clear skies needed!</p>
-  <div class="sky-ev">
-    <div class="skc"><h3>Space station passes</h3><ul id="iss-list"><li>Calculating passes…</li></ul></div>
-    <div class="skc"><h3>Full moons</h3><ul id="moon-list"><li>Loading…</li></ul></div>
-    <div class="skc"><h3>Meteor showers</h3><ul id="meteor-list"></ul></div>
-  </div>
-  <div class="lsr-src">Space station orbit: CelesTrak. Moon phases: U.S. Naval Observatory. Times are for Huntsville.</div>
 </section>
 
 <section class="band" aria-labelledby="towns-title" id="towns">
@@ -1140,12 +1116,6 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="towns/winchester-tn.html">Winchester, TN</a></li>
     <li><a href="towns/lynchburg-tn.html">Lynchburg, TN</a></li>
   </ul>
-</section>
-
-<section class="band" aria-labelledby="hist-title" id="weather-history">
-  <h2 id="hist-title">This Day in Weather History</h2>
-  <p class="lede" id="hist-lede">Remembering the storms that shaped Alabama and the Tennessee Valley.</p>
-  <div class="history" id="history"></div>
 </section>
 
 <section class="band" aria-labelledby="news-title" id="weather-news">
@@ -1356,6 +1326,14 @@ async function loadPlayer() {
   } catch (e) {}
   // Only touch the player when the stream changed, so playback isn't restarted.
   if (player.dataset.src !== src) { player.dataset.src = src; player.src = src; }
+  // Live chat next to the video on computers (YouTube only allows it for the live video ID).
+  const m = /embed\/([A-Za-z0-9_-]{11})/.exec(src), chat = document.getElementById('chat');
+  const wide = window.matchMedia('(min-width: 1100px)').matches;
+  document.getElementById('chat-box').hidden = !(m && wide);
+  if (m && wide) {
+    const csrc = `https://www.youtube.com/live_chat?v=${m[1]}&embed_domain=${location.hostname}`;
+    if (chat.dataset.src !== csrc) { chat.dataset.src = csrc; chat.src = csrc; }
+  }
 }
 setInterval(loadPlayer, 300000);
 
@@ -1728,12 +1706,28 @@ async function loadVideos() {
 }
 
 // ---- SPC outlook tabs ----
+const spcState = { day: '1', haz: 'cat' };
+const HAZ_NAMES = { cat: 'overall', torn: 'tornado', hail: 'hail', wind: 'wind' };
+function showSpc() {
+  const { day, haz } = spcState, img = document.getElementById('spc-img');
+  // Day 3 has one combined severe probability map instead of separate hazards.
+  const file = haz === 'cat' ? `day${day}otlk.png` : day === '3' ? 'day3prob.png' : `day${day}probotlk_${haz}.png`;
+  img.src = 'https://www.spc.noaa.gov/products/outlook/' + file + '?t=' + Math.floor(Date.now() / 600000);
+  img.alt = `Storm Prediction Center Day ${day} ${haz !== 'cat' && day === '3' ? 'any severe' : HAZ_NAMES[haz]} outlook map`;
+  document.getElementById('haz-note').hidden = haz === 'cat';
+  document.getElementById('cat-key').hidden = haz !== 'cat';
+  document.querySelectorAll('#haz-tabs button').forEach(x => { if (x.dataset.haz !== 'cat') x.textContent = day === '3' ? (x.dataset.haz === 'torn' ? 'Any severe' : '') : x.dataset.haz === 'torn' ? 'Tornado' : x.dataset.haz === 'hail' ? 'Hail' : 'Wind'; x.hidden = !x.textContent; });
+}
 document.querySelectorAll('.tabs[aria-label="Outlook day"] button').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('.tabs[aria-label="Outlook day"] button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
-  const d = b.dataset.day;
-  const img = document.getElementById('spc-img');
-  img.src = 'https://www.spc.noaa.gov/products/outlook/day' + d + 'otlk.png?t=' + Math.floor(Date.now() / 600000);
-  img.alt = 'Storm Prediction Center Day ' + d + ' convective outlook map';
+  spcState.day = b.dataset.day;
+  if (spcState.day === '3' && spcState.haz !== 'cat') spcState.haz = 'torn';
+  document.querySelectorAll('#haz-tabs button').forEach(x => x.setAttribute('aria-selected', String(x.dataset.haz === spcState.haz)));
+  showSpc();
+}));
+document.querySelectorAll('#haz-tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#haz-tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
+  spcState.haz = b.dataset.haz; showSpc();
 }));
 
 // ---- Copy ntfy topic ----
@@ -2066,46 +2060,6 @@ async function loadRoads() {
 loadRoads();
 setInterval(loadRoads, 600000);
 
-// ---- Monthly climate (ACIS, Huntsville International Airport) ----
-function iso(dt) { return dt.toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); }
-function num(v) { if (v === 'T') return 0; const n = parseFloat(v); return isNaN(n) ? null : n; }
-async function loadClimate() {
-  const now = new Date();
-  const lastStart = new Date(now.getFullYear(), now.getMonth() - 1, 1);
-  let rows;
-  try {
-    const r = await fetch('https://data.rcc-acis.org/StnData', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ sid: 'HSV', sdate: iso(lastStart), edate: iso(now),
-        elems: [{ name: 'maxt' }, { name: 'mint' }, { name: 'pcpn' }, { name: 'maxt', normal: '1' }, { name: 'mint', normal: '1' }, { name: 'pcpn', normal: '1' }] }) });
-    rows = (await r.json()).data;
-  } catch (e) { return; }
-  const box = document.getElementById('climate-cards');
-  box.textContent = '';
-  const months = [[lastStart.getMonth(), lastStart.toLocaleDateString('en-US', { month: 'long' })], [now.getMonth(), now.toLocaleDateString('en-US', { month: 'long' }) + ' so far']];
-  months.forEach(([m, title]) => {
-    const days = rows.filter(r => Number(r[0].slice(5, 7)) - 1 === m && num(r[1]) !== null && num(r[2]) !== null);
-    if (!days.length) return;
-    const avg = i => days.reduce((a, r) => a + num(r[i]), 0) / days.length;
-    const hi = avg(1), lo = avg(2), nhi = avg(4), nlo = avg(5);
-    const rain = rows.filter(r => Number(r[0].slice(5, 7)) - 1 === m && num(r[3]) !== null);
-    const tot = rain.reduce((a, r) => a + num(r[3]), 0), ntot = rain.reduce((a, r) => a + (num(r[6]) || 0), 0);
-    const hot = days.reduce((a, r) => (num(r[1]) > num(a[1]) ? r : a)), cold = days.reduce((a, r) => (num(r[2]) < num(a[2]) ? r : a));
-    const dshort = r => new Date(r[0] + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    const dep = (v, n, unit, up, dn) => { const x = v - n; const c = x >= 0 ? up : dn;
-      return `<span class="${c}">${x >= 0 ? '+' : '−'}${Math.abs(x).toFixed(1)}${unit}</span> vs normal`; };
-    const card = document.createElement('div'); card.className = 'clim';
-    card.innerHTML = `<h3>${title}</h3><dl>
-      <dt>Avg high</dt><dd>${hi.toFixed(1)}° (${dep(hi, nhi, '°', 'up', 'dn')})</dd>
-      <dt>Avg low</dt><dd>${lo.toFixed(1)}° (${dep(lo, nlo, '°', 'up', 'dn')})</dd>
-      <dt>Rainfall</dt><dd>${tot.toFixed(2)} in (${dep(tot, ntot, ' in', 'wet', 'dry')})</dd>
-      <dt>Hottest</dt><dd>${num(hot[1])}° on ${dshort(hot)}</dd>
-      <dt>Coldest</dt><dd>${num(cold[2])}° on ${dshort(cold)}</dd></dl>`;
-    box.append(card);
-  });
-}
-loadClimate();
-setInterval(loadClimate, 3600000);
-
 // ---- Feels like (heat index / wind chill from the KHSV observation) ----
 async function loadFeelsLike() {
   try {
@@ -2240,38 +2194,6 @@ async function loadLakes() {
 loadLakes();
 setInterval(loadLakes, 1800000);
 
-// ---- Seasonal outlook tabs ----
-document.querySelectorAll('#season-tabs button').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('#season-tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
-  const long = b.dataset.p === '90';
-  const base = long ? 'https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead01/off01_' : 'https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_';
-  const page = long ? 'https://www.cpc.ncep.noaa.gov/products/predictions/long_range/seasonal.php?lead=1' : 'https://www.cpc.ncep.noaa.gov/products/predictions/30day/';
-  const label = long ? '3-month' : '30-day';
-  const t = document.getElementById('season-temp'), pr = document.getElementById('season-prcp');
-  t.src = base + 'temp.gif'; t.alt = `NOAA ${label} temperature outlook map`;
-  pr.src = base + 'prcp.gif'; pr.alt = `NOAA ${label} precipitation outlook map`;
-  document.getElementById('season-a1').href = page; document.getElementById('season-a2').href = page;
-}));
-
-// ---- Viewer photos (photos.json; add entries and image files to publish) ----
-async function loadPhotos() {
-  const d = await rawData('photos.json');
-  const list = (d && d.photos) || [];
-  const grid = document.getElementById('photo-grid');
-  grid.textContent = '';
-  list.forEach(ph => {
-    const fig = document.createElement('figure'); fig.className = 'photo';
-    const a = document.createElement('a'); a.href = ph.file; a.target = '_blank'; a.rel = 'noopener';
-    const img = document.createElement('img'); img.src = ph.file; img.alt = ph.caption || 'Viewer weather photo'; img.loading = 'lazy';
-    a.append(img);
-    const cap = document.createElement('figcaption'); cap.textContent = ph.caption || '';
-    const sm = document.createElement('small'); sm.textContent = [ph.credit && 'Photo: ' + ph.credit, ph.place, ph.date].filter(Boolean).join(' · ');
-    cap.append(sm); fig.append(a, cap); grid.append(fig);
-  });
-  grid.hidden = !list.length;
-}
-loadPhotos();
-
 // ---- Visitor counter (GoatCounter public total; stays hidden until the account allows it) ----
 async function loadVisits() {
   try {
@@ -2308,7 +2230,8 @@ window.rainTiming = function (periods) {
 // ---- Load heavy things (maps, cameras) only when they're about to scroll into view ----
 function whenNear(id, fn) {
   const el = document.getElementById(id);
-  if (!el || !('IntersectionObserver' in window)) { fn(); return; }
+  if (!el) return;
+  if (!('IntersectionObserver' in window)) { fn(); return; }
   const io = new IntersectionObserver((en, o) => { if (en.some(e => e.isIntersecting)) { o.disconnect(); fn(); } }, { rootMargin: '600px 0px' });
   io.observe(el);
 }
@@ -2479,80 +2402,6 @@ async function loadFootball() {
 loadFootball();
 setInterval(loadFootball, 3600000);
 
-// ---- Sky events ----
-const SHOWERS = [['01-03', 'Quadrantids', 'up to 100 an hour, short peak'], ['04-22', 'Lyrids', 'about 15 an hour'], ['05-05', 'Eta Aquariids', 'about 10 an hour before dawn'],
-  ['08-12', 'Perseids', 'up to 60-100 an hour'], ['10-21', 'Orionids', 'about 20 an hour'], ['11-17', 'Leonids', 'about 15 an hour'], ['12-13', 'Geminids', 'up to 100+ an hour, the best of the year']];
-const MOON_NAMES = ['Wolf', 'Snow', 'Worm', 'Pink', 'Flower', 'Strawberry', 'Buck', 'Sturgeon', 'Harvest', 'Hunter\u2019s', 'Beaver', 'Cold'];
-function moonLit(d) {
-  const P = 29.530588853, ref = Date.UTC(2000, 0, 6, 18, 14), f = ((((d - ref) / 86400000) % P) + P) % P / P;
-  return Math.round((1 - Math.cos(2 * Math.PI * f)) / 2 * 100);
-}
-function skyLi(title, sub) { const l = document.createElement('li'); const b = document.createElement('b'); b.textContent = title; const s2 = document.createElement('small'); s2.textContent = sub; l.append(b, s2); return l; }
-function showMeteors() {
-  const now = new Date(), ul = document.getElementById('meteor-list');
-  ul.textContent = '';
-  const next = SHOWERS.map(([md, name, rate]) => {
-    const [m, d] = md.split('-').map(Number); let t = new Date(now.getFullYear(), m - 1, d, 23);
-    if (t < now - 86400000) t = new Date(now.getFullYear() + 1, m - 1, d, 23);
-    return [t, name, rate];
-  }).sort((a, b) => a[0] - b[0]).slice(0, 3);
-  next.forEach(([t, name, rate]) => {
-    const lit = moonLit(t);
-    ul.append(skyLi(`${name}: night of ${t.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`,
-      `${rate} under dark skies · Moon ${lit}% lit${lit > 60 ? ', which will wash out fainter meteors' : ''}`));
-  });
-}
-async function loadMoons() {
-  const ul = document.getElementById('moon-list');
-  try {
-    const d = await (await fetch(`https://aa.usno.navy.mil/api/moon/phases/date?date=${new Date().toLocaleDateString('en-CA')}&nump=12`)).json();
-    ul.textContent = '';
-    d.phasedata.filter(x => x.phase === 'Full Moon').slice(0, 3).forEach(x => {
-      const t = new Date(Date.UTC(x.year, x.month - 1, x.day, ...x.time.split(':').map(Number)));
-      const local = new Date(t.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
-      ul.append(skyLi(`${MOON_NAMES[local.getMonth()]} Moon`, t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })));
-    });
-  } catch (e) { ul.innerHTML = '<li>Unavailable right now.</li>'; }
-}
-// Space station passes, computed in the browser from today's orbit (satellite.js).
-function sunEci(date) {
-  const n = (date - Date.UTC(2000, 0, 1, 12)) / 86400000, r = Math.PI / 180;
-  const L = (280.460 + 0.9856474 * n) % 360, g = (357.528 + 0.9856003 * n) % 360;
-  const lam = (L + 1.915 * Math.sin(g * r) + 0.020 * Math.sin(2 * g * r)) * r, eps = (23.439 - 0.0000004 * n) * r;
-  const AU = 149597870.7;
-  return { x: AU * Math.cos(lam), y: AU * Math.cos(eps) * Math.sin(lam), z: AU * Math.sin(eps) * Math.sin(lam) };
-}
-async function loadIss() {
-  const ul = document.getElementById('iss-list');
-  try {
-    if (!window.satellite) await new Promise((ok, bad) => { const sc = document.createElement('script'); sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js'; sc.onload = ok; sc.onerror = bad; document.head.append(sc); });
-    const tle = (await (await fetch('https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE')).text()).trim().split('\n').map(x => x.trim());
-    const sat = satellite, rec = sat.twoline2satrec(tle[1], tle[2]);
-    const obs = { latitude: sat.degreesToRadians(34.73), longitude: sat.degreesToRadians(-86.59), height: 0.2 };
-    const look = (eci, t) => sat.ecfToLookAngles(obs, sat.eciToEcf(eci, sat.gstime(t)));
-    const dirs = a => compass16((a * 180 / Math.PI + 360) % 360);
-    const passes = []; let cur = null;
-    const start = Date.now();
-    for (let ms = 0; ms < 4 * 86400000; ms += 20000) {
-      const t = new Date(start + ms), pv = sat.propagate(rec, t);
-      if (!pv.position) continue;
-      const la = look(pv.position, t), el = la.elevation * 180 / Math.PI;
-      if (el > 10) {
-        const s = sunEci(t), sunEl = look(s, t).elevation * 180 / Math.PI;
-        const smag = Math.hypot(s.x, s.y, s.z), dot = (pv.position.x * s.x + pv.position.y * s.y + pv.position.z * s.z) / smag;
-        const perp = Math.hypot(pv.position.x - dot * s.x / smag, pv.position.y - dot * s.y / smag, pv.position.z - dot * s.z / smag);
-        const lit = dot > 0 || perp > 6371, vis = lit && sunEl < -6;
-        if (!cur) cur = { pts: [] };
-        if (vis) cur.pts.push({ t, el, az: la.azimuth });
-      } else if (cur) { if (cur.pts.length) passes.push(cur); cur = null; }
-    }
-    ul.textContent = '';
-    const good = passes.map(p => ({ start: p.pts[0], end: p.pts[p.pts.length - 1], max: Math.max(...p.pts.map(x => x.el)) })).filter(p => p.max >= 20).slice(0, 4);
-    if (!good.length) { ul.append(skyLi('No good passes in the next few days', 'The station is only visible around dawn and dusk when it catches sunlight.')); return; }
-    good.forEach(p => ul.append(skyLi(p.start.t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }),
-      `Look ${dirs(p.start.az)}, rising to ${Math.round(p.max)}° high, gone to the ${dirs(p.end.az)} in about ${Math.max(1, Math.round((p.end.t - p.start.t) / 60000))} min`)));
-  } catch (e) { ul.innerHTML = '<li>Pass predictions unavailable right now.</li>'; }
-}
 // ---- Section menu arrows: scroll the menu sideways when it doesn't fit ----
 (() => {
   const ul = document.getElementById('nav-list'), l = document.getElementById('nav-left'), r = document.getElementById('nav-right');
@@ -2583,9 +2432,7 @@ setInterval(checkForUpdate, 900000);
   const n = new Date(), next = new Date(n.getFullYear(), n.getMonth(), n.getDate() + (n.getHours() >= 3 ? 1 : 0), 3, 0, 0);
   setTimeout(() => location.reload(), next - n);
 })();
-setInterval(showHistory, 3600000);
 
-whenNear('sky-events', () => { showMeteors(); loadMoons(); loadIss(); });
 
 // ---- Forecaster notes (NWS Huntsville Area Forecast Discussion) ----
 function afdSections(text) {
@@ -2823,53 +2670,6 @@ async function initRainMap() {
   setInterval(() => setRainPeriod(document.querySelector('#rain-tabs [aria-selected="true"]').dataset.h), 900000);
 }
 whenNear('rainmap', initRainMap);
-
-// ---- This day in weather history ----
-const WX_HISTORY = [
-  ['01-21', 1985, 'Record Cold in Huntsville', 'Huntsville fell to 11 degrees below zero, one of the coldest readings ever recorded there.'],
-  ['03-01', 2007, 'Enterprise High School Tornado', 'An EF4 tornado struck Enterprise High School, killing eight students. It led to stronger school safety plans across Alabama.'],
-  ['03-13', 1993, 'Storm of the Century', 'The Superstorm of 1993 buried North Alabama in snow, with more than a foot of snow in places and travel shut down for days.'],
-  ['03-21', 1932, 'Deep South Tornado Outbreak', 'One of the deadliest outbreaks in Alabama history. Tornadoes killed more than 260 people across the state in a single night.'],
-  ['03-27', 1994, 'Palm Sunday Tornado Outbreak', 'Tornadoes struck across Alabama on Palm Sunday, killing more than 20 people, including 20 at a church in Piedmont.'],
-  ['04-03', 1974, 'Super Outbreak', 'One of the largest tornado outbreaks on record struck the Southeast. Alabama took a direct hit, including F5 tornadoes at Guin and Tanner.'],
-  ['04-08', 1998, 'Birmingham F5 Tornado', 'An F5 tornado tore through western Jefferson County, killing 32 people.'],
-  ['04-27', 2011, 'April 27 Tornado Outbreak', 'The deadliest tornado outbreak in Alabama history. Dozens of tornadoes, including EF5s at Hackleburg and Phil Campbell, killed more than 250 people statewide.'],
-  ['04-28', 2014, 'Limestone County Tornado', 'An EF3 tornado tore through western Limestone County near Athens, one of several tornadoes in North Alabama that night.'],
-  ['07-29', 1930, 'Record Heat in Huntsville', 'Huntsville reached 108 degrees, its all-time record high, during the great heat wave of 1930.'],
-  ['09-16', 2004, 'Hurricane Ivan', 'Hurricane Ivan made landfall near Gulf Shores. Its remnants brought heavy rain, wind damage and tornadoes into North Alabama.'],
-  ['11-15', 1989, 'Huntsville Tornado', 'An F4 tornado struck south Huntsville and Airport Road during rush hour, killing 21 people. It remains one of the deadliest tornadoes in North Alabama history.'],
-  ['12-16', 2000, 'Tuscaloosa Tornado', 'An F4 tornado struck Tuscaloosa just before Christmas, killing 11 people. December severe weather is a real threat in Alabama.'],
-  ['12-25', 2012, 'Christmas Day Tornadoes', 'A rare Christmas Day outbreak brought tornadoes to South Alabama, including an EF2 that struck Mobile.'],
-];
-function showHistory() {
-  const now = new Date(), year = now.getFullYear();
-  const md = d => String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-  const today = md(now);
-  let pick = WX_HISTORY.find(e => e[0] === today), lede = 'On this day in Alabama weather history.';
-  if (!pick) {
-    // Otherwise the next anniversary coming up.
-    const dateOf = e => { const [m, d] = e[0].split('-').map(Number); let t = new Date(year, m - 1, d); if (t < now) t = new Date(year + 1, m - 1, d); return t; };
-    pick = WX_HISTORY.slice().sort((a, b) => dateOf(a) - dateOf(b))[0];
-    const days = Math.ceil((dateOf(pick) - now) / 86400000);
-    lede = `Coming up in ${days} day${days === 1 ? '' : 's'}: an anniversary from Alabama weather history.`;
-  }
-  const [mmdd, yr, title, text] = pick;
-  const [m, d] = mmdd.split('-').map(Number);
-  document.getElementById('hist-lede').textContent = lede;
-  const box = document.getElementById('history');
-  box.textContent = '';
-  const left = document.createElement('div');
-  const y = document.createElement('div'); y.className = 'yr'; y.textContent = yr;
-  const dt = document.createElement('div'); dt.className = 'dt';
-  dt.textContent = new Date(2000, m - 1, d).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
-  left.append(y, dt);
-  const right = document.createElement('div');
-  const h = document.createElement('h3'); h.textContent = title;
-  const p2 = document.createElement('p'); p2.textContent = text;
-  right.append(h, p2);
-  box.append(left, right);
-}
-showHistory();
 
 // ---- River & creek levels (NOAA NWPS) ----
 // Gauges in or along our counties. Pool-elevation gauges (dam headwater) are left out.

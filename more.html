@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>More Weather | NorthBamaWX</title>
+<link rel="canonical" href="https://northbamawx.github.io/more.html">
+<meta name="keywords" content="North Alabama weather, Huntsville weather, Tennessee Valley weather, weather radar, tornado warning, severe weather, live weather stream">
+<meta property="og:url" content="https://northbamawx.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="description" content="Huntsville monthly climate, NOAA seasonal outlooks, space station passes, full moons, meteor showers, viewer weather photos and Alabama weather history from NorthBamaWX.">
+<meta property="og:title" content="More Weather | NorthBamaWX">
+<meta property="og:description" content="Live radar and severe weather alerts for North Alabama and Southern Tennessee, around the clock.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a1626">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NorthBamaWX">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script data-goatcounter="https://northbamawx.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a1626'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%2333d6ff' stroke-width='4'/%3E%3Cpath d='M32 32 L46 18' stroke='%2333d6ff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: broadcast control-room — stream as the big monitor, alert board beside it, then coverage and follow strips. */
+:root {
+  --night: #0a1626;        /* page ground, matches the stream's header bar */
+  --panel: #10223a;        /* raised panels */
+  --rule: #1f3a5c;         /* hairlines and borders */
+  --ink: #e8f0fa;          /* primary text */
+  --ink-dim: #93a8c2;      /* secondary text */
+  --radar: #33d6ff;        /* brand accent, the stream's cyan */
+  --live: #ff3b3b;         /* LIVE indicator */
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --data: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--night);
+  color: var(--ink);
+  font: 16px/1.55 var(--body);
+  padding-inline: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--radar); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+.wrap { max-width: 1240px; margin: 0 auto; }
+
+/* Masthead */
+header {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding-block: 20px 18px;
+  border-bottom: 1px solid var(--rule);
+}
+.brand { font: 800 30px/1 var(--display); letter-spacing: 0.06em; text-decoration: none; color: var(--ink); }
+.brand b { color: var(--radar); font-weight: 800; }
+.tag { font: 500 12px/1 var(--data); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim); }
+.live-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  font: 700 15px/1 var(--display); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink); text-decoration: none;
+  border: 1px solid var(--live); border-radius: 999px; padding: 8px 14px;
+}
+.live-pill::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--live); animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.25; } }
+
+.back-link { font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+
+/* Section menu: sticks under the storm banner (if any) */
+.secnav { position: sticky; top: var(--nav-top, 0px); z-index: 900; margin-inline: -16px; padding: 0 16px;
+  background: rgba(10,22,38,0.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+.secnav ul { list-style: none; margin: 0 auto; padding: 0; max-width: 1240px; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.secnav ul::-webkit-scrollbar { display: none; }
+.secnav a { display: block; padding: 11px 10px; white-space: nowrap; text-decoration: none; color: var(--ink-dim);
+  font: 700 14px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; border-bottom: 2px solid transparent; }
+.secnav a:hover { color: var(--ink); }
+.secnav a[aria-current="true"] { color: var(--radar); border-bottom-color: var(--radar); }
+.secnav a.hot { color: #ff4fa3; }
+.secnav .navwrap { position: relative; max-width: 1240px; margin: 0 auto; }
+.secnav .navarrow { all: unset; position: absolute; top: 0; bottom: 0; z-index: 2; width: 56px; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; color: var(--radar); font: 800 40px/1 var(--display); }
+.secnav .navarrow[hidden] { display: none; }
+.secnav .navarrow.l { left: 0; background: linear-gradient(90deg, rgba(10,22,38,1) 55%, rgba(10,22,38,0)); justify-content: flex-start; padding-left: 4px; }
+.secnav .navarrow.r { right: 0; background: linear-gradient(270deg, rgba(10,22,38,1) 55%, rgba(10,22,38,0)); justify-content: flex-end; padding-right: 4px; }
+.secnav .navarrow:hover { color: var(--ink); }
+.secnav .navarrow:focus-visible { outline: 2px solid var(--radar); outline-offset: -2px; }
+section.band, #live { scroll-margin-top: calc(var(--nav-top, 0px) + 54px); }
+.install-btn { all: unset; cursor: pointer; font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--radar); }
+.install-btn:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+.install-tip { margin-top: 10px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; font-size: 14px; }
+
+/* Conditions strip */
+.wx-strip {
+  display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: baseline;
+  padding-block: 14px;
+  font: 500 13px/1.4 var(--data); color: var(--ink-dim);
+  border-bottom: 1px solid var(--rule);
+}
+.wx-strip strong { color: var(--ink); font-weight: 500; }
+.wx-strip .temp { font: 700 28px/1 var(--display); color: var(--ink); letter-spacing: 0.02em; }
+
+/* Sun, moon and air quality strip */
+.sky-strip { padding-block: 10px; align-items: center; }
+.sky-strip .moon { display: inline-flex; align-items: center; gap: 8px; }
+.sky-strip svg { width: 18px; height: 18px; flex: none; }
+.aqi-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-left: 6px; vertical-align: middle; background: var(--rule); }
+
+/* Main monitor + alert board */
+.console {
+  display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 24px; align-items: start;
+  padding-block: 28px;
+}
+.monitor { min-width: 0; }
+.screen {
+  position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;
+  background: #050c16; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden;
+}
+.screen iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.monitor h1 {
+  font: 700 clamp(30px, 4.4vw, 48px)/1.05 var(--display); letter-spacing: 0.01em;
+  margin: 22px 0 10px; text-wrap: balance;
+}
+.monitor p { margin: 0; max-width: 62ch; color: var(--ink-dim); }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font: 700 17px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  padding: 13px 20px; border-radius: 4px; border: 1px solid var(--rule); color: var(--ink); background: var(--panel);
+}
+.btn.primary { background: var(--radar); border-color: var(--radar); color: var(--night); }
+.btn:hover { filter: brightness(1.12); }
+
+.board { min-width: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; display: flex; flex-direction: column; }
+.board-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 16px 18px 12px; border-bottom: 1px solid var(--rule); }
+.board-head h2 { font: 700 20px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; margin: 0; }
+.board-head span { font: 500 11px/1 var(--data); color: var(--ink-dim); letter-spacing: 0.06em; }
+#alerts { list-style: none; margin: 0; padding: 8px; display: flex; flex-direction: column; gap: 8px; overflow-y: auto; max-height: 560px; }
+.alert { border-left: 6px solid var(--c, #8a99ad); background: rgba(255,255,255,0.03); border-radius: 3px; }
+.alert button {
+  all: unset; box-sizing: border-box; cursor: pointer; display: block; width: 100%; padding: 10px 12px;
+}
+.alert .ev { font: 700 18px/1.15 var(--display); letter-spacing: 0.03em; color: var(--c, var(--ink)); }
+.alert .area { font-size: 13px; color: var(--ink); margin-top: 3px; overflow-wrap: anywhere; }
+.alert .until { font: 500 11px/1.3 var(--data); color: var(--ink-dim); margin-top: 5px; letter-spacing: 0.04em; }
+.alert .desc { display: none; padding: 0 12px 12px; font-size: 13px; color: var(--ink-dim); white-space: pre-line; }
+.alert.open .desc { display: block; }
+.board-empty { padding: 26px 18px; color: var(--ink-dim); font-size: 14px; }
+.board-empty strong { display: block; font: 700 20px/1.1 var(--display); color: #4ade80; letter-spacing: 0.05em; margin-bottom: 6px; text-transform: uppercase; }
+.board-foot { margin-top: auto; padding: 12px 18px; border-top: 1px solid var(--rule); font-size: 12px; color: var(--ink-dim); }
+
+/* Sections */
+section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
+.band h2 { font: 700 26px/1.1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6px; }
+.band .lede { color: var(--ink-dim); margin: 0 0 22px; max-width: 62ch; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px 32px; }
+.feature { min-width: 0; }
+.feature h3 { font: 700 19px/1.2 var(--display); letter-spacing: 0.04em; margin: 0 0 4px; color: var(--radar); }
+.feature p { margin: 0; color: var(--ink-dim); font-size: 15px; }
+
+.counties { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.state h3 { font: 600 12px/1 var(--data); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-dim); margin: 0 0 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.chips li { font: 600 17px/1 var(--display); letter-spacing: 0.04em; padding: 8px 12px; border: 1px solid var(--rule); border-radius: 3px; background: var(--panel); }
+.chips li small { font: 500 11px/1 var(--data); color: var(--ink-dim); margin-left: 6px; letter-spacing: 0; }
+
+.follow { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Storm banner: only shown while a warning (or tornado watch) covers our counties */
+.storm-banner {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 1000;
+  margin-inline: -16px; padding: 12px 16px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 18px;
+  background: var(--sb, #c4161c); color: #fff; text-align: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+.storm-banner .sb-ev { font: 800 22px/1.1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; }
+.storm-banner .sb-area { font-size: 14px; max-width: 70ch; }
+.storm-banner a { font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--sb, #c4161c);
+  background: #fff; padding: 9px 14px; border-radius: 4px; text-decoration: none; white-space: nowrap; }
+.storm-banner[hidden], [hidden] { display: none !important; }
+.storm-banner.pulse { animation: sb-pulse 1.4s ease-in-out infinite; }
+@keyframes sb-pulse { 50% { filter: brightness(1.25); } }
+@media (prefers-reduced-motion: reduce) { .storm-banner.pulse { animation: none; } }
+
+/* Latest videos */
+.vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 14px; }
+.vid { min-width: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.vid .frame { position: relative; aspect-ratio: 9 / 16; max-width: 100%; background: #050c16; }
+.vid.wide .frame { aspect-ratio: 16 / 9; }
+.vid button { all: unset; cursor: pointer; position: absolute; inset: 0; }
+.vid button:focus-visible { outline: 2px solid var(--radar); outline-offset: -2px; }
+.vid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vid .play { position: absolute; left: 50%; top: 50%; width: 54px; height: 54px; margin: -27px 0 0 -27px; border-radius: 50%;
+  background: rgba(10,22,38,0.75); border: 2px solid var(--radar); }
+.vid .play::after { content: ""; position: absolute; left: 21px; top: 15px; border-left: 16px solid var(--radar); border-top: 10px solid transparent; border-bottom: 10px solid transparent; }
+.vid iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vid .vt { padding: 9px 10px; font-size: 13px; line-height: 1.3; }
+.vid .vt small { display: block; margin-top: 4px; font: 500 11px/1.3 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; }
+.more-link { display: inline-block; margin-top: 14px; }
+
+/* Hourly chart */
+.hourly-wrap { overflow-x: auto; margin-top: 26px; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); }
+.hourly-wrap h3 { font: 700 18px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; margin: 14px 16px 0; }
+#hourly svg { display: block; min-width: 760px; width: 100%; height: auto; }
+.hourly-key { display: flex; gap: 18px; padding: 0 16px 12px; font: 500 11px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.05em; }
+.hourly-key span::before { content: ""; display: inline-block; width: 14px; height: 3px; margin-right: 6px; vertical-align: 3px; background: var(--k); }
+
+/* Phone alerts */
+.alerts-signup { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px 40px; align-items: start; }
+.steps { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; }
+.steps li { padding-left: 4px; }
+.topic-box { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.topic { font: 500 18px/1 var(--data); color: var(--radar); background: var(--night); border: 1px solid var(--rule); border-radius: 4px; padding: 10px 12px; user-select: all; }
+.copy-btn { all: unset; cursor: pointer; font: 700 14px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 4px; color: var(--ink); }
+.copy-btn:focus-visible { outline: 2px solid var(--radar); }
+.store-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+.what-you-get { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; }
+.what-you-get h3 { font: 700 18px/1 var(--display); letter-spacing: 0.06em; margin: 0 0 10px; color: var(--radar); }
+.what-you-get ul { margin: 0; padding-left: 18px; color: var(--ink-dim); font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.what-you-get p { margin: 12px 0 0; font-size: 13px; color: var(--ink-dim); }
+@media (max-width: 800px) { .alerts-signup { grid-template-columns: minmax(0, 1fr); } }
+
+/* Tropics (only shown while a storm is near) */
+.storm-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 20px 28px; background: var(--panel);
+  border: 1px solid var(--rule); border-left: 6px solid #ff4fa3; border-radius: 6px; padding: 18px; }
+.storm-card + .storm-card { margin-top: 16px; }
+.storm-card h3 { font: 800 30px/1 var(--display); letter-spacing: 0.03em; margin: 0; }
+.storm-card .lab { font: 700 15px/1 var(--display); letter-spacing: 0.12em; text-transform: uppercase; color: #ff4fa3; margin-bottom: 6px; }
+.storm-stats { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 12px 0; font: 500 13px/1.4 var(--data); color: var(--ink-dim); }
+.storm-stats b { display: block; font: 700 22px/1.1 var(--display); color: var(--ink); letter-spacing: 0.02em; }
+.storm-card p { margin: 10px 0 0; font-size: 14px; color: var(--ink); }
+.storm-card p strong { color: #ff4fa3; font-weight: 600; }
+.storm-card img { width: 100%; max-width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--rule); background: #fff; }
+.storm-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+@media (max-width: 800px) { .storm-card { grid-template-columns: minmax(0, 1fr); } }
+
+/* Storm reports */
+.lsr { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.lsr li { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 4px 18px; padding: 12px 0; border-top: 1px solid var(--rule); }
+.lsr .type { font: 700 15px/1.2 var(--display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--c, var(--ink)); }
+.lsr .when { font: 500 11px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; margin-top: 4px; }
+.lsr .place { font-weight: 600; }
+.lsr .remark { font-size: 14px; color: var(--ink-dim); margin-top: 2px; }
+.lsr-src { margin-top: 12px; font: 500 11px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; }
+@media (max-width: 600px) { .lsr li { grid-template-columns: minmax(0, 1fr); } }
+
+/* Right Now box */
+.now-box { margin-top: 18px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--radar); border-radius: 6px; }
+.now-box .lbl { font: 600 11px/1 var(--data); letter-spacing: 0.16em; text-transform: uppercase; color: var(--radar); }
+.now-box .hl { font: 700 22px/1.2 var(--display); letter-spacing: 0.02em; margin-top: 6px; }
+.now-box p { margin: 6px 0 0; font-size: 15px; max-width: 75ch; }
+.now-box .ts { margin-top: 8px; font: 500 11px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; }
+
+/* River levels */
+.rivers { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px 28px; }
+.rivers li { min-width: 0; padding: 10px 0; border-top: 1px solid var(--rule); }
+.rivers a { text-decoration: none; color: var(--ink); display: block; }
+.rivers .rn { font-weight: 600; font-size: 14px; }
+.rivers .rs { display: flex; align-items: baseline; gap: 10px; margin-top: 4px; font: 500 12px/1.3 var(--data); color: var(--ink-dim); }
+.rivers .rs b { font: 700 20px/1 var(--display); color: var(--ink); letter-spacing: 0.02em; }
+.rivers .pill { font: 700 11px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; color: #0a1626; background: var(--pc, #4ade80); margin-left: auto; white-space: nowrap; }
+.rivers .bar { height: 5px; margin-top: 7px; background: var(--night); border-radius: 3px; overflow: hidden; }
+.rivers .bar i { display: block; height: 100%; background: var(--pc, #4ade80); }
+
+/* Rainfall map */
+.rain-box { position: relative; height: 480px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #0d1b2e; }
+#rainmap { position: absolute; inset: 0; background: #0d1b2e; }
+.rain-key { margin-top: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+.rain-key img { height: 26px; width: auto; max-width: 100%; border-radius: 3px; background: #fff; }
+@media (max-width: 600px) { .rain-box { height: 380px; } }
+
+/* This day in weather history */
+.history { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 6px 24px; align-items: start; background: var(--panel);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 18px 20px; }
+.history .yr { font: 800 44px/1 var(--display); color: var(--radar); letter-spacing: 0.02em; }
+.history .dt { font: 600 11px/1.4 var(--data); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-dim); margin-top: 6px; }
+.history h3 { font: 700 24px/1.15 var(--display); letter-spacing: 0.02em; margin: 0 0 6px; text-wrap: balance; }
+.history p { margin: 0; max-width: 70ch; }
+@media (max-width: 600px) { .history { grid-template-columns: minmax(0, 1fr); } }
+
+/* Drought monitor */
+.drought-img { display: block; width: 100%; max-width: 900px; height: auto; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+
+/* Winter weather */
+.winter-sum { font: 700 22px/1.2 var(--display); letter-spacing: 0.02em; margin: 0 0 14px; text-wrap: balance; }
+.winter-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.wd { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 10px; text-align: center; }
+.wd .n { font: 700 14px/1.2 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); }
+.wd .lo { font: 700 30px/1 var(--display); margin: 8px 0 4px; }
+.wd .hi { font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+.wd .tag { display: inline-block; margin-top: 8px; padding: 3px 7px; border-radius: 3px; font: 700 11px/1.2 var(--data); letter-spacing: 0.04em; text-transform: uppercase; color: #0a1626; }
+.wd.cold { border-color: #7fb2ff; }
+.wd.snow { border-color: #ffffff; }
+.wd.ice { border-color: #ff7ad9; }
+.winter-tip { margin-top: 14px; padding: 12px 14px; background: var(--panel); border-left: 3px solid #7fb2ff; border-radius: 4px; font-size: 14px; }
+@media (max-width: 760px) { .winter-days { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .winter-days { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Check my location */
+.locate { padding: 12px 18px; border-top: 1px solid var(--rule); }
+.locate button { all: unset; cursor: pointer; display: block; width: 100%; box-sizing: border-box; text-align: center; padding: 10px 12px;
+  border: 1px solid var(--radar); border-radius: 4px; color: var(--radar); font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; }
+.locate button:hover { background: rgba(51,214,255,0.1); }
+.locate button:focus-visible { outline: 2px solid var(--radar); outline-offset: 2px; }
+.locate-out { margin-top: 10px; font-size: 14px; }
+.locate-out .ok { color: #4be38a; font-weight: 600; }
+.locate-out ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 6px; }
+.locate-out li { padding: 8px 10px; border-left: 4px solid var(--k, #fff); background: rgba(255,255,255,0.04); }
+.locate-out li b { display: block; font: 700 16px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--k, #fff); }
+.locate-out small { color: var(--ink-dim); }
+
+/* Lightning */
+.ltg-box { position: relative; height: 480px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #0d1b2e; }
+#ltgmap { position: absolute; inset: 0; background: #0d1b2e; }
+.ltg-bar { position: absolute; left: 10px; bottom: 10px; z-index: 800; padding: 6px 10px; border-radius: 4px; background: rgba(10,22,38,0.85);
+  font: 500 12px/1.3 var(--data); color: var(--ink); }
+@media (max-width: 600px) { .ltg-box { height: 380px; } }
+
+/* Roads */
+.roads { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.roads li { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 4px 16px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--k, #ff9f43); border-radius: 4px; }
+.roads .kind { font: 700 13px/1.2 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--k, #ff9f43); }
+.roads .kind small { display: block; color: var(--ink-dim); font-weight: 500; margin-top: 4px; letter-spacing: 0.02em; text-transform: none; }
+.roads h3 { margin: 0; font: 700 18px/1.2 var(--display); letter-spacing: 0.02em; }
+.roads p { margin: 2px 0 0; font-size: 14px; color: var(--ink-dim); }
+@media (max-width: 600px) { .roads li { grid-template-columns: minmax(0, 1fr); } }
+
+/* Shelters */
+.shel-note { padding: 12px 14px; background: var(--panel); border-left: 3px solid #ffb454; border-radius: 4px; font-size: 14px; margin-bottom: 14px; max-width: 900px; }
+.shelters { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.shel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.shel h3 { margin: 0; font: 700 18px/1.2 var(--display); letter-spacing: 0.03em; }
+.shel p { margin: 0; font-size: 13px; color: var(--ink-dim); }
+.shel a { font-size: 14px; color: var(--radar); }
+.shel a.tel { font: 600 14px/1.3 var(--data); color: var(--ink); text-decoration: none; }
+
+/* Monthly climate */
+.climate { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.clim { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; }
+.clim h3 { margin: 0 0 12px; font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; }
+.clim dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 16px; margin: 0; }
+.clim dt { font: 500 12px/1.6 var(--data); color: var(--ink-dim); letter-spacing: 0.06em; text-transform: uppercase; }
+.clim dd { margin: 0; font-size: 15px; }
+.clim .up { color: #ff8a5c; } .clim .dn { color: #7fb2ff; } .clim .wet { color: #4be38a; } .clim .dry { color: #ffb454; }
+@media (max-width: 760px) { .climate { grid-template-columns: minmax(0, 1fr); } }
+
+/* Feels-like tip */
+.feel-tip { margin-top: 10px; padding: 10px 14px; background: var(--panel); border-left: 3px solid var(--k, #ff8a5c); border-radius: 4px; font-size: 14px; }
+
+/* Storm arrival times */
+.eta-storm { background: var(--panel); border: 1px solid var(--rule); border-left: 6px solid var(--k, #ff2b2b); border-radius: 6px; padding: 14px 16px; margin-bottom: 10px; }
+.eta-storm h3 { margin: 0 0 4px; font: 800 22px/1.15 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--k, #ff2b2b); }
+.eta-storm .mv { font: 500 13px/1.4 var(--data); color: var(--ink-dim); margin-bottom: 10px; }
+.eta-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 6px; }
+.eta-list li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; }
+.eta-list b { font-weight: 600; }
+.eta-list span { font: 500 13px/1.5 var(--data); color: var(--ink); white-space: nowrap; }
+
+/* Lakes */
+.lakes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.lake { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
+.lake h3 { margin: 0; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
+.lake .v { font: 700 34px/1 var(--display); margin: 10px 0 4px; }
+.lake .v small { font: 500 13px var(--data); color: var(--ink-dim); margin-left: 6px; }
+.lake .chg { font: 500 13px/1.5 var(--data); color: var(--ink-dim); }
+.lake svg { display: block; width: 100%; height: 40px; margin-top: 8px; }
+.lake-links { margin-top: 12px; font-size: 14px; color: var(--ink-dim); }
+.lake-links a { margin-right: 12px; white-space: nowrap; }
+
+/* Viewer photos */
+.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.photo { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.photo figcaption { padding: 8px 10px; font-size: 13px; }
+.photo figcaption small { display: block; color: var(--ink-dim); }
+.photo-cta { padding: 14px 16px; background: var(--panel); border: 1px dashed var(--rule); border-radius: 6px; max-width: 760px; }
+.photo-cta p { margin: 0 0 10px; }
+
+/* Seasonal outlook */
+.season-imgs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.season-imgs figure { margin: 0; }
+.season-imgs img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+.season-imgs figcaption { margin-top: 6px; font: 600 13px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; text-transform: uppercase; }
+@media (max-width: 760px) { .season-imgs { grid-template-columns: minmax(0, 1fr); } }
+
+/* Forecaster notes */
+.afd { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; max-width: 900px; }
+.afd .when { font: 500 12px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; margin-bottom: 10px; }
+.afd h3 { margin: 0 0 8px; font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--radar); }
+.afd ul { margin: 0 0 6px; padding-left: 20px; }
+.afd li { margin-bottom: 6px; }
+.afd details { border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 10px; }
+.afd summary { cursor: pointer; font: 700 16px/1.3 var(--display); letter-spacing: 0.06em; text-transform: uppercase; }
+.afd details p { margin: 8px 0 0; max-width: 72ch; }
+.afd .sub { font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+
+/* Fire danger */
+.fire { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+.fire > div { background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--k, var(--rule)); border-radius: 6px; padding: 14px 16px; }
+.fire h3 { margin: 0 0 6px; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
+.fire p { margin: 0 0 8px; font-size: 14px; }
+.fire p:last-child { margin-bottom: 0; }
+.fire .status { font: 700 16px/1.3 var(--display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--k, var(--ink)); }
+
+/* Power outages */
+.utils { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 14px; }
+.utils li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.utils b { display: block; font-weight: 600; font-size: 15px; }
+.utils a { margin-right: 10px; }
+.utils a.tel { font-family: var(--data); color: var(--ink); text-decoration: none; }
+
+/* Weather radio */
+.nwr-wrap { overflow-x: auto; }
+.nwr { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14px; }
+.nwr th, .nwr td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.nwr thead th { font: 600 12px/1.3 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); }
+.nwr tbody th { font-weight: 600; white-space: nowrap; }
+.nwr .same { font-family: var(--data); color: var(--radar); white-space: nowrap; }
+.nwr .tx { display: inline-block; margin: 0 14px 4px 0; white-space: nowrap; }
+.nwr .tx b { font-family: var(--data); }
+.nwr .tx small { color: var(--ink-dim); font-family: var(--data); }
+.nwr em { color: #ff8a5c; font-style: normal; }
+.nwr-tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 16px; }
+.nwr-tips div { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; font-size: 14px; }
+.nwr-tips b { display: block; font: 700 17px/1.2 var(--display); letter-spacing: 0.04em; margin-bottom: 4px; }
+
+/* Visitor counter */
+.visits { font: 600 13px/1 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; white-space: nowrap; }
+.visits b { color: var(--ink); font-weight: 600; }
+
+/* Rain timing */
+.rain-line { padding: 10px 0; border-bottom: 1px solid var(--rule); font: 600 15px/1.4 var(--body); }
+.rain-line::before { content: "Next 12 hours: "; color: var(--ink-dim); font-weight: 500; }
+
+/* Share */
+.share-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.share-row[hidden] { display: none; }
+.share-btn { all: unset; cursor: pointer; font: 700 14px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--radar); }
+.share-btn:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+
+/* Hurricane tracker */
+.hur-box { position: relative; height: 520px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #0d1b2e; }
+#hurmap { position: absolute; inset: 0; background: #0d1b2e; }
+.hur-key { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+.hur-key span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--k); }
+.hur-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-top: 14px; }
+.hur { background: var(--panel); border: 1px solid var(--rule); border-left: 5px solid var(--k, #ff4fa3); border-radius: 6px; padding: 12px 14px; }
+.hur h3 { margin: 0 0 4px; font: 800 22px/1.15 var(--display); letter-spacing: 0.03em; }
+.hur .ty { font: 600 12px/1.4 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--k, #ff4fa3); }
+.hur p { margin: 6px 0 0; font-size: 14px; }
+.hur-list > .news-empty { grid-column: 1 / -1; }
+@media (max-width: 600px) { .hur-box { height: 400px; } }
+
+/* Football */
+.fb { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.fbc { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; }
+.fbc h3 { margin: 0 0 6px; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
+.fbc .k { font: 800 32px/1 var(--display); }
+.fbc p { margin: 6px 0 0; font-size: 13px; color: var(--ink-dim); }
+
+/* Sky events */
+.sky-ev { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.skc { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
+.skc h3 { margin: 0 0 10px; font: 700 19px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--radar); }
+.skc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.skc li { font-size: 14px; }
+.skc li b { display: block; font-weight: 600; }
+.skc li small { color: var(--ink-dim); }
+@media (max-width: 900px) { .sky-ev { grid-template-columns: minmax(0, 1fr); } }
+
+/* Towns */
+.town-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 14px; }
+.town-links a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-weight: 600; }
+
+/* Live chat */
+.chat-box { border-top: 1px solid var(--rule); }
+.chat-head { padding: 10px 18px 6px; font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); }
+.chat-box iframe { display: block; width: 100%; height: 460px; border: 0; background: #fff; }
+
+/* SPC outlook */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 9px 14px; border: 1px solid var(--rule); border-radius: 4px; color: var(--ink-dim); background: var(--panel); }
+.tabs button[aria-selected="true"] { color: var(--night); background: var(--radar); border-color: var(--radar); }
+.tabs button:focus-visible { outline: 2px solid var(--radar); outline-offset: 2px; }
+.outlook-img { display: block; width: 100%; max-width: 900px; height: auto; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+.outlook-key { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+.outlook-key span::before { content: ""; display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--k); }
+
+/* County alerts map */
+.amap-box { position: relative; height: 520px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #0d1b2e; }
+#amap { position: absolute; inset: 0; background: #0d1b2e; }
+.amap-legend {
+  position: absolute; right: 12px; top: 12px; z-index: 500; display: flex; flex-direction: column; gap: 6px;
+  background: rgba(10,22,38,0.9); border: 1px solid var(--rule); border-radius: 4px; padding: 10px 12px; max-width: 60%;
+}
+.amap-legend .t { font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; }
+.amap-legend .row { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.amap-legend .sw { width: 14px; height: 14px; border-radius: 2px; flex: none; border: 1px solid rgba(255,255,255,0.5); }
+.county-label { font: 700 13px/1 var(--display); letter-spacing: 0.04em; color: #fff; text-shadow: 0 0 3px #000, 0 0 6px #000; text-align: center; white-space: nowrap; }
+@media (max-width: 600px) { .amap-box { height: 420px; } .county-label { font-size: 11px; } }
+
+/* Radar map */
+.radar-box { position: relative; height: 540px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #050c16; }
+#radar { position: absolute; inset: 0; }
+.radar-bar {
+  position: absolute; left: 12px; bottom: 12px; z-index: 500; display: flex; align-items: center; gap: 10px;
+  background: rgba(10,22,38,0.88); border: 1px solid var(--rule); border-radius: 4px; padding: 6px 10px;
+  font: 500 12px/1 var(--data); color: var(--ink);
+}
+.radar-bar button { all: unset; cursor: pointer; font: 700 15px/1 var(--display); letter-spacing: 0.08em; color: var(--radar); padding: 2px 4px; }
+.radar-bar button:focus-visible { outline: 2px solid var(--radar); }
+#radar-time { font-variant-numeric: tabular-nums; min-width: 7ch; }
+.leaflet-container { background: #050c16; font: 13px/1.4 var(--body); }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel); color: var(--ink); }
+.leaflet-popup-content b { font: 700 16px/1.2 var(--display); letter-spacing: 0.03em; }
+.leaflet-control-attribution { background: rgba(10,22,38,0.75) !important; color: var(--ink-dim) !important; }
+.leaflet-control-attribution a { color: var(--ink-dim) !important; }
+@media (max-width: 600px) { .radar-box { height: 400px; } }
+
+/* Traffic cameras */
+.cams { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.cam { min-width: 0; display: block; text-decoration: none; color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.cam:hover { border-color: var(--radar); }
+.cam .shot { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background: #050c16; }
+.cam img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cam .cap { padding: 10px 12px; }
+.cam .where { font: 700 17px/1.2 var(--display); letter-spacing: 0.04em; }
+.cam .road { font: 500 11px/1.4 var(--data); letter-spacing: 0.05em; color: var(--ink-dim); margin-top: 3px; }
+.cams-src { margin-top: 12px; font: 500 11px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; }
+
+/* 7-day forecast: one column per day, scrolls sideways on phones */
+.fc-wrap { overflow-x: auto; padding-bottom: 4px; }
+.fc { display: grid; grid-template-columns: repeat(7, minmax(132px, 1fr)); gap: 10px; min-width: min-content; }
+.day {
+  all: unset; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px 10px; text-align: center; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px;
+}
+.day:hover { border-color: var(--radar); }
+.day[aria-pressed="true"] { border-color: var(--radar); box-shadow: inset 0 0 0 1px var(--radar); }
+.day .dname { font: 700 18px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; }
+.day img { width: 64px; height: 64px; border-radius: 6px; }
+.day .temps { font: 700 26px/1 var(--display); font-variant-numeric: tabular-nums; }
+.day .temps small { font-size: 18px; color: var(--ink-dim); margin-left: 6px; }
+.day .short { font-size: 13px; line-height: 1.3; color: var(--ink-dim); min-height: 3.9em; }
+.day .pop { font: 500 11px/1 var(--data); letter-spacing: 0.06em; color: var(--radar); min-height: 11px; }
+.fc-detail { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px 32px; }
+.fc-detail div { min-width: 0; }
+.fc-detail h3 { font: 700 18px/1.2 var(--display); letter-spacing: 0.05em; color: var(--radar); margin: 0 0 4px; }
+.fc-detail p { margin: 0; color: var(--ink); max-width: 62ch; }
+.fc-src { margin-top: 14px; font: 500 11px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; }
+
+.news { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 32px; }
+.news li { min-width: 0; border-top: 1px solid var(--rule); }
+.news a { display: block; padding-block: 14px; text-decoration: none; color: var(--ink); }
+.news a:hover .headline { color: var(--radar); }
+.news .headline { font: 600 17px/1.35 var(--body); text-wrap: pretty; }
+.news .meta { font: 500 11px/1.4 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); margin-top: 6px; }
+.news .meta b { color: var(--radar); font-weight: 500; }
+.news-empty { color: var(--ink-dim); }
+
+footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-dim); display: flex; flex-direction: column; gap: 6px; }
+
+@media (max-width: 900px) {
+  .console { grid-template-columns: minmax(0, 1fr); }
+  #alerts { max-height: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .live-pill::before { animation: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <a class="brand" href="./">NORTH<b>BAMA</b>WX</a>
+    <div class="tag" style="margin-top:6px">Live weather intelligence · North Alabama &amp; Southern Tennessee</div>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+  <button type="button" class="install-btn" id="install-btn" hidden>Get the app</button>
+  <a class="back-link" href="safety.html">Storm safety</a>
+  <a class="back-link" href="glossary.html">Glossary</a>
+  <a class="back-link" href="archive.html">Storm archive</a>
+  <a class="back-link" href="more.html">More weather</a>
+  <a class="back-link" href="lite.html">Lite page</a>
+  <a class="back-link" href="alertas.html" lang="es">Español</a>
+  <span class="visits" id="visits" hidden><b id="visits-n"></b> visits</span>
+  <a class="live-pill" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA/live" target="_blank" rel="noopener">Live 24/7</a>
+  </div>
+</header>
+
+<nav class="secnav" aria-label="Sections">
+  <div class="navwrap"><ul id="nav-list">
+    <li><a href="./">&larr; Live radar &amp; alerts</a></li>
+    <li><a href="#climate">Climate</a></li>
+    <li><a href="#seasonal">Seasonal</a></li>
+    <li><a href="#sky-events">Sky events</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#weather-history">History</a></li>
+  </ul></div>
+</nav>
+
+<h1 style="font:800 clamp(34px,6vw,52px)/1.05 var(--display);margin:26px 0 0">More Weather</h1>
+
+<section class="band" aria-labelledby="clim-title" id="climate">
+  <h2 id="clim-title">Monthly Climate</h2>
+  <p class="lede">How Huntsville's temperatures and rainfall compare with normal, from the official weather station at Huntsville International Airport.</p>
+  <div class="climate" id="climate-cards"><p class="news-empty">Loading climate data…</p></div>
+  <div class="lsr-src">Data: NOAA Regional Climate Centers (ACIS). Normals are 1991–2020.</div>
+</section>
+
+<section class="band" aria-labelledby="season-title" id="seasonal">
+  <h2 id="season-title">Seasonal Outlook</h2>
+  <p class="lede">NOAA's outlook for whether temperatures and rainfall will be above or below normal. Look for where North Alabama and Southern Tennessee fall on each map.</p>
+  <div class="tabs" role="tablist" aria-label="Seasonal outlook period" id="season-tabs">
+    <button type="button" role="tab" aria-selected="true" data-p="30">Next 30 days</button>
+    <button type="button" role="tab" aria-selected="false" data-p="90">Next 3 months</button>
+  </div>
+  <div class="season-imgs">
+    <figure><a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/" target="_blank" rel="noopener" id="season-a1"><img id="season-temp" src="https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_temp.gif" alt="NOAA 30-day temperature outlook map" width="900" height="695" loading="lazy"></a><figcaption>Temperature</figcaption></figure>
+    <figure><a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/" target="_blank" rel="noopener" id="season-a2"><img id="season-prcp" src="https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_prcp.gif" alt="NOAA 30-day precipitation outlook map" width="900" height="695" loading="lazy"></a><figcaption>Rain and snow</figcaption></figure>
+  </div>
+  <div class="lsr-src">Outlooks: NOAA Climate Prediction Center.</div>
+</section>
+
+<section class="band" aria-labelledby="skyev-title" id="sky-events">
+  <h2 id="skyev-title">Sky Events</h2>
+  <p class="lede">What to look for in the night sky over North Alabama and Southern Tennessee. Clear skies needed!</p>
+  <div class="sky-ev">
+    <div class="skc"><h3>Space station passes</h3><ul id="iss-list"><li>Calculating passes…</li></ul></div>
+    <div class="skc"><h3>Full moons</h3><ul id="moon-list"><li>Loading…</li></ul></div>
+    <div class="skc"><h3>Meteor showers</h3><ul id="meteor-list"></ul></div>
+  </div>
+  <div class="lsr-src">Space station orbit: CelesTrak. Moon phases: U.S. Naval Observatory. Times are for Huntsville.</div>
+</section>
+
+<section class="band" aria-labelledby="photos-title" id="photos">
+  <h2 id="photos-title">Viewer Photos</h2>
+  <p class="lede">Storms, skies and weather from around North Alabama and Southern Tennessee, sent in by viewers.</p>
+  <div class="photos" id="photo-grid" hidden></div>
+  <div class="photo-cta">
+    <p><strong>Send us your weather photos!</strong> Message them to NorthBamaWX on Facebook with your first name and where and when you took them. Never go out in dangerous weather to get a picture.</p>
+    <a class="btn" href="https://m.me/NorthBamaWeather" target="_blank" rel="noopener">Send a photo on Facebook</a>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="hist-title" id="weather-history">
+  <h2 id="hist-title">This Day in Weather History</h2>
+  <p class="lede" id="hist-lede">Remembering the storms that shaped Alabama and the Tennessee Valley.</p>
+  <div class="history" id="history"></div>
+</section>
+
+<footer>
+  <span>NorthBamaWX is an independent weather stream and is not affiliated with the National Weather Service. Always follow official warnings and your local emergency officials.</span>
+  <span>Alert and observation data: National Weather Service (api.weather.gov).</span>
+</footer>
+</div>
+
+<script>
+async function rawData(name) {
+  for (const url of [`https://raw.githubusercontent.com/northbamawx/northbamawx.github.io/main/${name}`, name]) {
+    try { const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  return null;
+}
+function compass16(deg) { return ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'][Math.round(deg / 22.5) % 16]; }
+function whenNear(id, fn) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (!('IntersectionObserver' in window)) { fn(); return; }
+  const io = new IntersectionObserver((en, o) => { if (en.some(e => e.isIntersecting)) { o.disconnect(); fn(); } }, { rootMargin: '600px 0px' });
+  io.observe(el);
+}
+
+// ---- Monthly climate (ACIS, Huntsville International Airport) ----
+function iso(dt) { return dt.toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); }
+function num(v) { if (v === 'T') return 0; const n = parseFloat(v); return isNaN(n) ? null : n; }
+async function loadClimate() {
+  const now = new Date();
+  const lastStart = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+  let rows;
+  try {
+    const r = await fetch('https://data.rcc-acis.org/StnData', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sid: 'HSV', sdate: iso(lastStart), edate: iso(now),
+        elems: [{ name: 'maxt' }, { name: 'mint' }, { name: 'pcpn' }, { name: 'maxt', normal: '1' }, { name: 'mint', normal: '1' }, { name: 'pcpn', normal: '1' }] }) });
+    rows = (await r.json()).data;
+  } catch (e) { return; }
+  const box = document.getElementById('climate-cards');
+  box.textContent = '';
+  const months = [[lastStart.getMonth(), lastStart.toLocaleDateString('en-US', { month: 'long' })], [now.getMonth(), now.toLocaleDateString('en-US', { month: 'long' }) + ' so far']];
+  months.forEach(([m, title]) => {
+    const days = rows.filter(r => Number(r[0].slice(5, 7)) - 1 === m && num(r[1]) !== null && num(r[2]) !== null);
+    if (!days.length) return;
+    const avg = i => days.reduce((a, r) => a + num(r[i]), 0) / days.length;
+    const hi = avg(1), lo = avg(2), nhi = avg(4), nlo = avg(5);
+    const rain = rows.filter(r => Number(r[0].slice(5, 7)) - 1 === m && num(r[3]) !== null);
+    const tot = rain.reduce((a, r) => a + num(r[3]), 0), ntot = rain.reduce((a, r) => a + (num(r[6]) || 0), 0);
+    const hot = days.reduce((a, r) => (num(r[1]) > num(a[1]) ? r : a)), cold = days.reduce((a, r) => (num(r[2]) < num(a[2]) ? r : a));
+    const dshort = r => new Date(r[0] + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const dep = (v, n, unit, up, dn) => { const x = v - n; const c = x >= 0 ? up : dn;
+      return `<span class="${c}">${x >= 0 ? '+' : '−'}${Math.abs(x).toFixed(1)}${unit}</span> vs normal`; };
+    const card = document.createElement('div'); card.className = 'clim';
+    card.innerHTML = `<h3>${title}</h3><dl>
+      <dt>Avg high</dt><dd>${hi.toFixed(1)}° (${dep(hi, nhi, '°', 'up', 'dn')})</dd>
+      <dt>Avg low</dt><dd>${lo.toFixed(1)}° (${dep(lo, nlo, '°', 'up', 'dn')})</dd>
+      <dt>Rainfall</dt><dd>${tot.toFixed(2)} in (${dep(tot, ntot, ' in', 'wet', 'dry')})</dd>
+      <dt>Hottest</dt><dd>${num(hot[1])}° on ${dshort(hot)}</dd>
+      <dt>Coldest</dt><dd>${num(cold[2])}° on ${dshort(cold)}</dd></dl>`;
+    box.append(card);
+  });
+}
+loadClimate();
+setInterval(loadClimate, 3600000);
+
+// ---- Seasonal outlook tabs ----
+document.querySelectorAll('#season-tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#season-tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
+  const long = b.dataset.p === '90';
+  const base = long ? 'https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead01/off01_' : 'https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_';
+  const page = long ? 'https://www.cpc.ncep.noaa.gov/products/predictions/long_range/seasonal.php?lead=1' : 'https://www.cpc.ncep.noaa.gov/products/predictions/30day/';
+  const label = long ? '3-month' : '30-day';
+  const t = document.getElementById('season-temp'), pr = document.getElementById('season-prcp');
+  t.src = base + 'temp.gif'; t.alt = `NOAA ${label} temperature outlook map`;
+  pr.src = base + 'prcp.gif'; pr.alt = `NOAA ${label} precipitation outlook map`;
+  document.getElementById('season-a1').href = page; document.getElementById('season-a2').href = page;
+}));
+
+// ---- Viewer photos (photos.json; add entries and image files to publish) ----
+async function loadPhotos() {
+  const d = await rawData('photos.json');
+  const list = (d && d.photos) || [];
+  const grid = document.getElementById('photo-grid');
+  grid.textContent = '';
+  list.forEach(ph => {
+    const fig = document.createElement('figure'); fig.className = 'photo';
+    const a = document.createElement('a'); a.href = ph.file; a.target = '_blank'; a.rel = 'noopener';
+    const img = document.createElement('img'); img.src = ph.file; img.alt = ph.caption || 'Viewer weather photo'; img.loading = 'lazy';
+    a.append(img);
+    const cap = document.createElement('figcaption'); cap.textContent = ph.caption || '';
+    const sm = document.createElement('small'); sm.textContent = [ph.credit && 'Photo: ' + ph.credit, ph.place, ph.date].filter(Boolean).join(' · ');
+    cap.append(sm); fig.append(a, cap); grid.append(fig);
+  });
+  grid.hidden = !list.length;
+}
+loadPhotos();
+
+// ---- Sky events ----
+const SHOWERS = [['01-03', 'Quadrantids', 'up to 100 an hour, short peak'], ['04-22', 'Lyrids', 'about 15 an hour'], ['05-05', 'Eta Aquariids', 'about 10 an hour before dawn'],
+  ['08-12', 'Perseids', 'up to 60-100 an hour'], ['10-21', 'Orionids', 'about 20 an hour'], ['11-17', 'Leonids', 'about 15 an hour'], ['12-13', 'Geminids', 'up to 100+ an hour, the best of the year']];
+const MOON_NAMES = ['Wolf', 'Snow', 'Worm', 'Pink', 'Flower', 'Strawberry', 'Buck', 'Sturgeon', 'Harvest', 'Hunter\u2019s', 'Beaver', 'Cold'];
+function moonLit(d) {
+  const P = 29.530588853, ref = Date.UTC(2000, 0, 6, 18, 14), f = ((((d - ref) / 86400000) % P) + P) % P / P;
+  return Math.round((1 - Math.cos(2 * Math.PI * f)) / 2 * 100);
+}
+function skyLi(title, sub) { const l = document.createElement('li'); const b = document.createElement('b'); b.textContent = title; const s2 = document.createElement('small'); s2.textContent = sub; l.append(b, s2); return l; }
+function showMeteors() {
+  const now = new Date(), ul = document.getElementById('meteor-list');
+  ul.textContent = '';
+  const next = SHOWERS.map(([md, name, rate]) => {
+    const [m, d] = md.split('-').map(Number); let t = new Date(now.getFullYear(), m - 1, d, 23);
+    if (t < now - 86400000) t = new Date(now.getFullYear() + 1, m - 1, d, 23);
+    return [t, name, rate];
+  }).sort((a, b) => a[0] - b[0]).slice(0, 3);
+  next.forEach(([t, name, rate]) => {
+    const lit = moonLit(t);
+    ul.append(skyLi(`${name}: night of ${t.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`,
+      `${rate} under dark skies · Moon ${lit}% lit${lit > 60 ? ', which will wash out fainter meteors' : ''}`));
+  });
+}
+async function loadMoons() {
+  const ul = document.getElementById('moon-list');
+  try {
+    const d = await (await fetch(`https://aa.usno.navy.mil/api/moon/phases/date?date=${new Date().toLocaleDateString('en-CA')}&nump=12`)).json();
+    ul.textContent = '';
+    d.phasedata.filter(x => x.phase === 'Full Moon').slice(0, 3).forEach(x => {
+      const t = new Date(Date.UTC(x.year, x.month - 1, x.day, ...x.time.split(':').map(Number)));
+      const local = new Date(t.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+      ul.append(skyLi(`${MOON_NAMES[local.getMonth()]} Moon`, t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })));
+    });
+  } catch (e) { ul.innerHTML = '<li>Unavailable right now.</li>'; }
+}
+// Space station passes, computed in the browser from today's orbit (satellite.js).
+function sunEci(date) {
+  const n = (date - Date.UTC(2000, 0, 1, 12)) / 86400000, r = Math.PI / 180;
+  const L = (280.460 + 0.9856474 * n) % 360, g = (357.528 + 0.9856003 * n) % 360;
+  const lam = (L + 1.915 * Math.sin(g * r) + 0.020 * Math.sin(2 * g * r)) * r, eps = (23.439 - 0.0000004 * n) * r;
+  const AU = 149597870.7;
+  return { x: AU * Math.cos(lam), y: AU * Math.cos(eps) * Math.sin(lam), z: AU * Math.sin(eps) * Math.sin(lam) };
+}
+async function loadIss() {
+  const ul = document.getElementById('iss-list');
+  try {
+    if (!window.satellite) await new Promise((ok, bad) => { const sc = document.createElement('script'); sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js'; sc.onload = ok; sc.onerror = bad; document.head.append(sc); });
+    const tle = (await (await fetch('https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE')).text()).trim().split('\n').map(x => x.trim());
+    const sat = satellite, rec = sat.twoline2satrec(tle[1], tle[2]);
+    const obs = { latitude: sat.degreesToRadians(34.73), longitude: sat.degreesToRadians(-86.59), height: 0.2 };
+    const look = (eci, t) => sat.ecfToLookAngles(obs, sat.eciToEcf(eci, sat.gstime(t)));
+    const dirs = a => compass16((a * 180 / Math.PI + 360) % 360);
+    const passes = []; let cur = null;
+    const start = Date.now();
+    for (let ms = 0; ms < 4 * 86400000; ms += 20000) {
+      const t = new Date(start + ms), pv = sat.propagate(rec, t);
+      if (!pv.position) continue;
+      const la = look(pv.position, t), el = la.elevation * 180 / Math.PI;
+      if (el > 10) {
+        const s = sunEci(t), sunEl = look(s, t).elevation * 180 / Math.PI;
+        const smag = Math.hypot(s.x, s.y, s.z), dot = (pv.position.x * s.x + pv.position.y * s.y + pv.position.z * s.z) / smag;
+        const perp = Math.hypot(pv.position.x - dot * s.x / smag, pv.position.y - dot * s.y / smag, pv.position.z - dot * s.z / smag);
+        const lit = dot > 0 || perp > 6371, vis = lit && sunEl < -6;
+        if (!cur) cur = { pts: [] };
+        if (vis) cur.pts.push({ t, el, az: la.azimuth });
+      } else if (cur) { if (cur.pts.length) passes.push(cur); cur = null; }
+    }
+    ul.textContent = '';
+    const good = passes.map(p => ({ start: p.pts[0], end: p.pts[p.pts.length - 1], max: Math.max(...p.pts.map(x => x.el)) })).filter(p => p.max >= 20).slice(0, 4);
+    if (!good.length) { ul.append(skyLi('No good passes in the next few days', 'The station is only visible around dawn and dusk when it catches sunlight.')); return; }
+    good.forEach(p => ul.append(skyLi(p.start.t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }),
+      `Look ${dirs(p.start.az)}, rising to ${Math.round(p.max)}° high, gone to the ${dirs(p.end.az)} in about ${Math.max(1, Math.round((p.end.t - p.start.t) / 60000))} min`)));
+  } catch (e) { ul.innerHTML = '<li>Pass predictions unavailable right now.</li>'; }
+}
+// ---- This day in weather history ----
+const WX_HISTORY = [
+  ['01-21', 1985, 'Record Cold in Huntsville', 'Huntsville fell to 11 degrees below zero, one of the coldest readings ever recorded there.'],
+  ['03-01', 2007, 'Enterprise High School Tornado', 'An EF4 tornado struck Enterprise High School, killing eight students. It led to stronger school safety plans across Alabama.'],
+  ['03-13', 1993, 'Storm of the Century', 'The Superstorm of 1993 buried North Alabama in snow, with more than a foot of snow in places and travel shut down for days.'],
+  ['03-21', 1932, 'Deep South Tornado Outbreak', 'One of the deadliest outbreaks in Alabama history. Tornadoes killed more than 260 people across the state in a single night.'],
+  ['03-27', 1994, 'Palm Sunday Tornado Outbreak', 'Tornadoes struck across Alabama on Palm Sunday, killing more than 20 people, including 20 at a church in Piedmont.'],
+  ['04-03', 1974, 'Super Outbreak', 'One of the largest tornado outbreaks on record struck the Southeast. Alabama took a direct hit, including F5 tornadoes at Guin and Tanner.'],
+  ['04-08', 1998, 'Birmingham F5 Tornado', 'An F5 tornado tore through western Jefferson County, killing 32 people.'],
+  ['04-27', 2011, 'April 27 Tornado Outbreak', 'The deadliest tornado outbreak in Alabama history. Dozens of tornadoes, including EF5s at Hackleburg and Phil Campbell, killed more than 250 people statewide.'],
+  ['04-28', 2014, 'Limestone County Tornado', 'An EF3 tornado tore through western Limestone County near Athens, one of several tornadoes in North Alabama that night.'],
+  ['07-29', 1930, 'Record Heat in Huntsville', 'Huntsville reached 108 degrees, its all-time record high, during the great heat wave of 1930.'],
+  ['09-16', 2004, 'Hurricane Ivan', 'Hurricane Ivan made landfall near Gulf Shores. Its remnants brought heavy rain, wind damage and tornadoes into North Alabama.'],
+  ['11-15', 1989, 'Huntsville Tornado', 'An F4 tornado struck south Huntsville and Airport Road during rush hour, killing 21 people. It remains one of the deadliest tornadoes in North Alabama history.'],
+  ['12-16', 2000, 'Tuscaloosa Tornado', 'An F4 tornado struck Tuscaloosa just before Christmas, killing 11 people. December severe weather is a real threat in Alabama.'],
+  ['12-25', 2012, 'Christmas Day Tornadoes', 'A rare Christmas Day outbreak brought tornadoes to South Alabama, including an EF2 that struck Mobile.'],
+];
+function showHistory() {
+  const now = new Date(), year = now.getFullYear();
+  const md = d => String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  const today = md(now);
+  let pick = WX_HISTORY.find(e => e[0] === today), lede = 'On this day in Alabama weather history.';
+  if (!pick) {
+    // Otherwise the next anniversary coming up.
+    const dateOf = e => { const [m, d] = e[0].split('-').map(Number); let t = new Date(year, m - 1, d); if (t < now) t = new Date(year + 1, m - 1, d); return t; };
+    pick = WX_HISTORY.slice().sort((a, b) => dateOf(a) - dateOf(b))[0];
+    const days = Math.ceil((dateOf(pick) - now) / 86400000);
+    lede = `Coming up in ${days} day${days === 1 ? '' : 's'}: an anniversary from Alabama weather history.`;
+  }
+  const [mmdd, yr, title, text] = pick;
+  const [m, d] = mmdd.split('-').map(Number);
+  document.getElementById('hist-lede').textContent = lede;
+  const box = document.getElementById('history');
+  box.textContent = '';
+  const left = document.createElement('div');
+  const y = document.createElement('div'); y.className = 'yr'; y.textContent = yr;
+  const dt = document.createElement('div'); dt.className = 'dt';
+  dt.textContent = new Date(2000, m - 1, d).toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+  left.append(y, dt);
+  const right = document.createElement('div');
+  const h = document.createElement('h3'); h.textContent = title;
+  const p2 = document.createElement('p'); p2.textContent = text;
+  right.append(h, p2);
+  box.append(left, right);
+}
+showHistory();
+
+whenNear('sky-events', () => { showMeteors(); loadMoons(); loadIss(); });
+</script>
+</body>
+</html>

@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 /* Layout: same control-room look as the home page; a single reading column with a jump list. */
 :root {
@@ -76,6 +77,12 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 .day .cty { font-size: 14px; color: var(--ink-dim); margin: 0; }
 .day ul { margin: 8px 0 0; font-size: 14px; }
 .day li { margin-bottom: 2px; }
+#tor-map { height: 460px; border: 1px solid var(--rule); border-radius: 6px; background: #0d1b2e; margin: 6px 0 10px; }
+.tor-list { list-style: none; padding: 0; margin: 0 0 8px; display: grid; gap: 6px; }
+.tor-list li { background: var(--panel); border: 1px solid var(--rule); border-left: 5px solid var(--k); border-radius: 4px; padding: 8px 12px; font-size: 14px; max-width: none; }
+.tor-list b { color: var(--k); font-family: var(--display); font-size: 18px; letter-spacing: 0.03em; margin-right: 6px; }
+.ef-key { display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 12px/1.4 var(--data); color: var(--ink-dim); margin-bottom: 18px; }
+.ef-key span::before { content: ""; display: inline-block; width: 18px; height: 4px; margin-right: 6px; vertical-align: middle; background: var(--k); }
 </style>
 </head>
 <body>
@@ -89,6 +96,15 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 <h1>Storm Archive</h1>
 <p class="lede">Every day in the past year when the National Weather Service issued a tornado, severe thunderstorm or flash flood warning for our counties in North Alabama and Southern Tennessee.</p>
 <div class="stats" id="stats"></div>
+
+<h2 style="font:700 28px/1.1 var(--display);margin:24px 0 6px">Tornado Damage Tracks</h2>
+<p style="color:var(--ink-dim);margin:0 0 6px">Tornado paths surveyed by the National Weather Service in our area over the past year. Tap a track for details.</p>
+<div id="tor-map" role="region" aria-label="Tornado damage tracks map"></div>
+<div class="ef-key"><span style="--k:#7fd4ff">EFU / EF0</span><span style="--k:#4be38a">EF1</span><span style="--k:#ffe14b">EF2</span><span style="--k:#ff9f43">EF3</span><span style="--k:#ff4b4b">EF4</span><span style="--k:#ff4fff">EF5</span></div>
+<ul class="tor-list" id="tor-list"><li style="--k:var(--rule)">Loading surveyed tornadoes…</li></ul>
+<p class="src">Tracks: NWS Damage Assessment Toolkit (preliminary). Official totals are published later in NOAA Storm Data.</p>
+
+<h2 style="font:700 28px/1.1 var(--display);margin:28px 0 10px">Storm Days</h2>
 <div class="filters" role="group" aria-label="Show">
   <button type="button" aria-pressed="true" data-f="all">All storm days</button>
   <button type="button" aria-pressed="false" data-f="tor">Tornado warnings</button>
@@ -100,7 +116,45 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 <footer>NorthBamaWX is an independent weather stream and is not affiliated with the National Weather Service. Always follow official warnings and your local emergency officials.</footer>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
+// ---- Surveyed tornado tracks (NWS Damage Assessment Toolkit) ----
+const EF_COLORS = ['#7fd4ff', '#4be38a', '#ffe14b', '#ff9f43', '#ff4b4b', '#ff4fff'];
+async function loadTracks() {
+  const list = document.getElementById('tor-list');
+  const map = L.map('tor-map', { scrollWheelZoom: false, zoomSnap: 0.25 }).setView([34.75, -86.8], 8);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', { attribution: 'Esri | Tracks: NWS DAT' }).addTo(map);
+  try {
+    const since = new Date(Date.now() - 366 * 86400000).toISOString().slice(0, 10);
+    const q = new URLSearchParams({ where: `stormdate >= timestamp '${since} 00:00:00'`, geometry: '-88.3,34.0,-85.5,35.4', geometryType: 'esriGeometryEnvelope',
+      inSR: '4326', spatialRel: 'esriSpatialRelIntersects', outFields: 'stormdate,efscale,efnum,length,width,maxwind,injuries,fatalities,event_id', outSR: '4326', f: 'geojson' });
+    const d = await (await fetch('https://services.dat.noaa.gov/arcgis/rest/services/nws_damageassessmenttoolkit/DamageViewer/FeatureServer/1/query?' + q)).json();
+    const seen = new Set();
+    const feats = (d.features || []).filter(f => /^EF/i.test(f.properties.efscale || '')).filter(f => {
+      const k = f.properties.event_id + '|' + f.properties.length; if (seen.has(k)) return false; seen.add(k); return true; })
+      .sort((x, y) => y.properties.stormdate - x.properties.stormdate);
+    const col = p => EF_COLORS[Math.max(0, Math.min(5, /EFU/i.test(p.efscale) ? 0 : (p.efnum ?? 0)))];
+    const day = p => new Date(p.stormdate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+    const layer = L.geoJSON({ type: 'FeatureCollection', features: feats }, {
+      style: f => ({ color: col(f.properties), weight: 5, opacity: 0.95 }),
+      onEachFeature: (f, l) => { const p = f.properties; l.bindPopup(`<b>${p.event_id || 'Tornado'}</b><br>${p.efscale} · ${day(p)}<br>${(p.length || 0).toFixed(1)} miles long, ${Math.round(p.width || 0)} yards wide${p.maxwind ? '<br>Peak wind about ' + p.maxwind + ' mph' : ''}`); },
+    }).addTo(map);
+    if (feats.length) map.fitBounds(layer.getBounds().pad(0.2), { maxZoom: 10 });
+    list.textContent = '';
+    if (!feats.length) { const li = document.createElement('li'); li.style.setProperty('--k', 'var(--rule)'); li.textContent = 'No surveyed tornadoes in our area in the past year.'; list.append(li); }
+    feats.forEach(f => {
+      const p = f.properties, li = document.createElement('li'); li.style.setProperty('--k', col(p));
+      const b = document.createElement('b'); b.textContent = p.efscale;
+      li.append(b, `${p.event_id || 'Tornado'} · ${day(p)} · ${(p.length || 0).toFixed(1)} mi long, ${Math.round(p.width || 0)} yd wide` +
+        (p.maxwind ? `, ${p.maxwind} mph` : '') + (p.injuries ? `, ${p.injuries} injured` : '') + (p.fatalities ? `, ${p.fatalities} killed` : ''));
+      li.style.cursor = 'pointer';
+      li.addEventListener('click', () => { map.fitBounds(L.geoJSON(f).getBounds().pad(0.5)); document.getElementById('tor-map').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+      list.append(li);
+    });
+  } catch (e) { list.innerHTML = '<li style="--k:var(--rule)">Tornado tracks are unavailable right now.</li>'; }
+}
+loadTracks();
+
 let DAYS = [], VIDS = [];
 async function getJson(name) {
   for (const url of [`https://raw.githubusercontent.com/northbamawx/northbamawx.github.io/main/${name}`, name]) {
