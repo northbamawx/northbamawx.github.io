@@ -690,7 +690,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <span>Humidity <strong id="wx-rh">--</strong></span>
   <span>Updated <strong id="wx-time">--</strong></span>
 </div>
-<div class="rain-line" id="rain-line" hidden></div>
+<div class="rain-line" id="rain-line">Checking rain chances…</div>
 <div class="feel-tip" id="feel-tip" hidden></div>
 <div class="wx-strip sky-strip" id="sky">
   <span>Sunrise <strong id="sky-rise">--</strong></span>
@@ -1761,7 +1761,7 @@ async function loadHourly() {
     const allHrs = (await r.json()).properties.periods;
     const hrs = allHrs.slice(0, 48);
     const rl = document.getElementById('rain-line');
-    rl.textContent = window.rainTiming(allHrs); rl.hidden = !rl.textContent;
+    rl.textContent = window.rainTiming(allHrs) || 'Rain timing unavailable right now.';
     const W = 1100, H = 260, L = 44, R = 44, T = 24, B = 46;
     const iw = W - L - R, ih = H - T - B, n = hrs.length, step = iw / n;
     const temps = hrs.map(h => h.temperature);
