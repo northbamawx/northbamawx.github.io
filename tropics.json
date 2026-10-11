@@ -1,24 +1,4 @@
 {
- "updated": 1791708308,
- "storms": [
-  {
-   "id": "AL092026",
-   "name": "Isaias",
-   "label": "Potential Tropical Cyclone",
-   "wind_mph": 23,
-   "movement": "",
-   "headline": "",
-   "dist_to_al": 73,
-   "in_gulf": false,
-   "over_land": true,
-   "near": "Mobile, AL",
-   "near_mi": 348,
-   "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT4.shtml",
-   "graphics_url": "https://www.nhc.noaa.gov/graphics_at4.shtml",
-   "cone_url": "",
-   "winds": "",
-   "surge": "",
-   "damage": ""
-  }
- ]
+ "updated": 1791715259,
+ "storms": []
 }
