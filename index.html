@@ -92,6 +92,14 @@ header {
 .secnav a:hover { color: var(--ink); }
 .secnav a[aria-current="true"] { color: var(--radar); border-bottom-color: var(--radar); }
 .secnav a.hot { color: #ff4fa3; }
+.secnav .navwrap { position: relative; max-width: 1240px; margin: 0 auto; }
+.secnav .navarrow { all: unset; position: absolute; top: 0; bottom: 0; z-index: 2; width: 56px; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; color: var(--radar); font: 800 40px/1 var(--display); }
+.secnav .navarrow[hidden] { display: none; }
+.secnav .navarrow.l { left: 0; background: linear-gradient(90deg, rgba(10,22,38,1) 55%, rgba(10,22,38,0)); justify-content: flex-start; padding-left: 4px; }
+.secnav .navarrow.r { right: 0; background: linear-gradient(270deg, rgba(10,22,38,1) 55%, rgba(10,22,38,0)); justify-content: flex-end; padding-right: 4px; }
+.secnav .navarrow:hover { color: var(--ink); }
+.secnav .navarrow:focus-visible { outline: 2px solid var(--radar); outline-offset: -2px; }
 section.band, #live { scroll-margin-top: calc(var(--nav-top, 0px) + 54px); }
 .install-btn { all: unset; cursor: pointer; font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--radar); }
 .install-btn:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
@@ -600,7 +608,10 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 </header>
 
 <nav class="secnav" aria-label="Sections">
-  <ul>
+  <div class="navwrap">
+  <button type="button" class="navarrow l" id="nav-left" aria-label="Scroll menu left" hidden>&lsaquo;</button>
+  <button type="button" class="navarrow r" id="nav-right" aria-label="Scroll menu right" hidden>&rsaquo;</button>
+  <ul id="nav-list">
     <li><a href="#live">Live</a></li>
     <li><a href="#arrival" id="nav-arrival" class="hot" hidden>Arrival times</a></li>
     <li><a href="#tropics" id="nav-tropics" class="hot" hidden>Tropics</a></li>
@@ -637,6 +648,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="archive.html">Archive</a></li>
     <li><a href="alertas.html" lang="es">Español</a></li>
   </ul>
+  </div>
 </nav>
 
 <div class="install-tip" id="install-tip" hidden>
@@ -2541,6 +2553,18 @@ async function loadIss() {
       `Look ${dirs(p.start.az)}, rising to ${Math.round(p.max)}° high, gone to the ${dirs(p.end.az)} in about ${Math.max(1, Math.round((p.end.t - p.start.t) / 60000))} min`)));
   } catch (e) { ul.innerHTML = '<li>Pass predictions unavailable right now.</li>'; }
 }
+// ---- Section menu arrows: scroll the menu sideways when it doesn't fit ----
+(() => {
+  const ul = document.getElementById('nav-list'), l = document.getElementById('nav-left'), r = document.getElementById('nav-right');
+  const upd = () => { l.hidden = ul.scrollLeft < 4; r.hidden = ul.scrollLeft + ul.clientWidth >= ul.scrollWidth - 4; };
+  l.addEventListener('click', () => ul.scrollBy({ left: -ul.clientWidth * 0.7, behavior: 'smooth' }));
+  r.addEventListener('click', () => ul.scrollBy({ left: ul.clientWidth * 0.7, behavior: 'smooth' }));
+  ul.addEventListener('scroll', upd, { passive: true });
+  // Mouse wheel scrolls the menu sideways on computers.
+  ul.addEventListener('wheel', e => { if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) { ul.scrollLeft += e.deltaY; e.preventDefault(); } }, { passive: false });
+  window.addEventListener('resize', upd); upd(); setTimeout(upd, 1500);
+})();
+
 // ---- Left open 24/7: pick up site updates automatically ----
 // Reload when a new version of the page is published, and once a day at 3 AM so
 // date-based parts (history, meteor showers, seasonal sections) roll over.
