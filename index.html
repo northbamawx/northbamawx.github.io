@@ -116,6 +116,7 @@ section.band, #live { scroll-margin-top: calc(var(--nav-top, 0px) + 54px); }
 .wx-strip .temp { font: 700 28px/1 var(--display); color: var(--ink); letter-spacing: 0.02em; }
 
 /* Sun, moon and air quality strip */
+@media (max-width: 700px) { .sky-strip { min-height: 128px; align-content: flex-start; } .wx-strip#wx { min-height: 108px; align-content: flex-start; } }
 .sky-strip { padding-block: 10px; align-items: center; }
 .sky-strip .moon { display: inline-flex; align-items: center; gap: 8px; }
 .sky-strip svg { width: 18px; height: 18px; flex: none; }
@@ -624,14 +625,14 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div class="tag" style="margin-top:6px">Live weather intelligence · North Alabama &amp; Southern Tennessee</div>
   </div>
   <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-  <button type="button" class="install-btn" id="install-btn" hidden>Get the app</button>
+  <button type="button" class="install-btn" id="install-btn">Get the app</button>
   <a class="back-link" href="safety.html">Storm safety</a>
   <a class="back-link" href="glossary.html">Glossary</a>
   <a class="back-link" href="archive.html">Storm archive</a>
   <a class="back-link" href="more.html">More weather</a>
   <a class="back-link" href="lite.html">Lite page</a>
   <a class="back-link" href="alertas.html" lang="es">Español</a>
-  <span class="visits" id="visits" hidden><b id="visits-n"></b> visits</span>
+  <span class="visits" id="visits"><b id="visits-n">–</b> visits</span>
   <a class="live-pill" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA/live" target="_blank" rel="noopener">Live 24/7</a>
   </div>
 </header>
@@ -679,8 +680,9 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   </div>
 </nav>
 
-<div class="install-tip" id="install-tip" hidden>
+<div class="install-tip" id="install-tip" hidden><span id="install-how">
   <strong>Add NorthBamaWX to your home screen:</strong> tap the Share button <span aria-hidden="true">(&#x2191;)</span> at the bottom of Safari, then <strong>Add to Home Screen</strong>.
+</span>
 </div>
 <div class="wx-strip" id="wx" aria-live="polite">
   <span class="temp" id="wx-temp">--°</span>
@@ -2217,7 +2219,6 @@ async function loadVisits() {
     const [total, home] = await Promise.all([get('TOTAL'), get('%2F')]);
     const n = Math.max(total, home).toLocaleString();
     document.getElementById('visits-n').textContent = n;
-    document.getElementById('visits').hidden = false;
   } catch (e) {}
 }
 loadVisits();
@@ -2638,24 +2639,22 @@ setInterval(placeNav, 2000); window.addEventListener('resize', placeNav); placeN
 // ---- Install as an app ----
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 let installPrompt = null;
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault(); installPrompt = e;
-  document.getElementById('install-btn').hidden = false;
-});
+// The button is always shown (so the header never jumps); browsers without an
+// install prompt get written instructions instead.
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installPrompt = e; });
 document.getElementById('install-btn').addEventListener('click', async () => {
   if (installPrompt) {
     installPrompt.prompt();
     await installPrompt.userChoice.catch(() => {});
     installPrompt = null;
-    document.getElementById('install-btn').hidden = true;
   } else {
     document.getElementById('install-tip').hidden = false;
   }
 });
-// iPhone/iPad Safari has no install prompt; show the button with how-to instead.
 const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
 const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone;
-if (isIOS && !standalone) document.getElementById('install-btn').hidden = false;
+if (standalone) document.getElementById('install-btn').hidden = true;   // already installed
+if (!isIOS) document.getElementById('install-how').innerHTML = '<strong>Add NorthBamaWX to your home screen:</strong> open your browser menu (&#8942; or &#8943;) and choose <strong>Install app</strong> or <strong>Add to Home screen</strong>.';
 
 // ---- Rainfall totals (MRMS 24/48/72 h tiles from IEM) ----
 let rainMap = null, rainLayer = null;
