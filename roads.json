@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T15:10:21+00:00",
+ "updated": "2026-10-11T15:43:38+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-11T15:10:03.7830211Z"
+   "updated": "2026-10-11T15:42:25.755569Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 10",
+   "where": "US431 SB @ MP 325.33",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Madison",
-   "lat": 34.677188,
-   "lon": -86.74271999999999,
-   "start": "2026-10-11T14:51:41Z",
-   "end": "2026-10-11T15:51:41Z",
-   "updated": "2026-10-11T15:10:12.1097121Z"
+   "city": "Huntsville",
+   "lat": 34.65998,
+   "lon": -86.48364,
+   "start": "2026-10-11T15:36:40Z",
+   "end": "2026-10-11T16:36:40Z",
+   "updated": "2026-10-11T15:42:34.3349522Z"
   }
  ]
 }
