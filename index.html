@@ -107,6 +107,12 @@ section.band, #live { scroll-margin-top: calc(var(--nav-top, 0px) + 54px); }
 .wx-strip strong { color: var(--ink); font-weight: 500; }
 .wx-strip .temp { font: 700 28px/1 var(--display); color: var(--ink); letter-spacing: 0.02em; }
 
+/* Sun, moon and air quality strip */
+.sky-strip { padding-block: 10px; align-items: center; }
+.sky-strip .moon { display: inline-flex; align-items: center; gap: 8px; }
+.sky-strip svg { width: 18px; height: 18px; flex: none; }
+.aqi-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-left: 6px; vertical-align: middle; background: var(--rule); }
+
 /* Main monitor + alert board */
 .console {
   display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 24px; align-items: start;
@@ -280,6 +286,24 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .history p { margin: 0; max-width: 70ch; }
 @media (max-width: 600px) { .history { grid-template-columns: minmax(0, 1fr); } }
 
+/* Drought monitor */
+.drought-img { display: block; width: 100%; max-width: 900px; height: auto; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+
+/* Winter weather */
+.winter-sum { font: 700 22px/1.2 var(--display); letter-spacing: 0.02em; margin: 0 0 14px; text-wrap: balance; }
+.winter-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.wd { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 10px; text-align: center; }
+.wd .n { font: 700 14px/1.2 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); }
+.wd .lo { font: 700 30px/1 var(--display); margin: 8px 0 4px; }
+.wd .hi { font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+.wd .tag { display: inline-block; margin-top: 8px; padding: 3px 7px; border-radius: 3px; font: 700 11px/1.2 var(--data); letter-spacing: 0.04em; text-transform: uppercase; color: #0a1626; }
+.wd.cold { border-color: #7fb2ff; }
+.wd.snow { border-color: #ffffff; }
+.wd.ice { border-color: #ff7ad9; }
+.winter-tip { margin-top: 14px; padding: 12px 14px; background: var(--panel); border-left: 3px solid #7fb2ff; border-radius: 4px; font-size: 14px; }
+@media (max-width: 760px) { .winter-days { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .winter-days { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -402,8 +426,10 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#alerts-map">Alerts</a></li>
     <li><a href="#live-radar">Radar</a></li>
     <li><a href="#forecast">Forecast</a></li>
+    <li><a href="#winter" id="nav-winter" hidden>Winter</a></li>
     <li><a href="#river-levels">Rivers</a></li>
     <li><a href="#rainfall">Rain</a></li>
+    <li><a href="#drought">Drought</a></li>
     <li><a href="#cameras">Cameras</a></li>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#outlook">Outlook</a></li>
@@ -423,6 +449,13 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <span>Wind <strong id="wx-wind">--</strong></span>
   <span>Humidity <strong id="wx-rh">--</strong></span>
   <span>Updated <strong id="wx-time">--</strong></span>
+</div>
+<div class="wx-strip sky-strip" id="sky">
+  <span>Sunrise <strong id="sky-rise">--</strong></span>
+  <span>Sunset <strong id="sky-set">--</strong></span>
+  <span>Daylight <strong id="sky-day">--</strong></span>
+  <span class="moon"><svg id="moon-svg" viewBox="0 0 20 20" aria-hidden="true"></svg><span>Moon <strong id="sky-moon">--</strong></span></span>
+  <span>Air quality <strong id="sky-aqi">--</strong><i class="aqi-dot" id="aqi-dot"></i></span>
 </div>
 
 <div class="console" id="live">
@@ -536,6 +569,18 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <div class="rain-key"><span>Inches of rain</span><img src="https://mesonet.agron.iastate.edu/images/mrms_q3_p24h.png" alt="Color key: 0.01 to 15 inches" width="256" height="30"><span>Source: NOAA MRMS via Iowa Environmental Mesonet</span></div>
 </section>
 
+<section class="band" aria-labelledby="drought-title" id="drought">
+  <h2 id="drought-title">Drought Monitor</h2>
+  <p class="lede">How dry it is across Alabama and Tennessee, from the U.S. Drought Monitor. Updated every Thursday morning.</p>
+  <div class="tabs" role="tablist" aria-label="Drought state" id="drought-tabs">
+    <button type="button" role="tab" aria-selected="true" data-st="al">Alabama</button>
+    <button type="button" role="tab" aria-selected="false" data-st="tn">Tennessee</button>
+  </div>
+  <a id="drought-link" href="https://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?AL" target="_blank" rel="noopener">
+    <img class="drought-img" id="drought-img" src="https://droughtmonitor.unl.edu/data/png/current/current_al_trd.png" alt="U.S. Drought Monitor map for Alabama" width="1056" height="816" loading="lazy">
+  </a>
+</section>
+
 <section class="band" aria-labelledby="radar-title" id="live-radar">
   <h2 id="radar-title">Live Radar</h2>
   <p class="lede">The last hour of radar, with active warnings outlined. Drag and zoom to look around. Tap a warning for details.</p>
@@ -566,6 +611,15 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div id="hourly" role="img" aria-label="Hourly temperature and chance of rain for the next 48 hours"></div>
     <div class="hourly-key"><span style="--k:#ffb454">Temperature °F</span><span style="--k:#33d6ff">Chance of rain</span></div>
   </div>
+</section>
+
+<section class="band" aria-labelledby="winter-title" id="winter" hidden>
+  <h2 id="winter-title">Winter Weather</h2>
+  <p class="lede">Freeze, snow and ice outlook for Huntsville and the Tennessee Valley over the next week.</p>
+  <p class="winter-sum" id="winter-sum"></p>
+  <div class="winter-days" id="winter-days"></div>
+  <div class="winter-tip" id="winter-tip" hidden></div>
+  <div class="fc-src">Forecast: National Weather Service, Huntsville</div>
 </section>
 
 <section class="band" aria-labelledby="spc-title" id="outlook">
@@ -1317,6 +1371,138 @@ async function loadNow() {
 }
 loadNow();
 setInterval(loadNow, 600000);
+
+// ---- Sun, moon and air quality ----
+const HSV = 'latitude=34.73&longitude=-86.59';
+function clock(iso) {
+  const [h, m] = iso.slice(11, 16).split(':').map(Number);
+  return ((h + 11) % 12 + 1) + ':' + String(m).padStart(2, '0') + (h < 12 ? ' AM' : ' PM');
+}
+function mins(iso) { return Number(iso.slice(11, 13)) * 60 + Number(iso.slice(14, 16)); }
+function drawMoon(f) {
+  // f = fraction of the lunar cycle (0 new, 0.5 full). Lit side on the right while waxing.
+  const r = 9, c = 10, k = Math.cos(2 * Math.PI * f), waxing = f < 0.5;
+  const outer = waxing ? 1 : 0;
+  const inner = waxing ? (k > 0 ? 0 : 1) : (k > 0 ? 1 : 0);
+  document.getElementById('moon-svg').innerHTML =
+    `<circle cx="${c}" cy="${c}" r="${r}" fill="#24364f"/>` +
+    `<path fill="#e8f0fa" d="M${c} ${c - r} A${r} ${r} 0 0 ${outer} ${c} ${c + r} A${Math.abs(k) * r} ${r} 0 0 ${inner} ${c} ${c - r}Z"/>`;
+}
+function moonPhase() {
+  const P = 29.530588853, ref = Date.UTC(2000, 0, 6, 18, 14);
+  const age = (((Date.now() - ref) / 86400000) % P + P) % P, f = age / P;
+  const names = ['New moon', 'Waxing crescent', 'First quarter', 'Waxing gibbous', 'Full moon', 'Waning gibbous', 'Last quarter', 'Waning crescent'];
+  const name = names[Math.floor(f * 8 + 0.5) % 8];
+  const lit = Math.round((1 - Math.cos(2 * Math.PI * f)) / 2 * 100);
+  document.getElementById('sky-moon').textContent = `${name}, ${lit}% lit`;
+  drawMoon(f);
+}
+const AQI_LEVELS = [[50, 'Good', '#00e400'], [100, 'Moderate', '#ffff00'], [150, 'Unhealthy for sensitive groups', '#ff7e00'],
+  [200, 'Unhealthy', '#ff0000'], [300, 'Very unhealthy', '#8f3f97'], [Infinity, 'Hazardous', '#7e0023']];
+async function loadSky() {
+  moonPhase();
+  try {
+    const d = (await (await fetch(`https://api.open-meteo.com/v1/forecast?${HSV}&daily=sunrise,sunset&forecast_days=2&timezone=America%2FChicago`)).json()).daily;
+    document.getElementById('sky-rise').textContent = clock(d.sunrise[0]);
+    document.getElementById('sky-set').textContent = clock(d.sunset[0]);
+    const len = mins(d.sunset[0]) - mins(d.sunrise[0]), next = mins(d.sunset[1]) - mins(d.sunrise[1]);
+    const diff = next - len;
+    document.getElementById('sky-day').textContent = `${Math.floor(len / 60)}h ${len % 60}m` +
+      (diff ? ` (${Math.abs(diff)} min ${diff < 0 ? 'shorter' : 'longer'} tomorrow)` : '');
+  } catch (e) {}
+  try {
+    const aqi = Math.round((await (await fetch(`https://air-quality-api.open-meteo.com/v1/air-quality?${HSV}&current=us_aqi`)).json()).current.us_aqi);
+    const [, label, color] = AQI_LEVELS.find(l => aqi <= l[0]);
+    document.getElementById('sky-aqi').textContent = `${aqi} ${label}`;
+    document.getElementById('aqi-dot').style.background = color;
+  } catch (e) {}
+}
+loadSky();
+setInterval(loadSky, 1800000);
+
+// ---- Drought monitor ----
+document.querySelectorAll('#drought-tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#drought-tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
+  const st = b.dataset.st, name = st === 'al' ? 'Alabama' : 'Tennessee';
+  const img = document.getElementById('drought-img');
+  img.src = `https://droughtmonitor.unl.edu/data/png/current/current_${st}_trd.png`;
+  img.alt = `U.S. Drought Monitor map for ${name}`;
+  document.getElementById('drought-link').href = `https://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?${st.toUpperCase()}`;
+}));
+
+// ---- Winter weather: shown November to March, or anytime a freeze, snow or ice is forecast ----
+const ICE_RE = /freezing rain|freezing drizzle|sleet|ice/i, SNOW_RE = /snow|flurr/i;
+async function snowTotals() {
+  // Snowfall per local day (inches) from the NWS gridpoint data.
+  const out = {};
+  try {
+    const g = await (await fetch('https://api.weather.gov/gridpoints/HUN/63,43')).json();
+    (g.properties.snowfallAmount.values || []).forEach(v => {
+      const day = new Date(v.validTime.split('/')[0]).toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
+      out[day] = (out[day] || 0) + (v.value || 0) / 25.4;
+    });
+  } catch (e) {}
+  return out;
+}
+async function loadWinter() {
+  let periods;
+  try { periods = (await (await fetch(FORECAST_URL)).json()).properties.periods; } catch (e) { return; }
+  // Pair each day with the night after it.
+  const days = [];
+  periods.forEach(pd => {
+    if (pd.name === 'Overnight') return;   // the rest of last night
+    const date = pd.startTime.slice(0, 10), last = days[days.length - 1];
+    if (pd.isDaytime) days.push({ date, name: /^(Today|This Afternoon)$/.test(pd.name) ? 'Today' : pd.name, day: pd });
+    else if (last && last.day && !last.night && last.date === date) last.night = pd;
+    else days.push({ date, name: pd.name.replace(/ Night$/, ''), night: pd });
+  });
+  const anyWinter = periods.some(pd => (!pd.isDaytime && pd.temperature <= 32) || ICE_RE.test(pd.shortForecast) || SNOW_RE.test(pd.shortForecast));
+  const month = new Date().getMonth() + 1;
+  const show = anyWinter || month >= 11 || month <= 3 || /[?&]winter=1/.test(location.search);
+  document.getElementById('winter').hidden = !show;
+  document.getElementById('nav-winter').hidden = !show;
+  if (!show) return;
+  const snow = periods.some(pd => SNOW_RE.test(pd.shortForecast)) ? await snowTotals() : {};
+  const box = document.getElementById('winter-days');
+  box.textContent = '';
+  let first = null, coldest = null;
+  days.slice(0, 7).forEach(d => {
+    const text = [d.day, d.night].filter(Boolean).map(x => x.shortForecast).join(' ');
+    const lo = d.night ? d.night.temperature : null;
+    const inches = snow[d.date] || 0;
+    let tag = null, cls = '', color = '';
+    if (ICE_RE.test(text)) { tag = 'Ice possible'; cls = 'ice'; color = '#ff7ad9'; }
+    else if (SNOW_RE.test(text)) { tag = inches >= 0.1 ? `Snow ${inches.toFixed(1)}"` : 'Snow possible'; cls = 'snow'; color = '#ffffff'; }
+    else if (lo !== null && lo <= 28) { tag = 'Hard freeze'; cls = 'cold'; color = '#7fb2ff'; }
+    else if (lo !== null && lo <= 32) { tag = 'Freeze'; cls = 'cold'; color = '#b9d4ff'; }
+    if (tag && !first) first = { d, tag, lo, inches, cls };
+    if (lo !== null && (!coldest || lo < coldest.lo)) coldest = { d, lo };
+    const card = document.createElement('div');
+    card.className = 'wd ' + cls;
+    const n = document.createElement('div'); n.className = 'n'; n.textContent = d.name;
+    const l = document.createElement('div'); l.className = 'lo'; l.textContent = lo !== null ? lo + '°' : '--';
+    const h = document.createElement('div'); h.className = 'hi'; h.textContent = d.day ? `Low · High ${d.day.temperature}°` : 'Low';
+    card.append(n, l, h);
+    if (tag) { const t = document.createElement('span'); t.className = 'tag'; t.style.background = color; t.textContent = tag; card.append(t); }
+    box.append(card);
+  });
+  const sum = document.getElementById('winter-sum'), tip = document.getElementById('winter-tip');
+  if (!first) {
+    sum.textContent = coldest ? `No freeze, snow or ice in the next week. Coldest night: ${coldest.d.name}, ${coldest.lo}°.` : 'No freeze, snow or ice in the next week.';
+    tip.hidden = true;
+  } else {
+    const when = first.d.name === 'Today' || first.d.name === 'Tonight' ? first.d.name.toLowerCase() : first.d.name;
+    if (first.cls === 'ice') sum.textContent = `Ice is possible ${when}. Bridges and overpasses freeze first.`;
+    else if (first.cls === 'snow') sum.textContent = first.inches >= 0.1 ? `Snow is possible ${when}, around ${first.inches.toFixed(1)} inches.` : `Snow is possible ${when}.`;
+    else sum.textContent = `${first.tag} possible ${/^(today|tonight)$/.test(when) ? 'tonight' : when + ' night'}, with a low of ${first.lo}°.`;
+    tip.hidden = false;
+    tip.textContent = first.cls === 'cold'
+      ? 'Before a freeze: bring pets inside, cover or bring in tender plants, and let faucets drip on nights in the 20s so pipes don’t burst.'
+      : 'Winter travel: slow down, leave extra room to stop, and stay off the roads if you can. Keep a blanket, water and a phone charger in your car.';
+  }
+}
+loadWinter();
+setInterval(loadWinter, 1800000);
 
 // ---- Section menu: sit below the storm banner and highlight the current section ----
 function placeNav() {
