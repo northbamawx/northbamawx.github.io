@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scottsboro, AL Weather: Radar, Alerts &amp; Forecast | NorthBamaWX</title>
+<meta name="description" content="Live radar, weather alerts, current conditions and the 7-day forecast for Scottsboro, Alabama, from the NorthBamaWX 24/7 weather stream.">
+<link rel="canonical" href="https://northbamawx.github.io/towns/scottsboro-al.html">
+<meta property="og:title" content="Scottsboro, AL Weather | NorthBamaWX">
+<meta property="og:description" content="Live radar, weather alerts, current conditions and the 7-day forecast for Scottsboro, Alabama, from the NorthBamaWX 24/7 weather stream.">
+<meta name="theme-color" content="#0a1626">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<script data-goatcounter="https://northbamawx.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a1626'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%2333d6ff' stroke-width='4'/%3E%3Cpath d='M32 32 L46 18' stroke='%2333d6ff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Layout: same control-room look as the home page; a single reading column with a jump list. */
+:root {
+  --night: #0a1626; --panel: #10223a; --rule: #1f3a5c; --ink: #e8f0fa; --ink-dim: #93a8c2; --radar: #33d6ff;
+  --tor: #ff2b2b; --svr: #ffa500; --ffw: #22e05a;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --data: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+[hidden] { display: none !important; }
+body { background: var(--night); color: var(--ink); font: 16px/1.6 var(--body); padding-inline: 16px; -webkit-font-smoothing: antialiased; }
+a { color: var(--radar); }
+a:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+.wrap { max-width: 920px; margin: 0 auto; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 20px 18px; border-bottom: 1px solid var(--rule); }
+.brand { font: 800 30px/1 var(--display); letter-spacing: 0.06em; text-decoration: none; color: var(--ink); }
+.brand b { color: var(--radar); font-weight: 800; }
+.back { font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); letter-spacing: 0.01em; margin: 30px 0 10px; text-wrap: balance; }
+.lede { color: var(--ink-dim); margin: 0 0 22px; max-width: 62ch; font-size: 17px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 8px; list-style: none; }
+.jump a { display: inline-block; font: 700 15px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  color: var(--ink); padding: 9px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--panel); }
+section { padding-block: 30px; border-top: 1px solid var(--rule); scroll-margin-top: 12px; }
+section:first-of-type { border-top: 0; }
+h2 { font: 700 30px/1.1 var(--display); letter-spacing: 0.04em; margin: 0 0 12px; display: flex; align-items: center; gap: 12px; }
+h2 .chip { width: 14px; height: 14px; border-radius: 3px; background: var(--c); flex: none; }
+h3 { font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; margin: 22px 0 8px; color: var(--radar); }
+p { margin: 0 0 12px; max-width: 68ch; }
+ul, ol { margin: 0 0 12px; padding-left: 22px; max-width: 68ch; }
+li { margin-bottom: 6px; }
+.callout { border-left: 6px solid var(--c, var(--radar)); background: var(--panel); border-radius: 4px; padding: 14px 16px; margin: 14px 0; }
+.callout strong { display: block; font: 800 22px/1.15 var(--display); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; color: var(--c, var(--radar)); }
+.callout p { margin: 0; }
+.ww { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 10px 0 4px; }
+.ww div { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; min-width: 0; }
+.ww b { display: block; font: 800 22px/1 var(--display); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+.ww p { margin: 0; font-size: 15px; color: var(--ink-dim); }
+.kit { columns: 2 240px; column-gap: 32px; }
+.kit li { break-inside: avoid; }
+.src { font: 500 12px/1.5 var(--data); color: var(--ink-dim); letter-spacing: 0.03em; }
+footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-dim); }
+
+.alerts .ok { color: #4be38a; font-weight: 600; }
+.alert { background: var(--panel); border: 1px solid var(--rule); border-left: 6px solid var(--k); border-radius: 6px; padding: 10px 14px; margin-bottom: 8px; }
+.alert summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.alert summary b { font: 800 20px/1.2 var(--display); letter-spacing: 0.03em; text-transform: uppercase; color: var(--k); }
+.alert summary small { font: 500 12px var(--data); color: var(--ink-dim); }
+.alert p { font-size: 14px; margin: 8px 0 0; }
+.now { display: flex; flex-wrap: wrap; gap: 8px 26px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--rule); font: 500 13px/1.4 var(--data); color: var(--ink-dim); }
+.now strong { color: var(--ink); font-weight: 500; }
+.now .temp { font: 800 44px/1 var(--display); color: var(--ink); }
+.rain { font: 600 17px/1.4 var(--body); margin: 14px 0 0; }
+.fc7 { display: grid; grid-auto-flow: column; grid-auto-columns: 128px; gap: 8px; overflow-x: auto; padding-bottom: 6px; }
+.fcd { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 10px; text-align: center; font-size: 13px; }
+.fcd.night { background: #0d1b2e; }
+.fcd .n { font: 700 14px/1.2 var(--display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); min-height: 34px; }
+.fcd img { border-radius: 6px; margin: 6px 0; }
+.fcd .t { font: 800 26px/1 var(--display); }
+.fcd .s { margin-top: 4px; color: var(--ink-dim); }
+.fcd .pop { margin-top: 4px; color: var(--radar); font: 600 12px var(--data); }
+#t-radar { height: 400px; border: 1px solid var(--rule); border-radius: 6px; background: #0d1b2e; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.btn { display: inline-block; padding: 10px 14px; border: 1px solid var(--radar); border-radius: 4px; font: 700 15px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--radar); background: none; cursor: pointer; }
+.btn.primary { background: var(--radar); color: #0a1626; }
+.towns { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 0; list-style: none; }
+</style>
+</head>
+<body data-name="Scottsboro" data-lat="34.6723" data-lon="-86.0341">
+<div class="wrap">
+
+<header>
+  <a class="brand" href="../">NORTH<b>BAMA</b>WX</a>
+  <a class="back" href="../">&larr; Live radar &amp; alerts</a>
+</header>
+
+<h1>Scottsboro, AL Weather</h1>
+<p class="lede">Live alerts, current conditions, radar and the 7-day forecast for Scottsboro, Alabama. Severe weather? Watch our 24/7 live coverage.</p>
+<div class="btns">
+  <a class="btn primary" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA/live" target="_blank" rel="noopener">Watch live</a>
+  <button type="button" class="btn" id="t-share">Share</button>
+</div>
+<div class="btns" id="t-share-links" hidden>
+  <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u=https://northbamawx.github.io/towns/scottsboro-al.html" target="_blank" rel="noopener">Facebook</a>
+  <a class="btn" href="https://twitter.com/intent/tweet?url=https://northbamawx.github.io/towns/scottsboro-al.html&amp;text=Scottsboro%20weather%3A%20live%20radar%20and%20alerts" target="_blank" rel="noopener">X</a>
+  <a class="btn" href="sms:?&amp;body=Scottsboro%20weather%3A%20https://northbamawx.github.io/towns/scottsboro-al.html">Text</a>
+</div>
+
+<section>
+  <h2>Alerts for Scottsboro</h2>
+  <div class="alerts" id="t-alerts"><p>Checking for alerts…</p></div>
+</section>
+
+<section>
+  <h2>Right now</h2>
+  <div class="now">
+    <span class="temp" id="t-temp">--°</span>
+    <span><strong id="t-desc">Loading…</strong></span>
+    <span>Feels like <strong id="t-feel">--</strong></span>
+    <span>Wind <strong id="t-wind">--</strong></span>
+    <span>Humidity <strong id="t-rh">--</strong></span>
+    <span>Station <strong id="t-station">--</strong></span>
+  </div>
+  <p class="rain" id="t-rain"></p>
+</section>
+
+<section>
+  <h2>7-Day Forecast</h2>
+  <div class="fc7" id="t-fc"><p>Loading forecast…</p></div>
+  <p class="src">Forecast: National Weather Service. Hover or long-press a day for details.</p>
+</section>
+
+<section>
+  <h2>Radar</h2>
+  <div id="t-radar" role="region" aria-label="Radar map for Scottsboro"></div>
+</section>
+
+<section>
+  <h2>More towns</h2>
+  <ul class="towns"><li><a href="huntsville-al.html">Huntsville</a></li><li><a href="madison-al.html">Madison</a></li><li><a href="decatur-al.html">Decatur</a></li><li><a href="athens-al.html">Athens</a></li><li><a href="hartselle-al.html">Hartselle</a></li><li><a href="florence-al.html">Florence</a></li><li><a href="muscle-shoals-al.html">Muscle Shoals</a></li><li><a href="russellville-al.html">Russellville</a></li><li><a href="moulton-al.html">Moulton</a></li><li><a href="cullman-al.html">Cullman</a></li><li><a href="guntersville-al.html">Guntersville</a></li><li><a href="albertville-al.html">Albertville</a></li><li><a href="arab-al.html">Arab</a></li><li><a href="fort-payne-al.html">Fort Payne</a></li><li><a href="fayetteville-tn.html">Fayetteville, TN</a></li><li><a href="pulaski-tn.html">Pulaski, TN</a></li><li><a href="winchester-tn.html">Winchester, TN</a></li><li><a href="lynchburg-tn.html">Lynchburg, TN</a></li></ul>
+  <p><a href="../">See the full NorthBamaWX page with lightning, rivers, cameras and more &rarr;</a></p>
+</section>
+
+<footer>NorthBamaWX is an independent weather stream and is not affiliated with the National Weather Service. Always follow official warnings and your local emergency officials.</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="../town.js"></script>
+</body>
+</html>

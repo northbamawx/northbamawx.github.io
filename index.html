@@ -436,6 +436,50 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .visits { font: 600 13px/1 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; white-space: nowrap; }
 .visits b { color: var(--ink); font-weight: 600; }
 
+/* Rain timing */
+.rain-line { padding: 10px 0; border-bottom: 1px solid var(--rule); font: 600 15px/1.4 var(--body); }
+.rain-line::before { content: "Next 12 hours: "; color: var(--ink-dim); font-weight: 500; }
+
+/* Share */
+.share-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.share-row[hidden] { display: none; }
+.share-btn { all: unset; cursor: pointer; font: 700 14px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--radar); }
+.share-btn:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+
+/* Hurricane tracker */
+.hur-box { position: relative; height: 520px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #0d1b2e; }
+#hurmap { position: absolute; inset: 0; background: #0d1b2e; }
+.hur-key { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+.hur-key span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--k); }
+.hur-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-top: 14px; }
+.hur { background: var(--panel); border: 1px solid var(--rule); border-left: 5px solid var(--k, #ff4fa3); border-radius: 6px; padding: 12px 14px; }
+.hur h3 { margin: 0 0 4px; font: 800 22px/1.15 var(--display); letter-spacing: 0.03em; }
+.hur .ty { font: 600 12px/1.4 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--k, #ff4fa3); }
+.hur p { margin: 6px 0 0; font-size: 14px; }
+.hur-list > .news-empty { grid-column: 1 / -1; }
+@media (max-width: 600px) { .hur-box { height: 400px; } }
+
+/* Football */
+.fb { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.fbc { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; }
+.fbc h3 { margin: 0 0 6px; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
+.fbc .k { font: 800 32px/1 var(--display); }
+.fbc p { margin: 6px 0 0; font-size: 13px; color: var(--ink-dim); }
+
+/* Sky events */
+.sky-ev { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.skc { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
+.skc h3 { margin: 0 0 10px; font: 700 19px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--radar); }
+.skc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.skc li { font-size: 14px; }
+.skc li b { display: block; font-weight: 600; }
+.skc li small { color: var(--ink-dim); }
+@media (max-width: 900px) { .sky-ev { grid-template-columns: minmax(0, 1fr); } }
+
+/* Towns */
+.town-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 14px; }
+.town-links a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-weight: 600; }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -560,11 +604,14 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#live">Live</a></li>
     <li><a href="#arrival" id="nav-arrival" class="hot" hidden>Arrival times</a></li>
     <li><a href="#tropics" id="nav-tropics" class="hot" hidden>Tropics</a></li>
+    <li><a href="#hurricanes">Hurricanes</a></li>
     <li><a href="#alerts-map">Alerts</a></li>
     <li><a href="#live-radar">Radar</a></li>
     <li><a href="#lightning">Lightning</a></li>
     <li><a href="#forecast">Forecast</a></li>
     <li><a href="#forecaster-notes">Forecaster notes</a></li>
+    <li><a href="#football" id="nav-football" hidden>Football</a></li>
+    <li><a href="#towns">Towns</a></li>
     <li><a href="#winter" id="nav-winter" hidden>Winter</a></li>
     <li><a href="#river-levels">Rivers</a></li>
     <li><a href="#lakes">Lakes</a></li>
@@ -579,6 +626,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#climate">Climate</a></li>
     <li><a href="#seasonal">Seasonal</a></li>
     <li><a href="#photos">Photos</a></li>
+    <li><a href="#sky-events">Sky events</a></li>
     <li><a href="#videos">Videos</a></li>
     <li><a href="#weather-news">News</a></li>
     <li><a href="#phone-alerts">Phone alerts</a></li>
@@ -602,6 +650,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <span>Humidity <strong id="wx-rh">--</strong></span>
   <span>Updated <strong id="wx-time">--</strong></span>
 </div>
+<div class="rain-line" id="rain-line" hidden></div>
 <div class="feel-tip" id="feel-tip" hidden></div>
 <div class="wx-strip sky-strip" id="sky">
   <span>Sunrise <strong id="sky-rise">--</strong></span>
@@ -629,6 +678,13 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div class="cta">
       <a class="btn primary" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
       <a class="btn" href="https://www.facebook.com/NorthBamaWeather/" target="_blank" rel="noopener">Follow on Facebook</a>
+      <button type="button" class="btn" data-share="site">Share</button>
+    </div>
+    <div class="share-row" id="share-links" hidden>
+      <a class="btn" id="sh-fb" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn" id="sh-x" target="_blank" rel="noopener">X</a>
+      <a class="btn" id="sh-sms">Text message</a>
+      <button type="button" class="btn" id="sh-copy">Copy link</button>
     </div>
   </div>
 
@@ -640,6 +696,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <ul id="alerts"></ul>
     <div class="locate">
       <button type="button" id="locate-btn">Am I in a warning?</button>
+      <p style="margin:10px 0 0;text-align:center"><button type="button" class="share-btn" data-share="alerts">Share these alerts</button></p>
       <div class="locate-out" id="locate-out" aria-live="polite"></div>
     </div>
     <div class="board-foot">From the National Weather Service for our 15 counties. Updates every 2 minutes. Tap an alert for details.</div>
@@ -656,6 +713,19 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <h2 id="trop-title">Tropics</h2>
   <p class="lede">A tropical system is close enough to affect our area. Updated from the National Hurricane Center and nearby weather stations.</p>
   <div id="trop-list"></div>
+</section>
+
+<section class="band" aria-labelledby="hur-title" id="hurricanes">
+  <h2 id="hur-title">Hurricane Tracker</h2>
+  <p class="lede" id="hur-lede">Active storms, forecast cones and areas the National Hurricane Center is watching in the Atlantic and Gulf. Tap a storm or area for details.</p>
+  <div class="hur-box"><div id="hurmap" role="region" aria-label="Hurricane tracker map"></div></div>
+  <div class="hur-key">
+    <span style="--k:rgba(255,255,255,0.45)">Forecast cone</span><span style="--k:#ff2b2b">Hurricane warning</span><span style="--k:#ff69b4">Hurricane watch</span>
+    <span style="--k:#2f6bff">Tropical storm warning</span><span style="--k:#ffd400">Tropical storm watch</span>
+    <span style="--k:#ffe14b">Low chance (7 days)</span><span style="--k:#ff9f43">Medium</span><span style="--k:#ff4b4b">High</span>
+  </div>
+  <div class="hur-list" id="hur-list"></div>
+  <div class="lsr-src">Data: NOAA National Hurricane Center. Updated every 15 minutes. <a href="https://www.nhc.noaa.gov/" target="_blank" rel="noopener">nhc.noaa.gov</a></div>
 </section>
 
 <section class="band" aria-labelledby="vids-title" id="videos">
@@ -959,6 +1029,13 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <div class="afd" id="afd"><p class="news-empty">Loading the latest discussion…</p></div>
 </section>
 
+<section class="band" aria-labelledby="fb-title" id="football" hidden>
+  <h2 id="fb-title">Friday Night Football Forecast</h2>
+  <p class="lede" id="fb-lede">Game-time weather for Friday night high school football around the Tennessee Valley.</p>
+  <div class="fb" id="fb-list"><p class="news-empty">Loading game-time forecasts…</p></div>
+  <div class="lsr-src">Forecast: National Weather Service hourly forecast. Kickoff shown at 7 PM.</div>
+</section>
+
 <section class="band" aria-labelledby="winter-title" id="winter" hidden>
   <h2 id="winter-title">Winter Weather</h2>
   <p class="lede">Freeze, snow and ice outlook for Huntsville and the Tennessee Valley over the next week.</p>
@@ -1014,6 +1091,43 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <p><strong>Send us your weather photos!</strong> Message them to NorthBamaWX on Facebook with your first name and where and when you took them. Never go out in dangerous weather to get a picture.</p>
     <a class="btn" href="https://m.me/NorthBamaWeather" target="_blank" rel="noopener">Send a photo on Facebook</a>
   </div>
+</section>
+
+<section class="band" aria-labelledby="skyev-title" id="sky-events">
+  <h2 id="skyev-title">Sky Events</h2>
+  <p class="lede">What to look for in the night sky over North Alabama and Southern Tennessee. Clear skies needed!</p>
+  <div class="sky-ev">
+    <div class="skc"><h3>Space station passes</h3><ul id="iss-list"><li>Calculating passes…</li></ul></div>
+    <div class="skc"><h3>Full moons</h3><ul id="moon-list"><li>Loading…</li></ul></div>
+    <div class="skc"><h3>Meteor showers</h3><ul id="meteor-list"></ul></div>
+  </div>
+  <div class="lsr-src">Space station orbit: CelesTrak. Moon phases: U.S. Naval Observatory. Times are for Huntsville.</div>
+</section>
+
+<section class="band" aria-labelledby="towns-title" id="towns">
+  <h2 id="towns-title">Town Forecasts</h2>
+  <p class="lede">Alerts, radar and the 7-day forecast for your town.</p>
+  <ul class="town-links">
+    <li><a href="towns/huntsville-al.html">Huntsville, AL</a></li>
+    <li><a href="towns/madison-al.html">Madison, AL</a></li>
+    <li><a href="towns/decatur-al.html">Decatur, AL</a></li>
+    <li><a href="towns/athens-al.html">Athens, AL</a></li>
+    <li><a href="towns/hartselle-al.html">Hartselle, AL</a></li>
+    <li><a href="towns/florence-al.html">Florence, AL</a></li>
+    <li><a href="towns/muscle-shoals-al.html">Muscle Shoals, AL</a></li>
+    <li><a href="towns/russellville-al.html">Russellville, AL</a></li>
+    <li><a href="towns/moulton-al.html">Moulton, AL</a></li>
+    <li><a href="towns/cullman-al.html">Cullman, AL</a></li>
+    <li><a href="towns/guntersville-al.html">Guntersville, AL</a></li>
+    <li><a href="towns/albertville-al.html">Albertville, AL</a></li>
+    <li><a href="towns/arab-al.html">Arab, AL</a></li>
+    <li><a href="towns/scottsboro-al.html">Scottsboro, AL</a></li>
+    <li><a href="towns/fort-payne-al.html">Fort Payne, AL</a></li>
+    <li><a href="towns/fayetteville-tn.html">Fayetteville, TN</a></li>
+    <li><a href="towns/pulaski-tn.html">Pulaski, TN</a></li>
+    <li><a href="towns/winchester-tn.html">Winchester, TN</a></li>
+    <li><a href="towns/lynchburg-tn.html">Lynchburg, TN</a></li>
+  </ul>
 </section>
 
 <section class="band" aria-labelledby="hist-title" id="weather-history">
@@ -1222,12 +1336,16 @@ async function loadPlayer() {
   const player = document.getElementById('player');
   let src = 'https://www.youtube.com/embed/live_stream?channel=UC4nij4NgHjDJ8i5tv-1wWIA&autoplay=1&mute=1';
   try {
-    const r = await fetch('live.json?t=' + Date.now(), { cache: 'no-store' });
-    const id = r.ok && (await r.json()).id;
+    let id = null;
+    for (const url of ['https://raw.githubusercontent.com/northbamawx/northbamawx.github.io/main/live.json', 'live.json']) {
+      try { const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) { id = (await r.json()).id; break; } } catch (e) {}
+    }
     if (id && /^[A-Za-z0-9_-]{11}$/.test(id)) src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&rel=0`;
   } catch (e) {}
-  player.src = src;
+  // Only touch the player when the stream changed, so playback isn't restarted.
+  if (player.dataset.src !== src) { player.dataset.src = src; player.src = src; }
 }
+setInterval(loadPlayer, 300000);
 
 // news.json is refreshed by a GitHub Action every 30 minutes. Read it from the
 // repo directly so a new copy shows without waiting for a Pages rebuild.
@@ -1620,7 +1738,10 @@ async function loadHourly() {
   try {
     const r = await fetch(FORECAST_URL + '/hourly', { headers: { Accept: 'application/geo+json' } });
     if (!r.ok) throw new Error(r.status);
-    const hrs = (await r.json()).properties.periods.slice(0, 48);
+    const allHrs = (await r.json()).properties.periods;
+    const hrs = allHrs.slice(0, 48);
+    const rl = document.getElementById('rain-line');
+    rl.textContent = window.rainTiming(allHrs); rl.hidden = !rl.textContent;
     const W = 1100, H = 260, L = 44, R = 44, T = 24, B = 46;
     const iw = W - L - R, ih = H - T - B, n = hrs.length, step = iw / n;
     const temps = hrs.map(h => h.temperature);
@@ -1897,7 +2018,7 @@ async function initLightning() {
   loadLightning();
   setInterval(loadLightning, 120000);
 }
-initLightning();
+whenNear('ltgmap', initLightning);
 
 // ---- Road closings (roads.json, written by the site's GitHub Action) ----
 const ROAD_KINDS = { Crash: ['Crash', '#ff4b4b'], RoadCondition: ['Road hazard', '#ff7ad9'], Incident: ['Incident', '#ffb454'],
@@ -2145,13 +2266,287 @@ async function loadVisits() {
     const r = await fetch('https://northbamawx.goatcounter.com/counter/TOTAL.json');
     if (!r.ok) return;
     const n = (await r.json()).count;
-    if (!n) return;
+    if (!n || n === '0') return;
     document.getElementById('visits-n').textContent = n;
     document.getElementById('visits').hidden = false;
   } catch (e) {}
 }
 loadVisits();
 setInterval(loadVisits, 600000);
+
+// Plain-English rain timing for the next 12 hours from NWS hourly periods.
+window.rainTiming = function (periods) {
+  const hrs = (periods || []).filter(h => new Date(h.endTime) > Date.now()).slice(0, 12).map(h => ({
+    t: new Date(h.startTime), pop: (h.probabilityOfPrecipitation && h.probabilityOfPrecipitation.value) || 0, storm: /thunder/i.test(h.shortForecast) }));
+  if (!hrs.length) return '';
+  const at = d => d.toLocaleTimeString('en-US', { hour: 'numeric' });
+  const max = Math.max(...hrs.map(h => h.pop));
+  if (max < 20) return 'No rain expected in the next 12 hours.';
+  const peak = hrs.find(h => h.pop === max);
+  if (max < 40) return `Small chance of a shower (${max}%), best chance around ${at(peak.t)}.`;
+  const s = hrs.findIndex(h => h.pop >= 40);
+  let e = s; while (e + 1 < hrs.length && hrs[e + 1].pop >= 40) e++;
+  const storm = hrs.slice(s, e + 1).some(h => h.storm);
+  const what = (storm ? 'Storms' : 'Rain') + (max >= 60 ? ' likely' : ' possible');
+  const end = e + 1 < hrs.length ? `, ending around ${at(new Date(hrs[e].t.getTime() + 3600000))}` : ', lasting past the next 12 hours';
+  return s === 0 ? `${what} now${end} (up to ${max}%).` : `${what} starting around ${at(hrs[s].t)}${end} (up to ${max}%).`;
+};
+
+// ---- Load heavy things (maps, cameras) only when they're about to scroll into view ----
+function whenNear(id, fn) {
+  const el = document.getElementById(id);
+  if (!el || !('IntersectionObserver' in window)) { fn(); return; }
+  const io = new IntersectionObserver((en, o) => { if (en.some(e => e.isIntersecting)) { o.disconnect(); fn(); } }, { rootMargin: '600px 0px' });
+  io.observe(el);
+}
+
+// ---- Share buttons ----
+const SITE_URL = 'https://northbamawx.github.io/';
+function shareText(kind) {
+  if (kind === 'alerts' && areaAlerts.length) {
+    const top = areaAlerts.slice(0, 3).map(a => `${a.event} for ${ourAreas(a)}`).join('; ');
+    return `${top}. Live radar and coverage:`;
+  }
+  return 'Live radar and severe weather alerts for North Alabama and Southern Tennessee, 24/7:';
+}
+document.querySelectorAll('[data-share]').forEach(b => b.addEventListener('click', async () => {
+  const text = shareText(b.dataset.share);
+  if (navigator.share) { try { await navigator.share({ title: 'NorthBamaWX', text, url: SITE_URL }); return; } catch (e) { return; } }
+  const enc = encodeURIComponent;
+  document.getElementById('sh-fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + enc(SITE_URL);
+  document.getElementById('sh-x').href = 'https://twitter.com/intent/tweet?text=' + enc(text) + '&url=' + enc(SITE_URL);
+  document.getElementById('sh-sms').href = 'sms:?&body=' + enc(text + ' ' + SITE_URL);
+  const row = document.getElementById('share-links');
+  row.hidden = false; row.scrollIntoView({ block: 'nearest' });
+}));
+document.getElementById('sh-copy').addEventListener('click', async e => {
+  try { await navigator.clipboard.writeText(SITE_URL); e.target.textContent = 'Copied!'; } catch (err) { e.target.textContent = SITE_URL; }
+});
+
+// ---- Hurricane tracker (NHC map service) ----
+const NHC = 'https://mapservices.weather.noaa.gov/tropical/rest/services/tropical/NHC_tropical_weather/MapServer/';
+const STORM_LAYERS = [[6, 7, 8, 9, 12], [32, 33, 34, 35, 38], [58, 59, 60, 61, 64], [84, 85, 86, 87, 90], [110, 111, 112, 113, 116]];
+const WW_COLORS = { HWR: '#ff2b2b', HWA: '#ff69b4', TWR: '#2f6bff', TWA: '#ffd400' };
+const RISK_COLORS = { Low: '#ffe14b', Medium: '#ff9f43', High: '#ff4b4b' };
+const CAT_NAMES = { D: 'Tropical Depression', S: 'Tropical Storm', H: 'Hurricane', M: 'Major Hurricane', SD: 'Subtropical Depression', SS: 'Subtropical Storm', PT: 'Post-Tropical', L: 'Low', DB: 'Disturbance' };
+const CAT_COLORS = { D: '#5ab4ff', S: '#4be38a', H: '#ff9f43', M: '#ff4b4b', SD: '#5ab4ff', SS: '#4be38a' };
+let hurMap = null, hurLayer = null;
+async function nhcQuery(id) {
+  const r = await fetch(`${NHC}${id}/query?where=1%3D1&outFields=*&f=geojson`);
+  return r.ok ? r.json() : { features: [] };
+}
+function milesFromHsv(lat, lon) {
+  const R = 3958.8, toR = Math.PI / 180, dLat = (lat - 34.73) * toR, dLon = (lon + 86.59) * toR;
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(34.73 * toR) * Math.cos(lat * toR) * Math.sin(dLon / 2) ** 2;
+  return Math.round(2 * R * Math.asin(Math.sqrt(a)));
+}
+async function loadHurricanes() {
+  if (!hurMap) return;
+  const group = L.layerGroup();
+  const list = document.getElementById('hur-list');
+  const cards = [];
+  try {
+    // Areas NHC is watching (Atlantic only)
+    const [areas, spots] = await Promise.all([nhcQuery(3), nhcQuery(2)]);
+    L.geoJSON({ type: 'FeatureCollection', features: areas.features.filter(f => f.properties.basin === 'Atlantic') }, {
+      style: f => ({ color: RISK_COLORS[f.properties.risk7day] || '#ffe14b', weight: 2, fillOpacity: 0.18, dashArray: '4 4' }),
+      onEachFeature: (f, l) => l.bindPopup(`Chance of a tropical storm forming: ${f.properties.prob2day} in 2 days, ${f.properties.prob7day} in 7 days`),
+    }).addTo(group);
+    const atlSpots = spots.features.filter(f => f.properties.basin === 'Atlantic');
+    L.geoJSON({ type: 'FeatureCollection', features: atlSpots }, {
+      pointToLayer: (f, ll) => L.marker(ll, { icon: L.divIcon({ className: '', html: `<div style="font:800 22px/1 sans-serif;color:${RISK_COLORS[f.properties.risk7day] || '#ffe14b'};text-shadow:0 0 3px #000">&times;</div>`, iconSize: [20, 20], iconAnchor: [10, 10] }) }),
+      onEachFeature: (f, l) => l.bindPopup(`Area to watch: ${f.properties.prob2day} chance in 2 days, ${f.properties.prob7day} in 7 days`),
+    }).addTo(group);
+    // Active storms
+    for (const [pts, trk, cone, ww, past] of STORM_LAYERS) {
+      const fp = await nhcQuery(pts);
+      if (!fp.features.length) continue;
+      const [tr, cn, w, pt] = await Promise.all([nhcQuery(trk), nhcQuery(cone), nhcQuery(ww), nhcQuery(past)]);
+      L.geoJSON(cn, { style: { color: '#ffffff', weight: 1, fillColor: '#ffffff', fillOpacity: 0.18 } }).addTo(group);
+      L.geoJSON(pt, { style: { color: '#bbbbbb', weight: 2, dashArray: '2 4' } }).addTo(group);
+      L.geoJSON(tr, { style: { color: '#ffffff', weight: 2 } }).addTo(group);
+      L.geoJSON(w, { style: f => ({ color: WW_COLORS[f.properties.tcww] || '#ffffff', weight: 6, opacity: 0.95 }) }).addTo(group);
+      L.geoJSON(fp, {
+        pointToLayer: (f, ll) => L.circleMarker(ll, { radius: f.properties.tau === 0 ? 8 : 5, color: '#0a1626', weight: 1, fillColor: CAT_COLORS[f.properties.dvlbl] || '#ffffff', fillOpacity: 1 }),
+        onEachFeature: (f, l) => { const q = f.properties; l.bindPopup(`<b>${q.stormname}</b><br>${q.fldatelbl || q.datelbl || ''}<br>${CAT_NAMES[q.dvlbl] || q.dvlbl || ''}, ${Math.round((q.maxwind || 0) * 1.15078)} mph`); },
+      }).addTo(group);
+      const now = fp.features.find(f => f.properties.tau === 0) || fp.features[0];
+      const q = now.properties, [lon, lat] = now.geometry.coordinates;
+      cards.push({ name: q.stormname, type: CAT_NAMES[q.dvlbl] || q.stormtype || '', color: CAT_COLORS[q.dvlbl] || '#ff4fa3',
+        wind: Math.round((q.maxwind || 0) * 1.15078), gust: Math.round((q.gust || 0) * 1.15078), mslp: q.mslp,
+        move: q.tcdir != null && q.tcspd != null ? `${compass16(q.tcdir)} at ${Math.round(q.tcspd * 1.15078)} mph` : '', miles: milesFromHsv(lat, lon), adv: q.advisnum });
+    }
+    if (hurLayer) hurMap.removeLayer(hurLayer);
+    hurLayer = group.addTo(hurMap);
+    list.textContent = '';
+    if (!cards.length) {
+      const p = document.createElement('p'); p.className = 'news-empty';
+      p.textContent = atlSpots.length
+        ? `No active tropical storms in the Atlantic right now. The Hurricane Center is watching ${atlSpots.length} area${atlSpots.length === 1 ? '' : 's'} for possible development.`
+        : 'No active tropical storms in the Atlantic right now, and nothing expected to develop in the next 7 days.';
+      list.append(p);
+    }
+    cards.forEach(c => {
+      const el = document.createElement('div'); el.className = 'hur'; el.style.setProperty('--k', c.color);
+      el.innerHTML = '<div class="ty"></div><h3></h3><p class="w"></p><p class="m"></p>';
+      el.querySelector('.ty').textContent = c.type;
+      el.querySelector('h3').textContent = c.name;
+      el.querySelector('.w').textContent = `Winds ${c.wind} mph` + (c.gust ? `, gusts ${c.gust} mph` : '') + (c.mslp ? ` · Pressure ${c.mslp} mb` : '');
+      el.querySelector('.m').textContent = (c.move ? `Moving ${c.move} · ` : '') + `${c.miles.toLocaleString()} miles from Huntsville`;
+      list.append(el);
+    });
+  } catch (e) {
+    list.innerHTML = '<p class="news-empty">Hurricane data is unavailable right now.</p>';
+  }
+}
+function initHurricanes() {
+  if (!window.L) return;
+  hurMap = L.map('hurmap', { scrollWheelZoom: false, zoomSnap: 0.5, worldCopyJump: true }).setView([25, -72], 3.5);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    maxNativeZoom: 16, attribution: 'Esri | Tropical data: NOAA NHC' }).addTo(hurMap);
+  hurMap.createPane('labels'); hurMap.getPane('labels').style.zIndex = 650; hurMap.getPane('labels').style.pointerEvents = 'none';
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labels' }).addTo(hurMap);
+  L.circleMarker([34.73, -86.59], { radius: 5, color: '#33d6ff', weight: 2, fillOpacity: 0.6 }).addTo(hurMap).bindTooltip('Huntsville');
+  loadHurricanes();
+  setInterval(loadHurricanes, 900000);
+}
+whenNear('hurmap', initHurricanes);
+
+// ---- Friday night football (Aug 15 - Nov 30) ----
+const FB_TOWNS = [['Huntsville', 34.7304, -86.5861], ['Decatur', 34.6059, -86.9833], ['Florence', 34.7998, -87.6773],
+  ['Cullman', 34.1748, -86.8436], ['Scottsboro', 34.6723, -86.0341], ['Fayetteville, TN', 35.1520, -86.5706]];
+async function loadFootball() {
+  const now = new Date(), md = now.getMonth() * 100 + now.getDate();
+  const season = md >= 715 && md <= 1030;            // Aug 15 - Nov 30 (month index * 100 + day)
+  document.getElementById('football').hidden = !season;
+  document.getElementById('nav-football').hidden = !season;
+  if (!season) return;
+  const fri = new Date(now);
+  fri.setDate(now.getDate() + ((5 - now.getDay() + 7) % 7));
+  if (now.getDay() === 5 && now.getHours() >= 22) fri.setDate(fri.getDate() + 7);
+  const ymd = fri.toLocaleDateString('en-CA');
+  document.getElementById('fb-lede').textContent = `Game-time weather for ${fri.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })} around the Tennessee Valley.`;
+  const box = document.getElementById('fb-list');
+  const cards = await Promise.all(FB_TOWNS.map(async ([name, lat, lon]) => {
+    try {
+      const pt = (await (await fetch(`https://api.weather.gov/points/${lat},${lon}`, { headers: { Accept: 'application/geo+json' } })).json()).properties;
+      const hrs = (await (await fetch(pt.forecastHourly, { headers: { Accept: 'application/geo+json' } })).json()).properties.periods;
+      const game = hrs.filter(h => h.startTime.slice(0, 10) === ymd && +h.startTime.slice(11, 13) >= 18 && +h.startTime.slice(11, 13) <= 21);
+      const el = document.createElement('div'); el.className = 'fbc';
+      const h = document.createElement('h3'); h.textContent = name; el.append(h);
+      if (!game.length) { const p1 = document.createElement('p'); p1.textContent = 'Forecast available closer to Friday.'; el.append(p1); return el; }
+      const k = game.find(x => x.startTime.slice(11, 13) === '19') || game[0];
+      const pop = Math.max(...game.map(x => (x.probabilityOfPrecipitation && x.probabilityOfPrecipitation.value) || 0));
+      const t = document.createElement('div'); t.className = 'k'; t.textContent = k.temperature + '°';
+      const p1 = document.createElement('p'); p1.textContent = `${k.shortForecast} at kickoff`;
+      const p2 = document.createElement('p'); p2.textContent = `Rain chance ${pop}% · Wind ${k.windDirection} ${k.windSpeed} · ${game[game.length - 1].temperature}° by the 4th quarter`;
+      el.append(t, p1, p2);
+      if (game.some(x => /thunder/i.test(x.shortForecast))) { const p3 = document.createElement('p'); p3.style.color = '#ffb454'; p3.textContent = 'Storms possible: lightning delays could happen.'; el.append(p3); }
+      return el;
+    } catch (e) { return null; }
+  }));
+  box.textContent = '';
+  cards.filter(Boolean).forEach(c => box.append(c));
+  if (!box.children.length) box.innerHTML = '<p class="news-empty">Game-time forecasts are unavailable right now.</p>';
+}
+loadFootball();
+setInterval(loadFootball, 3600000);
+
+// ---- Sky events ----
+const SHOWERS = [['01-03', 'Quadrantids', 'up to 100 an hour, short peak'], ['04-22', 'Lyrids', 'about 15 an hour'], ['05-05', 'Eta Aquariids', 'about 10 an hour before dawn'],
+  ['08-12', 'Perseids', 'up to 60-100 an hour'], ['10-21', 'Orionids', 'about 20 an hour'], ['11-17', 'Leonids', 'about 15 an hour'], ['12-13', 'Geminids', 'up to 100+ an hour, the best of the year']];
+const MOON_NAMES = ['Wolf', 'Snow', 'Worm', 'Pink', 'Flower', 'Strawberry', 'Buck', 'Sturgeon', 'Harvest', 'Hunter\u2019s', 'Beaver', 'Cold'];
+function moonLit(d) {
+  const P = 29.530588853, ref = Date.UTC(2000, 0, 6, 18, 14), f = ((((d - ref) / 86400000) % P) + P) % P / P;
+  return Math.round((1 - Math.cos(2 * Math.PI * f)) / 2 * 100);
+}
+function skyLi(title, sub) { const l = document.createElement('li'); const b = document.createElement('b'); b.textContent = title; const s2 = document.createElement('small'); s2.textContent = sub; l.append(b, s2); return l; }
+function showMeteors() {
+  const now = new Date(), ul = document.getElementById('meteor-list');
+  ul.textContent = '';
+  const next = SHOWERS.map(([md, name, rate]) => {
+    const [m, d] = md.split('-').map(Number); let t = new Date(now.getFullYear(), m - 1, d, 23);
+    if (t < now - 86400000) t = new Date(now.getFullYear() + 1, m - 1, d, 23);
+    return [t, name, rate];
+  }).sort((a, b) => a[0] - b[0]).slice(0, 3);
+  next.forEach(([t, name, rate]) => {
+    const lit = moonLit(t);
+    ul.append(skyLi(`${name}: night of ${t.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`,
+      `${rate} under dark skies · Moon ${lit}% lit${lit > 60 ? ', which will wash out fainter meteors' : ''}`));
+  });
+}
+async function loadMoons() {
+  const ul = document.getElementById('moon-list');
+  try {
+    const d = await (await fetch(`https://aa.usno.navy.mil/api/moon/phases/date?date=${new Date().toLocaleDateString('en-CA')}&nump=12`)).json();
+    ul.textContent = '';
+    d.phasedata.filter(x => x.phase === 'Full Moon').slice(0, 3).forEach(x => {
+      const t = new Date(Date.UTC(x.year, x.month - 1, x.day, ...x.time.split(':').map(Number)));
+      const local = new Date(t.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+      ul.append(skyLi(`${MOON_NAMES[local.getMonth()]} Moon`, t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })));
+    });
+  } catch (e) { ul.innerHTML = '<li>Unavailable right now.</li>'; }
+}
+// Space station passes, computed in the browser from today's orbit (satellite.js).
+function sunEci(date) {
+  const n = (date - Date.UTC(2000, 0, 1, 12)) / 86400000, r = Math.PI / 180;
+  const L = (280.460 + 0.9856474 * n) % 360, g = (357.528 + 0.9856003 * n) % 360;
+  const lam = (L + 1.915 * Math.sin(g * r) + 0.020 * Math.sin(2 * g * r)) * r, eps = (23.439 - 0.0000004 * n) * r;
+  const AU = 149597870.7;
+  return { x: AU * Math.cos(lam), y: AU * Math.cos(eps) * Math.sin(lam), z: AU * Math.sin(eps) * Math.sin(lam) };
+}
+async function loadIss() {
+  const ul = document.getElementById('iss-list');
+  try {
+    if (!window.satellite) await new Promise((ok, bad) => { const sc = document.createElement('script'); sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js'; sc.onload = ok; sc.onerror = bad; document.head.append(sc); });
+    const tle = (await (await fetch('https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE')).text()).trim().split('\n').map(x => x.trim());
+    const sat = satellite, rec = sat.twoline2satrec(tle[1], tle[2]);
+    const obs = { latitude: sat.degreesToRadians(34.73), longitude: sat.degreesToRadians(-86.59), height: 0.2 };
+    const look = (eci, t) => sat.ecfToLookAngles(obs, sat.eciToEcf(eci, sat.gstime(t)));
+    const dirs = a => compass16((a * 180 / Math.PI + 360) % 360);
+    const passes = []; let cur = null;
+    const start = Date.now();
+    for (let ms = 0; ms < 4 * 86400000; ms += 20000) {
+      const t = new Date(start + ms), pv = sat.propagate(rec, t);
+      if (!pv.position) continue;
+      const la = look(pv.position, t), el = la.elevation * 180 / Math.PI;
+      if (el > 10) {
+        const s = sunEci(t), sunEl = look(s, t).elevation * 180 / Math.PI;
+        const smag = Math.hypot(s.x, s.y, s.z), dot = (pv.position.x * s.x + pv.position.y * s.y + pv.position.z * s.z) / smag;
+        const perp = Math.hypot(pv.position.x - dot * s.x / smag, pv.position.y - dot * s.y / smag, pv.position.z - dot * s.z / smag);
+        const lit = dot > 0 || perp > 6371, vis = lit && sunEl < -6;
+        if (!cur) cur = { pts: [] };
+        if (vis) cur.pts.push({ t, el, az: la.azimuth });
+      } else if (cur) { if (cur.pts.length) passes.push(cur); cur = null; }
+    }
+    ul.textContent = '';
+    const good = passes.map(p => ({ start: p.pts[0], end: p.pts[p.pts.length - 1], max: Math.max(...p.pts.map(x => x.el)) })).filter(p => p.max >= 20).slice(0, 4);
+    if (!good.length) { ul.append(skyLi('No good passes in the next few days', 'The station is only visible around dawn and dusk when it catches sunlight.')); return; }
+    good.forEach(p => ul.append(skyLi(p.start.t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }),
+      `Look ${dirs(p.start.az)}, rising to ${Math.round(p.max)}° high, gone to the ${dirs(p.end.az)} in about ${Math.max(1, Math.round((p.end.t - p.start.t) / 60000))} min`)));
+  } catch (e) { ul.innerHTML = '<li>Pass predictions unavailable right now.</li>'; }
+}
+// ---- Left open 24/7: pick up site updates automatically ----
+// Reload when a new version of the page is published, and once a day at 3 AM so
+// date-based parts (history, meteor showers, seasonal sections) roll over.
+let pageSig = null;
+async function checkForUpdate() {
+  try {
+    const t = await (await fetch(location.pathname + '?v=' + Date.now(), { cache: 'no-store' })).text();
+    const sig = t.length + ':' + t.slice(-2000);
+    if (pageSig && sig !== pageSig) location.reload();
+    pageSig = sig;
+  } catch (e) {}
+}
+checkForUpdate();
+setInterval(checkForUpdate, 900000);
+(() => {
+  const n = new Date(), next = new Date(n.getFullYear(), n.getMonth(), n.getDate() + (n.getHours() >= 3 ? 1 : 0), 3, 0, 0);
+  setTimeout(() => location.reload(), next - n);
+})();
+setInterval(showHistory, 3600000);
+
+whenNear('sky-events', () => { showMeteors(); loadMoons(); loadIss(); });
 
 // ---- Forecaster notes (NWS Huntsville Area Forecast Discussion) ----
 function afdSections(text) {
@@ -2388,7 +2783,7 @@ async function initRainMap() {
   }));
   setInterval(() => setRainPeriod(document.querySelector('#rain-tabs [aria-selected="true"]').dataset.h), 900000);
 }
-initRainMap();
+whenNear('rainmap', initRainMap);
 
 // ---- This day in weather history ----
 const WX_HISTORY = [
@@ -2558,7 +2953,8 @@ setInterval(loadReports, 300000);
 
 loadVideos();
 setInterval(loadVideos, 600000);
-initAlertMap(); loadPlayer(); loadAlerts(); loadConditions(); loadNews(); loadForecast(); initRadar(); buildCams();
+loadPlayer(); loadAlerts(); loadConditions(); loadNews(); loadForecast();
+whenNear('amap', initAlertMap); whenNear('radar', initRadar); whenNear('cams', buildCams);
 setInterval(refreshCams, 60000);
 setInterval(loadForecast, 1800000);
 setInterval(loadNews, 600000);
