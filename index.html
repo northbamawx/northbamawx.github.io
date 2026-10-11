@@ -488,13 +488,6 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .town-links { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px 14px; }
 .town-links a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-weight: 600; }
 
-/* Live chat */
-.chat-box { border-top: 1px solid var(--rule); }
-.chat-head { padding: 10px 18px 6px; font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); }
-.chat-box { padding: 12px 18px; }
-.chat-open { display: block; text-align: center; padding: 10px 12px; border: 1px solid var(--radar); border-radius: 4px; color: var(--radar);
-  font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
-.chat-open:hover { background: rgba(51,214,255,0.1); }
 
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
@@ -720,9 +713,6 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
       <p style="margin:10px 0 0;text-align:center"><button type="button" class="share-btn" data-share="alerts">Share these alerts</button></p>
       <p style="margin:8px 0 0;text-align:center;font-size:13px"><a href="lite.html">Weak signal? Use the lite page</a> · <a href="get-alerts.html">Get alerts</a></p>
       <div class="locate-out" id="locate-out" aria-live="polite"></div>
-    </div>
-    <div class="chat-box" id="chat-box" hidden>
-      <a class="chat-open" id="chat" href="#" target="_blank" rel="noopener">Open the live chat</a>
     </div>
     <div class="board-foot">From the National Weather Service for our 15 counties. Updates every 2 minutes. Tap an alert for details.</div>
   </aside>
@@ -1328,14 +1318,6 @@ async function loadPlayer() {
   } catch (e) {}
   // Only touch the player when the stream changed, so playback isn't restarted.
   if (player.dataset.src !== src) { player.dataset.src = src; player.src = src; }
-  // Live chat opens in its own window: YouTube's embedded chat shows up blank in
-  // browsers that block third-party cookies.
-  const m = /embed\/([A-Za-z0-9_-]{11})/.exec(src);
-  document.getElementById('chat-box').hidden = !m;
-  // Phones can't show YouTube's pop-out chat ("Live chat is unavailable"), so send them to
-  // the video in the YouTube app/page, where chat sits under the stream.
-  const phone = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
-  if (m) document.getElementById('chat').href = phone ? `https://www.youtube.com/watch?v=${m[1]}` : `https://www.youtube.com/live_chat?is_popout=1&v=${m[1]}`;
 }
 setInterval(loadPlayer, 300000);
 
