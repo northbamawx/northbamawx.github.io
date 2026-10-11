@@ -1332,7 +1332,10 @@ async function loadPlayer() {
   // browsers that block third-party cookies.
   const m = /embed\/([A-Za-z0-9_-]{11})/.exec(src);
   document.getElementById('chat-box').hidden = !m;
-  if (m) document.getElementById('chat').href = `https://www.youtube.com/live_chat?is_popout=1&v=${m[1]}`;
+  // Phones can't show YouTube's pop-out chat ("Live chat is unavailable"), so send them to
+  // the video in the YouTube app/page, where chat sits under the stream.
+  const phone = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  if (m) document.getElementById('chat').href = phone ? `https://www.youtube.com/watch?v=${m[1]}` : `https://www.youtube.com/live_chat?is_popout=1&v=${m[1]}`;
 }
 setInterval(loadPlayer, 300000);
 
