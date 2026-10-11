@@ -2263,10 +2263,11 @@ loadPhotos();
 // ---- Visitor counter (GoatCounter public total; stays hidden until the account allows it) ----
 async function loadVisits() {
   try {
-    const r = await fetch('https://northbamawx.goatcounter.com/counter/TOTAL.json');
-    if (!r.ok) return;
-    const n = (await r.json()).count;
-    if (n == null) return;
+    // GoatCounter caches each public counter for a few hours, so take the larger of
+    // the site total and the home page count (whichever was refreshed more recently).
+    const get = async path => { try { const r = await fetch(`https://northbamawx.goatcounter.com/counter/${path}.json`); return r.ok ? parseInt(String((await r.json()).count).replace(/,/g, ''), 10) || 0 : 0; } catch (e) { return 0; } };
+    const [total, home] = await Promise.all([get('TOTAL'), get('%2F')]);
+    const n = Math.max(total, home).toLocaleString();
     document.getElementById('visits-n').textContent = n;
     document.getElementById('visits').hidden = false;
   } catch (e) {}
@@ -2376,8 +2377,15 @@ async function loadHurricanes() {
         wind: Math.round((q.maxwind || 0) * 1.15078), gust: Math.round((q.gust || 0) * 1.15078), mslp: q.mslp,
         move: q.tcdir != null && q.tcspd != null ? `${compass16(q.tcdir)} at ${Math.round(q.tcspd * 1.15078)} mph` : '', miles: milesFromHsv(lat, lon), adv: q.advisnum });
     }
+    const firstDraw = !hurLayer;
     if (hurLayer) hurMap.removeLayer(hurLayer);
     hurLayer = group.addTo(hurMap);
+    // First time: frame every storm and watched area along with Huntsville so nothing is cut off.
+    if (firstDraw) {
+      const b = L.latLngBounds([[34.73, -86.59]]);
+      group.eachLayer(l => { if (l.getBounds) { const lb = l.getBounds(); if (lb.isValid()) b.extend(lb); } });
+      hurMap.fitBounds(b.pad(0.15), { maxZoom: 5 });
+    }
     list.textContent = '';
     if (!cards.length) {
       const p = document.createElement('p'); p.className = 'news-empty';
@@ -2401,11 +2409,18 @@ async function loadHurricanes() {
 }
 function initHurricanes() {
   if (!window.L) return;
-  hurMap = L.map('hurmap', { scrollWheelZoom: false, zoomSnap: 0.5, worldCopyJump: true }).setView([25, -72], 3.5);
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    maxNativeZoom: 16, attribution: 'Esri | Tropical data: NOAA NHC' }).addTo(hurMap);
+  hurMap = L.map('hurmap', { scrollWheelZoom: false, zoomSnap: 0.5, worldCopyJump: true, maxZoom: 14 }).setView([27, -72], 3.5);
+  const esri = n => `https://server.arcgisonline.com/ArcGIS/rest/services/${n}/MapServer/tile/{z}/{y}/{x}`;
   hurMap.createPane('labels'); hurMap.getPane('labels').style.zIndex = 650; hurMap.getPane('labels').style.pointerEvents = 'none';
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labels' }).addTo(hurMap);
+  const dark = L.layerGroup([L.tileLayer(esri('Canvas/World_Dark_Gray_Base'), { attribution: 'Esri | Tropical data: NOAA NHC' }),
+    L.tileLayer(esri('Canvas/World_Dark_Gray_Reference'), { pane: 'labels' })]);
+  const streets = L.tileLayer(esri('World_Street_Map'), { attribution: 'Esri | Tropical data: NOAA NHC' });
+  const sat = L.layerGroup([L.tileLayer(esri('World_Imagery'), { attribution: 'Esri | Tropical data: NOAA NHC' }),
+    L.tileLayer(esri('Reference/World_Transportation'), { pane: 'labels' }), L.tileLayer(esri('Reference/World_Boundaries_and_Places'), { pane: 'labels' })]);
+  dark.addTo(hurMap);
+  L.control.layers({ 'Dark': dark, 'Streets': streets, 'Satellite + roads': sat }, null, { collapsed: L.Browser.mobile, position: 'topright' }).addTo(hurMap);
+  // Show roads automatically once zoomed in close enough to need them.
+  hurMap.on('zoomend', () => { if (hurMap.getZoom() >= 7 && hurMap.hasLayer(dark)) { hurMap.removeLayer(dark); streets.addTo(hurMap); } });
   L.circleMarker([34.73, -86.59], { radius: 5, color: '#33d6ff', weight: 2, fillOpacity: 0.6 }).addTo(hurMap).bindTooltip('Huntsville');
   loadHurricanes();
   setInterval(loadHurricanes, 900000);
