@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T19:10:26+00:00",
+ "updated": "2026-10-11T19:42:26+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-11T19:10:11.7107704Z"
+   "updated": "2026-10-11T19:41:17.4991763Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 SB @ MP 7.52",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.8016,
+   "lon": -87.65171199999999,
+   "start": "2026-10-11T19:22:26Z",
+   "end": "2026-10-11T20:22:26Z",
+   "updated": "2026-10-11T19:41:25.2089679Z"
   }
  ]
 }
