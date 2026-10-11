@@ -2266,7 +2266,7 @@ async function loadVisits() {
     const r = await fetch('https://northbamawx.goatcounter.com/counter/TOTAL.json');
     if (!r.ok) return;
     const n = (await r.json()).count;
-    if (!n || n === '0') return;
+    if (n == null) return;
     document.getElementById('visits-n').textContent = n;
     document.getElementById('visits').hidden = false;
   } catch (e) {}
