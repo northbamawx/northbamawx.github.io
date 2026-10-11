@@ -59,7 +59,57 @@ def roads():
     save('roads.json', {'updated': NOW, 'events': out})
 
 
-for job in (pollen, roads):
+COUNTY_UGC = {
+    'ALC033': 'Colbert', 'ALC043': 'Cullman', 'ALC049': 'DeKalb', 'ALC059': 'Franklin', 'ALC071': 'Jackson',
+    'ALC077': 'Lauderdale', 'ALC079': 'Lawrence', 'ALC083': 'Limestone', 'ALC089': 'Madison', 'ALC095': 'Marshall',
+    'ALC103': 'Morgan', 'TNC051': 'Franklin TN', 'TNC055': 'Giles TN', 'TNC103': 'Lincoln TN', 'TNC127': 'Moore TN',
+}
+KINDS = {('TO', 'W'): 'tor', ('SV', 'W'): 'svr', ('FF', 'W'): 'ffw'}
+
+
+def clock12(t):
+    return f"{t.hour % 12 or 12}:{t.minute:02d} {'AM' if t.hour < 12 else 'PM'}"
+
+
+def archive():
+    """Every day in the last year with a tornado, severe thunderstorm or flash
+    flood warning in our counties (IEM's VTEC event lists for HUN and OHX)."""
+    from datetime import timedelta
+    from zoneinfo import ZoneInfo
+    tz = ZoneInfo('America/Chicago')
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=366)
+    seen, days = set(), {}
+    for wfo in ('HUN', 'OHX'):
+        for year in sorted({cutoff.year, now.year}):
+            data = get(f'https://mesonet.agron.iastate.edu/json/vtec_events_bywfo.py?wfo={wfo}&year={year}')
+            for e in data.get('events', []):
+                kind = KINDS.get((e.get('phenomena'), e.get('significance')))
+                county = COUNTY_UGC.get(e.get('ugc'))
+                if not kind or not county:
+                    continue
+                issued = datetime.fromisoformat(e['issue'].replace('Z', '+00:00'))
+                if issued < cutoff:
+                    continue
+                date = issued.astimezone(tz).strftime('%Y-%m-%d')
+                d = days.setdefault(date, {'date': date, 'tor': 0, 'svr': 0, 'ffw': 0, 'counties': set(), 'tornadoes': {}})
+                d['counties'].add(county)
+                key = (wfo, year, e['phenomena'], e['eventid'])
+                if kind == 'tor':
+                    t = d['tornadoes'].setdefault(key, {'url': e.get('url'), 'counties': [], 'time': clock12(issued.astimezone(tz))})
+                    t['counties'].append(county)
+                if key not in seen:
+                    seen.add(key)
+                    d[kind] += 1
+    out = []
+    for d in sorted(days.values(), key=lambda x: x['date'], reverse=True):
+        d['counties'] = sorted(d['counties'])
+        d['tornadoes'] = sorted(d['tornadoes'].values(), key=lambda t: t['url'] or '')
+        out.append(d)
+    save('archive.json', {'updated': NOW, 'days': out})
+
+
+for job in (pollen, roads, archive):
     try:
         job()
         print(job.__name__, 'ok')

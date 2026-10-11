@@ -1,0 +1,844 @@
+{
+ "updated": "2026-10-11T10:57:20+00:00",
+ "days": [
+  {
+   "date": "2026-09-22",
+   "tor": 0,
+   "svr": 5,
+   "ffw": 0,
+   "counties": [
+    "DeKalb",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-09-21",
+   "tor": 0,
+   "svr": 8,
+   "ffw": 0,
+   "counties": [
+    "DeKalb",
+    "Franklin TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-09-12",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 0,
+   "counties": [
+    "Cullman",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-09-11",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Lawrence"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-09-08",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Lauderdale"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-09-05",
+   "tor": 0,
+   "svr": 3,
+   "ffw": 0,
+   "counties": [
+    "Franklin TN",
+    "Jackson",
+    "Lincoln TN",
+    "Madison"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-26",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 1,
+   "counties": [
+    "Giles TN",
+    "Lawrence"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-21",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Cullman",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-20",
+   "tor": 0,
+   "svr": 12,
+   "ffw": 2,
+   "counties": [
+    "Colbert",
+    "Cullman",
+    "DeKalb",
+    "Franklin TN",
+    "Giles TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-17",
+   "tor": 0,
+   "svr": 12,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Cullman",
+    "DeKalb",
+    "Franklin",
+    "Franklin TN",
+    "Giles TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-12",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Lauderdale"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-11",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "DeKalb",
+    "Marshall"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-09",
+   "tor": 0,
+   "svr": 5,
+   "ffw": 3,
+   "counties": [
+    "Colbert",
+    "Franklin",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-08",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 2,
+   "counties": [
+    "Colbert",
+    "Giles TN",
+    "Lauderdale"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-07",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 2,
+   "counties": [
+    "Colbert",
+    "DeKalb",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-06",
+   "tor": 0,
+   "svr": 3,
+   "ffw": 0,
+   "counties": [
+    "Franklin TN",
+    "Jackson",
+    "Lincoln TN",
+    "Madison",
+    "Moore TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-08-01",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 0,
+   "counties": [
+    "DeKalb",
+    "Jackson"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-22",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Giles TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-19",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 1,
+   "counties": [
+    "Jackson",
+    "Lincoln TN",
+    "Madison",
+    "Marshall"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-11",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Cullman"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-10",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 0,
+   "counties": [
+    "Jackson"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-09",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 2,
+   "counties": [
+    "Giles TN",
+    "Lauderdale",
+    "Limestone",
+    "Lincoln TN",
+    "Madison"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-07",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 0,
+   "counties": [
+    "Limestone",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-05",
+   "tor": 0,
+   "svr": 4,
+   "ffw": 0,
+   "counties": [
+    "Cullman",
+    "Franklin TN",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-03",
+   "tor": 0,
+   "svr": 10,
+   "ffw": 0,
+   "counties": [
+    "Cullman",
+    "DeKalb",
+    "Giles TN",
+    "Jackson",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-02",
+   "tor": 0,
+   "svr": 6,
+   "ffw": 0,
+   "counties": [
+    "Cullman",
+    "DeKalb",
+    "Jackson",
+    "Limestone",
+    "Madison",
+    "Marshall"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-07-01",
+   "tor": 0,
+   "svr": 16,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Cullman",
+    "DeKalb",
+    "Franklin",
+    "Giles TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-06-22",
+   "tor": 5,
+   "svr": 6,
+   "ffw": 0,
+   "counties": [
+    "DeKalb",
+    "Franklin TN",
+    "Jackson",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall"
+   ],
+   "tornadoes": [
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0004",
+     "counties": [
+      "Madison",
+      "Jackson",
+      "Franklin TN"
+     ],
+     "time": "1:24 PM"
+    },
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0005",
+     "counties": [
+      "Jackson",
+      "Madison",
+      "Franklin TN"
+     ],
+     "time": "4:03 PM"
+    },
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0006",
+     "counties": [
+      "Franklin TN",
+      "Jackson"
+     ],
+     "time": "4:24 PM"
+    },
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0007",
+     "counties": [
+      "DeKalb",
+      "Jackson"
+     ],
+     "time": "4:38 PM"
+    },
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0008",
+     "counties": [
+      "Jackson",
+      "Madison"
+     ],
+     "time": "7:17 PM"
+    }
+   ]
+  },
+  {
+   "date": "2026-06-14",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 0,
+   "counties": [
+    "Franklin TN",
+    "Giles TN",
+    "Lincoln TN",
+    "Moore TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-06-13",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 1,
+   "counties": [
+    "Colbert",
+    "Franklin",
+    "Giles TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-06-09",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 1,
+   "counties": [
+    "DeKalb",
+    "Jackson"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-06-08",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 4,
+   "counties": [
+    "Cullman",
+    "DeKalb",
+    "Jackson",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-06-07",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 5,
+   "counties": [
+    "Colbert",
+    "DeKalb",
+    "Franklin TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-06-01",
+   "tor": 0,
+   "svr": 11,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Cullman",
+    "DeKalb",
+    "Franklin",
+    "Franklin TN",
+    "Giles TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-05-31",
+   "tor": 0,
+   "svr": 5,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "DeKalb",
+    "Franklin TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-05-27",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Colbert",
+    "Lauderdale",
+    "Lawrence"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-05-25",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 2,
+   "counties": [
+    "Jackson",
+    "Marshall"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-05-24",
+   "tor": 0,
+   "svr": 0,
+   "ffw": 1,
+   "counties": [
+    "Cullman"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-05-22",
+   "tor": 1,
+   "svr": 3,
+   "ffw": 2,
+   "counties": [
+    "Cullman",
+    "DeKalb",
+    "Franklin TN",
+    "Jackson",
+    "Madison",
+    "Marshall",
+    "Morgan"
+   ],
+   "tornadoes": [
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0003",
+     "counties": [
+      "Madison"
+     ],
+     "time": "11:54 AM"
+    }
+   ]
+  },
+  {
+   "date": "2026-05-06",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 0,
+   "counties": [
+    "Franklin TN",
+    "Giles TN",
+    "Lincoln TN",
+    "Moore TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-04-29",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Franklin"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-04-28",
+   "tor": 1,
+   "svr": 4,
+   "ffw": 0,
+   "counties": [
+    "Franklin TN",
+    "Giles TN",
+    "Lincoln TN",
+    "Moore TN"
+   ],
+   "tornadoes": [
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KOHX&phenomena=TO&significance=W&eventid=0006",
+     "counties": [
+      "Giles TN"
+     ],
+     "time": "1:42 AM"
+    }
+   ]
+  },
+  {
+   "date": "2026-04-04",
+   "tor": 0,
+   "svr": 1,
+   "ffw": 0,
+   "counties": [
+    "DeKalb",
+    "Jackson"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-03-16",
+   "tor": 0,
+   "svr": 5,
+   "ffw": 0,
+   "counties": [
+    "Cullman",
+    "DeKalb",
+    "Franklin TN",
+    "Jackson",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-03-15",
+   "tor": 3,
+   "svr": 10,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Cullman",
+    "Franklin",
+    "Franklin TN",
+    "Giles TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": [
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0001",
+     "counties": [
+      "Lauderdale",
+      "Colbert"
+     ],
+     "time": "9:32 PM"
+    },
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0002",
+     "counties": [
+      "Lauderdale"
+     ],
+     "time": "10:33 PM"
+    },
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KOHX&phenomena=TO&significance=W&eventid=0004",
+     "counties": [
+      "Giles TN"
+     ],
+     "time": "10:56 PM"
+    }
+   ]
+  },
+  {
+   "date": "2026-03-11",
+   "tor": 0,
+   "svr": 4,
+   "ffw": 0,
+   "counties": [
+    "Franklin TN",
+    "Giles TN",
+    "Lincoln TN",
+    "Moore TN"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-03-09",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 1,
+   "counties": [
+    "Colbert",
+    "Franklin",
+    "Jackson",
+    "Lawrence",
+    "Madison",
+    "Marshall"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-03-07",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Franklin",
+    "Lawrence"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2026-02-26",
+   "tor": 0,
+   "svr": 21,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "Cullman",
+    "DeKalb",
+    "Franklin",
+    "Franklin TN",
+    "Giles TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": []
+  },
+  {
+   "date": "2025-12-18",
+   "tor": 1,
+   "svr": 8,
+   "ffw": 0,
+   "counties": [
+    "Colbert",
+    "DeKalb",
+    "Franklin",
+    "Franklin TN",
+    "Jackson",
+    "Lauderdale",
+    "Lawrence",
+    "Limestone",
+    "Lincoln TN",
+    "Madison",
+    "Marshall",
+    "Moore TN",
+    "Morgan"
+   ],
+   "tornadoes": [
+    {
+     "url": "https://mesonet.agron.iastate.edu/vtec/?year=2025&wfo=KHUN&phenomena=TO&significance=W&eventid=0066",
+     "counties": [
+      "Jackson",
+      "DeKalb"
+     ],
+     "time": "8:52 PM"
+    }
+   ]
+  },
+  {
+   "date": "2025-11-25",
+   "tor": 0,
+   "svr": 2,
+   "ffw": 1,
+   "counties": [
+    "Cullman",
+    "DeKalb",
+    "Jackson",
+    "Marshall"
+   ],
+   "tornadoes": []
+  }
+ ]
+}

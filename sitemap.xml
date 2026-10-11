@@ -3,4 +3,6 @@
   <url><loc>https://northbamawx.github.io/</loc><changefreq>hourly</changefreq><priority>1.0</priority></url>
   <url><loc>https://northbamawx.github.io/safety.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://northbamawx.github.io/glossary.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northbamawx.github.io/archive.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northbamawx.github.io/alertas.html</loc><changefreq>hourly</changefreq><priority>0.7</priority></url>
 </urlset>

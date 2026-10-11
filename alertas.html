@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alertas del tiempo | NorthBamaWX</title>
+<meta name="description" content="Avisos y vigilancias del tiempo en español para el norte de Alabama y el sur de Tennessee, con consejos de seguridad.">
+<link rel="canonical" href="https://northbamawx.github.io/alertas.html">
+<meta property="og:title" content="Alertas del tiempo | NorthBamaWX">
+<meta property="og:description" content="Avisos y vigilancias del tiempo en español para el norte de Alabama y el sur de Tennessee, con consejos de seguridad.">
+<meta name="theme-color" content="#0a1626">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<script data-goatcounter="https://northbamawx.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a1626'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%2333d6ff' stroke-width='4'/%3E%3Cpath d='M32 32 L46 18' stroke='%2333d6ff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: same control-room look as the home page; a single reading column with a jump list. */
+:root {
+  --night: #0a1626; --panel: #10223a; --rule: #1f3a5c; --ink: #e8f0fa; --ink-dim: #93a8c2; --radar: #33d6ff;
+  --tor: #ff2b2b; --svr: #ffa500; --ffw: #22e05a;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --data: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+[hidden] { display: none !important; }
+body { background: var(--night); color: var(--ink); font: 16px/1.6 var(--body); padding-inline: 16px; -webkit-font-smoothing: antialiased; }
+a { color: var(--radar); }
+a:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+.wrap { max-width: 920px; margin: 0 auto; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 20px 18px; border-bottom: 1px solid var(--rule); }
+.brand { font: 800 30px/1 var(--display); letter-spacing: 0.06em; text-decoration: none; color: var(--ink); }
+.brand b { color: var(--radar); font-weight: 800; }
+.back { font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); letter-spacing: 0.01em; margin: 30px 0 10px; text-wrap: balance; }
+.lede { color: var(--ink-dim); margin: 0 0 22px; max-width: 62ch; font-size: 17px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 8px; list-style: none; }
+.jump a { display: inline-block; font: 700 15px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  color: var(--ink); padding: 9px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--panel); }
+section { padding-block: 30px; border-top: 1px solid var(--rule); scroll-margin-top: 12px; }
+section:first-of-type { border-top: 0; }
+h2 { font: 700 30px/1.1 var(--display); letter-spacing: 0.04em; margin: 0 0 12px; display: flex; align-items: center; gap: 12px; }
+h2 .chip { width: 14px; height: 14px; border-radius: 3px; background: var(--c); flex: none; }
+h3 { font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; margin: 22px 0 8px; color: var(--radar); }
+p { margin: 0 0 12px; max-width: 68ch; }
+ul, ol { margin: 0 0 12px; padding-left: 22px; max-width: 68ch; }
+li { margin-bottom: 6px; }
+.callout { border-left: 6px solid var(--c, var(--radar)); background: var(--panel); border-radius: 4px; padding: 14px 16px; margin: 14px 0; }
+.callout strong { display: block; font: 800 22px/1.15 var(--display); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; color: var(--c, var(--radar)); }
+.callout p { margin: 0; }
+.ww { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 10px 0 4px; }
+.ww div { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; min-width: 0; }
+.ww b { display: block; font: 800 22px/1 var(--display); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+.ww p { margin: 0; font-size: 15px; color: var(--ink-dim); }
+.kit { columns: 2 240px; column-gap: 32px; }
+.kit li { break-inside: avoid; }
+.src { font: 500 12px/1.5 var(--data); color: var(--ink-dim); letter-spacing: 0.03em; }
+footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-dim); }
+
+.alert { background: var(--panel); border: 1px solid var(--rule); border-left: 6px solid var(--k, #8a99ad); border-radius: 6px; padding: 14px 16px; margin-bottom: 10px; }
+.alert h3 { margin: 0 0 4px; font: 800 24px/1.15 var(--display); letter-spacing: 0.03em; color: var(--k, var(--ink)); }
+.alert .en { font: 500 12px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; text-transform: uppercase; }
+.alert p { margin: 6px 0 0; }
+.ok { font: 700 26px/1.2 var(--display); color: #4be38a; margin: 0 0 4px; }
+.upd { font: 500 12px/1.4 var(--data); color: var(--ink-dim); margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="brand" href="./">NORTH<b>BAMA</b>WX</a>
+  <a class="back" href="./" lang="en">&larr; English</a>
+</header>
+
+<h1>Alertas del tiempo</h1>
+<p class="lede">Avisos y vigilancias activas del Servicio Nacional de Meteorología para el norte de Alabama y el sur de Tennessee. Se actualiza cada 2 minutos.</p>
+<div class="upd" id="upd">Buscando alertas…</div>
+<div id="alerts"></div>
+
+<section id="vigilancia">
+  <h2>Vigilancia o aviso: ¿cuál es la diferencia?</h2>
+  <div class="ww">
+    <div><b>Vigilancia</b><p>Las condiciones son favorables para que se forme tiempo peligroso. Prepárese y esté atento.</p></div>
+    <div><b>Aviso</b><p>El tiempo peligroso está ocurriendo o está por ocurrir. Actúe ahora.</p></div>
+    <div><b>Advertencia</b><p>Tiempo que puede causar problemas si no tiene cuidado, como neblina densa o viento fuerte.</p></div>
+  </div>
+</section>
+
+<section id="tornado">
+  <h2><span class="chip" style="--c:var(--tor)"></span>Aviso de tornado: refúgiese ahora</h2>
+  <ul>
+    <li>Vaya al piso más bajo de un edificio resistente, a un cuarto interior sin ventanas, como un baño, un clóset o un pasillo.</li>
+    <li>Cúbrase la cabeza y el cuello. Use un casco si tiene uno.</li>
+    <li><strong>Las casas móviles no son seguras.</strong> Salga y vaya a un edificio resistente o a un refugio comunitario antes de que llegue la tormenta.</li>
+    <li>Muchos tornados aquí ocurren de noche. Tenga el celular cargado con las alertas activadas.</li>
+  </ul>
+</section>
+
+<section id="inundacion">
+  <h2><span class="chip" style="--c:var(--ffw)"></span>Inundaciones</h2>
+  <div class="callout" style="--c:var(--ffw)"><strong>¡Dé la vuelta, no se ahogue!</strong><p>Nunca maneje ni camine por calles inundadas. Solo un pie de agua en movimiento puede arrastrar un carro.</p></div>
+</section>
+
+<section id="rayos">
+  <h2><span class="chip" style="--c:var(--svr)"></span>Tormentas eléctricas y rayos</h2>
+  <p>Si escucha truenos, está lo bastante cerca para que le caiga un rayo. Entre a un edificio o a un carro con techo de metal y espere 30 minutos después del último trueno.</p>
+</section>
+
+<section id="recibir">
+  <h2>Cómo recibir alertas</h2>
+  <ul>
+    <li>Active las alertas de emergencia en su celular.</li>
+    <li>Tenga una radio meteorológica NOAA con baterías nuevas.</li>
+    <li>Vea la transmisión en vivo de NorthBamaWX en YouTube las 24 horas (en inglés).</li>
+  </ul>
+</section>
+
+<footer>NorthBamaWX es una transmisión independiente del tiempo y no está afiliada al Servicio Nacional de Meteorología. Siga siempre los avisos oficiales y las instrucciones de las autoridades locales.</footer>
+</div>
+
+<script>
+const ZONES = ['ALC033','ALC043','ALC049','ALC059','ALC071','ALC079','ALC077','ALC083','ALC089','ALC095','ALC103',
+  'ALZ001','ALZ002','ALZ003','ALZ004','ALZ005','ALZ006','ALZ007','ALZ008','ALZ009','ALZ010','ALZ016',
+  'TNC051','TNC055','TNC103','TNC127','TNZ076','TNZ095','TNZ096','TNZ097'];
+const ZONE_NAMES = {
+  ALC077: 'Lauderdale', ALZ001: 'Lauderdale', ALC033: 'Colbert', ALZ002: 'Colbert', ALC059: 'Franklin', ALZ003: 'Franklin',
+  ALC079: 'Lawrence', ALZ004: 'Lawrence', ALC083: 'Limestone', ALZ005: 'Limestone', ALC089: 'Madison', ALZ006: 'Madison',
+  ALC103: 'Morgan', ALZ007: 'Morgan', ALC095: 'Marshall', ALZ008: 'Marshall', ALC071: 'Jackson', ALZ009: 'Jackson',
+  ALC049: 'DeKalb', ALZ010: 'DeKalb', ALC043: 'Cullman', ALZ016: 'Cullman',
+  TNC127: 'Moore, TN', TNZ076: 'Moore, TN', TNC055: 'Giles, TN', TNZ095: 'Giles, TN',
+  TNC103: 'Lincoln, TN', TNZ096: 'Lincoln, TN', TNC051: 'Franklin, TN', TNZ097: 'Franklin, TN',
+};
+function alertColor(ev) {
+  const e = ev.toLowerCase();
+  if (e.includes('tornado')) return e.includes('watch') ? '#FF8C00' : '#FF2B2B';
+  if (e.includes('extreme wind')) return '#E65C19';
+  if (e.includes('severe thunderstorm')) return e.includes('watch') ? '#FFD700' : '#FFA500';
+  if (e.includes('flash flood') || e.includes('flood warning')) return '#22e05a';
+  if (e.includes('flood')) return '#2E8B57';
+  if (e.includes('high wind')) return '#DAA520';
+  if (e.includes('wind advisory')) return '#DA70D6';
+  if (e.includes('winter storm')) return e.includes('watch') ? '#4682B4' : '#FF69B4';
+  if (e.includes('winter weather')) return '#7B68EE';
+  if (e.includes('ice storm')) return '#B05CFF';
+  if (e.includes('heat')) return '#FF7E00';
+  if (e.includes('freeze') || e.includes('frost')) return '#99CCEE';
+  if (e.includes('special weather')) return '#FFE4B5';
+  if (e.includes('hurricane') || e.includes('tropical')) return '#FF4FA3';
+  return '#8a99ad';
+}
+function rank(ev) {
+  const e = ev.toLowerCase();
+  if (e.includes('emergency')) return 0;
+  if (e.startsWith('tornado warning')) return 1;
+  if (e.includes('warning')) return 2;
+  if (e.includes('watch')) return 3;
+  if (e.includes('advisory')) return 4;
+  return 5;
+}
+const ES = {
+  'Tornado Emergency': 'Emergencia de Tornado', 'Tornado Warning': 'Aviso de Tornado', 'Tornado Watch': 'Vigilancia de Tornado',
+  'Severe Thunderstorm Warning': 'Aviso de Tormenta Eléctrica Severa', 'Severe Thunderstorm Watch': 'Vigilancia de Tormenta Eléctrica Severa',
+  'Extreme Wind Warning': 'Aviso de Vientos Extremos', 'Flash Flood Emergency': 'Emergencia de Inundación Repentina',
+  'Flash Flood Warning': 'Aviso de Inundación Repentina', 'Flash Flood Watch': 'Vigilancia de Inundación Repentina',
+  'Flood Warning': 'Aviso de Inundación', 'Flood Watch': 'Vigilancia de Inundación', 'Flood Advisory': 'Advertencia de Inundación',
+  'High Wind Warning': 'Aviso de Vientos Fuertes', 'High Wind Watch': 'Vigilancia de Vientos Fuertes', 'Wind Advisory': 'Advertencia de Viento',
+  'Winter Storm Warning': 'Aviso de Tormenta Invernal', 'Winter Storm Watch': 'Vigilancia de Tormenta Invernal',
+  'Winter Weather Advisory': 'Advertencia de Tiempo Invernal', 'Ice Storm Warning': 'Aviso de Tormenta de Hielo',
+  'Extreme Cold Warning': 'Aviso de Frío Extremo', 'Cold Weather Advisory': 'Advertencia de Frío',
+  'Extreme Heat Warning': 'Aviso de Calor Extremo', 'Extreme Heat Watch': 'Vigilancia de Calor Extremo', 'Heat Advisory': 'Advertencia de Calor',
+  'Freeze Warning': 'Aviso de Congelación', 'Freeze Watch': 'Vigilancia de Congelación', 'Frost Advisory': 'Advertencia de Escarcha',
+  'Dense Fog Advisory': 'Advertencia de Niebla Densa', 'Special Weather Statement': 'Declaración Especial del Tiempo',
+  'Red Flag Warning': 'Aviso de Bandera Roja (peligro de incendios)', 'Fire Weather Watch': 'Vigilancia de Peligro de Incendios',
+  'Hurricane Warning': 'Aviso de Huracán', 'Hurricane Watch': 'Vigilancia de Huracán',
+  'Tropical Storm Warning': 'Aviso de Tormenta Tropical', 'Tropical Storm Watch': 'Vigilancia de Tormenta Tropical',
+};
+const TIPS = [
+  [/Tornado (Warning|Emergency)/, 'Refúgiese ahora en un cuarto interior del piso más bajo. Si está en una casa móvil, salga y vaya a un edificio resistente.'],
+  [/Tornado Watch/, 'Pueden formarse tornados. Decida ahora a dónde irá y tenga las alertas de su celular activadas.'],
+  [/Extreme Wind/, 'Vientos de huracán muy peligrosos. Refúgiese como si fuera un tornado.'],
+  [/Severe Thunderstorm Warning/, 'Vientos dañinos y granizo. Entre a un edificio y aléjese de las ventanas.'],
+  [/Severe Thunderstorm Watch/, 'Pueden formarse tormentas fuertes. Esté atento a los avisos.'],
+  [/Flash Flood|Flood Warning/, '¡Dé la vuelta, no se ahogue! No maneje por calles inundadas.'],
+  [/Flood/, 'Posibles inundaciones. Tenga cuidado en calles bajas y cerca de arroyos.'],
+  [/Winter|Ice Storm/, 'Caminos resbaladizos. Evite manejar si puede.'],
+  [/Heat/, 'Tome mucha agua, descanse en la sombra o con aire acondicionado y nunca deje niños o mascotas en un carro.'],
+  [/Freeze|Frost|Cold/, 'Proteja a las personas, las mascotas, las tuberías y las plantas del frío.'],
+  [/Wind/, 'Asegure objetos sueltos afuera. Pueden caer ramas y cables eléctricos.'],
+  [/Fog/, 'Maneje despacio y use las luces bajas.'],
+  [/Red Flag|Fire/, 'No queme nada afuera. Los incendios se pueden propagar rápido.'],
+];
+function esName(ev) {
+  if (ES[ev]) return ES[ev];
+  if (/Warning$/.test(ev)) return 'Aviso: ' + ev;
+  if (/Watch$/.test(ev)) return 'Vigilancia: ' + ev;
+  if (/Advisory$/.test(ev)) return 'Advertencia: ' + ev;
+  return ev;
+}
+function ourAreas(p) {
+  const ugc = ((p.geocode || {}).UGC) || [];
+  const names = [...new Set(ugc.map(c => ZONE_NAMES[c]).filter(Boolean))];
+  return names.length ? names.join(', ') : (p.areaDesc || '');
+}
+async function load() {
+  const box = document.getElementById('alerts'), upd = document.getElementById('upd');
+  try {
+    const r = await fetch('https://api.weather.gov/alerts/active?zone=' + ZONES.join(','), { headers: { Accept: 'application/geo+json' } });
+    const list = ((await r.json()).features || []).map(f => f.properties).filter(p => p.messageType !== 'Cancel')
+      .sort((a, b) => rank(a.event) - rank(b.event));
+    const seen = new Set();
+    box.textContent = '';
+    upd.textContent = 'Actualizado a las ' + new Date().toLocaleTimeString('es-US', { hour: 'numeric', minute: '2-digit' });
+    if (!list.length) { box.innerHTML = '<p class="ok">Todo tranquilo</p><p>No hay avisos, vigilancias ni advertencias para nuestros condados en este momento.</p>'; return; }
+    list.forEach(p => {
+      const k = p.event + '|' + ourAreas(p); if (seen.has(k)) return; seen.add(k);
+      const el = document.createElement('article'); el.className = 'alert'; el.style.setProperty('--k', alertColor(p.event));
+      const h = document.createElement('h3'); h.textContent = esName(p.event);
+      const en = document.createElement('div'); en.className = 'en'; en.lang = 'en'; en.textContent = p.event;
+      const where = document.createElement('p'); where.innerHTML = '<strong>Condados:</strong> '; where.append(ourAreas(p));
+      const until = document.createElement('p');
+      until.textContent = 'Hasta: ' + new Date(p.ends || p.expires).toLocaleString('es-US', { weekday: 'long', hour: 'numeric', minute: '2-digit' });
+      el.append(h, en, where, until);
+      const tip = TIPS.find(([re]) => re.test(p.event));
+      if (tip) { const t = document.createElement('p'); t.innerHTML = '<strong>Qué hacer:</strong> '; t.append(tip[1]); el.append(t); }
+      box.append(el);
+    });
+  } catch (e) { upd.textContent = 'No se pudieron cargar las alertas. Intente de nuevo en un minuto.'; }
+}
+load();
+setInterval(load, 120000);
+</script>
+</body>
+</html>

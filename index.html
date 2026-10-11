@@ -391,6 +391,51 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .season-imgs figcaption { margin-top: 6px; font: 600 13px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; text-transform: uppercase; }
 @media (max-width: 760px) { .season-imgs { grid-template-columns: minmax(0, 1fr); } }
 
+/* Forecaster notes */
+.afd { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; max-width: 900px; }
+.afd .when { font: 500 12px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; margin-bottom: 10px; }
+.afd h3 { margin: 0 0 8px; font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--radar); }
+.afd ul { margin: 0 0 6px; padding-left: 20px; }
+.afd li { margin-bottom: 6px; }
+.afd details { border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 10px; }
+.afd summary { cursor: pointer; font: 700 16px/1.3 var(--display); letter-spacing: 0.06em; text-transform: uppercase; }
+.afd details p { margin: 8px 0 0; max-width: 72ch; }
+.afd .sub { font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
+
+/* Fire danger */
+.fire { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+.fire > div { background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--k, var(--rule)); border-radius: 6px; padding: 14px 16px; }
+.fire h3 { margin: 0 0 6px; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
+.fire p { margin: 0 0 8px; font-size: 14px; }
+.fire p:last-child { margin-bottom: 0; }
+.fire .status { font: 700 16px/1.3 var(--display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--k, var(--ink)); }
+
+/* Power outages */
+.utils { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 14px; }
+.utils li { padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.utils b { display: block; font-weight: 600; font-size: 15px; }
+.utils a { margin-right: 10px; }
+.utils a.tel { font-family: var(--data); color: var(--ink); text-decoration: none; }
+
+/* Weather radio */
+.nwr-wrap { overflow-x: auto; }
+.nwr { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14px; }
+.nwr th, .nwr td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.nwr thead th { font: 600 12px/1.3 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); }
+.nwr tbody th { font-weight: 600; white-space: nowrap; }
+.nwr .same { font-family: var(--data); color: var(--radar); white-space: nowrap; }
+.nwr .tx { display: inline-block; margin: 0 14px 4px 0; white-space: nowrap; }
+.nwr .tx b { font-family: var(--data); }
+.nwr .tx small { color: var(--ink-dim); font-family: var(--data); }
+.nwr em { color: #ff8a5c; font-style: normal; }
+.nwr-tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 16px; }
+.nwr-tips div { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; font-size: 14px; }
+.nwr-tips b { display: block; font: 700 17px/1.2 var(--display); letter-spacing: 0.04em; margin-bottom: 4px; }
+
+/* Visitor counter */
+.visits { font: 600 13px/1 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; white-space: nowrap; }
+.visits b { color: var(--ink); font-weight: 600; }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -503,6 +548,9 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <button type="button" class="install-btn" id="install-btn" hidden>Get the app</button>
   <a class="back-link" href="safety.html">Storm safety</a>
   <a class="back-link" href="glossary.html">Glossary</a>
+  <a class="back-link" href="archive.html">Storm archive</a>
+  <a class="back-link" href="alertas.html" lang="es">Español</a>
+  <span class="visits" id="visits" hidden><b id="visits-n"></b> visits</span>
   <a class="live-pill" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA/live" target="_blank" rel="noopener">Live 24/7</a>
   </div>
 </header>
@@ -516,13 +564,16 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#live-radar">Radar</a></li>
     <li><a href="#lightning">Lightning</a></li>
     <li><a href="#forecast">Forecast</a></li>
+    <li><a href="#forecaster-notes">Forecaster notes</a></li>
     <li><a href="#winter" id="nav-winter" hidden>Winter</a></li>
     <li><a href="#river-levels">Rivers</a></li>
     <li><a href="#lakes">Lakes</a></li>
     <li><a href="#rainfall">Rain</a></li>
     <li><a href="#drought">Drought</a></li>
+    <li><a href="#fire">Fire danger</a></li>
     <li><a href="#cameras">Cameras</a></li>
     <li><a href="#roads">Roads</a></li>
+    <li><a href="#power">Power</a></li>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#outlook">Outlook</a></li>
     <li><a href="#climate">Climate</a></li>
@@ -531,9 +582,12 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#videos">Videos</a></li>
     <li><a href="#weather-news">News</a></li>
     <li><a href="#phone-alerts">Phone alerts</a></li>
+    <li><a href="#weather-radio">Weather radio</a></li>
     <li><a href="#shelters">Shelters</a></li>
     <li><a href="safety.html">Safety</a></li>
     <li><a href="glossary.html">Glossary</a></li>
+    <li><a href="archive.html">Archive</a></li>
+    <li><a href="alertas.html" lang="es">Español</a></li>
   </ul>
 </nav>
 
@@ -651,6 +705,39 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
       <p>Only for our 15 counties in North Alabama and Southern Tennessee. Tornado warnings come through at the highest priority. Always have more than one way to get warnings, like a NOAA weather radio.</p>
     </div>
   </div>
+</section>
+
+<section class="band" aria-labelledby="nwr-title" id="weather-radio">
+  <h2 id="nwr-title">NOAA Weather Radio</h2>
+  <p class="lede">A weather radio wakes you up for warnings even when your phone is off or the power is out. Here are the stations that cover each of our counties and the county code to program into your radio.</p>
+  <div class="nwr-wrap">
+    <table class="nwr">
+      <thead><tr><th scope="col">County</th><th scope="col">County code (SAME)</th><th scope="col">Stations (frequency MHz, location, call sign)</th></tr></thead>
+      <tbody>
+      <tr><th scope="row">Colbert County, AL</th><td class="same">001033</td><td><span class="tx"><b>162.475</b> Florence <small>KIH57</small></span></td></tr>
+      <tr><th scope="row">Cullman County, AL</th><td class="same">001043</td><td><span class="tx"><b>162.525</b> Arab <small>WNG642</small></span><span class="tx"><b>162.450</b> Cullman <small>WWF66</small></span><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span><span class="tx"><b>162.425</b> Oneonta <small>WNG606</small></span></td></tr>
+      <tr><th scope="row">DeKalb County, AL</th><td class="same">001049</td><td><span class="tx"><b>162.525</b> Arab <small>WNG642</small></span><span class="tx"><b>162.500</b> Henagar <small>WWF44</small></span></td></tr>
+      <tr><th scope="row">Franklin County, AL</th><td class="same">001059</td><td><span class="tx"><b>162.475</b> Florence <small>KIH57</small></span></td></tr>
+      <tr><th scope="row">Jackson County, AL</th><td class="same">001071</td><td><span class="tx"><b>162.525</b> Arab <small>WNG642</small></span><span class="tx"><b>162.500</b> Henagar <small>WWF44</small></span><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span><span class="tx"><b>162.525</b> Winchester <small>WNG554</small></span></td></tr>
+      <tr><th scope="row">Lauderdale County, AL</th><td class="same">001077</td><td><span class="tx"><b>162.500</b> Clifton <small>WZ2506</small></span><span class="tx"><b>162.475</b> Florence <small>KIH57</small></span></td></tr>
+      <tr><th scope="row">Lawrence County, AL</th><td class="same">001079</td><td><span class="tx"><b>162.475</b> Florence <small>KIH57</small></span><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span></td></tr>
+      <tr><th scope="row">Limestone County, AL</th><td class="same">001083</td><td><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span><span class="tx"><b>162.525</b> Winchester <small>WNG554</small></span></td></tr>
+      <tr><th scope="row">Madison County, AL</th><td class="same">001089</td><td><span class="tx"><b>162.525</b> Arab <small>WNG642</small></span><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span><span class="tx"><b>162.525</b> Winchester <small>WNG554</small></span></td></tr>
+      <tr><th scope="row">Marshall County, AL</th><td class="same">001095</td><td><span class="tx"><b>162.525</b> Arab <small>WNG642</small></span><span class="tx"><b>162.500</b> Henagar <small>WWF44</small></span><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span></td></tr>
+      <tr><th scope="row">Morgan County, AL</th><td class="same">001103</td><td><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span></td></tr>
+      <tr><th scope="row">Franklin County, TN</th><td class="same">047051</td><td><span class="tx"><b>162.525</b> Winchester <small>WNG554</small></span><span class="tx"><b>162.475</b> Shelbyville <small>WXK63</small> <em>(off the air)</em></span></td></tr>
+      <tr><th scope="row">Giles County, TN</th><td class="same">047055</td><td><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span><span class="tx"><b>162.425</b> Lawrenceburg <small>WWF84</small></span></td></tr>
+      <tr><th scope="row">Lincoln County, TN</th><td class="same">047103</td><td><span class="tx"><b>162.400</b> Huntsville <small>KIH20</small></span><span class="tx"><b>162.425</b> Lawrenceburg <small>WWF84</small></span><span class="tx"><b>162.525</b> Winchester <small>WNG554</small></span></td></tr>
+      <tr><th scope="row">Moore County, TN</th><td class="same">047127</td><td><span class="tx"><b>162.525</b> Winchester <small>WNG554</small></span><span class="tx"><b>162.475</b> Shelbyville <small>WXK63</small> <em>(off the air)</em></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="nwr-tips">
+    <div><b>Pick the strongest station</b>Try each frequency listed for your county and keep the one that comes in clearest.</div>
+    <div><b>Program your county</b>Enter your county code so the radio only sounds for alerts that cover you. Add neighboring counties if you want an early heads-up.</div>
+    <div><b>Keep fresh batteries</b>Plug it in and keep backup batteries in it so it still works when the power goes out. Test it on Wednesday mornings during the weekly test.</div>
+  </div>
+  <div class="lsr-src">Station list: National Weather Service NOAA Weather Radio county coverage, October 2026. <a href="https://www.weather.gov/nwr/county_coverage?State=AL" target="_blank" rel="noopener">Check current status</a>.</div>
 </section>
 
 <section class="band" aria-labelledby="shel-title" id="shelters">
@@ -784,6 +871,17 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   </a>
 </section>
 
+<section class="band" aria-labelledby="fire-title" id="fire">
+  <h2 id="fire-title">Fire Danger &amp; Burn Rules</h2>
+  <p class="lede">Whether it's safe and legal to burn outdoors in our counties right now.</p>
+  <div class="fire">
+    <div id="fire-nws"><h3>Fire weather alerts</h3><p class="status" id="fire-status">Checking…</p><p id="fire-text"></p></div>
+    <div id="fire-adem"><h3>Alabama summer burn ban</h3><p class="status" id="adem-status"></p><p>From May 1 through October 31, the state bans open burning in Madison, Morgan, Lawrence and DeKalb counties to protect air quality.</p></div>
+    <div><h3>Alabama burn permits</h3><p>You need a free permit from the Alabama Forestry Commission to burn more than a quarter acre, or any fire within 25 feet of woods or grass. During a drought emergency, all outdoor burning can be banned.</p><p><a href="https://forestry.alabama.gov/Pages/Fire/Restrictions.aspx" target="_blank" rel="noopener">Current Alabama burn restrictions</a></p></div>
+    <div id="fire-tn"><h3>Tennessee burn permits</h3><p class="status" id="tn-status"></p><p>From October 15 through May 15, Tennessee requires a free burn permit for outdoor burning. Your city or county may have its own rules.</p><p><a href="https://www.burnsafetn.org/" target="_blank" rel="noopener">Get a Tennessee burn permit</a></p></div>
+  </div>
+</section>
+
 <section class="band" aria-labelledby="radar-title" id="live-radar">
   <h2 id="radar-title">Live Radar</h2>
   <p class="lede">The last hour of radar, with active warnings outlined. Drag and zoom to look around. Tap a warning for details.</p>
@@ -820,6 +918,28 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <div class="lsr-src" id="roads-src">Roads: Alabama Department of Transportation (ALGO Traffic). Updated every 30 minutes. Tennessee: <a href="https://smartway.tn.gov/" target="_blank" rel="noopener">TDOT SmartWay</a>.</div>
 </section>
 
+<section class="band" aria-labelledby="power-title" id="power">
+  <h2 id="power-title">Power Outages</h2>
+  <p class="lede">Lost power? Report it to your power company and check their outage map. Don't call 911 for an outage unless there's a downed line or another emergency. Stay at least 35 feet away from downed lines and treat every line as live.</p>
+  <ul class="utils">
+      <li><b>Alabama Power</b> <a href="https://outagemap.alabamapower.com" target="_blank" rel="noopener">Outage map</a></li>
+      <li><b>Huntsville Utilities</b> <a href="https://www.hsvutil.org" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Athens Utilities</b> <a href="https://www.athens-utilities.com" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Joe Wheeler EMC</b> <a href="https://www.jwemc.org" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Cullman Electric Cooperative</b> <a href="https://www.cullmanec.com" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Arab Electric Cooperative</b> <a href="https://www.arabelectric.org" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Sand Mountain Electric Cooperative</b> <a href="https://www.smec.coop" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Sheffield Utilities</b> <a href="https://www.sheffieldutilities.org" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Florence Utilities</b> <a class="tel" href="tel:+12567644456">256-764-4456</a></li>
+      <li><b>Guntersville Electric Board</b> <a class="tel" href="tel:+12565825691">256-582-5691</a></li>
+      <li><b>Scottsboro Electric Power Board</b> <a class="tel" href="tel:+12565742680">256-574-2680</a></li>
+      <li><b>Fayetteville Public Utilities (TN)</b> <a href="https://www.fpu-tn.com" target="_blank" rel="noopener">Website</a></li>
+      <li><b>Pulaski Electric System (TN)</b> <a class="tel" href="tel:+19313632522">931-363-2522</a></li>
+      <li><b>Duck River EMC (TN)</b> <a href="https://www.dremc.com" target="_blank" rel="noopener">Website</a></li>
+  </ul>
+  <div class="lsr-src">Not sure who your provider is? Check your power bill or <a href="https://www.tva.com/energy/public-power-partnerships/local-power-companies" target="_blank" rel="noopener">TVA's local power company list</a>.</div>
+</section>
+
 <section class="band" aria-labelledby="fc-title" id="forecast">
   <h2 id="fc-title">7-Day Forecast</h2>
   <p class="lede">Huntsville and the Tennessee Valley. Tap a day for the full forecast.</p>
@@ -831,6 +951,12 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div id="hourly" role="img" aria-label="Hourly temperature and chance of rain for the next 48 hours"></div>
     <div class="hourly-key"><span style="--k:#ffb454">Temperature °F</span><span style="--k:#33d6ff">Chance of rain</span></div>
   </div>
+</section>
+
+<section class="band" aria-labelledby="afd-title" id="forecaster-notes">
+  <h2 id="afd-title">Forecaster Notes</h2>
+  <p class="lede">What the meteorologists at the National Weather Service office in Huntsville are thinking, in their own words. Updated several times a day.</p>
+  <div class="afd" id="afd"><p class="news-empty">Loading the latest discussion…</p></div>
 </section>
 
 <section class="band" aria-labelledby="winter-title" id="winter" hidden>
@@ -2012,6 +2138,99 @@ async function loadPhotos() {
   grid.hidden = !list.length;
 }
 loadPhotos();
+
+// ---- Visitor counter (GoatCounter public total; stays hidden until the account allows it) ----
+async function loadVisits() {
+  try {
+    const r = await fetch('https://northbamawx.goatcounter.com/counter/TOTAL.json');
+    if (!r.ok) return;
+    const n = (await r.json()).count;
+    if (!n) return;
+    document.getElementById('visits-n').textContent = n;
+    document.getElementById('visits').hidden = false;
+  } catch (e) {}
+}
+loadVisits();
+setInterval(loadVisits, 600000);
+
+// ---- Forecaster notes (NWS Huntsville Area Forecast Discussion) ----
+function afdSections(text) {
+  const out = {};
+  text.split(/\n&&\n/).forEach(chunk => {
+    const m = /^\s*\.([A-Z /]+?)\.\.\.\s*\n([\s\S]*)$/m.exec(chunk);
+    if (m) out[m[1].trim()] = m[2].trim();
+  });
+  return out;
+}
+function afdParas(body) {
+  return body.split(/\n\s*\n/).map(x => x.replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean);
+}
+async function loadAfd() {
+  const box = document.getElementById('afd');
+  try {
+    const list = await (await fetch('https://api.weather.gov/products/types/AFD/locations/HUN')).json();
+    const prod = await (await fetch(list['@graph'][0]['@id'])).json();
+    const secs = afdSections(prod.productText);
+    box.textContent = '';
+    const when = document.createElement('div'); when.className = 'when';
+    when.textContent = 'Issued ' + new Date(prod.issuanceTime).toLocaleString('en-US', { weekday: 'long', hour: 'numeric', minute: '2-digit' });
+    box.append(when);
+    const key = secs['KEY MESSAGES'];
+    if (key) {
+      const h = document.createElement('h3'); h.textContent = 'Key messages';
+      const ul = document.createElement('ul');
+      key.replace(/^Updated at.*$/m, '').split(/\n\s*-\s+/).map(x => x.replace(/^\s*-\s+/, '').replace(/\s*\n\s*/g, ' ').trim()).filter(Boolean)
+        .forEach(t => { const li = document.createElement('li'); li.textContent = t; ul.append(li); });
+      box.append(h, ul);
+    }
+    [['NEAR TERM', 'Today and tonight'], ['SHORT TERM', 'Next couple of days'], ['LONG TERM', 'Later in the week'], ['DISCUSSION', 'Discussion'], ['SYNOPSIS', 'Synopsis'], ['FIRE WEATHER', 'Fire weather']]
+      .forEach(([k, label], i) => {
+        if (!secs[k]) return;
+        const paras = afdParas(secs[k]).filter(x => !/^Issued at /.test(x));
+        if (!paras.length) return;
+        const det = document.createElement('details'); if (!key && i === 0) det.open = true;
+        const sum = document.createElement('summary'); sum.textContent = label;
+        det.append(sum);
+        paras.forEach(t => {
+          const pe = document.createElement('p');
+          if (/^\(.*\)$/.test(t)) pe.className = 'sub';
+          pe.textContent = t; det.append(pe);
+        });
+        box.append(det);
+      });
+  } catch (e) { box.innerHTML = '<p class="news-empty">The forecast discussion is unavailable right now.</p>'; }
+}
+loadAfd();
+setInterval(loadAfd, 1800000);
+
+// ---- Fire danger ----
+async function loadFire() {
+  const md = new Date().getMonth() * 100 + new Date().getDate();   // month index * 100 + day
+  const adem = md >= 401 && md <= 931;                              // May 1 - Oct 31
+  const tn = md >= 915 || md <= 415;                                // Oct 15 - May 15
+  const setStat = (el, box, on, yes, no, color) => {
+    document.getElementById(el).textContent = on ? yes : no;
+    document.getElementById(box).style.setProperty('--k', on ? color : '#4be38a');
+  };
+  setStat('adem-status', 'fire-adem', adem, 'In effect now', 'Not in effect', '#ff9f43');
+  setStat('tn-status', 'fire-tn', tn, 'Permits required now', 'No permit season right now', '#ffb454');
+  try {
+    const r = await fetch('https://api.weather.gov/alerts/active?zone=' + ZONES.join(','), { headers: { Accept: 'application/geo+json' } });
+    const fire = ((await r.json()).features || []).map(f => f.properties).filter(p => /Red Flag|Fire Weather|Fire Warning/.test(p.event));
+    const box = document.getElementById('fire-nws');
+    if (fire.length) {
+      box.style.setProperty('--k', '#ff4b4b');
+      document.getElementById('fire-status').textContent = [...new Set(fire.map(p => p.event))].join(', ');
+      document.getElementById('fire-text').textContent = 'For ' + ourAreas(fire[0]) + '. Don\u2019t burn outdoors: fires can spread fast and get out of control.';
+    } else {
+      box.style.setProperty('--k', '#4be38a');
+      document.getElementById('fire-status').textContent = 'None in effect';
+      document.getElementById('fire-text').textContent = 'No red flag warnings or fire weather watches for our counties right now. Always check for local burn bans before you burn.';
+    }
+  } catch (e) { document.getElementById('fire-status').textContent = 'Unavailable right now'; }
+}
+loadFire();
+setInterval(loadFire, 600000);
 
 // ---- Drought monitor ----
 document.querySelectorAll('#drought-tabs button').forEach(b => b.addEventListener('click', () => {
