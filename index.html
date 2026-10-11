@@ -352,6 +352,45 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .clim .up { color: #ff8a5c; } .clim .dn { color: #7fb2ff; } .clim .wet { color: #4be38a; } .clim .dry { color: #ffb454; }
 @media (max-width: 760px) { .climate { grid-template-columns: minmax(0, 1fr); } }
 
+/* Feels-like tip */
+.feel-tip { margin-top: 10px; padding: 10px 14px; background: var(--panel); border-left: 3px solid var(--k, #ff8a5c); border-radius: 4px; font-size: 14px; }
+
+/* Storm arrival times */
+.eta-storm { background: var(--panel); border: 1px solid var(--rule); border-left: 6px solid var(--k, #ff2b2b); border-radius: 6px; padding: 14px 16px; margin-bottom: 10px; }
+.eta-storm h3 { margin: 0 0 4px; font: 800 22px/1.15 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--k, #ff2b2b); }
+.eta-storm .mv { font: 500 13px/1.4 var(--data); color: var(--ink-dim); margin-bottom: 10px; }
+.eta-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 6px; }
+.eta-list li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; }
+.eta-list b { font-weight: 600; }
+.eta-list span { font: 500 13px/1.5 var(--data); color: var(--ink); white-space: nowrap; }
+
+/* Lakes */
+.lakes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.lake { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
+.lake h3 { margin: 0; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
+.lake .v { font: 700 34px/1 var(--display); margin: 10px 0 4px; }
+.lake .v small { font: 500 13px var(--data); color: var(--ink-dim); margin-left: 6px; }
+.lake .chg { font: 500 13px/1.5 var(--data); color: var(--ink-dim); }
+.lake svg { display: block; width: 100%; height: 40px; margin-top: 8px; }
+.lake-links { margin-top: 12px; font-size: 14px; color: var(--ink-dim); }
+.lake-links a { margin-right: 12px; white-space: nowrap; }
+
+/* Viewer photos */
+.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.photo { margin: 0; background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.photo figcaption { padding: 8px 10px; font-size: 13px; }
+.photo figcaption small { display: block; color: var(--ink-dim); }
+.photo-cta { padding: 14px 16px; background: var(--panel); border: 1px dashed var(--rule); border-radius: 6px; max-width: 760px; }
+.photo-cta p { margin: 0 0 10px; }
+
+/* Seasonal outlook */
+.season-imgs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.season-imgs figure { margin: 0; }
+.season-imgs img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+.season-imgs figcaption { margin-top: 6px; font: 600 13px/1.4 var(--data); color: var(--ink-dim); letter-spacing: 0.04em; text-transform: uppercase; }
+@media (max-width: 760px) { .season-imgs { grid-template-columns: minmax(0, 1fr); } }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -463,6 +502,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
   <button type="button" class="install-btn" id="install-btn" hidden>Get the app</button>
   <a class="back-link" href="safety.html">Storm safety</a>
+  <a class="back-link" href="glossary.html">Glossary</a>
   <a class="live-pill" href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA/live" target="_blank" rel="noopener">Live 24/7</a>
   </div>
 </header>
@@ -470,6 +510,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 <nav class="secnav" aria-label="Sections">
   <ul>
     <li><a href="#live">Live</a></li>
+    <li><a href="#arrival" id="nav-arrival" class="hot" hidden>Arrival times</a></li>
     <li><a href="#tropics" id="nav-tropics" class="hot" hidden>Tropics</a></li>
     <li><a href="#alerts-map">Alerts</a></li>
     <li><a href="#live-radar">Radar</a></li>
@@ -477,6 +518,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#forecast">Forecast</a></li>
     <li><a href="#winter" id="nav-winter" hidden>Winter</a></li>
     <li><a href="#river-levels">Rivers</a></li>
+    <li><a href="#lakes">Lakes</a></li>
     <li><a href="#rainfall">Rain</a></li>
     <li><a href="#drought">Drought</a></li>
     <li><a href="#cameras">Cameras</a></li>
@@ -484,11 +526,14 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#reports">Reports</a></li>
     <li><a href="#outlook">Outlook</a></li>
     <li><a href="#climate">Climate</a></li>
+    <li><a href="#seasonal">Seasonal</a></li>
+    <li><a href="#photos">Photos</a></li>
     <li><a href="#videos">Videos</a></li>
     <li><a href="#weather-news">News</a></li>
     <li><a href="#phone-alerts">Phone alerts</a></li>
     <li><a href="#shelters">Shelters</a></li>
     <li><a href="safety.html">Safety</a></li>
+    <li><a href="glossary.html">Glossary</a></li>
   </ul>
 </nav>
 
@@ -499,9 +544,11 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <span class="temp" id="wx-temp">--°</span>
   <span><strong>Huntsville</strong> <span id="wx-desc">Loading current conditions…</span></span>
   <span>Wind <strong id="wx-wind">--</strong></span>
+  <span>Feels like <strong id="wx-feel">--</strong></span>
   <span>Humidity <strong id="wx-rh">--</strong></span>
   <span>Updated <strong id="wx-time">--</strong></span>
 </div>
+<div class="feel-tip" id="feel-tip" hidden></div>
 <div class="wx-strip sky-strip" id="sky">
   <span>Sunrise <strong id="sky-rise">--</strong></span>
   <span>Sunset <strong id="sky-set">--</strong></span>
@@ -544,6 +591,12 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div class="board-foot">From the National Weather Service for our 15 counties. Updates every 2 minutes. Tap an alert for details.</div>
   </aside>
 </div>
+
+<section class="band" aria-labelledby="eta-title" id="arrival" hidden>
+  <h2 id="eta-title">Storm Arrival Times</h2>
+  <p class="lede">Estimated arrival times for towns in the path of storms under a warning, based on the storm motion from the National Weather Service. Storms can speed up, slow down or turn, so don't wait for the time shown. Take shelter as soon as a warning covers you.</p>
+  <div id="eta-list"></div>
+</section>
 
 <section class="band" aria-labelledby="trop-title" id="tropics" hidden>
   <h2 id="trop-title">Tropics</h2>
@@ -693,6 +746,20 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <div class="lsr-src">Gauges: NOAA National Water Prediction Service. Updated every 10 minutes.</div>
 </section>
 
+<section class="band" aria-labelledby="lakes-title" id="lakes">
+  <h2 id="lakes-title">Lake &amp; Dam Levels</h2>
+  <p class="lede">Water levels on the Tennessee River lakes for boating and fishing, with the change over the last day and the past week.</p>
+  <div class="lakes" id="lakes-list"><p class="news-empty">Loading lake levels…</p></div>
+  <div class="lake-links">More lakes from TVA:
+    <a href="https://www.tva.com/environment/lake-levels/Wheeler" target="_blank" rel="noopener">Wheeler</a>
+    <a href="https://www.tva.com/environment/lake-levels/Wilson" target="_blank" rel="noopener">Wilson</a>
+    <a href="https://www.tva.com/environment/lake-levels/Pickwick" target="_blank" rel="noopener">Pickwick</a>
+    <a href="https://www.tva.com/environment/lake-levels/Tims-Ford" target="_blank" rel="noopener">Tims Ford</a>
+    <a href="https://www.tva.com/environment/lake-levels/Guntersville" target="_blank" rel="noopener">Guntersville</a>
+  </div>
+  <div class="lsr-src">Levels: NOAA National Water Prediction Service. Updated every 30 minutes.</div>
+</section>
+
 <section class="band" aria-labelledby="rain-title" id="rainfall">
   <h2 id="rain-title">Rainfall Totals</h2>
   <p class="lede">How much rain has fallen across the Tennessee Valley, estimated from radar and rain gauges. Drag and zoom to look around.</p>
@@ -797,6 +864,30 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <p class="lede">How Huntsville's temperatures and rainfall compare with normal, from the official weather station at Huntsville International Airport.</p>
   <div class="climate" id="climate-cards"><p class="news-empty">Loading climate data…</p></div>
   <div class="lsr-src">Data: NOAA Regional Climate Centers (ACIS). Normals are 1991–2020.</div>
+</section>
+
+<section class="band" aria-labelledby="season-title" id="seasonal">
+  <h2 id="season-title">Seasonal Outlook</h2>
+  <p class="lede">NOAA's outlook for whether temperatures and rainfall will be above or below normal. Look for where North Alabama and Southern Tennessee fall on each map.</p>
+  <div class="tabs" role="tablist" aria-label="Seasonal outlook period" id="season-tabs">
+    <button type="button" role="tab" aria-selected="true" data-p="30">Next 30 days</button>
+    <button type="button" role="tab" aria-selected="false" data-p="90">Next 3 months</button>
+  </div>
+  <div class="season-imgs">
+    <figure><a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/" target="_blank" rel="noopener" id="season-a1"><img id="season-temp" src="https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_temp.gif" alt="NOAA 30-day temperature outlook map" width="900" height="695" loading="lazy"></a><figcaption>Temperature</figcaption></figure>
+    <figure><a href="https://www.cpc.ncep.noaa.gov/products/predictions/30day/" target="_blank" rel="noopener" id="season-a2"><img id="season-prcp" src="https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_prcp.gif" alt="NOAA 30-day precipitation outlook map" width="900" height="695" loading="lazy"></a><figcaption>Rain and snow</figcaption></figure>
+  </div>
+  <div class="lsr-src">Outlooks: NOAA Climate Prediction Center.</div>
+</section>
+
+<section class="band" aria-labelledby="photos-title" id="photos">
+  <h2 id="photos-title">Viewer Photos</h2>
+  <p class="lede">Storms, skies and weather from around North Alabama and Southern Tennessee, sent in by viewers.</p>
+  <div class="photos" id="photo-grid" hidden></div>
+  <div class="photo-cta">
+    <p><strong>Send us your weather photos!</strong> Message them to NorthBamaWX on Facebook with your first name and where and when you took them. Never go out in dangerous weather to get a picture.</p>
+    <a class="btn" href="https://m.me/NorthBamaWeather" target="_blank" rel="noopener">Send a photo on Facebook</a>
+  </div>
 </section>
 
 <section class="band" aria-labelledby="hist-title" id="weather-history">
@@ -1755,6 +1846,172 @@ async function loadClimate() {
 }
 loadClimate();
 setInterval(loadClimate, 3600000);
+
+// ---- Feels like (heat index / wind chill from the KHSV observation) ----
+async function loadFeelsLike() {
+  try {
+    const p = (await (await fetch('https://api.weather.gov/stations/KHSV/observations/latest', { headers: { Accept: 'application/geo+json' } })).json()).properties;
+    const f = c => Math.round(c * 9 / 5 + 32);
+    const t = p.temperature && p.temperature.value;
+    const hi = p.heatIndex && p.heatIndex.value, wc = p.windChill && p.windChill.value;
+    const feel = hi != null ? f(hi) : wc != null ? f(wc) : t != null ? f(t) : null;
+    document.getElementById('wx-feel').textContent = feel == null ? '--' : feel + '°';
+    const tip = document.getElementById('feel-tip');
+    if (feel != null && feel >= 100) {
+      tip.style.setProperty('--k', feel >= 105 ? '#ff4b4b' : '#ff8a5c');
+      tip.textContent = `Heat index ${feel}°. Drink plenty of water, take breaks in the shade or air conditioning, check on older neighbors, and never leave children or pets in a car.`;
+      tip.hidden = false;
+    } else if (feel != null && feel <= 20) {
+      tip.style.setProperty('--k', '#7fb2ff');
+      tip.textContent = `Wind chill ${feel}°. Dress in layers, cover your head and hands, and bring pets inside.`;
+      tip.hidden = false;
+    } else tip.hidden = true;
+  } catch (e) {}
+}
+loadFeelsLike();
+setInterval(loadFeelsLike, 600000);
+
+// ---- Storm arrival times, from the storm motion in NWS warnings ----
+const ETA_TOWNS = [
+  ['Huntsville', 34.7304, -86.5861], ['Madison', 34.6993, -86.7483], ['Decatur', 34.6059, -86.9833], ['Athens', 34.8029, -86.9717],
+  ['Hartselle', 34.4434, -86.9353], ['Florence', 34.7998, -87.6773], ['Muscle Shoals', 34.7448, -87.6675], ['Sheffield', 34.7651, -87.6986],
+  ['Tuscumbia', 34.7312, -87.7025], ['Russellville', 34.5079, -87.7286], ['Moulton', 34.4812, -87.2934], ['Rogersville', 34.8256, -87.2950],
+  ['Lexington', 34.9673, -87.3711], ['Cullman', 34.1748, -86.8436], ['Arab', 34.3282, -86.4958], ['Guntersville', 34.3582, -86.2947],
+  ['Albertville', 34.2676, -86.2089], ['Boaz', 34.2007, -86.1664], ['Scottsboro', 34.6723, -86.0341], ['Stevenson', 34.8687, -85.8394],
+  ['Fort Payne', 34.4443, -85.7197], ['Rainsville', 34.4940, -85.8477], ['Hazel Green', 34.9321, -86.5719], ['New Market', 34.9101, -86.4278],
+  ['Gurley', 34.7029, -86.3758], ['Ardmore', 34.9918, -86.8467], ['Fayetteville, TN', 35.1520, -86.5706], ['Pulaski, TN', 35.1998, -87.0306],
+  ['Winchester, TN', 35.1859, -86.1122], ['Lynchburg, TN', 35.2834, -86.3741],
+];
+// "2026-10-11T10:31:00-00:00...storm...239DEG...31KT...34.62,-87.71 34.55,-87.80"
+function parseMotion(txt) {
+  const m = /^(\S+?)\.\.\.[^.]*\.\.\.(\d+)DEG\.\.\.(\d+)KT\.\.\.(.+)$/.exec((txt || '').trim());
+  if (!m) return null;
+  const pts = m[4].trim().split(/\s+/).map(x => x.split(',').map(Number)).filter(x => x.length === 2 && !isNaN(x[0]) && !isNaN(x[1]));
+  return pts.length ? { time: new Date(m[1]), fromDeg: +m[2], mph: +m[3] * 1.15078, pts } : null;
+}
+function townEtas(mo, maxCross = 10, maxHours = 1.5) {
+  // Flat-earth miles around each storm point; the storm moves toward fromDeg + 180.
+  const h = ((mo.fromDeg + 180) % 360) * Math.PI / 180, hx = Math.sin(h), hy = Math.cos(h), out = [];
+  if (mo.mph < 3) return out;
+  ETA_TOWNS.forEach(([name, lat, lon]) => {
+    let best = null;
+    mo.pts.forEach(([plat, plon]) => {
+      const dx = (lon - plon) * Math.cos(plat * Math.PI / 180) * 69.17, dy = (lat - plat) * 69.17;
+      const along = dx * hx + dy * hy, cross = Math.abs(dx * hy - dy * hx);
+      if (along < -1 || cross > maxCross || along / mo.mph > maxHours) return;
+      const eta = new Date(mo.time.getTime() + Math.max(0, along) / mo.mph * 3600000);
+      if (!best || eta < best) best = eta;
+    });
+    if (best && best > Date.now() - 300000) out.push([name, best]);
+  });
+  return out.sort((a, b) => a[1] - b[1]);
+}
+function compass16(deg) { return ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'][Math.round(deg / 22.5) % 16]; }
+async function loadArrival() {
+  let feats = [];
+  try {
+    const r = await fetch('https://api.weather.gov/alerts/active?area=AL,TN&message_type=alert,update', { headers: { Accept: 'application/geo+json' } });
+    feats = (await r.json()).features || [];
+  } catch (e) { return; }
+  const box = document.getElementById('eta-list');
+  box.textContent = '';
+  let shown = 0;
+  feats.map(f => f.properties)
+    .filter(p => /Tornado Warning|Severe Thunderstorm Warning|Extreme Wind Warning/.test(p.event) && p.parameters && p.parameters.eventMotionDescription)
+    .sort((a, b) => rank(a.event) - rank(b.event))
+    .forEach(p => {
+      const mo = parseMotion(p.parameters.eventMotionDescription[0]);
+      if (!mo) return;
+      const etas = townEtas(mo);
+      if (!etas.length) return;
+      shown++;
+      const card = document.createElement('div'); card.className = 'eta-storm';
+      card.style.setProperty('--k', alertColor(p.event));
+      const h = document.createElement('h3'); h.textContent = p.event;
+      const mv = document.createElement('div'); mv.className = 'mv';
+      mv.textContent = `Moving ${compass16((mo.fromDeg + 180) % 360)} at ${Math.round(mo.mph)} mph · until ` +
+        new Date(p.ends || p.expires).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+      const ul = document.createElement('ul'); ul.className = 'eta-list';
+      etas.forEach(([name, t]) => {
+        const li = document.createElement('li');
+        const b = document.createElement('b'); b.textContent = name;
+        const mins = Math.round((t - Date.now()) / 60000);
+        const sp = document.createElement('span');
+        sp.textContent = mins <= 2 ? 'Now' : `${t.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })} (${mins} min)`;
+        li.append(b, sp); ul.append(li);
+      });
+      card.append(h, mv, ul); box.append(card);
+    });
+  document.getElementById('arrival').hidden = !shown;
+  document.getElementById('nav-arrival').hidden = !shown;
+}
+loadArrival();
+setInterval(loadArrival, 60000);
+
+// ---- Lake and dam levels (NOAA NWPS) ----
+const LAKES = [['GVHA1', 'Guntersville Lake', 'Pool elevation at the dam'], ['GVDA1', 'Below Guntersville Dam', 'Tailwater stage'],
+  ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation']];
+async function loadLakes() {
+  const box = document.getElementById('lakes-list');
+  const cards = await Promise.all(LAKES.map(async ([lid, name, what]) => {
+    try {
+      const d = await (await fetch(`https://api.water.noaa.gov/nwps/v1/gauges/${lid}/stageflow/observed`)).json();
+      const pts = (d.data || []).filter(x => x.primary > -900);
+      if (!pts.length) return null;
+      const last = pts[pts.length - 1], t = new Date(last.validTime).getTime();
+      const ago = h => { const target = t - h * 3600000; let b = null; pts.forEach(x => { const dt = Math.abs(new Date(x.validTime) - target); if (dt < 5400000 && (!b || dt < b[0])) b = [dt, x.primary]; }); return b && b[1]; };
+      const d1 = ago(24), d7 = ago(168);
+      const fmt = v => v == null ? '--' : (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(2) + ' ft';
+      const week = pts.filter(x => new Date(x.validTime) >= t - 7 * 86400000).map(x => x.primary);
+      const lo = Math.min(...week), hi = Math.max(...week), rng = Math.max(hi - lo, 0.2);
+      const line = week.map((v, i) => `${(i / Math.max(week.length - 1, 1) * 200).toFixed(1)},${(36 - (v - lo) / rng * 32).toFixed(1)}`).join(' ');
+      const c = document.createElement('div'); c.className = 'lake';
+      c.innerHTML = `<h3></h3><div class="chg"></div><div class="v">${last.primary.toFixed(2)}<small>ft</small></div>
+        <div class="chg">24 hr: ${fmt(d1 == null ? null : last.primary - d1)} · 7 days: ${fmt(d7 == null ? null : last.primary - d7)}</div>
+        <svg viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#33d6ff" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
+      c.querySelector('h3').textContent = name;
+      c.querySelector('.chg').textContent = `${what} · ${new Date(t).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit' })}`;
+      return c;
+    } catch (e) { return null; }
+  }));
+  box.textContent = '';
+  cards.filter(Boolean).forEach(c => box.append(c));
+  if (!box.children.length) box.innerHTML = '<p class="news-empty">Lake levels are unavailable right now.</p>';
+}
+loadLakes();
+setInterval(loadLakes, 1800000);
+
+// ---- Seasonal outlook tabs ----
+document.querySelectorAll('#season-tabs button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#season-tabs button').forEach(x => x.setAttribute('aria-selected', String(x === b)));
+  const long = b.dataset.p === '90';
+  const base = long ? 'https://www.cpc.ncep.noaa.gov/products/predictions/long_range/lead01/off01_' : 'https://www.cpc.ncep.noaa.gov/products/predictions/30day/off14_';
+  const page = long ? 'https://www.cpc.ncep.noaa.gov/products/predictions/long_range/seasonal.php?lead=1' : 'https://www.cpc.ncep.noaa.gov/products/predictions/30day/';
+  const label = long ? '3-month' : '30-day';
+  const t = document.getElementById('season-temp'), pr = document.getElementById('season-prcp');
+  t.src = base + 'temp.gif'; t.alt = `NOAA ${label} temperature outlook map`;
+  pr.src = base + 'prcp.gif'; pr.alt = `NOAA ${label} precipitation outlook map`;
+  document.getElementById('season-a1').href = page; document.getElementById('season-a2').href = page;
+}));
+
+// ---- Viewer photos (photos.json; add entries and image files to publish) ----
+async function loadPhotos() {
+  const d = await rawData('photos.json');
+  const list = (d && d.photos) || [];
+  const grid = document.getElementById('photo-grid');
+  grid.textContent = '';
+  list.forEach(ph => {
+    const fig = document.createElement('figure'); fig.className = 'photo';
+    const a = document.createElement('a'); a.href = ph.file; a.target = '_blank'; a.rel = 'noopener';
+    const img = document.createElement('img'); img.src = ph.file; img.alt = ph.caption || 'Viewer weather photo'; img.loading = 'lazy';
+    a.append(img);
+    const cap = document.createElement('figcaption'); cap.textContent = ph.caption || '';
+    const sm = document.createElement('small'); sm.textContent = [ph.credit && 'Photo: ' + ph.credit, ph.place, ph.date].filter(Boolean).join(' · ');
+    cap.append(sm); fig.append(a, cap); grid.append(fig);
+  });
+  grid.hidden = !list.length;
+}
+loadPhotos();
 
 // ---- Drought monitor ----
 document.querySelectorAll('#drought-tabs button').forEach(b => b.addEventListener('click', () => {
