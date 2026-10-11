@@ -304,6 +304,54 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 @media (max-width: 760px) { .winter-days { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .winter-days { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
+/* Check my location */
+.locate { padding: 12px 18px; border-top: 1px solid var(--rule); }
+.locate button { all: unset; cursor: pointer; display: block; width: 100%; box-sizing: border-box; text-align: center; padding: 10px 12px;
+  border: 1px solid var(--radar); border-radius: 4px; color: var(--radar); font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; }
+.locate button:hover { background: rgba(51,214,255,0.1); }
+.locate button:focus-visible { outline: 2px solid var(--radar); outline-offset: 2px; }
+.locate-out { margin-top: 10px; font-size: 14px; }
+.locate-out .ok { color: #4be38a; font-weight: 600; }
+.locate-out ul { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 6px; }
+.locate-out li { padding: 8px 10px; border-left: 4px solid var(--k, #fff); background: rgba(255,255,255,0.04); }
+.locate-out li b { display: block; font: 700 16px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; color: var(--k, #fff); }
+.locate-out small { color: var(--ink-dim); }
+
+/* Lightning */
+.ltg-box { position: relative; height: 480px; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: #0d1b2e; }
+#ltgmap { position: absolute; inset: 0; background: #0d1b2e; }
+.ltg-bar { position: absolute; left: 10px; bottom: 10px; z-index: 800; padding: 6px 10px; border-radius: 4px; background: rgba(10,22,38,0.85);
+  font: 500 12px/1.3 var(--data); color: var(--ink); }
+@media (max-width: 600px) { .ltg-box { height: 380px; } }
+
+/* Roads */
+.roads { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.roads li { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 4px 16px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--k, #ff9f43); border-radius: 4px; }
+.roads .kind { font: 700 13px/1.2 var(--data); letter-spacing: 0.06em; text-transform: uppercase; color: var(--k, #ff9f43); }
+.roads .kind small { display: block; color: var(--ink-dim); font-weight: 500; margin-top: 4px; letter-spacing: 0.02em; text-transform: none; }
+.roads h3 { margin: 0; font: 700 18px/1.2 var(--display); letter-spacing: 0.02em; }
+.roads p { margin: 2px 0 0; font-size: 14px; color: var(--ink-dim); }
+@media (max-width: 600px) { .roads li { grid-template-columns: minmax(0, 1fr); } }
+
+/* Shelters */
+.shel-note { padding: 12px 14px; background: var(--panel); border-left: 3px solid #ffb454; border-radius: 4px; font-size: 14px; margin-bottom: 14px; max-width: 900px; }
+.shelters { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.shel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.shel h3 { margin: 0; font: 700 18px/1.2 var(--display); letter-spacing: 0.03em; }
+.shel p { margin: 0; font-size: 13px; color: var(--ink-dim); }
+.shel a { font-size: 14px; color: var(--radar); }
+.shel a.tel { font: 600 14px/1.3 var(--data); color: var(--ink); text-decoration: none; }
+
+/* Monthly climate */
+.climate { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.clim { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; }
+.clim h3 { margin: 0 0 12px; font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; text-transform: uppercase; }
+.clim dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 16px; margin: 0; }
+.clim dt { font: 500 12px/1.6 var(--data); color: var(--ink-dim); letter-spacing: 0.06em; text-transform: uppercase; }
+.clim dd { margin: 0; font-size: 15px; }
+.clim .up { color: #ff8a5c; } .clim .dn { color: #7fb2ff; } .clim .wet { color: #4be38a; } .clim .dry { color: #ffb454; }
+@media (max-width: 760px) { .climate { grid-template-columns: minmax(0, 1fr); } }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -425,17 +473,21 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#tropics" id="nav-tropics" class="hot" hidden>Tropics</a></li>
     <li><a href="#alerts-map">Alerts</a></li>
     <li><a href="#live-radar">Radar</a></li>
+    <li><a href="#lightning">Lightning</a></li>
     <li><a href="#forecast">Forecast</a></li>
     <li><a href="#winter" id="nav-winter" hidden>Winter</a></li>
     <li><a href="#river-levels">Rivers</a></li>
     <li><a href="#rainfall">Rain</a></li>
     <li><a href="#drought">Drought</a></li>
     <li><a href="#cameras">Cameras</a></li>
+    <li><a href="#roads">Roads</a></li>
     <li><a href="#reports">Reports</a></li>
     <li><a href="#outlook">Outlook</a></li>
+    <li><a href="#climate">Climate</a></li>
     <li><a href="#videos">Videos</a></li>
     <li><a href="#weather-news">News</a></li>
     <li><a href="#phone-alerts">Phone alerts</a></li>
+    <li><a href="#shelters">Shelters</a></li>
     <li><a href="safety.html">Safety</a></li>
   </ul>
 </nav>
@@ -456,6 +508,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <span>Daylight <strong id="sky-day">--</strong></span>
   <span class="moon"><svg id="moon-svg" viewBox="0 0 20 20" aria-hidden="true"></svg><span>Moon <strong id="sky-moon">--</strong></span></span>
   <span>Air quality <strong id="sky-aqi">--</strong><i class="aqi-dot" id="aqi-dot"></i></span>
+  <span>Pollen <strong id="sky-pollen">--</strong><i class="aqi-dot" id="pollen-dot"></i></span>
 </div>
 
 <div class="console" id="live">
@@ -484,6 +537,10 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
       <span id="alerts-updated">checking…</span>
     </div>
     <ul id="alerts"></ul>
+    <div class="locate">
+      <button type="button" id="locate-btn">Am I in a warning?</button>
+      <div class="locate-out" id="locate-out" aria-live="polite"></div>
+    </div>
     <div class="board-foot">From the National Weather Service for our 15 counties. Updates every 2 minutes. Tap an alert for details.</div>
   </aside>
 </div>
@@ -543,6 +600,85 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   </div>
 </section>
 
+<section class="band" aria-labelledby="shel-title" id="shelters">
+  <h2 id="shel-title">Storm Shelters</h2>
+  <p class="lede">Where to find public storm shelters in each of our counties.</p>
+  <div class="shel-note"><strong>Before you go:</strong> community shelters usually open when a tornado watch is issued. Go early, because driving during a tornado warning is dangerous. Shelter lists change, so call ahead to confirm. Most shelters don't allow pets except service animals. Phone numbers are for each county's emergency management office.</div>
+  <div class="shelters">
+    <div class="shel">
+      <h3>Colbert County, AL</h3>
+      <p>County shelters in Cherokee, Littleville, Leighton and Ford City.</p>
+      <a href="https://www.waff.com/2025/03/14/list-storm-shelters-open-across-tennessee-valley-upcoming-severe-weather" target="_blank" rel="noopener">WAFF shelter list</a>
+    </div>
+    <div class="shel">
+      <h3>Cullman County, AL</h3>
+      <p>Jones Chapel shelter is always open.</p>
+      <a href="https://www.cullmantribune.com/2026/03/15/storm-shelters-available-across-cullman-county/" target="_blank" rel="noopener">County EMA list (Cullman Tribune)</a>
+    </div>
+    <div class="shel">
+      <h3>DeKalb County, AL</h3>
+      <a href="https://fortpayne.org/wp-content/uploads/2025/03/Community-Storm-Shelters-in-DeKalb-County.pdf" target="_blank" rel="noopener">DeKalb County EMA list (PDF)</a>
+      <a class="tel" href="tel:+12568458569">EMA 256-845-8569</a>
+    </div>
+    <div class="shel">
+      <h3>Franklin County, AL</h3>
+      <a href="https://franklincountychamber.org/emergency-storm-shelters/" target="_blank" rel="noopener">Franklin County shelter list</a>
+    </div>
+    <div class="shel">
+      <h3>Jackson County, AL</h3>
+      <p>Shelters at most schools and in Scottsboro, Bridgeport and Stevenson.</p>
+      <a href="https://www.waff.com/2025/03/14/list-storm-shelters-open-across-tennessee-valley-upcoming-severe-weather" target="_blank" rel="noopener">WAFF shelter list</a>
+      <a class="tel" href="tel:+12565749344">EMA 256-574-9344</a>
+    </div>
+    <div class="shel">
+      <h3>Lauderdale County, AL</h3>
+      <a href="https://www.waff.com/2025/03/14/list-storm-shelters-open-across-tennessee-valley-upcoming-severe-weather" target="_blank" rel="noopener">WAFF shelter list</a>
+      <a class="tel" href="tel:+12567606363">EMA 256-760-6363</a>
+    </div>
+    <div class="shel">
+      <h3>Lawrence County, AL</h3>
+      <a href="https://www.waff.com/2025/03/14/list-storm-shelters-open-across-tennessee-valley-upcoming-severe-weather" target="_blank" rel="noopener">WAFF shelter list</a>
+      <a class="tel" href="tel:+12566121781">EMA 256-612-1781</a>
+    </div>
+    <div class="shel">
+      <h3>Limestone County, AL</h3>
+      <a href="https://www.limestonecounty-al.gov/Departments/EMA/Storm-Shelters" target="_blank" rel="noopener">Limestone County EMA list</a>
+      <a class="tel" href="tel:+12562322631">EMA 256-232-2631</a>
+    </div>
+    <div class="shel">
+      <h3>Madison County, AL</h3>
+      <a href="https://madisoncountyalema.gov/safe-room-locations/" target="_blank" rel="noopener">Huntsville-Madison County EMA list</a>
+    </div>
+    <div class="shel">
+      <h3>Marshall County, AL</h3>
+      <a href="https://www.waff.com/2025/03/14/list-storm-shelters-open-across-tennessee-valley-upcoming-severe-weather" target="_blank" rel="noopener">WAFF shelter list</a>
+      <a class="tel" href="tel:+12565717329">EMA 256-571-7329</a>
+    </div>
+    <div class="shel">
+      <h3>Morgan County, AL</h3>
+      <a href="https://morgancountysheriffal.gov/storm-shelters" target="_blank" rel="noopener">Morgan County shelter list</a>
+    </div>
+    <div class="shel">
+      <h3>Franklin County, TN</h3>
+      <p>No public list online. Ask Franklin County, TN emergency management.</p>
+    </div>
+    <div class="shel">
+      <h3>Giles County, TN</h3>
+      <a href="https://gilescountytn.gov/?p=13291" target="_blank" rel="noopener">Giles County emergency management</a>
+      <a class="tel" href="tel:+19313631342">EMA 931-363-1342</a>
+    </div>
+    <div class="shel">
+      <h3>Lincoln County, TN</h3>
+      <a href="https://lincolncountytn.gov/" target="_blank" rel="noopener">Lincoln County government</a>
+      <a class="tel" href="tel:+19314381575">EMA 931-438-1575</a>
+    </div>
+    <div class="shel">
+      <h3>Moore County, TN</h3>
+      <p>No public list online. Ask Moore County, TN emergency management.</p>
+    </div>
+  </div>
+</section>
+
 <section class="band" aria-labelledby="lsr-title" id="reports">
   <h2 id="lsr-title">Storm Reports</h2>
   <p class="lede">Damage, flooding, hail and wind reports sent to the National Weather Service from our counties in the last 48 hours. They're also marked on the Alerts Map.</p>
@@ -593,11 +729,28 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   </div>
 </section>
 
+<section class="band" aria-labelledby="ltg-title" id="lightning">
+  <h2 id="ltg-title">Lightning</h2>
+  <p class="lede">Lightning seen by the GOES-East weather satellite in the last 15 minutes, in yellow, over the latest radar. Brighter spots are more recent. If you can hear thunder, you're close enough to be struck.</p>
+  <div class="ltg-box">
+    <div id="ltgmap" role="region" aria-label="Lightning map"></div>
+    <div class="ltg-bar" id="ltg-time">Loading lightning…</div>
+  </div>
+  <div class="lsr-src">Lightning: NOAA GOES-East Geostationary Lightning Mapper via SSEC RealEarth (University of Wisconsin). Updates every 2 minutes.</div>
+</section>
+
 <section class="band" aria-labelledby="cams-title" id="cameras">
   <h2 id="cams-title">Local Cameras</h2>
   <p class="lede">Live road views across North Alabama. Pictures refresh every minute. Tap one to watch live on ALGO Traffic.</p>
   <div class="cams" id="cams"></div>
   <div class="cams-src">Cameras: Alabama Department of Transportation (ALGO Traffic)</div>
+</section>
+
+<section class="band" aria-labelledby="roads-title" id="roads">
+  <h2 id="roads-title">Road Closings &amp; Incidents</h2>
+  <p class="lede">Closed roads, crashes, flooding and other trouble on state highways in our Alabama counties.</p>
+  <ul class="roads" id="road-list"><li class="news-empty">Loading road reports…</li></ul>
+  <div class="lsr-src" id="roads-src">Roads: Alabama Department of Transportation (ALGO Traffic). Updated every 30 minutes. Tennessee: <a href="https://smartway.tn.gov/" target="_blank" rel="noopener">TDOT SmartWay</a>.</div>
 </section>
 
 <section class="band" aria-labelledby="fc-title" id="forecast">
@@ -637,6 +790,13 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <span style="--k:#c1e9c1">General thunder</span><span style="--k:#66a366">1 Marginal</span><span style="--k:#ffe066">2 Slight</span>
     <span style="--k:#ffa366">3 Enhanced</span><span style="--k:#e06666">4 Moderate</span><span style="--k:#ee99ee">5 High</span>
   </div>
+</section>
+
+<section class="band" aria-labelledby="clim-title" id="climate">
+  <h2 id="clim-title">Monthly Climate</h2>
+  <p class="lede">How Huntsville's temperatures and rainfall compare with normal, from the official weather station at Huntsville International Airport.</p>
+  <div class="climate" id="climate-cards"><p class="news-empty">Loading climate data…</p></div>
+  <div class="lsr-src">Data: NOAA Regional Climate Centers (ACIS). Normals are 1991–2020.</div>
 </section>
 
 <section class="band" aria-labelledby="hist-title" id="weather-history">
@@ -1419,6 +1579,182 @@ async function loadSky() {
 }
 loadSky();
 setInterval(loadSky, 1800000);
+
+async function rawData(name) {
+  for (const url of [`https://raw.githubusercontent.com/northbamawx/northbamawx.github.io/main/${name}`, name]) {
+    try { const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) return await r.json(); } catch (e) {}
+  }
+  return null;
+}
+
+// ---- Pollen (pollen.json, written by the site's GitHub Action) ----
+const POLLEN_LEVELS = [[2.4, 'Low', '#4be38a'], [4.8, 'Low-medium', '#b6e34b'], [7.2, 'Medium', '#ffe14b'], [9.6, 'Medium-high', '#ff9f43'], [99, 'High', '#ff4b4b']];
+async function loadPollen() {
+  const d = await rawData('pollen.json');
+  const today = d && d.days && d.days.find(x => x.day === 'Today');
+  if (!today) return;
+  const [, label, color] = POLLEN_LEVELS.find(l => today.index <= l[0]);
+  const top = today.triggers.slice(0, 2).join(', ').toLowerCase();
+  document.getElementById('sky-pollen').textContent = `${today.index.toFixed(1)} ${label}` + (top && today.index >= 2.5 ? ` (${top})` : '');
+  document.getElementById('pollen-dot').style.background = color;
+}
+loadPollen();
+setInterval(loadPollen, 1800000);
+
+// ---- Am I in a warning? ----
+document.getElementById('locate-btn').addEventListener('click', () => {
+  const out = document.getElementById('locate-out');
+  if (!navigator.geolocation) { out.textContent = 'Your browser can\u2019t share your location.'; return; }
+  out.textContent = 'Finding your location…';
+  navigator.geolocation.getCurrentPosition(async pos => {
+    const lat = pos.coords.latitude.toFixed(4), lon = pos.coords.longitude.toFixed(4);
+    out.textContent = 'Checking alerts for your location…';
+    try {
+      const [a, pt] = await Promise.all([
+        fetch(`https://api.weather.gov/alerts/active?point=${lat},${lon}`).then(r => r.json()),
+        fetch(`https://api.weather.gov/points/${lat},${lon}`).then(r => r.json()).catch(() => null),
+      ]);
+      const rel = pt && pt.properties && pt.properties.relativeLocation && pt.properties.relativeLocation.properties;
+      const where = rel ? `near ${rel.city}, ${rel.state}` : 'at your location';
+      const list = (a.features || []).map(f => f.properties).filter(p => p.messageType !== 'Cancel')
+        .sort((x, y) => rank(x.event) - rank(y.event));
+      out.textContent = '';
+      const head = document.createElement('div');
+      if (!list.length) {
+        head.className = 'ok';
+        head.textContent = `No warnings, watches or advisories ${where} right now.`;
+        out.append(head);
+      } else {
+        head.textContent = `${list.length} alert${list.length === 1 ? '' : 's'} ${where}:`;
+        const ul = document.createElement('ul');
+        list.forEach(p => {
+          const li = document.createElement('li');
+          li.style.setProperty('--k', alertColor(p.event));
+          const b = document.createElement('b'); b.textContent = p.event;
+          const sm = document.createElement('small');
+          sm.textContent = p.expires ? 'Until ' + new Date(p.ends || p.expires).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit' }) : '';
+          li.append(b, sm); ul.append(li);
+        });
+        out.append(head, ul);
+      }
+    } catch (e) { out.textContent = 'Could not reach the National Weather Service. Try again in a minute.'; }
+  }, () => { out.textContent = 'Location is turned off. Allow location for this site and try again.'; },
+  { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 });
+});
+
+// ---- Lightning (GOES-East GLM tiles from SSEC RealEarth) ----
+let ltgMap = null, ltgLayers = [], ltgRadar = null;
+async function loadLightning() {
+  if (!ltgMap) return;
+  try {
+    const t = (await (await fetch('https://realearth.ssec.wisc.edu/api/times?products=glmgroupdensity')).json()).glmgroupdensity || [];
+    const recent = t.slice(-12);
+    if (!recent.length) return;
+    const fresh = recent.map((stamp, i) => {
+      const [d, hms] = stamp.split('.');
+      return L.tileLayer(`https://realearth.ssec.wisc.edu/tiles/glmgroupdensity/${d}/${hms}/{z}/{x}/{y}.png`,
+        { maxNativeZoom: 6, maxZoom: 11, opacity: i >= recent.length - 4 ? 1 : 0.45, zIndex: 10 + i });
+    });
+    fresh.forEach(l => l.addTo(ltgMap));
+    setTimeout(() => { ltgLayers.forEach(l => ltgMap.removeLayer(l)); ltgLayers = fresh; }, 1500);
+    const last = recent[recent.length - 1];
+    const when = new Date(Date.UTC(+last.slice(0, 4), +last.slice(4, 6) - 1, +last.slice(6, 8), +last.slice(9, 11), +last.slice(11, 13)));
+    document.getElementById('ltg-time').textContent = 'Latest: ' + when.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  } catch (e) { document.getElementById('ltg-time').textContent = 'Lightning data unavailable right now'; }
+  if (ltgRadar) ltgMap.removeLayer(ltgRadar);
+  ltgRadar = L.tileLayer(`https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913/{z}/{x}/{y}.png?${Math.floor(Date.now() / 120000)}`,
+    { opacity: 0.35, zIndex: 5 }).addTo(ltgMap);
+}
+async function initLightning() {
+  if (!window.L) return;
+  ltgMap = L.map('ltgmap', { scrollWheelZoom: false, zoomSnap: 0.25, maxZoom: 11, minZoom: 5 });
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    maxNativeZoom: 16, attribution: 'Esri | Lightning: NOAA GOES GLM / SSEC RealEarth | Radar: IEM' }).addTo(ltgMap);
+  ltgMap.createPane('labels'); ltgMap.getPane('labels').style.zIndex = 650; ltgMap.getPane('labels').style.pointerEvents = 'none';
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labels' }).addTo(ltgMap);
+  try {
+    const gj = await (await fetch('counties.geojson')).json();
+    const lines = L.geoJSON(gj, { pane: 'labels', style: { color: '#e8f0fa', weight: 1.2, opacity: 0.7, fill: false } }).addTo(ltgMap);
+    ltgMap.fitBounds(lines.getBounds().pad(0.6));
+  } catch (e) { ltgMap.setView([34.75, -86.6], 7); }
+  loadLightning();
+  setInterval(loadLightning, 120000);
+}
+initLightning();
+
+// ---- Road closings (roads.json, written by the site's GitHub Action) ----
+const ROAD_KINDS = { Crash: ['Crash', '#ff4b4b'], RoadCondition: ['Road hazard', '#ff7ad9'], Incident: ['Incident', '#ffb454'],
+  Roadwork: ['Road work', '#ff9f43'], Facility: ['Facility', '#93a8c2'] };
+async function loadRoads() {
+  const d = await rawData('roads.json');
+  const list = document.getElementById('road-list');
+  if (!d) { list.innerHTML = '<li class="news-empty">Road reports are unavailable right now.</li>'; return; }
+  list.textContent = '';
+  if (!d.events.length) {
+    const li = document.createElement('li'); li.className = 'news-empty';
+    li.textContent = 'No road closures or incidents reported on state highways in our counties right now.';
+    list.append(li);
+  }
+  d.events.forEach(e => {
+    const [kind, color] = ROAD_KINDS[e.type] || [e.type, '#ff9f43'];
+    const li = document.createElement('li');
+    li.style.setProperty('--k', e.severity === 'Closed' ? '#ff4b4b' : color);
+    const k = document.createElement('div'); k.className = 'kind';
+    k.textContent = e.severity === 'Closed' ? 'Closed' : kind;
+    const sm = document.createElement('small'); sm.textContent = e.county + ' County'; k.append(sm);
+    const body = document.createElement('div');
+    const h = document.createElement('h3'); h.textContent = e.where || e.title;
+    const p1 = document.createElement('p');
+    p1.textContent = [e.title, e.city].filter(Boolean).join(' · ') + (e.detail ? ' — ' + e.detail : '');
+    body.append(h, p1);
+    li.append(k, body); list.append(li);
+  });
+  const up = new Date(d.updated);
+  document.getElementById('roads-src').firstChild.textContent =
+    `Roads: Alabama Department of Transportation (ALGO Traffic). Updated ${up.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}. Tennessee: `;
+}
+loadRoads();
+setInterval(loadRoads, 600000);
+
+// ---- Monthly climate (ACIS, Huntsville International Airport) ----
+function iso(dt) { return dt.toLocaleDateString('en-CA', { timeZone: 'America/Chicago' }); }
+function num(v) { if (v === 'T') return 0; const n = parseFloat(v); return isNaN(n) ? null : n; }
+async function loadClimate() {
+  const now = new Date();
+  const lastStart = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+  let rows;
+  try {
+    const r = await fetch('https://data.rcc-acis.org/StnData', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sid: 'HSV', sdate: iso(lastStart), edate: iso(now),
+        elems: [{ name: 'maxt' }, { name: 'mint' }, { name: 'pcpn' }, { name: 'maxt', normal: '1' }, { name: 'mint', normal: '1' }, { name: 'pcpn', normal: '1' }] }) });
+    rows = (await r.json()).data;
+  } catch (e) { return; }
+  const box = document.getElementById('climate-cards');
+  box.textContent = '';
+  const months = [[lastStart.getMonth(), lastStart.toLocaleDateString('en-US', { month: 'long' })], [now.getMonth(), now.toLocaleDateString('en-US', { month: 'long' }) + ' so far']];
+  months.forEach(([m, title]) => {
+    const days = rows.filter(r => Number(r[0].slice(5, 7)) - 1 === m && num(r[1]) !== null && num(r[2]) !== null);
+    if (!days.length) return;
+    const avg = i => days.reduce((a, r) => a + num(r[i]), 0) / days.length;
+    const hi = avg(1), lo = avg(2), nhi = avg(4), nlo = avg(5);
+    const rain = rows.filter(r => Number(r[0].slice(5, 7)) - 1 === m && num(r[3]) !== null);
+    const tot = rain.reduce((a, r) => a + num(r[3]), 0), ntot = rain.reduce((a, r) => a + (num(r[6]) || 0), 0);
+    const hot = days.reduce((a, r) => (num(r[1]) > num(a[1]) ? r : a)), cold = days.reduce((a, r) => (num(r[2]) < num(a[2]) ? r : a));
+    const dshort = r => new Date(r[0] + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const dep = (v, n, unit, up, dn) => { const x = v - n; const c = x >= 0 ? up : dn;
+      return `<span class="${c}">${x >= 0 ? '+' : '−'}${Math.abs(x).toFixed(1)}${unit}</span> vs normal`; };
+    const card = document.createElement('div'); card.className = 'clim';
+    card.innerHTML = `<h3>${title}</h3><dl>
+      <dt>Avg high</dt><dd>${hi.toFixed(1)}° (${dep(hi, nhi, '°', 'up', 'dn')})</dd>
+      <dt>Avg low</dt><dd>${lo.toFixed(1)}° (${dep(lo, nlo, '°', 'up', 'dn')})</dd>
+      <dt>Rainfall</dt><dd>${tot.toFixed(2)} in (${dep(tot, ntot, ' in', 'wet', 'dry')})</dd>
+      <dt>Hottest</dt><dd>${num(hot[1])}° on ${dshort(hot)}</dd>
+      <dt>Coldest</dt><dd>${num(cold[2])}° on ${dshort(cold)}</dd></dl>`;
+    box.append(card);
+  });
+}
+loadClimate();
+setInterval(loadClimate, 3600000);
 
 // ---- Drought monitor ----
 document.querySelectorAll('#drought-tabs button').forEach(b => b.addEventListener('click', () => {

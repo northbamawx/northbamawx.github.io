@@ -1,0 +1,25 @@
+{
+ "updated": "2026-10-11T10:37:55+00:00",
+ "city": "Huntsville",
+ "days": [
+  {
+   "day": "Today",
+   "index": 0.6,
+   "triggers": [
+    "Ragweed",
+    "Sagebrush",
+    "Elm"
+   ]
+  },
+  {
+   "day": "Tomorrow",
+   "index": 5.0,
+   "triggers": [
+    "Ragweed",
+    "Sagebrush",
+    "Elm"
+   ]
+  }
+ ],
+ "source": "https://www.pollen.com/forecast/current/pollen/35801"
+}
