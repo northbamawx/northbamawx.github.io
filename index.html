@@ -8,7 +8,7 @@
 <meta name="google-site-verification" content="8v_0x8vtMz4pMSy9UgrOZighmG8JSjiPO6ynbP5y44Y">
 <meta name="keywords" content="North Alabama weather, Huntsville weather, Tennessee Valley weather, weather radar, tornado warning, severe weather, live weather stream">
 <meta property="og:url" content="https://northbamawx.github.io/">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
  {"@type":"WebSite","name":"NorthBamaWX","url":"https://northbamawx.github.io/",
@@ -489,6 +489,27 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .town-links a { display: block; padding: 8px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-weight: 600; }
 
 
+/* Storm mode: warning in effect -- life-safety sections first, extras hidden */
+body.storm-mode .wrap { display: flex; flex-direction: column; }
+body.storm-mode .wrap > * { order: 50; }
+body.storm-mode .storm-banner { order: 1; }
+body.storm-mode .wrap > header { order: 2; }
+body.storm-mode .secnav { order: 3; }
+body.storm-mode #install-tip { order: 4; }
+body.storm-mode #wx { order: 5; }
+body.storm-mode #rain-line { order: 6; }
+body.storm-mode #feel-tip { order: 7; }
+body.storm-mode #live { order: 8; }
+body.storm-mode #arrival { order: 9; }
+body.storm-mode #live-radar { order: 10; }
+body.storm-mode #alerts-map { order: 11; }
+body.storm-mode #lightning { order: 12; }
+body.storm-mode #reports { order: 13; }
+body.storm-mode #shelters { order: 14; }
+body.storm-mode #phone-alerts { order: 15; }
+body.storm-mode #sky, body.storm-mode #videos, body.storm-mode #weather-news, body.storm-mode #towns, body.storm-mode #football,
+body.storm-mode #lakes, body.storm-mode #drought, body.storm-mode #fire, body.storm-mode #hurricanes { display: none; }
+
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .tabs button { all: unset; cursor: pointer; font: 700 16px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase;
@@ -581,6 +602,11 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   .live-pill::before { animation: none; }
 }
 </style>
+<meta property="og:image" content="https://northbamawx.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NorthBamaWX: live radar and severe weather alerts, 24/7">
+<meta name="twitter:image" content="https://northbamawx.github.io/og-image.png">
 </head>
 <body>
 <div class="wrap">
@@ -1075,7 +1101,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <button type="button" role="tab" aria-selected="false" data-haz="wind">Wind</button>
   </div>
   <a href="https://www.spc.noaa.gov/products/outlook/" target="_blank" rel="noopener">
-    <img class="outlook-img" id="spc-img" src="https://www.spc.noaa.gov/products/outlook/day1otlk.png" alt="Storm Prediction Center Day 1 convective outlook map" width="815" height="555">
+    <img class="outlook-img" id="spc-img" src="https://www.spc.noaa.gov/products/outlook/day1otlk.png" alt="Storm Prediction Center Day 1 convective outlook map" width="815" height="555" loading="lazy" decoding="async">
   </a>
   <p class="lsr-src" id="haz-note" hidden>Percent chance of that hazard within 25 miles of any point. Hatched areas mean the strongest storms (EF2+ tornadoes, 2-inch hail or 75 mph winds) are possible.</p>
   <div class="outlook-key" aria-label="Risk levels" id="cat-key">
@@ -1624,6 +1650,7 @@ const BANNER_EVENTS = [
   [/severe thunderstorm warning/i, '#b35900', true], [/flash flood warning/i, '#0b7a33', true],
   [/tornado watch/i, '#a35200', false],
 ];
+const STORM_MODE_EVENTS = /tornado (warning|emergency)|severe thunderstorm warning|flash flood (warning|emergency)|extreme wind warning/i;
 function updateStormBanner() {
   const el = document.getElementById('storm-banner');
   let hit = null;
@@ -1631,6 +1658,9 @@ function updateStormBanner() {
     const list = areaAlerts.filter(p => re.test(p.event));
     if (list.length) { hit = { list, color, pulse }; break; }
   }
+  // Storm mode: during a warning for our counties, pull the life-safety sections to the top.
+  const storm = /[?&]storm=1/.test(location.search) || areaAlerts.some(p => STORM_MODE_EVENTS.test(p.event));
+  document.body.classList.toggle('storm-mode', storm);
   if (!hit) { el.hidden = true; return; }
   const ev = hit.list[0].event;
   document.getElementById('sb-ev').textContent = (hit.list.length > 1 ? hit.list.length + ' ' + ev + 's' : ev) + ' in effect';
@@ -2404,8 +2434,10 @@ setInterval(loadFootball, 3600000);
 let pageSig = null;
 async function checkForUpdate() {
   try {
-    const t = await (await fetch(location.pathname + '?v=' + Date.now(), { cache: 'no-store' })).text();
-    const sig = t.length + ':' + t.slice(-2000);
+    // A HEAD request is enough: GitHub Pages changes the ETag/Last-Modified on every publish.
+    const r = await fetch(location.pathname + '?v=' + Date.now(), { method: 'HEAD', cache: 'no-store' });
+    const sig = r.headers.get('etag') || r.headers.get('last-modified');
+    if (!sig) return;
     if (pageSig && sig !== pageSig) location.reload();
     pageSig = sig;
   } catch (e) {}
@@ -2776,7 +2808,9 @@ setInterval(loadReports, 300000);
 
 loadVideos();
 setInterval(loadVideos, 600000);
-loadPlayer(); loadAlerts(); loadConditions(); loadNews(); loadForecast();
+loadAlerts(); loadConditions(); loadNews(); loadForecast();
+// Start the video after the rest of the page has drawn -- it's over 1 MB on a phone.
+if (document.readyState === 'complete') loadPlayer(); else window.addEventListener('load', () => setTimeout(loadPlayer, 300));
 whenNear('amap', initAlertMap); whenNear('radar', initRadar); whenNear('cams', buildCams);
 setInterval(refreshCams, 60000);
 setInterval(loadForecast, 1800000);
