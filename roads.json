@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T09:49:21+00:00",
+ "updated": "2026-10-12T10:14:56+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T09:48:09.1361585Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL251 SB @ MP 3.61",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.829388,
-   "lon": -86.89434399999999,
-   "start": "2026-10-12T09:01:39Z",
-   "end": "2026-10-12T10:01:39Z",
-   "updated": "2026-10-12T09:48:18.0909064Z"
+   "updated": "2026-10-12T10:14:44.4867996Z"
   }
  ]
 }
