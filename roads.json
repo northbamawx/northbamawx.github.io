@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T22:10:59+00:00",
+ "updated": "2026-10-12T22:44:40+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T22:10:26.6769445Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 5.11",
-   "detail": "Road Cleared.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.206396,
-   "lon": -86.85938399999999,
-   "start": "2026-10-12T21:12:19Z",
-   "end": "2026-10-12T22:08:27Z",
-   "updated": "2026-10-12T22:10:37.5366366Z"
+   "updated": "2026-10-12T22:43:00.6090738Z"
   },
   {
    "type": "Crash",
@@ -40,22 +26,8 @@
    "lat": 34.7188,
    "lon": -86.59187999999999,
    "start": "2026-10-12T21:20:43Z",
-   "end": "2026-10-12T22:20:43Z",
-   "updated": "2026-10-12T22:10:37.8489119Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "US-231 SB @ MP 316.85",
-   "detail": null,
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.719291999999996,
-   "lon": -86.59239199999999,
-   "start": "2026-10-12T21:35:18Z",
-   "end": "2026-10-12T22:07:50Z",
-   "updated": "2026-10-12T17:07:50Z"
+   "end": "2026-10-12T23:00:00Z",
+   "updated": "2026-10-12T22:43:11.9495655Z"
   }
  ]
 }
