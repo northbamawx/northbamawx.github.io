@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T21:45:40+00:00",
+ "updated": "2026-10-12T22:10:59+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T21:44:02.6908733Z"
+   "updated": "2026-10-12T22:10:26.6769445Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
    "where": "AL157 NB/SB @ MP 5.11",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Road Cleared.",
    "county": "Cullman",
    "city": "Cullman",
    "lat": 34.206396,
    "lon": -86.85938399999999,
    "start": "2026-10-12T21:12:19Z",
-   "end": "2026-10-12T22:12:19Z",
-   "updated": "2026-10-12T21:44:14.7635886Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 31.24",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.781112,
-   "lon": -87.67047199999999,
-   "start": "2026-10-12T20:50:15Z",
-   "end": "2026-10-12T21:50:15Z",
-   "updated": "2026-10-12T21:44:14.3399014Z"
+   "end": "2026-10-12T22:08:27Z",
+   "updated": "2026-10-12T22:10:37.5366366Z"
   },
   {
    "type": "Crash",
@@ -55,21 +41,21 @@
    "lon": -86.59187999999999,
    "start": "2026-10-12T21:20:43Z",
    "end": "2026-10-12T22:20:43Z",
-   "updated": "2026-10-12T21:44:15.0609244Z"
+   "updated": "2026-10-12T22:10:37.8489119Z"
   },
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 14.69",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "severity": "MinorDelay",
+   "title": "Minor Crash",
+   "where": "US-231 SB @ MP 316.85",
+   "detail": null,
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.708915999999995,
-   "lon": -86.66625599999999,
-   "start": "2026-10-12T21:32:56Z",
-   "end": "2026-10-12T22:32:56Z",
-   "updated": "2026-10-12T21:44:15.3742598Z"
+   "lat": 34.719291999999996,
+   "lon": -86.59239199999999,
+   "start": "2026-10-12T21:35:18Z",
+   "end": "2026-10-12T22:07:50Z",
+   "updated": "2026-10-12T17:07:50Z"
   }
  ]
 }
