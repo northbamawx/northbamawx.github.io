@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T20:47:08+00:00",
+ "updated": "2026-10-12T21:11:33+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T20:46:04.2998909Z"
+   "updated": "2026-10-12T21:09:29.7869902Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 31.24",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.781112,
+   "lon": -87.67047199999999,
+   "start": "2026-10-12T20:50:15Z",
+   "end": "2026-10-12T21:50:15Z",
+   "updated": "2026-10-12T21:09:41.7174124Z"
   },
   {
    "type": "Crash",
@@ -27,7 +41,7 @@
    "lon": -86.590424,
    "start": "2026-10-12T20:24:52Z",
    "end": "2026-10-12T21:24:52Z",
-   "updated": "2026-10-12T20:46:14.9318553Z"
+   "updated": "2026-10-12T21:09:40.2728252Z"
   }
  ]
 }
