@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sponsor NorthBamaWX</title>
+<meta name="description" content="Reach North Alabama and Southern Tennessee when weather matters most. Sponsor the NorthBamaWX 24/7 live weather stream and daily forecasts.">
+<link rel="canonical" href="https://northbamawx.github.io/sponsor.html">
+<meta property="og:title" content="Sponsor NorthBamaWX">
+<meta property="og:description" content="Reach North Alabama and Southern Tennessee when weather matters most. Sponsor the NorthBamaWX 24/7 live weather stream and daily forecasts.">
+<meta name="theme-color" content="#0a1626">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<script data-goatcounter="https://northbamawx.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a1626'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%2333d6ff' stroke-width='4'/%3E%3Cpath d='M32 32 L46 18' stroke='%2333d6ff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: same control-room look as the home page; a single reading column with a jump list. */
+:root {
+  --night: #0a1626; --panel: #10223a; --rule: #1f3a5c; --ink: #e8f0fa; --ink-dim: #93a8c2; --radar: #33d6ff;
+  --tor: #ff2b2b; --svr: #ffa500; --ffw: #22e05a;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --data: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+[hidden] { display: none !important; }
+body { background: var(--night); color: var(--ink); font: 16px/1.6 var(--body); padding-inline: 16px; -webkit-font-smoothing: antialiased; }
+a { color: var(--radar); }
+a:focus-visible { outline: 2px solid var(--radar); outline-offset: 3px; }
+.wrap { max-width: 920px; margin: 0 auto; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 20px 18px; border-bottom: 1px solid var(--rule); }
+.brand { font: 800 30px/1 var(--display); letter-spacing: 0.06em; text-decoration: none; color: var(--ink); }
+.brand b { color: var(--radar); font-weight: 800; }
+.back { font: 700 15px/1 var(--display); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); letter-spacing: 0.01em; margin: 30px 0 10px; text-wrap: balance; }
+.lede { color: var(--ink-dim); margin: 0 0 22px; max-width: 62ch; font-size: 17px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 8px; list-style: none; }
+.jump a { display: inline-block; font: 700 15px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  color: var(--ink); padding: 9px 12px; border: 1px solid var(--rule); border-radius: 4px; background: var(--panel); }
+section { padding-block: 30px; border-top: 1px solid var(--rule); scroll-margin-top: 12px; }
+section:first-of-type { border-top: 0; }
+h2 { font: 700 30px/1.1 var(--display); letter-spacing: 0.04em; margin: 0 0 12px; display: flex; align-items: center; gap: 12px; }
+h2 .chip { width: 14px; height: 14px; border-radius: 3px; background: var(--c); flex: none; }
+h3 { font: 700 20px/1.2 var(--display); letter-spacing: 0.04em; margin: 22px 0 8px; color: var(--radar); }
+p { margin: 0 0 12px; max-width: 68ch; }
+ul, ol { margin: 0 0 12px; padding-left: 22px; max-width: 68ch; }
+li { margin-bottom: 6px; }
+.callout { border-left: 6px solid var(--c, var(--radar)); background: var(--panel); border-radius: 4px; padding: 14px 16px; margin: 14px 0; }
+.callout strong { display: block; font: 800 22px/1.15 var(--display); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; color: var(--c, var(--radar)); }
+.callout p { margin: 0; }
+.ww { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 10px 0 4px; }
+.ww div { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; min-width: 0; }
+.ww b { display: block; font: 800 22px/1 var(--display); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px; }
+.ww p { margin: 0; font-size: 15px; color: var(--ink-dim); }
+.kit { columns: 2 240px; column-gap: 32px; }
+.kit li { break-inside: avoid; }
+.src { font: 500 12px/1.5 var(--data); color: var(--ink-dim); letter-spacing: 0.03em; }
+footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-dim); }
+
+.terms { margin: 0; }
+.terms dt { font: 700 22px/1.2 var(--display); letter-spacing: 0.04em; margin-top: 18px; scroll-margin-top: 12px; }
+.terms dd { margin: 4px 0 0; max-width: 68ch; }
+</style>
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://northbamawx.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NorthBamaWX: live radar and severe weather alerts, 24/7">
+<meta name="twitter:image" content="https://northbamawx.github.io/og-image.png">
+<style>
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 18px 0 8px; }
+.stats div { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 16px; min-width: 0; }
+.stats b { display: block; font: 800 38px/1 var(--display); color: var(--radar); letter-spacing: 0.02em; }
+.stats span { display: block; margin-top: 6px; color: var(--ink-dim); font-size: 15px; }
+.gets { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 10px 0; }
+.gets div { background: var(--panel); border: 1px solid var(--rule); border-left: 5px solid var(--radar); border-radius: 6px; padding: 14px 16px; min-width: 0; }
+.gets b { display: block; font: 700 21px/1.15 var(--display); letter-spacing: 0.04em; margin-bottom: 4px; }
+.gets p { margin: 0; color: var(--ink-dim); font-size: 15px; }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 6px; }
+.cta a { display: inline-block; font: 700 18px/1 var(--display); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+  padding: 14px 18px; border-radius: 6px; border: 1px solid var(--rule); background: var(--panel); color: var(--ink); }
+.cta a.primary { background: var(--radar); color: #04121f; border-color: var(--radar); }
+.who { columns: 2 220px; column-gap: 28px; }
+.who li { break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="brand" href="./">NORTH<b>BAMA</b>WX</a>
+  <a class="back" href="./">&larr; Live radar &amp; alerts</a>
+</header>
+
+<h1>Sponsor NorthBamaWX</h1>
+<p class="lede">Put your business in front of North Alabama and Southern Tennessee families every day, and especially when severe weather is on everyone's mind.</p>
+<div class="cta">
+  <a class="primary" href="https://m.me/NorthBamaWeather" target="_blank" rel="noopener">Message us on Facebook</a>
+  <a href="https://ig.me/m/northbamawx" target="_blank" rel="noopener">Message on Instagram</a>
+</div>
+
+<section>
+<h2>Our reach</h2>
+<div class="stats">
+  <div><b>8,300+</b><span>Facebook followers</span></div>
+  <div><b>24/7</b><span>live radar stream on YouTube, every day of the year</span></div>
+  <div><b>800+</b><span>weather videos published</span></div>
+  <div><b>5</b><span>platforms: YouTube, Facebook, Instagram, Bluesky and this website</span></div>
+  <div><b>15</b><span>counties covered in North Alabama and Southern Tennessee</span></div>
+</div>
+<p>NorthBamaWX posts a forecast every morning, live coverage of every warning in our area, storm recaps and weekend outlooks, so your name is seen on quiet days and busy ones.</p>
+</section>
+
+<section>
+<h2>What sponsors get</h2>
+<div class="gets">
+  <div><b>Morning forecast</b><p>&ldquo;Today's forecast brought to you by&nbsp;&hellip;&rdquo; on the daily forecast video on YouTube, Facebook and Instagram.</p></div>
+  <div><b>Live stream</b><p>Your business name on the 24/7 live stream's ticker.</p></div>
+  <div><b>Daily posts</b><p>A mention on the daily forecast posts and the Friday weekend outlook.</p></div>
+  <div><b>Website</b><p>Your logo and a link on this website, which has a page for every town we cover.</p></div>
+</div>
+<p><strong>Safety first:</strong> sponsor messages are never shown during active tornado, severe thunderstorm or flash flood warnings. During warnings, the stream and posts are about the storm only.</p>
+</section>
+
+<section>
+<h2>A great fit for</h2>
+<ul class="who">
+  <li>Storm shelter and safe room installers</li>
+  <li>Generator sales and service</li>
+  <li>Roofing and siding</li>
+  <li>Tree service</li>
+  <li>Insurance agents</li>
+  <li>HVAC and plumbing</li>
+  <li>Restoration and cleanup</li>
+  <li>Hardware and farm supply stores</li>
+  <li>Local restaurants and shops</li>
+</ul>
+</section>
+
+<section>
+<h2>How it works</h2>
+<ol>
+  <li>Message us on Facebook or Instagram.</li>
+  <li>We agree on a simple monthly package. No long contracts.</li>
+  <li>Send your business name and logo, and you're on the air within a day.</li>
+</ol>
+<div class="cta">
+  <a class="primary" href="https://m.me/NorthBamaWeather" target="_blank" rel="noopener">Become a sponsor</a>
+</div>
+</section>
+
+<p class="social" style="text-align:center;margin:18px 0 0;font-size:15px">Follow NorthBamaWX: <a href="https://www.youtube.com/channel/UC4nij4NgHjDJ8i5tv-1wWIA" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.facebook.com/NorthBamaWeather/" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://www.instagram.com/northbamawx/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://bsky.app/profile/northbamawx.bsky.social" target="_blank" rel="noopener">Bluesky</a></p>
+<footer>NorthBamaWX is an independent weather stream and is not affiliated with the National Weather Service. Always follow official warnings and your local emergency officials.</footer>
+
+</div>
+</body>
+</html>
