@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T15:16:01+00:00",
+ "updated": "2026-10-12T15:48:20+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T15:13:34.8776914Z"
+   "updated": "2026-10-12T15:46:52.8806311Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 38.4",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.559272,
+   "lon": -86.963432,
+   "start": "2026-10-12T15:22:28Z",
+   "end": "2026-10-12T16:22:28Z",
+   "updated": "2026-10-12T15:47:05.252495Z"
   }
  ]
 }
