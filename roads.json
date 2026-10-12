@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T21:11:33+00:00",
+ "updated": "2026-10-12T21:45:40+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T21:09:29.7869902Z"
+   "updated": "2026-10-12T21:44:02.6908733Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 5.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.206396,
+   "lon": -86.85938399999999,
+   "start": "2026-10-12T21:12:19Z",
+   "end": "2026-10-12T22:12:19Z",
+   "updated": "2026-10-12T21:44:14.7635886Z"
   },
   {
    "type": "Crash",
@@ -27,21 +41,35 @@
    "lon": -87.67047199999999,
    "start": "2026-10-12T20:50:15Z",
    "end": "2026-10-12T21:50:15Z",
-   "updated": "2026-10-12T21:09:41.7174124Z"
+   "updated": "2026-10-12T21:44:14.3399014Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 316.35",
+   "where": "US231 NB @ MP 316.75",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.712644,
-   "lon": -86.590424,
-   "start": "2026-10-12T20:24:52Z",
-   "end": "2026-10-12T21:24:52Z",
-   "updated": "2026-10-12T21:09:40.2728252Z"
+   "lat": 34.7188,
+   "lon": -86.59187999999999,
+   "start": "2026-10-12T21:20:43Z",
+   "end": "2026-10-12T22:20:43Z",
+   "updated": "2026-10-12T21:44:15.0609244Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 14.69",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.708915999999995,
+   "lon": -86.66625599999999,
+   "start": "2026-10-12T21:32:56Z",
+   "end": "2026-10-12T22:32:56Z",
+   "updated": "2026-10-12T21:44:15.3742598Z"
   }
  ]
 }
