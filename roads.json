@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T22:44:40+00:00",
+ "updated": "2026-10-12T23:12:28+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T22:43:00.6090738Z"
+   "updated": "2026-10-12T23:11:23.0800812Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 316.75",
+   "where": "AL67 NB/SB @ MP 38.9",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.7188,
-   "lon": -86.59187999999999,
-   "start": "2026-10-12T21:20:43Z",
-   "end": "2026-10-12T23:00:00Z",
-   "updated": "2026-10-12T22:43:11.9495655Z"
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.561783999999996,
+   "lon": -86.9714,
+   "start": "2026-10-12T22:51:24Z",
+   "end": "2026-10-12T23:51:24Z",
+   "updated": "2026-10-12T23:11:42.8961494Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.562384,
+   "lon": -86.97368,
+   "start": "2026-10-12T22:53:07Z",
+   "end": "2026-10-12T23:53:07Z",
+   "updated": "2026-10-12T23:11:43.0447605Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 65.76",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.6201,
+   "lon": -87.031464,
+   "start": "2026-10-12T23:04:26Z",
+   "end": "2026-10-13T00:04:26Z",
+   "updated": "2026-10-12T23:11:43.2893148Z"
   }
  ]
 }
