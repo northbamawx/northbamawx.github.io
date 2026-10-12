@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T20:13:05+00:00",
+ "updated": "2026-10-12T20:47:08+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T20:12:22.5143504Z"
+   "updated": "2026-10-12T20:46:04.2998909Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 335.71",
-   "detail": "Crash with lane blockage/. Please use caution when traveling through this ara.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.567356,
-   "lon": -86.911152,
-   "start": "2026-10-12T19:36:33Z",
-   "end": "2026-10-12T20:36:33Z",
-   "updated": "2026-10-12T20:12:33.9471092Z"
+   "where": "US231 NB @ MP 316.35",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.712644,
+   "lon": -86.590424,
+   "start": "2026-10-12T20:24:52Z",
+   "end": "2026-10-12T21:24:52Z",
+   "updated": "2026-10-12T20:46:14.9318553Z"
   }
  ]
 }
