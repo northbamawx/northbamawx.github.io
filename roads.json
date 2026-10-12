@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T15:48:20+00:00",
+ "updated": "2026-10-12T16:13:38+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T15:46:52.8806311Z"
+   "updated": "2026-10-12T16:08:01.0858636Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 318.77",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.719608,
+   "lon": -86.629296,
+   "start": "2026-10-12T15:55:57Z",
+   "end": "2026-10-12T16:55:57Z",
+   "updated": "2026-10-12T16:08:11.4954251Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 91.49",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.749044,
+   "lon": -86.69350399999999,
+   "start": "2026-10-12T15:57:59Z",
+   "end": "2026-10-12T16:57:59Z",
+   "updated": "2026-10-12T16:08:11.6294961Z"
   },
   {
    "type": "Crash",
@@ -27,7 +55,7 @@
    "lon": -86.963432,
    "start": "2026-10-12T15:22:28Z",
    "end": "2026-10-12T16:22:28Z",
-   "updated": "2026-10-12T15:47:05.252495Z"
+   "updated": "2026-10-12T16:08:11.1661715Z"
   }
  ]
 }
