@@ -18,9 +18,22 @@ SKIP = re.compile(r'24/7|\blive\b', re.IGNORECASE)
 
 
 def main():
+    # YouTube's feed has short outages (404/500, seen overnight 2026-10-12). Retry once,
+    # then keep the current videos.json instead of failing the whole workflow.
     req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0 (NorthBamaWX video updater)'})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        root = ET.fromstring(r.read())
+    root = None
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                root = ET.fromstring(r.read())
+            break
+        except Exception as ex:
+            print(f'YouTube feed unavailable ({ex})')
+            if attempt == 0:
+                time.sleep(20)
+    if root is None:
+        print('Leaving videos.json unchanged')
+        return
     items, seen = [], set()
     for e in root.findall('a:entry', NS):
         vid = e.findtext('yt:videoId', namespaces=NS)

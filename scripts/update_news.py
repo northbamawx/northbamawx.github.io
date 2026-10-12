@@ -26,8 +26,19 @@ MAX_AGE_H = 24
 
 def main():
     req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0 (NorthBamaWX news updater)'})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        root = ET.fromstring(r.read())
+    root = None
+    for attempt in range(2):        # short feed outages: retry once, then keep news.json
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                root = ET.fromstring(r.read())
+            break
+        except Exception as ex:
+            print(f'News feed unavailable ({ex})')
+            if attempt == 0:
+                time.sleep(20)
+    if root is None:
+        print('Leaving news.json unchanged')
+        return
     items, seen_titles, per_source = [], set(), {}
     now = time.time()
     for it in root.iter('item'):
