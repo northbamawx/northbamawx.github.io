@@ -27,4 +27,6 @@
   <url><loc>https://northbamawx.github.io/more.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://northbamawx.github.io/lite.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://northbamawx.github.io/get-alerts.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northbamawx.github.io/privacy.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://northbamawx.github.io/terms.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
