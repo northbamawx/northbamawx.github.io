@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T12:22:06+00:00",
+ "updated": "2026-10-12T13:10:35+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T12:20:10.8959111Z"
+   "updated": "2026-10-12T13:09:41.4769946Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 73.18",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.790932,
+   "lon": -87.001272,
+   "start": "2026-10-12T12:53:58Z",
+   "end": "2026-10-12T13:53:58Z",
+   "updated": "2026-10-12T13:09:52.6504097Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB/SB @ MP 329.82",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.710236,
+   "lon": -86.53128,
+   "start": "2026-10-12T12:46:29Z",
+   "end": "2026-10-12T13:46:29Z",
+   "updated": "2026-10-12T13:09:52.4623093Z"
   }
  ]
 }
