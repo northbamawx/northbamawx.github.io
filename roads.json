@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T13:22:30+00:00",
+ "updated": "2026-10-13T13:52:30+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T13:20:57.6993757Z"
+   "updated": "2026-10-13T13:51:30.2624333Z"
   },
   {
    "type": "Crash",
@@ -27,35 +27,21 @@
    "lon": -86.592968,
    "start": "2026-10-13T12:55:30Z",
    "end": "2026-10-13T13:55:30Z",
-   "updated": "2026-10-13T13:21:15.5713087Z"
+   "updated": "2026-10-13T13:51:44.1644511Z"
   },
   {
-   "type": "RoadCondition",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Fog",
-   "where": "US72 EB/WB @ MP 123.47",
-   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Woodville",
-   "lat": 34.607108,
-   "lon": -86.255584,
-   "start": "2026-10-13T12:37:21Z",
-   "end": "2026-10-13T13:30:00Z",
-   "updated": "2026-10-13T13:21:15.133752Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "AL133 NB/SB @ MP 15.16",
-   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.832796,
-   "lon": -87.70132,
-   "start": "2026-10-13T12:47:36Z",
-   "end": "2026-10-13T13:47:36Z",
-   "updated": "2026-10-13T13:21:15.4732118Z"
+   "title": "Moderate Crash",
+   "where": "AL255 NB @ MP 0.8",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.712756,
+   "lon": -86.671128,
+   "start": "2026-10-13T13:36:58Z",
+   "end": "2026-10-13T14:36:58Z",
+   "updated": "2026-10-13T13:51:45.5876047Z"
   },
   {
    "type": "Incident",
@@ -68,36 +54,8 @@
    "lat": 34.63434,
    "lon": -86.861392,
    "start": "2026-10-13T11:41:32Z",
-   "end": "2026-10-13T13:30:00Z",
-   "updated": "2026-10-13T13:21:12.8509962Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "US72 EB @ MP 88.09",
-   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.7522,
-   "lon": -86.75128,
-   "start": "2026-10-13T12:24:50Z",
-   "end": "2026-10-13T13:24:50Z",
-   "updated": "2026-10-13T13:21:13.6511327Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "AL255 SB @ MP 6.2",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.789428,
-   "lon": -86.66925599999999,
-   "start": "2026-10-13T12:43:40Z",
-   "end": "2026-10-13T13:43:40Z",
-   "updated": "2026-10-13T13:21:15.2753864Z"
+   "end": "2026-10-13T14:00:00Z",
+   "updated": "2026-10-13T13:51:42.8076794Z"
   }
  ]
 }
