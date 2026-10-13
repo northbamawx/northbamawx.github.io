@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T00:20:23+00:00",
+ "updated": "2026-10-13T00:57:45+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T00:18:24.261625Z"
+   "updated": "2026-10-13T00:56:45.8543441Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,36 @@
    "lat": 34.628471999999995,
    "lon": -86.954576,
    "start": "2026-10-12T23:33:18Z",
-   "end": "2026-10-13T00:33:18Z",
-   "updated": "2026-10-13T00:18:38.9651933Z"
+   "end": "2026-10-13T01:00:00Z",
+   "updated": "2026-10-13T00:56:56.1763888Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 SB @ MP 316.7",
+   "where": "US72 EB/WB @ MP 76.98",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.782236,
+   "lon": -86.936528,
+   "start": "2026-10-13T00:49:33Z",
+   "end": "2026-10-13T01:49:33Z",
+   "updated": "2026-10-13T00:56:57.7924864Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "US231/431 NB/SB @ MP 349.09",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "New Hope",
-   "lat": 34.54786,
-   "lon": -86.43056,
-   "start": "2026-10-12T23:25:12Z",
-   "end": "2026-10-13T00:25:12Z",
-   "updated": "2026-10-13T00:18:38.1463213Z"
+   "city": "HazelGreen",
+   "lat": 34.934336,
+   "lon": -86.571888,
+   "start": "2026-10-13T00:14:07Z",
+   "end": "2026-10-13T01:14:07Z",
+   "updated": "2026-10-13T00:56:56.6957227Z"
   }
  ]
 }
