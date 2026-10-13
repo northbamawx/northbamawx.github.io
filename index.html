@@ -952,7 +952,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 
 <section class="band" aria-labelledby="lakes-title" id="lakes">
   <h2 id="lakes-title">Lake &amp; Dam Levels</h2>
-  <p class="lede">Water levels on the Tennessee River lakes for boating and fishing, with the change over the last day and the past week.</p>
+  <p class="lede">Water levels on the Tennessee River lakes and Smith Lake for boating and fishing, with the change over the last day and the past week.</p>
   <div class="lakes" id="lakes-list"><p class="news-empty">Loading lake levels…</p></div>
   <div class="lake-links">More lakes from TVA:
     <a href="https://www.tva.com/environment/lake-levels/Wheeler" target="_blank" rel="noopener">Wheeler</a>
@@ -2187,7 +2187,8 @@ setInterval(loadArrival, 60000);
 
 // ---- Lake and dam levels (NOAA NWPS) ----
 const LAKES = [['GVHA1', 'Guntersville Lake', 'Pool elevation at the dam'], ['GVDA1', 'Below Guntersville Dam', 'Tailwater stage'],
-  ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation']];
+  ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation'],
+  ['ARKA1', 'Smith Lake', 'Pool elevation at Smith Dam']];
 async function loadLakes() {
   const box = document.getElementById('lakes-list');
   const cards = await Promise.all(LAKES.map(async ([lid, name, what]) => {
