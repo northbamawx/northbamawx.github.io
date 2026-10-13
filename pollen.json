@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T09:14:38+00:00",
+ "updated": "2026-10-13T09:47:17+00:00",
  "city": "Huntsville",
  "days": [
   {
@@ -22,7 +22,7 @@
   },
   {
    "day": "Tomorrow",
-   "index": 4.9,
+   "index": 4.8,
    "triggers": [
     "Ragweed",
     "Sagebrush",
