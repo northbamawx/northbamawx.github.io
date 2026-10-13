@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T11:47:02+00:00",
+ "updated": "2026-10-13T12:18:05+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T11:45:57.0645559Z"
+   "updated": "2026-10-13T12:17:37.2993056Z"
   },
   {
    "type": "Crash",
@@ -27,21 +27,35 @@
    "lon": -86.77888,
    "start": "2026-10-13T11:40:32Z",
    "end": "2026-10-13T12:40:32Z",
-   "updated": "2026-10-13T11:46:20.1858096Z"
+   "updated": "2026-10-13T12:17:48.7214322Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "I-565 EB @ MP 4.88",
+   "where": "I-565 EB @ MP 2.4",
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Huntsville",
-   "lat": 34.649795999999995,
-   "lon": -86.821328,
+   "lat": 34.63434,
+   "lon": -86.861392,
    "start": "2026-10-13T11:41:32Z",
    "end": "2026-10-13T12:41:32Z",
-   "updated": "2026-10-13T11:46:20.3128486Z"
+   "updated": "2026-10-13T12:17:48.8174665Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "MinorDelay",
+   "title": "AID",
+   "where": "I-565 EB @ MP 6.09",
+   "detail": null,
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.656448,
+   "lon": -86.80281599999999,
+   "start": "2026-10-13T12:10:24Z",
+   "end": "2026-10-13T12:15:22Z",
+   "updated": "2026-10-13T07:15:22Z"
   }
  ]
 }
