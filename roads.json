@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T02:13:49+00:00",
+ "updated": "2026-10-13T02:47:40+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T02:12:02.65162Z"
+   "updated": "2026-10-13T02:47:15.2836186Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,22 @@
    "lat": 34.873104,
    "lon": -85.812944,
    "start": "2026-10-13T01:36:32Z",
-   "end": "2026-10-13T02:36:32Z",
-   "updated": "2026-10-13T02:12:19.287936Z"
+   "end": "2026-10-13T03:00:00Z",
+   "updated": "2026-10-13T02:47:25.4221302Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "US231/431 NB/SB @ MP 349.09",
+   "title": "Moderate Crash",
+   "where": "AL35 NB/SB @ MP 49.61",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "HazelGreen",
-   "lat": 34.934336,
-   "lon": -86.571888,
-   "start": "2026-10-13T00:14:07Z",
-   "end": "2026-10-13T02:30:00Z",
-   "updated": "2026-10-13T02:12:17.2012088Z"
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.66444,
+   "lon": -86.015048,
+   "start": "2026-10-13T02:23:06Z",
+   "end": "2026-10-13T03:23:06Z",
+   "updated": "2026-10-13T02:47:25.8228991Z"
   }
  ]
 }
