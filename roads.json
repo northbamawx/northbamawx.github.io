@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T23:18:44+00:00",
+ "updated": "2026-10-13T23:52:02+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T23:17:40.6768602Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "AL20 WB @ MP 72.2",
-   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.628584,
-   "lon": -86.93368799999999,
-   "start": "2026-10-13T21:59:17Z",
-   "end": "2026-10-13T23:45:00Z",
-   "updated": "2026-10-13T23:17:49.8927656Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 WB @ MP 14.39",
-   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.707164,
-   "lon": -86.669888,
-   "start": "2026-10-13T21:37:56Z",
-   "end": "2026-10-13T23:30:00Z",
-   "updated": "2026-10-13T23:17:49.6392981Z"
+   "updated": "2026-10-13T23:50:26.4893627Z"
   }
  ]
 }
