@@ -372,6 +372,7 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .lake svg { display: block; width: 100%; height: 40px; margin-top: 8px; }
 .lake-links { margin-top: 12px; font-size: 14px; color: var(--ink-dim); }
 .lake-links a { margin-right: 12px; white-space: nowrap; }
+.lakes > .news-empty { grid-column: 1 / -1; }
 .lake.ext .go { display: inline-block; margin-top: 14px; font: 600 15px/1.3 var(--data); }
 
 /* Viewer photos */
@@ -771,13 +772,13 @@ async function loadLakes() {
   }));
   box.textContent = '';
   cards.filter(Boolean).forEach(c => box.append(c));
+  if (!box.children.length) box.innerHTML = '<p class="news-empty">Live lake levels are unavailable right now.</p>';
   TVA_LAKES.forEach(([page, name]) => {
     const c = document.createElement('div'); c.className = 'lake ext';
     c.innerHTML = `<h3>${name}</h3><div class="chg">No live gauge feed for this dam</div>
       <a class="go" href="https://www.tva.com/environment/lake-levels/${page}" target="_blank" rel="noopener">Check the level at TVA →</a>`;
     box.append(c);
   });
-  if (!box.children.length) box.innerHTML = '<p class="news-empty">Lake levels are unavailable right now.</p>';
 }
 loadLakes();
 setInterval(loadLakes, 1800000);
