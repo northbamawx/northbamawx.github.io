@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T01:20:05+00:00",
+ "updated": "2026-10-13T01:47:51+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T01:19:16.7084466Z"
+   "updated": "2026-10-13T01:44:09.7343339Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 76.98",
+   "where": "US72 EB/WB @ MP 157.31",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.782236,
-   "lon": -86.936528,
-   "start": "2026-10-13T00:49:33Z",
-   "end": "2026-10-13T01:49:33Z",
-   "updated": "2026-10-13T01:19:28.8849745Z"
+   "county": "Jackson",
+   "city": "Stevenson",
+   "lat": 34.873104,
+   "lon": -85.812944,
+   "start": "2026-10-13T01:36:32Z",
+   "end": "2026-10-13T02:36:32Z",
+   "updated": "2026-10-13T01:44:19.9897027Z"
   },
   {
    "type": "Crash",
@@ -40,8 +40,8 @@
    "lat": 34.934336,
    "lon": -86.571888,
    "start": "2026-10-13T00:14:07Z",
-   "end": "2026-10-13T01:45:00Z",
-   "updated": "2026-10-13T01:19:28.2448289Z"
+   "end": "2026-10-13T02:30:00Z",
+   "updated": "2026-10-13T01:44:19.3075988Z"
   }
  ]
 }
