@@ -373,16 +373,6 @@ section.band { padding-block: 34px; border-top: 1px solid var(--rule); }
 .eta-list b { font-weight: 600; }
 .eta-list span { font: 500 13px/1.5 var(--data); color: var(--ink); white-space: nowrap; }
 
-/* Lakes */
-.lakes { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
-.lake { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; }
-.lake h3 { margin: 0; font: 700 19px/1.2 var(--display); letter-spacing: 0.03em; }
-.lake .v { font: 700 34px/1 var(--display); margin: 10px 0 4px; }
-.lake .v small { font: 500 13px var(--data); color: var(--ink-dim); margin-left: 6px; }
-.lake .chg { font: 500 13px/1.5 var(--data); color: var(--ink-dim); }
-.lake svg { display: block; width: 100%; height: 40px; margin-top: 8px; }
-.lake-links { margin-top: 12px; font-size: 14px; color: var(--ink-dim); }
-.lake-links a { margin-right: 12px; white-space: nowrap; }
 
 /* Viewer photos */
 .photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin-bottom: 14px; }
@@ -509,7 +499,7 @@ body.storm-mode #reports { order: 13; }
 body.storm-mode #shelters { order: 14; }
 body.storm-mode #phone-alerts { order: 15; }
 body.storm-mode #sky, body.storm-mode #videos, body.storm-mode #weather-news, body.storm-mode #towns, body.storm-mode #football,
-body.storm-mode #lakes, body.storm-mode #drought, body.storm-mode #fire, body.storm-mode #hurricanes { display: none; }
+body.storm-mode #drought, body.storm-mode #fire, body.storm-mode #hurricanes { display: none; }
 
 /* SPC outlook */
 .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
@@ -655,7 +645,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <li><a href="#towns">Towns</a></li>
     <li><a href="#winter" id="nav-winter" hidden>Winter</a></li>
     <li><a href="#river-levels">Rivers</a></li>
-    <li><a href="#lakes">Lakes</a></li>
+    <li><a href="more.html#lakes">Lakes</a></li>
     <li><a href="#rainfall">Rain</a></li>
     <li><a href="#drought">Drought</a></li>
     <li><a href="#fire">Fire danger</a></li>
@@ -948,21 +938,6 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <p class="lede">Weather service river gauges in our counties, closest to flood stage first. The bar shows how close each one is to flooding. Tap a gauge for its full forecast.</p>
   <ul class="rivers" id="rivers"><li class="news-empty">Loading gauges…</li></ul>
   <div class="lsr-src">Gauges: NOAA National Water Prediction Service. Updated every 10 minutes.</div>
-</section>
-
-<section class="band" aria-labelledby="lakes-title" id="lakes">
-  <h2 id="lakes-title">Lake &amp; Dam Levels</h2>
-  <p class="lede">Water levels on the Tennessee River lakes and Smith Lake for boating and fishing, with the change over the last day and the past week.</p>
-  <div class="lakes" id="lakes-list"><p class="news-empty">Loading lake levels…</p></div>
-  <div class="lake-links">More lake levels:
-    <a href="https://www.tva.com/environment/lake-levels/Wheeler" target="_blank" rel="noopener">Wheeler</a>
-    <a href="https://www.tva.com/environment/lake-levels/Wilson" target="_blank" rel="noopener">Wilson</a>
-    <a href="https://www.tva.com/environment/lake-levels/Pickwick" target="_blank" rel="noopener">Pickwick</a>
-    <a href="https://www.tva.com/environment/lake-levels/Tims-Ford" target="_blank" rel="noopener">Tims Ford</a>
-    <a href="https://www.tva.com/environment/lake-levels/Guntersville" target="_blank" rel="noopener">Guntersville</a>
-    <a href="https://apcshorelines.com/" target="_blank" rel="noopener">Smith (Alabama Power)</a>
-  </div>
-  <div class="lsr-src">Levels: NOAA National Water Prediction Service. Updated every 30 minutes.</div>
 </section>
 
 <section class="band" aria-labelledby="rain-title" id="rainfall">
@@ -2186,39 +2161,6 @@ async function loadArrival() {
 loadArrival();
 setInterval(loadArrival, 60000);
 
-// ---- Lake and dam levels (NOAA NWPS) ----
-const LAKES = [['GVHA1', 'Guntersville Lake', 'Pool elevation at the dam'], ['GVDA1', 'Below Guntersville Dam', 'Tailwater stage'],
-  ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation'],
-  ['ARKA1', 'Smith Lake', 'Pool elevation at Smith Dam']];
-async function loadLakes() {
-  const box = document.getElementById('lakes-list');
-  const cards = await Promise.all(LAKES.map(async ([lid, name, what]) => {
-    try {
-      const d = await (await fetch(`https://api.water.noaa.gov/nwps/v1/gauges/${lid}/stageflow/observed`)).json();
-      const pts = (d.data || []).filter(x => x.primary > -900);
-      if (!pts.length) return null;
-      const last = pts[pts.length - 1], t = new Date(last.validTime).getTime();
-      const ago = h => { const target = t - h * 3600000; let b = null; pts.forEach(x => { const dt = Math.abs(new Date(x.validTime) - target); if (dt < 5400000 && (!b || dt < b[0])) b = [dt, x.primary]; }); return b && b[1]; };
-      const d1 = ago(24), d7 = ago(168);
-      const fmt = v => v == null ? '--' : (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(2) + ' ft';
-      const week = pts.filter(x => new Date(x.validTime) >= t - 7 * 86400000).map(x => x.primary);
-      const lo = Math.min(...week), hi = Math.max(...week), rng = Math.max(hi - lo, 0.2);
-      const line = week.map((v, i) => `${(i / Math.max(week.length - 1, 1) * 200).toFixed(1)},${(36 - (v - lo) / rng * 32).toFixed(1)}`).join(' ');
-      const c = document.createElement('div'); c.className = 'lake';
-      c.innerHTML = `<h3></h3><div class="chg"></div><div class="v">${last.primary.toFixed(2)}<small>ft</small></div>
-        <div class="chg">24 hr: ${fmt(d1 == null ? null : last.primary - d1)} · 7 days: ${fmt(d7 == null ? null : last.primary - d7)}</div>
-        <svg viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><polyline points="${line}" fill="none" stroke="#33d6ff" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
-      c.querySelector('h3').textContent = name;
-      c.querySelector('.chg').textContent = `${what} · ${new Date(t).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit' })}`;
-      return c;
-    } catch (e) { return null; }
-  }));
-  box.textContent = '';
-  cards.filter(Boolean).forEach(c => box.append(c));
-  if (!box.children.length) box.innerHTML = '<p class="news-empty">Lake levels are unavailable right now.</p>';
-}
-loadLakes();
-setInterval(loadLakes, 1800000);
 
 // ---- Visitor counter (GoatCounter public total; stays hidden until the account allows it) ----
 async function loadVisits() {
