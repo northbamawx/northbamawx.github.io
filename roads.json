@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T04:14:45+00:00",
+ "updated": "2026-10-13T04:49:43+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T04:12:49.534294Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 157.31",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Stevenson",
-   "lat": 34.873104,
-   "lon": -85.812944,
-   "start": "2026-10-13T01:36:32Z",
-   "end": "2026-10-13T04:30:00Z",
-   "updated": "2026-10-13T04:12:58.6059637Z"
+   "updated": "2026-10-13T04:48:44.5771961Z"
   }
  ]
 }
