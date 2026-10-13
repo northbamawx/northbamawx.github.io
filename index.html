@@ -2575,7 +2575,15 @@ function placeNav() {
 setInterval(placeNav, 2000); window.addEventListener('resize', placeNav); placeNav();
 (() => {
   const links = [...document.querySelectorAll('.secnav a[href^="#"]')];
+  // A menu click keeps its own item highlighted; otherwise a short section near the
+  // bottom (Towns) would hand the highlight to whatever lands mid-screen after the jump.
+  let lockUntil = 0;
+  links.forEach(a => a.addEventListener('click', () => {
+    lockUntil = Date.now() + 1200;
+    links.forEach(b => b === a ? b.setAttribute('aria-current', 'true') : b.removeAttribute('aria-current'));
+  }));
   const io = new IntersectionObserver(entries => {
+    if (Date.now() < lockUntil) return;
     entries.forEach(en => {
       if (!en.isIntersecting) return;
       links.forEach(a => {
