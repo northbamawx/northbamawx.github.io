@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T03:13:11+00:00",
+ "updated": "2026-10-13T03:49:36+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T03:12:24.2583658Z"
+   "updated": "2026-10-13T03:47:51.2725459Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,8 @@
    "lat": 34.873104,
    "lon": -85.812944,
    "start": "2026-10-13T01:36:32Z",
-   "end": "2026-10-13T03:30:00Z",
-   "updated": "2026-10-13T03:12:37.0060433Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL35 NB/SB @ MP 49.61",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.66444,
-   "lon": -86.015048,
-   "start": "2026-10-13T02:23:06Z",
-   "end": "2026-10-13T03:23:06Z",
-   "updated": "2026-10-13T03:12:37.4939242Z"
+   "end": "2026-10-13T04:30:00Z",
+   "updated": "2026-10-13T03:48:03.9008986Z"
   }
  ]
 }
