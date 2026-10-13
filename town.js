@@ -71,8 +71,19 @@ window.rainTiming = function (periods) {
   async function loadNow() {
     try {
       const p = await point();
-      const st = (await (await fetch(p.observationStations, NWS)).json()).features[0];
-      const o = (await (await fetch(st.id + '/observations/latest', NWS)).json()).properties;
+      // Nearest station first, but skip ones that are down or reporting stale/empty data.
+      const sts = (await (await fetch(p.observationStations, NWS)).json()).features.slice(0, 4);
+      let st = null, o = null;
+      for (const s of sts) {
+        try {
+          const r = await fetch(s.id + '/observations/latest', NWS);
+          if (!r.ok) continue;
+          const ob = (await r.json()).properties;
+          if (!ob || ob.temperature?.value == null || Date.now() - new Date(ob.timestamp) > 3 * 3600000) continue;
+          st = s; o = ob; break;
+        } catch (e) {}
+      }
+      if (!o) throw new Error('no station');
       const t = o.temperature && o.temperature.value;
       if (t != null) $('t-temp').textContent = f(t) + '°';
       $('t-desc').textContent = o.textDescription || '';
