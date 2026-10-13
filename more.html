@@ -644,8 +644,6 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <p class="lede">Water levels on the Tennessee River lakes and Smith Lake for boating and fishing, with the change over the last day and the past week.</p>
   <div class="lakes" id="lakes-list"><p class="news-empty">Loading lake levels…</p></div>
   <div class="lake-links">More lake levels:
-    <a href="https://www.tva.com/environment/lake-levels/Pickwick" target="_blank" rel="noopener">Pickwick</a>
-    <a href="https://www.tva.com/environment/lake-levels/Tims-Ford" target="_blank" rel="noopener">Tims Ford</a>
     <a href="https://www.tva.com/environment/lake-levels/Guntersville" target="_blank" rel="noopener">Guntersville</a>
     <a href="https://apcshorelines.com/" target="_blank" rel="noopener">Smith (Alabama Power)</a>
   </div>
@@ -743,7 +741,7 @@ loadClimate();
 setInterval(loadClimate, 3600000);
 
 // ---- Lake and dam levels (NOAA NWPS) ----
-const TVA_LAKES = [['Wheeler', 'Wheeler Lake'], ['Wilson', 'Wilson Lake']];
+const TVA_LAKES = [['Wheeler', 'Wheeler Lake'], ['Wilson', 'Wilson Lake'], ['Pickwick', 'Pickwick Lake'], ['Tims-Ford', 'Tims Ford Lake']];
 const LAKES = [['GVHA1', 'Guntersville Lake', 'Pool elevation at the dam'], ['GVDA1', 'Below Guntersville Dam', 'Tailwater stage'],
   ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation'],
   ['ARKA1', 'Smith Lake', 'Pool elevation at Smith Dam']];
@@ -775,7 +773,7 @@ async function loadLakes() {
   if (!box.children.length) box.innerHTML = '<p class="news-empty">Live lake levels are unavailable right now.</p>';
   TVA_LAKES.forEach(([page, name]) => {
     const c = document.createElement('div'); c.className = 'lake ext';
-    c.innerHTML = `<h3>${name}</h3><div class="chg">No live gauge feed for this dam</div>
+    c.innerHTML = `<h3>${name}</h3><div class="chg">No live lake gauge feed for this dam</div>
       <a class="go" href="https://www.tva.com/environment/lake-levels/${page}" target="_blank" rel="noopener">Check the level at TVA →</a>`;
     box.append(c);
   });
