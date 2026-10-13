@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T23:43:48+00:00",
+ "updated": "2026-10-13T00:20:23+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-12T23:43:28.3163287Z"
+   "updated": "2026-10-13T00:18:24.261625Z"
   },
   {
    "type": "Crash",
@@ -27,35 +27,7 @@
    "lon": -86.954576,
    "start": "2026-10-12T23:33:18Z",
    "end": "2026-10-13T00:33:18Z",
-   "updated": "2026-10-12T23:43:41.4604019Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 8.08",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.666784,
-   "lon": -86.77051999999999,
-   "start": "2026-10-12T23:01:12Z",
-   "end": "2026-10-13T00:01:12Z",
-   "updated": "2026-10-12T23:43:40.9425056Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 8",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.666295999999996,
-   "lon": -86.77581599999999,
-   "start": "2026-10-12T22:58:01Z",
-   "end": "2026-10-12T23:58:01Z",
-   "updated": "2026-10-12T23:43:40.8721899Z"
+   "updated": "2026-10-13T00:18:38.9651933Z"
   },
   {
    "type": "Crash",
@@ -69,35 +41,7 @@
    "lon": -86.43056,
    "start": "2026-10-12T23:25:12Z",
    "end": "2026-10-13T00:25:12Z",
-   "updated": "2026-10-12T23:43:41.1164752Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.562384,
-   "lon": -86.97368,
-   "start": "2026-10-12T22:53:07Z",
-   "end": "2026-10-12T23:53:07Z",
-   "updated": "2026-10-12T23:43:40.6431391Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 65.76",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.6201,
-   "lon": -87.031464,
-   "start": "2026-10-12T23:04:26Z",
-   "end": "2026-10-13T00:04:26Z",
-   "updated": "2026-10-12T23:43:41.0164122Z"
+   "updated": "2026-10-13T00:18:38.1463213Z"
   }
  ]
 }
