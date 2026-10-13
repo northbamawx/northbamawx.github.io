@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T22:55:33+00:00",
+ "updated": "2026-10-13T23:18:44+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T22:54:31.4265224Z"
+   "updated": "2026-10-13T23:17:40.6768602Z"
   },
   {
    "type": "Incident",
@@ -27,7 +27,7 @@
    "lon": -86.93368799999999,
    "start": "2026-10-13T21:59:17Z",
    "end": "2026-10-13T23:45:00Z",
-   "updated": "2026-10-13T22:54:39.9886945Z"
+   "updated": "2026-10-13T23:17:49.8927656Z"
   },
   {
    "type": "Incident",
@@ -41,21 +41,7 @@
    "lon": -86.669888,
    "start": "2026-10-13T21:37:56Z",
    "end": "2026-10-13T23:30:00Z",
-   "updated": "2026-10-13T22:54:39.5384314Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 19.86",
-   "detail": "Congestion building in the area eastbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.738844,
-   "lon": -86.586672,
-   "start": "2026-10-13T21:57:55Z",
-   "end": "2026-10-13T23:15:00Z",
-   "updated": "2026-10-13T22:54:39.9178432Z"
+   "updated": "2026-10-13T23:17:49.6392981Z"
   }
  ]
 }
