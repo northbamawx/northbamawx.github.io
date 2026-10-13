@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T20:31:42+00:00",
+ "updated": "2026-10-13T21:20:41+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-13T20:30:31.7780643Z"
+   "updated": "2026-10-13T21:18:59.3259534Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL35 NB/SB @ MP 49.41",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.662276,
+   "lon": -86.01193599999999,
+   "start": "2026-10-13T20:38:57Z",
+   "end": "2026-10-13T21:38:57Z",
+   "updated": "2026-10-13T21:19:09.5736741Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 368.47",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.745832,
+   "lon": -86.957208,
+   "start": "2026-10-13T20:35:53Z",
+   "end": "2026-10-13T21:35:53Z",
+   "updated": "2026-10-13T21:19:09.5188929Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 89.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.7553,
+   "lon": -86.73436,
+   "start": "2026-10-13T20:57:53Z",
+   "end": "2026-10-13T21:57:53Z",
+   "updated": "2026-10-13T21:19:09.9925077Z"
   }
  ]
 }
