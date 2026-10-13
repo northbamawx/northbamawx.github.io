@@ -739,7 +739,7 @@ setInterval(loadClimate, 3600000);
 // ---- Lake and dam levels (NOAA NWPS) ----
 const TVA_LAKES = [['Wheeler', 'Wheeler Lake'], ['Wilson', 'Wilson Lake'], ['Pickwick', 'Pickwick Lake'], ['Tims-Ford', 'Tims Ford Lake']];
 const LAKES = [['GVHA1', 'Guntersville Lake', 'Pool elevation at the dam', 'https://www.tva.com/environment/lake-levels/Guntersville', 'TVA'], ['GVDA1', 'Below Guntersville Dam', 'Tailwater stage'],
-  ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation'],
+  ['NKJT1', 'Nickajack Lake', 'Pool elevation at the dam', 'https://www.tva.com/environment/lake-levels/Nickajack', 'TVA'], ['PICT1', 'Below Pickwick Dam', 'Tailwater elevation'],
   ['ARKA1', 'Smith Lake', 'Pool elevation at Smith Dam', 'https://apcshorelines.com/', 'Alabama Power']];
 async function loadLakes() {
   const box = document.getElementById('lakes-list');
