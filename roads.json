@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T01:11:02+00:00",
+ "updated": "2026-10-14T01:57:16+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T01:06:11.541213Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL33 NB/SB @ MP 33.31",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.583512,
-   "lon": -87.264872,
-   "start": "2026-10-14T00:19:03Z",
-   "end": "2026-10-14T01:19:03Z",
-   "updated": "2026-10-14T01:06:21.5369502Z"
+   "updated": "2026-10-14T01:56:04.7478451Z"
   },
   {
    "type": "Crash",
@@ -40,8 +26,8 @@
    "lat": 34.752359999999996,
    "lon": -86.749848,
    "start": "2026-10-14T00:47:39Z",
-   "end": "2026-10-14T01:47:39Z",
-   "updated": "2026-10-14T01:06:22.1205764Z"
+   "end": "2026-10-14T02:05:00Z",
+   "updated": "2026-10-14T01:56:14.5513518Z"
   }
  ]
 }
