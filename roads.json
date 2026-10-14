@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T21:29:26+00:00",
+ "updated": "2026-10-14T22:01:31+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T21:27:56.5535938Z"
+   "updated": "2026-10-14T21:59:58.7394301Z"
   },
   {
    "type": "Crash",
@@ -27,7 +27,7 @@
    "lon": -86.944688,
    "start": "2026-10-14T21:09:01Z",
    "end": "2026-10-14T22:09:01Z",
-   "updated": "2026-10-14T21:28:09.073729Z"
+   "updated": "2026-10-14T22:00:17.5923821Z"
   },
   {
    "type": "Crash",
@@ -41,7 +41,35 @@
    "lon": -86.592024,
    "start": "2026-10-14T21:06:36Z",
    "end": "2026-10-14T22:06:36Z",
-   "updated": "2026-10-14T21:28:08.90838Z"
+   "updated": "2026-10-14T22:00:17.4375879Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 87.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.74892,
+   "lon": -86.7676,
+   "start": "2026-10-14T21:34:51Z",
+   "end": "2026-10-14T22:34:51Z",
+   "updated": "2026-10-14T22:00:18.9934784Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 310.46",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.630528,
+   "lon": -86.56694399999999,
+   "start": "2026-10-14T21:47:48Z",
+   "end": "2026-10-14T22:47:48Z",
+   "updated": "2026-10-14T22:00:19.1177816Z"
   },
   {
    "type": "Incident",
@@ -51,11 +79,25 @@
    "detail": "Congestion building westbound. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.697655999999995,
-   "lon": -86.69758399999999,
+   "lat": 34.704187999999995,
+   "lon": -86.68182399999999,
    "start": "2026-10-14T20:56:58Z",
-   "end": "2026-10-14T22:00:00Z",
-   "updated": "2026-10-14T21:28:08.5968946Z"
+   "end": "2026-10-14T23:00:00Z",
+   "updated": "2026-10-14T22:00:16.683534Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 19.65",
+   "detail": "Congestion building eastbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.738032,
+   "lon": -86.589936,
+   "start": "2026-10-14T21:30:09Z",
+   "end": "2026-10-14T22:30:09Z",
+   "updated": "2026-10-14T22:00:18.2698609Z"
   }
  ]
 }
