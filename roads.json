@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T20:58:35+00:00",
+ "updated": "2026-10-14T21:29:26+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T20:57:21.6421664Z"
+   "updated": "2026-10-14T21:27:56.5535938Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL99 NB/SB",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.818832,
+   "lon": -86.944688,
+   "start": "2026-10-14T21:09:01Z",
+   "end": "2026-10-14T22:09:01Z",
+   "updated": "2026-10-14T21:28:09.073729Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 SB @ MP 316.85",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.717515999999996,
+   "lon": -86.592024,
+   "start": "2026-10-14T21:06:36Z",
+   "end": "2026-10-14T22:06:36Z",
+   "updated": "2026-10-14T21:28:08.90838Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 12.69",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.697655999999995,
+   "lon": -86.69758399999999,
+   "start": "2026-10-14T20:56:58Z",
+   "end": "2026-10-14T22:00:00Z",
+   "updated": "2026-10-14T21:28:08.5968946Z"
   }
  ]
 }
