@@ -1,20 +1,6 @@
 {
- "updated": "2026-10-14T06:27:26+00:00",
+ "updated": "2026-10-14T07:14:53+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "Closed",
-   "title": "Overturned Vehicle",
-   "where": "AL40 EB/WB @ MP 2",
-   "detail": "Overturned vehicle with lane blockage. Please seek alternate route.",
-   "county": "Jackson",
-   "city": "Dutton",
-   "lat": 34.650812,
-   "lon": -85.944816,
-   "start": "2026-10-14T02:37:58Z",
-   "end": "2026-10-14T07:00:00Z",
-   "updated": "2026-10-14T06:27:20.3616785Z"
-  },
   {
    "type": "Roadwork",
    "severity": "Closed",
@@ -27,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T06:27:11.6753636Z"
+   "updated": "2026-10-14T07:09:37.9658905Z"
   }
  ]
 }
