@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T13:12:17+00:00",
+ "updated": "2026-10-14T14:02:41+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,77 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T13:11:07.5411105Z"
+   "updated": "2026-10-14T14:02:21.6262075Z"
   },
   {
-   "type": "RoadCondition",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Fog",
-   "where": "US72 EB/WB @ MP 122.97",
-   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Woodville",
-   "lat": 34.606851999999996,
-   "lon": -86.26392,
-   "start": "2026-10-14T12:16:14Z",
-   "end": "2026-10-14T13:30:00Z",
-   "updated": "2026-10-14T13:11:19.3044932Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 3.98",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.644312,
-   "lon": -86.835888,
-   "start": "2026-10-14T11:11:28Z",
-   "end": "2026-10-14T13:30:00Z",
-   "updated": "2026-10-14T13:11:17.5154049Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-565 EB @ MP 3.78",
-   "detail": null,
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.6427,
-   "lon": -86.839368,
-   "start": "2026-10-14T13:04:59Z",
-   "end": "2026-10-14T13:09:19Z",
-   "updated": "2026-10-14T08:09:20Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "US72 EB @ MP 87.99",
-   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.751472,
-   "lon": -86.753368,
-   "start": "2026-10-14T12:34:57Z",
-   "end": "2026-10-14T13:34:57Z",
-   "updated": "2026-10-14T13:11:20.0607706Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "AL255 SB @ MP 2.7",
-   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 102.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.740368,
-   "lon": -86.67012,
-   "start": "2026-10-14T12:47:41Z",
-   "end": "2026-10-14T13:47:41Z",
-   "updated": "2026-10-14T13:11:20.344073Z"
+   "lat": 34.77392,
+   "lon": -86.540048,
+   "start": "2026-10-14T13:56:37Z",
+   "end": "2026-10-14T14:56:37Z",
+   "updated": "2026-10-14T14:02:36.5531889Z"
   }
  ]
 }
