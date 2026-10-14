@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T11:32:35+00:00",
+ "updated": "2026-10-14T12:28:31+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T11:31:39.2644094Z"
+   "updated": "2026-10-14T12:27:59.644434Z"
   },
   {
-   "type": "Crash",
+   "type": "RoadCondition",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL79 NB/SB @ MP 103.78",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "title": "Fog",
+   "where": "US72 EB/WB @ MP 122.97",
+   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
    "county": "Jackson",
-   "city": "Skyline",
-   "lat": 34.801984,
-   "lon": -86.120992,
-   "start": "2026-10-14T10:36:00Z",
-   "end": "2026-10-14T11:36:00Z",
-   "updated": "2026-10-14T11:31:49.6453037Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 7.78",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.666444,
-   "lon": -86.774424,
-   "start": "2026-10-14T11:05:41Z",
-   "end": "2026-10-14T12:05:41Z",
-   "updated": "2026-10-14T11:31:49.9275536Z"
+   "city": "Woodville",
+   "lat": 34.606851999999996,
+   "lon": -86.26392,
+   "start": "2026-10-14T12:16:14Z",
+   "end": "2026-10-14T13:30:00Z",
+   "updated": "2026-10-14T12:28:11.2504616Z"
   },
   {
    "type": "Incident",
@@ -54,22 +40,8 @@
    "lat": 34.644312,
    "lon": -86.835888,
    "start": "2026-10-14T11:11:28Z",
-   "end": "2026-10-14T12:11:28Z",
-   "updated": "2026-10-14T11:31:50.0800253Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-565 EB @ MP 6.09",
-   "detail": null,
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.656448,
-   "lon": -86.80281599999999,
-   "start": "2026-10-14T11:23:58Z",
-   "end": "2026-10-14T11:30:09Z",
-   "updated": "2026-10-14T06:30:10Z"
+   "end": "2026-10-14T13:00:00Z",
+   "updated": "2026-10-14T12:28:09.5041285Z"
   }
  ]
 }
