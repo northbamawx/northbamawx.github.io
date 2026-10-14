@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T10:00:48+00:00",
+ "updated": "2026-10-14T10:59:36+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T09:59:14.9541739Z"
+   "updated": "2026-10-14T10:54:31.864346Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL73 NB/SB @ MP 10.09",
+   "where": "AL79 NB/SB @ MP 103.78",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Jackson",
-   "city": "Bryant",
-   "lat": 34.97428,
-   "lon": -85.61672,
-   "start": "2026-10-14T09:21:18Z",
-   "end": "2026-10-14T10:21:18Z",
-   "updated": "2026-10-14T09:59:25.9885897Z"
+   "city": "Skyline",
+   "lat": 34.801984,
+   "lon": -86.120992,
+   "start": "2026-10-14T10:36:00Z",
+   "end": "2026-10-14T11:36:00Z",
+   "updated": "2026-10-14T10:54:41.9960896Z"
   }
  ]
 }
