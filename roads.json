@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T19:10:51+00:00",
+ "updated": "2026-10-15T19:57:13+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T19:08:50.9422306Z"
+   "updated": "2026-10-15T19:57:00.2059248Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-59 NB @ MP 239.46",
+   "detail": "Congestion building in the area northbound. Please use caution when traveling through this area.",
+   "county": "DeKalb",
+   "city": "Valley Head",
+   "lat": 34.694236,
+   "lon": -85.57119999999999,
+   "start": "2026-10-15T19:11:46Z",
+   "end": "2026-10-15T21:00:00Z",
+   "updated": "2026-10-15T19:57:10.5208459Z"
   },
   {
    "type": "Incident",
@@ -26,8 +40,8 @@
    "lat": 34.847184,
    "lon": -86.931832,
    "start": "2026-10-15T17:10:48Z",
-   "end": "2026-10-15T19:15:00Z",
-   "updated": "2026-10-15T19:09:03.108107Z"
+   "end": "2026-10-15T20:30:00Z",
+   "updated": "2026-10-15T19:57:10.0583796Z"
   }
  ]
 }
