@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T23:51:05+00:00",
+ "updated": "2026-10-15T00:25:00+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-14T23:50:07.2839308Z"
+   "updated": "2026-10-15T00:24:49.2689887Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
    "where": "US72 EB/WB @ MP 70.48",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Road Cleared.",
    "county": "Limestone",
    "city": "Athens",
    "lat": 34.791652,
    "lon": -87.04816799999999,
    "start": "2026-10-14T23:26:23Z",
-   "end": "2026-10-15T00:26:23Z",
-   "updated": "2026-10-14T23:50:19.9152523Z"
+   "end": "2026-10-15T00:22:15Z",
+   "updated": "2026-10-15T00:24:58.6981924Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL20 WB @ MP 72.2",
+   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.628768,
+   "lon": -86.932448,
+   "start": "2026-10-15T00:06:58Z",
+   "end": "2026-10-15T02:00:00Z",
+   "updated": "2026-10-15T00:24:59.2241845Z"
   }
  ]
 }
