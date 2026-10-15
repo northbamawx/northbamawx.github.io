@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T19:57:13+00:00",
+ "updated": "2026-10-15T20:24:33+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,63 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T19:57:00.2059248Z"
+   "updated": "2026-10-15T20:22:36.3866908Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB/SB @ MP 9.78",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.822896,
+   "lon": -87.626496,
+   "start": "2026-10-15T20:05:19Z",
+   "end": "2026-10-15T21:05:19Z",
+   "updated": "2026-10-15T20:23:00.9534253Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 SB @ MP 360.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.6278,
+   "lon": -86.955944,
+   "start": "2026-10-15T20:18:16Z",
+   "end": "2026-10-15T21:18:16Z",
+   "updated": "2026-10-15T15:20:16Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 92.38",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.744175999999996,
+   "lon": -86.67789599999999,
+   "start": "2026-10-15T20:08:34Z",
+   "end": "2026-10-15T21:08:34Z",
+   "updated": "2026-10-15T20:23:01.1968028Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 92.08",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.745912,
+   "lon": -86.683488,
+   "start": "2026-10-15T20:16:06Z",
+   "end": "2026-10-15T21:16:06Z",
+   "updated": "2026-10-15T20:23:01.9878783Z"
   },
   {
    "type": "Incident",
@@ -27,7 +83,7 @@
    "lon": -85.57119999999999,
    "start": "2026-10-15T19:11:46Z",
    "end": "2026-10-15T21:00:00Z",
-   "updated": "2026-10-15T19:57:10.5208459Z"
+   "updated": "2026-10-15T20:22:59.682246Z"
   },
   {
    "type": "Incident",
@@ -41,7 +97,7 @@
    "lon": -86.931832,
    "start": "2026-10-15T17:10:48Z",
    "end": "2026-10-15T20:30:00Z",
-   "updated": "2026-10-15T19:57:10.0583796Z"
+   "updated": "2026-10-15T20:22:59.3020698Z"
   }
  ]
 }
