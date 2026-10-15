@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T09:04:29+00:00",
+ "updated": "2026-10-15T10:01:21+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T09:02:49.0013718Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "AL35 SB @ MP 46.1",
-   "detail": "Debris causing lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Section",
-   "lat": 34.632183999999995,
-   "lon": -85.971728,
-   "start": "2026-10-15T07:56:13Z",
-   "end": "2026-10-15T09:15:00Z",
-   "updated": "2026-10-15T09:03:01.4671423Z"
+   "updated": "2026-10-15T09:57:40.9727229Z"
   }
  ]
 }
