@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T20:58:50+00:00",
+ "updated": "2026-10-15T21:31:37+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T20:56:53.7368263Z"
+   "updated": "2026-10-15T21:29:36.7800832Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MinorDelay",
+   "title": "Minor Crash",
+   "where": "US31 NB @ MP 329.16",
+   "detail": null,
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.210276,
+   "lon": -86.859344,
+   "start": "2026-10-15T20:32:05Z",
+   "end": "2026-10-15T21:28:01Z",
+   "updated": "2026-10-15T16:28:01Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 9.78",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.822896,
-   "lon": -87.626496,
-   "start": "2026-10-15T20:05:19Z",
-   "end": "2026-10-15T21:05:19Z",
-   "updated": "2026-10-15T20:57:05.2103113Z"
+   "where": "US72 EB/WB @ MP 78.48",
+   "detail": "Crash with lane blockage. Please use caution when Traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.77384,
+   "lon": -86.911616,
+   "start": "2026-10-15T20:55:38Z",
+   "end": "2026-10-15T21:55:38Z",
+   "updated": "2026-10-15T21:29:53.8636382Z"
   },
   {
    "type": "Crash",
@@ -40,22 +54,36 @@
    "lat": 34.748599999999996,
    "lon": -86.692008,
    "start": "2026-10-15T20:28:39Z",
-   "end": "2026-10-15T21:28:39Z",
-   "updated": "2026-10-15T20:57:05.4594489Z"
+   "end": "2026-10-15T22:00:00Z",
+   "updated": "2026-10-15T21:29:53.0275815Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "I-59 NB @ MP 239.46",
-   "detail": "Congestion building in the area northbound. Please use caution when traveling through this area.",
-   "county": "DeKalb",
-   "city": "Valley Head",
-   "lat": 34.694236,
-   "lon": -85.57119999999999,
-   "start": "2026-10-15T19:11:46Z",
-   "end": "2026-10-15T21:00:00Z",
-   "updated": "2026-10-15T20:57:04.9953985Z"
+   "where": "AL20 WB @ MP 72.78",
+   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.62856,
+   "lon": -86.923368,
+   "start": "2026-10-15T21:11:40Z",
+   "end": "2026-10-15T23:15:00Z",
+   "updated": "2026-10-15T21:29:56.1306361Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 13.79",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.706692,
+   "lon": -86.672872,
+   "start": "2026-10-15T20:56:14Z",
+   "end": "2026-10-15T22:15:00Z",
+   "updated": "2026-10-15T21:29:55.0434206Z"
   }
  ]
 }
