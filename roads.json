@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-15T13:16:47+00:00",
+ "updated": "2026-10-15T14:07:46+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "Closed",
+   "title": "Major Crash",
+   "where": "AL117 NB/SB @ MP 9.33",
+   "detail": "Crash with road closure. Please seek alternate route.",
+   "county": "DeKalb",
+   "city": "Valley Head",
+   "lat": 34.566828,
+   "lon": -85.617064,
+   "start": "2026-10-15T13:16:19Z",
+   "end": "2026-10-15T14:16:19Z",
+   "updated": "2026-10-15T14:07:12.1536001Z"
+  },
   {
    "type": "Roadwork",
    "severity": "Closed",
@@ -13,49 +27,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T13:12:24.7138787Z"
+   "updated": "2026-10-15T14:06:57.0770332Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 SB @ MP 76.68",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.84074,
-   "lon": -87.688192,
-   "start": "2026-10-15T12:58:24Z",
-   "end": "2026-10-15T13:58:24Z",
-   "updated": "2026-10-15T13:12:39.2616037Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 4.48",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.647552,
-   "lon": -86.827232,
-   "start": "2026-10-15T12:12:32Z",
-   "end": "2026-10-15T13:45:00Z",
-   "updated": "2026-10-15T13:12:38.1802522Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "US72 EB @ MP 88.09",
-   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "where": "US231 NB @ MP 315.45",
+   "detail": null,
    "county": "Madison",
-   "city": "Madison",
-   "lat": 34.75166,
-   "lon": -86.75162399999999,
-   "start": "2026-10-15T12:41:03Z",
-   "end": "2026-10-15T13:41:03Z",
-   "updated": "2026-10-15T13:12:38.5770818Z"
+   "city": "Huntsville",
+   "lat": 34.700896,
+   "lon": -86.586064,
+   "start": "2026-10-15T13:25:49Z",
+   "end": "2026-10-15T14:25:49Z",
+   "updated": "2026-10-15T14:07:13.0008697Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Other",
+   "where": "AL20 WB @ MP 32.8",
+   "detail": "Incident with lane blockage. Please use caution when traveling through this area.",
+   "county": "Colbert",
+   "city": "Leighton",
+   "lat": 34.685407999999995,
+   "lon": -87.58570399999999,
+   "start": "2026-10-15T13:29:27Z",
+   "end": "2026-10-15T14:29:27Z",
+   "updated": "2026-10-15T14:07:13.0861684Z"
   }
  ]
 }
