@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T18:28:56+00:00",
+ "updated": "2026-10-15T19:10:51+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T18:27:44.2675544Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL117 NB/SB @ MP 3.82",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "DeKalb",
-   "city": "Valley Head",
-   "lat": 34.56216,
-   "lon": -85.556288,
-   "start": "2026-10-15T17:16:22Z",
-   "end": "2026-10-15T19:30:00Z",
-   "updated": "2026-10-15T18:28:05.8097309Z"
+   "updated": "2026-10-15T19:08:50.9422306Z"
   },
   {
    "type": "Incident",
@@ -41,7 +27,7 @@
    "lon": -86.931832,
    "start": "2026-10-15T17:10:48Z",
    "end": "2026-10-15T19:15:00Z",
-   "updated": "2026-10-15T18:28:05.7421665Z"
+   "updated": "2026-10-15T19:09:03.108107Z"
   }
  ]
 }
