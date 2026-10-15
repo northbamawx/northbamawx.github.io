@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T01:58:59+00:00",
+ "updated": "2026-10-15T02:30:05+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T01:56:41.1512631Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "AL20 WB @ MP 72.2",
-   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.628768,
-   "lon": -86.932448,
-   "start": "2026-10-15T00:06:58Z",
-   "end": "2026-10-15T02:00:00Z",
-   "updated": "2026-10-15T01:56:52.04482Z"
+   "updated": "2026-10-15T02:29:34.1125872Z"
   },
   {
    "type": "Incident",
@@ -40,8 +26,8 @@
    "lat": 34.626604,
    "lon": -86.90110399999999,
    "start": "2026-10-15T00:45:32Z",
-   "end": "2026-10-15T02:15:00Z",
-   "updated": "2026-10-15T01:56:52.5069148Z"
+   "end": "2026-10-15T03:15:00Z",
+   "updated": "2026-10-15T02:29:45.1005635Z"
   }
  ]
 }
