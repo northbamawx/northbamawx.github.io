@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T15:02:45+00:00",
+ "updated": "2026-10-15T16:01:40+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T14:59:58.5709396Z"
+   "updated": "2026-10-15T16:00:37.3199271Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 SB @ MP 6.31",
+   "where": "AL157 NB/SB @ MP 5.01",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Cullman",
    "city": "Cullman",
-   "lat": 34.206199999999995,
-   "lon": -86.859496,
-   "start": "2026-10-15T14:11:01Z",
-   "end": "2026-10-15T15:11:01Z",
-   "updated": "2026-10-15T15:00:11.752834Z"
+   "lat": 34.20622,
+   "lon": -86.858384,
+   "start": "2026-10-15T15:55:09Z",
+   "end": "2026-10-15T16:55:09Z",
+   "updated": "2026-10-15T16:00:49.9996296Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 315.36",
+   "where": "I-565 EB @ MP 8.08",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.699264,
-   "lon": -86.585296,
-   "start": "2026-10-15T14:27:34Z",
-   "end": "2026-10-15T15:27:34Z",
-   "updated": "2026-10-15T15:00:11.8974567Z"
+   "city": "Madison",
+   "lat": 34.666892,
+   "lon": -86.769544,
+   "start": "2026-10-15T15:28:17Z",
+   "end": "2026-10-15T16:28:17Z",
+   "updated": "2026-10-15T16:00:49.2949427Z"
   }
  ]
 }
