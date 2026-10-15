@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T10:59:49+00:00",
+ "updated": "2026-10-15T11:31:46+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T10:57:39.7579159Z"
+   "updated": "2026-10-15T11:30:56.3158804Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 102.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.773696,
+   "lon": -86.539552,
+   "start": "2026-10-15T10:56:14Z",
+   "end": "2026-10-15T11:56:14Z",
+   "updated": "2026-10-15T11:31:07.6593769Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 20.5",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.748923999999995,
+   "lon": -86.577528,
+   "start": "2026-10-15T11:23:45Z",
+   "end": "2026-10-15T12:23:45Z",
+   "updated": "2026-10-15T11:31:07.9464454Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "US72 WB @ MP 53.83",
-   "detail": "Debris blocking lanes. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Rogersville",
-   "lat": 34.833148,
-   "lon": -87.329424,
-   "start": "2026-10-15T10:18:17Z",
-   "end": "2026-10-15T11:18:17Z",
-   "updated": "2026-10-15T10:57:50.8883811Z"
+   "title": "Congestion",
+   "where": "US72 WB @ MP 101.3",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.768916,
+   "lon": -86.55213599999999,
+   "start": "2026-10-15T11:25:57Z",
+   "end": "2026-10-15T12:25:57Z",
+   "updated": "2026-10-15T11:31:08.207756Z"
   }
  ]
 }
