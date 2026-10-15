@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T00:25:00+00:00",
+ "updated": "2026-10-15T01:08:22+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T00:24:49.2689887Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 70.48",
-   "detail": "Road Cleared.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.791652,
-   "lon": -87.04816799999999,
-   "start": "2026-10-14T23:26:23Z",
-   "end": "2026-10-15T00:22:15Z",
-   "updated": "2026-10-15T00:24:58.6981924Z"
+   "updated": "2026-10-15T01:08:09.0636007Z"
   },
   {
    "type": "Incident",
@@ -41,7 +27,21 @@
    "lon": -86.932448,
    "start": "2026-10-15T00:06:58Z",
    "end": "2026-10-15T02:00:00Z",
-   "updated": "2026-10-15T00:24:59.2241845Z"
+   "updated": "2026-10-15T01:08:18.2811231Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 SB @ MP 339.9",
+   "detail": "Congestion building in the area southbound. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.626604,
+   "lon": -86.90110399999999,
+   "start": "2026-10-15T00:45:32Z",
+   "end": "2026-10-15T02:15:00Z",
+   "updated": "2026-10-15T01:08:18.9542714Z"
   }
  ]
 }
