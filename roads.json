@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T03:02:16+00:00",
+ "updated": "2026-10-15T04:00:09+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T03:00:49.626207Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 339.9",
-   "detail": "Congestion building in the area southbound. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.626604,
-   "lon": -86.90110399999999,
-   "start": "2026-10-15T00:45:32Z",
-   "end": "2026-10-15T03:15:00Z",
-   "updated": "2026-10-15T03:01:00.3838757Z"
+   "updated": "2026-10-15T03:59:34.1444548Z"
   }
  ]
 }
