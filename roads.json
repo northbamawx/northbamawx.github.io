@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T23:17:21+00:00",
+ "updated": "2026-10-15T23:50:36+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T23:17:03.7341923Z"
+   "updated": "2026-10-15T23:48:30.0043418Z"
   },
   {
    "type": "Crash",
@@ -27,35 +27,35 @@
    "lon": -86.83095999999999,
    "start": "2026-10-15T23:01:56Z",
    "end": "2026-10-16T00:01:56Z",
-   "updated": "2026-10-15T23:17:14.5832664Z"
+   "updated": "2026-10-15T23:48:41.7581175Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB @ MP 328.99",
+   "where": "I-65 NB @ MP 297.87",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Harvest",
-   "lat": 34.846056,
-   "lon": -86.712392,
-   "start": "2026-10-15T21:58:01Z",
-   "end": "2026-10-15T23:45:00Z",
-   "updated": "2026-10-15T23:17:13.6276786Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.031763999999995,
+   "lon": -86.871648,
+   "start": "2026-10-15T23:15:34Z",
+   "end": "2026-10-16T00:15:34Z",
+   "updated": "2026-10-15T23:48:42.011067Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 330.19",
+   "where": "I-565 WB @ MP 16.1",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Harvest",
-   "lat": 34.860016,
-   "lon": -86.72259199999999,
-   "start": "2026-10-15T22:07:29Z",
-   "end": "2026-10-15T23:30:00Z",
-   "updated": "2026-10-15T23:17:13.7324981Z"
+   "city": "Huntsville",
+   "lat": 34.715648,
+   "lon": -86.64291999999999,
+   "start": "2026-10-15T23:45:19Z",
+   "end": "2026-10-16T00:45:19Z",
+   "updated": "2026-10-15T18:46:51Z"
   },
   {
    "type": "Incident",
@@ -69,7 +69,7 @@
    "lon": -86.923368,
    "start": "2026-10-15T21:11:40Z",
    "end": "2026-10-16T00:00:00Z",
-   "updated": "2026-10-15T23:17:13.5682522Z"
+   "updated": "2026-10-15T23:48:41.2234057Z"
   }
  ]
 }
