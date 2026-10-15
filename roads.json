@@ -1,20 +1,6 @@
 {
- "updated": "2026-10-15T14:07:46+00:00",
+ "updated": "2026-10-15T15:02:45+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "Closed",
-   "title": "Major Crash",
-   "where": "AL117 NB/SB @ MP 9.33",
-   "detail": "Crash with road closure. Please seek alternate route.",
-   "county": "DeKalb",
-   "city": "Valley Head",
-   "lat": 34.566828,
-   "lon": -85.617064,
-   "start": "2026-10-15T13:16:19Z",
-   "end": "2026-10-15T14:16:19Z",
-   "updated": "2026-10-15T14:07:12.1536001Z"
-  },
   {
    "type": "Roadwork",
    "severity": "Closed",
@@ -27,35 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T14:06:57.0770332Z"
+   "updated": "2026-10-15T14:59:58.5709396Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 315.45",
-   "detail": null,
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.700896,
-   "lon": -86.586064,
-   "start": "2026-10-15T13:25:49Z",
-   "end": "2026-10-15T14:25:49Z",
-   "updated": "2026-10-15T14:07:13.0008697Z"
+   "where": "AL157 SB @ MP 6.31",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.206199999999995,
+   "lon": -86.859496,
+   "start": "2026-10-15T14:11:01Z",
+   "end": "2026-10-15T15:11:01Z",
+   "updated": "2026-10-15T15:00:11.752834Z"
   },
   {
-   "type": "Incident",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Other",
-   "where": "AL20 WB @ MP 32.8",
-   "detail": "Incident with lane blockage. Please use caution when traveling through this area.",
-   "county": "Colbert",
-   "city": "Leighton",
-   "lat": 34.685407999999995,
-   "lon": -87.58570399999999,
-   "start": "2026-10-15T13:29:27Z",
-   "end": "2026-10-15T14:29:27Z",
-   "updated": "2026-10-15T14:07:13.0861684Z"
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 315.36",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.699264,
+   "lon": -86.585296,
+   "start": "2026-10-15T14:27:34Z",
+   "end": "2026-10-15T15:27:34Z",
+   "updated": "2026-10-15T15:00:11.8974567Z"
   }
  ]
 }
