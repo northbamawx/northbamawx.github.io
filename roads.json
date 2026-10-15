@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T12:28:28+00:00",
+ "updated": "2026-10-15T13:16:47+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T12:27:48.4954469Z"
+   "updated": "2026-10-15T13:12:24.7138787Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 SB @ MP 76.68",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.84074,
+   "lon": -87.688192,
+   "start": "2026-10-15T12:58:24Z",
+   "end": "2026-10-15T13:58:24Z",
+   "updated": "2026-10-15T13:12:39.2616037Z"
   },
   {
    "type": "Incident",
@@ -26,8 +40,22 @@
    "lat": 34.647552,
    "lon": -86.827232,
    "start": "2026-10-15T12:12:32Z",
-   "end": "2026-10-15T13:12:32Z",
-   "updated": "2026-10-15T12:28:00.8185566Z"
+   "end": "2026-10-15T13:45:00Z",
+   "updated": "2026-10-15T13:12:38.1802522Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US72 EB @ MP 88.09",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.75166,
+   "lon": -86.75162399999999,
+   "start": "2026-10-15T12:41:03Z",
+   "end": "2026-10-15T13:41:03Z",
+   "updated": "2026-10-15T13:12:38.5770818Z"
   }
  ]
 }
