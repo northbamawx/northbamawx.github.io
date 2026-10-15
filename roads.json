@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-15T17:03:43+00:00",
+ "updated": "2026-10-15T17:57:06+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "Closed",
+   "title": "Major Crash",
+   "where": "AL117 NB/SB @ MP 3.82",
+   "detail": "Crash with road closure. Please seek alternate route.",
+   "county": "DeKalb",
+   "city": "Valley Head",
+   "lat": 34.56216,
+   "lon": -85.556288,
+   "start": "2026-10-15T17:16:22Z",
+   "end": "2026-10-15T18:16:22Z",
+   "updated": "2026-10-15T17:56:51.2551485Z"
+  },
   {
    "type": "Roadwork",
    "severity": "Closed",
@@ -13,7 +27,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-15T17:00:54.4415679Z"
+   "updated": "2026-10-15T17:56:38.2362346Z"
   },
   {
    "type": "Crash",
@@ -26,22 +40,36 @@
    "lat": 34.20622,
    "lon": -86.858384,
    "start": "2026-10-15T15:55:09Z",
-   "end": "2026-10-15T17:30:00Z",
-   "updated": "2026-10-15T17:01:06.3133666Z"
+   "end": "2026-10-15T18:00:00Z",
+   "updated": "2026-10-15T17:56:50.8477353Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 75.88",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "where": "AL53 NB @ MP 325.39",
+   "detail": "All lanes are open.",
+   "county": "Madison",
+   "city": "Monrovia",
+   "lat": 34.801832,
+   "lon": -86.676048,
+   "start": "2026-10-15T16:50:19Z",
+   "end": "2026-10-15T17:54:47Z",
+   "updated": "2026-10-15T17:56:50.9216889Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 NB @ MP 355.55",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Athens",
-   "lat": 34.78536,
-   "lon": -86.955512,
-   "start": "2026-10-15T16:37:03Z",
-   "end": "2026-10-15T17:37:03Z",
-   "updated": "2026-10-15T17:01:06.6737327Z"
+   "lat": 34.847184,
+   "lon": -86.931832,
+   "start": "2026-10-15T17:10:48Z",
+   "end": "2026-10-15T18:10:48Z",
+   "updated": "2026-10-15T17:56:51.1022247Z"
   }
  ]
 }
