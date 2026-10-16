@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T15:01:27+00:00",
+ "updated": "2026-10-16T15:59:34+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T15:01:03.9465308Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL24 EB/WB @ MP 60.16",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.538148,
-   "lon": -87.158672,
-   "start": "2026-10-16T13:44:17Z",
-   "end": "2026-10-16T15:15:00Z",
-   "updated": "2026-10-16T15:01:14.9425455Z"
+   "updated": "2026-10-16T15:58:28.4437238Z"
   }
  ]
 }
