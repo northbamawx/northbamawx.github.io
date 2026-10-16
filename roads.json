@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T13:33:47+00:00",
+ "updated": "2026-10-16T14:26:05+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T13:33:09.7602849Z"
+   "updated": "2026-10-16T14:23:06.5805575Z"
   },
   {
    "type": "Crash",
@@ -27,21 +27,21 @@
    "lon": -86.85356,
    "start": "2026-10-16T13:29:25Z",
    "end": "2026-10-16T14:29:25Z",
-   "updated": "2026-10-16T13:33:22.7934863Z"
+   "updated": "2026-10-16T14:23:27.7366823Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 314.76",
+   "where": "AL24 EB/WB @ MP 60.16",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.69094,
-   "lon": -86.58111199999999,
-   "start": "2026-10-16T12:14:48Z",
-   "end": "2026-10-16T13:45:00Z",
-   "updated": "2026-10-16T13:33:21.7918456Z"
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.538148,
+   "lon": -87.158672,
+   "start": "2026-10-16T13:44:17Z",
+   "end": "2026-10-16T14:44:17Z",
+   "updated": "2026-10-16T14:23:28.1586774Z"
   },
   {
    "type": "Incident",
@@ -54,8 +54,8 @@
    "lat": 34.64626,
    "lon": -86.830592,
    "start": "2026-10-16T11:38:31Z",
-   "end": "2026-10-16T14:00:00Z",
-   "updated": "2026-10-16T13:33:21.2604186Z"
+   "end": "2026-10-16T14:30:00Z",
+   "updated": "2026-10-16T14:23:26.3770983Z"
   }
  ]
 }
