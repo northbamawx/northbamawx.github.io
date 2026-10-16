@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T18:25:46+00:00",
+ "updated": "2026-10-16T19:03:39+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,49 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T18:23:24.3257711Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 73.68",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.790656,
-   "lon": -86.99291199999999,
-   "start": "2026-10-16T17:56:25Z",
-   "end": "2026-10-16T18:56:25Z",
-   "updated": "2026-10-16T18:23:37.0539173Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 294.02",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.324743999999995,
-   "lon": -86.31343199999999,
-   "start": "2026-10-16T17:55:04Z",
-   "end": "2026-10-16T18:55:04Z",
-   "updated": "2026-10-16T18:23:36.994822Z"
+   "updated": "2026-10-16T19:02:18.4244188Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
    "where": "US431 NB/SB @ MP 279.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Road Cleared.",
    "county": "Marshall",
    "city": "Boaz",
    "lat": 34.190708,
    "lon": -86.147184,
    "start": "2026-10-16T18:03:56Z",
-   "end": "2026-10-16T19:03:56Z",
-   "updated": "2026-10-16T18:23:37.2063001Z"
+   "end": "2026-10-16T19:00:25Z",
+   "updated": "2026-10-16T19:02:29.7102526Z"
   }
  ]
 }
