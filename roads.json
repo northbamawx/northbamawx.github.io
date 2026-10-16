@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T12:36:29+00:00",
+ "updated": "2026-10-16T13:33:47+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T12:34:23.2962154Z"
+   "updated": "2026-10-16T13:33:09.7602849Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 WB @ MP 76.38",
+   "where": "AL69 NB/SB @ MP 240.87",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.784568,
-   "lon": -86.94516,
-   "start": "2026-10-16T12:07:10Z",
-   "end": "2026-10-16T13:07:10Z",
-   "updated": "2026-10-16T12:34:34.619023Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 7.88",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.666384,
-   "lon": -86.77386399999999,
-   "start": "2026-10-16T10:15:38Z",
-   "end": "2026-10-16T12:45:00Z",
-   "updated": "2026-10-16T12:34:33.7465128Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.134124,
+   "lon": -86.85356,
+   "start": "2026-10-16T13:29:25Z",
+   "end": "2026-10-16T14:29:25Z",
+   "updated": "2026-10-16T13:33:22.7934863Z"
   },
   {
    "type": "Crash",
@@ -54,8 +40,8 @@
    "lat": 34.69094,
    "lon": -86.58111199999999,
    "start": "2026-10-16T12:14:48Z",
-   "end": "2026-10-16T13:14:48Z",
-   "updated": "2026-10-16T12:34:35.105019Z"
+   "end": "2026-10-16T13:45:00Z",
+   "updated": "2026-10-16T13:33:21.7918456Z"
   },
   {
    "type": "Incident",
@@ -68,8 +54,8 @@
    "lat": 34.64626,
    "lon": -86.830592,
    "start": "2026-10-16T11:38:31Z",
-   "end": "2026-10-16T12:38:31Z",
-   "updated": "2026-10-16T12:34:34.1466722Z"
+   "end": "2026-10-16T14:00:00Z",
+   "updated": "2026-10-16T13:33:21.2604186Z"
   }
  ]
 }
