@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T04:00:15+00:00",
+ "updated": "2026-10-16T04:31:16+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T03:55:04.0321243Z"
+   "updated": "2026-10-16T04:24:28.5607745Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 WB @ MP 87.29",
+   "where": "AL133 NB/SB @ MP 16.36",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.749472,
-   "lon": -86.765232,
-   "start": "2026-10-16T01:02:14Z",
-   "end": "2026-10-16T04:00:00Z",
-   "updated": "2026-10-16T03:55:13.8931129Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 317.76",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.72022,
-   "lon": -86.609056,
-   "start": "2026-10-16T03:15:43Z",
-   "end": "2026-10-16T04:15:43Z",
-   "updated": "2026-10-16T03:55:14.7035266Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.830072,
+   "lon": -87.71987999999999,
+   "start": "2026-10-16T04:20:49Z",
+   "end": "2026-10-16T05:20:49Z",
+   "updated": "2026-10-15T23:21:35Z"
   }
  ]
 }
