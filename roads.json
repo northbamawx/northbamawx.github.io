@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T17:56:14+00:00",
+ "updated": "2026-10-16T18:25:46+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,63 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T17:52:10.8790814Z"
+   "updated": "2026-10-16T18:23:24.3257711Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 242.77",
+   "where": "US72 EB/WB @ MP 73.68",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.157664,
-   "lon": -86.83665599999999,
-   "start": "2026-10-16T16:56:35Z",
-   "end": "2026-10-16T17:56:35Z",
-   "updated": "2026-10-16T17:52:24.6589723Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.790656,
+   "lon": -86.99291199999999,
+   "start": "2026-10-16T17:56:25Z",
+   "end": "2026-10-16T18:56:25Z",
+   "updated": "2026-10-16T18:23:37.0539173Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 5.51",
+   "where": "US431 NB/SB @ MP 294.02",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.206708,
-   "lon": -86.866688,
-   "start": "2026-10-16T16:55:55Z",
-   "end": "2026-10-16T17:55:55Z",
-   "updated": "2026-10-16T17:52:24.567266Z"
+   "county": "Marshall",
+   "city": "Guntersville",
+   "lat": 34.324743999999995,
+   "lon": -86.31343199999999,
+   "start": "2026-10-16T17:55:04Z",
+   "end": "2026-10-16T18:55:04Z",
+   "updated": "2026-10-16T18:23:36.994822Z"
   },
   {
    "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "US231/431 SB @ MP 337.48",
-   "detail": null,
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.770748,
-   "lon": -86.586472,
-   "start": "2026-10-16T17:48:41Z",
-   "end": "2026-10-16T17:49:18Z",
-   "updated": "2026-10-16T12:49:18Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-59 SB @ MP 204.93",
-   "detail": null,
-   "county": "DeKalb",
-   "city": "Collinsville",
-   "lat": 34.272591999999996,
-   "lon": -85.88169599999999,
-   "start": "2026-10-16T17:37:10Z",
-   "end": "2026-10-16T17:49:10Z",
-   "updated": "2026-10-16T17:52:25.468027Z"
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB/SB @ MP 279.9",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Boaz",
+   "lat": 34.190708,
+   "lon": -86.147184,
+   "start": "2026-10-16T18:03:56Z",
+   "end": "2026-10-16T19:03:56Z",
+   "updated": "2026-10-16T18:23:37.2063001Z"
   }
  ]
 }
