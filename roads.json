@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T19:53:39+00:00",
+ "updated": "2026-10-16T20:19:21+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T19:53:25.1896263Z"
+   "updated": "2026-10-16T20:18:25.5620886Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 334.95",
+   "where": "AL64 EB/WB",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.736419999999995,
-   "lon": -86.59848,
-   "start": "2026-10-16T19:32:41Z",
-   "end": "2026-10-16T20:32:41Z",
-   "updated": "2026-10-16T19:53:37.169167Z"
+   "county": "Lauderdale",
+   "city": "Greenhill",
+   "lat": 34.92848,
+   "lon": -87.53164,
+   "start": "2026-10-16T19:57:05Z",
+   "end": "2026-10-16T20:57:05Z",
+   "updated": "2026-10-16T20:18:45.942889Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Vehicle Fire",
+   "where": "AL205 NB/SB @ MP 4.09",
+   "detail": "Vehicle Fire with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Boaz",
+   "lat": 34.211459999999995,
+   "lon": -86.16875999999999,
+   "start": "2026-10-16T20:01:07Z",
+   "end": "2026-10-16T21:01:07Z",
+   "updated": "2026-10-16T20:18:46.1068078Z"
   }
  ]
 }
