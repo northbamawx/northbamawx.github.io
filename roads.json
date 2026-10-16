@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T20:19:21+00:00",
+ "updated": "2026-10-16T20:57:19+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T20:18:25.5620886Z"
+   "updated": "2026-10-16T20:55:28.0606646Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL69 NB/SB @ MP 241.57",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.142572,
+   "lon": -86.84816,
+   "start": "2026-10-16T20:30:16Z",
+   "end": "2026-10-16T21:30:16Z",
+   "updated": "2026-10-16T20:55:40.7079754Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
    "where": "AL64 EB/WB",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Road Cleared.",
    "county": "Lauderdale",
    "city": "Greenhill",
    "lat": 34.92848,
    "lon": -87.53164,
    "start": "2026-10-16T19:57:05Z",
-   "end": "2026-10-16T20:57:05Z",
-   "updated": "2026-10-16T20:18:45.942889Z"
+   "end": "2026-10-16T20:53:24Z",
+   "updated": "2026-10-16T20:55:40.0181451Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB @ MP 71.23",
+   "detail": "roadway cleared",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.628831999999996,
+   "lon": -86.95067999999999,
+   "start": "2026-10-16T20:24:36Z",
+   "end": "2026-10-16T21:24:36Z",
+   "updated": "2026-10-16T20:55:40.6266321Z"
   },
   {
    "type": "Crash",
@@ -40,8 +68,22 @@
    "lat": 34.211459999999995,
    "lon": -86.16875999999999,
    "start": "2026-10-16T20:01:07Z",
-   "end": "2026-10-16T21:01:07Z",
-   "updated": "2026-10-16T20:18:46.1068078Z"
+   "end": "2026-10-16T21:30:00Z",
+   "updated": "2026-10-16T20:55:40.2039441Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 20.08",
+   "detail": "Congestion building in the area eastbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.74124,
+   "lon": -86.583584,
+   "start": "2026-10-16T20:50:44Z",
+   "end": "2026-10-16T23:00:00Z",
+   "updated": "2026-10-16T20:55:41.7377379Z"
   }
  ]
 }
