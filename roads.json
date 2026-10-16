@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T11:58:04+00:00",
+ "updated": "2026-10-16T12:36:29+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T11:57:38.3196317Z"
+   "updated": "2026-10-16T12:34:23.2962154Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 76.38",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.784568,
+   "lon": -86.94516,
+   "start": "2026-10-16T12:07:10Z",
+   "end": "2026-10-16T13:07:10Z",
+   "updated": "2026-10-16T12:34:34.619023Z"
   },
   {
    "type": "Crash",
@@ -26,22 +40,36 @@
    "lat": 34.666384,
    "lon": -86.77386399999999,
    "start": "2026-10-16T10:15:38Z",
-   "end": "2026-10-16T12:15:00Z",
-   "updated": "2026-10-16T11:57:48.7076348Z"
+   "end": "2026-10-16T12:45:00Z",
+   "updated": "2026-10-16T12:34:33.7465128Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 314.76",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.69094,
+   "lon": -86.58111199999999,
+   "start": "2026-10-16T12:14:48Z",
+   "end": "2026-10-16T13:14:48Z",
+   "updated": "2026-10-16T12:34:35.105019Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "I-565 EB @ MP 5.78",
+   "where": "I-565 EB @ MP 3.5",
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Huntsville",
-   "lat": 34.654768,
-   "lon": -86.80783199999999,
+   "lat": 34.64626,
+   "lon": -86.830592,
    "start": "2026-10-16T11:38:31Z",
    "end": "2026-10-16T12:38:31Z",
-   "updated": "2026-10-16T11:57:49.1226222Z"
+   "updated": "2026-10-16T12:34:34.1466722Z"
   }
  ]
 }
