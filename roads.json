@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T16:31:05+00:00",
+ "updated": "2026-10-16T17:21:13+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T16:29:46.0512374Z"
+   "updated": "2026-10-16T17:20:37.3537778Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 11.38",
+   "where": "AL69 NB/SB @ MP 242.77",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.841572,
-   "lon": -87.639112,
-   "start": "2026-10-16T16:01:40Z",
-   "end": "2026-10-16T17:01:40Z",
-   "updated": "2026-10-16T16:29:58.6011649Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.157664,
+   "lon": -86.83665599999999,
+   "start": "2026-10-16T16:56:35Z",
+   "end": "2026-10-16T17:56:35Z",
+   "updated": "2026-10-16T17:21:05.7861234Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 5.51",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.206708,
+   "lon": -86.866688,
+   "start": "2026-10-16T16:55:55Z",
+   "end": "2026-10-16T17:55:55Z",
+   "updated": "2026-10-16T17:21:05.533869Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 75.88",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.78568,
+   "lon": -86.954944,
+   "start": "2026-10-16T16:33:33Z",
+   "end": "2026-10-16T17:33:33Z",
+   "updated": "2026-10-16T17:21:05.3094687Z"
   }
  ]
 }
