@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T21:24:42+00:00",
+ "updated": "2026-10-16T21:56:04+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T21:23:16.601581Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 241.57",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.142572,
-   "lon": -86.84816,
-   "start": "2026-10-16T20:30:16Z",
-   "end": "2026-10-16T21:30:16Z",
-   "updated": "2026-10-16T21:23:27.9978139Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Vehicle Fire",
-   "where": "AL205 NB/SB @ MP 4.09",
-   "detail": "Vehicle Fire with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Boaz",
-   "lat": 34.211459999999995,
-   "lon": -86.16875999999999,
-   "start": "2026-10-16T20:01:07Z",
-   "end": "2026-10-16T21:30:00Z",
-   "updated": "2026-10-16T21:23:27.7854794Z"
+   "updated": "2026-10-16T21:55:21.0141998Z"
   },
   {
    "type": "Incident",
@@ -55,7 +27,7 @@
    "lon": -86.583584,
    "start": "2026-10-16T20:50:44Z",
    "end": "2026-10-16T23:00:00Z",
-   "updated": "2026-10-16T21:23:29.8512011Z"
+   "updated": "2026-10-16T21:55:34.5470781Z"
   }
  ]
 }
