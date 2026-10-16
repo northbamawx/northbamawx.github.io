@@ -1,6 +1,12 @@
 {
- "updated": 1792189403,
+ "updated": 1792191314,
  "items": [
+  {
+   "id": "n4DC7l8jWh8",
+   "title": "Huntsville Weather Forecast: Chance Light Rain & 81° Friday",
+   "short": true,
+   "published": 1792190240
+  },
   {
    "id": "qABe6ZsgR7E",
    "title": "Huntsville Weather Forecast: Clear & 64° Wednesday Night",
@@ -36,12 +42,6 @@
    "title": "Flood Watch - Huntsville Decatur Meridianville - October 10, 2026",
    "short": true,
    "published": 1791640117
-  },
-  {
-   "id": "e0Zjtm5Dydw",
-   "title": "Huntsville Weather Forecast: Showers And Thunderstorms & 72° Saturday",
-   "short": true,
-   "published": 1791632475
   }
  ]
 }
