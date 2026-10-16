@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T19:03:39+00:00",
+ "updated": "2026-10-16T19:53:39+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T19:02:18.4244188Z"
+   "updated": "2026-10-16T19:53:25.1896263Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 279.9",
-   "detail": "Road Cleared.",
-   "county": "Marshall",
-   "city": "Boaz",
-   "lat": 34.190708,
-   "lon": -86.147184,
-   "start": "2026-10-16T18:03:56Z",
-   "end": "2026-10-16T19:00:25Z",
-   "updated": "2026-10-16T19:02:29.7102526Z"
+   "where": "US231/431 NB @ MP 334.95",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.736419999999995,
+   "lon": -86.59848,
+   "start": "2026-10-16T19:32:41Z",
+   "end": "2026-10-16T20:32:41Z",
+   "updated": "2026-10-16T19:53:37.169167Z"
   }
  ]
 }
