@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T11:23:26+00:00",
+ "updated": "2026-10-16T11:58:04+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T11:22:14.3173178Z"
+   "updated": "2026-10-16T11:57:38.3196317Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,22 @@
    "lat": 34.666384,
    "lon": -86.77386399999999,
    "start": "2026-10-16T10:15:38Z",
-   "end": "2026-10-16T11:45:00Z",
-   "updated": "2026-10-16T11:22:26.0711997Z"
+   "end": "2026-10-16T12:15:00Z",
+   "updated": "2026-10-16T11:57:48.7076348Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 5.78",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.654768,
+   "lon": -86.80783199999999,
+   "start": "2026-10-16T11:38:31Z",
+   "end": "2026-10-16T12:38:31Z",
+   "updated": "2026-10-16T11:57:49.1226222Z"
   }
  ]
 }
