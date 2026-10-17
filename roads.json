@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T21:17:45+00:00",
+ "updated": "2026-10-17T21:51:10+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T21:16:33.1016663Z"
+   "updated": "2026-10-17T21:49:49.034708Z"
   },
   {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-565 WB @ MP 13.39",
-   "detail": null,
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.701772,
-   "lon": -86.68700799999999,
-   "start": "2026-10-17T20:17:46Z",
-   "end": "2026-10-17T21:14:02Z",
-   "updated": "2026-10-17T16:14:02Z"
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 85.49",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.749016,
+   "lon": -86.79623199999999,
+   "start": "2026-10-17T21:20:42Z",
+   "end": "2026-10-17T22:20:42Z",
+   "updated": "2026-10-17T21:49:57.6764965Z"
   }
  ]
 }
