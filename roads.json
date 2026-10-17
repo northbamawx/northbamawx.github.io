@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T23:49:28+00:00",
+ "updated": "2026-10-17T00:24:55+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-16T23:49:11.9527544Z"
+   "updated": "2026-10-17T00:21:21.4174939Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MinorDelay",
+   "title": "Minor Crash",
+   "where": "I-65 NB @ MP 327.61",
+   "detail": null,
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.450596,
+   "lon": -86.90115999999999,
+   "start": "2026-10-17T00:07:30Z",
+   "end": "2026-10-17T00:19:39Z",
+   "updated": "2026-10-16T19:19:40Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MinorDelay",
+   "title": "Minor Crash",
+   "where": "I-65 NB @ MP 327.7",
+   "detail": null,
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.452472,
+   "lon": -86.900896,
+   "start": "2026-10-17T00:13:14Z",
+   "end": "2026-10-17T00:19:33Z",
+   "updated": "2026-10-16T19:19:34Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 9.88",
+   "where": "I-65 SB @ MP 329.2",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.822924,
-   "lon": -87.62648,
-   "start": "2026-10-16T23:16:54Z",
-   "end": "2026-10-17T00:16:54Z",
-   "updated": "2026-10-16T23:49:25.8890076Z"
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.473436,
+   "lon": -86.898472,
+   "start": "2026-10-17T00:17:08Z",
+   "end": "2026-10-17T01:17:08Z",
+   "updated": "2026-10-16T19:18:26Z"
   }
  ]
 }
