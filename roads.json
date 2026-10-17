@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T17:50:01+00:00",
+ "updated": "2026-10-17T18:17:03+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T17:48:26.1001626Z"
+   "updated": "2026-10-17T18:15:13.9387795Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 90.19",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.7555,
+   "lon": -86.714336,
+   "start": "2026-10-17T18:05:35Z",
+   "end": "2026-10-17T19:05:35Z",
+   "updated": "2026-10-17T13:13:36Z"
   }
  ]
 }
