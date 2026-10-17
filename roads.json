@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T20:53:40+00:00",
+ "updated": "2026-10-17T21:17:45+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T20:52:10.5805866Z"
+   "updated": "2026-10-17T21:16:33.1016663Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "MinorDelay",
+   "title": "AID",
+   "where": "I-565 WB @ MP 13.39",
+   "detail": null,
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.701772,
+   "lon": -86.68700799999999,
+   "start": "2026-10-17T20:17:46Z",
+   "end": "2026-10-17T21:14:02Z",
+   "updated": "2026-10-17T16:14:02Z"
   }
  ]
 }
