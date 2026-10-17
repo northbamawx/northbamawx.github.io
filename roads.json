@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T14:18:08+00:00",
+ "updated": "2026-10-17T14:52:15+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T14:11:50.6578636Z"
+   "updated": "2026-10-17T14:51:49.7356226Z"
   },
   {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-565 WB @ MP 13.39",
-   "detail": null,
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.701772,
-   "lon": -86.68700799999999,
-   "start": "2026-10-17T13:34:45Z",
-   "end": "2026-10-17T14:11:15Z",
-   "updated": "2026-10-17T09:11:15Z"
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL17 NB/SB @ MP 335.24",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.842132,
+   "lon": -87.67318399999999,
+   "start": "2026-10-17T14:24:38Z",
+   "end": "2026-10-17T15:24:38Z",
+   "updated": "2026-10-17T14:52:05.2226141Z"
   }
  ]
 }
