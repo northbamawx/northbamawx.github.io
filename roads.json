@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T05:23:54+00:00",
+ "updated": "2026-10-17T05:54:48+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T05:20:26.2095293Z"
+   "updated": "2026-10-17T05:53:19.7761362Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 307.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.164415999999996,
+   "lon": -86.874048,
+   "start": "2026-10-17T05:18:34Z",
+   "end": "2026-10-17T06:18:34Z",
+   "updated": "2026-10-17T05:53:27.7737578Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 6.89",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.660835999999996,
+   "lon": -86.78943199999999,
+   "start": "2026-10-17T05:29:17Z",
+   "end": "2026-10-17T06:29:17Z",
+   "updated": "2026-10-17T05:53:27.8368936Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 102.19",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.773924,
+   "lon": -86.53864,
+   "start": "2026-10-17T05:39:18Z",
+   "end": "2026-10-17T06:39:18Z",
+   "updated": "2026-10-17T05:53:27.894559Z"
   }
  ]
 }
