@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T00:24:55+00:00",
+ "updated": "2026-10-17T01:09:11+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,49 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T00:21:21.4174939Z"
+   "updated": "2026-10-17T01:08:13.9629379Z"
   },
   {
    "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-65 NB @ MP 327.61",
-   "detail": null,
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.450596,
-   "lon": -86.90115999999999,
-   "start": "2026-10-17T00:07:30Z",
-   "end": "2026-10-17T00:19:39Z",
-   "updated": "2026-10-16T19:19:40Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-65 NB @ MP 327.7",
-   "detail": null,
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.452472,
-   "lon": -86.900896,
-   "start": "2026-10-17T00:13:14Z",
-   "end": "2026-10-17T00:19:33Z",
-   "updated": "2026-10-16T19:19:34Z"
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 95.19",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.735068,
+   "lon": -86.63118399999999,
+   "start": "2026-10-17T00:30:37Z",
+   "end": "2026-10-17T01:30:37Z",
+   "updated": "2026-10-17T01:08:26.760334Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
    "where": "I-65 SB @ MP 329.2",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "roadway cleared",
    "county": "Morgan",
    "city": "Hartselle",
    "lat": 34.473436,
    "lon": -86.898472,
    "start": "2026-10-17T00:17:08Z",
    "end": "2026-10-17T01:17:08Z",
-   "updated": "2026-10-16T19:18:26Z"
+   "updated": "2026-10-17T01:08:26.3333098Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 327.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.452052,
+   "lon": -86.901,
+   "start": "2026-10-17T00:19:58Z",
+   "end": "2026-10-17T01:19:58Z",
+   "updated": "2026-10-17T01:08:26.4142671Z"
   }
  ]
 }
