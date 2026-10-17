@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T22:49:33+00:00",
+ "updated": "2026-10-17T23:13:11+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T22:44:58.9954049Z"
+   "updated": "2026-10-17T23:12:52.3842135Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 13",
+   "detail": null,
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.698848,
+   "lon": -86.69306399999999,
+   "start": "2026-10-17T22:50:59Z",
+   "end": "2026-10-17T23:50:59Z",
+   "updated": "2026-10-17T23:13:00.0717383Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL205 NB @ MP 4.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Boaz",
+   "lat": 34.211363999999996,
+   "lon": -86.16881599999999,
+   "start": "2026-10-17T23:06:43Z",
+   "end": "2026-10-18T00:06:43Z",
+   "updated": "2026-10-17T23:13:00.3378484Z"
   }
  ]
 }
