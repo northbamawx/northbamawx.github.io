@@ -1,6 +1,12 @@
 {
- "updated": 1792235877,
+ "updated": 1792237875,
  "items": [
+  {
+   "id": "RdXjn6UJ_yE",
+   "title": "Huntsville Weather Forecast: Mostly Sunny & 64° Saturday",
+   "short": true,
+   "published": 1792237243
+  },
   {
    "id": "n4DC7l8jWh8",
    "title": "Huntsville Weather Forecast: Chance Light Rain & 81° Friday",
@@ -30,12 +36,6 @@
    "title": "Huntsville Weather Forecast: Chance Rain Showers & 77° Sunday",
    "short": true,
    "published": 1791718876
-  },
-  {
-   "id": "2Ln7KwuH9_o",
-   "title": "Flood Watch - Huntsville Madison New - October 10, 2026",
-   "short": true,
-   "published": 1791645560
   }
  ]
 }
