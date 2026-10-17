@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T07:07:54+00:00",
+ "updated": "2026-10-17T07:55:19+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T07:06:14.8181314Z"
+   "updated": "2026-10-17T07:54:13.6410723Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 307.09",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.164415999999996,
-   "lon": -86.874048,
-   "start": "2026-10-17T05:18:34Z",
-   "end": "2026-10-17T07:15:00Z",
-   "updated": "2026-10-17T07:06:36.3836293Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 102.19",
+   "where": "US231/431 NB @ MP 349.29",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.773924,
-   "lon": -86.53864,
-   "start": "2026-10-17T05:39:18Z",
-   "end": "2026-10-17T07:30:00Z",
-   "updated": "2026-10-17T07:06:36.4971523Z"
+   "city": "Hazel Green",
+   "lat": 34.937903999999996,
+   "lon": -86.571704,
+   "start": "2026-10-17T07:37:10Z",
+   "end": "2026-10-17T08:37:10Z",
+   "updated": "2026-10-17T07:54:22.1310823Z"
   }
  ]
 }
