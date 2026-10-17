@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T08:19:50+00:00",
+ "updated": "2026-10-17T08:54:49+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T08:19:24.7588126Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 349.29",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Hazel Green",
-   "lat": 34.937903999999996,
-   "lon": -86.571704,
-   "start": "2026-10-17T07:37:10Z",
-   "end": "2026-10-17T08:37:10Z",
-   "updated": "2026-10-17T08:19:34.84514Z"
+   "updated": "2026-10-17T08:53:21.8173251Z"
   }
  ]
 }
