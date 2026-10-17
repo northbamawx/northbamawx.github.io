@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T02:25:54+00:00",
+ "updated": "2026-10-17T02:58:17+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T02:24:35.1487237Z"
+   "updated": "2026-10-17T02:57:41.6175372Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 6.01",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.207215999999995,
+   "lon": -86.87616,
+   "start": "2026-10-17T02:52:14Z",
+   "end": "2026-10-17T03:52:14Z",
+   "updated": "2026-10-17T02:57:52.6516539Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 85.49",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.748979999999996,
+   "lon": -86.796416,
+   "start": "2026-10-17T02:49:36Z",
+   "end": "2026-10-17T03:49:36Z",
+   "updated": "2026-10-17T02:57:52.5641914Z"
   }
  ]
 }
