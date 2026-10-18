@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T01:09:06+00:00",
+ "updated": "2026-10-18T01:57:43+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T01:08:02.96856Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 338.46",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.784344,
-   "lon": -86.58090399999999,
-   "start": "2026-10-17T23:12:49Z",
-   "end": "2026-10-18T01:30:00Z",
-   "updated": "2026-10-18T01:08:16.3734326Z"
+   "updated": "2026-10-18T01:56:42.4728025Z"
   },
   {
    "type": "Crash",
@@ -40,8 +26,8 @@
    "lat": 34.211363999999996,
    "lon": -86.16881599999999,
    "start": "2026-10-17T23:06:43Z",
-   "end": "2026-10-18T01:30:00Z",
-   "updated": "2026-10-18T01:08:16.3181282Z"
+   "end": "2026-10-18T02:00:00Z",
+   "updated": "2026-10-18T01:56:50.9596002Z"
   }
  ]
 }
