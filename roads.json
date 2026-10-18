@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T23:14:50+00:00",
+ "updated": "2026-10-18T23:47:39+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T23:13:49.3395628Z"
+   "updated": "2026-10-18T23:43:35.1933301Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 310.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.264179999999996,
+   "lon": -86.89679199999999,
+   "start": "2026-10-18T23:30:22Z",
+   "end": "2026-10-19T00:30:22Z",
+   "updated": "2026-10-18T23:43:42.9102516Z"
   },
   {
    "type": "Crash",
@@ -27,7 +41,7 @@
    "lon": -86.56783999999999,
    "start": "2026-10-18T21:01:02Z",
    "end": "2026-10-19T00:00:00Z",
-   "updated": "2026-10-18T23:13:56.6532989Z"
+   "updated": "2026-10-18T23:43:42.1272383Z"
   },
   {
    "type": "Crash",
@@ -41,7 +55,7 @@
    "lon": -86.597504,
    "start": "2026-10-18T22:50:49Z",
    "end": "2026-10-18T23:50:49Z",
-   "updated": "2026-10-18T23:13:56.7841658Z"
+   "updated": "2026-10-18T23:43:42.2727096Z"
   },
   {
    "type": "Crash",
@@ -55,21 +69,7 @@
    "lon": -86.774784,
    "start": "2026-10-18T22:55:19Z",
    "end": "2026-10-18T23:55:19Z",
-   "updated": "2026-10-18T23:13:56.8396882Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB/SB @ MP 319.19",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.330639999999995,
-   "lon": -86.89936,
-   "start": "2026-10-18T20:30:34Z",
-   "end": "2026-10-18T23:30:00Z",
-   "updated": "2026-10-18T23:13:56.5933193Z"
+   "updated": "2026-10-18T23:43:42.3423409Z"
   }
  ]
 }
