@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T19:18:49+00:00",
+ "updated": "2026-10-18T19:48:20+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T19:12:54.6810742Z"
+   "updated": "2026-10-18T19:43:23.1907956Z"
   },
   {
    "type": "Crash",
@@ -27,49 +27,7 @@
    "lon": -86.867192,
    "start": "2026-10-18T16:59:41Z",
    "end": "2026-10-18T20:00:00Z",
-   "updated": "2026-10-18T19:13:01.8557103Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 299.75",
-   "detail": "All lanes are open",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.059492,
-   "lon": -86.866856,
-   "start": "2026-10-18T17:06:54Z",
-   "end": "2026-10-18T19:11:01Z",
-   "updated": "2026-10-18T19:13:01.9115715Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US43 NB @ MP 295.29",
-   "detail": "All lanes are open",
-   "county": "Franklin",
-   "city": "Russellville",
-   "lat": 34.506324,
-   "lon": -87.71692,
-   "start": "2026-10-18T17:32:43Z",
-   "end": "2026-10-18T19:11:30Z",
-   "updated": "2026-10-18T19:13:02.0375229Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 19.96",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.79276,
-   "lon": -87.704656,
-   "start": "2026-10-18T18:22:40Z",
-   "end": "2026-10-18T19:22:40Z",
-   "updated": "2026-10-18T19:13:02.4513201Z"
+   "updated": "2026-10-18T19:43:31.0282662Z"
   },
   {
    "type": "Crash",
@@ -83,7 +41,35 @@
    "lon": -86.588848,
    "start": "2026-10-18T17:21:41Z",
    "end": "2026-10-18T20:30:00Z",
-   "updated": "2026-10-18T19:13:01.9760608Z"
+   "updated": "2026-10-18T19:43:31.0954036Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 88.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.753076,
+   "lon": -86.746264,
+   "start": "2026-10-18T19:25:32Z",
+   "end": "2026-10-18T20:25:32Z",
+   "updated": "2026-10-18T19:43:31.7569699Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB/SB @ MP 291.1",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Albertville",
+   "lat": 34.300424,
+   "lon": -86.275008,
+   "start": "2026-10-18T19:16:48Z",
+   "end": "2026-10-18T20:16:48Z",
+   "updated": "2026-10-18T19:43:31.6109497Z"
   }
  ]
 }
