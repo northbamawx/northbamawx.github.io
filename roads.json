@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T18:17:50+00:00",
+ "updated": "2026-10-18T18:56:26+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T18:17:23.975564Z"
+   "updated": "2026-10-18T18:55:15.9134813Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,8 @@
    "lat": 34.243016,
    "lon": -86.867192,
    "start": "2026-10-18T16:59:41Z",
-   "end": "2026-10-18T18:45:00Z",
-   "updated": "2026-10-18T18:17:30.956184Z"
+   "end": "2026-10-18T19:15:00Z",
+   "updated": "2026-10-18T18:55:23.7698723Z"
   },
   {
    "type": "Crash",
@@ -41,7 +41,7 @@
    "lon": -86.866856,
    "start": "2026-10-18T17:06:54Z",
    "end": "2026-10-18T19:15:00Z",
-   "updated": "2026-10-18T18:17:31.0089743Z"
+   "updated": "2026-10-18T18:55:23.8231726Z"
   },
   {
    "type": "Crash",
@@ -54,8 +54,22 @@
    "lat": 34.506324,
    "lon": -87.71692,
    "start": "2026-10-18T17:32:43Z",
-   "end": "2026-10-18T18:32:43Z",
-   "updated": "2026-10-18T18:17:31.1332948Z"
+   "end": "2026-10-18T19:30:00Z",
+   "updated": "2026-10-18T18:55:23.9299438Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 19.96",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.79276,
+   "lon": -87.704656,
+   "start": "2026-10-18T18:22:40Z",
+   "end": "2026-10-18T19:22:40Z",
+   "updated": "2026-10-18T18:55:24.3803267Z"
   },
   {
    "type": "Crash",
@@ -68,8 +82,22 @@
    "lat": 34.705484,
    "lon": -86.588848,
    "start": "2026-10-18T17:21:41Z",
-   "end": "2026-10-18T18:21:41Z",
-   "updated": "2026-10-18T18:17:31.0635702Z"
+   "end": "2026-10-18T19:00:00Z",
+   "updated": "2026-10-18T18:55:23.8760097Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "MinorDelay",
+   "title": "AID",
+   "where": "I-65 SB @ MP 303.24",
+   "detail": null,
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.109852,
+   "lon": -86.866272,
+   "start": "2026-10-18T17:40:21Z",
+   "end": "2026-10-18T18:52:21Z",
+   "updated": "2026-10-18T18:55:24.0082485Z"
   }
  ]
 }
