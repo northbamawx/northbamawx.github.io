@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T20:15:17+00:00",
+ "updated": "2026-10-18T20:52:21+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,49 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T20:13:46.6824443Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 SB @ MP 331.56",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.243016,
-   "lon": -86.867192,
-   "start": "2026-10-18T16:59:41Z",
-   "end": "2026-10-18T20:30:00Z",
-   "updated": "2026-10-18T20:13:54.3093668Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 315.85",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.705484,
-   "lon": -86.588848,
-   "start": "2026-10-18T17:21:41Z",
-   "end": "2026-10-18T20:30:00Z",
-   "updated": "2026-10-18T20:13:54.3697307Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 88.39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.753076,
-   "lon": -86.746264,
-   "start": "2026-10-18T19:25:32Z",
-   "end": "2026-10-18T20:25:32Z",
-   "updated": "2026-10-18T20:13:54.7986242Z"
+   "updated": "2026-10-18T20:50:38.644776Z"
   },
   {
    "type": "Crash",
@@ -69,21 +27,35 @@
    "lon": -86.76671999999999,
    "start": "2026-10-18T20:00:29Z",
    "end": "2026-10-18T21:00:29Z",
-   "updated": "2026-10-18T20:13:55.1662977Z"
+   "updated": "2026-10-18T20:50:47.9702336Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 291.1",
+   "where": "I-565 WB @ MP 9",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Albertville",
-   "lat": 34.300424,
-   "lon": -86.275008,
-   "start": "2026-10-18T19:16:48Z",
-   "end": "2026-10-18T20:16:48Z",
-   "updated": "2026-10-18T20:13:54.7400588Z"
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.673339999999996,
+   "lon": -86.752168,
+   "start": "2026-10-18T20:27:04Z",
+   "end": "2026-10-18T21:27:04Z",
+   "updated": "2026-10-18T20:50:48.3646186Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB/SB @ MP 319.19",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.330639999999995,
+   "lon": -86.89936,
+   "start": "2026-10-18T20:30:34Z",
+   "end": "2026-10-18T21:30:34Z",
+   "updated": "2026-10-18T20:50:48.4561468Z"
   }
  ]
 }
