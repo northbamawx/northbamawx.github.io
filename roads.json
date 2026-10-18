@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T20:52:21+00:00",
+ "updated": "2026-10-18T21:17:38+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T20:50:38.644776Z"
+   "updated": "2026-10-18T21:16:10.8371928Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB @ MP 335.2",
+   "where": "US231/431 NB/SB @ MP 345.25",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Toney",
-   "lat": 34.923172,
-   "lon": -86.76671999999999,
-   "start": "2026-10-18T20:00:29Z",
-   "end": "2026-10-18T21:00:29Z",
-   "updated": "2026-10-18T20:50:47.9702336Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.673339999999996,
-   "lon": -86.752168,
-   "start": "2026-10-18T20:27:04Z",
-   "end": "2026-10-18T21:27:04Z",
-   "updated": "2026-10-18T20:50:48.3646186Z"
+   "city": "Meridianville",
+   "lat": 34.880787999999995,
+   "lon": -86.56783999999999,
+   "start": "2026-10-18T21:01:02Z",
+   "end": "2026-10-18T22:01:02Z",
+   "updated": "2026-10-18T21:16:18.5781087Z"
   },
   {
    "type": "Crash",
@@ -55,7 +41,7 @@
    "lon": -86.89936,
    "start": "2026-10-18T20:30:34Z",
    "end": "2026-10-18T21:30:34Z",
-   "updated": "2026-10-18T20:50:48.4561468Z"
+   "updated": "2026-10-18T21:16:18.4706655Z"
   }
  ]
 }
