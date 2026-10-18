@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T17:18:29+00:00",
+ "updated": "2026-10-18T17:49:56+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T17:17:08.0275449Z"
+   "updated": "2026-10-18T17:48:49.9664861Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,8 @@
    "lat": 34.266152,
    "lon": -86.576184,
    "start": "2026-10-18T16:29:02Z",
-   "end": "2026-10-18T17:29:02Z",
-   "updated": "2026-10-18T17:17:15.6304555Z"
+   "end": "2026-10-18T18:00:00Z",
+   "updated": "2026-10-18T17:48:57.1817093Z"
   },
   {
    "type": "Crash",
@@ -41,7 +41,35 @@
    "lon": -86.867192,
    "start": "2026-10-18T16:59:41Z",
    "end": "2026-10-18T17:59:41Z",
-   "updated": "2026-10-18T17:17:15.679188Z"
+   "updated": "2026-10-18T17:48:57.2327769Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US43 NB @ MP 295.29",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.506324,
+   "lon": -87.71692,
+   "start": "2026-10-18T17:32:43Z",
+   "end": "2026-10-18T18:32:43Z",
+   "updated": "2026-10-18T17:48:57.464105Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 315.85",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.705484,
+   "lon": -86.588848,
+   "start": "2026-10-18T17:21:41Z",
+   "end": "2026-10-18T18:21:41Z",
+   "updated": "2026-10-18T17:48:57.3321109Z"
   },
   {
    "type": "Crash",
@@ -55,7 +83,7 @@
    "lon": -86.9782,
    "start": "2026-10-18T17:02:07Z",
    "end": "2026-10-18T18:02:07Z",
-   "updated": "2026-10-18T17:17:15.7290681Z"
+   "updated": "2026-10-18T17:48:57.2813413Z"
   }
  ]
 }
