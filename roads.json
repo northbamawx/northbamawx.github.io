@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T23:46:30+00:00",
+ "updated": "2026-10-18T00:23:56+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-17T23:45:58.3614167Z"
+   "updated": "2026-10-18T00:22:07.8100965Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 13",
-   "detail": null,
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.698848,
-   "lon": -86.69306399999999,
-   "start": "2026-10-17T22:50:59Z",
-   "end": "2026-10-17T23:50:59Z",
-   "updated": "2026-10-17T23:46:09.0639294Z"
+   "where": "US43 NB/SB @ MP 294.79",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.499124,
+   "lon": -87.719624,
+   "start": "2026-10-17T23:44:29Z",
+   "end": "2026-10-18T00:44:29Z",
+   "updated": "2026-10-18T00:22:19.8730587Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 38.66",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.844032,
+   "lon": -87.586832,
+   "start": "2026-10-17T23:46:16Z",
+   "end": "2026-10-18T00:46:16Z",
+   "updated": "2026-10-18T00:22:19.940442Z"
   },
   {
    "type": "Crash",
@@ -40,8 +54,8 @@
    "lat": 34.784344,
    "lon": -86.58090399999999,
    "start": "2026-10-17T23:12:49Z",
-   "end": "2026-10-18T00:12:49Z",
-   "updated": "2026-10-17T23:46:09.5590015Z"
+   "end": "2026-10-18T01:00:00Z",
+   "updated": "2026-10-18T00:22:19.6261539Z"
   },
   {
    "type": "Crash",
@@ -54,8 +68,22 @@
    "lat": 34.211363999999996,
    "lon": -86.16881599999999,
    "start": "2026-10-17T23:06:43Z",
-   "end": "2026-10-18T00:06:43Z",
-   "updated": "2026-10-17T23:46:09.3606865Z"
+   "end": "2026-10-18T01:00:00Z",
+   "updated": "2026-10-18T00:22:19.5220641Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Wildlife In Roadway",
+   "where": "US72 EB/WB @ MP 39.99",
+   "detail": "Wildlife in the roadway. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.852,
+   "lon": -87.566632,
+   "start": "2026-10-17T23:51:35Z",
+   "end": "2026-10-18T00:51:35Z",
+   "updated": "2026-10-18T00:22:20.0264102Z"
   }
  ]
 }
