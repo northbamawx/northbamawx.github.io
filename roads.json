@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T22:50:25+00:00",
+ "updated": "2026-10-18T23:14:50+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T22:48:43.9446454Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "I-565 WB @ MP 0.7",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.630663999999996,
-   "lon": -86.89016,
-   "start": "2026-10-18T22:00:16Z",
-   "end": "2026-10-18T23:00:16Z",
-   "updated": "2026-10-18T22:48:52.0154532Z"
+   "updated": "2026-10-18T23:13:49.3395628Z"
   },
   {
    "type": "Crash",
@@ -40,8 +26,36 @@
    "lat": 34.880787999999995,
    "lon": -86.56783999999999,
    "start": "2026-10-18T21:01:02Z",
-   "end": "2026-10-18T23:00:00Z",
-   "updated": "2026-10-18T22:48:51.9579635Z"
+   "end": "2026-10-19T00:00:00Z",
+   "updated": "2026-10-18T23:13:56.6532989Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 SB @ MP 334.13",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.724888,
+   "lon": -86.597504,
+   "start": "2026-10-18T22:50:49Z",
+   "end": "2026-10-18T23:50:49Z",
+   "updated": "2026-10-18T23:13:56.7841658Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 86.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.747364,
+   "lon": -86.774784,
+   "start": "2026-10-18T22:55:19Z",
+   "end": "2026-10-18T23:55:19Z",
+   "updated": "2026-10-18T23:13:56.8396882Z"
   },
   {
    "type": "Crash",
@@ -55,21 +69,7 @@
    "lon": -86.89936,
    "start": "2026-10-18T20:30:34Z",
    "end": "2026-10-18T23:30:00Z",
-   "updated": "2026-10-18T22:48:51.9022246Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-65 SB @ MP 324.7",
-   "detail": null,
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.408392,
-   "lon": -86.8984,
-   "start": "2026-10-18T22:10:52Z",
-   "end": "2026-10-18T22:46:22Z",
-   "updated": "2026-10-18T17:46:22Z"
+   "updated": "2026-10-18T23:13:56.5933193Z"
   }
  ]
 }
