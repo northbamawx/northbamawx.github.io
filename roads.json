@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T01:57:43+00:00",
+ "updated": "2026-10-18T02:25:35+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T01:56:42.4728025Z"
+   "updated": "2026-10-18T02:24:37.1779286Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL205 NB @ MP 4.09",
+   "where": "US72 EB/WB @ MP 80.29",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Boaz",
-   "lat": 34.211363999999996,
-   "lon": -86.16881599999999,
-   "start": "2026-10-17T23:06:43Z",
-   "end": "2026-10-18T02:00:00Z",
-   "updated": "2026-10-18T01:56:50.9596002Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.766296,
+   "lon": -86.88292799999999,
+   "start": "2026-10-18T02:18:26Z",
+   "end": "2026-10-18T03:18:26Z",
+   "updated": "2026-10-18T02:24:46.4473977Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 101.1",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.767548,
+   "lon": -86.55344,
+   "start": "2026-10-18T01:57:47Z",
+   "end": "2026-10-18T02:57:47Z",
+   "updated": "2026-10-18T02:24:46.3106389Z"
   }
  ]
 }
