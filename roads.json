@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T21:52:17+00:00",
+ "updated": "2026-10-18T22:16:26+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T21:49:38.6779847Z"
+   "updated": "2026-10-18T22:15:30.5324858Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "I-565 WB @ MP 0.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.630663999999996,
+   "lon": -86.89016,
+   "start": "2026-10-18T22:00:16Z",
+   "end": "2026-10-18T23:00:16Z",
+   "updated": "2026-10-18T22:15:38.3654921Z"
   },
   {
    "type": "Crash",
@@ -26,8 +40,8 @@
    "lat": 34.880787999999995,
    "lon": -86.56783999999999,
    "start": "2026-10-18T21:01:02Z",
-   "end": "2026-10-18T22:01:02Z",
-   "updated": "2026-10-18T21:49:46.2294281Z"
+   "end": "2026-10-18T23:00:00Z",
+   "updated": "2026-10-18T22:15:38.1784906Z"
   },
   {
    "type": "Crash",
@@ -41,21 +55,7 @@
    "lon": -86.89936,
    "start": "2026-10-18T20:30:34Z",
    "end": "2026-10-18T22:30:00Z",
-   "updated": "2026-10-18T21:49:46.0902666Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "AID",
-   "where": "I-65 SB @ MP 321.5",
-   "detail": null,
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.36294,
-   "lon": -86.891616,
-   "start": "2026-10-18T21:19:21Z",
-   "end": "2026-10-18T21:46:21Z",
-   "updated": "2026-10-18T21:49:46.4086888Z"
+   "updated": "2026-10-18T22:15:38.1255877Z"
   }
  ]
 }
