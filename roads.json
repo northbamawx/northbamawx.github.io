@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T02:25:35+00:00",
+ "updated": "2026-10-18T02:57:38+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T02:24:37.1779286Z"
+   "updated": "2026-10-18T02:57:12.1374539Z"
   },
   {
    "type": "Crash",
@@ -27,21 +27,21 @@
    "lon": -86.88292799999999,
    "start": "2026-10-18T02:18:26Z",
    "end": "2026-10-18T03:18:26Z",
-   "updated": "2026-10-18T02:24:46.4473977Z"
+   "updated": "2026-10-18T02:57:30.6089101Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
    "where": "US72 EB @ MP 101.1",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Roadway cleared.",
    "county": "Madison",
    "city": "Huntsville",
    "lat": 34.767548,
    "lon": -86.55344,
    "start": "2026-10-18T01:57:47Z",
-   "end": "2026-10-18T02:57:47Z",
-   "updated": "2026-10-18T02:24:46.3106389Z"
+   "end": "2026-10-18T02:54:52Z",
+   "updated": "2026-10-18T02:57:30.5127721Z"
   }
  ]
 }
