@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T09:54:16+00:00",
+ "updated": "2026-10-18T10:19:00+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T09:48:44.6304869Z"
+   "updated": "2026-10-18T10:17:35.7261477Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL53 NB @ MP 321.08",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.749632,
+   "lon": -86.63459999999999,
+   "start": "2026-10-18T09:47:00Z",
+   "end": "2026-10-18T10:47:00Z",
+   "updated": "2026-10-18T10:17:44.7014416Z"
   }
  ]
 }
