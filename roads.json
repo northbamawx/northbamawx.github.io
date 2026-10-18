@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T17:49:56+00:00",
+ "updated": "2026-10-18T18:17:50+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T17:48:49.9664861Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 7.4",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Joppa",
-   "lat": 34.266152,
-   "lon": -86.576184,
-   "start": "2026-10-18T16:29:02Z",
-   "end": "2026-10-18T18:00:00Z",
-   "updated": "2026-10-18T17:48:57.1817093Z"
+   "updated": "2026-10-18T18:17:23.975564Z"
   },
   {
    "type": "Crash",
@@ -40,8 +26,22 @@
    "lat": 34.243016,
    "lon": -86.867192,
    "start": "2026-10-18T16:59:41Z",
-   "end": "2026-10-18T17:59:41Z",
-   "updated": "2026-10-18T17:48:57.2327769Z"
+   "end": "2026-10-18T18:45:00Z",
+   "updated": "2026-10-18T18:17:30.956184Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 299.75",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.059492,
+   "lon": -86.866856,
+   "start": "2026-10-18T17:06:54Z",
+   "end": "2026-10-18T19:15:00Z",
+   "updated": "2026-10-18T18:17:31.0089743Z"
   },
   {
    "type": "Crash",
@@ -55,7 +55,7 @@
    "lon": -87.71692,
    "start": "2026-10-18T17:32:43Z",
    "end": "2026-10-18T18:32:43Z",
-   "updated": "2026-10-18T17:48:57.464105Z"
+   "updated": "2026-10-18T18:17:31.1332948Z"
   },
   {
    "type": "Crash",
@@ -69,21 +69,7 @@
    "lon": -86.588848,
    "start": "2026-10-18T17:21:41Z",
    "end": "2026-10-18T18:21:41Z",
-   "updated": "2026-10-18T17:48:57.3321109Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 358.3",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.608731999999996,
-   "lon": -86.9782,
-   "start": "2026-10-18T17:02:07Z",
-   "end": "2026-10-18T18:02:07Z",
-   "updated": "2026-10-18T17:48:57.2813413Z"
+   "updated": "2026-10-18T18:17:31.0635702Z"
   }
  ]
 }
