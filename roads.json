@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T16:19:14+00:00",
+ "updated": "2026-10-18T16:54:47+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T16:17:50.1040369Z"
+   "updated": "2026-10-18T16:53:09.7881175Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 7.4",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Joppa",
+   "lat": 34.266152,
+   "lon": -86.576184,
+   "start": "2026-10-18T16:29:02Z",
+   "end": "2026-10-18T17:29:02Z",
+   "updated": "2026-10-18T16:53:18.0247017Z"
   },
   {
    "type": "Crash",
@@ -26,8 +40,8 @@
    "lat": 34.578208,
    "lon": -86.97699999999999,
    "start": "2026-10-18T15:01:45Z",
-   "end": "2026-10-18T16:45:00Z",
-   "updated": "2026-10-18T16:17:57.3745261Z"
+   "end": "2026-10-18T17:15:00Z",
+   "updated": "2026-10-18T16:53:17.5000834Z"
   }
  ]
 }
