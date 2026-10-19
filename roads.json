@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T23:47:39+00:00",
+ "updated": "2026-10-19T00:24:55+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-18T23:43:35.1933301Z"
+   "updated": "2026-10-19T00:23:45.7841616Z"
   },
   {
    "type": "Crash",
@@ -27,35 +27,7 @@
    "lon": -86.89679199999999,
    "start": "2026-10-18T23:30:22Z",
    "end": "2026-10-19T00:30:22Z",
-   "updated": "2026-10-18T23:43:42.9102516Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB/SB @ MP 345.25",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Meridianville",
-   "lat": 34.880787999999995,
-   "lon": -86.56783999999999,
-   "start": "2026-10-18T21:01:02Z",
-   "end": "2026-10-19T00:00:00Z",
-   "updated": "2026-10-18T23:43:42.1272383Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 SB @ MP 334.13",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.724888,
-   "lon": -86.597504,
-   "start": "2026-10-18T22:50:49Z",
-   "end": "2026-10-18T23:50:49Z",
-   "updated": "2026-10-18T23:43:42.2727096Z"
+   "updated": "2026-10-19T00:23:53.5790109Z"
   },
   {
    "type": "Crash",
@@ -68,8 +40,8 @@
    "lat": 34.747364,
    "lon": -86.774784,
    "start": "2026-10-18T22:55:19Z",
-   "end": "2026-10-18T23:55:19Z",
-   "updated": "2026-10-18T23:43:42.3423409Z"
+   "end": "2026-10-19T01:00:00Z",
+   "updated": "2026-10-19T00:23:53.3641023Z"
   }
  ]
 }
