@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T20:58:49+00:00",
+ "updated": "2026-10-19T21:29:39+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-19T20:56:51.9992456Z"
+   "updated": "2026-10-19T21:25:34.1661479Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,8 @@
    "lat": 34.7741,
    "lon": -86.539712,
    "start": "2026-10-19T20:13:35Z",
-   "end": "2026-10-19T21:13:35Z",
-   "updated": "2026-10-19T20:57:06.5300272Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL69 SB @ MP 280.55",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.34596,
-   "lon": -86.303928,
-   "start": "2026-10-19T20:19:46Z",
-   "end": "2026-10-19T21:19:46Z",
-   "updated": "2026-10-19T20:57:07.3235224Z"
+   "end": "2026-10-19T21:45:00Z",
+   "updated": "2026-10-19T21:25:49.7931058Z"
   }
  ]
 }
