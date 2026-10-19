@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T00:24:55+00:00",
+ "updated": "2026-10-19T01:11:14+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-19T00:23:45.7841616Z"
+   "updated": "2026-10-19T01:06:52.6392759Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,22 @@
    "lat": 34.264179999999996,
    "lon": -86.89679199999999,
    "start": "2026-10-18T23:30:22Z",
-   "end": "2026-10-19T00:30:22Z",
-   "updated": "2026-10-19T00:23:53.5790109Z"
+   "end": "2026-10-19T01:30:00Z",
+   "updated": "2026-10-19T01:07:01.833405Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 86.7",
+   "where": "AL157 NB @ MP 83.18",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.747364,
-   "lon": -86.774784,
-   "start": "2026-10-18T22:55:19Z",
-   "end": "2026-10-19T01:00:00Z",
-   "updated": "2026-10-19T00:23:53.3641023Z"
+   "county": "Lauderdale",
+   "city": "UnderwoodPetersville",
+   "lat": 34.912324,
+   "lon": -87.746984,
+   "start": "2026-10-19T00:35:54Z",
+   "end": "2026-10-19T01:35:54Z",
+   "updated": "2026-10-19T01:07:02.8912569Z"
   }
  ]
 }
