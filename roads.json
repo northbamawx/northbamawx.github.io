@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T01:11:14+00:00",
+ "updated": "2026-10-19T02:01:37+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-19T01:06:52.6392759Z"
+   "updated": "2026-10-19T02:00:56.0617409Z"
   },
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 310.39",
+   "severity": "MajorDelay",
+   "title": "Major Crash",
+   "where": "US72 EB/WB @ MP 70.28",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.264179999999996,
-   "lon": -86.89679199999999,
-   "start": "2026-10-18T23:30:22Z",
-   "end": "2026-10-19T01:30:00Z",
-   "updated": "2026-10-19T01:07:01.833405Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL157 NB @ MP 83.18",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "UnderwoodPetersville",
-   "lat": 34.912324,
-   "lon": -87.746984,
-   "start": "2026-10-19T00:35:54Z",
-   "end": "2026-10-19T01:35:54Z",
-   "updated": "2026-10-19T01:07:02.8912569Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.791827999999995,
+   "lon": -87.051456,
+   "start": "2026-10-19T01:08:59Z",
+   "end": "2026-10-19T02:08:59Z",
+   "updated": "2026-10-19T02:01:03.6682586Z"
   }
  ]
 }
