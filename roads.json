@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T14:10:21+00:00",
+ "updated": "2026-10-19T15:07:56+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,49 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-19T14:09:30.1965753Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 244.88",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.179196,
-   "lon": -86.83319999999999,
-   "start": "2026-10-19T12:50:04Z",
-   "end": "2026-10-19T14:45:00Z",
-   "updated": "2026-10-19T14:09:40.9191279Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL255 SB @ MP 6.18",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.789828,
-   "lon": -86.66928,
-   "start": "2026-10-19T13:05:10Z",
-   "end": "2026-10-19T15:00:00Z",
-   "updated": "2026-10-19T14:09:40.980357Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 3.98",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.644,
-   "lon": -86.83644,
-   "start": "2026-10-19T12:29:17Z",
-   "end": "2026-10-19T14:30:00Z",
-   "updated": "2026-10-19T14:09:40.2669988Z"
+   "updated": "2026-10-19T15:06:58.8225224Z"
   }
  ]
 }
