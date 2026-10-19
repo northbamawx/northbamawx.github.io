@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T22:01:43+00:00",
+ "updated": "2026-10-19T22:56:26+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,35 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-19T22:00:01.8179796Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 69.18",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.790984,
-   "lon": -87.07184,
-   "start": "2026-10-19T21:49:07Z",
-   "end": "2026-10-19T22:49:07Z",
-   "updated": "2026-10-19T22:00:17.5266748Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 325.39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Monrovia",
-   "lat": 34.80164,
-   "lon": -86.67616,
-   "start": "2026-10-19T21:27:23Z",
-   "end": "2026-10-19T22:27:23Z",
-   "updated": "2026-10-19T22:00:14.9229483Z"
+   "updated": "2026-10-19T22:54:32.4164105Z"
   }
  ]
 }
