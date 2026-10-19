@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T02:59:28+00:00",
+ "updated": "2026-10-19T03:32:15+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-19T02:59:03.2004024Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Major Crash",
-   "where": "US72 EB/WB @ MP 70.28",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.791827999999995,
-   "lon": -87.051456,
-   "start": "2026-10-19T01:08:59Z",
-   "end": "2026-10-19T03:15:00Z",
-   "updated": "2026-10-19T02:59:11.6001009Z"
+   "updated": "2026-10-19T03:31:55.8569519Z"
   },
   {
    "type": "Crash",
@@ -41,7 +27,7 @@
    "lon": -86.627448,
    "start": "2026-10-19T02:52:26Z",
    "end": "2026-10-19T03:52:26Z",
-   "updated": "2026-10-19T02:59:12.1318351Z"
+   "updated": "2026-10-19T03:32:04.4977604Z"
   }
  ]
 }
