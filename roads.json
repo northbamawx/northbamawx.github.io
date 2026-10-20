@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T23:22:37+00:00",
+ "updated": "2026-10-20T23:51:57+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,20 +19,6 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 SB @ MP 7.52",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.801604,
-   "lon": -87.651608,
-   "start": "2026-10-20T22:44:05Z",
-   "end": "2026-10-20T23:44:05Z",
-   "updated": "2026-10-20T17:45:20Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
    "where": "AL255 SB @ MP 1.8",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
@@ -41,7 +27,7 @@
    "lon": -86.670352,
    "start": "2026-10-20T23:12:22Z",
    "end": "2026-10-21T00:12:22Z",
-   "updated": "2026-10-20T18:14:14Z"
+   "updated": "2026-10-20T23:23:57.3605489Z"
   }
  ]
 }
