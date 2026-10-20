@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T20:58:42+00:00",
+ "updated": "2026-10-20T21:30:20+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,6 +19,20 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 327.07",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.181695999999995,
+   "lon": -86.84787999999999,
+   "start": "2026-10-20T21:12:24Z",
+   "end": "2026-10-20T22:12:24Z",
+   "updated": "2026-10-20T16:14:03Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
    "where": "US72 EB/WB @ MP 76.18",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
@@ -31,7 +45,7 @@
   },
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
+   "severity": "MajorDelay",
    "title": "Major Crash",
    "where": "I-565 WB @ MP 11.58",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
@@ -41,7 +55,49 @@
    "lon": -86.717968,
    "start": "2026-10-20T20:47:35Z",
    "end": "2026-10-20T21:47:35Z",
-   "updated": "2026-10-20T15:51:15Z"
+   "updated": "2026-10-20T21:28:56.7164414Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Debris",
+   "where": "AL35 NB/SB @ MP 45.8",
+   "detail": "Debris in road with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Section",
+   "lat": 34.627496,
+   "lon": -85.974896,
+   "start": "2026-10-20T21:16:47Z",
+   "end": "2026-10-20T22:16:47Z",
+   "updated": "2026-10-20T16:17:53Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Debris",
+   "where": "AL35 NB/SB @ MP 46.2",
+   "detail": "Debris in road with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Section",
+   "lat": 34.633252,
+   "lon": -85.971296,
+   "start": "2026-10-20T21:14:20Z",
+   "end": "2026-10-20T22:14:20Z",
+   "updated": "2026-10-20T21:23:30.0686775Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 14.29",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.70682,
+   "lon": -86.67276799999999,
+   "start": "2026-10-20T20:58:37Z",
+   "end": "2026-10-20T21:58:37Z",
+   "updated": "2026-10-20T16:00:25Z"
   }
  ]
 }
