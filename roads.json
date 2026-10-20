@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T20:00:17+00:00",
+ "updated": "2026-10-20T20:58:42+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,34 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 76.18",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.78532,
+   "lon": -86.949272,
+   "start": "2026-10-20T20:41:39Z",
+   "end": "2026-10-20T21:41:39Z",
+   "updated": "2026-10-20T15:42:31Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Major Crash",
+   "where": "I-565 WB @ MP 11.58",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.68904,
+   "lon": -86.717968,
+   "start": "2026-10-20T20:47:35Z",
+   "end": "2026-10-20T21:47:35Z",
+   "updated": "2026-10-20T15:51:15Z"
   }
  ]
 }
