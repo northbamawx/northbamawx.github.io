@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T16:02:53+00:00",
+ "updated": "2026-10-20T17:03:07+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,34 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 SB @ MP 315.16",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.696087999999996,
-   "lon": -86.583776,
-   "start": "2026-10-20T15:28:47Z",
-   "end": "2026-10-20T16:28:47Z",
-   "updated": "2026-10-20T15:51:47.7067301Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Signal Outage",
-   "where": "AL157 NB/SB @ MP 37.32",
-   "detail": "Signal outage in the area. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.48408,
-   "lon": -87.27414399999999,
-   "start": "2026-10-20T13:43:34Z",
-   "end": "2026-10-20T16:15:00Z",
-   "updated": "2026-10-20T15:46:21.9002149Z"
   }
  ]
 }
