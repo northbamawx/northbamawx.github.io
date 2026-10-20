@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T14:07:22+00:00",
+ "updated": "2026-10-20T15:05:07+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,91 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T14:03:42.5802884Z"
+   "updated": "2026-10-20T14:36:55.9523561Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 4.5",
-   "detail": "All lanes are open.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.651227999999996,
-   "lon": -86.816672,
-   "start": "2026-10-20T11:54:12Z",
-   "end": "2026-10-20T14:01:11Z",
-   "updated": "2026-10-20T14:04:01.7775269Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 3.78",
-   "detail": "All lanes are open.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.643091999999996,
-   "lon": -86.838768,
-   "start": "2026-10-20T12:09:19Z",
-   "end": "2026-10-20T14:01:58Z",
-   "updated": "2026-10-20T14:04:01.9377341Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 338.2",
+   "where": "US278 EB @ MP 77.31",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.60364,
-   "lon": -86.89863199999999,
-   "start": "2026-10-20T13:18:25Z",
-   "end": "2026-10-20T14:18:25Z",
-   "updated": "2026-10-20T14:04:03.5112593Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 89.79",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.75698,
-   "lon": -86.721656,
-   "start": "2026-10-20T13:36:12Z",
-   "end": "2026-10-20T14:36:12Z",
-   "updated": "2026-10-20T14:04:04.2331289Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 95.09",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.735127999999996,
-   "lon": -86.633128,
-   "start": "2026-10-20T13:41:10Z",
-   "end": "2026-10-20T14:41:10Z",
-   "updated": "2026-10-20T14:04:04.41278Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Signal Outage",
-   "where": "AL24 EB/WB @ MP 53.72",
-   "detail": "Signal outage in the area. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.494175999999996,
-   "lon": -87.25882399999999,
-   "start": "2026-10-20T12:55:39Z",
-   "end": "2026-10-20T15:00:00Z",
-   "updated": "2026-10-20T14:04:03.1550884Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.170564,
+   "lon": -86.87335999999999,
+   "start": "2026-10-20T14:19:53Z",
+   "end": "2026-10-20T15:19:53Z",
+   "updated": "2026-10-20T14:44:57.432978Z"
   },
   {
    "type": "Incident",
@@ -110,8 +40,8 @@
    "lat": 34.48408,
    "lon": -87.27414399999999,
    "start": "2026-10-20T13:43:34Z",
-   "end": "2026-10-20T14:43:34Z",
-   "updated": "2026-10-20T14:04:04.7590747Z"
+   "end": "2026-10-20T15:45:00Z",
+   "updated": "2026-10-20T14:44:57.4016423Z"
   }
  ]
 }
