@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T07:16:42+00:00",
+ "updated": "2026-10-20T08:04:49+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,63 +13,7 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T07:15:07.8513405Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 64.57",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.619859999999996,
-   "lon": -87.052168,
-   "start": "2026-10-20T06:26:34Z",
-   "end": "2026-10-20T07:26:34Z",
-   "updated": "2026-10-20T07:15:25.9245628Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB @ MP 340.68",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.368539999999996,
-   "lon": -86.908456,
-   "start": "2026-10-20T06:29:04Z",
-   "end": "2026-10-20T07:29:04Z",
-   "updated": "2026-10-20T07:15:25.9806242Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 303.14",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Lacey Spring",
-   "lat": 34.53064,
-   "lon": -86.589992,
-   "start": "2026-10-20T06:30:56Z",
-   "end": "2026-10-20T07:30:56Z",
-   "updated": "2026-10-20T07:15:26.0409716Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 347.09",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.453328,
-   "lon": -86.94672,
-   "start": "2026-10-20T06:36:17Z",
-   "end": "2026-10-20T07:36:17Z",
-   "updated": "2026-10-20T07:15:26.6937768Z"
+   "updated": "2026-10-20T08:03:39.1779141Z"
   }
  ]
 }
