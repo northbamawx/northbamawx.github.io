@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T01:30:05+00:00",
+ "updated": "2026-10-20T02:05:00+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T01:25:38.4555207Z"
+   "updated": "2026-10-20T02:03:54.1943596Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL279 SB @ MP 1.82",
+   "where": "US231/431 NB/SB @ MP 338.86",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.629736,
-   "lon": -86.049464,
-   "start": "2026-10-20T00:50:23Z",
-   "end": "2026-10-20T01:50:23Z",
-   "updated": "2026-10-20T01:25:50.3878582Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.78946,
+   "lon": -86.57892799999999,
+   "start": "2026-10-20T01:41:04Z",
+   "end": "2026-10-20T02:41:04Z",
+   "updated": "2026-10-20T02:04:04.0824533Z"
   }
  ]
 }
