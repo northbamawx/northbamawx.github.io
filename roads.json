@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T12:27:44+00:00",
+ "updated": "2026-10-20T13:16:34+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T12:26:37.6682846Z"
+   "updated": "2026-10-20T13:15:41.0787591Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB/SB @ MP 8.97",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.812239999999996,
+   "lon": -87.630016,
+   "start": "2026-10-20T12:27:27Z",
+   "end": "2026-10-20T13:27:27Z",
+   "updated": "2026-10-20T13:15:52.5537123Z"
   },
   {
    "type": "Crash",
@@ -26,8 +40,8 @@
    "lat": 34.651227999999996,
    "lon": -86.816672,
    "start": "2026-10-20T11:54:12Z",
-   "end": "2026-10-20T12:54:12Z",
-   "updated": "2026-10-20T12:26:47.8909152Z"
+   "end": "2026-10-20T13:30:00Z",
+   "updated": "2026-10-20T13:15:51.3558755Z"
   },
   {
    "type": "Crash",
@@ -40,8 +54,22 @@
    "lat": 34.643091999999996,
    "lon": -86.838768,
    "start": "2026-10-20T12:09:19Z",
-   "end": "2026-10-20T13:09:19Z",
-   "updated": "2026-10-20T12:26:48.1524632Z"
+   "end": "2026-10-20T14:00:00Z",
+   "updated": "2026-10-20T13:15:51.4891747Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Signal Outage",
+   "where": "AL24 EB/WB @ MP 53.72",
+   "detail": "Signal outage in the area. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.494175999999996,
+   "lon": -87.25882399999999,
+   "start": "2026-10-20T12:55:39Z",
+   "end": "2026-10-20T13:55:39Z",
+   "updated": "2026-10-20T13:15:53.2468204Z"
   },
   {
    "type": "Incident",
@@ -55,7 +83,35 @@
    "lon": -86.882824,
    "start": "2026-10-20T12:20:57Z",
    "end": "2026-10-20T13:20:57Z",
-   "updated": "2026-10-20T12:26:48.5778126Z"
+   "updated": "2026-10-20T13:15:51.9702285Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US72 EB @ MP 87.69",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.750868,
+   "lon": -86.75728,
+   "start": "2026-10-20T12:26:42Z",
+   "end": "2026-10-20T13:26:42Z",
+   "updated": "2026-10-20T13:15:52.2895327Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL53 SB @ MP 326.49",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Monrovia",
+   "lat": 34.815059999999995,
+   "lon": -86.687168,
+   "start": "2026-10-20T12:38:12Z",
+   "end": "2026-10-20T13:38:12Z",
+   "updated": "2026-10-20T13:15:52.9958234Z"
   }
  ]
 }
