@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T11:30:17+00:00",
+ "updated": "2026-10-20T12:27:44+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,49 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T11:28:42.6619428Z"
+   "updated": "2026-10-20T12:26:37.6682846Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 73.27",
+   "where": "I-565 EB @ MP 4.5",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.628099999999996,
-   "lon": -86.913696,
-   "start": "2026-10-20T10:44:40Z",
-   "end": "2026-10-20T11:44:40Z",
-   "updated": "2026-10-20T11:28:53.7785628Z"
+   "city": "Huntsville",
+   "lat": 34.651227999999996,
+   "lon": -86.816672,
+   "start": "2026-10-20T11:54:12Z",
+   "end": "2026-10-20T12:54:12Z",
+   "updated": "2026-10-20T12:26:47.8909152Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 EB @ MP 3.78",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.643091999999996,
+   "lon": -86.838768,
+   "start": "2026-10-20T12:09:19Z",
+   "end": "2026-10-20T13:09:19Z",
+   "updated": "2026-10-20T12:26:48.1524632Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 1.09",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.63152,
+   "lon": -86.882824,
+   "start": "2026-10-20T12:20:57Z",
+   "end": "2026-10-20T13:20:57Z",
+   "updated": "2026-10-20T12:26:48.5778126Z"
   }
  ]
 }
