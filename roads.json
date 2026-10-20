@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T00:30:38+00:00",
+ "updated": "2026-10-20T01:30:05+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,21 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T00:28:58.7000902Z"
+   "updated": "2026-10-20T01:25:38.4555207Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL17 NB/SB @ MP 333.55",
+   "where": "AL279 SB @ MP 1.82",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.824144,
-   "lon": -87.682448,
-   "start": "2026-10-19T23:42:18Z",
-   "end": "2026-10-20T00:42:18Z",
-   "updated": "2026-10-20T00:29:08.7686397Z"
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.629736,
+   "lon": -86.049464,
+   "start": "2026-10-20T00:50:23Z",
+   "end": "2026-10-20T01:50:23Z",
+   "updated": "2026-10-20T01:25:50.3878582Z"
   }
  ]
 }
