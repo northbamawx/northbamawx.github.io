@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T05:00:28+00:00",
+ "updated": "2026-10-20T05:32:37+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,21 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T04:59:54.709044Z"
+   "updated": "2026-10-20T05:30:37.1697219Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL53 SB @ MP 338.41",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Ardmore",
+   "lat": 34.962688,
+   "lon": -86.795208,
+   "start": "2026-10-20T04:51:54Z",
+   "end": "2026-10-20T05:51:54Z",
+   "updated": "2026-10-20T05:30:48.7130573Z"
   }
  ]
 }
