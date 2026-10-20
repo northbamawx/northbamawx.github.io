@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T15:05:07+00:00",
+ "updated": "2026-10-20T16:02:53+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US278 EB @ MP 77.31",
+   "where": "US231 SB @ MP 315.16",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.170564,
-   "lon": -86.87335999999999,
-   "start": "2026-10-20T14:19:53Z",
-   "end": "2026-10-20T15:19:53Z",
-   "updated": "2026-10-20T14:44:57.432978Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.696087999999996,
+   "lon": -86.583776,
+   "start": "2026-10-20T15:28:47Z",
+   "end": "2026-10-20T16:28:47Z",
+   "updated": "2026-10-20T15:51:47.7067301Z"
   },
   {
    "type": "Incident",
@@ -40,8 +40,8 @@
    "lat": 34.48408,
    "lon": -87.27414399999999,
    "start": "2026-10-20T13:43:34Z",
-   "end": "2026-10-20T15:45:00Z",
-   "updated": "2026-10-20T14:44:57.4016423Z"
+   "end": "2026-10-20T16:15:00Z",
+   "updated": "2026-10-20T15:46:21.9002149Z"
   }
  ]
 }
