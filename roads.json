@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T10:00:29+00:00",
+ "updated": "2026-10-20T10:58:38+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -13,7 +13,35 @@
    "lon": -86.899624,
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T09:58:41.6178958Z"
+   "updated": "2026-10-20T10:53:41.3634983Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 73.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.628099999999996,
+   "lon": -86.913696,
+   "start": "2026-10-20T10:44:40Z",
+   "end": "2026-10-20T11:44:40Z",
+   "updated": "2026-10-20T10:53:50.6386012Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL36 WB @ MP 22.74",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.4494,
+   "lon": -86.914992,
+   "start": "2026-10-20T10:18:06Z",
+   "end": "2026-10-20T11:18:06Z",
+   "updated": "2026-10-20T10:53:50.3153156Z"
   }
  ]
 }
