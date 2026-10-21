@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T12:00:06+00:00",
+ "updated": "2026-10-21T12:40:01+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 333.8",
+   "where": "US231 NB @ MP 307.63",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.721492,
-   "lon": -86.59371999999999,
-   "start": "2026-10-21T11:43:43Z",
-   "end": "2026-10-21T12:43:43Z",
-   "updated": "2026-10-21T11:51:02.1556441Z"
+   "lat": 34.590696,
+   "lon": -86.562832,
+   "start": "2026-10-21T11:05:28Z",
+   "end": "2026-10-21T12:45:00Z",
+   "updated": "2026-10-21T12:17:41.2028248Z"
   },
   {
    "type": "Crash",
@@ -40,36 +40,36 @@
    "lat": 34.742488,
    "lon": -86.670216,
    "start": "2026-10-21T11:02:42Z",
-   "end": "2026-10-21T12:02:42Z",
-   "updated": "2026-10-21T11:13:28.979455Z"
+   "end": "2026-10-21T13:00:00Z",
+   "updated": "2026-10-21T12:28:19.809738Z"
   },
   {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 307.63",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
+   "type": "Incident",
+   "severity": "MajorDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 3.5",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
    "city": "Huntsville",
-   "lat": 34.590696,
-   "lon": -86.562832,
-   "start": "2026-10-21T11:05:28Z",
-   "end": "2026-10-21T12:05:28Z",
-   "updated": "2026-10-21T11:29:30.1171524Z"
+   "lat": 34.640996,
+   "lon": -86.84383199999999,
+   "start": "2026-10-21T12:08:00Z",
+   "end": "2026-10-21T13:08:00Z",
+   "updated": "2026-10-21T12:28:19.860438Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "AL255 SB @ MP 4.5",
+   "where": "AL255 SB @ MP 5.7",
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.765623999999995,
-   "lon": -86.672744,
+   "lat": 34.78304,
+   "lon": -86.67257599999999,
    "start": "2026-10-21T11:41:16Z",
    "end": "2026-10-21T12:41:16Z",
-   "updated": "2026-10-21T11:51:02.1556258Z"
+   "updated": "2026-10-21T12:12:21.6279614Z"
   },
   {
    "type": "Incident",
