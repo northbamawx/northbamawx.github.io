@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T08:28:51+00:00",
+ "updated": "2026-10-21T09:09:21+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL73 NB/SB @ MP 5.09",
+   "where": "I-65 SB @ MP 314",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Bryant",
-   "lat": 34.919588,
-   "lon": -85.63996,
-   "start": "2026-10-21T08:08:47Z",
-   "end": "2026-10-21T09:08:47Z",
-   "updated": "2026-10-21T03:10:34Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.261296,
+   "lon": -86.895528,
+   "start": "2026-10-21T08:28:48Z",
+   "end": "2026-10-21T09:28:48Z",
+   "updated": "2026-10-21T03:30:19Z"
   }
  ]
 }
