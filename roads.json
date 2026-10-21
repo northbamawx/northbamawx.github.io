@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T23:51:57+00:00",
+ "updated": "2026-10-21T00:25:32+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL255 SB @ MP 1.8",
+   "where": "US231/431 NB @ MP 338.96",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.727047999999996,
-   "lon": -86.670352,
-   "start": "2026-10-20T23:12:22Z",
-   "end": "2026-10-21T00:12:22Z",
-   "updated": "2026-10-20T23:23:57.3605489Z"
+   "lat": 34.791508,
+   "lon": -86.578304,
+   "start": "2026-10-20T23:53:12Z",
+   "end": "2026-10-21T00:53:12Z",
+   "updated": "2026-10-20T18:54:41Z"
   }
  ]
 }
