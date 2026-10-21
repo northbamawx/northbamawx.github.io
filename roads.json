@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T19:27:42+00:00",
+ "updated": "2026-10-21T20:01:17+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,34 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 325.66",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.162476,
-   "lon": -86.83619999999999,
-   "start": "2026-10-21T17:29:30Z",
-   "end": "2026-10-21T19:45:00Z",
-   "updated": "2026-10-21T18:55:27.4979063Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 327.41",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.448651999999996,
-   "lon": -86.900992,
-   "start": "2026-10-21T19:00:29Z",
-   "end": "2026-10-21T20:00:29Z",
-   "updated": "2026-10-21T14:01:20Z"
   }
  ]
 }
