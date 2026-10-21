@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T20:01:17+00:00",
+ "updated": "2026-10-21T20:59:24+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,34 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB/SB @ MP 13.07",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.843503999999996,
+   "lon": -87.668616,
+   "start": "2026-10-21T20:51:47Z",
+   "end": "2026-10-21T21:51:47Z",
+   "updated": "2026-10-21T15:52:44Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 57.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "North Courltland",
+   "lat": 34.64938,
+   "lon": -87.171032,
+   "start": "2026-10-21T20:23:29Z",
+   "end": "2026-10-21T21:23:29Z",
+   "updated": "2026-10-21T15:24:29Z"
   }
  ]
 }
