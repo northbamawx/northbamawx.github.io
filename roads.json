@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T12:40:01+00:00",
+ "updated": "2026-10-21T13:35:03+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,6 +19,34 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
+   "where": "AL17 NB/SB @ MP 340.58",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Wilson",
+   "lat": 34.91672,
+   "lon": -87.669792,
+   "start": "2026-10-21T12:42:44Z",
+   "end": "2026-10-21T13:42:44Z",
+   "updated": "2026-10-21T07:43:00Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 372.07",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.796776,
+   "lon": -86.95436,
+   "start": "2026-10-21T12:43:12Z",
+   "end": "2026-10-21T13:43:12Z",
+   "updated": "2026-10-21T08:11:33Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
    "where": "US231 NB @ MP 307.63",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
@@ -26,26 +54,26 @@
    "lat": 34.590696,
    "lon": -86.562832,
    "start": "2026-10-21T11:05:28Z",
-   "end": "2026-10-21T12:45:00Z",
-   "updated": "2026-10-21T12:17:41.2028248Z"
+   "end": "2026-10-21T13:45:00Z",
+   "updated": "2026-10-21T13:16:59.3114724Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL255 SB @ MP 2.9",
+   "where": "AL69 NB/SB @ MP 276.6",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.742488,
-   "lon": -86.670216,
-   "start": "2026-10-21T11:02:42Z",
-   "end": "2026-10-21T13:00:00Z",
-   "updated": "2026-10-21T12:28:19.809738Z"
+   "county": "Marshall",
+   "city": "Guntersville",
+   "lat": 34.363596,
+   "lon": -86.3534,
+   "start": "2026-10-21T12:44:52Z",
+   "end": "2026-10-21T13:44:52Z",
+   "updated": "2026-10-21T12:55:09.1176492Z"
   },
   {
    "type": "Incident",
-   "severity": "MajorDelay",
+   "severity": "ModerateDelay",
    "title": "Congestion",
    "where": "I-565 EB @ MP 3.5",
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
@@ -54,22 +82,8 @@
    "lat": 34.640996,
    "lon": -86.84383199999999,
    "start": "2026-10-21T12:08:00Z",
-   "end": "2026-10-21T13:08:00Z",
-   "updated": "2026-10-21T12:28:19.860438Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "AL255 SB @ MP 5.7",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.78304,
-   "lon": -86.67257599999999,
-   "start": "2026-10-21T11:41:16Z",
-   "end": "2026-10-21T12:41:16Z",
-   "updated": "2026-10-21T12:12:21.6279614Z"
+   "end": "2026-10-21T14:00:00Z",
+   "updated": "2026-10-21T13:27:44.0249009Z"
   },
   {
    "type": "Incident",
@@ -82,8 +96,8 @@
    "lat": 34.533823999999996,
    "lon": -86.589928,
    "start": "2026-10-21T11:46:05Z",
-   "end": "2026-10-21T12:46:05Z",
-   "updated": "2026-10-21T06:46:32Z"
+   "end": "2026-10-21T14:15:00Z",
+   "updated": "2026-10-21T13:16:59.311532Z"
   }
  ]
 }
