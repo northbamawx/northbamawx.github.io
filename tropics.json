@@ -1,4 +1,24 @@
 {
- "updated": 1791715259,
- "storms": []
+ "updated": 1792618218,
+ "storms": [
+  {
+   "id": "AL102026",
+   "name": "Josephine",
+   "label": "Subtropical Storm",
+   "wind_mph": 63,
+   "movement": "",
+   "headline": "",
+   "dist_to_al": 990,
+   "in_gulf": false,
+   "over_land": false,
+   "near": "",
+   "near_mi": 0,
+   "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
+   "graphics_url": "https://www.nhc.noaa.gov/graphics_at5.shtml",
+   "cone_url": "https://www.nhc.noaa.gov/storm_graphics/AT10/refresh/AL102026_5day_cone+png/212046_5day_cone.png",
+   "winds": "",
+   "surge": "",
+   "damage": ""
+  }
+ ]
 }
