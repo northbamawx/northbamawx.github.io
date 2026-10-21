@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T16:04:34+00:00",
+ "updated": "2026-10-21T17:03:07+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 NB @ MP 325.83",
+   "where": "AL71 NB/SB @ MP 28.97",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Flat Rock",
+   "lat": 34.846016,
+   "lon": -85.62624799999999,
+   "start": "2026-10-21T16:30:16Z",
+   "end": "2026-10-21T17:30:16Z",
+   "updated": "2026-10-21T11:49:57Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 SB @ MP 339.55",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.674872,
-   "lon": -86.491832,
-   "start": "2026-10-21T15:58:35Z",
-   "end": "2026-10-21T16:58:35Z",
-   "updated": "2026-10-21T10:59:39Z"
+   "lat": 34.79918,
+   "lon": -86.575032,
+   "start": "2026-10-21T16:38:37Z",
+   "end": "2026-10-21T17:38:37Z",
+   "updated": "2026-10-21T11:44:09Z"
   }
  ]
 }
