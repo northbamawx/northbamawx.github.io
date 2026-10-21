@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T18:32:14+00:00",
+ "updated": "2026-10-21T19:27:42+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -26,22 +26,22 @@
    "lat": 34.162476,
    "lon": -86.83619999999999,
    "start": "2026-10-21T17:29:30Z",
-   "end": "2026-10-21T18:29:30Z",
-   "updated": "2026-10-21T12:30:26Z"
+   "end": "2026-10-21T19:45:00Z",
+   "updated": "2026-10-21T18:55:27.4979063Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL71 NB/SB @ MP 28.97",
+   "where": "I-65 NB @ MP 327.41",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Flat Rock",
-   "lat": 34.846016,
-   "lon": -85.62624799999999,
-   "start": "2026-10-21T16:30:16Z",
-   "end": "2026-10-21T18:30:00Z",
-   "updated": "2026-10-21T17:29:47.6010653Z"
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.448651999999996,
+   "lon": -86.900992,
+   "start": "2026-10-21T19:00:29Z",
+   "end": "2026-10-21T20:00:29Z",
+   "updated": "2026-10-21T14:01:20Z"
   }
  ]
 }
