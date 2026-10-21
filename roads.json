@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T15:05:51+00:00",
+ "updated": "2026-10-21T16:04:34+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,20 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB @ MP 325.83",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.674872,
+   "lon": -86.491832,
+   "start": "2026-10-21T15:58:35Z",
+   "end": "2026-10-21T16:58:35Z",
+   "updated": "2026-10-21T10:59:39Z"
   }
  ]
 }
