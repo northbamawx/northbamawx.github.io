@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T11:01:32+00:00",
+ "updated": "2026-10-21T12:00:06+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,76 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB @ MP 333.8",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.721492,
+   "lon": -86.59371999999999,
+   "start": "2026-10-21T11:43:43Z",
+   "end": "2026-10-21T12:43:43Z",
+   "updated": "2026-10-21T11:51:02.1556441Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL255 SB @ MP 2.9",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.742488,
+   "lon": -86.670216,
+   "start": "2026-10-21T11:02:42Z",
+   "end": "2026-10-21T12:02:42Z",
+   "updated": "2026-10-21T11:13:28.979455Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 307.63",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.590696,
+   "lon": -86.562832,
+   "start": "2026-10-21T11:05:28Z",
+   "end": "2026-10-21T12:05:28Z",
+   "updated": "2026-10-21T11:29:30.1171524Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL255 SB @ MP 4.5",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.765623999999995,
+   "lon": -86.672744,
+   "start": "2026-10-21T11:41:16Z",
+   "end": "2026-10-21T12:41:16Z",
+   "updated": "2026-10-21T11:51:02.1556258Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US231 NB @ MP 303.35",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Lacey Spring",
+   "lat": 34.533823999999996,
+   "lon": -86.589928,
+   "start": "2026-10-21T11:46:05Z",
+   "end": "2026-10-21T12:46:05Z",
+   "updated": "2026-10-21T06:46:32Z"
   }
  ]
 }
