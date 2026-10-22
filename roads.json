@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T03:01:25+00:00",
+ "updated": "2026-10-22T04:04:34+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -18,16 +18,16 @@
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 79.46",
-   "detail": "Crash with lane Blockage. Please use caution  when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "UnderwoodPetersville",
-   "lat": 34.875299999999996,
-   "lon": -87.70231199999999,
-   "start": "2026-10-22T02:55:16Z",
-   "end": "2026-10-22T03:55:16Z",
-   "updated": "2026-10-21T21:56:12Z"
+   "title": "Overturned Vehicle",
+   "where": "AL65 NB/SB @ MP 24.35",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Paint Rock",
+   "lat": 34.958819999999996,
+   "lon": -86.221464,
+   "start": "2026-10-22T03:22:24Z",
+   "end": "2026-10-22T04:22:24Z",
+   "updated": "2026-10-21T22:23:15Z"
   }
  ]
 }
