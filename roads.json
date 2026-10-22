@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T22:23:07+00:00",
+ "updated": "2026-10-22T22:57:42+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,29 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US278 EB/WB @ MP 63.63",
+   "where": "AL75 NB/SB @ MP 50.17",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.19246,
-   "lon": -87.084592,
-   "start": "2026-10-22T21:45:44Z",
-   "end": "2026-10-22T22:45:44Z",
-   "updated": "2026-10-22T16:46:25Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 372.47",
-   "detail": "Crash with lane blockage. please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.803072,
-   "lon": -86.951736,
-   "start": "2026-10-22T21:39:17Z",
-   "end": "2026-10-22T22:39:17Z",
-   "updated": "2026-10-22T16:40:27Z"
+   "county": "Marshall",
+   "city": "Horton",
+   "lat": 34.18846,
+   "lon": -86.308888,
+   "start": "2026-10-22T22:18:26Z",
+   "end": "2026-10-22T23:18:26Z",
+   "updated": "2026-10-22T17:21:16Z"
   },
   {
    "type": "Incident",
