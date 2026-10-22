@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T11:02:07+00:00",
+ "updated": "2026-10-22T12:00:14+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -26,22 +26,22 @@
    "lat": 34.748984,
    "lon": -86.796176,
    "start": "2026-10-22T10:43:37Z",
-   "end": "2026-10-22T11:43:37Z",
-   "updated": "2026-10-22T05:45:25Z"
+   "end": "2026-10-22T12:15:00Z",
+   "updated": "2026-10-22T11:39:55.3823979Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 3.78",
+   "where": "US72 EB/WB @ MP 75.48",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.642944,
-   "lon": -86.839064,
-   "start": "2026-10-22T10:49:07Z",
-   "end": "2026-10-22T11:49:07Z",
-   "updated": "2026-10-22T05:50:05Z"
+   "city": "Athens",
+   "lat": 34.78762,
+   "lon": -86.961336,
+   "start": "2026-10-22T11:15:22Z",
+   "end": "2026-10-22T12:15:22Z",
+   "updated": "2026-10-22T06:15:56Z"
   }
  ]
 }
