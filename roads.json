@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T23:27:39+00:00",
+ "updated": "2026-10-22T23:55:23+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL255 SB @ MP 0.9",
+   "where": "AL157 NB/SB",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.183996,
+   "lon": -86.78496,
+   "start": "2026-10-22T23:38:24Z",
+   "end": "2026-10-23T00:38:24Z",
+   "updated": "2026-10-22T18:39:54Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 92.88",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.714059999999996,
-   "lon": -86.67128,
-   "start": "2026-10-22T23:11:35Z",
-   "end": "2026-10-23T00:11:35Z",
-   "updated": "2026-10-22T23:26:45.2431655Z"
+   "lat": 34.742108,
+   "lon": -86.67012799999999,
+   "start": "2026-10-22T23:41:32Z",
+   "end": "2026-10-23T00:41:32Z",
+   "updated": "2026-10-22T18:43:52Z"
   },
   {
    "type": "Crash",
@@ -42,20 +56,6 @@
    "start": "2026-10-22T22:53:50Z",
    "end": "2026-10-22T23:53:50Z",
    "updated": "2026-10-22T17:55:24Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 WB @ MP 12.79",
-   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.698052,
-   "lon": -86.69621599999999,
-   "start": "2026-10-22T20:50:15Z",
-   "end": "2026-10-22T23:45:00Z",
-   "updated": "2026-10-22T22:59:56.2291421Z"
   }
  ]
 }
