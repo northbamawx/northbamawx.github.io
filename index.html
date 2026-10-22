@@ -1828,10 +1828,11 @@ async function loadTropics() {
     const stat = (v, k) => { const d = document.createElement('div'); const b = document.createElement('b'); b.textContent = v; d.append(b, document.createTextNode(k)); stats.appendChild(d); };
     stat(st.wind_mph + ' mph', 'max winds');
     if (st.movement) stat(st.movement, 'moving');
-    stat(st.dist_to_al + ' mi', 'from Huntsville');
+    if (st.coast) stat(st.coast_mi.toLocaleString() + ' mi', 'from ' + st.coast);
+    else stat(st.dist_to_al + ' mi', 'from Huntsville');
     left.append(lab, h, stats);
     const where = st.over_land ? 'Over land' + (st.near ? ' near ' + st.near : '') :
-      st.near ? `${st.near_mi} miles from ${st.near}` : '';
+      st.near && !st.coast ? `${st.near_mi} miles from ${st.near}` : '';
     if (where) { const p = document.createElement('p'); p.textContent = where + (st.in_gulf ? ', in the Gulf' : '') + '.'; left.appendChild(p); }
     if (st.headline) { const p = document.createElement('p'); p.textContent = st.headline; left.appendChild(p); }
     [['winds', 'Observed winds'], ['surge', 'Storm surge'], ['damage', 'Damage reports']].forEach(([k, t]) => {
@@ -2237,10 +2238,32 @@ async function nhcQuery(id) {
   const r = await fetch(`${NHC}${id}/query?where=1%3D1&outFields=*&f=geojson`);
   return r.ok ? r.json() : { features: [] };
 }
-function milesFromHsv(lat, lon) {
-  const R = 3958.8, toR = Math.PI / 180, dLat = (lat - 34.73) * toR, dLon = (lon + 86.59) * toR;
-  const a = Math.sin(dLat / 2) ** 2 + Math.cos(34.73 * toR) * Math.cos(lat * toR) * Math.sin(dLon / 2) ** 2;
+// Storm distance is measured to the nearest coastal city (same list as the bot's hurricane_monitor).
+const COAST_CITIES = [
+  ['Brownsville, TX', 25.90, -97.50], ['Corpus Christi, TX', 27.80, -97.40], ['Galveston, TX', 29.30, -94.80],
+  ['Lake Charles, LA', 30.20, -93.20], ['New Orleans, LA', 29.95, -90.07], ['Gulfport, MS', 30.37, -89.09],
+  ['Mobile, AL', 30.69, -88.04], ['Pensacola, FL', 30.42, -87.22], ['Panama City, FL', 30.16, -85.66],
+  ['Cedar Key, FL', 29.14, -83.03], ['Tampa, FL', 27.95, -82.46], ['Fort Myers, FL', 26.64, -81.87],
+  ['Naples, FL', 26.14, -81.79], ['Key West, FL', 24.56, -81.78], ['Miami, FL', 25.76, -80.19],
+  ['Fort Lauderdale, FL', 26.12, -80.14], ['West Palm Beach, FL', 26.71, -80.05], ['Melbourne, FL', 28.08, -80.61],
+  ['Daytona Beach, FL', 29.21, -81.02], ['Jacksonville, FL', 30.33, -81.66], ['Savannah, GA', 32.08, -81.10],
+  ['Charleston, SC', 32.78, -79.93], ['Myrtle Beach, SC', 33.69, -78.89], ['Wilmington, NC', 34.22, -77.94],
+  ['Morehead City, NC', 34.72, -76.73], ['Norfolk, VA', 36.85, -76.29], ['Ocean City, MD', 38.34, -75.08],
+  ['Atlantic City, NJ', 39.36, -74.42], ['New York, NY', 40.71, -74.01], ['Providence, RI', 41.82, -71.41],
+  ['Boston, MA', 42.36, -71.06], ['Portland, ME', 43.66, -70.26],
+];
+function milesBetween(lat1, lon1, lat2, lon2) {
+  const R = 3958.8, toR = Math.PI / 180, dLat = (lat2 - lat1) * toR, dLon = (lon2 - lon1) * toR;
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * toR) * Math.cos(lat2 * toR) * Math.sin(dLon / 2) ** 2;
   return Math.round(2 * R * Math.asin(Math.sqrt(a)));
+}
+function nearestCoast(lat, lon) {
+  let best = null;
+  COAST_CITIES.forEach(([name, clat, clon]) => {
+    const mi = milesBetween(lat, lon, clat, clon);
+    if (!best || mi < best.mi) best = { name, mi };
+  });
+  return best;
 }
 async function loadHurricanes() {
   if (!hurMap) return;
@@ -2276,7 +2299,7 @@ async function loadHurricanes() {
       const q = now.properties, [lon, lat] = now.geometry.coordinates;
       cards.push({ name: q.stormname, type: CAT_NAMES[q.dvlbl] || q.stormtype || '', color: CAT_COLORS[q.dvlbl] || '#ff4fa3',
         wind: Math.round((q.maxwind || 0) * 1.15078), gust: Math.round((q.gust || 0) * 1.15078), mslp: q.mslp,
-        move: q.tcdir != null && q.tcspd != null ? `${compass16(q.tcdir)} at ${Math.round(q.tcspd * 1.15078)} mph` : '', miles: milesFromHsv(lat, lon), adv: q.advisnum });
+        move: q.tcdir != null && q.tcspd != null ? `${compass16(q.tcdir)} at ${Math.round(q.tcspd * 1.15078)} mph` : '', coast: nearestCoast(lat, lon), adv: q.advisnum });
     }
     const firstDraw = !hurLayer;
     if (hurLayer) hurMap.removeLayer(hurLayer);
@@ -2301,7 +2324,7 @@ async function loadHurricanes() {
       el.querySelector('.ty').textContent = c.type;
       el.querySelector('h3').textContent = c.name;
       el.querySelector('.w').textContent = `Winds ${c.wind} mph` + (c.gust ? `, gusts ${c.gust} mph` : '') + (c.mslp ? ` · Pressure ${c.mslp} mb` : '');
-      el.querySelector('.m').textContent = (c.move ? `Moving ${c.move} · ` : '') + `${c.miles.toLocaleString()} miles from Huntsville`;
+      el.querySelector('.m').textContent = (c.move ? `Moving ${c.move} · ` : '') + `${c.coast.mi.toLocaleString()} miles from ${c.coast.name}`;
       list.append(el);
     });
   } catch (e) {
