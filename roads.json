@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T04:04:34+00:00",
+ "updated": "2026-10-22T05:03:48+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL65 NB/SB @ MP 24.35",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Paint Rock",
-   "lat": 34.958819999999996,
-   "lon": -86.221464,
-   "start": "2026-10-22T03:22:24Z",
-   "end": "2026-10-22T04:22:24Z",
-   "updated": "2026-10-21T22:23:15Z"
   }
  ]
 }
