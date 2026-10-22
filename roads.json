@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T16:02:29+00:00",
+ "updated": "2026-10-22T17:02:04+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,34 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
+   "title": "Major Crash",
+   "where": "I-59 SB @ MP 240.59",
+   "detail": "Crash with southbound road closure. Please seek alternate route southbound.",
+   "county": "DeKalb",
+   "city": "Valley Head",
+   "lat": 34.70704,
+   "lon": -85.559736,
+   "start": "2026-10-22T16:07:14Z",
+   "end": "2026-10-22T18:00:00Z",
+   "updated": "2026-10-22T16:52:47.4251041Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 91.49",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.748931999999996,
+   "lon": -86.69314399999999,
+   "start": "2026-10-22T16:47:35Z",
+   "end": "2026-10-22T17:47:35Z",
+   "updated": "2026-10-22T11:50:47Z"
   }
  ]
 }
