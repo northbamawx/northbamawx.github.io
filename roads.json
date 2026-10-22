@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T14:05:40+00:00",
+ "updated": "2026-10-22T15:03:26+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,48 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 39.37",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.847704,
-   "lon": -87.57652,
-   "start": "2026-10-22T13:34:41Z",
-   "end": "2026-10-22T14:34:41Z",
-   "updated": "2026-10-22T08:35:20Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 37.74",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.838291999999996,
-   "lon": -87.602008,
-   "start": "2026-10-22T13:14:00Z",
-   "end": "2026-10-22T14:14:00Z",
-   "updated": "2026-10-22T13:43:45.1041361Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 84.39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.750668,
-   "lon": -86.81423199999999,
-   "start": "2026-10-22T13:00:34Z",
-   "end": "2026-10-22T14:30:00Z",
-   "updated": "2026-10-22T14:00:09.3718987Z"
   }
  ]
 }
