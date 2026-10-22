@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T22:57:42+00:00",
+ "updated": "2026-10-22T23:27:39+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL75 NB/SB @ MP 50.17",
+   "where": "AL255 SB @ MP 0.9",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.714059999999996,
+   "lon": -86.67128,
+   "start": "2026-10-22T23:11:35Z",
+   "end": "2026-10-23T00:11:35Z",
+   "updated": "2026-10-22T23:26:45.2431655Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB/SB @ MP 294.02",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Marshall",
-   "city": "Horton",
-   "lat": 34.18846,
-   "lon": -86.308888,
-   "start": "2026-10-22T22:18:26Z",
-   "end": "2026-10-22T23:18:26Z",
-   "updated": "2026-10-22T17:21:16Z"
+   "city": "Guntersville",
+   "lat": 34.324695999999996,
+   "lon": -86.313424,
+   "start": "2026-10-22T22:53:50Z",
+   "end": "2026-10-22T23:53:50Z",
+   "updated": "2026-10-22T17:55:24Z"
   },
   {
    "type": "Incident",
@@ -40,8 +54,8 @@
    "lat": 34.698052,
    "lon": -86.69621599999999,
    "start": "2026-10-22T20:50:15Z",
-   "end": "2026-10-22T23:00:00Z",
-   "updated": "2026-10-22T22:05:36.9283704Z"
+   "end": "2026-10-22T23:45:00Z",
+   "updated": "2026-10-22T22:59:56.2291421Z"
   }
  ]
 }
