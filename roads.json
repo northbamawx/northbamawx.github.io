@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T01:11:05+00:00",
+ "updated": "2026-10-22T02:03:10+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 326.87",
-   "detail": "Crash with lane blockage. Please use caution when traveing through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.179187999999996,
-   "lon": -86.846336,
-   "start": "2026-10-22T00:14:38Z",
-   "end": "2026-10-22T01:14:38Z",
-   "updated": "2026-10-21T19:16:22Z"
   }
  ]
 }
