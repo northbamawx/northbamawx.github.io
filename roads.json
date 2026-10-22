@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T02:03:10+00:00",
+ "updated": "2026-10-22T03:01:25+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,20 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 79.46",
+   "detail": "Crash with lane Blockage. Please use caution  when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "UnderwoodPetersville",
+   "lat": 34.875299999999996,
+   "lon": -87.70231199999999,
+   "start": "2026-10-22T02:55:16Z",
+   "end": "2026-10-22T03:55:16Z",
+   "updated": "2026-10-21T21:56:12Z"
   }
  ]
 }
