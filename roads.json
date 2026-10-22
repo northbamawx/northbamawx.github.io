@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T20:59:48+00:00",
+ "updated": "2026-10-22T21:31:01+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,29 +19,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 341.43",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this ara.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.82644,
-   "lon": -86.571576,
-   "start": "2026-10-22T20:03:35Z",
-   "end": "2026-10-22T21:03:35Z",
-   "updated": "2026-10-22T20:17:39.2863499Z"
+   "where": "US72 EB/WB @ MP 75.08",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.789604,
+   "lon": -86.96700799999999,
+   "start": "2026-10-22T21:23:06Z",
+   "end": "2026-10-22T22:23:06Z",
+   "updated": "2026-10-22T16:23:52Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL227 NB/SB @ MP 29.46",
+   "where": "US431 NB/SB @ MP 324.74",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.407668,
-   "lon": -86.179464,
-   "start": "2026-10-22T20:06:42Z",
-   "end": "2026-10-22T21:06:42Z",
-   "updated": "2026-10-22T15:08:34Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.652443999999996,
+   "lon": -86.479704,
+   "start": "2026-10-22T20:54:58Z",
+   "end": "2026-10-22T21:54:58Z",
+   "updated": "2026-10-22T21:06:13.4663366Z"
   },
   {
    "type": "Incident",
