@@ -1,5 +1,5 @@
 {
- "updated": 1792661414,
+ "updated": 1792665903,
  "storms": [
   {
    "id": "AL102026",
@@ -13,6 +13,8 @@
    "over_land": false,
    "near": "",
    "near_mi": 0,
+   "coast": "Providence, RI",
+   "coast_mi": 271,
    "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
    "graphics_url": "https://www.nhc.noaa.gov/graphics_at5.shtml",
    "cone_url": "https://www.nhc.noaa.gov/storm_graphics/AT10/refresh/AL102026_5day_cone+png/220847_5day_cone.png",
