@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T01:16:58+00:00",
+ "updated": "2026-10-23T02:03:59+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -16,32 +16,18 @@
    "updated": "2026-10-20T14:36:55.9523561Z"
   },
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 92.88",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.741499999999995,
-   "lon": -86.66819199999999,
-   "start": "2026-10-22T23:41:32Z",
-   "end": "2026-10-23T01:30:00Z",
-   "updated": "2026-10-23T01:08:54.1759124Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 SB @ MP 336.21",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.753816,
-   "lon": -86.595928,
-   "start": "2026-10-23T00:18:44Z",
-   "end": "2026-10-23T01:18:44Z",
-   "updated": "2026-10-23T00:58:14.4681508Z"
+   "title": "Signal Outage",
+   "where": "AL157 NB/SB @ MP 38.23",
+   "detail": "Signal outage in area. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.496311999999996,
+   "lon": -87.28031999999999,
+   "start": "2026-10-23T01:31:18Z",
+   "end": "2026-10-23T02:31:18Z",
+   "updated": "2026-10-22T20:32:31Z"
   }
  ]
 }
