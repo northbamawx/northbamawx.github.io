@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T22:56:17+00:00",
+ "updated": "2026-10-23T23:21:35+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -17,45 +17,45 @@
   },
   {
    "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Major Crash",
-   "where": "US72 EB/WB @ MP 94.08",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 70.18",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.736512,
-   "lon": -86.650112,
-   "start": "2026-10-23T22:16:37Z",
-   "end": "2026-10-23T23:16:37Z",
-   "updated": "2026-10-23T22:36:06.3760806Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.791664,
+   "lon": -87.054256,
+   "start": "2026-10-23T23:06:30Z",
+   "end": "2026-10-24T00:06:30Z",
+   "updated": "2026-10-23T18:07:47Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 294.32",
+   "where": "I-565 EB @ MP 7.09",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.329068,
-   "lon": -86.314184,
-   "start": "2026-10-23T21:39:03Z",
-   "end": "2026-10-23T23:00:00Z",
-   "updated": "2026-10-23T22:41:28.3021533Z"
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.661936,
+   "lon": -86.786568,
+   "start": "2026-10-23T23:06:26Z",
+   "end": "2026-10-24T00:06:26Z",
+   "updated": "2026-10-23T18:08:13Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "I-65 SB @ MP 340.4",
-   "detail": "Congestion building southbound. Please use caution when traveling through this area.",
+   "where": "AL20 WB @ MP 73.17",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Decatur",
-   "lat": 34.65636,
-   "lon": -86.91264799999999,
-   "start": "2026-10-23T22:04:08Z",
-   "end": "2026-10-23T23:15:00Z",
-   "updated": "2026-10-23T22:36:06.3760033Z"
+   "lat": 34.628232,
+   "lon": -86.91560799999999,
+   "start": "2026-10-23T22:57:45Z",
+   "end": "2026-10-23T23:30:00Z",
+   "updated": "2026-10-23T17:59:43Z"
   },
   {
    "type": "Incident",
