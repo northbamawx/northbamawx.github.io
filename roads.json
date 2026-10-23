@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T11:32:07+00:00",
+ "updated": "2026-10-23T12:24:06+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Other",
-   "where": "AL20 EB/WB @ MP 65.66",
-   "detail": "Incident in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.619568,
-   "lon": -87.033344,
-   "start": "2026-10-23T11:14:51Z",
-   "end": "2026-10-23T12:14:51Z",
-   "updated": "2026-10-23T06:17:09Z"
   }
  ]
 }
