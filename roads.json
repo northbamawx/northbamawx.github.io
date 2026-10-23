@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T16:06:18+00:00",
+ "updated": "2026-10-23T17:03:14+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -23,25 +23,25 @@
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.705576,
-   "lon": -86.588824,
-   "start": "2026-10-23T15:20:05Z",
-   "end": "2026-10-23T16:20:05Z",
-   "updated": "2026-10-23T15:34:12.5666902Z"
+   "lat": 34.705732,
+   "lon": -86.58895199999999,
+   "start": "2026-10-23T16:29:06Z",
+   "end": "2026-10-23T17:29:06Z",
+   "updated": "2026-10-23T16:44:19.8476261Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 102.19",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "where": "US231/431 NB/SB @ MP 348.89",
+   "detail": "",
    "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.773948,
-   "lon": -86.538592,
-   "start": "2026-10-23T15:28:08Z",
-   "end": "2026-10-23T16:28:08Z",
-   "updated": "2026-10-23T15:50:28.1020481Z"
+   "city": "HazelGreen",
+   "lat": 34.932404,
+   "lon": -86.57212799999999,
+   "start": "2026-10-23T16:35:59Z",
+   "end": "2026-10-23T17:35:59Z",
+   "updated": "2026-10-23T16:55:02.8574365Z"
   }
  ]
 }
