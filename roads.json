@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T17:57:12+00:00",
+ "updated": "2026-10-23T18:29:07+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,20 +19,6 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB/SB @ MP 348.89",
-   "detail": "",
-   "county": "Madison",
-   "city": "HazelGreen",
-   "lat": 34.932404,
-   "lon": -86.57212799999999,
-   "start": "2026-10-23T16:35:59Z",
-   "end": "2026-10-23T18:30:00Z",
-   "updated": "2026-10-23T17:33:17.7553578Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
    "where": "AL255 NB/SB @ MP 0.9",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
@@ -47,15 +33,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 SB @ MP 335.41",
+   "where": "AL168 EB/WB @ MP 10.81",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.742928,
-   "lon": -86.60103199999999,
-   "start": "2026-10-23T17:19:54Z",
-   "end": "2026-10-23T18:19:54Z",
-   "updated": "2026-10-23T17:49:23.0362733Z"
+   "county": "Marshall",
+   "city": "Boaz",
+   "lat": 34.199852,
+   "lon": -86.150976,
+   "start": "2026-10-23T18:13:08Z",
+   "end": "2026-10-23T19:13:08Z",
+   "updated": "2026-10-23T13:14:38Z"
   }
  ]
 }
