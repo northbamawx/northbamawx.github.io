@@ -1,26 +1,4 @@
 {
- "updated": 1792680304,
- "storms": [
-  {
-   "id": "AL102026",
-   "name": "Josephine",
-   "label": "Subtropical Storm",
-   "wind_mph": 63,
-   "movement": "",
-   "headline": "",
-   "dist_to_al": 1125,
-   "in_gulf": false,
-   "over_land": false,
-   "near": "",
-   "near_mi": 0,
-   "coast": "Providence, RI",
-   "coast_mi": 282,
-   "advisory_url": "https://www.nhc.noaa.gov/text/MIATCPAT5.shtml",
-   "graphics_url": "https://www.nhc.noaa.gov/graphics_at5.shtml",
-   "cone_url": "https://www.nhc.noaa.gov/storm_graphics/AT10/refresh/AL102026_5day_cone+png/221435_5day_cone.png",
-   "winds": "",
-   "surge": "",
-   "damage": ""
-  }
- ]
+ "updated": 1792753204,
+ "storms": []
 }
