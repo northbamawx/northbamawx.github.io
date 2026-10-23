@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T19:10:48+00:00",
+ "updated": "2026-10-23T19:56:32+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -28,20 +28,6 @@
    "start": "2026-10-23T19:00:33Z",
    "end": "2026-10-23T20:00:33Z",
    "updated": "2026-10-23T14:01:28Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL168 EB/WB @ MP 10.81",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Boaz",
-   "lat": 34.199852,
-   "lon": -86.150976,
-   "start": "2026-10-23T18:13:08Z",
-   "end": "2026-10-23T19:13:08Z",
-   "updated": "2026-10-23T13:14:38Z"
   }
  ]
 }
