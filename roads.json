@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T19:56:32+00:00",
+ "updated": "2026-10-23T20:23:28+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 66.08",
+   "where": "AL157 NB/SB @ MP 76.98",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.795852,
-   "lon": -87.124912,
-   "start": "2026-10-23T19:00:33Z",
-   "end": "2026-10-23T20:00:33Z",
-   "updated": "2026-10-23T14:01:28Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.844332,
+   "lon": -87.688808,
+   "start": "2026-10-23T20:09:52Z",
+   "end": "2026-10-23T21:09:52Z",
+   "updated": "2026-10-23T15:10:36Z"
   }
  ]
 }
