@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T18:29:07+00:00",
+ "updated": "2026-10-23T19:10:48+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL255 NB/SB @ MP 0.9",
+   "where": "US72 EB/WB @ MP 66.08",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.713436,
-   "lon": -86.67123199999999,
-   "start": "2026-10-23T17:47:33Z",
-   "end": "2026-10-23T18:47:33Z",
-   "updated": "2026-10-23T17:54:45.4778887Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.795852,
+   "lon": -87.124912,
+   "start": "2026-10-23T19:00:33Z",
+   "end": "2026-10-23T20:00:33Z",
+   "updated": "2026-10-23T14:01:28Z"
   },
   {
    "type": "Crash",
