@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T23:53:05+00:00",
+ "updated": "2026-10-24T00:29:48+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,20 +19,6 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 70.18",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.791664,
-   "lon": -87.054256,
-   "start": "2026-10-23T23:06:30Z",
-   "end": "2026-10-24T00:06:30Z",
-   "updated": "2026-10-23T18:07:47Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
    "where": "US72 WB @ MP 91.49",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
@@ -41,35 +27,7 @@
    "lon": -86.693432,
    "start": "2026-10-23T23:46:23Z",
    "end": "2026-10-24T00:46:23Z",
-   "updated": "2026-10-23T18:48:30Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 7.09",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.661936,
-   "lon": -86.786568,
-   "start": "2026-10-23T23:06:26Z",
-   "end": "2026-10-24T00:06:26Z",
-   "updated": "2026-10-23T18:08:13Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "AL20 WB @ MP 73.17",
-   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.628232,
-   "lon": -86.91560799999999,
-   "start": "2026-10-23T22:57:45Z",
-   "end": "2026-10-24T00:30:00Z",
-   "updated": "2026-10-23T23:35:28.3002697Z"
+   "updated": "2026-10-24T00:02:26.5154253Z"
   }
  ]
 }
