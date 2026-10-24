@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T16:56:19+00:00",
+ "updated": "2026-10-24T17:20:47+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 14.59",
+   "where": "I-65 NB @ MP 308",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.707831999999996,
-   "lon": -86.667408,
-   "start": "2026-10-24T16:22:11Z",
-   "end": "2026-10-24T17:22:11Z",
-   "updated": "2026-10-24T11:27:00Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.167048,
+   "lon": -86.874584,
+   "start": "2026-10-24T17:04:52Z",
+   "end": "2026-10-24T18:04:52Z",
+   "updated": "2026-10-24T12:05:46Z"
   }
  ]
 }
