@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T18:58:19+00:00",
+ "updated": "2026-10-24T19:24:23+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,34 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB @ MP 5.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.206412,
+   "lon": -86.859472,
+   "start": "2026-10-24T19:11:30Z",
+   "end": "2026-10-24T20:11:30Z",
+   "updated": "2026-10-24T14:12:42Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 16.1",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.715768,
+   "lon": -86.64367999999999,
+   "start": "2026-10-24T19:05:23Z",
+   "end": "2026-10-24T20:05:23Z",
+   "updated": "2026-10-24T19:19:25.3289493Z"
   }
  ]
 }
