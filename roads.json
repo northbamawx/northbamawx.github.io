@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T23:15:49+00:00",
+ "updated": "2026-10-24T23:47:23+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 326.49",
+   "where": "US72 EB/WB @ MP 33.97",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Monrovia",
-   "lat": 34.815588,
-   "lon": -86.6878,
-   "start": "2026-10-24T22:24:40Z",
-   "end": "2026-10-24T23:24:40Z",
-   "updated": "2026-10-24T17:25:42Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.817532,
+   "lon": -87.660752,
+   "start": "2026-10-24T22:35:08Z",
+   "end": "2026-10-25T00:45:00Z",
+   "updated": "2026-10-24T18:31:12Z"
   }
  ]
 }
