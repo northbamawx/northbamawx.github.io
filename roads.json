@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T02:03:28+00:00",
+ "updated": "2026-10-24T02:59:46+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,20 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL247 NB/SB @ MP 8.52",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.545348,
+   "lon": -87.993888,
+   "start": "2026-10-24T02:57:12Z",
+   "end": "2026-10-24T03:57:12Z",
+   "updated": "2026-10-23T21:58:27Z"
   }
  ]
 }
