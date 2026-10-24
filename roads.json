@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T20:52:31+00:00",
+ "updated": "2026-10-24T21:18:47+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,34 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 295.03",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Arab",
-   "lat": 34.433631999999996,
-   "lon": -86.546128,
-   "start": "2026-10-24T18:56:52Z",
-   "end": "2026-10-24T21:00:00Z",
-   "updated": "2026-10-24T19:57:00.2660414Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 323.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.396851999999996,
-   "lon": -86.896328,
-   "start": "2026-10-24T20:00:20Z",
-   "end": "2026-10-24T21:00:20Z",
-   "updated": "2026-10-24T20:07:41.4323183Z"
   }
  ]
 }
