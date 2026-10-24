@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T06:30:37+00:00",
+ "updated": "2026-10-24T07:14:03+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,20 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 358.05",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.881851999999995,
+   "lon": -86.918976,
+   "start": "2026-10-24T06:35:35Z",
+   "end": "2026-10-24T07:35:35Z",
+   "updated": "2026-10-24T01:37:37Z"
   }
  ]
 }
