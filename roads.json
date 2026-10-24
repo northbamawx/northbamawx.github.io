@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T13:07:01+00:00",
+ "updated": "2026-10-24T13:55:14+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL17 NB/SB @ MP 300.03",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Phil Campbell",
-   "lat": 34.377539999999996,
-   "lon": -87.76012,
-   "start": "2026-10-24T11:48:30Z",
-   "end": "2026-10-24T14:00:00Z",
-   "updated": "2026-10-24T07:45:06Z"
   }
  ]
 }
