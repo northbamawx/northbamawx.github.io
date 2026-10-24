@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T18:19:19+00:00",
+ "updated": "2026-10-24T18:58:19+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 308",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.167048,
-   "lon": -86.874584,
-   "start": "2026-10-24T17:04:52Z",
-   "end": "2026-10-24T19:00:00Z",
-   "updated": "2026-10-24T18:04:21.668568Z"
   }
  ]
 }
