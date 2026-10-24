@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T19:49:45+00:00",
+ "updated": "2026-10-24T20:15:14+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -26,8 +26,8 @@
    "lat": 34.206412,
    "lon": -86.859472,
    "start": "2026-10-24T19:11:30Z",
-   "end": "2026-10-24T20:11:30Z",
-   "updated": "2026-10-24T14:12:42Z"
+   "end": "2026-10-24T20:45:00Z",
+   "updated": "2026-10-24T20:13:00.5232962Z"
   },
   {
    "type": "Crash",
@@ -40,8 +40,36 @@
    "lat": 34.715768,
    "lon": -86.64367999999999,
    "start": "2026-10-24T19:05:23Z",
-   "end": "2026-10-24T20:05:23Z",
-   "updated": "2026-10-24T19:40:48.2254164Z"
+   "end": "2026-10-24T21:00:00Z",
+   "updated": "2026-10-24T20:07:41.4321336Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 295.03",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Arab",
+   "lat": 34.433631999999996,
+   "lon": -86.546128,
+   "start": "2026-10-24T18:56:52Z",
+   "end": "2026-10-24T21:00:00Z",
+   "updated": "2026-10-24T19:57:00.2660414Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 323.9",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.396851999999996,
+   "lon": -86.896328,
+   "start": "2026-10-24T20:00:20Z",
+   "end": "2026-10-24T21:00:20Z",
+   "updated": "2026-10-24T20:07:41.4323183Z"
   }
  ]
 }
