@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T22:17:43+00:00",
+ "updated": "2026-10-24T22:51:50+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,20 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL53 NB/SB @ MP 326.49",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Monrovia",
+   "lat": 34.815588,
+   "lon": -86.6878,
+   "start": "2026-10-24T22:24:40Z",
+   "end": "2026-10-24T23:24:40Z",
+   "updated": "2026-10-24T17:25:42Z"
   }
  ]
 }
