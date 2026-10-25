@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T01:08:06+00:00",
+ "updated": "2026-10-25T01:59:41+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 SB @ MP 815.98",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.72316,
-   "lon": -86.627512,
-   "start": "2026-10-24T23:45:15Z",
-   "end": "2026-10-25T01:45:00Z",
-   "updated": "2026-10-25T00:42:05.4892782Z"
   }
  ]
 }
