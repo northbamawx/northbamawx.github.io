@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T13:07:00+00:00",
+ "updated": "2026-10-25T13:55:53+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -17,17 +17,17 @@
   },
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
+   "severity": "MajorDelay",
    "title": "Overturned Vehicle",
    "where": "AL53 NB @ MP 327.69",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Crash with partial road closure. Please seek alternate route.",
    "county": "Madison",
    "city": "Harvest",
    "lat": 34.830068,
    "lon": -86.69931199999999,
    "start": "2026-10-25T12:43:28Z",
-   "end": "2026-10-25T13:43:28Z",
-   "updated": "2026-10-25T13:01:00.021975Z"
+   "end": "2026-10-25T14:15:00Z",
+   "updated": "2026-10-25T13:48:37.4914184Z"
   }
  ]
 }
