@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T00:21:53+00:00",
+ "updated": "2026-10-25T01:08:06+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,34 +19,6 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 33.97",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.817532,
-   "lon": -87.660752,
-   "start": "2026-10-24T22:35:08Z",
-   "end": "2026-10-25T00:45:00Z",
-   "updated": "2026-10-24T18:31:12Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL157 SB @ MP 37.83",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.489912,
-   "lon": -87.277592,
-   "start": "2026-10-24T23:47:48Z",
-   "end": "2026-10-25T00:47:48Z",
-   "updated": "2026-10-24T18:48:44Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
    "where": "AL53 SB @ MP 815.98",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
@@ -54,8 +26,8 @@
    "lat": 34.72316,
    "lon": -86.627512,
    "start": "2026-10-24T23:45:15Z",
-   "end": "2026-10-25T00:45:15Z",
-   "updated": "2026-10-24T23:58:46.1024811Z"
+   "end": "2026-10-25T01:45:00Z",
+   "updated": "2026-10-25T00:42:05.4892782Z"
   }
  ]
 }
