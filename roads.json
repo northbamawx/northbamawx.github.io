@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T20:16:06+00:00",
+ "updated": "2026-10-25T20:54:13+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,43 +19,43 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 323.25",
+   "where": "AL24 EB/WB @ MP 57.02",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.133151999999995,
-   "lon": -86.81743999999999,
-   "start": "2026-10-25T19:01:52Z",
-   "end": "2026-10-25T20:30:00Z",
-   "updated": "2026-10-25T20:06:02.739635Z"
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.516296,
+   "lon": -87.20626399999999,
+   "start": "2026-10-25T20:21:32Z",
+   "end": "2026-10-25T21:21:32Z",
+   "updated": "2026-10-25T15:24:24Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 77.17",
+   "where": "AL53 NB/SB @ MP 317.15",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.8476,
-   "lon": -87.68989599999999,
-   "start": "2026-10-25T19:21:21Z",
-   "end": "2026-10-25T20:21:21Z",
-   "updated": "2026-10-25T14:22:08Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.720144,
+   "lon": -86.598152,
+   "start": "2026-10-25T20:51:19Z",
+   "end": "2026-10-25T21:51:19Z",
+   "updated": "2026-10-25T15:51:44Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 11.88",
+   "where": "US72 EB/WB @ MP 102.79",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.843724,
-   "lon": -87.64654399999999,
-   "start": "2026-10-25T18:49:12Z",
-   "end": "2026-10-25T20:30:00Z",
-   "updated": "2026-10-25T20:06:02.7396189Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.773088,
+   "lon": -86.5272,
+   "start": "2026-10-25T20:16:47Z",
+   "end": "2026-10-25T21:16:47Z",
+   "updated": "2026-10-25T15:17:35Z"
   }
  ]
 }
