@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T23:50:02+00:00",
+ "updated": "2026-10-26T01:38:03+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB @ MP 327.27",
+   "where": "I-65 NB @ MP 358",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.184476,
-   "lon": -86.84945599999999,
-   "start": "2026-10-25T23:36:31Z",
-   "end": "2026-10-26T00:36:31Z",
-   "updated": "2026-10-25T18:37:20Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.873852,
+   "lon": -86.921656,
+   "start": "2026-10-26T00:17:35Z",
+   "end": "2026-10-26T02:15:00Z",
+   "updated": "2026-10-26T01:14:54.1339691Z"
   }
  ]
 }
