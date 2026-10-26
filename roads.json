@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-26T11:07:48+00:00",
+ "updated": "2026-10-26T13:51:28+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "Closed",
+   "title": "Major Crash",
+   "where": "AL53 NB/SB @ MP 329.89",
+   "detail": "Crash with road closure. Please seek alternate route.",
+   "county": "Madison",
+   "city": "Harvest",
+   "lat": 34.856808,
+   "lon": -86.72054399999999,
+   "start": "2026-10-26T13:01:56Z",
+   "end": "2026-10-26T14:01:56Z",
+   "updated": "2026-10-26T13:49:13.4368685Z"
+  },
   {
    "type": "Roadwork",
    "severity": "Closed",
@@ -14,6 +28,90 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US278 EB/WB @ MP 79.03",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.172728,
+   "lon": -86.848096,
+   "start": "2026-10-26T12:59:45Z",
+   "end": "2026-10-26T13:59:45Z",
+   "updated": "2026-10-26T08:00:12Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 313.36",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.671408,
+   "lon": -86.57396,
+   "start": "2026-10-26T12:55:44Z",
+   "end": "2026-10-26T13:55:44Z",
+   "updated": "2026-10-26T13:11:34.5879647Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 95.19",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.735188,
+   "lon": -86.630376,
+   "start": "2026-10-26T13:26:22Z",
+   "end": "2026-10-26T14:26:22Z",
+   "updated": "2026-10-26T13:43:50.5564853Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 89.89",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.756848,
+   "lon": -86.720328,
+   "start": "2026-10-26T13:15:25Z",
+   "end": "2026-10-26T14:15:25Z",
+   "updated": "2026-10-26T13:43:50.5187555Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 4.68",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.648756,
+   "lon": -86.82428,
+   "start": "2026-10-26T12:31:56Z",
+   "end": "2026-10-26T14:00:00Z",
+   "updated": "2026-10-26T13:33:06.9910307Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US231 NB @ MP 310.66",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.632932,
+   "lon": -86.566808,
+   "start": "2026-10-26T13:12:59Z",
+   "end": "2026-10-26T14:12:59Z",
+   "updated": "2026-10-26T08:14:22Z"
   }
  ]
 }
