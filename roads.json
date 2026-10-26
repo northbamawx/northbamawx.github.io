@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T17:31:40+00:00",
+ "updated": "2026-10-26T18:33:50+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 283.01",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Hopewell",
-   "lat": 34.26942,
-   "lon": -86.49562399999999,
-   "start": "2026-10-26T16:28:09Z",
-   "end": "2026-10-26T18:00:00Z",
-   "updated": "2026-10-26T17:29:36.4036849Z"
   }
  ]
 }
