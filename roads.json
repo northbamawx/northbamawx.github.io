@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T14:16:31+00:00",
+ "updated": "2026-10-27T14:19:54+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -41,21 +41,7 @@
    "lon": -86.596592,
    "start": "2026-10-27T12:50:01Z",
    "end": "2026-10-27T14:30:00Z",
-   "updated": "2026-10-27T13:51:33.9481392Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 93.68",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.738144,
-   "lon": -86.656528,
-   "start": "2026-10-27T12:28:42Z",
-   "end": "2026-10-27T14:26:42Z",
-   "updated": "2026-10-27T14:02:19.2770254Z"
+   "updated": "2026-10-27T14:13:04.2674722Z"
   },
   {
    "type": "RoadCondition",
@@ -70,20 +56,6 @@
    "start": "2026-10-27T12:58:26Z",
    "end": "2026-10-27T14:45:00Z",
    "updated": "2026-10-27T13:56:56.1852993Z"
-  },
-  {
-   "type": "RoadCondition",
-   "severity": "ModerateDelay",
-   "title": "Fog",
-   "where": "I-65 NB/SB @ MP 336.01",
-   "detail": "Fog building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.572151999999996,
-   "lon": -86.910448,
-   "start": "2026-10-27T11:02:14Z",
-   "end": "2026-10-27T14:30:00Z",
-   "updated": "2026-10-27T13:56:56.0023063Z"
   }
  ]
 }
