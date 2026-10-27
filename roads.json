@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T11:07:13+00:00",
+ "updated": "2026-10-27T12:03:36+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,29 +19,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL35 NB/SB @ MP 51.59",
+   "where": "US43 NB/SB @ MP 292.49",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.673772,
-   "lon": -86.04305599999999,
-   "start": "2026-10-27T10:43:19Z",
-   "end": "2026-10-27T11:43:19Z",
-   "updated": "2026-10-27T05:44:46Z"
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.474648,
+   "lon": -87.7458,
+   "start": "2026-10-27T11:12:19Z",
+   "end": "2026-10-27T12:12:19Z",
+   "updated": "2026-10-27T06:40:23Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 280.5",
+   "where": "I-565 WB @ MP 0.3",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Boaz",
-   "lat": 34.199563999999995,
-   "lon": -86.150768,
-   "start": "2026-10-27T10:14:52Z",
-   "end": "2026-10-27T11:14:52Z",
-   "updated": "2026-10-27T05:16:41Z"
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.62946,
+   "lon": -86.898416,
+   "start": "2026-10-27T11:44:40Z",
+   "end": "2026-10-27T12:44:40Z",
+   "updated": "2026-10-27T11:52:38.7240239Z"
   },
   {
    "type": "RoadCondition",
@@ -54,22 +54,22 @@
    "lat": 34.781168,
    "lon": -87.67033599999999,
    "start": "2026-10-27T10:54:18Z",
-   "end": "2026-10-27T11:54:18Z",
-   "updated": "2026-10-27T05:57:58Z"
+   "end": "2026-10-27T13:00:00Z",
+   "updated": "2026-10-27T11:52:38.7238411Z"
   },
   {
    "type": "RoadCondition",
    "severity": "ModerateDelay",
    "title": "Fog",
-   "where": "US31 NB/SB @ MP 358.98",
-   "detail": "Fog building on the roadway. Please use caution when traveling through this area.  n",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.61622,
-   "lon": -86.969416,
-   "start": "2026-10-27T10:18:15Z",
-   "end": "2026-10-27T11:18:15Z",
-   "updated": "2026-10-27T05:19:20Z"
+   "where": "I-65 NB/SB @ MP 336.01",
+   "detail": "Fog building in the area. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.572151999999996,
+   "lon": -86.910448,
+   "start": "2026-10-27T11:02:14Z",
+   "end": "2026-10-27T12:30:00Z",
+   "updated": "2026-10-27T12:03:19.6346761Z"
   }
  ]
 }
