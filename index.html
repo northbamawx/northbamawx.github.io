@@ -993,7 +993,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <div id="ltgmap" role="region" aria-label="Lightning map"></div>
     <div class="ltg-bar" id="ltg-time">Loading lightning…</div>
   </div>
-  <div class="lsr-src">Lightning: NOAA GOES-East Geostationary Lightning Mapper via SSEC RealEarth (University of Wisconsin). Updates every 2 minutes.</div>
+  <div class="lsr-src" id="ltg-src">Lightning: NOAA GOES-East Geostationary Lightning Mapper via SSEC RealEarth (University of Wisconsin). Updates every 2 minutes.</div>
 </section>
 
 <section class="band" aria-labelledby="cams-title" id="cameras">
@@ -1992,25 +1992,43 @@ document.getElementById('locate-btn').addEventListener('click', () => {
   { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 });
 });
 
-// ---- Lightning (GOES-East GLM tiles from SSEC RealEarth) ----
+// ---- Lightning (GOES-East GLM tiles from SSEC RealEarth; NOAA nowCOAST when RealEarth is down) ----
 let ltgMap = null, ltgLayers = [], ltgRadar = null;
+const LTG_SRC = document.getElementById('ltg-src').textContent;
+const NOWCOAST_LTG = 'https://nowcoast.noaa.gov/geoserver/lightning_detection/ows';
+function showLightning(fresh, when, src) {
+  fresh.forEach(l => l.addTo(ltgMap));
+  setTimeout(() => { ltgLayers.forEach(l => ltgMap.removeLayer(l)); ltgLayers = fresh; }, 1500);
+  document.getElementById('ltg-time').textContent = 'Latest: ' + when.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  document.getElementById('ltg-src').textContent = src;
+}
+// Backup: 15-minute lightning density from ground sensors (NLDN/GLD360), one image instead of a 2-minute loop.
+async function loadLightningBackup() {
+  const xml = await (await fetch(NOWCOAST_LTG + '?service=WMS&version=1.3.0&request=GetCapabilities', { signal: AbortSignal.timeout(15000) })).text();
+  const times = (xml.match(/<Dimension name="time"[^>]*>([^<]+)</) || [])[1];
+  if (!times) throw new Error('no times');
+  const last = times.split(',').pop().trim();
+  const layer = L.tileLayer.wms(NOWCOAST_LTG, { layers: 'ldn_lightning_strike_density', format: 'image/png', transparent: true,
+    version: '1.3.0', time: last, maxZoom: 11, zIndex: 10 });
+  showLightning([layer], new Date(last), 'Lightning: NOAA nowCOAST (U.S. ground-based lightning networks), the latest 15 minutes. Shown while our usual satellite source is down.');
+}
+async function loadLightningGLM() {
+  const t = (await (await fetch('https://realearth.ssec.wisc.edu/api/times?products=glmgroupdensity', { signal: AbortSignal.timeout(10000) })).json()).glmgroupdensity || [];
+  const recent = t.slice(-12);
+  if (!recent.length) throw new Error('no times');
+  const fresh = recent.map((stamp, i) => {
+    const [d, hms] = stamp.split('.');
+    return L.tileLayer(`https://realearth.ssec.wisc.edu/tiles/glmgroupdensity/${d}/${hms}/{z}/{x}/{y}.png`,
+      { maxNativeZoom: 6, maxZoom: 11, opacity: i >= recent.length - 4 ? 1 : 0.45, zIndex: 10 + i });
+  });
+  const last = recent[recent.length - 1];
+  showLightning(fresh, new Date(Date.UTC(+last.slice(0, 4), +last.slice(4, 6) - 1, +last.slice(6, 8), +last.slice(9, 11), +last.slice(11, 13))), LTG_SRC);
+}
 async function loadLightning() {
   if (!ltgMap) return;
-  try {
-    const t = (await (await fetch('https://realearth.ssec.wisc.edu/api/times?products=glmgroupdensity')).json()).glmgroupdensity || [];
-    const recent = t.slice(-12);
-    if (!recent.length) return;
-    const fresh = recent.map((stamp, i) => {
-      const [d, hms] = stamp.split('.');
-      return L.tileLayer(`https://realearth.ssec.wisc.edu/tiles/glmgroupdensity/${d}/${hms}/{z}/{x}/{y}.png`,
-        { maxNativeZoom: 6, maxZoom: 11, opacity: i >= recent.length - 4 ? 1 : 0.45, zIndex: 10 + i });
-    });
-    fresh.forEach(l => l.addTo(ltgMap));
-    setTimeout(() => { ltgLayers.forEach(l => ltgMap.removeLayer(l)); ltgLayers = fresh; }, 1500);
-    const last = recent[recent.length - 1];
-    const when = new Date(Date.UTC(+last.slice(0, 4), +last.slice(4, 6) - 1, +last.slice(6, 8), +last.slice(9, 11), +last.slice(11, 13)));
-    document.getElementById('ltg-time').textContent = 'Latest: ' + when.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
-  } catch (e) { document.getElementById('ltg-time').textContent = 'Lightning data unavailable right now'; }
+  try { await loadLightningGLM(); } catch (e) {
+    try { await loadLightningBackup(); } catch (e2) { document.getElementById('ltg-time').textContent = 'Lightning data unavailable right now'; }
+  }
   if (ltgRadar) ltgMap.removeLayer(ltgRadar);
   ltgRadar = L.tileLayer(`https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913/{z}/{x}/{y}.png?${Math.floor(Date.now() / 120000)}`,
     { opacity: 0.35, zIndex: 5 }).addTo(ltgMap);
@@ -2019,7 +2037,7 @@ async function initLightning() {
   if (!window.L) return;
   ltgMap = L.map('ltgmap', { scrollWheelZoom: false, zoomSnap: 0.25, maxZoom: 11, minZoom: 5 });
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    maxNativeZoom: 16, attribution: 'Esri | Lightning: NOAA GOES GLM / SSEC RealEarth | Radar: IEM' }).addTo(ltgMap);
+    maxNativeZoom: 16, attribution: 'Esri | Lightning: NOAA GOES GLM / SSEC RealEarth, NOAA nowCOAST | Radar: IEM' }).addTo(ltgMap);
   ltgMap.createPane('labels'); ltgMap.getPane('labels').style.zIndex = 650; ltgMap.getPane('labels').style.pointerEvents = 'none';
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { pane: 'labels' }).addTo(ltgMap);
   try {
