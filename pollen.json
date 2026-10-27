@@ -1,29 +1,21 @@
 {
- "updated": "2026-10-24T02:03:28+00:00",
+ "updated": "2026-10-27T14:16:31+00:00",
  "city": "Huntsville",
  "days": [
   {
-   "day": "Yesterday",
-   "index": 3.5,
-   "triggers": [
-    "Ragweed",
-    "Chenopods"
-   ]
-  },
-  {
    "day": "Today",
-   "index": 3.0,
+   "index": 4.8,
    "triggers": [
     "Ragweed"
    ]
   },
   {
    "day": "Tomorrow",
-   "index": 3.2,
+   "index": 4.8,
    "triggers": [
     "Ragweed"
    ]
   }
  ],
- "source": "https://www.pollen.com/forecast/current/pollen/35801"
+ "source": "https://developers.google.com/maps/documentation/pollen"
 }
