@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T14:19:54+00:00",
+ "updated": "2026-10-27T15:14:37+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -26,36 +26,8 @@
    "lat": 34.198676,
    "lon": -86.80809599999999,
    "start": "2026-10-27T13:49:38Z",
-   "end": "2026-10-27T14:49:38Z",
-   "updated": "2026-10-27T08:50:33Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 334.44",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.729468,
-   "lon": -86.596592,
-   "start": "2026-10-27T12:50:01Z",
-   "end": "2026-10-27T14:30:00Z",
-   "updated": "2026-10-27T14:13:04.2674722Z"
-  },
-  {
-   "type": "RoadCondition",
-   "severity": "ModerateDelay",
-   "title": "Fog",
-   "where": "US31 SB @ MP 358.88",
-   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.615012,
-   "lon": -86.97084799999999,
-   "start": "2026-10-27T12:58:26Z",
-   "end": "2026-10-27T14:45:00Z",
-   "updated": "2026-10-27T13:56:56.1852993Z"
+   "end": "2026-10-27T15:45:00Z",
+   "updated": "2026-10-27T15:12:20.3679948Z"
   }
  ]
 }
