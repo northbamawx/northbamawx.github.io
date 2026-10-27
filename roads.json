@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T23:56:36+00:00",
+ "updated": "2026-10-27T00:30:45+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,15 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL91 NB/SB @ MP 36.06",
+   "where": "AL69 NB/SB @ MP 248.72",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Cullman",
-   "city": "Holly Pond",
-   "lat": 34.151075999999996,
-   "lon": -86.617176,
-   "start": "2026-10-26T21:25:05Z",
-   "end": "2026-10-27T00:15:00Z",
-   "updated": "2026-10-26T23:00:01.326353Z"
+   "city": "Cullman",
+   "lat": 34.201256,
+   "lon": -86.777248,
+   "start": "2026-10-27T00:21:05Z",
+   "end": "2026-10-27T01:21:05Z",
+   "updated": "2026-10-26T19:22:40Z"
   },
   {
    "type": "Crash",
@@ -42,20 +42,6 @@
    "start": "2026-10-26T23:45:13Z",
    "end": "2026-10-27T00:45:13Z",
    "updated": "2026-10-26T18:46:44Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 92.48",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.744236,
-   "lon": -86.676976,
-   "start": "2026-10-26T23:19:01Z",
-   "end": "2026-10-27T00:19:01Z",
-   "updated": "2026-10-26T23:37:13.1035099Z"
   }
  ]
 }
