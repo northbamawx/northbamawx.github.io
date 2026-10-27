@@ -26,6 +26,10 @@ def save(name, data):
         f.write('\n')
 
 
+# pollen.json's index is Google's Universal Pollen Index (0-5) and these are its category names.
+UPI_CATEGORIES = ['None', 'Very low', 'Low', 'Moderate', 'High', 'Very high']
+
+
 def pollen():
     # Google's Pollen API (key in the GOOGLE_POLLEN_KEY repo secret) first --
     # Pollen.com went unreachable in Oct 2026 -- and Pollen.com as the fallback.
@@ -38,15 +42,15 @@ def pollen():
     d = get('https://www.pollen.com/api/forecast/current/pollen/35801', {'Referer': page})
     days = []
     for p in d['Location']['periods']:
-        days.append({'day': p['Type'], 'index': p['Index'],
+        upi = min(5, round(p['Index'] / 2.4))   # Pollen.com's 0-12 squeezed onto the UPI
+        days.append({'day': p['Type'], 'index': upi, 'category': UPI_CATEGORIES[upi],
                      'triggers': [t['Name'] for t in p.get('Triggers', [])]})
     save('pollen.json', {'updated': NOW, 'city': 'Huntsville', 'days': days, 'source': page})
 
 
 def pollen_google(key):
-    """Huntsville forecast from Google's Pollen API. Its Universal Pollen Index
-    runs 0-5, so it's stretched x2.4 onto Pollen.com's 0-12 scale the page uses
-    (UPI 3 "Moderate" -> 7.2 "Medium")."""
+    """Huntsville forecast from Google's Pollen API: the day's highest Universal
+    Pollen Index across grass/tree/weed, and the plants driving it."""
     d = get('https://pollen.googleapis.com/v1/forecast:lookup?' + urllib.parse.urlencode({
         'key': key, 'location.latitude': 34.73, 'location.longitude': -86.59,
         'days': 2, 'plantsDescription': 'false'}))
@@ -55,7 +59,7 @@ def pollen_google(key):
         upi = max([t['indexInfo']['value'] for t in info.get('pollenTypeInfo', []) if 'indexInfo' in t] or [0])
         plants = sorted((p for p in info.get('plantInfo', []) if p.get('indexInfo', {}).get('value')),
                         key=lambda p: -p['indexInfo']['value'])
-        days.append({'day': label, 'index': round(upi * 2.4, 1),
+        days.append({'day': label, 'index': upi, 'category': UPI_CATEGORIES[upi],
                      'triggers': [p['displayName'] for p in plants[:3]]})
     if not days:
         raise ValueError('no dailyInfo')

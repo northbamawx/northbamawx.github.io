@@ -1932,21 +1932,21 @@ async function rawData(name) {
 }
 
 // ---- Pollen (pollen.json, written by the site's GitHub Action) ----
-const POLLEN_LEVELS = [[2.4, 'Low', '#4be38a'], [4.8, 'Low-medium', '#b6e34b'], [7.2, 'Medium', '#ffe14b'], [9.6, 'Medium-high', '#ff9f43'], [99, 'High', '#ff4b4b']];
+// index is Google's Universal Pollen Index (0-5); colors for None..Very high.
+const POLLEN_COLORS = ['', '#4be38a', '#b6e34b', '#ffe14b', '#ff9f43', '#ff4b4b'];
 async function loadPollen() {
   const d = await rawData('pollen.json');
   if (!d) return;
   const today = d.days && d.days.find(x => x.day === 'Today');
   // Over 12 hours old, "Today" is really an earlier day -- show nothing rather than old numbers.
-  if (!today || !(Date.now() - new Date(d.updated) < 12 * 3600000)) {
+  if (!today || !today.category || !(Date.now() - new Date(d.updated) < 12 * 3600000)) {
     document.getElementById('sky-pollen').textContent = '--';
     document.getElementById('pollen-dot').style.background = '';
     return;
   }
-  const [, label, color] = POLLEN_LEVELS.find(l => today.index <= l[0]);
   const top = today.triggers.slice(0, 2).join(', ').toLowerCase();
-  document.getElementById('sky-pollen').textContent = `${today.index.toFixed(1)} ${label}` + (top && today.index >= 2.5 ? ` (${top})` : '');
-  document.getElementById('pollen-dot').style.background = color;
+  document.getElementById('sky-pollen').textContent = `${today.index} ${today.category}` + (top && today.index >= 2 ? ` (${top})` : '');
+  document.getElementById('pollen-dot').style.background = POLLEN_COLORS[today.index] || '';
 }
 loadPollen();
 setInterval(loadPollen, 1800000);
