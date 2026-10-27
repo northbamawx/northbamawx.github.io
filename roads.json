@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T05:03:38+00:00",
+ "updated": "2026-10-27T06:01:56+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,20 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 SB @ MP 40",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560179999999995,
+   "lon": -86.990856,
+   "start": "2026-10-27T05:40:54Z",
+   "end": "2026-10-27T06:40:54Z",
+   "updated": "2026-10-27T00:41:57Z"
   }
  ]
 }
