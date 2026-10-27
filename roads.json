@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T12:03:36+00:00",
+ "updated": "2026-10-27T13:21:53+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,29 +19,57 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US43 NB/SB @ MP 292.49",
+   "where": "US231/431 NB @ MP 334.44",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Russellville",
-   "lat": 34.474648,
-   "lon": -87.7458,
-   "start": "2026-10-27T11:12:19Z",
-   "end": "2026-10-27T12:12:19Z",
-   "updated": "2026-10-27T06:40:23Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.729468,
+   "lon": -86.596592,
+   "start": "2026-10-27T12:50:01Z",
+   "end": "2026-10-27T13:50:01Z",
+   "updated": "2026-10-27T12:57:21.1385726Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 0.3",
+   "where": "US72 EB @ MP 93.68",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.62946,
-   "lon": -86.898416,
-   "start": "2026-10-27T11:44:40Z",
-   "end": "2026-10-27T12:44:40Z",
-   "updated": "2026-10-27T11:52:38.7240239Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.738223999999995,
+   "lon": -86.656312,
+   "start": "2026-10-27T12:30:24Z",
+   "end": "2026-10-27T13:30:24Z",
+   "updated": "2026-10-27T12:57:21.045188Z"
+  },
+  {
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "AL35 NB/SB @ MP 51.19",
+   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.673691999999996,
+   "lon": -86.034768,
+   "start": "2026-10-27T12:20:45Z",
+   "end": "2026-10-27T13:30:00Z",
+   "updated": "2026-10-27T07:21:25Z"
+  },
+  {
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "AL35 NB/SB @ MP 66.51",
+   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Woodville",
+   "lat": 34.626968,
+   "lon": -86.271976,
+   "start": "2026-10-27T12:22:03Z",
+   "end": "2026-10-27T13:30:00Z",
+   "updated": "2026-10-27T07:22:47Z"
   },
   {
    "type": "RoadCondition",
@@ -54,8 +82,22 @@
    "lat": 34.781168,
    "lon": -87.67033599999999,
    "start": "2026-10-27T10:54:18Z",
-   "end": "2026-10-27T13:00:00Z",
-   "updated": "2026-10-27T11:52:38.7238411Z"
+   "end": "2026-10-27T13:30:00Z",
+   "updated": "2026-10-27T12:57:20.9768864Z"
+  },
+  {
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "US31 SB @ MP 358.88",
+   "detail": "Fog is building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.615012,
+   "lon": -86.97084799999999,
+   "start": "2026-10-27T12:58:26Z",
+   "end": "2026-10-27T13:58:26Z",
+   "updated": "2026-10-27T07:58:48Z"
   },
   {
    "type": "RoadCondition",
@@ -68,8 +110,64 @@
    "lat": 34.572151999999996,
    "lon": -86.910448,
    "start": "2026-10-27T11:02:14Z",
-   "end": "2026-10-27T12:30:00Z",
-   "updated": "2026-10-27T12:03:19.6346761Z"
+   "end": "2026-10-27T13:30:00Z",
+   "updated": "2026-10-27T12:30:26.9436417Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 4.98",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.640612,
+   "lon": -86.844944,
+   "start": "2026-10-27T12:15:40Z",
+   "end": "2026-10-27T14:00:00Z",
+   "updated": "2026-10-27T13:13:40.3705506Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL20 WB @ MP 71.91",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.62844,
+   "lon": -86.938096,
+   "start": "2026-10-27T12:57:51Z",
+   "end": "2026-10-27T13:57:51Z",
+   "updated": "2026-10-27T07:59:25Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL255 SB @ MP 5.78",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.783972,
+   "lon": -86.672648,
+   "start": "2026-10-27T12:55:33Z",
+   "end": "2026-10-27T13:55:33Z",
+   "updated": "2026-10-27T07:55:51Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US72 EB @ MP 88.19",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.752435999999996,
+   "lon": -86.74911999999999,
+   "start": "2026-10-27T12:29:07Z",
+   "end": "2026-10-27T13:29:07Z",
+   "updated": "2026-10-27T07:30:08Z"
   }
  ]
 }
