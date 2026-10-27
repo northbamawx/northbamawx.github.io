@@ -2,7 +2,9 @@
 JSON for the page: pollen.json (Pollen.com, Huntsville) and roads.json
 (ALDOT closures and incidents in our Alabama counties)."""
 import json
+import os
 import re
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
@@ -25,6 +27,13 @@ def save(name, data):
 
 
 def pollen():
+    # Google's Pollen API (key in the GOOGLE_POLLEN_KEY repo secret) first --
+    # Pollen.com went unreachable in Oct 2026 -- and Pollen.com as the fallback.
+    if os.environ.get('GOOGLE_POLLEN_KEY'):
+        try:
+            return pollen_google(os.environ['GOOGLE_POLLEN_KEY'])
+        except Exception as ex:
+            print('google pollen failed:', ex)
     page = 'https://www.pollen.com/forecast/current/pollen/35801'
     d = get('https://www.pollen.com/api/forecast/current/pollen/35801', {'Referer': page})
     days = []
@@ -32,6 +41,26 @@ def pollen():
         days.append({'day': p['Type'], 'index': p['Index'],
                      'triggers': [t['Name'] for t in p.get('Triggers', [])]})
     save('pollen.json', {'updated': NOW, 'city': 'Huntsville', 'days': days, 'source': page})
+
+
+def pollen_google(key):
+    """Huntsville forecast from Google's Pollen API. Its Universal Pollen Index
+    runs 0-5, so it's stretched x2.4 onto Pollen.com's 0-12 scale the page uses
+    (UPI 3 "Moderate" -> 7.2 "Medium")."""
+    d = get('https://pollen.googleapis.com/v1/forecast:lookup?' + urllib.parse.urlencode({
+        'key': key, 'location.latitude': 34.73, 'location.longitude': -86.59,
+        'days': 2, 'plantsDescription': 'false'}))
+    days = []
+    for label, info in zip(('Today', 'Tomorrow'), d['dailyInfo']):
+        upi = max([t['indexInfo']['value'] for t in info.get('pollenTypeInfo', []) if 'indexInfo' in t] or [0])
+        plants = sorted((p for p in info.get('plantInfo', []) if p.get('indexInfo', {}).get('value')),
+                        key=lambda p: -p['indexInfo']['value'])
+        days.append({'day': label, 'index': round(upi * 2.4, 1),
+                     'triggers': [p['displayName'] for p in plants[:3]]})
+    if not days:
+        raise ValueError('no dailyInfo')
+    save('pollen.json', {'updated': NOW, 'city': 'Huntsville', 'days': days,
+                         'source': 'https://developers.google.com/maps/documentation/pollen'})
 
 
 def roads():

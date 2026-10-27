@@ -23,6 +23,8 @@ jobs:
       - run: python scripts/update_news.py
       - run: python scripts/update_videos.py
       - run: python scripts/update_local.py
+        env:
+          GOOGLE_POLLEN_KEY: ${{ secrets.GOOGLE_POLLEN_KEY }}
       - name: Commit if changed
         run: |
           git config user.name "NorthBamaWX"
