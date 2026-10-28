@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T16:41:35+00:00",
+ "updated": "2026-10-28T17:37:41+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,48 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 319.94",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Hanceville",
+   "lat": 34.088812,
+   "lon": -86.79628,
+   "start": "2026-10-28T17:20:59Z",
+   "end": "2026-10-28T18:20:59Z",
+   "updated": "2026-10-28T12:22:26Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 361.37",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.643796,
+   "lon": -86.950704,
+   "start": "2026-10-28T17:08:57Z",
+   "end": "2026-10-28T18:08:57Z",
+   "updated": "2026-10-28T12:09:31Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 316.25",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.710736,
+   "lon": -86.590248,
+   "start": "2026-10-28T17:25:34Z",
+   "end": "2026-10-28T18:25:34Z",
+   "updated": "2026-10-28T12:28:27Z"
   }
  ]
 }
