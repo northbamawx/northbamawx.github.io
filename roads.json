@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T12:37:34+00:00",
+ "updated": "2026-10-28T13:49:33+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -26,22 +26,22 @@
    "lat": 34.825944,
    "lon": -87.009928,
    "start": "2026-10-28T12:05:00Z",
-   "end": "2026-10-28T13:05:00Z",
-   "updated": "2026-10-28T07:05:31Z"
+   "end": "2026-10-28T14:00:00Z",
+   "updated": "2026-10-28T13:08:25.6932312Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 18.61",
+   "where": "AL255 SB @ MP 8.96",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.728688,
-   "lon": -86.602576,
-   "start": "2026-10-28T11:56:41Z",
-   "end": "2026-10-28T12:56:41Z",
-   "updated": "2026-10-28T12:35:27.5812304Z"
+   "lat": 34.822351999999995,
+   "lon": -86.64312,
+   "start": "2026-10-28T13:27:51Z",
+   "end": "2026-10-28T14:27:51Z",
+   "updated": "2026-10-28T08:28:23Z"
   },
   {
    "type": "Incident",
@@ -54,8 +54,8 @@
    "lat": 34.650044,
    "lon": -86.82100799999999,
    "start": "2026-10-28T11:53:03Z",
-   "end": "2026-10-28T12:53:03Z",
-   "updated": "2026-10-28T06:53:19Z"
+   "end": "2026-10-28T14:00:00Z",
+   "updated": "2026-10-28T12:52:07.6330279Z"
   }
  ]
 }
