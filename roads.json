@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T13:49:33+00:00",
+ "updated": "2026-10-28T14:44:43+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,48 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL99 NB/SB @ MP 3.86",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.825944,
-   "lon": -87.009928,
-   "start": "2026-10-28T12:05:00Z",
-   "end": "2026-10-28T14:00:00Z",
-   "updated": "2026-10-28T13:08:25.6932312Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL255 SB @ MP 8.96",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.822351999999995,
-   "lon": -86.64312,
-   "start": "2026-10-28T13:27:51Z",
-   "end": "2026-10-28T14:27:51Z",
-   "updated": "2026-10-28T08:28:23Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 4.88",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.650044,
-   "lon": -86.82100799999999,
-   "start": "2026-10-28T11:53:03Z",
-   "end": "2026-10-28T14:00:00Z",
-   "updated": "2026-10-28T12:52:07.6330279Z"
   }
  ]
 }
