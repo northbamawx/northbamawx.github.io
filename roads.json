@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T19:39:55+00:00",
+ "updated": "2026-10-28T20:31:45+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,20 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 149.81",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Hollywood",
-   "lat": 34.784624,
-   "lon": -85.885944,
-   "start": "2026-10-28T18:01:54Z",
-   "end": "2026-10-28T20:30:00Z",
-   "updated": "2026-10-28T19:32:00.4870777Z"
   }
  ]
 }
