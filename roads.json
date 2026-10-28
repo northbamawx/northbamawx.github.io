@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T18:35:25+00:00",
+ "updated": "2026-10-28T19:39:55+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,85 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 319.94",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Hanceville",
-   "lat": 34.088812,
-   "lon": -86.79628,
-   "start": "2026-10-28T17:20:59Z",
-   "end": "2026-10-28T18:45:00Z",
-   "updated": "2026-10-28T18:22:10.5251841Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 149.81",
+   "where": "US72 WB @ MP 149.81",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Jackson",
    "city": "Hollywood",
    "lat": 34.784624,
    "lon": -85.885944,
    "start": "2026-10-28T18:01:54Z",
-   "end": "2026-10-28T19:01:54Z",
-   "updated": "2026-10-28T13:20:42Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 SB @ MP 316.25",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.710844,
-   "lon": -86.590768,
-   "start": "2026-10-28T17:42:57Z",
-   "end": "2026-10-28T18:42:57Z",
-   "updated": "2026-10-28T18:32:52.6620493Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 316.25",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.710736,
-   "lon": -86.590248,
-   "start": "2026-10-28T17:25:34Z",
-   "end": "2026-10-28T19:00:00Z",
-   "updated": "2026-10-28T18:22:10.5252149Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 SB @ MP 313.66",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.676356,
-   "lon": -86.576376,
-   "start": "2026-10-28T18:19:10Z",
-   "end": "2026-10-28T19:19:10Z",
-   "updated": "2026-10-28T18:27:31.7336575Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 315.85",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.705239999999996,
-   "lon": -86.588352,
-   "start": "2026-10-28T18:12:46Z",
-   "end": "2026-10-28T19:12:46Z",
-   "updated": "2026-10-28T13:13:51Z"
+   "end": "2026-10-28T20:30:00Z",
+   "updated": "2026-10-28T19:32:00.4870777Z"
   }
  ]
 }
