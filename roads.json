@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T03:14:20+00:00",
+ "updated": "2026-10-29T04:14:53+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,34 +14,6 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL127 NB/SB",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.819767999999996,
-   "lon": -86.971696,
-   "start": "2026-10-29T02:26:35Z",
-   "end": "2026-10-29T03:26:35Z",
-   "updated": "2026-10-28T21:27:22Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB/SB @ MP 348.69",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Hazel Green",
-   "lat": 34.929384,
-   "lon": -86.57204,
-   "start": "2026-10-29T01:40:31Z",
-   "end": "2026-10-29T03:30:00Z",
-   "updated": "2026-10-29T03:02:44.2715841Z"
   }
  ]
 }
