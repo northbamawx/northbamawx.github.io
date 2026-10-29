@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T18:37:58+00:00",
+ "updated": "2026-10-29T19:41:59+00:00",
  "events": [
   {
    "type": "Crash",
@@ -14,20 +14,6 @@
    "start": "2026-10-29T17:34:50Z",
    "end": "2026-10-29T20:00:00Z",
    "updated": "2026-10-29T18:33:18.7678029Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 345",
-   "detail": "",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.68114,
-   "lon": -86.922944,
-   "start": "2026-10-29T18:21:32Z",
-   "end": "2026-10-31T02:45:00Z",
-   "updated": "2026-10-29T13:23:15Z"
   },
   {
    "type": "Incident",
