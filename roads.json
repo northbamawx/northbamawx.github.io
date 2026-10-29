@@ -1,47 +1,47 @@
 {
- "updated": "2026-10-29T17:39:43+00:00",
+ "updated": "2026-10-29T18:37:58+00:00",
  "events": [
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
+   "severity": "MajorDelay",
+   "title": "Major Crash",
    "where": "I-65 SB @ MP 306.99",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "detail": "Crash with road closure southbound. Please seek alternate route southbound.",
    "county": "Cullman",
    "city": "Cullman",
    "lat": 34.163948,
    "lon": -86.874048,
    "start": "2026-10-29T17:34:50Z",
-   "end": "2026-10-29T18:34:50Z",
-   "updated": "2026-10-29T12:35:24Z"
+   "end": "2026-10-29T20:00:00Z",
+   "updated": "2026-10-29T18:33:18.7678029Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 314.76",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.680928,
-   "lon": -86.577192,
-   "start": "2026-10-29T17:02:54Z",
-   "end": "2026-10-29T18:02:54Z",
-   "updated": "2026-10-29T17:22:04.9165162Z"
+   "where": "I-65 SB @ MP 345",
+   "detail": "",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.68114,
+   "lon": -86.922944,
+   "start": "2026-10-29T18:21:32Z",
+   "end": "2026-10-31T02:45:00Z",
+   "updated": "2026-10-29T13:23:15Z"
   },
   {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 NB @ MP 333.72",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.720715999999996,
-   "lon": -86.59271199999999,
-   "start": "2026-10-29T17:29:13Z",
-   "end": "2026-10-29T18:29:13Z",
-   "updated": "2026-10-29T12:29:34Z"
+   "type": "Incident",
+   "severity": "MajorDelay",
+   "title": "Congestion",
+   "where": "I-65 SB @ MP 311",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.209672,
+   "lon": -86.878992,
+   "start": "2026-10-29T17:38:32Z",
+   "end": "2026-10-29T20:00:00Z",
+   "updated": "2026-10-29T18:33:18.7678218Z"
   }
  ]
 }
