@@ -1,61 +1,61 @@
 {
- "updated": "2026-10-29T22:31:45+00:00",
+ "updated": "2026-10-29T23:27:34+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 39.99",
+   "where": "AL69 NB/SB @ MP 241.57",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.852267999999995,
-   "lon": -87.566496,
-   "start": "2026-10-29T22:18:56Z",
-   "end": "2026-10-29T23:18:56Z",
-   "updated": "2026-10-29T17:20:07Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.142776,
+   "lon": -86.848192,
+   "start": "2026-10-29T22:36:40Z",
+   "end": "2026-10-29T23:36:40Z",
+   "updated": "2026-10-29T17:37:57Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 SB @ MP 359.8",
+   "where": "US31 NB/SB @ MP 362.97",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Athens",
-   "lat": 34.624524,
-   "lon": -86.96074399999999,
-   "start": "2026-10-29T22:04:22Z",
-   "end": "2026-10-29T23:04:22Z",
-   "updated": "2026-10-29T22:14:30.3508538Z"
+   "lat": 34.666232,
+   "lon": -86.950184,
+   "start": "2026-10-29T22:34:35Z",
+   "end": "2026-10-29T23:34:35Z",
+   "updated": "2026-10-29T17:35:34Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 348.69",
+   "where": "US31 SB @ MP 360.32",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Hazel Green",
-   "lat": 34.929356,
-   "lon": -86.57182399999999,
-   "start": "2026-10-29T21:49:07Z",
-   "end": "2026-10-29T22:49:07Z",
-   "updated": "2026-10-29T16:50:58Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.629163999999996,
+   "lon": -86.953336,
+   "start": "2026-10-29T23:05:28Z",
+   "end": "2026-10-30T00:05:28Z",
+   "updated": "2026-10-29T18:07:38Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 SB @ MP 331.52",
+   "where": "US231/431 SB @ MP 334.24",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.718579999999996,
-   "lon": -86.554648,
-   "start": "2026-10-29T22:14:52Z",
-   "end": "2026-10-29T23:14:52Z",
-   "updated": "2026-10-29T17:16:55Z"
+   "lat": 34.72724,
+   "lon": -86.5968,
+   "start": "2026-10-29T23:23:21Z",
+   "end": "2026-10-30T00:23:21Z",
+   "updated": "2026-10-29T18:24:32Z"
   },
   {
    "type": "Crash",
@@ -68,8 +68,8 @@
    "lat": 34.280996,
    "lon": -86.195488,
    "start": "2026-10-29T22:14:32Z",
-   "end": "2026-10-29T23:14:32Z",
-   "updated": "2026-10-29T17:15:55Z"
+   "end": "2026-10-29T23:30:00Z",
+   "updated": "2026-10-29T23:15:22.4805482Z"
   },
   {
    "type": "Incident",
@@ -82,8 +82,22 @@
    "lat": 34.628248,
    "lon": -86.91664,
    "start": "2026-10-29T22:09:45Z",
-   "end": "2026-10-29T23:09:45Z",
-   "updated": "2026-10-29T17:11:11Z"
+   "end": "2026-10-29T23:45:00Z",
+   "updated": "2026-10-29T23:09:53.018899Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 13.89",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.705344,
+   "lon": -86.67918399999999,
+   "start": "2026-10-29T22:35:58Z",
+   "end": "2026-10-29T23:35:58Z",
+   "updated": "2026-10-29T17:37:23Z"
   }
  ]
 }
