@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T01:30:01+00:00",
+ "updated": "2026-10-29T02:21:35+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -19,29 +19,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 357.11",
+   "where": "US231/431 NB/SB @ MP 348.69",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.591528,
-   "lon": -86.98048,
-   "start": "2026-10-29T00:39:18Z",
-   "end": "2026-10-29T01:39:18Z",
-   "updated": "2026-10-28T19:40:10Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Tree Down",
-   "where": "AL187 NB/SB @ MP 12.79",
-   "detail": "Tree Down in area. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Hodges",
-   "lat": 34.356871999999996,
-   "lon": -87.900312,
-   "start": "2026-10-29T00:51:46Z",
-   "end": "2026-10-29T01:51:46Z",
-   "updated": "2026-10-28T19:54:49Z"
+   "county": "Madison",
+   "city": "Hazel Green",
+   "lat": 34.929384,
+   "lon": -86.57204,
+   "start": "2026-10-29T01:40:31Z",
+   "end": "2026-10-29T02:40:31Z",
+   "updated": "2026-10-28T20:46:29Z"
   }
  ]
 }
