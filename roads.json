@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T19:41:59+00:00",
+ "updated": "2026-10-29T20:34:44+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,64 @@
    "lat": 34.163948,
    "lon": -86.874048,
    "start": "2026-10-29T17:34:50Z",
-   "end": "2026-10-29T20:00:00Z",
-   "updated": "2026-10-29T18:33:18.7678029Z"
+   "end": "2026-10-29T21:00:00Z",
+   "updated": "2026-10-29T19:50:22.9605369Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL35 NB/SB @ MP 50.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.668124,
+   "lon": -86.022592,
+   "start": "2026-10-29T20:20:15Z",
+   "end": "2026-10-29T21:20:15Z",
+   "updated": "2026-10-29T15:22:26Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 35.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.537464,
+   "lon": -86.911408,
+   "start": "2026-10-29T20:12:33Z",
+   "end": "2026-10-29T21:12:33Z",
+   "updated": "2026-10-29T20:28:57.7353188Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB @ MP 40.4",
+   "detail": "Crash with lane blockage.  Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560116,
+   "lon": -86.998784,
+   "start": "2026-10-29T20:23:39Z",
+   "end": "2026-10-29T21:23:39Z",
+   "updated": "2026-10-29T15:24:47Z"
   },
   {
    "type": "Incident",
    "severity": "MajorDelay",
    "title": "Congestion",
-   "where": "I-65 SB @ MP 311",
+   "where": "I-65 SB @ MP 314.6",
    "detail": "Congestion building in the area. Please use caution when traveling through this area.",
    "county": "Cullman",
    "city": "Cullman",
-   "lat": 34.209672,
-   "lon": -86.878992,
+   "lat": 34.269467999999996,
+   "lon": -86.89791199999999,
    "start": "2026-10-29T17:38:32Z",
-   "end": "2026-10-29T20:00:00Z",
-   "updated": "2026-10-29T18:33:18.7678218Z"
+   "end": "2026-10-29T21:00:00Z",
+   "updated": "2026-10-29T20:23:29.215117Z"
   }
  ]
 }
