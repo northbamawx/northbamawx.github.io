@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T00:00:56+00:00",
+ "updated": "2026-10-29T01:30:01+00:00",
  "events": [
   {
    "type": "Roadwork",
@@ -14,6 +14,34 @@
    "start": "2026-05-06T11:00:00Z",
    "end": "2026-12-15T18:00:00Z",
    "updated": "2026-10-20T14:36:55.9523561Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 357.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.591528,
+   "lon": -86.98048,
+   "start": "2026-10-29T00:39:18Z",
+   "end": "2026-10-29T01:39:18Z",
+   "updated": "2026-10-28T19:40:10Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Tree Down",
+   "where": "AL187 NB/SB @ MP 12.79",
+   "detail": "Tree Down in area. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Hodges",
+   "lat": 34.356871999999996,
+   "lon": -87.900312,
+   "start": "2026-10-29T00:51:46Z",
+   "end": "2026-10-29T01:51:46Z",
+   "updated": "2026-10-28T19:54:49Z"
   }
  ]
 }
