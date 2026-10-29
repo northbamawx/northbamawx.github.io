@@ -1,47 +1,33 @@
 {
- "updated": "2026-10-29T14:46:31+00:00",
+ "updated": "2026-10-29T15:44:01+00:00",
  "events": [
   {
-   "type": "Roadwork",
-   "severity": "Closed",
-   "title": "Planned Roadway Improvements",
-   "where": "US31 NB/SB @ MP 337 to MP 338.3",
-   "detail": "Planned roadway improvements with road closure. Detour: Exit 322",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.313912,
-   "lon": -86.899624,
-   "start": "2026-05-06T11:00:00Z",
-   "end": "2026-12-15T18:00:00Z",
-   "updated": "2026-10-20T14:36:55.9523561Z"
-  },
-  {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 108.98",
+   "where": "US72 EB @ MP 37.22",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.735147999999995,
-   "lon": -86.430408,
-   "start": "2026-10-29T13:56:13Z",
-   "end": "2026-10-29T14:56:13Z",
-   "updated": "2026-10-29T14:10:52.6729391Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.835452,
+   "lon": -87.60936,
+   "start": "2026-10-29T15:03:27Z",
+   "end": "2026-10-29T16:03:27Z",
+   "updated": "2026-10-29T15:21:02.6436276Z"
   },
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 104.77",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.76876,
-   "lon": -86.493184,
-   "start": "2026-10-29T14:36:10Z",
-   "end": "2026-10-29T15:36:10Z",
-   "updated": "2026-10-29T09:38:11Z"
+   "title": "Congestion",
+   "where": "I-65 NB @ MP 301.84",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.088816,
+   "lon": -86.866264,
+   "start": "2026-10-29T15:09:01Z",
+   "end": "2026-10-29T16:09:01Z",
+   "updated": "2026-10-29T10:10:18Z"
   }
  ]
 }
