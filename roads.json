@@ -1,19 +1,19 @@
 {
- "updated": "2026-10-30T02:39:42+00:00",
+ "updated": "2026-10-30T03:38:57+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL24 EB/WB @ MP 56.12",
+   "where": "US72 EB/WB @ MP 92.78",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.509375999999996,
-   "lon": -87.221408,
-   "start": "2026-10-30T02:10:22Z",
-   "end": "2026-10-30T03:10:22Z",
-   "updated": "2026-10-29T21:11:24Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.743776,
+   "lon": -86.669072,
+   "start": "2026-10-30T02:54:27Z",
+   "end": "2026-10-30T03:54:27Z",
+   "updated": "2026-10-29T21:59:05Z"
   },
   {
    "type": "Incident",
@@ -26,8 +26,8 @@
    "lat": 34.307932,
    "lon": -86.905096,
    "start": "2026-10-29T23:24:36Z",
-   "end": "2026-10-30T02:45:00Z",
-   "updated": "2026-10-30T02:17:15.2480012Z"
+   "end": "2026-10-30T04:00:00Z",
+   "updated": "2026-10-30T02:44:47.4691694Z"
   }
  ]
 }
