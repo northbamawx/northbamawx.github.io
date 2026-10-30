@@ -1,47 +1,33 @@
 {
- "updated": "2026-10-29T23:27:34+00:00",
+ "updated": "2026-10-30T00:04:03+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 241.57",
+   "where": "AL133 NB/SB @ MP 13.46",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.142776,
-   "lon": -86.848192,
-   "start": "2026-10-29T22:36:40Z",
-   "end": "2026-10-29T23:36:40Z",
-   "updated": "2026-10-29T17:37:57Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.84192,
+   "lon": -87.67452,
+   "start": "2026-10-29T23:49:41Z",
+   "end": "2026-10-30T00:49:41Z",
+   "updated": "2026-10-29T18:50:56Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 362.97",
+   "where": "AL17 NB/SB @ MP 337.07",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.666232,
-   "lon": -86.950184,
-   "start": "2026-10-29T22:34:35Z",
-   "end": "2026-10-29T23:34:35Z",
-   "updated": "2026-10-29T17:35:34Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 SB @ MP 360.32",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.629163999999996,
-   "lon": -86.953336,
-   "start": "2026-10-29T23:05:28Z",
-   "end": "2026-10-30T00:05:28Z",
-   "updated": "2026-10-29T18:07:38Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.865912,
+   "lon": -87.67392799999999,
+   "start": "2026-10-29T23:39:22Z",
+   "end": "2026-10-30T00:39:22Z",
+   "updated": "2026-10-29T18:40:11Z"
   },
   {
    "type": "Crash",
@@ -58,46 +44,18 @@
    "updated": "2026-10-29T18:24:32Z"
   },
   {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL75 NB/SB @ MP 59.38",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Albertville",
-   "lat": 34.280996,
-   "lon": -86.195488,
-   "start": "2026-10-29T22:14:32Z",
-   "end": "2026-10-29T23:30:00Z",
-   "updated": "2026-10-29T23:15:22.4805482Z"
-  },
-  {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "AL20 EB @ MP 73.07",
-   "detail": "Congestion building eastbound. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.628248,
-   "lon": -86.91664,
-   "start": "2026-10-29T22:09:45Z",
-   "end": "2026-10-29T23:45:00Z",
-   "updated": "2026-10-29T23:09:53.018899Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 WB @ MP 13.89",
-   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.705344,
-   "lon": -86.67918399999999,
-   "start": "2026-10-29T22:35:58Z",
-   "end": "2026-10-29T23:35:58Z",
-   "updated": "2026-10-29T17:37:23Z"
+   "where": "I-65 NB @ MP 314.7",
+   "detail": "Congestion building northbound. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.27054,
+   "lon": -86.898152,
+   "start": "2026-10-29T23:24:36Z",
+   "end": "2026-10-30T00:30:00Z",
+   "updated": "2026-10-29T18:29:05Z"
   }
  ]
 }
