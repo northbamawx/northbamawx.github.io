@@ -1,6 +1,48 @@
 {
- "updated": "2026-10-30T15:41:09+00:00",
+ "updated": "2026-10-30T16:39:03+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 316",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.287428,
+   "lon": -86.908312,
+   "start": "2026-10-30T16:13:33Z",
+   "end": "2026-10-30T17:13:33Z",
+   "updated": "2026-10-30T11:14:37Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 372.07",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.796728,
+   "lon": -86.954392,
+   "start": "2026-10-30T16:28:03Z",
+   "end": "2026-10-30T17:28:03Z",
+   "updated": "2026-10-30T11:28:22Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 90.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.755919999999996,
+   "lon": -86.71556799999999,
+   "start": "2026-10-30T16:17:05Z",
+   "end": "2026-10-30T17:17:05Z",
+   "updated": "2026-10-30T11:17:25Z"
+  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
@@ -12,8 +54,8 @@
    "lat": 34.274556,
    "lon": -86.899384,
    "start": "2026-10-30T13:27:00Z",
-   "end": "2026-10-30T16:00:00Z",
-   "updated": "2026-10-30T14:59:37.4163437Z"
+   "end": "2026-10-30T19:00:00Z",
+   "updated": "2026-10-30T16:15:14.0568714Z"
   }
  ]
 }
