@@ -1,19 +1,61 @@
 {
- "updated": "2026-10-30T12:11:53+00:00",
+ "updated": "2026-10-30T13:30:45+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 138.52",
+   "where": "I-59 NB @ MP 199.51",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.663751999999995,
-   "lon": -86.014808,
-   "start": "2026-10-30T11:52:43Z",
-   "end": "2026-10-30T12:52:43Z",
-   "updated": "2026-10-30T06:54:53Z"
+   "county": "DeKalb",
+   "city": "Collinsville",
+   "lat": 34.209548,
+   "lon": -85.936784,
+   "start": "2026-10-30T13:20:21Z",
+   "end": "2026-10-30T14:20:21Z",
+   "updated": "2026-10-30T08:20:39Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US43 NB/SB @ MP 294.18",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.49362,
+   "lon": -87.72691999999999,
+   "start": "2026-10-30T13:19:43Z",
+   "end": "2026-10-30T14:19:43Z",
+   "updated": "2026-10-30T08:20:40Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 75.48",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.787251999999995,
+   "lon": -86.960712,
+   "start": "2026-10-30T12:44:03Z",
+   "end": "2026-10-30T13:44:03Z",
+   "updated": "2026-10-30T07:44:36Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 NB @ MP 315",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.274556,
+   "lon": -86.899384,
+   "start": "2026-10-30T13:27:00Z",
+   "end": "2026-10-30T14:27:00Z",
+   "updated": "2026-10-30T08:27:17Z"
   }
  ]
 }
