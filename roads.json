@@ -1,33 +1,47 @@
 {
- "updated": "2026-10-30T18:35:36+00:00",
+ "updated": "2026-10-30T19:38:59+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 WB @ MP 92.8",
+   "where": "I-65 NB @ MP 309",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.742432,
-   "lon": -86.67188,
-   "start": "2026-10-30T18:04:25Z",
-   "end": "2026-10-30T19:04:25Z",
-   "updated": "2026-10-30T18:24:49.9830709Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.217515999999996,
+   "lon": -86.87692799999999,
+   "start": "2026-10-30T19:08:30Z",
+   "end": "2026-10-30T20:08:30Z",
+   "updated": "2026-10-30T14:08:59Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 287.52",
+   "where": "US231/431 NB @ MP 336.01",
+   "detail": "Crash with lane blockage. PLease use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.75136,
+   "lon": -86.59778399999999,
+   "start": "2026-10-30T19:24:05Z",
+   "end": "2026-10-30T20:24:05Z",
+   "updated": "2026-10-30T14:25:56Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB @ MP 341.93",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Arab",
-   "lat": 34.334292,
-   "lon": -86.503528,
-   "start": "2026-10-30T17:55:33Z",
-   "end": "2026-10-30T18:55:33Z",
-   "updated": "2026-10-30T18:19:08.0476695Z"
+   "county": "Madison",
+   "city": "Meridianville",
+   "lat": 34.834116,
+   "lon": -86.571456,
+   "start": "2026-10-30T19:20:16Z",
+   "end": "2026-10-30T20:20:16Z",
+   "updated": "2026-10-30T19:34:38.8605681Z"
   },
   {
    "type": "Incident",
@@ -40,8 +54,8 @@
    "lat": 34.274556,
    "lon": -86.899384,
    "start": "2026-10-30T13:27:00Z",
-   "end": "2026-10-30T19:00:00Z",
-   "updated": "2026-10-30T16:15:14.0568714Z"
+   "end": "2026-10-30T20:45:00Z",
+   "updated": "2026-10-30T18:56:56.4559468Z"
   }
  ]
 }
