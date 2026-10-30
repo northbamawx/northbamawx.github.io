@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T16:39:03+00:00",
+ "updated": "2026-10-30T17:33:50+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,8 @@
    "lat": 34.287428,
    "lon": -86.908312,
    "start": "2026-10-30T16:13:33Z",
-   "end": "2026-10-30T17:13:33Z",
-   "updated": "2026-10-30T11:14:37Z"
+   "end": "2026-10-30T18:15:00Z",
+   "updated": "2026-10-30T17:14:21.6509882Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,22 @@
    "lat": 34.796728,
    "lon": -86.954392,
    "start": "2026-10-30T16:28:03Z",
-   "end": "2026-10-30T17:28:03Z",
-   "updated": "2026-10-30T11:28:22Z"
+   "end": "2026-10-30T18:00:00Z",
+   "updated": "2026-10-30T17:25:08.547309Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 90.09",
+   "where": "US31 NB/SB @ MP 345.69",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.755919999999996,
-   "lon": -86.71556799999999,
-   "start": "2026-10-30T16:17:05Z",
-   "end": "2026-10-30T17:17:05Z",
-   "updated": "2026-10-30T11:17:25Z"
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.433944,
+   "lon": -86.937944,
+   "start": "2026-10-30T17:28:29Z",
+   "end": "2026-10-30T18:28:29Z",
+   "updated": "2026-10-30T12:28:47Z"
   },
   {
    "type": "Incident",
