@@ -1,20 +1,6 @@
 {
- "updated": "2026-10-30T22:03:45+00:00",
+ "updated": "2026-10-30T23:02:29+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 31.42",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.78346,
-   "lon": -87.67153599999999,
-   "start": "2026-10-30T21:37:39Z",
-   "end": "2026-10-30T22:37:39Z",
-   "updated": "2026-10-30T16:38:13Z"
-  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -26,50 +12,36 @@
    "lat": 34.962624,
    "lon": -86.82708,
    "start": "2026-10-30T21:56:37Z",
-   "end": "2026-10-30T22:56:37Z",
-   "updated": "2026-10-30T16:57:50Z"
+   "end": "2026-10-31T00:00:00Z",
+   "updated": "2026-10-30T23:00:04.5758948Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 7.78",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "where": "AL53 NB @ MP 321.08",
+   "detail": "Crash with lane blockage. Please use caution when traveling through in this area.",
    "county": "Madison",
-   "city": "Madison",
-   "lat": 34.655344,
-   "lon": -86.806912,
-   "start": "2026-10-30T21:22:47Z",
-   "end": "2026-10-30T22:22:47Z",
-   "updated": "2026-10-30T21:49:46.9774306Z"
+   "city": "Huntsville",
+   "lat": 34.749871999999996,
+   "lon": -86.6348,
+   "start": "2026-10-30T22:36:28Z",
+   "end": "2026-10-30T23:36:28Z",
+   "updated": "2026-10-30T17:38:41Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 87.09",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.749548,
-   "lon": -86.764208,
-   "start": "2026-10-30T21:17:53Z",
-   "end": "2026-10-30T22:17:53Z",
-   "updated": "2026-10-30T16:19:51Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 18.4",
+   "where": "AL36 EB/WB @ MP 43.74",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
-   "city": "Florette",
-   "lat": 34.3963,
-   "lon": -86.677208,
-   "start": "2026-10-30T21:41:53Z",
-   "end": "2026-10-30T22:41:53Z",
-   "updated": "2026-10-30T16:42:57Z"
+   "city": "Lacey Spring",
+   "lat": 34.533004,
+   "lon": -86.601472,
+   "start": "2026-10-30T22:40:07Z",
+   "end": "2026-10-30T23:40:07Z",
+   "updated": "2026-10-30T17:41:07Z"
   }
  ]
 }
