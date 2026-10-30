@@ -1,4 +1,19 @@
 {
- "updated": "2026-10-30T09:42:25+00:00",
- "events": []
+ "updated": "2026-10-30T10:40:03+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 301.34",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Lacey Spring",
+   "lat": 34.5084,
+   "lon": -86.602824,
+   "start": "2026-10-30T10:35:07Z",
+   "end": "2026-10-30T11:35:07Z",
+   "updated": "2026-10-30T05:36:10Z"
+  }
+ ]
 }
