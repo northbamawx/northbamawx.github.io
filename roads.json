@@ -1,48 +1,6 @@
 {
- "updated": "2026-10-30T00:04:03+00:00",
+ "updated": "2026-10-30T01:32:18+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 13.46",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.84192,
-   "lon": -87.67452,
-   "start": "2026-10-29T23:49:41Z",
-   "end": "2026-10-30T00:49:41Z",
-   "updated": "2026-10-29T18:50:56Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL17 NB/SB @ MP 337.07",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.865912,
-   "lon": -87.67392799999999,
-   "start": "2026-10-29T23:39:22Z",
-   "end": "2026-10-30T00:39:22Z",
-   "updated": "2026-10-29T18:40:11Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 SB @ MP 334.24",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.72724,
-   "lon": -86.5968,
-   "start": "2026-10-29T23:23:21Z",
-   "end": "2026-10-30T00:23:21Z",
-   "updated": "2026-10-29T18:24:32Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
@@ -51,11 +9,11 @@
    "detail": "Congestion building northbound. Please use caution when traveling through this area.",
    "county": "Cullman",
    "city": "Cullman",
-   "lat": 34.27054,
-   "lon": -86.898152,
+   "lat": 34.276256,
+   "lon": -86.900128,
    "start": "2026-10-29T23:24:36Z",
-   "end": "2026-10-30T00:30:00Z",
-   "updated": "2026-10-29T18:29:05Z"
+   "end": "2026-10-30T02:30:00Z",
+   "updated": "2026-10-30T01:22:13.8378681Z"
   }
  ]
 }
