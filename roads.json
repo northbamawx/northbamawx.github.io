@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T23:26:39+00:00",
+ "updated": "2026-10-31T23:59:18+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,8 @@
    "lat": 34.490128,
    "lon": -87.672968,
    "start": "2026-10-31T21:36:44Z",
-   "end": "2026-10-31T23:45:00Z",
-   "updated": "2026-10-31T22:39:00.7993804Z"
+   "end": "2026-11-01T00:15:00Z",
+   "updated": "2026-10-31T23:42:56.5148448Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,36 @@
    "lat": 34.842203999999995,
    "lon": -86.709448,
    "start": "2026-10-31T23:00:45Z",
-   "end": "2026-11-01T00:00:45Z",
-   "updated": "2026-10-31T23:21:42.1255125Z"
+   "end": "2026-11-01T00:30:00Z",
+   "updated": "2026-10-31T23:59:10.7434599Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 SB @ MP 43.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.589708,
+   "lon": -87.02884,
+   "start": "2026-10-31T23:36:36Z",
+   "end": "2026-11-01T00:36:36Z",
+   "updated": "2026-10-31T18:37:07Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 65.78",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.619431999999996,
+   "lon": -87.030152,
+   "start": "2026-10-31T23:52:44Z",
+   "end": "2026-11-01T00:52:44Z",
+   "updated": "2026-10-31T18:53:50Z"
   }
  ]
 }
