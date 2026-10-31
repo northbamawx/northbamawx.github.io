@@ -1,4 +1,19 @@
 {
- "updated": "2026-10-31T01:29:56+00:00",
- "events": []
+ "updated": "2026-10-31T02:21:25+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL101 NB/SB @ MP 28.1",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Elgin",
+   "lat": 34.847164,
+   "lon": -87.391256,
+   "start": "2026-10-31T01:46:29Z",
+   "end": "2026-10-31T02:46:29Z",
+   "updated": "2026-10-30T20:47:43Z"
+  }
+ ]
 }
