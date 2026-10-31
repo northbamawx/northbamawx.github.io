@@ -1,4 +1,19 @@
 {
- "updated": "2026-10-31T14:04:58+00:00",
- "events": []
+ "updated": "2026-10-31T15:01:53+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB/SB @ MP 334.44",
+   "detail": "All lanes are open.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.719744,
+   "lon": -86.581024,
+   "start": "2026-10-31T14:36:28Z",
+   "end": "2026-10-31T15:36:28Z",
+   "updated": "2026-10-31T15:00:24.2356792Z"
+  }
+ ]
 }
