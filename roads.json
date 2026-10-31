@@ -1,47 +1,4 @@
 {
- "updated": "2026-10-31T00:00:33+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US43 NB/SB @ MP 296.21",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Russellville",
-   "lat": 34.518167999999996,
-   "lon": -87.71678399999999,
-   "start": "2026-10-30T23:04:46Z",
-   "end": "2026-10-31T00:04:46Z",
-   "updated": "2026-10-30T18:05:27Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 57.94",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Rogersville",
-   "lat": 34.81554,
-   "lon": -87.260544,
-   "start": "2026-10-30T23:37:05Z",
-   "end": "2026-10-31T00:37:05Z",
-   "updated": "2026-10-30T18:38:08Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL36 EB/WB @ MP 43.74",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Lacey Spring",
-   "lat": 34.533004,
-   "lon": -86.601472,
-   "start": "2026-10-30T22:40:07Z",
-   "end": "2026-10-31T01:00:00Z",
-   "updated": "2026-10-30T23:42:52.672023Z"
-  }
- ]
+ "updated": "2026-10-31T01:29:56+00:00",
+ "events": []
 }
