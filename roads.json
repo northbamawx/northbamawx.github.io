@@ -1,33 +1,4 @@
 {
- "updated": "2026-10-31T13:20:24+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-59 NB @ MP 215",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "DeKalb",
-   "city": "Collinsville",
-   "lat": 34.394476,
-   "lon": -85.786464,
-   "start": "2026-10-31T12:32:11Z",
-   "end": "2026-10-31T13:32:11Z",
-   "updated": "2026-10-31T12:41:30.775001Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "US231/431 SB @ MP 345.25",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Meridianville",
-   "lat": 34.880792,
-   "lon": -86.56795199999999,
-   "start": "2026-10-31T11:45:08Z",
-   "end": "2026-10-31T13:45:00Z",
-   "updated": "2026-10-31T12:46:50.2626629Z"
-  }
- ]
+ "updated": "2026-10-31T14:04:58+00:00",
+ "events": []
 }
