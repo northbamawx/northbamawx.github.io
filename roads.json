@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-31T11:01:55+00:00",
+ "updated": "2026-10-31T12:01:36+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "US231/431 SB @ MP 345.25",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Meridianville",
+   "lat": 34.880792,
+   "lon": -86.56795199999999,
+   "start": "2026-10-31T11:45:08Z",
+   "end": "2026-10-31T12:45:08Z",
+   "updated": "2026-10-31T06:55:36Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +26,8 @@
    "lat": 34.527288,
    "lon": -86.905008,
    "start": "2026-10-31T10:18:43Z",
-   "end": "2026-10-31T11:18:43Z",
-   "updated": "2026-10-31T10:49:06.4939509Z"
+   "end": "2026-10-31T12:15:00Z",
+   "updated": "2026-10-31T11:15:49.7376506Z"
   }
  ]
 }
