@@ -1,19 +1,33 @@
 {
- "updated": "2026-10-31T02:21:25+00:00",
+ "updated": "2026-10-31T03:13:25+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL101 NB/SB @ MP 28.1",
+   "where": "US43 NB/SB @ MP 292",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Elgin",
-   "lat": 34.847164,
-   "lon": -87.391256,
-   "start": "2026-10-31T01:46:29Z",
-   "end": "2026-10-31T02:46:29Z",
-   "updated": "2026-10-30T20:47:43Z"
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.468779999999995,
+   "lon": -87.75148,
+   "start": "2026-10-31T02:38:53Z",
+   "end": "2026-10-31T03:38:53Z",
+   "updated": "2026-10-30T21:40:01Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 80.29",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.766568,
+   "lon": -86.883352,
+   "start": "2026-10-31T03:03:24Z",
+   "end": "2026-10-31T04:03:24Z",
+   "updated": "2026-10-30T22:04:32Z"
   }
  ]
 }
