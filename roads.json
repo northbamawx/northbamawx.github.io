@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-31T12:01:36+00:00",
+ "updated": "2026-10-31T13:20:24+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-59 NB @ MP 215",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "DeKalb",
+   "city": "Collinsville",
+   "lat": 34.394476,
+   "lon": -85.786464,
+   "start": "2026-10-31T12:32:11Z",
+   "end": "2026-10-31T13:32:11Z",
+   "updated": "2026-10-31T12:41:30.775001Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,22 +26,8 @@
    "lat": 34.880792,
    "lon": -86.56795199999999,
    "start": "2026-10-31T11:45:08Z",
-   "end": "2026-10-31T12:45:08Z",
-   "updated": "2026-10-31T06:55:36Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 332.89",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.527288,
-   "lon": -86.905008,
-   "start": "2026-10-31T10:18:43Z",
-   "end": "2026-10-31T12:15:00Z",
-   "updated": "2026-10-31T11:15:49.7376506Z"
+   "end": "2026-10-31T13:45:00Z",
+   "updated": "2026-10-31T12:46:50.2626629Z"
   }
  ]
 }
