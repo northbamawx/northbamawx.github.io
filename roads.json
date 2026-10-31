@@ -1,33 +1,33 @@
 {
- "updated": "2026-10-30T23:02:29+00:00",
+ "updated": "2026-10-31T00:00:33+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL251 NB/SB @ MP 14.72",
+   "where": "US43 NB/SB @ MP 296.21",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Ardmore",
-   "lat": 34.962624,
-   "lon": -86.82708,
-   "start": "2026-10-30T21:56:37Z",
-   "end": "2026-10-31T00:00:00Z",
-   "updated": "2026-10-30T23:00:04.5758948Z"
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.518167999999996,
+   "lon": -87.71678399999999,
+   "start": "2026-10-30T23:04:46Z",
+   "end": "2026-10-31T00:04:46Z",
+   "updated": "2026-10-30T18:05:27Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB @ MP 321.08",
-   "detail": "Crash with lane blockage. Please use caution when traveling through in this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.749871999999996,
-   "lon": -86.6348,
-   "start": "2026-10-30T22:36:28Z",
-   "end": "2026-10-30T23:36:28Z",
-   "updated": "2026-10-30T17:38:41Z"
+   "where": "US72 EB/WB @ MP 57.94",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Rogersville",
+   "lat": 34.81554,
+   "lon": -87.260544,
+   "start": "2026-10-30T23:37:05Z",
+   "end": "2026-10-31T00:37:05Z",
+   "updated": "2026-10-30T18:38:08Z"
   },
   {
    "type": "Crash",
@@ -40,8 +40,8 @@
    "lat": 34.533004,
    "lon": -86.601472,
    "start": "2026-10-30T22:40:07Z",
-   "end": "2026-10-30T23:40:07Z",
-   "updated": "2026-10-30T17:41:07Z"
+   "end": "2026-10-31T01:00:00Z",
+   "updated": "2026-10-30T23:42:52.672023Z"
   }
  ]
 }
