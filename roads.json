@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-31T03:13:25+00:00",
+ "updated": "2026-10-31T04:12:47+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 2.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.198684,
+   "lon": -86.808296,
+   "start": "2026-10-31T03:55:39Z",
+   "end": "2026-10-31T04:55:39Z",
+   "updated": "2026-10-30T22:57:08Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +26,22 @@
    "lat": 34.468779999999995,
    "lon": -87.75148,
    "start": "2026-10-31T02:38:53Z",
-   "end": "2026-10-31T03:38:53Z",
-   "updated": "2026-10-30T21:40:01Z"
+   "end": "2026-10-31T04:15:00Z",
+   "updated": "2026-10-31T03:38:28.8312047Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 81.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.76422,
+   "lon": -86.86380799999999,
+   "start": "2026-10-31T03:37:44Z",
+   "end": "2026-10-31T04:37:44Z",
+   "updated": "2026-10-30T22:38:24Z"
   },
   {
    "type": "Crash",
@@ -26,8 +54,36 @@
    "lat": 34.766568,
    "lon": -86.883352,
    "start": "2026-10-31T03:03:24Z",
-   "end": "2026-10-31T04:03:24Z",
-   "updated": "2026-10-30T22:04:32Z"
+   "end": "2026-10-31T04:45:00Z",
+   "updated": "2026-10-31T03:59:51.8587406Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 368.97",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.752012,
+   "lon": -86.957144,
+   "start": "2026-10-31T03:17:03Z",
+   "end": "2026-10-31T04:17:03Z",
+   "updated": "2026-10-30T22:17:42Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 SB @ MP 351.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.506352,
+   "lon": -86.96902399999999,
+   "start": "2026-10-31T03:29:38Z",
+   "end": "2026-10-31T04:29:38Z",
+   "updated": "2026-10-30T22:31:18Z"
   }
  ]
 }
