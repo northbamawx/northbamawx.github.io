@@ -1,33 +1,19 @@
 {
- "updated": "2026-10-31T19:30:15+00:00",
+ "updated": "2026-10-31T20:24:55+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 32.52",
+   "where": "US31 NB/SB @ MP 355.8",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.788888,
-   "lon": -87.673416,
-   "start": "2026-10-31T17:57:54Z",
-   "end": "2026-10-31T20:00:00Z",
-   "updated": "2026-10-31T19:00:21.3919534Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 94.89",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.734944,
-   "lon": -86.637104,
-   "start": "2026-10-31T18:52:26Z",
-   "end": "2026-10-31T19:52:26Z",
-   "updated": "2026-10-31T13:54:39Z"
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.573736,
+   "lon": -86.97384,
+   "start": "2026-10-31T20:04:16Z",
+   "end": "2026-10-31T21:04:16Z",
+   "updated": "2026-10-31T15:04:28Z"
   }
  ]
 }
