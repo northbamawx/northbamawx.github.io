@@ -1,4 +1,19 @@
 {
- "updated": "2026-10-31T10:07:04+00:00",
- "events": []
+ "updated": "2026-10-31T11:01:55+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 332.89",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.527288,
+   "lon": -86.905008,
+   "start": "2026-10-31T10:18:43Z",
+   "end": "2026-10-31T11:18:43Z",
+   "updated": "2026-10-31T10:49:06.4939509Z"
+  }
+ ]
 }
