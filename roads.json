@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-31T17:57:59+00:00",
+ "updated": "2026-10-31T18:37:45+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 32.52",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.788888,
+   "lon": -87.673416,
+   "start": "2026-10-31T17:57:54Z",
+   "end": "2026-10-31T18:57:54Z",
+   "updated": "2026-10-31T12:59:14Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +26,8 @@
    "lat": 34.962688,
    "lon": -86.827112,
    "start": "2026-10-31T16:38:43Z",
-   "end": "2026-10-31T18:00:00Z",
-   "updated": "2026-10-31T17:34:38.2603099Z"
+   "end": "2026-10-31T19:00:00Z",
+   "updated": "2026-10-31T18:01:33.6312122Z"
   }
  ]
 }
