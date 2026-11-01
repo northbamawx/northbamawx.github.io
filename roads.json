@@ -1,33 +1,33 @@
 {
- "updated": "2026-11-01T03:42:29+00:00",
+ "updated": "2026-11-01T04:42:37+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 322.88",
+   "where": "US72 WB @ MP 96.29",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.77214,
-   "lon": -86.65164,
-   "start": "2026-11-01T03:03:00Z",
-   "end": "2026-11-01T04:03:00Z",
-   "updated": "2026-10-31T22:03:36Z"
+   "lat": 34.735348,
+   "lon": -86.612376,
+   "start": "2026-11-01T04:11:53Z",
+   "end": "2026-11-01T05:11:53Z",
+   "updated": "2026-11-01T04:21:53.6246175Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 SB @ MP 316.65",
+   "title": "Overturned Vehicle",
+   "where": "AL69 NB/SB @ MP 277.94",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.71768,
-   "lon": -86.591904,
-   "start": "2026-11-01T03:27:57Z",
-   "end": "2026-11-01T04:27:57Z",
-   "updated": "2026-10-31T22:29:17Z"
+   "county": "Marshall",
+   "city": "Guntersville",
+   "lat": 34.361328,
+   "lon": -86.344768,
+   "start": "2026-11-01T04:16:48Z",
+   "end": "2026-11-01T05:16:48Z",
+   "updated": "2026-10-31T23:17:34Z"
   }
  ]
 }
