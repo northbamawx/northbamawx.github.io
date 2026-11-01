@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-01T11:09:45+00:00",
- "events": []
+ "updated": "2026-11-01T11:59:41+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB @ MP 344.84",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Meridianville",
+   "lat": 34.876152,
+   "lon": -86.570272,
+   "start": "2026-11-01T11:07:09Z",
+   "end": "2026-11-01T12:07:09Z",
+   "updated": "2026-11-01T11:29:28.7655089Z"
+  }
+ ]
 }
