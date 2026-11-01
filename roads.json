@@ -1,47 +1,33 @@
 {
- "updated": "2026-11-01T05:38:21+00:00",
+ "updated": "2026-11-01T06:44:13+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 162.21",
+   "where": "US31 NB/SB @ MP 321.55",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Bridgeport",
-   "lat": 34.92968,
-   "lon": -85.767152,
-   "start": "2026-11-01T04:41:38Z",
-   "end": "2026-11-01T05:41:38Z",
-   "updated": "2026-10-31T23:42:28Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.110068,
+   "lon": -86.809024,
+   "start": "2026-11-01T05:48:51Z",
+   "end": "2026-11-01T07:48:51Z",
+   "updated": "2026-11-01T00:49:40Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 85.49",
+   "where": "I-65 SB @ MP 292.17",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.748695999999995,
-   "lon": -86.796472,
-   "start": "2026-11-01T05:13:25Z",
-   "end": "2026-11-01T07:13:25Z",
-   "updated": "2026-11-01T00:14:19Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL69 NB/SB @ MP 277.94",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.361328,
-   "lon": -86.344768,
-   "start": "2026-11-01T04:16:48Z",
-   "end": "2026-11-01T07:00:00Z",
-   "updated": "2026-11-01T05:17:46.1336385Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 33.952284,
+   "lon": -86.870832,
+   "start": "2026-11-01T05:32:46Z",
+   "end": "2026-11-01T07:32:46Z",
+   "updated": "2026-11-01T00:34:03Z"
   }
  ]
 }
