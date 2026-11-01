@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-01T13:41:03+00:00",
+ "updated": "2026-11-01T14:29:01+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 SB @ MP 307.63",
+   "where": "US72 EB @ MP 94.1",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.59044,
-   "lon": -86.56303199999999,
-   "start": "2026-11-01T12:57:44Z",
-   "end": "2026-11-01T13:57:44Z",
-   "updated": "2026-11-01T07:00:15Z"
+   "lat": 34.736352,
+   "lon": -86.650256,
+   "start": "2026-11-01T13:36:31Z",
+   "end": "2026-11-01T14:36:31Z",
+   "updated": "2026-11-01T14:00:08.1266237Z"
   }
  ]
 }
