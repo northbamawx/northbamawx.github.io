@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-01T22:01:38+00:00",
+ "updated": "2026-11-01T23:00:12+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 38.03",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.492872,
+   "lon": -87.279392,
+   "start": "2026-11-01T22:11:35Z",
+   "end": "2026-11-01T23:11:35Z",
+   "updated": "2026-11-01T16:12:18Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +26,8 @@
    "lat": 34.284544,
    "lon": -86.121072,
    "start": "2026-11-01T21:38:25Z",
-   "end": "2026-11-01T22:38:25Z",
-   "updated": "2026-11-01T15:38:53Z"
+   "end": "2026-11-01T23:30:00Z",
+   "updated": "2026-11-01T22:35:29.1029189Z"
   }
  ]
 }
