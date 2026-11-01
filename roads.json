@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-01T06:44:13+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 321.55",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.110068,
-   "lon": -86.809024,
-   "start": "2026-11-01T05:48:51Z",
-   "end": "2026-11-01T07:48:51Z",
-   "updated": "2026-11-01T00:49:40Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 292.17",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 33.952284,
-   "lon": -86.870832,
-   "start": "2026-11-01T05:32:46Z",
-   "end": "2026-11-01T07:32:46Z",
-   "updated": "2026-11-01T00:34:03Z"
-  }
- ]
+ "updated": "2026-11-01T07:50:22+00:00",
+ "events": []
 }
