@@ -1,4 +1,33 @@
 {
- "updated": "2026-11-01T07:50:22+00:00",
- "events": []
+ "updated": "2026-11-01T08:39:42+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 EB/WB @ MP 21.26",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.753276,
+   "lon": -86.57248,
+   "start": "2026-11-01T08:26:12Z",
+   "end": "2026-11-01T09:26:12Z",
+   "updated": "2026-11-01T02:27:01Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL168 EB/WB @ MP 14.32",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Boaz",
+   "lat": 34.240407999999995,
+   "lon": -86.115816,
+   "start": "2026-11-01T07:56:01Z",
+   "end": "2026-11-01T08:56:01Z",
+   "updated": "2026-11-01T01:56:52Z"
+  }
+ ]
 }
