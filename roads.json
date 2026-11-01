@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-01T16:00:02+00:00",
+ "updated": "2026-11-01T16:37:32+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 328",
+   "where": "AL255 SB @ MP 3.1",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.44956,
-   "lon": -86.90127199999999,
-   "start": "2026-11-01T14:57:07Z",
-   "end": "2026-11-01T17:00:00Z",
-   "updated": "2026-11-01T15:58:14.0605454Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.7455,
+   "lon": -86.670096,
+   "start": "2026-11-01T16:14:37Z",
+   "end": "2026-11-01T17:14:37Z",
+   "updated": "2026-11-01T16:25:08.0036419Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB @ MP 322.92",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Owens Cross Rds",
+   "lat": 34.623944,
+   "lon": -86.45764799999999,
+   "start": "2026-11-01T16:23:46Z",
+   "end": "2026-11-01T17:23:46Z",
+   "updated": "2026-11-01T16:35:55.8267749Z"
   },
   {
    "type": "RoadCondition",
