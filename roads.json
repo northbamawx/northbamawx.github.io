@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-01T17:25:47+00:00",
+ "updated": "2026-11-01T17:58:40+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US431 NB @ MP 322.92",
+   "where": "US72 EB/WB @ MP 70.7",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Owens Cross Rds",
-   "lat": 34.623944,
-   "lon": -86.45764799999999,
-   "start": "2026-11-01T16:23:46Z",
-   "end": "2026-11-01T18:15:00Z",
-   "updated": "2026-11-01T17:08:15.5867641Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.791516,
+   "lon": -87.03648,
+   "start": "2026-11-01T17:38:47Z",
+   "end": "2026-11-01T18:38:47Z",
+   "updated": "2026-11-01T11:53:50Z"
   }
  ]
 }
