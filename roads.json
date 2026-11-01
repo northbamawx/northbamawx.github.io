@@ -1,33 +1,47 @@
 {
- "updated": "2026-11-01T23:00:12+00:00",
+ "updated": "2026-11-01T23:58:37+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 38.03",
+   "where": "AL33 NB/SB @ MP 28.22",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Lawrence",
    "city": "Moulton",
-   "lat": 34.492872,
-   "lon": -87.279392,
-   "start": "2026-11-01T22:11:35Z",
-   "end": "2026-11-01T23:11:35Z",
-   "updated": "2026-11-01T16:12:18Z"
+   "lat": 34.515768,
+   "lon": -87.2918,
+   "start": "2026-11-01T23:49:14Z",
+   "end": "2026-11-02T00:49:14Z",
+   "updated": "2026-11-01T17:49:41Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL68 EB/WB @ MP 1.89",
+   "where": "AL20 EB/WB @ MP 73.27",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Albertville",
-   "lat": 34.284544,
-   "lon": -86.121072,
-   "start": "2026-11-01T21:38:25Z",
-   "end": "2026-11-01T23:30:00Z",
-   "updated": "2026-11-01T22:35:29.1029189Z"
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.628144,
+   "lon": -86.914648,
+   "start": "2026-11-01T23:17:43Z",
+   "end": "2026-11-02T00:17:43Z",
+   "updated": "2026-11-01T17:47:45Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 87.59",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.752856,
+   "lon": -86.76066399999999,
+   "start": "2026-11-01T23:09:02Z",
+   "end": "2026-11-02T00:09:02Z",
+   "updated": "2026-11-01T23:33:50.6084721Z"
   }
  ]
 }
