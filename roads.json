@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-01T20:26:17+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 8.97",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.673896,
-   "lon": -86.75694399999999,
-   "start": "2026-11-01T19:49:27Z",
-   "end": "2026-11-01T20:49:27Z",
-   "updated": "2026-11-01T13:51:05Z"
-  }
- ]
+ "updated": "2026-11-01T21:03:28+00:00",
+ "events": []
 }
