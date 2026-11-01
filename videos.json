@@ -1,23 +1,17 @@
 {
- "updated": 1793561449,
+ "updated": 1793564777,
  "items": [
   {
-   "id": "qLXAergAbdM",
+   "id": "6DFhd_YFEcc",
    "title": "Flood Warning - Lauderdale, Colbert, Lawrence - November 01, 2026",
    "short": true,
-   "published": 1793559850
+   "published": 1793562851
   },
   {
    "id": "csf1Qp9H-Ro",
    "title": "High Wind Warning in New Mexico, Texas, and Wyoming",
    "short": true,
    "published": 1793556153
-  },
-  {
-   "id": "udhWj5aHYFc",
-   "title": "Flash Flood Warning - Lauderdale - November 01, 2026",
-   "short": true,
-   "published": 1793553583
   }
  ]
 }
