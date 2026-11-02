@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T00:56:40+00:00",
+ "updated": "2026-11-02T01:56:14+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,8 @@
    "lat": 34.244915999999996,
    "lon": -86.88575999999999,
    "start": "2026-11-02T00:41:58Z",
-   "end": "2026-11-02T01:41:58Z",
-   "updated": "2026-11-01T18:42:33Z"
+   "end": "2026-11-02T02:30:00Z",
+   "updated": "2026-11-02T01:41:45.2043378Z"
   },
   {
    "type": "Crash",
@@ -33,29 +33,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 87.59",
+   "where": "AL168 EB/WB @ MP 13.61",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.74894,
-   "lon": -86.69348,
-   "start": "2026-11-01T23:09:02Z",
-   "end": "2026-11-02T01:00:00Z",
-   "updated": "2026-11-02T00:11:05.120174Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB @ MP 324.39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.790748,
-   "lon": -86.66684,
-   "start": "2026-11-02T00:32:07Z",
-   "end": "2026-11-02T01:32:07Z",
-   "updated": "2026-11-01T18:32:44Z"
+   "county": "Marshall",
+   "city": "Boaz",
+   "lat": 34.232532,
+   "lon": -86.124128,
+   "start": "2026-11-02T01:28:28Z",
+   "end": "2026-11-02T02:28:28Z",
+   "updated": "2026-11-01T19:29:11Z"
   }
  ]
 }
