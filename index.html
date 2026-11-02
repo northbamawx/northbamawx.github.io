@@ -1323,19 +1323,27 @@ function metarFill(p) {
   return p;
 }
 
-// The latest KHSV observation, gaps filled; if even the METAR has no temperature, the most
-// recent observation that does (its own time shows as "Updated").
+// The latest KHSV observation, gaps filled from its METAR. Anything still blank (the 5-minute
+// reports between hourly ones carry no METAR) comes from the most recent observation in the
+// last 2 hours that has it.
+const OBS_FIELDS = ['temperature', 'dewpoint', 'relativeHumidity', 'windSpeed', 'windDirection',
+                    'windGust', 'heatIndex', 'windChill'];
 async function khsvObservation() {
   const hdr = { headers: { Accept: 'application/geo+json' } };
   const r = await fetch('https://api.weather.gov/stations/KHSV/observations/latest', hdr);
   if (!r.ok) throw new Error(r.status);
   const p = metarFill((await r.json()).properties);
-  if (p.temperature && p.temperature.value != null) return p;
+  const blank = k => !(p[k] && p[k].value != null);
+  // Gust is legitimately blank in calm air, so it alone doesn't send us looking back
+  if (!['temperature', 'relativeHumidity', 'windSpeed'].some(blank)) return p;
   try {
-    const list = await (await fetch('https://api.weather.gov/stations/KHSV/observations?limit=6', hdr)).json();
+    const list = await (await fetch('https://api.weather.gov/stations/KHSV/observations?limit=12', hdr)).json();
+    const cutoff = Date.now() - 2 * 3600 * 1000;
     for (const f of list.features || []) {
       const q = metarFill(f.properties);
-      if (q.temperature && q.temperature.value != null) return q;
+      if (new Date(q.timestamp).getTime() < cutoff) break;
+      for (const k of OBS_FIELDS) if (blank(k) && q[k] && q[k].value != null) p[k] = q[k];
+      if (!['temperature', 'relativeHumidity', 'windSpeed'].some(blank)) break;
     }
   } catch (e) {}
   return p;
