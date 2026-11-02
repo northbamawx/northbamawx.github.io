@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-01T23:58:37+00:00",
+ "updated": "2026-11-02T00:56:40+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "I-65 SB @ MP 312.79",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.244915999999996,
+   "lon": -86.88575999999999,
+   "start": "2026-11-02T00:41:58Z",
+   "end": "2026-11-02T01:41:58Z",
+   "updated": "2026-11-01T18:42:33Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,22 +26,8 @@
    "lat": 34.515768,
    "lon": -87.2918,
    "start": "2026-11-01T23:49:14Z",
-   "end": "2026-11-02T00:49:14Z",
-   "updated": "2026-11-01T17:49:41Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 73.27",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.628144,
-   "lon": -86.914648,
-   "start": "2026-11-01T23:17:43Z",
-   "end": "2026-11-02T00:17:43Z",
-   "updated": "2026-11-01T17:47:45Z"
+   "end": "2026-11-02T02:00:00Z",
+   "updated": "2026-11-02T00:48:12.1386176Z"
   },
   {
    "type": "Crash",
@@ -37,11 +37,25 @@
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Madison",
-   "lat": 34.752856,
-   "lon": -86.76066399999999,
+   "lat": 34.74894,
+   "lon": -86.69348,
    "start": "2026-11-01T23:09:02Z",
-   "end": "2026-11-02T00:09:02Z",
-   "updated": "2026-11-01T23:33:50.6084721Z"
+   "end": "2026-11-02T01:00:00Z",
+   "updated": "2026-11-02T00:11:05.120174Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL53 NB @ MP 324.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.790748,
+   "lon": -86.66684,
+   "start": "2026-11-02T00:32:07Z",
+   "end": "2026-11-02T01:32:07Z",
+   "updated": "2026-11-01T18:32:44Z"
   }
  ]
 }
