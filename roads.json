@@ -1,47 +1,47 @@
 {
- "updated": "2026-11-02T22:09:12+00:00",
+ "updated": "2026-11-02T23:07:28+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL91 NB/SB @ MP 30.05",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Hanceville",
-   "lat": 34.10552,
-   "lon": -86.710488,
-   "start": "2026-11-02T21:28:17Z",
-   "end": "2026-11-02T22:28:17Z",
-   "updated": "2026-11-02T15:31:03Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 93.68",
+   "where": "US231 NB @ MP 315.26",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.738192,
-   "lon": -86.656376,
-   "start": "2026-11-02T21:35:15Z",
-   "end": "2026-11-02T22:35:15Z",
-   "updated": "2026-11-02T15:36:29Z"
+   "lat": 34.697252,
+   "lon": -86.583992,
+   "start": "2026-11-02T23:01:09Z",
+   "end": "2026-11-03T00:01:09Z",
+   "updated": "2026-11-02T17:02:22Z"
   },
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 321.58",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 13.39",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.755952,
-   "lon": -86.639264,
-   "start": "2026-11-02T20:48:15Z",
-   "end": "2026-11-02T22:30:00Z",
-   "updated": "2026-11-02T22:00:21.6793763Z"
+   "lat": 34.701671999999995,
+   "lon": -86.687544,
+   "start": "2026-11-02T22:29:54Z",
+   "end": "2026-11-02T23:30:00Z",
+   "updated": "2026-11-02T16:31:29Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 19.86",
+   "detail": "Congestion building in the area eastbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.739092,
+   "lon": -86.586416,
+   "start": "2026-11-02T22:28:59Z",
+   "end": "2026-11-03T00:15:00Z",
+   "updated": "2026-11-02T16:29:52Z"
   }
  ]
 }
