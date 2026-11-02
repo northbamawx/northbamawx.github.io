@@ -1,19 +1,47 @@
 {
- "updated": "2026-11-02T15:20:32+00:00",
+ "updated": "2026-11-02T16:28:16+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 WB @ MP 87.09",
+   "where": "US31 NB/SB @ MP 325.66",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.748819999999995,
-   "lon": -86.767704,
-   "start": "2026-11-02T14:30:46Z",
-   "end": "2026-11-02T15:30:46Z",
-   "updated": "2026-11-02T14:40:39.9448756Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.162664,
+   "lon": -86.83631199999999,
+   "start": "2026-11-02T15:49:31Z",
+   "end": "2026-11-02T16:49:31Z",
+   "updated": "2026-11-02T09:49:53Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL17 NB/SB @ MP 298.97",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Phil Campbell",
+   "lat": 34.347856,
+   "lon": -87.76563999999999,
+   "start": "2026-11-02T15:40:58Z",
+   "end": "2026-11-02T16:40:58Z",
+   "updated": "2026-11-02T10:19:24Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 77.28",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.781324,
+   "lon": -86.93056,
+   "start": "2026-11-02T15:42:48Z",
+   "end": "2026-11-02T16:42:48Z",
+   "updated": "2026-11-02T10:09:18Z"
   }
  ]
 }
