@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-02T21:10:56+00:00",
+ "updated": "2026-11-02T22:09:12+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 96.99",
+   "where": "AL91 NB/SB @ MP 30.05",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Hanceville",
+   "lat": 34.10552,
+   "lon": -86.710488,
+   "start": "2026-11-02T21:28:17Z",
+   "end": "2026-11-02T22:28:17Z",
+   "updated": "2026-11-02T15:31:03Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 93.68",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.740128,
-   "lon": -86.60108799999999,
-   "start": "2026-11-02T20:57:03Z",
-   "end": "2026-11-02T21:57:03Z",
-   "updated": "2026-11-02T14:58:02Z"
+   "lat": 34.738192,
+   "lon": -86.656376,
+   "start": "2026-11-02T21:35:15Z",
+   "end": "2026-11-02T22:35:15Z",
+   "updated": "2026-11-02T15:36:29Z"
   },
   {
    "type": "Crash",
@@ -26,22 +40,8 @@
    "lat": 34.755952,
    "lon": -86.639264,
    "start": "2026-11-02T20:48:15Z",
-   "end": "2026-11-02T21:48:15Z",
-   "updated": "2026-11-02T21:06:20.5349255Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "US72 WB @ MP 38.35",
-   "detail": "Debris in area. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.84224,
-   "lon": -87.59172799999999,
-   "start": "2026-11-02T20:53:48Z",
-   "end": "2026-11-02T21:53:48Z",
-   "updated": "2026-11-02T14:54:53Z"
+   "end": "2026-11-02T22:30:00Z",
+   "updated": "2026-11-02T22:00:21.6793763Z"
   }
  ]
 }
