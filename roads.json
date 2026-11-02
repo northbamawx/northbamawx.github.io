@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-02T18:19:01+00:00",
+ "updated": "2026-11-02T19:23:38+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL17 NB/SB @ MP 298.97",
+   "where": "US431 SB @ MP 311.56",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Phil Campbell",
-   "lat": 34.347856,
-   "lon": -87.76563999999999,
-   "start": "2026-11-02T15:40:58Z",
-   "end": "2026-11-02T18:30:00Z",
-   "updated": "2026-11-02T17:31:59.8442173Z"
+   "county": "Marshall",
+   "city": "New Hope",
+   "lat": 34.485416,
+   "lon": -86.380296,
+   "start": "2026-11-02T18:53:46Z",
+   "end": "2026-11-02T19:53:46Z",
+   "updated": "2026-11-02T13:05:38Z"
   }
  ]
 }
