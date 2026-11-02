@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-02T02:45:01+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL168 EB/WB @ MP 13.61",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Boaz",
-   "lat": 34.232532,
-   "lon": -86.124128,
-   "start": "2026-11-02T01:28:28Z",
-   "end": "2026-11-02T03:00:00Z",
-   "updated": "2026-11-02T02:29:43.0755747Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 SB @ MP 41.99",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.574383999999995,
-   "lon": -87.01599999999999,
-   "start": "2026-11-02T02:18:47Z",
-   "end": "2026-11-02T03:18:47Z",
-   "updated": "2026-11-01T20:19:53Z"
-  }
- ]
+ "updated": "2026-11-02T03:46:11+00:00",
+ "events": []
 }
