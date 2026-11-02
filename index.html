@@ -1293,11 +1293,57 @@ async function loadAlerts() {
 }
 
 const compass = deg => deg == null ? '' : ['N','NE','E','SE','S','SW','W','NW'][Math.round(deg / 45) % 8];
+// NWS sometimes blanks a whole KHSV observation in quality control (temperature, wind and
+// humidity all null) while its raw METAR still carries the readings -- fill the gaps from it.
+function metarFill(p) {
+  const m = ' ' + (p.rawMessage || '') + ' ';
+  const has = o => o && o.value != null;
+  let t = null, td = null;
+  const tg = m.match(/\sT([01])(\d{3})([01])(\d{3})\s/);      // remarks group: T01780111 = 17.8 / 11.1 C
+  if (tg) {
+    t = (tg[1] === '1' ? -1 : 1) * tg[2] / 10;
+    td = (tg[3] === '1' ? -1 : 1) * tg[4] / 10;
+  } else {
+    const g = m.match(/\s(M?\d{2})\/(M?\d{2})?\s/);           // body group: 18/11, M02/M05
+    const n = s => s ? (s[0] === 'M' ? -1 : 1) * parseInt(s.replace('M', ''), 10) : null;
+    if (g) { t = n(g[1]); td = n(g[2]); }
+  }
+  if (!has(p.temperature) && t != null) p.temperature = { value: t };
+  if (!has(p.dewpoint) && td != null) p.dewpoint = { value: td };
+  if (!has(p.relativeHumidity) && has(p.temperature) && has(p.dewpoint)) {
+    const es = x => Math.exp(17.625 * x / (243.04 + x));
+    p.relativeHumidity = { value: 100 * es(p.dewpoint.value) / es(p.temperature.value) };
+  }
+  const w = m.match(/\s(\d{3}|VRB)(\d{2,3})(?:G(\d{2,3}))?KT\s/);  // 13012KT, 24015G25KT (knots)
+  if (w) {
+    if (!has(p.windSpeed)) p.windSpeed = { value: w[2] * 1.852 };
+    if (!has(p.windDirection) && w[1] !== 'VRB') p.windDirection = { value: +w[1] };
+    if (!has(p.windGust) && w[3]) p.windGust = { value: w[3] * 1.852 };
+  }
+  return p;
+}
+
+// The latest KHSV observation, gaps filled; if even the METAR has no temperature, the most
+// recent observation that does (its own time shows as "Updated").
+async function khsvObservation() {
+  const hdr = { headers: { Accept: 'application/geo+json' } };
+  const r = await fetch('https://api.weather.gov/stations/KHSV/observations/latest', hdr);
+  if (!r.ok) throw new Error(r.status);
+  const p = metarFill((await r.json()).properties);
+  if (p.temperature && p.temperature.value != null) return p;
+  try {
+    const list = await (await fetch('https://api.weather.gov/stations/KHSV/observations?limit=6', hdr)).json();
+    for (const f of list.features || []) {
+      const q = metarFill(f.properties);
+      if (q.temperature && q.temperature.value != null) return q;
+    }
+  } catch (e) {}
+  return p;
+}
+
 async function loadConditions() {
   try {
-    const r = await fetch('https://api.weather.gov/stations/KHSV/observations/latest', { headers: { Accept: 'application/geo+json' } });
-    if (!r.ok) throw new Error(r.status);
-    const p = (await r.json()).properties;
+    const p = await khsvObservation();
     const c = p.temperature && p.temperature.value;
     if (c != null) document.getElementById('wx-temp').textContent = Math.round(c * 9 / 5 + 32) + '°';
     document.getElementById('wx-desc').textContent = p.textDescription || '';
@@ -2087,7 +2133,7 @@ setInterval(loadRoads, 600000);
 // ---- Feels like (heat index / wind chill from the KHSV observation) ----
 async function loadFeelsLike() {
   try {
-    const p = (await (await fetch('https://api.weather.gov/stations/KHSV/observations/latest', { headers: { Accept: 'application/geo+json' } })).json()).properties;
+    const p = await khsvObservation();
     const f = c => Math.round(c * 9 / 5 + 32);
     const t = p.temperature && p.temperature.value;
     const hi = p.heatIndex && p.heatIndex.value, wc = p.windChill && p.windChill.value;
