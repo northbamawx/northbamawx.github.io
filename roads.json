@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-03T10:21:57+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "I-65 NB @ MP 306.49",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.156804,
-   "lon": -86.872224,
-   "start": "2026-11-03T10:02:57Z",
-   "end": "2026-11-03T11:02:57Z",
-   "updated": "2026-11-03T04:04:25Z"
-  }
- ]
+ "updated": "2026-11-03T11:20:56+00:00",
+ "events": []
 }
