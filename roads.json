@@ -1,89 +1,19 @@
 {
- "updated": "2026-11-03T14:48:03+00:00",
+ "updated": "2026-11-03T15:40:28+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 82.39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.762395999999995,
-   "lon": -86.84626399999999,
-   "start": "2026-11-03T13:29:04Z",
-   "end": "2026-11-03T15:30:00Z",
-   "updated": "2026-11-03T14:27:53.8710439Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 372.07",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.796735999999996,
-   "lon": -86.95447999999999,
-   "start": "2026-11-03T13:16:53Z",
-   "end": "2026-11-03T15:45:00Z",
-   "updated": "2026-11-03T14:44:04.1741401Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 15",
+   "where": "AL53 SB @ MP 319.75",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.712872,
-   "lon": -86.653776,
-   "start": "2026-11-03T13:45:45Z",
-   "end": "2026-11-03T15:30:00Z",
-   "updated": "2026-11-03T14:44:04.1742502Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 314.76",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.690619999999996,
-   "lon": -86.58061599999999,
-   "start": "2026-11-03T13:48:11Z",
-   "end": "2026-11-03T15:15:00Z",
-   "updated": "2026-11-03T14:44:04.1766429Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 356.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.589628,
-   "lon": -86.98047199999999,
-   "start": "2026-11-03T13:46:57Z",
-   "end": "2026-11-03T15:15:00Z",
-   "updated": "2026-11-03T14:44:04.1743083Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "US231 NB @ MP 312.36",
-   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.658136,
-   "lon": -86.56948,
-   "start": "2026-11-03T13:56:15Z",
-   "end": "2026-11-03T14:56:15Z",
-   "updated": "2026-11-03T07:57:40Z"
+   "lat": 34.732332,
+   "lon": -86.627264,
+   "start": "2026-11-03T15:06:55Z",
+   "end": "2026-11-03T16:06:55Z",
+   "updated": "2026-11-03T15:14:08.0597984Z"
   }
  ]
 }
