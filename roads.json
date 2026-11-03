@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-03T19:44:07+00:00",
+ "updated": "2026-11-03T20:38:29+00:00",
  "events": [
   {
-   "type": "Incident",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 NB @ MP 318.29",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.317783999999996,
-   "lon": -86.90045599999999,
-   "start": "2026-11-03T19:27:14Z",
-   "end": "2026-11-03T20:27:14Z",
-   "updated": "2026-11-03T13:28:06Z"
+   "title": "Moderate Crash",
+   "where": "AL53 NB/SB @ MP 815.95",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.72094,
+   "lon": -86.627848,
+   "start": "2026-11-03T20:26:22Z",
+   "end": "2026-11-03T21:26:22Z",
+   "updated": "2026-11-03T14:32:51Z"
   }
  ]
 }
