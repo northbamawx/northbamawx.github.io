@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-03T15:40:28+00:00",
+ "updated": "2026-11-03T16:46:37+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 SB @ MP 319.75",
+   "where": "AL157 SB @ MP 1.69",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.732332,
-   "lon": -86.627264,
-   "start": "2026-11-03T15:06:55Z",
-   "end": "2026-11-03T16:06:55Z",
-   "updated": "2026-11-03T15:14:08.0597984Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.19882,
+   "lon": -86.801728,
+   "start": "2026-11-03T16:10:35Z",
+   "end": "2026-11-03T17:10:35Z",
+   "updated": "2026-11-03T10:12:59Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 305",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.135304,
+   "lon": -86.86836,
+   "start": "2026-11-03T15:59:06Z",
+   "end": "2026-11-03T16:59:06Z",
+   "updated": "2026-11-03T10:00:23Z"
   }
  ]
 }
