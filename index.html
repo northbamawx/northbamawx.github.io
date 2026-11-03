@@ -1371,16 +1371,15 @@ async function loadConditions() {
 
 // The bot writes the current live video ID to live.json whenever the stream
 // restarts; the channel-based embed is the fallback if that file is missing.
-// cc_load_policy=1 turns the bot's live captions on by default -- the player starts muted.
 async function loadPlayer() {
   const player = document.getElementById('player');
-  let src = 'https://www.youtube.com/embed/live_stream?channel=UC4nij4NgHjDJ8i5tv-1wWIA&autoplay=1&mute=1&cc_load_policy=1&cc_lang_pref=en';
+  let src = 'https://www.youtube.com/embed/live_stream?channel=UC4nij4NgHjDJ8i5tv-1wWIA&autoplay=1&mute=1';
   try {
     let id = null;
     for (const url of ['https://raw.githubusercontent.com/northbamawx/northbamawx.github.io/main/live.json', 'live.json']) {
       try { const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) { id = (await r.json()).id; break; } } catch (e) {}
     }
-    if (id && /^[A-Za-z0-9_-]{11}$/.test(id)) src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&rel=0&cc_load_policy=1&cc_lang_pref=en`;
+    if (id && /^[A-Za-z0-9_-]{11}$/.test(id)) src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&rel=0`;
   } catch (e) {}
   // Only touch the player when the stream changed, so playback isn't restarted.
   if (player.dataset.src !== src) { player.dataset.src = src; player.src = src; }
