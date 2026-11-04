@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-04T09:24:41+00:00",
+ "updated": "2026-11-04T10:34:19+00:00",
  "events": [
   {
    "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Major Crash",
-   "where": "I-65 NB/SB @ MP 303.24",
-   "detail": "Crash causing road closure. Please seek alternate route.",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL69 SB @ MP 227.92",
+   "detail": "Crash causing road closure. Please seek an alternate route.",
    "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.110375999999995,
-   "lon": -86.866136,
-   "start": "2026-11-04T04:12:30Z",
-   "end": "2026-11-04T10:00:00Z",
-   "updated": "2026-11-04T08:58:14.0089761Z"
+   "city": "Dodge City",
+   "lat": 33.998108,
+   "lon": -86.96627199999999,
+   "start": "2026-11-04T09:54:28Z",
+   "end": "2026-11-04T10:54:28Z",
+   "updated": "2026-11-04T10:30:23.4359683Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
+   "title": "Moderate Crash",
+   "where": "AL53 NB @ MP 332.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Harvest",
+   "lat": 34.8844,
+   "lon": -86.738776,
+   "start": "2026-11-04T10:19:14Z",
+   "end": "2026-11-04T11:19:14Z",
+   "updated": "2026-11-04T10:30:23.4360104Z"
   }
  ]
 }
