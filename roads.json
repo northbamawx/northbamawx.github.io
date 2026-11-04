@@ -1,4 +1,103 @@
 {
- "updated": "2026-11-04T12:49:38+00:00",
- "events": []
+ "updated": "2026-11-04T14:02:19+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL69 NB/SB",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.17906,
+   "lon": -86.833264,
+   "start": "2026-11-04T13:49:37Z",
+   "end": "2026-11-04T14:49:37Z",
+   "updated": "2026-11-04T07:49:54Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 369.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.762612,
+   "lon": -86.95716,
+   "start": "2026-11-04T13:37:07Z",
+   "end": "2026-11-04T14:37:07Z",
+   "updated": "2026-11-04T07:37:31Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 308.5",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.60332,
+   "lon": -86.563408,
+   "start": "2026-11-04T13:48:02Z",
+   "end": "2026-11-04T14:48:02Z",
+   "updated": "2026-11-04T07:59:07Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 346.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.440824,
+   "lon": -86.941456,
+   "start": "2026-11-04T13:39:06Z",
+   "end": "2026-11-04T14:39:06Z",
+   "updated": "2026-11-04T07:45:27Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 3.68",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.654544,
+   "lon": -86.80799999999999,
+   "start": "2026-11-04T13:21:25Z",
+   "end": "2026-11-04T14:21:25Z",
+   "updated": "2026-11-04T07:21:45Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US72 WB @ MP 102.79",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.773008,
+   "lon": -86.526624,
+   "start": "2026-11-04T13:52:26Z",
+   "end": "2026-11-04T14:52:26Z",
+   "updated": "2026-11-04T07:53:19Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL255 SB @ MP 4.69",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.767835999999996,
+   "lon": -86.67327999999999,
+   "start": "2026-11-04T13:21:06Z",
+   "end": "2026-11-04T14:21:06Z",
+   "updated": "2026-11-04T07:22:05Z"
+  }
+ ]
 }
