@@ -1,61 +1,33 @@
 {
- "updated": "2026-11-04T21:16:09+00:00",
+ "updated": "2026-11-04T22:14:19+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL251 NB/SB @ MP 3.61",
+   "where": "US72 WB @ MP 76.98",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Athens",
-   "lat": 34.829404,
-   "lon": -86.894328,
-   "start": "2026-11-04T20:54:39Z",
-   "end": "2026-11-04T21:54:39Z",
-   "updated": "2026-11-04T14:55:08Z"
+   "lat": 34.782323999999996,
+   "lon": -86.936464,
+   "start": "2026-11-04T21:47:55Z",
+   "end": "2026-11-04T22:47:55Z",
+   "updated": "2026-11-04T21:57:34.4804958Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 76.38",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.784424,
-   "lon": -86.945072,
-   "start": "2026-11-04T19:47:45Z",
-   "end": "2026-11-04T21:45:00Z",
-   "updated": "2026-11-04T20:47:47.1513824Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 SB @ MP 322.72",
+   "where": "US431 NB/SB @ MP 333.32",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Owens Cross Rds",
-   "lat": 34.628392,
-   "lon": -86.45971999999999,
-   "start": "2026-11-04T21:02:32Z",
-   "end": "2026-11-04T22:02:32Z",
-   "updated": "2026-11-04T15:03:51Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 10.27",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.681236,
-   "lon": -86.734408,
-   "start": "2026-11-04T21:05:13Z",
-   "end": "2026-11-04T22:05:13Z",
-   "updated": "2026-11-04T15:06:50Z"
+   "city": "Huntsville",
+   "lat": 34.720116,
+   "lon": -86.58543999999999,
+   "start": "2026-11-04T22:08:01Z",
+   "end": "2026-11-04T23:08:01Z",
+   "updated": "2026-11-04T16:09:48Z"
   },
   {
    "type": "Crash",
@@ -68,8 +40,22 @@
    "lat": 34.560904,
    "lon": -86.967376,
    "start": "2026-11-04T20:47:28Z",
-   "end": "2026-11-04T21:47:28Z",
-   "updated": "2026-11-04T14:50:08Z"
+   "end": "2026-11-04T23:30:00Z",
+   "updated": "2026-11-04T21:46:48.3427116Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 37.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.55448,
+   "lon": -86.95214399999999,
+   "start": "2026-11-04T21:50:12Z",
+   "end": "2026-11-04T22:50:12Z",
+   "updated": "2026-11-04T15:52:06Z"
   },
   {
    "type": "Incident",
@@ -82,8 +68,8 @@
    "lat": 34.558672,
    "lon": -86.962808,
    "start": "2026-11-04T20:46:40Z",
-   "end": "2026-11-04T21:46:40Z",
-   "updated": "2026-11-04T14:58:28Z"
+   "end": "2026-11-04T23:00:00Z",
+   "updated": "2026-11-04T21:46:48.342947Z"
   }
  ]
 }
