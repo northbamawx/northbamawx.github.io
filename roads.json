@@ -1,4 +1,61 @@
 {
- "updated": "2026-11-04T19:27:52+00:00",
- "events": []
+ "updated": "2026-11-04T20:20:35+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL69 NB/SB @ MP 242.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.151736,
+   "lon": -86.84286399999999,
+   "start": "2026-11-04T19:31:44Z",
+   "end": "2026-11-04T20:31:44Z",
+   "updated": "2026-11-04T13:32:13Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 327.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.184515999999995,
+   "lon": -86.849368,
+   "start": "2026-11-04T19:53:45Z",
+   "end": "2026-11-04T20:53:45Z",
+   "updated": "2026-11-04T13:58:18Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 76.38",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.784424,
+   "lon": -86.945072,
+   "start": "2026-11-04T19:47:45Z",
+   "end": "2026-11-04T20:47:45Z",
+   "updated": "2026-11-04T19:54:38.2041031Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 333.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.536108,
+   "lon": -86.90588,
+   "start": "2026-11-04T19:51:39Z",
+   "end": "2026-11-04T20:51:39Z",
+   "updated": "2026-11-04T20:10:34.0674824Z"
+  }
+ ]
 }
