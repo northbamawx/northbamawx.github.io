@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-04T20:20:35+00:00",
+ "updated": "2026-11-04T21:16:09+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 242.27",
+   "where": "AL251 NB/SB @ MP 3.61",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.151736,
-   "lon": -86.84286399999999,
-   "start": "2026-11-04T19:31:44Z",
-   "end": "2026-11-04T20:31:44Z",
-   "updated": "2026-11-04T13:32:13Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 327.27",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.184515999999995,
-   "lon": -86.849368,
-   "start": "2026-11-04T19:53:45Z",
-   "end": "2026-11-04T20:53:45Z",
-   "updated": "2026-11-04T13:58:18Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.829404,
+   "lon": -86.894328,
+   "start": "2026-11-04T20:54:39Z",
+   "end": "2026-11-04T21:54:39Z",
+   "updated": "2026-11-04T14:55:08Z"
   },
   {
    "type": "Crash",
@@ -40,22 +26,64 @@
    "lat": 34.784424,
    "lon": -86.945072,
    "start": "2026-11-04T19:47:45Z",
-   "end": "2026-11-04T20:47:45Z",
-   "updated": "2026-11-04T19:54:38.2041031Z"
+   "end": "2026-11-04T21:45:00Z",
+   "updated": "2026-11-04T20:47:47.1513824Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 333.2",
+   "where": "US431 SB @ MP 322.72",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Owens Cross Rds",
+   "lat": 34.628392,
+   "lon": -86.45971999999999,
+   "start": "2026-11-04T21:02:32Z",
+   "end": "2026-11-04T22:02:32Z",
+   "updated": "2026-11-04T15:03:51Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 EB @ MP 10.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.681236,
+   "lon": -86.734408,
+   "start": "2026-11-04T21:05:13Z",
+   "end": "2026-11-04T22:05:13Z",
+   "updated": "2026-11-04T15:06:50Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 38.6",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.536108,
-   "lon": -86.90588,
-   "start": "2026-11-04T19:51:39Z",
-   "end": "2026-11-04T20:51:39Z",
-   "updated": "2026-11-04T20:10:34.0674824Z"
+   "city": "Decatur",
+   "lat": 34.560904,
+   "lon": -86.967376,
+   "start": "2026-11-04T20:47:28Z",
+   "end": "2026-11-04T21:47:28Z",
+   "updated": "2026-11-04T14:50:08Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Hazmat Spill",
+   "where": "AL67 NB/SB @ MP 38.3",
+   "detail": "HazMat Spill in area. Please use caution when traveling through this area",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.558672,
+   "lon": -86.962808,
+   "start": "2026-11-04T20:46:40Z",
+   "end": "2026-11-04T21:46:40Z",
+   "updated": "2026-11-04T14:58:28Z"
   }
  ]
 }
