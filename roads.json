@@ -1,47 +1,47 @@
 {
- "updated": "2026-11-04T15:17:27+00:00",
+ "updated": "2026-11-04T16:21:21+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 137.12",
+   "where": "AL20 EB/WB @ MP 11.3",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.648835999999996,
-   "lon": -86.031424,
-   "start": "2026-11-04T14:40:02Z",
-   "end": "2026-11-04T15:40:02Z",
-   "updated": "2026-11-04T08:44:08Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-565 WB @ MP 16.4",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.717203999999995,
-   "lon": -86.63839999999999,
-   "start": "2026-11-04T14:27:52Z",
-   "end": "2026-11-04T15:27:52Z",
-   "updated": "2026-11-04T08:50:57Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.888576,
+   "lon": -87.798064,
+   "start": "2026-11-04T15:22:50Z",
+   "end": "2026-11-04T17:30:00Z",
+   "updated": "2026-11-04T15:54:20.9656394Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 308.5",
+   "where": "US72 EB/WB @ MP 32.13",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.60332,
-   "lon": -86.563408,
-   "start": "2026-11-04T13:48:02Z",
-   "end": "2026-11-04T15:30:00Z",
-   "updated": "2026-11-04T14:49:34.8778765Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.795336,
+   "lon": -87.673,
+   "start": "2026-11-04T16:02:47Z",
+   "end": "2026-11-04T17:02:47Z",
+   "updated": "2026-11-04T10:03:53Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB @ MP 22.05",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.791872,
+   "lon": -87.67307199999999,
+   "start": "2026-11-04T15:53:44Z",
+   "end": "2026-11-04T16:53:44Z",
+   "updated": "2026-11-04T09:54:35Z"
   },
   {
    "type": "Crash",
@@ -54,36 +54,8 @@
    "lat": 34.624016,
    "lon": -86.457664,
    "start": "2026-11-04T14:52:31Z",
-   "end": "2026-11-04T15:52:31Z",
-   "updated": "2026-11-04T15:11:12.9278065Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 63.58",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.620076,
-   "lon": -87.07017599999999,
-   "start": "2026-11-04T14:26:16Z",
-   "end": "2026-11-04T15:26:16Z",
-   "updated": "2026-11-04T08:26:50Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Other",
-   "where": "I-565 EB @ MP 8",
-   "detail": "",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.66646,
-   "lon": -86.771408,
-   "start": "2026-11-04T14:26:01Z",
-   "end": "2026-11-04T15:26:01Z",
-   "updated": "2026-11-04T14:38:52.7846732Z"
+   "end": "2026-11-04T17:15:00Z",
+   "updated": "2026-11-04T16:15:46.3864896Z"
   }
  ]
 }
