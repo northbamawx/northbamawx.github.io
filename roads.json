@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-04T04:48:50+00:00",
+ "updated": "2026-11-04T05:50:01+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "MajorDelay",
-   "title": "Overturned Vehicle",
+   "title": "Major Crash",
    "where": "I-65 NB/SB @ MP 303.24",
    "detail": "Crash causing road closure. Please seek alternate route.",
    "county": "Cullman",
@@ -12,22 +12,8 @@
    "lat": 34.110375999999995,
    "lon": -86.866136,
    "start": "2026-11-04T04:12:30Z",
-   "end": "2026-11-04T05:12:30Z",
-   "updated": "2026-11-04T04:27:47.013756Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 SB @ MP 327.52",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.688396,
-   "lon": -86.501832,
-   "start": "2026-11-04T04:23:43Z",
-   "end": "2026-11-04T05:23:43Z",
-   "updated": "2026-11-03T22:24:57Z"
+   "end": "2026-11-04T08:00:00Z",
+   "updated": "2026-11-04T05:10:50.234307Z"
   }
  ]
 }
