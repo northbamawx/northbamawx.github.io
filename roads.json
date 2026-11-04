@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-04T18:16:43+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Vehicle Fire",
-   "where": "AL24 EB/WB @ MP 42.92",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.484876,
-   "lon": -87.44665599999999,
-   "start": "2026-11-04T17:27:53Z",
-   "end": "2026-11-04T18:27:53Z",
-   "updated": "2026-11-04T11:28:46Z"
-  }
- ]
+ "updated": "2026-11-04T19:27:52+00:00",
+ "events": []
 }
