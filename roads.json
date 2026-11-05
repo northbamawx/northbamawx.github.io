@@ -1,4 +1,33 @@
 {
- "updated": "2026-11-05T03:47:23+00:00",
- "events": []
+ "updated": "2026-11-05T04:50:52+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 0.5",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.629743999999995,
+   "lon": -86.893248,
+   "start": "2026-11-05T04:24:56Z",
+   "end": "2026-11-05T05:24:56Z",
+   "updated": "2026-11-04T22:26:25Z"
+  },
+  {
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "I-65 NB/SB @ MP 318.39",
+   "detail": "Fog building in the area. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.320256,
+   "lon": -86.89933599999999,
+   "start": "2026-11-05T04:16:16Z",
+   "end": "2026-11-05T05:16:16Z",
+   "updated": "2026-11-04T22:17:16Z"
+  }
+ ]
 }

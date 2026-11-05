@@ -1,6 +1,12 @@
 {
- "updated": 1793850443,
+ "updated": 1793854252,
  "items": [
+  {
+   "id": "EXdVFjqxkVg",
+   "title": "Flash Flood Emergency and Warning in Georgia",
+   "short": true,
+   "published": 1793850596
+  },
   {
    "id": "w6hyp0EjNvY",
    "title": "Morning Heads‑Up: Marginal Risk of Severe Storms Today",
@@ -42,12 +48,6 @@
    "title": "North Alabama Week Ahead: Rain Wednesday",
    "short": true,
    "published": 1793581690
-  },
-  {
-   "id": "6DFhd_YFEcc",
-   "title": "Flood Warning - Lauderdale, Colbert, Lawrence - November 01, 2026",
-   "short": true,
-   "published": 1793562851
   }
  ]
 }
