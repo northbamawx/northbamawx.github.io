@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T06:59:28+00:00",
+ "updated": "2026-11-05T08:20:48+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,8 @@
    "lat": 34.857904,
    "lon": -86.721312,
    "start": "2026-11-05T05:48:57Z",
-   "end": "2026-11-05T07:15:00Z",
-   "updated": "2026-11-05T06:54:41.930357Z"
-  },
-  {
-   "type": "RoadCondition",
-   "severity": "ModerateDelay",
-   "title": "Fog",
-   "where": "I-65 NB/SB @ MP 331.8",
-   "detail": "Fog building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.511596,
-   "lon": -86.900312,
-   "start": "2026-11-05T06:16:02Z",
-   "end": "2026-11-05T07:16:02Z",
-   "updated": "2026-11-05T00:17:47Z"
+   "end": "2026-11-05T08:30:00Z",
+   "updated": "2026-11-05T07:59:26.2222474Z"
   },
   {
    "type": "RoadCondition",
@@ -40,8 +26,8 @@
    "lat": 34.320256,
    "lon": -86.89933599999999,
    "start": "2026-11-05T04:16:16Z",
-   "end": "2026-11-05T07:30:00Z",
-   "updated": "2026-11-05T06:31:59.0845349Z"
+   "end": "2026-11-05T08:30:00Z",
+   "updated": "2026-11-05T07:27:11.4390059Z"
   }
  ]
 }
