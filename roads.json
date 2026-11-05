@@ -1,47 +1,19 @@
 {
- "updated": "2026-11-05T16:30:28+00:00",
+ "updated": "2026-11-05T17:50:02+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 335.14",
+   "where": "AL53 SB @ MP 319.98",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.739112,
-   "lon": -86.599584,
-   "start": "2026-11-05T16:08:39Z",
-   "end": "2026-11-05T17:08:39Z",
-   "updated": "2026-11-05T16:16:29.9626045Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 321.08",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.750132,
-   "lon": -86.63524,
-   "start": "2026-11-05T16:08:57Z",
-   "end": "2026-11-05T17:08:57Z",
-   "updated": "2026-11-05T10:09:14Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 NB @ MP 333.52",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.720076,
-   "lon": -86.58968,
-   "start": "2026-11-05T15:15:29Z",
-   "end": "2026-11-05T16:45:00Z",
-   "updated": "2026-11-05T16:21:51.3345702Z"
+   "lat": 34.735748,
+   "lon": -86.62731199999999,
+   "start": "2026-11-05T17:01:31Z",
+   "end": "2026-11-05T18:01:31Z",
+   "updated": "2026-11-05T17:44:24.364319Z"
   },
   {
    "type": "Incident",
@@ -54,8 +26,8 @@
    "lat": 34.377911999999995,
    "lon": -86.892848,
    "start": "2026-11-05T16:01:54Z",
-   "end": "2026-11-05T18:00:00Z",
-   "updated": "2026-11-05T10:02:57Z"
+   "end": "2026-11-05T21:00:00Z",
+   "updated": "2026-11-05T17:49:43.2138333Z"
   }
  ]
 }
