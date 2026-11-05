@@ -1,19 +1,47 @@
 {
- "updated": "2026-11-05T09:28:59+00:00",
+ "updated": "2026-11-05T10:31:55+00:00",
  "events": [
   {
-   "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL53 NB/SB @ MP 329.99",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Harvest",
-   "lat": 34.857904,
-   "lon": -86.721312,
-   "start": "2026-11-05T05:48:57Z",
-   "end": "2026-11-05T10:00:00Z",
-   "updated": "2026-11-05T08:59:42.6723434Z"
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "AL20 EB/WB @ MP 32.14",
+   "detail": "Fog building in the area. Please use caution when traveling through this area.",
+   "county": "Colbert",
+   "city": "Muscle Shoals",
+   "lat": 34.6855,
+   "lon": -87.597672,
+   "start": "2026-11-05T09:56:45Z",
+   "end": "2026-11-05T12:00:00Z",
+   "updated": "2026-11-05T03:57:40Z"
+  },
+  {
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "AL133 NB/SB @ MP 7.43",
+   "detail": "Fog building in the area. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.800356,
+   "lon": -87.65015199999999,
+   "start": "2026-11-05T10:22:06Z",
+   "end": "2026-11-05T12:00:00Z",
+   "updated": "2026-11-05T04:22:59Z"
+  },
+  {
+   "type": "RoadCondition",
+   "severity": "ModerateDelay",
+   "title": "Fog",
+   "where": "US431 NB/SB @ MP 288.4",
+   "detail": "Fog building in the area. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Albertville",
+   "lat": 34.28512,
+   "lon": -86.23176,
+   "start": "2026-11-05T10:14:27Z",
+   "end": "2026-11-05T11:14:27Z",
+   "updated": "2026-11-05T04:15:36Z"
   },
   {
    "type": "RoadCondition",
@@ -40,8 +68,8 @@
    "lat": 34.320256,
    "lon": -86.89933599999999,
    "start": "2026-11-05T04:16:16Z",
-   "end": "2026-11-05T09:30:00Z",
-   "updated": "2026-11-05T08:27:16.1591218Z"
+   "end": "2026-11-05T12:15:00Z",
+   "updated": "2026-11-05T10:31:03.9242903Z"
   },
   {
    "type": "RoadCondition",
