@@ -1,4 +1,47 @@
 {
- "updated": "2026-11-06T18:43:11+00:00",
- "events": []
+ "updated": "2026-11-06T19:44:49+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 32.33",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.802856,
+   "lon": -87.6776,
+   "start": "2026-11-06T19:32:41Z",
+   "end": "2026-11-06T20:32:41Z",
+   "updated": "2026-11-06T13:33:16Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 SB @ MP 24.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Somerville",
+   "lat": 34.446776,
+   "lon": -86.757296,
+   "start": "2026-11-06T19:33:42Z",
+   "end": "2026-11-06T20:33:42Z",
+   "updated": "2026-11-06T13:34:31Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "MinorDelay",
+   "title": "Debris",
+   "where": "AL133 NB/SB @ MP 7.35",
+   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.799884,
+   "lon": -87.649632,
+   "start": "2026-11-06T19:05:27Z",
+   "end": "2026-11-06T20:05:27Z",
+   "updated": "2026-11-06T13:06:22Z"
+  }
+ ]
 }
