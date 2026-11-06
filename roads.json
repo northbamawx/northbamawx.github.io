@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-06T08:15:43+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 SB @ MP 31.8",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.505891999999996,
-   "lon": -86.86892,
-   "start": "2026-11-06T07:38:29Z",
-   "end": "2026-11-06T08:38:29Z",
-   "updated": "2026-11-06T01:39:47Z"
-  }
- ]
+ "updated": "2026-11-06T09:23:40+00:00",
+ "events": []
 }
