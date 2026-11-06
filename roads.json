@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:32:21+00:00",
+ "updated": "2026-11-06T23:29:36+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,78 +12,50 @@
    "lat": 34.040932,
    "lon": -86.886208,
    "start": "2026-11-06T21:47:27Z",
-   "end": "2026-11-06T22:47:27Z",
-   "updated": "2026-11-06T15:48:12Z"
+   "end": "2026-11-06T23:45:00Z",
+   "updated": "2026-11-06T22:39:31.7432486Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 339.16",
+   "where": "I-565 WB @ MP 0.5",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Decatur",
-   "lat": 34.616268,
-   "lon": -86.899272,
-   "start": "2026-11-06T22:15:55Z",
-   "end": "2026-11-06T23:15:55Z",
-   "updated": "2026-11-06T16:17:20Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 7.98",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.666579999999996,
-   "lon": -86.77192,
-   "start": "2026-11-06T21:22:11Z",
-   "end": "2026-11-06T23:00:00Z",
-   "updated": "2026-11-06T22:23:10.4719017Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 7.58",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.665064,
-   "lon": -86.778536,
-   "start": "2026-11-06T22:10:01Z",
-   "end": "2026-11-06T23:10:01Z",
-   "updated": "2026-11-06T16:12:44Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL36 EB/WB @ MP 22.74",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.44946,
-   "lon": -86.915944,
-   "start": "2026-11-06T21:04:42Z",
-   "end": "2026-11-06T23:00:00Z",
-   "updated": "2026-11-06T21:45:51.4227731Z"
+   "lat": 34.629971999999995,
+   "lon": -86.893168,
+   "start": "2026-11-06T22:28:23Z",
+   "end": "2026-11-06T23:28:23Z",
+   "updated": "2026-11-06T23:11:55.6674032Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Debris",
-   "where": "US72 EB/WB @ MP 53.33",
+   "where": "AL279 SB @ MP 2.52",
    "detail": "Debris in road with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Elgin",
-   "lat": 34.834448,
-   "lon": -87.338264,
-   "start": "2026-11-06T22:15:42Z",
-   "end": "2026-11-06T23:15:42Z",
-   "updated": "2026-11-06T16:17:39Z"
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.637492,
+   "lon": -86.04142399999999,
+   "start": "2026-11-06T22:53:14Z",
+   "end": "2026-11-06T23:53:14Z",
+   "updated": "2026-11-06T16:54:16Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 3.58",
+   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.6419,
+   "lon": -86.84193599999999,
+   "start": "2026-11-06T23:02:38Z",
+   "end": "2026-11-07T00:02:38Z",
+   "updated": "2026-11-06T17:04:05Z"
   },
   {
    "type": "Incident",
@@ -93,11 +65,11 @@
    "detail": "Congestion building westbound. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.702476,
-   "lon": -86.68548,
+   "lat": 34.688884,
+   "lon": -86.718216,
    "start": "2026-11-06T22:08:13Z",
    "end": "2026-11-06T23:30:00Z",
-   "updated": "2026-11-06T16:11:13Z"
+   "updated": "2026-11-06T23:11:55.6672178Z"
   }
  ]
 }
