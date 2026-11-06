@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-06T03:45:24+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US43 NB/SB @ MP 287.42",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area",
-   "county": "Franklin",
-   "city": "Russellville",
-   "lat": 34.402604,
-   "lon": -87.75451199999999,
-   "start": "2026-11-06T03:14:40Z",
-   "end": "2026-11-06T04:14:40Z",
-   "updated": "2026-11-05T21:16:22Z"
-  }
- ]
+ "updated": "2026-11-06T04:50:03+00:00",
+ "events": []
 }
