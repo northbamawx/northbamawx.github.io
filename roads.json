@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T20:39:27+00:00",
+ "updated": "2026-11-06T21:32:23+00:00",
  "events": [
   {
    "type": "Crash",
@@ -19,15 +19,57 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 358.31",
+   "where": "US72 EB/WB @ MP 33.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.806751999999996,
+   "lon": -87.664328,
+   "start": "2026-11-06T20:41:04Z",
+   "end": "2026-11-06T21:41:04Z",
+   "updated": "2026-11-06T14:43:37Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 7.98",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.666579999999996,
+   "lon": -86.77192,
+   "start": "2026-11-06T21:22:11Z",
+   "end": "2026-11-06T22:22:11Z",
+   "updated": "2026-11-06T15:25:19Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL53 NB @ MP 321.08",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.750195999999995,
+   "lon": -86.634856,
+   "start": "2026-11-06T20:54:05Z",
+   "end": "2026-11-06T21:54:05Z",
+   "updated": "2026-11-06T14:55:52Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL36 EB/WB @ MP 22.74",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.609192,
-   "lon": -86.97824,
-   "start": "2026-11-06T19:42:45Z",
-   "end": "2026-11-06T20:42:45Z",
-   "updated": "2026-11-06T13:43:45Z"
+   "city": "Hartselle",
+   "lat": 34.44946,
+   "lon": -86.915944,
+   "start": "2026-11-06T21:04:42Z",
+   "end": "2026-11-06T22:04:42Z",
+   "updated": "2026-11-06T15:05:33Z"
   }
  ]
 }
