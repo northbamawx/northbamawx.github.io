@@ -1,4 +1,33 @@
 {
- "updated": "2026-11-06T13:39:24+00:00",
- "events": []
+ "updated": "2026-11-06T14:48:08+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 87.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.748855999999996,
+   "lon": -86.767944,
+   "start": "2026-11-06T14:25:18Z",
+   "end": "2026-11-06T15:25:18Z",
+   "updated": "2026-11-06T14:41:17.5411625Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 36.21",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.542532,
+   "lon": -86.92398399999999,
+   "start": "2026-11-06T14:08:42Z",
+   "end": "2026-11-06T15:08:42Z",
+   "updated": "2026-11-06T14:35:50.9971496Z"
+  }
+ ]
 }
