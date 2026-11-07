@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-07T07:52:21+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 60.06",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.801663999999995,
-   "lon": -87.22843999999999,
-   "start": "2026-11-07T07:24:12Z",
-   "end": "2026-11-07T08:24:12Z",
-   "updated": "2026-11-07T01:25:18Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 75.98",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.785455999999996,
-   "lon": -86.953312,
-   "start": "2026-11-07T07:32:04Z",
-   "end": "2026-11-07T08:32:04Z",
-   "updated": "2026-11-07T01:32:45Z"
-  }
- ]
+ "updated": "2026-11-07T08:42:04+00:00",
+ "events": []
 }
