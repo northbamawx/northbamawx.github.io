@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-07T17:59:38+00:00",
- "events": []
+ "updated": "2026-11-07T18:40:51+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL69 NB/SB @ MP 264.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area",
+   "county": "Cullman",
+   "city": "Joppa",
+   "lat": 34.301712,
+   "lon": -86.549824,
+   "start": "2026-11-07T17:53:27Z",
+   "end": "2026-11-07T18:53:27Z",
+   "updated": "2026-11-07T18:16:03.3924831Z"
+  }
+ ]
 }
