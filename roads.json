@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-07T10:34:02+00:00",
- "events": []
+ "updated": "2026-11-07T11:27:58+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
+   "title": "Major Crash",
+   "where": "US231/431 NB/SB @ MP 339.05",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.792952,
+   "lon": -86.577488,
+   "start": "2026-11-07T10:56:37Z",
+   "end": "2026-11-07T11:56:37Z",
+   "updated": "2026-11-07T11:26:38.8197062Z"
+  }
+ ]
 }
