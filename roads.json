@@ -1,47 +1,33 @@
 {
- "updated": "2026-11-07T23:02:37+00:00",
+ "updated": "2026-11-07T23:59:33+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 NB/SB @ MP 299.85",
+   "where": "US72 EB/WB @ MP 80.59",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.059892,
-   "lon": -86.866248,
-   "start": "2026-11-07T22:52:24Z",
-   "end": "2026-11-07T23:52:24Z",
-   "updated": "2026-11-07T16:54:24Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.765595999999995,
+   "lon": -86.877528,
+   "start": "2026-11-07T23:45:34Z",
+   "end": "2026-11-08T00:45:34Z",
+   "updated": "2026-11-07T17:46:29Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 244.48",
+   "where": "US72 EB/WB @ MP 88.19",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.17708,
-   "lon": -86.83872,
-   "start": "2026-11-07T22:25:48Z",
-   "end": "2026-11-07T23:25:48Z",
-   "updated": "2026-11-07T16:38:05Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 34.58",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.82178,
-   "lon": -87.65223999999999,
-   "start": "2026-11-07T21:54:44Z",
-   "end": "2026-11-07T23:30:00Z",
-   "updated": "2026-11-07T22:52:26.8404335Z"
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.752387999999996,
+   "lon": -86.749816,
+   "start": "2026-11-07T23:48:05Z",
+   "end": "2026-11-08T00:48:05Z",
+   "updated": "2026-11-07T17:49:15Z"
   }
  ]
 }
