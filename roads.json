@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-07T12:08:27+00:00",
+ "updated": "2026-11-07T13:23:56+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "MajorDelay",
-   "title": "Major Crash",
-   "where": "US231/431 NB/SB @ MP 339.05",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.792952,
-   "lon": -86.577488,
-   "start": "2026-11-07T10:56:37Z",
-   "end": "2026-11-07T13:00:00Z",
-   "updated": "2026-11-07T11:53:08.7963678Z"
+   "title": "Overturned Vehicle",
+   "where": "US72 EB @ MP 76.67",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.783432,
+   "lon": -86.9404,
+   "start": "2026-11-07T12:43:50Z",
+   "end": "2026-11-07T13:43:50Z",
+   "updated": "2026-11-07T13:18:03.3622835Z"
   }
  ]
 }
