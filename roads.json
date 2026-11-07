@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-07T04:43:18+00:00",
+ "updated": "2026-11-07T05:40:22+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 42.75",
+   "where": "AL20 EB @ MP 73.27",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Killen",
-   "lat": 34.859843999999995,
-   "lon": -87.518784,
-   "start": "2026-11-07T04:11:51Z",
-   "end": "2026-11-07T05:11:51Z",
-   "updated": "2026-11-06T22:12:53Z"
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.628175999999996,
+   "lon": -86.91368,
+   "start": "2026-11-07T05:11:47Z",
+   "end": "2026-11-07T06:11:47Z",
+   "updated": "2026-11-07T05:37:22.6733125Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,8 @@
    "lat": 34.726555999999995,
    "lon": -86.417,
    "start": "2026-11-07T04:35:40Z",
-   "end": "2026-11-07T05:35:40Z",
-   "updated": "2026-11-06T22:38:06Z"
+   "end": "2026-11-07T06:45:00Z",
+   "updated": "2026-11-07T05:37:22.6732531Z"
   }
  ]
 }
