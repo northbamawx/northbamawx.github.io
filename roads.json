@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-08T17:58:50+00:00",
+ "updated": "2026-11-08T18:40:10+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 38.4",
+   "where": "I-565 WB @ MP 11",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.559092,
-   "lon": -86.963168,
-   "start": "2026-11-08T17:00:12Z",
-   "end": "2026-11-08T18:00:12Z",
-   "updated": "2026-11-08T11:05:02Z"
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.68652,
+   "lon": -86.722872,
+   "start": "2026-11-08T17:56:54Z",
+   "end": "2026-11-08T18:56:54Z",
+   "updated": "2026-11-08T18:38:52.2711125Z"
   }
  ]
 }
