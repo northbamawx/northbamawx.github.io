@@ -1,6 +1,12 @@
 {
- "updated": 1794089000,
+ "updated": 1794127341,
  "items": [
+  {
+   "id": "btCZrGH7PCs",
+   "title": "Storm Coverage - Lauderdale, Colbert, Franklin - November 07, 2026",
+   "short": true,
+   "published": 1794096245
+  },
   {
    "id": "kUPO4A96YNM",
    "title": "Freeze Warnings in Illinois Indiana Kentucky Missouri Ohio Virginia and West Vir",
@@ -42,12 +48,6 @@
    "title": "Storm Coverage - North - November 05, 2026",
    "short": true,
    "published": 1793887434
-  },
-  {
-   "id": "A6vv51Pi2ZY",
-   "title": "Flash Flood Emergency in Georgia and Tennessee",
-   "short": true,
-   "published": 1793887408
   }
  ]
 }
