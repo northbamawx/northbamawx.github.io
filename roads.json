@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-08T21:09:22+00:00",
- "events": []
+ "updated": "2026-11-08T22:03:43+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL251 NB/SB @ MP 13.12",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.941416,
+   "lon": -86.819392,
+   "start": "2026-11-08T21:39:03Z",
+   "end": "2026-11-08T22:39:03Z",
+   "updated": "2026-11-08T15:49:37Z"
+  }
+ ]
 }
