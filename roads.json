@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-08T17:05:42+00:00",
+ "updated": "2026-11-08T17:58:50+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Vehicle Fire",
-   "where": "AL69 NB/SB @ MP 280.55",
-   "detail": "Vehicle fire with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.345912,
-   "lon": -86.30418399999999,
-   "start": "2026-11-08T16:16:33Z",
-   "end": "2026-11-08T17:16:33Z",
-   "updated": "2026-11-08T10:16:58Z"
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 38.4",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.559092,
+   "lon": -86.963168,
+   "start": "2026-11-08T17:00:12Z",
+   "end": "2026-11-08T18:00:12Z",
+   "updated": "2026-11-08T11:05:02Z"
   }
  ]
 }
