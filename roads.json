@@ -1,47 +1,4 @@
 {
- "updated": "2026-11-08T13:23:58+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 358",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.88026,
-   "lon": -86.91951999999999,
-   "start": "2026-11-08T11:51:12Z",
-   "end": "2026-11-08T13:30:00Z",
-   "updated": "2026-11-08T06:46:34Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 357.15",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.8702,
-   "lon": -86.922848,
-   "start": "2026-11-08T12:56:15Z",
-   "end": "2026-11-08T13:56:15Z",
-   "updated": "2026-11-08T07:00:20Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 NB @ MP 290.6",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Albertville",
-   "lat": 34.297944,
-   "lon": -86.266472,
-   "start": "2026-11-08T12:57:28Z",
-   "end": "2026-11-08T13:57:28Z",
-   "updated": "2026-11-08T06:58:51Z"
-  }
- ]
+ "updated": "2026-11-08T14:12:42+00:00",
+ "events": []
 }
