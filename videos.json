@@ -1,6 +1,12 @@
 {
- "updated": 1794139768,
+ "updated": 1794144238,
  "items": [
+  {
+   "id": "cWA0-0ASBzY",
+   "title": "Huntsville Weather Forecast: Patchy Frost & 66° Sunday",
+   "short": true,
+   "published": 1794141748
+  },
   {
    "id": "btCZrGH7PCs",
    "title": "Storm Coverage - Lauderdale, Colbert, Franklin - November 07, 2026",
@@ -42,12 +48,6 @@
    "title": "Huntsville Weather Forecast: Patchy Fog & 69° Friday",
    "short": true,
    "published": 1793968982
-  },
-  {
-   "id": "7u2okRs0z0M",
-   "title": "Storm Coverage - North - November 05, 2026",
-   "short": true,
-   "published": 1793887434
   }
  ]
 }
