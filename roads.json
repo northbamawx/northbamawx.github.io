@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-08T02:49:18+00:00",
+ "updated": "2026-11-08T03:44:34+00:00",
  "events": [
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Vehicle Fire",
-   "where": "I-65 SB @ MP 302.44",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.098079999999996,
-   "lon": -86.866456,
-   "start": "2026-11-07T23:54:01Z",
-   "end": "2026-11-08T03:00:00Z",
-   "updated": "2026-11-08T02:09:14.9337388Z"
+   "severity": "MajorDelay",
+   "title": "Major Crash",
+   "where": "AL71 NB/SB @ MP 7.44",
+   "detail": "Crash causing road closure. Please seek alternate route.",
+   "county": "Jackson",
+   "city": "Dutton",
+   "lat": 34.636084,
+   "lon": -85.872176,
+   "start": "2026-11-08T03:18:03Z",
+   "end": "2026-11-08T04:18:03Z",
+   "updated": "2026-11-07T21:19:55Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,36 @@
    "lat": 34.79182,
    "lon": -87.06255999999999,
    "start": "2026-11-08T01:55:00Z",
-   "end": "2026-11-08T02:55:00Z",
-   "updated": "2026-11-07T19:55:51Z"
+   "end": "2026-11-08T05:00:00Z",
+   "updated": "2026-11-08T03:02:11.924874Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB @ MP 338.86",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.78928,
+   "lon": -86.578808,
+   "start": "2026-11-08T03:22:58Z",
+   "end": "2026-11-08T04:22:58Z",
+   "updated": "2026-11-07T21:25:08Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB @ MP 39.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560947999999996,
+   "lon": -86.985368,
+   "start": "2026-11-08T02:59:03Z",
+   "end": "2026-11-08T03:59:03Z",
+   "updated": "2026-11-07T21:00:06Z"
   }
  ]
 }
