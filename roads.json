@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-08T20:27:46+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-65 SB @ MP 302.44",
-   "detail": "",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.097767999999995,
-   "lon": -86.866344,
-   "start": "2026-11-08T20:15:59Z",
-   "end": "2026-11-08T20:52:35Z",
-   "updated": "2026-11-08T14:23:35Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL24 EB/WB @ MP 29.92",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Russellville",
-   "lat": 34.490207999999996,
-   "lon": -87.672912,
-   "start": "2026-11-08T18:45:15Z",
-   "end": "2026-11-08T20:45:00Z",
-   "updated": "2026-11-08T20:14:14.6680579Z"
-  }
- ]
+ "updated": "2026-11-08T21:09:22+00:00",
+ "events": []
 }
