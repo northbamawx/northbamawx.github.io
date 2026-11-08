@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-08T05:41:25+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL24 EB/WB @ MP 54.32",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.497448,
-   "lon": -87.248128,
-   "start": "2026-11-08T03:53:19Z",
-   "end": "2026-11-08T05:45:00Z",
-   "updated": "2026-11-08T04:53:47.5442794Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB @ MP 352.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.531828,
-   "lon": -86.973816,
-   "start": "2026-11-08T05:07:17Z",
-   "end": "2026-11-08T06:07:17Z",
-   "updated": "2026-11-07T23:09:07Z"
-  }
- ]
+ "updated": "2026-11-08T06:45:41+00:00",
+ "events": []
 }
