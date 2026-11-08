@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T03:44:34+00:00",
+ "updated": "2026-11-08T04:45:09+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,22 @@
    "lat": 34.636084,
    "lon": -85.872176,
    "start": "2026-11-08T03:18:03Z",
-   "end": "2026-11-08T04:18:03Z",
-   "updated": "2026-11-07T21:19:55Z"
+   "end": "2026-11-08T05:15:00Z",
+   "updated": "2026-11-08T04:16:44.7169381Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL24 EB/WB @ MP 54.32",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.497448,
+   "lon": -87.248128,
+   "start": "2026-11-08T03:53:19Z",
+   "end": "2026-11-08T04:53:19Z",
+   "updated": "2026-11-07T21:54:11Z"
   },
   {
    "type": "Crash",
@@ -28,34 +42,6 @@
    "start": "2026-11-08T01:55:00Z",
    "end": "2026-11-08T05:00:00Z",
    "updated": "2026-11-08T03:02:11.924874Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 338.86",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.78928,
-   "lon": -86.578808,
-   "start": "2026-11-08T03:22:58Z",
-   "end": "2026-11-08T04:22:58Z",
-   "updated": "2026-11-07T21:25:08Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB @ MP 39.7",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.560947999999996,
-   "lon": -86.985368,
-   "start": "2026-11-08T02:59:03Z",
-   "end": "2026-11-08T03:59:03Z",
-   "updated": "2026-11-07T21:00:06Z"
   }
  ]
 }
