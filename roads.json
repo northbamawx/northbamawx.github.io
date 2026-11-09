@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-08T23:03:01+00:00",
+ "updated": "2026-11-09T00:00:35+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 35.39",
+   "where": "US72 WB @ MP 94.59",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.827768,
-   "lon": -87.639336,
-   "start": "2026-11-08T22:13:36Z",
-   "end": "2026-11-08T23:13:36Z",
-   "updated": "2026-11-08T22:27:08.2074906Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL251 NB/SB @ MP 13.12",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.941416,
-   "lon": -86.819392,
-   "start": "2026-11-08T21:39:03Z",
-   "end": "2026-11-08T23:30:00Z",
-   "updated": "2026-11-08T22:37:41.6613099Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.735104,
+   "lon": -86.64192,
+   "start": "2026-11-08T23:53:27Z",
+   "end": "2026-11-09T00:53:27Z",
+   "updated": "2026-11-08T17:55:27Z"
   }
  ]
 }
