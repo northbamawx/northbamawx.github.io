@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-09T05:56:32+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 75.78",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.785748,
-   "lon": -86.956296,
-   "start": "2026-11-09T05:15:03Z",
-   "end": "2026-11-09T06:15:03Z",
-   "updated": "2026-11-09T05:38:14.3593909Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 SB @ MP 353.5",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.540715999999996,
-   "lon": -86.973728,
-   "start": "2026-11-09T05:44:38Z",
-   "end": "2026-11-09T06:44:38Z",
-   "updated": "2026-11-08T23:45:18Z"
-  }
- ]
+ "updated": "2026-11-09T07:15:01+00:00",
+ "events": []
 }
