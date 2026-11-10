@@ -1,47 +1,19 @@
 {
- "updated": "2026-11-09T23:49:59+00:00",
+ "updated": "2026-11-10T06:08:54+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 39.37",
+   "where": "AL24 EB/WB @ MP 66.44",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.847719999999995,
-   "lon": -87.576504,
-   "start": "2026-11-09T23:18:50Z",
-   "end": "2026-11-10T00:18:50Z",
-   "updated": "2026-11-09T17:19:29Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 5.68",
-   "detail": "Congestion building in the area eastbound. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.654544,
-   "lon": -86.80802399999999,
-   "start": "2026-11-09T22:18:52Z",
-   "end": "2026-11-10T00:30:00Z",
-   "updated": "2026-11-09T16:20:34Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 WB @ MP 13.99",
-   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.705596,
-   "lon": -86.677944,
-   "start": "2026-11-09T22:35:42Z",
-   "end": "2026-11-10T00:30:00Z",
-   "updated": "2026-11-09T23:34:05.4073671Z"
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.578392,
+   "lon": -87.078384,
+   "start": "2026-11-10T05:49:39Z",
+   "end": "2026-11-10T06:49:39Z",
+   "updated": "2026-11-09T23:50:50Z"
   }
  ]
 }
