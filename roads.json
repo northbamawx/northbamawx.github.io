@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T21:22:34+00:00",
+ "updated": "2026-11-11T01:22:59+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,36 +12,22 @@
    "lat": 34.629236,
    "lon": -86.89591999999999,
    "start": "2026-11-10T21:09:15Z",
-   "end": "2026-11-10T22:09:15Z",
-   "updated": "2026-11-10T15:14:13Z"
+   "end": "2026-11-11T03:00:00Z",
+   "updated": "2026-11-11T00:33:19.6457709Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 311.56",
+   "where": "US72 EB @ MP 113.37",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.645703999999995,
-   "lon": -86.566848,
-   "start": "2026-11-10T20:29:52Z",
-   "end": "2026-11-10T21:29:52Z",
-   "updated": "2026-11-10T14:30:45Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 291.12",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Arab",
-   "lat": 34.385072,
-   "lon": -86.514584,
-   "start": "2026-11-10T21:05:32Z",
-   "end": "2026-11-10T22:05:32Z",
-   "updated": "2026-11-10T15:07:01Z"
+   "city": "Gurley",
+   "lat": 34.694759999999995,
+   "lon": -86.372952,
+   "start": "2026-11-11T00:53:46Z",
+   "end": "2026-11-11T01:53:46Z",
+   "updated": "2026-11-11T01:06:30.3863337Z"
   }
  ]
 }
