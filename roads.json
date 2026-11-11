@@ -1,47 +1,33 @@
 {
- "updated": "2026-11-11T16:27:54+00:00",
+ "updated": "2026-11-11T22:56:34+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 All Directions @ MP 18.01",
+   "where": "US31 NB/SB @ MP 372.47",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.72438,
-   "lon": -86.61192,
-   "start": "2026-11-11T15:46:17Z",
-   "end": "2026-11-11T16:46:17Z",
-   "updated": "2026-11-11T16:23:25.8197662Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.803016,
+   "lon": -86.951848,
+   "start": "2026-11-11T22:25:19Z",
+   "end": "2026-11-11T23:25:19Z",
+   "updated": "2026-11-11T16:26:19Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 17",
+   "where": "AL127 NB/SB @ MP 1",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.719187999999995,
-   "lon": -86.627904,
-   "start": "2026-11-11T16:02:13Z",
-   "end": "2026-11-11T17:02:13Z",
-   "updated": "2026-11-11T16:17:49.8095996Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 343.98",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.413156,
-   "lon": -86.92132,
-   "start": "2026-11-11T15:23:05Z",
-   "end": "2026-11-11T17:00:00Z",
-   "updated": "2026-11-11T16:23:25.8197431Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.833904,
+   "lon": -86.97299199999999,
+   "start": "2026-11-11T22:00:13Z",
+   "end": "2026-11-11T23:00:13Z",
+   "updated": "2026-11-11T16:02:08Z"
   }
  ]
 }
