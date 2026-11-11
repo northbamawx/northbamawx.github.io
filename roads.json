@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-11T01:22:59+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Vehicle Fire",
-   "where": "I-565 WB @ MP 0.4",
-   "detail": "Vehicle Fire with lane blockage. Please caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.629236,
-   "lon": -86.89591999999999,
-   "start": "2026-11-10T21:09:15Z",
-   "end": "2026-11-11T03:00:00Z",
-   "updated": "2026-11-11T00:33:19.6457709Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 113.37",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Gurley",
-   "lat": 34.694759999999995,
-   "lon": -86.372952,
-   "start": "2026-11-11T00:53:46Z",
-   "end": "2026-11-11T01:53:46Z",
-   "updated": "2026-11-11T01:06:30.3863337Z"
-  }
- ]
+ "updated": "2026-11-11T08:03:31+00:00",
+ "events": []
 }
