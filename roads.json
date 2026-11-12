@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-12T03:40:48+00:00",
- "events": []
+ "updated": "2026-11-12T12:14:27+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 70.08",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.791736,
+   "lon": -87.05499999999999,
+   "start": "2026-11-12T12:03:43Z",
+   "end": "2026-11-12T13:03:43Z",
+   "updated": "2026-11-12T06:04:09Z"
+  }
+ ]
 }
