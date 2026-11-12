@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T22:56:34+00:00",
+ "updated": "2026-11-12T03:40:48+00:00",
  "city": "Huntsville",
  "days": [
   {
@@ -12,11 +12,9 @@
   },
   {
    "day": "Tomorrow",
-   "index": 1,
-   "category": "Very low",
-   "triggers": [
-    "Ragweed"
-   ]
+   "index": 0,
+   "category": "None",
+   "triggers": []
   }
  ],
  "source": "https://developers.google.com/maps/documentation/pollen"
