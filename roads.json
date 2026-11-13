@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-13T16:05:53+00:00",
+ "updated": "2026-11-13T16:58:05+00:00",
  "events": [
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 43.24",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Town Creek",
-   "lat": 34.681292,
-   "lon": -87.403264,
-   "start": "2026-11-13T15:24:19Z",
-   "end": "2026-11-13T16:24:19Z",
-   "updated": "2026-11-13T09:55:19Z"
+   "title": "Debris",
+   "where": "US72 EB/WB @ MP 31.85",
+   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.790896,
+   "lon": -87.67331999999999,
+   "start": "2026-11-13T16:01:56Z",
+   "end": "2026-11-13T17:01:56Z",
+   "updated": "2026-11-13T10:07:23Z"
   }
  ]
 }
