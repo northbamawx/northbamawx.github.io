@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-13T20:05:46+00:00",
+ "updated": "2026-11-13T21:05:59+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 327.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.184515999999995,
+   "lon": -86.849184,
+   "start": "2026-11-13T20:24:09Z",
+   "end": "2026-11-13T21:24:09Z",
+   "updated": "2026-11-13T14:25:06Z"
+  },
   {
    "type": "Crash",
    "severity": "MajorDelay",
@@ -12,8 +26,22 @@
    "lat": 34.750512,
    "lon": -86.814928,
    "start": "2026-11-13T18:41:27Z",
-   "end": "2026-11-13T20:45:00Z",
-   "updated": "2026-11-13T19:55:04.6244022Z"
+   "end": "2026-11-13T21:45:00Z",
+   "updated": "2026-11-13T20:44:03.5938162Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 41.69",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.571272,
+   "lon": -87.014,
+   "start": "2026-11-13T20:36:26Z",
+   "end": "2026-11-13T21:36:26Z",
+   "updated": "2026-11-13T14:37:46Z"
   }
  ]
 }
