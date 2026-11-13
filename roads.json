@@ -1,47 +1,75 @@
 {
- "updated": "2026-11-13T21:05:59+00:00",
+ "updated": "2026-11-13T22:05:56+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 327.27",
+   "where": "AL69 NB/SB @ MP 262.14",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.184515999999995,
-   "lon": -86.849184,
-   "start": "2026-11-13T20:24:09Z",
-   "end": "2026-11-13T21:24:09Z",
-   "updated": "2026-11-13T14:25:06Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Overturned Vehicle",
-   "where": "US72 EB @ MP 84.4",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.750512,
-   "lon": -86.814928,
-   "start": "2026-11-13T18:41:27Z",
-   "end": "2026-11-13T21:45:00Z",
-   "updated": "2026-11-13T20:44:03.5938162Z"
+   "city": "Joppa",
+   "lat": 34.287403999999995,
+   "lon": -86.58228,
+   "start": "2026-11-13T21:23:29Z",
+   "end": "2026-11-13T22:23:29Z",
+   "updated": "2026-11-13T15:24:24Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 41.69",
+   "where": "I-65 NB @ MP 318.99",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.328635999999996,
+   "lon": -86.900352,
+   "start": "2026-11-13T20:05:52Z",
+   "end": "2026-11-14T00:15:00Z",
+   "updated": "2026-11-13T21:55:02.7100312Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 357.61",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
    "city": "Decatur",
-   "lat": 34.571272,
-   "lon": -87.014,
-   "start": "2026-11-13T20:36:26Z",
-   "end": "2026-11-13T21:36:26Z",
-   "updated": "2026-11-13T14:37:46Z"
+   "lat": 34.599796,
+   "lon": -86.98026399999999,
+   "start": "2026-11-13T21:50:30Z",
+   "end": "2026-11-13T22:50:30Z",
+   "updated": "2026-11-13T15:51:01Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL24 EB/WB @ MP 66.34",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.57786,
+   "lon": -87.07949599999999,
+   "start": "2026-11-13T21:07:54Z",
+   "end": "2026-11-13T22:07:54Z",
+   "updated": "2026-11-13T15:08:23Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 NB @ MP 316.71",
+   "detail": "Congestion building in the area northbound. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.296864,
+   "lon": -86.910688,
+   "start": "2026-11-13T21:50:35Z",
+   "end": "2026-11-14T00:30:00Z",
+   "updated": "2026-11-13T15:52:31Z"
   }
  ]
 }
