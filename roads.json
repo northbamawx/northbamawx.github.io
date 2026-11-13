@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T19:05:47+00:00",
+ "updated": "2026-11-13T20:05:46+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,64 +12,8 @@
    "lat": 34.750512,
    "lon": -86.814928,
    "start": "2026-11-13T18:41:27Z",
-   "end": "2026-11-13T19:41:27Z",
-   "updated": "2026-11-13T19:00:40.9515509Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231/431 NB/SB @ MP 351.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "HazelGreen",
-   "lat": 34.976307999999996,
-   "lon": -86.569272,
-   "start": "2026-11-13T17:57:12Z",
-   "end": "2026-11-13T19:30:00Z",
-   "updated": "2026-11-13T18:55:12.8988758Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "I-65 SB @ MP 335.11",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.555456,
-   "lon": -86.908104,
-   "start": "2026-11-13T18:38:50Z",
-   "end": "2026-11-13T19:38:50Z",
-   "updated": "2026-11-13T18:55:12.9021007Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 337.62",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Decatur",
-   "lat": 34.59524,
-   "lon": -86.901896,
-   "start": "2026-11-13T18:49:39Z",
-   "end": "2026-11-13T19:49:39Z",
-   "updated": "2026-11-13T12:53:42Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 NB @ MP 332.89",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.527519999999996,
-   "lon": -86.90503199999999,
-   "start": "2026-11-13T18:52:06Z",
-   "end": "2026-11-13T19:52:06Z",
-   "updated": "2026-11-13T12:53:29Z"
+   "end": "2026-11-13T20:45:00Z",
+   "updated": "2026-11-13T19:55:04.6244022Z"
   }
  ]
 }
