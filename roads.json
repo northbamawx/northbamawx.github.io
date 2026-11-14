@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-14T03:06:06+00:00",
- "events": []
+ "updated": "2026-11-14T04:06:06+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 6.01",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.207344,
+   "lon": -86.876232,
+   "start": "2026-11-14T03:56:19Z",
+   "end": "2026-11-14T04:56:19Z",
+   "updated": "2026-11-13T21:57:04Z"
+  }
+ ]
 }
