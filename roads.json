@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-14T02:06:13+00:00",
+ "updated": "2026-11-14T02:38:46+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 64.57",
+   "where": "US31 SB @ MP 358.98",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.619796,
-   "lon": -87.052024,
-   "start": "2026-11-14T01:28:48Z",
-   "end": "2026-11-14T02:28:48Z",
-   "updated": "2026-11-13T19:30:50Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.616192,
+   "lon": -86.970024,
+   "start": "2026-11-14T02:07:29Z",
+   "end": "2026-11-14T03:07:29Z",
+   "updated": "2026-11-13T20:08:54Z"
   }
  ]
 }
