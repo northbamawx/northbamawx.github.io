@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-14T05:06:16+00:00",
- "events": []
+ "updated": "2026-11-14T06:06:11+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB/SB @ MP 11.88",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.843852,
+   "lon": -87.64636,
+   "start": "2026-11-14T05:34:40Z",
+   "end": "2026-11-14T06:34:40Z",
+   "updated": "2026-11-13T23:36:05Z"
+  }
+ ]
 }
