@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-14T01:06:16+00:00",
+ "updated": "2026-11-14T02:06:13+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 82.37",
+   "where": "AL20 EB/WB @ MP 64.57",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "UnderwoodPetersville",
-   "lat": 34.902544,
-   "lon": -87.740264,
-   "start": "2026-11-14T00:39:10Z",
-   "end": "2026-11-14T01:39:10Z",
-   "updated": "2026-11-13T18:39:55Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 363.16",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.950888,
-   "lon": -86.893424,
-   "start": "2026-11-14T00:24:07Z",
-   "end": "2026-11-14T01:24:07Z",
-   "updated": "2026-11-13T18:24:54Z"
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.619796,
+   "lon": -87.052024,
+   "start": "2026-11-14T01:28:48Z",
+   "end": "2026-11-14T02:28:48Z",
+   "updated": "2026-11-13T19:30:50Z"
   }
  ]
 }
