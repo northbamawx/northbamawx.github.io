@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T17:06:27+00:00",
+ "updated": "2026-11-15T18:05:50+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,22 @@
    "lat": 34.400816,
    "lon": -87.752104,
    "start": "2026-11-15T16:16:02Z",
-   "end": "2026-11-15T17:16:02Z",
-   "updated": "2026-11-15T16:27:21.0123239Z"
+   "end": "2026-11-15T18:15:00Z",
+   "updated": "2026-11-15T17:16:05.1624917Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 81.59",
+   "where": "US72 EB @ MP 92.18",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.763752,
-   "lon": -86.85928,
-   "start": "2026-11-15T16:18:33Z",
-   "end": "2026-11-15T17:18:33Z",
-   "updated": "2026-11-15T10:28:16Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.745532,
+   "lon": -86.681912,
+   "start": "2026-11-15T17:36:26Z",
+   "end": "2026-11-15T18:36:26Z",
+   "updated": "2026-11-15T17:59:19.0285765Z"
   }
  ]
 }
