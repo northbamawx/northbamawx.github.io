@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-15T16:05:47+00:00",
+ "updated": "2026-11-15T17:06:27+00:00",
  "events": [
   {
-   "type": "Incident",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Other",
-   "where": "US72 WB @ MP 39.07",
-   "detail": "Incident in the roadway. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.84608,
-   "lon": -87.580184,
-   "start": "2026-11-15T15:25:46Z",
-   "end": "2026-11-15T16:25:46Z",
-   "updated": "2026-11-15T09:26:45Z"
+   "title": "Moderate Crash",
+   "where": "AL17 NB/SB @ MP 301.66",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Phil Campbell",
+   "lat": 34.400816,
+   "lon": -87.752104,
+   "start": "2026-11-15T16:16:02Z",
+   "end": "2026-11-15T17:16:02Z",
+   "updated": "2026-11-15T16:27:21.0123239Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 81.59",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.763752,
+   "lon": -86.85928,
+   "start": "2026-11-15T16:18:33Z",
+   "end": "2026-11-15T17:18:33Z",
+   "updated": "2026-11-15T10:28:16Z"
   }
  ]
 }
