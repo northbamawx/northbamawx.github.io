@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-15T09:05:49+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 WB @ MP 69.15",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.60914,
-   "lon": -86.97762399999999,
-   "start": "2026-11-15T08:51:00Z",
-   "end": "2026-11-15T09:51:00Z",
-   "updated": "2026-11-15T02:51:58Z"
-  }
- ]
+ "updated": "2026-11-15T10:05:48+00:00",
+ "events": []
 }
