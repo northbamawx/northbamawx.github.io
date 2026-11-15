@@ -1,47 +1,4 @@
 {
- "updated": "2026-11-15T20:29:17+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 234.82",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Dodge City",
-   "lat": 34.050232,
-   "lon": -86.871816,
-   "start": "2026-11-15T19:52:52Z",
-   "end": "2026-11-15T20:52:52Z",
-   "updated": "2026-11-15T13:53:25Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 284.12",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Hopewell",
-   "lat": 34.286204,
-   "lon": -86.496624,
-   "start": "2026-11-15T18:57:51Z",
-   "end": "2026-11-15T20:30:00Z",
-   "updated": "2026-11-15T19:58:20.5250875Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 74.68",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.790028,
-   "lon": -86.97488799999999,
-   "start": "2026-11-15T19:32:01Z",
-   "end": "2026-11-15T20:32:01Z",
-   "updated": "2026-11-15T13:32:39Z"
-  }
- ]
+ "updated": "2026-11-15T21:05:54+00:00",
+ "events": []
 }
