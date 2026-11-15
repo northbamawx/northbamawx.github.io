@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-15T00:48:07+00:00",
+ "updated": "2026-11-15T01:06:08+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 SB @ MP 310.86",
+   "where": "AL69 SB @ MP 263.94",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.636328,
-   "lon": -86.567008,
-   "start": "2026-11-14T23:56:16Z",
-   "end": "2026-11-15T00:56:16Z",
-   "updated": "2026-11-14T17:57:01Z"
+   "county": "Cullman",
+   "city": "Joppa",
+   "lat": 34.299752,
+   "lon": -86.55372799999999,
+   "start": "2026-11-15T00:50:57Z",
+   "end": "2026-11-15T01:50:57Z",
+   "updated": "2026-11-14T18:53:16Z"
   }
  ]
 }
