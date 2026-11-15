@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-15T10:05:48+00:00",
- "events": []
+ "updated": "2026-11-15T11:05:47+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 92.58",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.743255999999995,
+   "lon": -86.674712,
+   "start": "2026-11-15T10:55:15Z",
+   "end": "2026-11-15T11:55:15Z",
+   "updated": "2026-11-15T04:56:15Z"
+  }
+ ]
 }
