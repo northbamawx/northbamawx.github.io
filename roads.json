@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-15T08:05:49+00:00",
+ "updated": "2026-11-15T09:05:49+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 SB @ MP 325.29",
+   "where": "AL20 WB @ MP 69.15",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.801612,
-   "lon": -86.67597599999999,
-   "start": "2026-11-15T07:21:37Z",
-   "end": "2026-11-15T08:21:37Z",
-   "updated": "2026-11-15T01:22:43Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 325.29",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.8016,
-   "lon": -86.676,
-   "start": "2026-11-15T07:22:18Z",
-   "end": "2026-11-15T08:22:18Z",
-   "updated": "2026-11-15T01:23:25Z"
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.60914,
+   "lon": -86.97762399999999,
+   "start": "2026-11-15T08:51:00Z",
+   "end": "2026-11-15T09:51:00Z",
+   "updated": "2026-11-15T02:51:58Z"
   }
  ]
 }
