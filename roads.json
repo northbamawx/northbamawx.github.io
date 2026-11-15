@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-15T05:06:08+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 88.69",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.753928,
-   "lon": -86.74047999999999,
-   "start": "2026-11-15T04:15:02Z",
-   "end": "2026-11-15T05:15:02Z",
-   "updated": "2026-11-14T22:20:43Z"
-  }
- ]
+ "updated": "2026-11-15T06:06:46+00:00",
+ "events": []
 }
