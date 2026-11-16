@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-16T10:05:50+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 295.04",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.33836,
-   "lon": -86.312432,
-   "start": "2026-11-16T08:06:57Z",
-   "end": "2026-11-16T11:00:00Z",
-   "updated": "2026-11-16T10:01:40.567061Z"
-  }
- ]
+ "updated": "2026-11-16T11:05:57+00:00",
+ "events": []
 }
