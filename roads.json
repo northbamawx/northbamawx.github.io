@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-16T05:06:09+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 355.06",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.840092,
-   "lon": -86.93491999999999,
-   "start": "2026-11-16T04:59:54Z",
-   "end": "2026-11-16T05:59:54Z",
-   "updated": "2026-11-15T23:00:41Z"
-  }
- ]
+ "updated": "2026-11-16T06:06:09+00:00",
+ "events": []
 }
