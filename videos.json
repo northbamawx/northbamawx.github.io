@@ -1,6 +1,12 @@
 {
- "updated": 1794863150,
+ "updated": 1794864952,
  "items": [
+  {
+   "id": "wFmgaWnU8NA",
+   "title": "Pattern Watch: Warm Trend Early Week, Mixed Next Week",
+   "short": true,
+   "published": 1794863254
+  },
   {
    "id": "tJUrEVlitoI",
    "title": "Winter Storm Warning in California and Nevada",
@@ -42,12 +48,6 @@
    "title": "Huntsville Weather Forecast: Widespread Frost & 55° Saturday",
    "short": true,
    "published": 1794660301
-  },
-  {
-   "id": "kp-QUezkYg0",
-   "title": "Friday Night Football Forecast: Partly Cloudy & 42° at Kickoff",
-   "short": true,
-   "published": 1794596683
   }
  ]
 }

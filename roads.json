@@ -1,4 +1,61 @@
 {
- "updated": "2026-11-16T21:05:50+00:00",
- "events": []
+ "updated": "2026-11-16T21:35:52+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US43 NB/SB @ MP 293.88",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.490116,
+   "lon": -87.73113599999999,
+   "start": "2026-11-16T21:16:58Z",
+   "end": "2026-11-16T22:16:58Z",
+   "updated": "2026-11-16T21:24:50.2932013Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 154.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Stevenson",
+   "lat": 34.831512,
+   "lon": -85.83731999999999,
+   "start": "2026-11-16T21:15:14Z",
+   "end": "2026-11-16T22:15:14Z",
+   "updated": "2026-11-16T15:20:10Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL304 EB/WB",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Tanner",
+   "lat": 34.731296,
+   "lon": -86.95707999999999,
+   "start": "2026-11-16T21:26:16Z",
+   "end": "2026-11-16T22:26:16Z",
+   "updated": "2026-11-16T15:26:52Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 9.37",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.675152,
+   "lon": -86.749504,
+   "start": "2026-11-16T21:23:28Z",
+   "end": "2026-11-16T22:23:28Z",
+   "updated": "2026-11-16T15:26:17Z"
+  }
+ ]
 }
