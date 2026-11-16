@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-16T00:18:27+00:00",
- "events": [
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "US72 EB @ MP 48.52",
-   "detail": "Debris in the roadway. Please use caution when traveling through this area.  n",
-   "county": "Lauderdale",
-   "city": "Centerstar",
-   "lat": 34.85846,
-   "lon": -87.41697599999999,
-   "start": "2026-11-16T00:07:40Z",
-   "end": "2026-11-16T01:07:40Z",
-   "updated": "2026-11-15T18:08:38Z"
-  }
- ]
+ "updated": "2026-11-16T01:05:49+00:00",
+ "events": []
 }
