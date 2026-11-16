@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T21:35:52+00:00",
+ "updated": "2026-11-16T22:05:50+00:00",
  "events": [
   {
    "type": "Crash",
@@ -13,7 +13,7 @@
    "lon": -87.73113599999999,
    "start": "2026-11-16T21:16:58Z",
    "end": "2026-11-16T22:16:58Z",
-   "updated": "2026-11-16T21:24:50.2932013Z"
+   "updated": "2026-11-16T21:41:08.3087957Z"
   },
   {
    "type": "Crash",
@@ -47,15 +47,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 9.37",
+   "where": "US231/431 NB/SB @ MP 335.81",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Madison",
-   "lat": 34.675152,
-   "lon": -86.749504,
-   "start": "2026-11-16T21:23:28Z",
-   "end": "2026-11-16T22:23:28Z",
-   "updated": "2026-11-16T15:26:17Z"
+   "city": "Huntsville",
+   "lat": 34.74942,
+   "lon": -86.599336,
+   "start": "2026-11-16T21:32:40Z",
+   "end": "2026-11-16T22:32:40Z",
+   "updated": "2026-11-16T21:52:07.2745934Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 13.79",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.7042,
+   "lon": -86.68150399999999,
+   "start": "2026-11-16T21:53:10Z",
+   "end": "2026-11-16T23:30:00Z",
+   "updated": "2026-11-16T15:54:50Z"
   }
  ]
 }
