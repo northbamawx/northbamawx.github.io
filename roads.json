@@ -1,47 +1,19 @@
 {
- "updated": "2026-11-16T19:05:49+00:00",
+ "updated": "2026-11-16T20:05:51+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 5.01",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.20636,
-   "lon": -86.85847199999999,
-   "start": "2026-11-16T18:53:17Z",
-   "end": "2026-11-16T19:53:17Z",
-   "updated": "2026-11-16T12:54:04Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL251 NB/SB @ MP 3.61",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.82936,
-   "lon": -86.894392,
-   "start": "2026-11-16T18:47:26Z",
-   "end": "2026-11-16T19:47:26Z",
-   "updated": "2026-11-16T12:47:41Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 93.18",
+   "where": "I-565 WB @ MP 20.08",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.740899999999996,
-   "lon": -86.66581599999999,
-   "start": "2026-11-16T18:18:02Z",
-   "end": "2026-11-16T19:18:02Z",
-   "updated": "2026-11-16T12:19:22Z"
+   "lat": 34.741324,
+   "lon": -86.583872,
+   "start": "2026-11-16T19:41:22Z",
+   "end": "2026-11-16T20:41:22Z",
+   "updated": "2026-11-16T13:44:04Z"
   }
  ]
 }
