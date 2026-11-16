@@ -2246,9 +2246,12 @@ async function loadVisits() {
     // GoatCounter caches each public counter for a few hours, so take the larger of
     // the site total and the home page count (whichever was refreshed more recently).
     const get = async path => { try { const r = await fetch(`https://northbamawx.goatcounter.com/counter/${path}.json`); return r.ok ? parseInt(String((await r.json()).count).replace(/,/g, ''), 10) || 0 : 0; } catch (e) { return 0; } };
-    const [total, home] = await Promise.all([get('TOTAL'), get('%2F')]);
-    const n = Math.max(total, home).toLocaleString();
-    document.getElementById('visits-n').textContent = n;
+    // visits.json is the last good total, copied here by the bot every 30 minutes, so the
+    // number still shows when GoatCounter itself can't be reached (it dropped connections 11/16).
+    const saved = async () => { try { const r = await fetch('visits.json?t=' + Date.now()); return r.ok ? parseInt((await r.json()).count, 10) || 0 : 0; } catch (e) { return 0; } };
+    const [file, total, home] = await Promise.all([saved(), get('TOTAL'), get('%2F')]);
+    const n = Math.max(file, total, home);
+    if (n > 0) document.getElementById('visits-n').textContent = n.toLocaleString();
   } catch (e) {}
 }
 loadVisits();
