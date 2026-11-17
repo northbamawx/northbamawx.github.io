@@ -1,47 +1,4 @@
 {
- "updated": "2026-11-17T21:05:17+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL64 EB/WB @ MP 16.49",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Anderson",
-   "lat": 34.975736,
-   "lon": -87.25842399999999,
-   "start": "2026-11-17T17:15:48Z",
-   "end": "2026-11-17T21:15:00Z",
-   "updated": "2026-11-17T19:23:19.3175624Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL101 NB/SB @ MP 24.07",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Town Creek",
-   "lat": 34.79162,
-   "lon": -87.379536,
-   "start": "2026-11-17T17:25:44Z",
-   "end": "2026-11-17T21:15:00Z",
-   "updated": "2026-11-17T19:28:42.3135232Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL36 EB/WB @ MP 21.24",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.442679999999996,
-   "lon": -86.940944,
-   "start": "2026-11-17T20:43:40Z",
-   "end": "2026-11-17T21:43:40Z",
-   "updated": "2026-11-17T14:44:19Z"
-  }
- ]
+ "updated": "2026-11-17T22:05:17+00:00",
+ "events": []
 }
