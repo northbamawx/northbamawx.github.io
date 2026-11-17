@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-17T17:05:50+00:00",
+ "updated": "2026-11-17T17:50:53+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "AL64 EB/WB @ MP 16.49",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Anderson",
+   "lat": 34.975736,
+   "lon": -87.25842399999999,
+   "start": "2026-11-17T17:15:48Z",
+   "end": "2026-11-17T18:15:48Z",
+   "updated": "2026-11-17T17:29:43.3989295Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "AL101 NB/SB @ MP 24.07",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Town Creek",
+   "lat": 34.79162,
+   "lon": -87.379536,
+   "start": "2026-11-17T17:25:44Z",
+   "end": "2026-11-17T18:25:44Z",
+   "updated": "2026-11-17T11:27:40Z"
+  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
