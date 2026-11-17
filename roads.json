@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T20:05:17+00:00",
+ "updated": "2026-11-17T21:05:17+00:00",
  "events": [
   {
    "type": "Crash",
@@ -30,18 +30,18 @@
    "updated": "2026-11-17T19:28:42.3135232Z"
   },
   {
-   "type": "Incident",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 321.5",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "title": "Moderate Crash",
+   "where": "AL36 EB/WB @ MP 21.24",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.362452,
-   "lon": -86.891712,
-   "start": "2026-11-17T14:22:59Z",
-   "end": "2026-11-17T21:00:00Z",
-   "updated": "2026-11-17T15:20:32.9555586Z"
+   "city": "Hartselle",
+   "lat": 34.442679999999996,
+   "lon": -86.940944,
+   "start": "2026-11-17T20:43:40Z",
+   "end": "2026-11-17T21:43:40Z",
+   "updated": "2026-11-17T14:44:19Z"
   }
  ]
 }
