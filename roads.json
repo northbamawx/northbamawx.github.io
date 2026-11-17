@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T19:05:51+00:00",
+ "updated": "2026-11-17T20:05:17+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,8 @@
    "lat": 34.975736,
    "lon": -87.25842399999999,
    "start": "2026-11-17T17:15:48Z",
-   "end": "2026-11-17T19:15:00Z",
-   "updated": "2026-11-17T18:12:55.1128527Z"
+   "end": "2026-11-17T21:15:00Z",
+   "updated": "2026-11-17T19:23:19.3175624Z"
   },
   {
    "type": "Crash",
@@ -26,22 +26,8 @@
    "lat": 34.79162,
    "lon": -87.379536,
    "start": "2026-11-17T17:25:44Z",
-   "end": "2026-11-17T19:30:00Z",
-   "updated": "2026-11-17T19:01:39.2368834Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 304.29",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.125499999999995,
-   "lon": -86.866928,
-   "start": "2026-11-17T18:53:49Z",
-   "end": "2026-11-17T19:53:49Z",
-   "updated": "2026-11-17T12:54:27Z"
+   "end": "2026-11-17T21:15:00Z",
+   "updated": "2026-11-17T19:28:42.3135232Z"
   },
   {
    "type": "Incident",
