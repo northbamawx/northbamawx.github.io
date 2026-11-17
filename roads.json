@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-17T02:05:59+00:00",
- "events": []
+ "updated": "2026-11-17T03:05:51+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US43 NB/SB @ MP 326.4",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Killen",
+   "lat": 34.868896,
+   "lon": -87.543256,
+   "start": "2026-11-17T02:33:21Z",
+   "end": "2026-11-17T03:33:21Z",
+   "updated": "2026-11-17T02:40:47.9046835Z"
+  }
+ ]
 }
