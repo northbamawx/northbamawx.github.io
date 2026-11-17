@@ -1,62 +1,6 @@
 {
- "updated": "2026-11-17T15:05:58+00:00",
+ "updated": "2026-11-17T16:05:50+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 SB @ MP 330.02",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.711656,
-   "lon": -86.534464,
-   "start": "2026-11-17T13:14:38Z",
-   "end": "2026-11-17T15:15:00Z",
-   "updated": "2026-11-17T14:42:58.3152044Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 SB @ MP 321.08",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.750119999999995,
-   "lon": -86.63495999999999,
-   "start": "2026-11-17T14:02:29Z",
-   "end": "2026-11-17T16:00:00Z",
-   "updated": "2026-11-17T15:04:25.1253757Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 355.7",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.573656,
-   "lon": -86.97376,
-   "start": "2026-11-17T14:31:11Z",
-   "end": "2026-11-17T15:31:11Z",
-   "updated": "2026-11-17T08:31:33Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 43.4",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.591196,
-   "lon": -87.029872,
-   "start": "2026-11-17T14:59:58Z",
-   "end": "2026-11-17T15:59:58Z",
-   "updated": "2026-11-17T09:01:11Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
@@ -68,8 +12,8 @@
    "lat": 34.362452,
    "lon": -86.891712,
    "start": "2026-11-17T14:22:59Z",
-   "end": "2026-11-17T15:22:59Z",
-   "updated": "2026-11-17T08:24:24Z"
+   "end": "2026-11-17T21:00:00Z",
+   "updated": "2026-11-17T15:20:32.9555586Z"
   }
  ]
 }
