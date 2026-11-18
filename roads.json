@@ -1,61 +1,19 @@
 {
- "updated": "2026-11-18T21:20:22+00:00",
+ "updated": "2026-11-18T22:05:18+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 5.11",
+   "where": "US31 NB/SB @ MP 349.79",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.20644,
-   "lon": -86.859304,
-   "start": "2026-11-18T20:47:39Z",
-   "end": "2026-11-18T21:47:39Z",
-   "updated": "2026-11-18T14:49:10Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Overturned Vehicle",
-   "where": "US231/431 NB/SB @ MP 344.44",
-   "detail": "Crash with road closure. Please seek alternate route.",
-   "county": "Madison",
-   "city": "Meridianville",
-   "lat": 34.870124,
-   "lon": -86.571392,
-   "start": "2026-11-18T19:26:31Z",
-   "end": "2026-11-18T21:30:00Z",
-   "updated": "2026-11-18T21:01:46.7261041Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 13.39",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.702508,
-   "lon": -86.68664,
-   "start": "2026-11-18T20:56:19Z",
-   "end": "2026-11-18T21:56:19Z",
-   "updated": "2026-11-18T14:57:41Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 SB @ MP 315.36",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.698492,
-   "lon": -86.585008,
-   "start": "2026-11-18T20:24:43Z",
-   "end": "2026-11-18T21:24:43Z",
-   "updated": "2026-11-18T14:25:54Z"
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.48874,
+   "lon": -86.964584,
+   "start": "2026-11-18T21:17:38Z",
+   "end": "2026-11-18T22:17:38Z",
+   "updated": "2026-11-18T15:18:46Z"
   },
   {
    "type": "Incident",
@@ -70,20 +28,6 @@
    "start": "2026-11-18T15:50:37Z",
    "end": "2026-11-18T23:00:00Z",
    "updated": "2026-11-18T20:56:12.6765541Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 320.6",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.349607999999996,
-   "lon": -86.892264,
-   "start": "2026-11-18T16:54:03Z",
-   "end": "2026-11-18T22:00:00Z",
-   "updated": "2026-11-18T20:01:39.5732816Z"
   }
  ]
 }
