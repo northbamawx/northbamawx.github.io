@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-18T19:35:22+00:00",
+ "updated": "2026-11-18T20:05:20+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "Closed",
+   "title": "Overturned Vehicle",
+   "where": "US231/431 NB/SB @ MP 344.44",
+   "detail": "Crash with road closure. Please seek alternate route.",
+   "county": "Madison",
+   "city": "Meridianville",
+   "lat": 34.870124,
+   "lon": -86.571392,
+   "start": "2026-11-18T19:26:31Z",
+   "end": "2026-11-18T20:26:31Z",
+   "updated": "2026-11-18T19:50:47.6792521Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,22 +26,8 @@
    "lat": 34.399136,
    "lon": -87.75272,
    "start": "2026-11-18T18:43:56Z",
-   "end": "2026-11-18T19:43:56Z",
-   "updated": "2026-11-18T12:44:25Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "US231/431 NB/SB @ MP 344.44",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Meridianville",
-   "lat": 34.870124,
-   "lon": -86.571392,
-   "start": "2026-11-18T19:26:31Z",
-   "end": "2026-11-18T20:26:31Z",
-   "updated": "2026-11-18T13:30:04Z"
+   "end": "2026-11-18T20:15:00Z",
+   "updated": "2026-11-18T19:39:50.724384Z"
   },
   {
    "type": "Crash",
@@ -45,34 +45,6 @@
   },
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 16.7",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Florette",
-   "lat": 34.379244,
-   "lon": -86.6562,
-   "start": "2026-11-18T18:04:40Z",
-   "end": "2026-11-18T20:00:00Z",
-   "updated": "2026-11-18T19:28:43.3526946Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB @ MP 40",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.560151999999995,
-   "lon": -86.990888,
-   "start": "2026-11-18T18:11:48Z",
-   "end": "2026-11-18T20:00:00Z",
-   "updated": "2026-11-18T19:12:12.3082941Z"
-  },
-  {
-   "type": "Crash",
    "severity": "MajorDelay",
    "title": "Major Crash",
    "where": "I-65 NB @ MP 321.3",
@@ -82,8 +54,8 @@
    "lat": 34.360096,
    "lon": -86.89171999999999,
    "start": "2026-11-18T18:49:04Z",
-   "end": "2026-11-18T19:49:04Z",
-   "updated": "2026-11-18T19:23:16.8311181Z"
+   "end": "2026-11-18T20:15:00Z",
+   "updated": "2026-11-18T19:50:47.6790674Z"
   },
   {
    "type": "Incident",
@@ -96,8 +68,8 @@
    "lat": 34.748252,
    "lon": -86.57795999999999,
    "start": "2026-11-18T15:50:37Z",
-   "end": "2026-11-18T20:00:00Z",
-   "updated": "2026-11-18T19:01:24.3361853Z"
+   "end": "2026-11-18T21:00:00Z",
+   "updated": "2026-11-18T19:56:14.0504836Z"
   },
   {
    "type": "Incident",
@@ -110,8 +82,8 @@
    "lat": 34.31686,
    "lon": -86.90043999999999,
    "start": "2026-11-18T16:56:21Z",
-   "end": "2026-11-18T20:00:00Z",
-   "updated": "2026-11-18T19:23:16.8278952Z"
+   "end": "2026-11-18T22:15:00Z",
+   "updated": "2026-11-18T20:01:39.5732977Z"
   },
   {
    "type": "Incident",
@@ -124,8 +96,8 @@
    "lat": 34.349607999999996,
    "lon": -86.892264,
    "start": "2026-11-18T16:54:03Z",
-   "end": "2026-11-18T20:00:00Z",
-   "updated": "2026-11-18T19:01:24.4891952Z"
+   "end": "2026-11-18T22:00:00Z",
+   "updated": "2026-11-18T20:01:39.5732816Z"
   }
  ]
 }
