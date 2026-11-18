@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-18T22:05:18+00:00",
+ "updated": "2026-11-18T22:35:24+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 349.79",
+   "where": "US72 WB @ MP 86.69",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.48874,
-   "lon": -86.964584,
-   "start": "2026-11-18T21:17:38Z",
-   "end": "2026-11-18T22:17:38Z",
-   "updated": "2026-11-18T15:18:46Z"
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.747684,
+   "lon": -86.7756,
+   "start": "2026-11-18T22:28:36Z",
+   "end": "2026-11-18T23:28:36Z",
+   "updated": "2026-11-18T16:30:02Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 312.36",
+   "detail": "Crash with lane blockage. Please use catuion when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.658111999999996,
+   "lon": -86.56952,
+   "start": "2026-11-18T22:22:09Z",
+   "end": "2026-11-18T23:22:09Z",
+   "updated": "2026-11-18T16:26:50Z"
   },
   {
    "type": "Incident",
