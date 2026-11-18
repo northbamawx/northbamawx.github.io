@@ -1,9 +1,23 @@
 {
- "updated": "2026-11-18T20:05:20+00:00",
+ "updated": "2026-11-18T21:05:20+00:00",
  "events": [
   {
    "type": "Crash",
-   "severity": "Closed",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 5.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.20644,
+   "lon": -86.859304,
+   "start": "2026-11-18T20:47:39Z",
+   "end": "2026-11-18T21:47:39Z",
+   "updated": "2026-11-18T14:49:10Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
    "title": "Overturned Vehicle",
    "where": "US231/431 NB/SB @ MP 344.44",
    "detail": "Crash with road closure. Please seek alternate route.",
@@ -12,50 +26,50 @@
    "lat": 34.870124,
    "lon": -86.571392,
    "start": "2026-11-18T19:26:31Z",
-   "end": "2026-11-18T20:26:31Z",
-   "updated": "2026-11-18T19:50:47.6792521Z"
+   "end": "2026-11-18T21:30:00Z",
+   "updated": "2026-11-18T21:01:46.7261041Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL17 NB/SB @ MP 301.58",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Phil Campbell",
-   "lat": 34.399136,
-   "lon": -87.75272,
-   "start": "2026-11-18T18:43:56Z",
-   "end": "2026-11-18T20:15:00Z",
-   "updated": "2026-11-18T19:39:50.724384Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 SB @ MP 325.29",
+   "where": "US231 SB @ MP 315.36",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.801508,
-   "lon": -86.67622399999999,
-   "start": "2026-11-18T19:08:52Z",
-   "end": "2026-11-18T20:08:52Z",
-   "updated": "2026-11-18T13:09:51Z"
+   "lat": 34.698492,
+   "lon": -86.585008,
+   "start": "2026-11-18T20:24:43Z",
+   "end": "2026-11-18T21:24:43Z",
+   "updated": "2026-11-18T14:25:54Z"
   },
   {
    "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Major Crash",
-   "where": "I-65 NB @ MP 321.3",
-   "detail": "Crash with northbound closure. Please seek alternate route northbound.",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 13.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.702508,
+   "lon": -86.68664,
+   "start": "2026-11-18T20:56:19Z",
+   "end": "2026-11-18T21:56:19Z",
+   "updated": "2026-11-18T14:57:41Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB @ MP 40",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.360096,
-   "lon": -86.89171999999999,
-   "start": "2026-11-18T18:49:04Z",
-   "end": "2026-11-18T20:15:00Z",
-   "updated": "2026-11-18T19:50:47.6790674Z"
+   "city": "Decatur",
+   "lat": 34.560151999999995,
+   "lon": -86.990888,
+   "start": "2026-11-18T18:11:48Z",
+   "end": "2026-11-18T22:00:00Z",
+   "updated": "2026-11-18T21:01:46.726014Z"
   },
   {
    "type": "Incident",
@@ -68,22 +82,8 @@
    "lat": 34.748252,
    "lon": -86.57795999999999,
    "start": "2026-11-18T15:50:37Z",
-   "end": "2026-11-18T21:00:00Z",
-   "updated": "2026-11-18T19:56:14.0504836Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 NB @ MP 317",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.31686,
-   "lon": -86.90043999999999,
-   "start": "2026-11-18T16:56:21Z",
-   "end": "2026-11-18T22:15:00Z",
-   "updated": "2026-11-18T20:01:39.5732977Z"
+   "end": "2026-11-18T23:00:00Z",
+   "updated": "2026-11-18T20:56:12.6765541Z"
   },
   {
    "type": "Incident",
