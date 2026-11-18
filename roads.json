@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T01:05:18+00:00",
+ "updated": "2026-11-18T01:09:32+00:00",
  "events": [
   {
    "type": "Crash",
@@ -26,8 +26,8 @@
    "lat": 34.334852,
    "lon": -86.04877599999999,
    "start": "2026-11-18T00:08:36Z",
-   "end": "2026-11-18T01:08:36Z",
-   "updated": "2026-11-17T18:11:40Z"
+   "end": "2026-11-18T01:45:00Z",
+   "updated": "2026-11-18T01:07:53.1690107Z"
   },
   {
    "type": "Crash",
@@ -47,34 +47,6 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 10.87",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.68566,
-   "lon": -86.725616,
-   "start": "2026-11-17T23:35:26Z",
-   "end": "2026-11-18T01:45:00Z",
-   "updated": "2026-11-18T01:02:31.6035035Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 89.99",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.756848,
-   "lon": -86.718808,
-   "start": "2026-11-18T00:44:54Z",
-   "end": "2026-11-18T01:44:54Z",
-   "updated": "2026-11-18T01:02:31.6036488Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
    "where": "I-565 EB @ MP 17.82",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.,",
    "county": "Madison",
@@ -86,18 +58,32 @@
    "updated": "2026-11-17T18:24:59Z"
   },
   {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 WB @ MP 10.87",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.68566,
+   "lon": -86.725616,
+   "start": "2026-11-17T23:35:26Z",
+   "end": "2026-11-18T01:45:00Z",
+   "updated": "2026-11-18T01:02:31.6035035Z"
+  },
+  {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
    "where": "I-565 WB @ MP 14.59",
-   "detail": "Congestion building in the area westbound. Please use caution when traveling through this area.",
+   "detail": "Road Cleared.",
    "county": "Madison",
    "city": "Huntsville",
    "lat": 34.708012,
    "lon": -86.667456,
    "start": "2026-11-17T22:37:44Z",
    "end": "2026-11-18T01:15:00Z",
-   "updated": "2026-11-18T00:51:40.6644075Z"
+   "updated": "2026-11-18T01:07:53.1372465Z"
   }
  ]
 }
