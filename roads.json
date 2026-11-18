@@ -1,47 +1,75 @@
 {
- "updated": "2026-11-18T23:05:19+00:00",
+ "updated": "2026-11-18T23:55:46+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 326.46",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.172896,
-   "lon": -86.842488,
-   "start": "2026-11-18T22:53:42Z",
-   "end": "2026-11-18T23:53:42Z",
-   "updated": "2026-11-18T16:55:19Z"
+   "where": "AL24 EB/WB @ MP 29.02",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area,",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.483076,
+   "lon": -87.68486399999999,
+   "start": "2026-11-18T23:25:34Z",
+   "end": "2026-11-19T00:25:34Z",
+   "updated": "2026-11-18T17:26:44Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 WB @ MP 86.69",
+   "where": "AL53 NB/SB @ MP 328.79",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Madison",
-   "lat": 34.747684,
-   "lon": -86.7756,
-   "start": "2026-11-18T22:28:36Z",
-   "end": "2026-11-18T23:28:36Z",
-   "updated": "2026-11-18T16:30:02Z"
+   "city": "Harvest",
+   "lat": 34.843759999999996,
+   "lon": -86.71047999999999,
+   "start": "2026-11-18T23:36:51Z",
+   "end": "2026-11-19T00:36:51Z",
+   "updated": "2026-11-18T17:40:21Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 312.36",
-   "detail": "Crash with lane blockage. Please use catuion when traveling through this area.",
+   "where": "US431 NB/SB @ MP 332.82",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.658111999999996,
-   "lon": -86.56952,
-   "start": "2026-11-18T22:22:09Z",
-   "end": "2026-11-18T23:22:09Z",
-   "updated": "2026-11-18T23:01:27.0779559Z"
+   "lat": 34.72022,
+   "lon": -86.576944,
+   "start": "2026-11-18T23:22:03Z",
+   "end": "2026-11-19T00:22:03Z",
+   "updated": "2026-11-18T23:34:06.7925331Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL36 EB/WB @ MP 40.34",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Valhermoso Spngs",
+   "lat": 34.521932,
+   "lon": -86.656336,
+   "start": "2026-11-18T23:05:55Z",
+   "end": "2026-11-19T00:05:55Z",
+   "updated": "2026-11-18T17:06:45Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 40.79",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560888,
+   "lon": -87.00547999999999,
+   "start": "2026-11-18T23:27:40Z",
+   "end": "2026-11-19T00:27:40Z",
+   "updated": "2026-11-18T17:28:16Z"
   },
   {
    "type": "Incident",
@@ -68,8 +96,22 @@
    "lat": 34.706528,
    "lon": -86.674776,
    "start": "2026-11-18T22:47:32Z",
-   "end": "2026-11-18T23:45:00Z",
-   "updated": "2026-11-18T16:50:11Z"
+   "end": "2026-11-19T00:15:00Z",
+   "updated": "2026-11-18T23:44:59.5554922Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 16.1",
+   "detail": "Congestion building in the area eastbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.715004,
+   "lon": -86.642872,
+   "start": "2026-11-18T23:29:17Z",
+   "end": "2026-11-19T00:29:17Z",
+   "updated": "2026-11-18T17:31:14Z"
   }
  ]
 }
