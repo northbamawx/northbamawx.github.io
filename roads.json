@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T05:05:22+00:00",
+ "updated": "2026-11-18T06:05:16+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,8 @@
    "lat": 34.934087999999996,
    "lon": -86.89745599999999,
    "start": "2026-11-18T04:49:22Z",
-   "end": "2026-11-18T05:49:22Z",
-   "updated": "2026-11-17T22:51:12Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 10.07",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.67922,
-   "lon": -86.73886399999999,
-   "start": "2026-11-18T04:57:05Z",
-   "end": "2026-11-18T05:57:05Z",
-   "updated": "2026-11-17T22:58:18Z"
+   "end": "2026-11-18T06:15:00Z",
+   "updated": "2026-11-18T05:51:52.0249325Z"
   }
  ]
 }
