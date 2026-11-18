@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-18T22:35:24+00:00",
+ "updated": "2026-11-18T23:05:19+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 326.46",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.172896,
+   "lon": -86.842488,
+   "start": "2026-11-18T22:53:42Z",
+   "end": "2026-11-18T23:53:42Z",
+   "updated": "2026-11-18T16:55:19Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -27,7 +41,7 @@
    "lon": -86.56952,
    "start": "2026-11-18T22:22:09Z",
    "end": "2026-11-18T23:22:09Z",
-   "updated": "2026-11-18T16:26:50Z"
+   "updated": "2026-11-18T23:01:27.0779559Z"
   },
   {
    "type": "Incident",
@@ -37,11 +51,25 @@
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.748252,
-   "lon": -86.57795999999999,
+   "lat": 34.737704,
+   "lon": -86.590344,
    "start": "2026-11-18T15:50:37Z",
-   "end": "2026-11-18T23:00:00Z",
-   "updated": "2026-11-18T20:56:12.6765541Z"
+   "end": "2026-11-19T00:30:00Z",
+   "updated": "2026-11-18T23:01:27.0748187Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 WB @ MP 14.19",
+   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.706528,
+   "lon": -86.674776,
+   "start": "2026-11-18T22:47:32Z",
+   "end": "2026-11-18T23:45:00Z",
+   "updated": "2026-11-18T16:50:11Z"
   }
  ]
 }
