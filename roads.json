@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T18:05:18+00:00",
+ "updated": "2026-11-18T18:20:20+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,36 @@
    "lat": 34.745824,
    "lon": -86.95711999999999,
    "start": "2026-11-18T17:19:31Z",
-   "end": "2026-11-18T18:19:31Z",
-   "updated": "2026-11-18T11:47:01Z"
+   "end": "2026-11-18T19:00:00Z",
+   "updated": "2026-11-18T18:17:17.9518647Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 16.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Florette",
+   "lat": 34.379244,
+   "lon": -86.6562,
+   "start": "2026-11-18T18:04:40Z",
+   "end": "2026-11-18T19:04:40Z",
+   "updated": "2026-11-18T12:13:13Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 40",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560151999999995,
+   "lon": -86.990888,
+   "start": "2026-11-18T18:11:48Z",
+   "end": "2026-11-18T19:11:48Z",
+   "updated": "2026-11-18T12:16:03Z"
   },
   {
    "type": "Incident",
