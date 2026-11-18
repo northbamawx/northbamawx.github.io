@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T19:05:20+00:00",
+ "updated": "2026-11-18T19:35:22+00:00",
  "events": [
   {
    "type": "Crash",
@@ -18,30 +18,30 @@
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 40",
+   "title": "Overturned Vehicle",
+   "where": "US231/431 NB/SB @ MP 344.44",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.560151999999995,
-   "lon": -86.990888,
-   "start": "2026-11-18T18:11:48Z",
-   "end": "2026-11-18T19:11:48Z",
-   "updated": "2026-11-18T12:16:03Z"
+   "county": "Madison",
+   "city": "Meridianville",
+   "lat": 34.870124,
+   "lon": -86.571392,
+   "start": "2026-11-18T19:26:31Z",
+   "end": "2026-11-18T20:26:31Z",
+   "updated": "2026-11-18T13:30:04Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 321.3",
+   "where": "AL53 SB @ MP 325.29",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.360096,
-   "lon": -86.89171999999999,
-   "start": "2026-11-18T18:49:04Z",
-   "end": "2026-11-18T19:49:04Z",
-   "updated": "2026-11-18T12:49:39Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.801508,
+   "lon": -86.67622399999999,
+   "start": "2026-11-18T19:08:52Z",
+   "end": "2026-11-18T20:08:52Z",
+   "updated": "2026-11-18T13:09:51Z"
   },
   {
    "type": "Crash",
@@ -54,22 +54,36 @@
    "lat": 34.379244,
    "lon": -86.6562,
    "start": "2026-11-18T18:04:40Z",
-   "end": "2026-11-18T19:30:00Z",
-   "updated": "2026-11-18T19:01:24.4915001Z"
+   "end": "2026-11-18T20:00:00Z",
+   "updated": "2026-11-18T19:28:43.3526946Z"
   },
   {
-   "type": "Incident",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 NB @ MP 316.2",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.289699999999996,
-   "lon": -86.91,
-   "start": "2026-11-18T16:56:21Z",
+   "title": "Moderate Crash",
+   "where": "AL67 NB @ MP 40",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560151999999995,
+   "lon": -86.990888,
+   "start": "2026-11-18T18:11:48Z",
    "end": "2026-11-18T20:00:00Z",
-   "updated": "2026-11-18T19:01:24.4892112Z"
+   "updated": "2026-11-18T19:12:12.3082941Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
+   "title": "Major Crash",
+   "where": "I-65 NB @ MP 321.3",
+   "detail": "Crash with northbound closure. Please seek alternate route northbound.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.360096,
+   "lon": -86.89171999999999,
+   "start": "2026-11-18T18:49:04Z",
+   "end": "2026-11-18T19:49:04Z",
+   "updated": "2026-11-18T19:23:16.8311181Z"
   },
   {
    "type": "Incident",
@@ -84,6 +98,20 @@
    "start": "2026-11-18T15:50:37Z",
    "end": "2026-11-18T20:00:00Z",
    "updated": "2026-11-18T19:01:24.3361853Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 NB @ MP 317",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.31686,
+   "lon": -86.90043999999999,
+   "start": "2026-11-18T16:56:21Z",
+   "end": "2026-11-18T20:00:00Z",
+   "updated": "2026-11-18T19:23:16.8278952Z"
   },
   {
    "type": "Incident",
