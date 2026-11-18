@@ -1,19 +1,75 @@
 {
- "updated": "2026-11-18T13:05:17+00:00",
+ "updated": "2026-11-18T14:05:19+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 35.51",
+   "where": "US431 NB @ MP 324.84",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.540279999999996,
-   "lon": -86.918064,
-   "start": "2026-11-18T12:09:19Z",
-   "end": "2026-11-18T13:09:19Z",
-   "updated": "2026-11-18T06:24:36Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.653852,
+   "lon": -86.480432,
+   "start": "2026-11-18T13:36:47Z",
+   "end": "2026-11-18T14:36:47Z",
+   "updated": "2026-11-18T13:48:44.9864955Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB @ MP 292.2",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Guntersville",
+   "lat": 34.307004,
+   "lon": -86.29262399999999,
+   "start": "2026-11-18T13:33:52Z",
+   "end": "2026-11-18T14:33:52Z",
+   "updated": "2026-11-18T13:54:10.3560243Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-565 EB @ MP 2.19",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Huntsville",
+   "lat": 34.633511999999996,
+   "lon": -86.864344,
+   "start": "2026-11-18T13:21:29Z",
+   "end": "2026-11-18T14:21:29Z",
+   "updated": "2026-11-18T07:21:50Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "AL255 SB @ MP 5.39",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.779284,
+   "lon": -86.672896,
+   "start": "2026-11-18T13:47:58Z",
+   "end": "2026-11-18T14:47:58Z",
+   "updated": "2026-11-18T07:48:30Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "US72 EB @ MP 87.89",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.75138,
+   "lon": -86.755112,
+   "start": "2026-11-18T13:31:59Z",
+   "end": "2026-11-18T14:31:59Z",
+   "updated": "2026-11-18T07:32:27Z"
   }
  ]
 }
