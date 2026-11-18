@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-18T18:20:20+00:00",
+ "updated": "2026-11-18T19:05:20+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 368.47",
+   "where": "AL17 NB/SB @ MP 301.58",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.745824,
-   "lon": -86.95711999999999,
-   "start": "2026-11-18T17:19:31Z",
-   "end": "2026-11-18T19:00:00Z",
-   "updated": "2026-11-18T18:17:17.9518647Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 16.7",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Florette",
-   "lat": 34.379244,
-   "lon": -86.6562,
-   "start": "2026-11-18T18:04:40Z",
-   "end": "2026-11-18T19:04:40Z",
-   "updated": "2026-11-18T12:13:13Z"
+   "county": "Franklin",
+   "city": "Phil Campbell",
+   "lat": 34.399136,
+   "lon": -87.75272,
+   "start": "2026-11-18T18:43:56Z",
+   "end": "2026-11-18T19:43:56Z",
+   "updated": "2026-11-18T12:44:25Z"
   },
   {
    "type": "Crash",
@@ -44,6 +30,34 @@
    "updated": "2026-11-18T12:16:03Z"
   },
   {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 321.3",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.360096,
+   "lon": -86.89171999999999,
+   "start": "2026-11-18T18:49:04Z",
+   "end": "2026-11-18T19:49:04Z",
+   "updated": "2026-11-18T12:49:39Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 16.7",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Florette",
+   "lat": 34.379244,
+   "lon": -86.6562,
+   "start": "2026-11-18T18:04:40Z",
+   "end": "2026-11-18T19:30:00Z",
+   "updated": "2026-11-18T19:01:24.4915001Z"
+  },
+  {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
@@ -54,8 +68,8 @@
    "lat": 34.289699999999996,
    "lon": -86.91,
    "start": "2026-11-18T16:56:21Z",
-   "end": "2026-11-18T19:00:00Z",
-   "updated": "2026-11-18T17:55:30.6206549Z"
+   "end": "2026-11-18T20:00:00Z",
+   "updated": "2026-11-18T19:01:24.4892112Z"
   },
   {
    "type": "Incident",
@@ -65,11 +79,11 @@
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.753299999999996,
-   "lon": -86.57226399999999,
+   "lat": 34.748252,
+   "lon": -86.57795999999999,
    "start": "2026-11-18T15:50:37Z",
-   "end": "2026-11-18T19:00:00Z",
-   "updated": "2026-11-18T18:01:01.7185233Z"
+   "end": "2026-11-18T20:00:00Z",
+   "updated": "2026-11-18T19:01:24.3361853Z"
   },
   {
    "type": "Incident",
@@ -82,8 +96,8 @@
    "lat": 34.349607999999996,
    "lon": -86.892264,
    "start": "2026-11-18T16:54:03Z",
-   "end": "2026-11-18T19:00:00Z",
-   "updated": "2026-11-18T17:50:03.1742536Z"
+   "end": "2026-11-18T20:00:00Z",
+   "updated": "2026-11-18T19:01:24.4891952Z"
   }
  ]
 }
