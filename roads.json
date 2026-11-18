@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-18T03:20:19+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL75 NB/SB @ MP 68.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "DeKalb",
-   "city": "Geraldine",
-   "lat": 34.334852,
-   "lon": -86.04877599999999,
-   "start": "2026-11-18T00:08:36Z",
-   "end": "2026-11-18T04:00:00Z",
-   "updated": "2026-11-18T03:00:09.0212543Z"
-  }
- ]
+ "updated": "2026-11-18T03:50:27+00:00",
+ "events": []
 }
