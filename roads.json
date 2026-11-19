@@ -1,47 +1,4 @@
 {
- "updated": "2026-11-19T05:05:18+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL33 NB/SB @ MP 24.94",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Moulton",
-   "lat": 34.467735999999995,
-   "lon": -87.292536,
-   "start": "2026-11-19T04:41:43Z",
-   "end": "2026-11-19T05:41:43Z",
-   "updated": "2026-11-18T22:43:26Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 363.76",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.678464,
-   "lon": -86.949704,
-   "start": "2026-11-19T04:32:07Z",
-   "end": "2026-11-19T05:32:07Z",
-   "updated": "2026-11-18T22:32:54Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 SB @ MP 324.33",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.647124,
-   "lon": -86.476496,
-   "start": "2026-11-19T04:24:31Z",
-   "end": "2026-11-19T05:24:31Z",
-   "updated": "2026-11-18T22:26:03Z"
-  }
- ]
+ "updated": "2026-11-19T06:05:19+00:00",
+ "events": []
 }
