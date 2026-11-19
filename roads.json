@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-19T03:20:20+00:00",
+ "updated": "2026-11-19T04:05:17+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 10.78",
-   "detail": "Crash with lane blockage. PLease use cation when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.836287999999996,
-   "lon": -87.630944,
-   "start": "2026-11-19T02:27:30Z",
-   "end": "2026-11-19T03:27:30Z",
-   "updated": "2026-11-18T20:44:03Z"
+   "where": "AL24 EB/WB @ MP 27.42",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.483627999999996,
+   "lon": -87.715232,
+   "start": "2026-11-19T03:41:12Z",
+   "end": "2026-11-19T04:41:12Z",
+   "updated": "2026-11-18T21:41:46Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 124.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Woodville",
+   "lat": 34.612027999999995,
+   "lon": -86.243568,
+   "start": "2026-11-19T03:44:48Z",
+   "end": "2026-11-19T04:44:48Z",
+   "updated": "2026-11-18T21:45:45Z"
   }
  ]
 }
