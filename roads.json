@@ -1,47 +1,33 @@
 {
- "updated": "2026-11-19T21:05:21+00:00",
+ "updated": "2026-11-19T22:05:22+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 315.75",
+   "where": "AL157 NB/SB @ MP 5.11",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.70494,
-   "lon": -86.588216,
-   "start": "2026-11-19T20:28:39Z",
-   "end": "2026-11-19T21:28:39Z",
-   "updated": "2026-11-19T14:29:29Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.206255999999996,
+   "lon": -86.859264,
+   "start": "2026-11-19T21:16:32Z",
+   "end": "2026-11-19T22:16:32Z",
+   "updated": "2026-11-19T15:17:29Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 WB @ MP 87.09",
+   "where": "US72 EB/WB @ MP 31.5",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.748976,
-   "lon": -86.767416,
-   "start": "2026-11-19T20:43:38Z",
-   "end": "2026-11-19T21:43:38Z",
-   "updated": "2026-11-19T14:44:26Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL79 NB/SB @ MP 78.86",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.509015999999995,
-   "lon": -86.18598399999999,
-   "start": "2026-11-19T19:08:40Z",
-   "end": "2026-11-19T22:00:00Z",
-   "updated": "2026-11-19T20:59:48.152777Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.785092,
+   "lon": -87.672096,
+   "start": "2026-11-19T21:11:35Z",
+   "end": "2026-11-19T22:11:35Z",
+   "updated": "2026-11-19T15:14:47Z"
   }
  ]
 }
