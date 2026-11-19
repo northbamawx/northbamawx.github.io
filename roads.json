@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-19T18:20:21+00:00",
+ "updated": "2026-11-19T18:35:21+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 371.17",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.784344,
+   "lon": -86.95644,
+   "start": "2026-11-19T18:23:45Z",
+   "end": "2026-11-19T19:23:45Z",
+   "updated": "2026-11-19T12:25:47Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -27,7 +41,7 @@
    "lon": -86.590496,
    "start": "2026-11-19T18:09:18Z",
    "end": "2026-11-19T19:09:18Z",
-   "updated": "2026-11-19T12:09:43Z"
+   "updated": "2026-11-19T18:21:08.2247149Z"
   },
   {
    "type": "Incident",
