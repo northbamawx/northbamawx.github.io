@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-19T02:05:18+00:00",
+ "updated": "2026-11-19T02:50:20+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 346.89",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.449964,
-   "lon": -86.945272,
-   "start": "2026-11-19T01:30:52Z",
-   "end": "2026-11-19T02:30:52Z",
-   "updated": "2026-11-18T19:31:53Z"
+   "where": "US278 EB/WB @ MP 79.35",
+   "detail": "Crash with lane blockage. please use caution when traveling through this area",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.175084,
+   "lon": -86.84383199999999,
+   "start": "2026-11-19T02:16:49Z",
+   "end": "2026-11-19T03:16:49Z",
+   "updated": "2026-11-18T20:18:32Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB/SB @ MP 10.78",
+   "detail": "Crash with lane blockage. PLease use cation when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.836287999999996,
+   "lon": -87.630944,
+   "start": "2026-11-19T02:27:30Z",
+   "end": "2026-11-19T03:27:30Z",
+   "updated": "2026-11-18T20:44:03Z"
   }
  ]
 }
