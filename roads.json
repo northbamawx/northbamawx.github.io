@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-19T22:05:22+00:00",
+ "updated": "2026-11-19T22:35:21+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 5.11",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.206255999999996,
-   "lon": -86.859264,
-   "start": "2026-11-19T21:16:32Z",
-   "end": "2026-11-19T22:16:32Z",
-   "updated": "2026-11-19T15:17:29Z"
-  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -26,8 +12,64 @@
    "lat": 34.785092,
    "lon": -87.672096,
    "start": "2026-11-19T21:11:35Z",
-   "end": "2026-11-19T22:11:35Z",
-   "updated": "2026-11-19T15:14:47Z"
+   "end": "2026-11-19T23:00:00Z",
+   "updated": "2026-11-19T22:16:43.125738Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 EB @ MP 14.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.70558,
+   "lon": -86.67627999999999,
+   "start": "2026-11-19T22:22:37Z",
+   "end": "2026-11-19T23:22:37Z",
+   "updated": "2026-11-19T22:33:24.4426777Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 EB @ MP 13.69",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.703464,
+   "lon": -86.682712,
+   "start": "2026-11-19T22:11:08Z",
+   "end": "2026-11-19T23:11:08Z",
+   "updated": "2026-11-19T22:33:24.4425667Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-565 EB @ MP 15.8",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.713063999999996,
+   "lon": -86.647376,
+   "start": "2026-11-19T21:58:12Z",
+   "end": "2026-11-19T22:58:12Z",
+   "updated": "2026-11-19T16:00:10Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 NB/SB @ MP 327.62",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.689408,
+   "lon": -86.504184,
+   "start": "2026-11-19T22:06:58Z",
+   "end": "2026-11-19T23:06:58Z",
+   "updated": "2026-11-19T22:22:15.743867Z"
   }
  ]
 }
