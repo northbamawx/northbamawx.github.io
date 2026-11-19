@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:35:22+00:00",
+ "updated": "2026-11-19T21:05:21+00:00",
  "events": [
   {
    "type": "Crash",
@@ -19,6 +19,20 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
+   "where": "US72 WB @ MP 87.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.748976,
+   "lon": -86.767416,
+   "start": "2026-11-19T20:43:38Z",
+   "end": "2026-11-19T21:43:38Z",
+   "updated": "2026-11-19T14:44:26Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
    "where": "AL79 NB/SB @ MP 78.86",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Marshall",
@@ -26,22 +40,8 @@
    "lat": 34.509015999999995,
    "lon": -86.18598399999999,
    "start": "2026-11-19T19:08:40Z",
-   "end": "2026-11-19T21:00:00Z",
-   "updated": "2026-11-19T14:24:35Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 322",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.367408,
-   "lon": -86.891128,
-   "start": "2026-11-19T15:30:01Z",
-   "end": "2026-11-19T21:00:00Z",
-   "updated": "2026-11-19T19:25:51.9841588Z"
+   "end": "2026-11-19T22:00:00Z",
+   "updated": "2026-11-19T20:59:48.152777Z"
   }
  ]
 }
