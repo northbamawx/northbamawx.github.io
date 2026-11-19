@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-19T18:35:21+00:00",
+ "updated": "2026-11-19T19:05:28+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 371.17",
+   "where": "US31 NB/SB @ MP 371.07",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Athens",
-   "lat": 34.784344,
-   "lon": -86.95644,
+   "lat": 34.783471999999996,
+   "lon": -86.956728,
    "start": "2026-11-19T18:23:45Z",
    "end": "2026-11-19T19:23:45Z",
-   "updated": "2026-11-19T12:25:47Z"
+   "updated": "2026-11-19T18:37:20.2248963Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,22 @@
    "lat": 34.748588,
    "lon": -86.692904,
    "start": "2026-11-19T17:57:27Z",
-   "end": "2026-11-19T18:57:27Z",
-   "updated": "2026-11-19T11:59:08Z"
+   "end": "2026-11-19T19:30:00Z",
+   "updated": "2026-11-19T18:58:53.2861992Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 315.85",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.70554,
+   "lon": -86.58864,
+   "start": "2026-11-19T19:00:43Z",
+   "end": "2026-11-19T20:00:43Z",
+   "updated": "2026-11-19T13:01:08Z"
   },
   {
    "type": "Crash",
@@ -41,21 +55,21 @@
    "lon": -86.590496,
    "start": "2026-11-19T18:09:18Z",
    "end": "2026-11-19T19:09:18Z",
-   "updated": "2026-11-19T18:21:08.2247149Z"
+   "updated": "2026-11-19T18:42:44.1481901Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "I-65 SB @ MP 320.1",
+   "where": "I-65 SB @ MP 322",
    "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
    "county": "Morgan",
    "city": "Falkville",
-   "lat": 34.342988,
-   "lon": -86.892872,
+   "lat": 34.367408,
+   "lon": -86.891128,
    "start": "2026-11-19T15:30:01Z",
    "end": "2026-11-19T19:30:00Z",
-   "updated": "2026-11-19T17:59:28.8555067Z"
+   "updated": "2026-11-19T18:42:43.9715883Z"
   }
  ]
 }
