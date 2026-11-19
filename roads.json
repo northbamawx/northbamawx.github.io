@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-19T03:05:24+00:00",
+ "updated": "2026-11-19T03:20:20+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US278 EB/WB @ MP 79.35",
-   "detail": "Crash with lane blockage. please use caution when traveling through this area",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.175084,
-   "lon": -86.84383199999999,
-   "start": "2026-11-19T02:16:49Z",
-   "end": "2026-11-19T03:16:49Z",
-   "updated": "2026-11-18T20:18:32Z"
-  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
