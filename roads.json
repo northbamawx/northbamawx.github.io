@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-19T15:05:19+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-565 EB @ MP 4.98",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.650335999999996,
-   "lon": -86.820944,
-   "start": "2026-11-19T14:05:51Z",
-   "end": "2026-11-19T15:05:51Z",
-   "updated": "2026-11-19T08:08:14Z"
-  }
- ]
+ "updated": "2026-11-19T15:20:21+00:00",
+ "events": []
 }
