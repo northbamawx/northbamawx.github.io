@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T12:05:20+00:00",
+ "updated": "2026-11-20T12:37:50+00:00",
  "events": [
   {
    "type": "Crash",
@@ -13,7 +13,21 @@
    "lon": -86.427696,
    "start": "2026-11-20T11:47:14Z",
    "end": "2026-11-20T12:47:14Z",
-   "updated": "2026-11-20T05:49:03Z"
+   "updated": "2026-11-20T12:14:03.8465131Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Debris",
+   "where": "AL17 NB/SB @ MP 334.25",
+   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.83378,
+   "lon": -87.668424,
+   "start": "2026-11-20T12:17:00Z",
+   "end": "2026-11-20T13:17:00Z",
+   "updated": "2026-11-20T12:35:38.5009567Z"
   }
  ]
 }
