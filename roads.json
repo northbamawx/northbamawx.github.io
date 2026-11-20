@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-20T04:20:20+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 52.03",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Elgin",
-   "lat": 34.840464,
-   "lon": -87.359624,
-   "start": "2026-11-20T03:22:43Z",
-   "end": "2026-11-20T04:22:43Z",
-   "updated": "2026-11-19T21:24:26Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 316.45",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.757052,
-   "lon": -86.593488,
-   "start": "2026-11-20T03:29:21Z",
-   "end": "2026-11-20T04:29:21Z",
-   "updated": "2026-11-20T03:53:52.9915283Z"
-  }
- ]
+ "updated": "2026-11-20T05:05:19+00:00",
+ "events": []
 }
