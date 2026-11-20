@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-20T19:35:26+00:00",
+ "updated": "2026-11-20T20:05:20+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 87.99",
+   "title": "Overturned Vehicle",
+   "where": "AL279 NB/SB @ MP 2.02",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.752128,
-   "lon": -86.7518,
-   "start": "2026-11-20T18:43:08Z",
-   "end": "2026-11-20T19:43:08Z",
-   "updated": "2026-11-20T12:43:37Z"
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.63176,
+   "lon": -86.047304,
+   "start": "2026-11-20T19:44:51Z",
+   "end": "2026-11-20T20:44:51Z",
+   "updated": "2026-11-20T13:58:08Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 7.9",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.923888,
+   "lon": -87.839792,
+   "start": "2026-11-20T18:56:27Z",
+   "end": "2026-11-20T20:30:00Z",
+   "updated": "2026-11-20T19:59:05.2659558Z"
   },
   {
    "type": "Crash",
@@ -28,6 +42,20 @@
    "start": "2026-11-20T19:23:17Z",
    "end": "2026-11-20T20:23:17Z",
    "updated": "2026-11-20T13:25:02Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 40",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560244,
+   "lon": -86.9908,
+   "start": "2026-11-20T19:53:58Z",
+   "end": "2026-11-20T20:53:58Z",
+   "updated": "2026-11-20T13:54:39Z"
   },
   {
    "type": "Incident",
