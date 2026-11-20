@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T20:35:22+00:00",
+ "updated": "2026-11-20T20:50:25+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,22 @@
    "lat": 34.63176,
    "lon": -86.047304,
    "start": "2026-11-20T19:44:51Z",
-   "end": "2026-11-20T20:44:51Z",
-   "updated": "2026-11-20T13:58:08Z"
+   "end": "2026-11-20T21:45:00Z",
+   "updated": "2026-11-20T20:48:37.9636345Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 40",
+   "where": "US231 NB @ MP 315.85",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.560244,
-   "lon": -86.9908,
-   "start": "2026-11-20T19:53:58Z",
-   "end": "2026-11-20T20:53:58Z",
-   "updated": "2026-11-20T13:54:39Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.705576,
+   "lon": -86.58832799999999,
+   "start": "2026-11-20T20:40:22Z",
+   "end": "2026-11-20T21:40:22Z",
+   "updated": "2026-11-20T14:43:51Z"
   },
   {
    "type": "Crash",
@@ -42,6 +42,34 @@
    "start": "2026-11-20T20:27:07Z",
    "end": "2026-11-20T21:27:07Z",
    "updated": "2026-11-20T14:28:12Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 357.61",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.598408,
+   "lon": -86.980232,
+   "start": "2026-11-20T20:38:02Z",
+   "end": "2026-11-20T21:38:02Z",
+   "updated": "2026-11-20T14:38:46Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 40",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560244,
+   "lon": -86.9908,
+   "start": "2026-11-20T19:53:58Z",
+   "end": "2026-11-20T20:53:58Z",
+   "updated": "2026-11-20T13:54:39Z"
   },
   {
    "type": "Crash",
