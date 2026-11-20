@@ -1,34 +1,6 @@
 {
- "updated": "2026-11-20T16:05:19+00:00",
+ "updated": "2026-11-20T17:05:21+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "US72 EB @ MP 27.5",
-   "detail": "Crash with road closure. Please seek alternate route.  nAll lanes are open.   n",
-   "county": "Colbert",
-   "city": "Tuscumbia",
-   "lat": 34.7314,
-   "lon": -87.66772,
-   "start": "2026-11-20T13:26:11Z",
-   "end": "2026-11-20T16:30:00Z",
-   "updated": "2026-11-20T15:57:13.067304Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 32.13",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.795256,
-   "lon": -87.672784,
-   "start": "2026-11-20T15:51:06Z",
-   "end": "2026-11-20T16:51:06Z",
-   "updated": "2026-11-20T09:53:54Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
@@ -40,8 +12,8 @@
    "lat": 34.431652,
    "lon": -86.935312,
    "start": "2026-11-20T15:40:21Z",
-   "end": "2026-11-20T16:40:21Z",
-   "updated": "2026-11-20T09:41:52Z"
+   "end": "2026-11-20T17:15:00Z",
+   "updated": "2026-11-20T16:37:23.0653855Z"
   }
  ]
 }
