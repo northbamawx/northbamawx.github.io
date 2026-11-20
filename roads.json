@@ -1,47 +1,61 @@
 {
- "updated": "2026-11-19T23:05:18+00:00",
+ "updated": "2026-11-20T00:05:21+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 79.58",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area,.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.767784,
-   "lon": -86.89517599999999,
-   "start": "2026-11-19T22:32:52Z",
-   "end": "2026-11-19T23:32:52Z",
-   "updated": "2026-11-19T16:33:58Z"
+   "where": "US31 NB/SB @ MP 327.07",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.1815,
+   "lon": -86.847696,
+   "start": "2026-11-19T23:34:33Z",
+   "end": "2026-11-20T00:34:33Z",
+   "updated": "2026-11-19T17:35:54Z"
   },
   {
    "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-565 WB @ MP 14.79",
-   "detail": "",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.709323999999995,
-   "lon": -86.66515199999999,
-   "start": "2026-11-19T22:48:26Z",
-   "end": "2026-11-19T23:22:13Z",
-   "updated": "2026-11-19T16:59:14Z"
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "US231 NB/SB @ MP 284.72",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Hopewell",
+   "lat": 34.294528,
+   "lon": -86.497232,
+   "start": "2026-11-19T23:20:49Z",
+   "end": "2026-11-20T00:20:49Z",
+   "updated": "2026-11-19T17:21:27Z"
   },
   {
    "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-565 WB @ MP 14.79",
-   "detail": "",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.709323999999995,
-   "lon": -86.66515199999999,
-   "start": "2026-11-19T22:48:26Z",
-   "end": "2026-11-19T23:22:13Z",
-   "updated": "2026-11-19T16:59:14Z"
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB/SB @ MP 12.67",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.843916,
+   "lon": -87.66116799999999,
+   "start": "2026-11-19T23:52:00Z",
+   "end": "2026-11-20T00:52:00Z",
+   "updated": "2026-11-19T17:54:54Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 76.78",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.842116,
+   "lon": -87.688312,
+   "start": "2026-11-19T23:37:55Z",
+   "end": "2026-11-20T00:37:55Z",
+   "updated": "2026-11-19T17:40:27Z"
   },
   {
    "type": "Crash",
@@ -54,36 +68,36 @@
    "lat": 34.689408,
    "lon": -86.504184,
    "start": "2026-11-19T22:06:58Z",
-   "end": "2026-11-19T23:06:58Z",
-   "updated": "2026-11-19T22:44:14.798484Z"
+   "end": "2026-11-20T00:30:00Z",
+   "updated": "2026-11-19T23:59:57.1120396Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 13.69",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "where": "US231/431 NB @ MP 335.05",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.703464,
-   "lon": -86.682712,
-   "start": "2026-11-19T22:11:08Z",
-   "end": "2026-11-19T23:11:08Z",
-   "updated": "2026-11-19T22:55:03.0170875Z"
+   "lat": 34.737995999999995,
+   "lon": -86.59977599999999,
+   "start": "2026-11-19T23:55:45Z",
+   "end": "2026-11-20T00:55:45Z",
+   "updated": "2026-11-19T17:58:10Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 14.09",
+   "where": "US72 WB @ MP 90.19",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.70558,
-   "lon": -86.67627999999999,
-   "start": "2026-11-19T22:22:37Z",
-   "end": "2026-11-19T23:22:37Z",
-   "updated": "2026-11-19T22:44:14.7986749Z"
+   "city": "Madison",
+   "lat": 34.755663999999996,
+   "lon": -86.71428,
+   "start": "2026-11-19T23:54:25Z",
+   "end": "2026-11-20T00:54:25Z",
+   "updated": "2026-11-19T17:55:18Z"
   },
   {
    "type": "Incident",
@@ -96,8 +110,8 @@
    "lat": 34.660224,
    "lon": -86.789976,
    "start": "2026-11-19T22:44:18Z",
-   "end": "2026-11-19T23:44:18Z",
-   "updated": "2026-11-19T16:46:05Z"
+   "end": "2026-11-20T01:00:00Z",
+   "updated": "2026-11-19T23:43:45.2159771Z"
   },
   {
    "type": "Incident",
@@ -110,22 +124,8 @@
    "lat": 34.711611999999995,
    "lon": -86.534864,
    "start": "2026-11-19T22:43:21Z",
-   "end": "2026-11-19T23:43:21Z",
-   "updated": "2026-11-19T16:45:20Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 WB @ MP 14.29",
-   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.706848,
-   "lon": -86.673312,
-   "start": "2026-11-19T22:41:53Z",
-   "end": "2026-11-19T23:41:53Z",
-   "updated": "2026-11-19T16:43:33Z"
+   "end": "2026-11-20T00:30:00Z",
+   "updated": "2026-11-19T23:43:45.215963Z"
   }
  ]
 }
