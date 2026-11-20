@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-20T17:05:21+00:00",
- "events": [
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Other",
-   "where": "US31 SB @ MP 345.48",
-   "detail": "Incident in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.431652,
-   "lon": -86.935312,
-   "start": "2026-11-20T15:40:21Z",
-   "end": "2026-11-20T17:15:00Z",
-   "updated": "2026-11-20T16:37:23.0653855Z"
-  }
- ]
+ "updated": "2026-11-20T17:50:27+00:00",
+ "events": []
 }
