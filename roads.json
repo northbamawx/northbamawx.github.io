@@ -1,6 +1,48 @@
 {
- "updated": "2026-11-20T13:05:45+00:00",
+ "updated": "2026-11-20T13:35:23+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 27.5",
+   "detail": "",
+   "county": "Colbert",
+   "city": "Tuscumbia",
+   "lat": 34.7314,
+   "lon": -87.66772,
+   "start": "2026-11-20T13:26:11Z",
+   "end": "2026-11-20T14:26:11Z",
+   "updated": "2026-11-20T07:27:28Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB/SB @ MP 71.48",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.806504,
+   "lon": -87.655688,
+   "start": "2026-11-20T13:21:51Z",
+   "end": "2026-11-20T14:21:51Z",
+   "updated": "2026-11-20T07:22:30Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 76.98",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.782188,
+   "lon": -86.93613599999999,
+   "start": "2026-11-20T12:41:48Z",
+   "end": "2026-11-20T13:41:48Z",
+   "updated": "2026-11-20T07:14:25Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,22 +54,8 @@
    "lat": 34.544508,
    "lon": -86.427696,
    "start": "2026-11-20T11:47:14Z",
-   "end": "2026-11-20T13:15:00Z",
-   "updated": "2026-11-20T12:46:32.6180354Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "AL17 NB/SB @ MP 334.25",
-   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.83378,
-   "lon": -87.668424,
-   "start": "2026-11-20T12:17:00Z",
-   "end": "2026-11-20T13:17:00Z",
-   "updated": "2026-11-20T12:35:38.5009567Z"
+   "end": "2026-11-20T13:45:00Z",
+   "updated": "2026-11-20T13:30:11.7518773Z"
   }
  ]
 }
