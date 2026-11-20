@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-20T13:35:23+00:00",
+ "updated": "2026-11-20T14:05:22+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
+   "title": "Overturned Vehicle",
    "where": "US72 EB @ MP 27.5",
-   "detail": "",
+   "detail": "Crash with road closure. Please seek alternate route.  nAll lanes are open.   n",
    "county": "Colbert",
    "city": "Tuscumbia",
    "lat": 34.7314,
    "lon": -87.66772,
    "start": "2026-11-20T13:26:11Z",
    "end": "2026-11-20T14:26:11Z",
-   "updated": "2026-11-20T07:27:28Z"
+   "updated": "2026-11-20T13:57:25.6788917Z"
   },
   {
    "type": "Crash",
@@ -33,15 +33,15 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 76.98",
+   "where": "US72 EB/WB @ MP 85.49",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Limestone",
    "city": "Athens",
-   "lat": 34.782188,
-   "lon": -86.93613599999999,
-   "start": "2026-11-20T12:41:48Z",
-   "end": "2026-11-20T13:41:48Z",
-   "updated": "2026-11-20T07:14:25Z"
+   "lat": 34.749027999999996,
+   "lon": -86.795976,
+   "start": "2026-11-20T13:30:14Z",
+   "end": "2026-11-20T14:30:14Z",
+   "updated": "2026-11-20T07:30:53Z"
   },
   {
    "type": "Crash",
@@ -54,8 +54,8 @@
    "lat": 34.544508,
    "lon": -86.427696,
    "start": "2026-11-20T11:47:14Z",
-   "end": "2026-11-20T13:45:00Z",
-   "updated": "2026-11-20T13:30:11.7518773Z"
+   "end": "2026-11-20T14:30:00Z",
+   "updated": "2026-11-20T13:41:08.5734552Z"
   }
  ]
 }
