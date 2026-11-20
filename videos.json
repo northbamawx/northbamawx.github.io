@@ -1,6 +1,12 @@
 {
- "updated": 1795178270,
+ "updated": 1795179945,
  "items": [
+  {
+   "id": "4NMIwg-N9sQ",
+   "title": "Huntsville Weather Forecast: Mostly Sunny & 73° Friday",
+   "short": true,
+   "published": 1795178540
+  },
   {
    "id": "N1WBQk1D19Q",
    "title": "Storm Coverage - North Alabama - November 19, 2026",
@@ -42,12 +48,6 @@
    "title": "Leonid Meteor Shower Peaks Tonight: Best Time to Look in North Alabama",
    "short": true,
    "published": 1794952920
-  },
-  {
-   "id": "N-Ygxm0SkcQ",
-   "title": "Storm Coverage - North Alabama - November 17, 2026",
-   "short": true,
-   "published": 1794945867
   }
  ]
 }
