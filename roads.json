@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T15:05:20+00:00",
+ "updated": "2026-11-20T16:05:19+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,36 @@
    "lat": 34.7314,
    "lon": -87.66772,
    "start": "2026-11-20T13:26:11Z",
-   "end": "2026-11-20T15:30:00Z",
-   "updated": "2026-11-20T14:46:40.1585231Z"
+   "end": "2026-11-20T16:30:00Z",
+   "updated": "2026-11-20T15:57:13.067304Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 32.13",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.795256,
+   "lon": -87.672784,
+   "start": "2026-11-20T15:51:06Z",
+   "end": "2026-11-20T16:51:06Z",
+   "updated": "2026-11-20T09:53:54Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Other",
-   "where": "AL20 WB @ MP 32.8",
+   "where": "US31 SB @ MP 345.48",
    "detail": "Incident in the area. Please use caution when traveling through this area.",
-   "county": "Colbert",
-   "city": "Leighton",
-   "lat": 34.685331999999995,
-   "lon": -87.58632,
-   "start": "2026-11-20T14:04:08Z",
-   "end": "2026-11-20T16:00:00Z",
-   "updated": "2026-11-20T15:02:56.8562256Z"
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.431652,
+   "lon": -86.935312,
+   "start": "2026-11-20T15:40:21Z",
+   "end": "2026-11-20T16:40:21Z",
+   "updated": "2026-11-20T09:41:52Z"
   }
  ]
 }
