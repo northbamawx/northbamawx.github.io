@@ -1,4 +1,61 @@
 {
- "updated": "2026-11-20T06:05:19+00:00",
- "events": []
+ "updated": "2026-11-20T07:05:19+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US43 NB/SB @ MP 294.79",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Franklin",
+   "city": "Russellville",
+   "lat": 34.499516,
+   "lon": -87.719064,
+   "start": "2026-11-20T06:55:13Z",
+   "end": "2026-11-20T07:55:13Z",
+   "updated": "2026-11-20T00:56:01Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 53.33",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Elgin",
+   "lat": 34.834331999999996,
+   "lon": -87.338336,
+   "start": "2026-11-20T06:17:11Z",
+   "end": "2026-11-20T07:17:11Z",
+   "updated": "2026-11-20T00:17:47Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 43.14",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Killen",
+   "lat": 34.859808,
+   "lon": -87.512008,
+   "start": "2026-11-20T06:38:45Z",
+   "end": "2026-11-20T07:38:45Z",
+   "updated": "2026-11-20T00:40:26Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Debris",
+   "where": "AL157 NB/SB @ MP 84.79",
+   "detail": "Debris causing lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Cloverdale",
+   "lat": 34.930464,
+   "lon": -87.761792,
+   "start": "2026-11-20T06:56:23Z",
+   "end": "2026-11-20T07:56:23Z",
+   "updated": "2026-11-20T00:58:53Z"
+  }
+ ]
 }
