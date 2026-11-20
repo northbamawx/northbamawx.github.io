@@ -1,34 +1,6 @@
 {
- "updated": "2026-11-20T21:05:21+00:00",
+ "updated": "2026-11-20T22:05:27+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 328.06",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.,",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.194548,
-   "lon": -86.854368,
-   "start": "2026-11-20T20:59:26Z",
-   "end": "2026-11-20T21:59:26Z",
-   "updated": "2026-11-20T15:00:53Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL279 NB/SB @ MP 2.02",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.63176,
-   "lon": -86.047304,
-   "start": "2026-11-20T19:44:51Z",
-   "end": "2026-11-20T21:45:00Z",
-   "updated": "2026-11-20T20:48:37.9636345Z"
-  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -40,22 +12,22 @@
    "lat": 34.609092,
    "lon": -86.27061599999999,
    "start": "2026-11-20T20:47:05Z",
-   "end": "2026-11-20T21:47:05Z",
-   "updated": "2026-11-20T14:48:26Z"
+   "end": "2026-11-20T22:30:00Z",
+   "updated": "2026-11-20T21:48:27.7827571Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231 NB @ MP 315.85",
+   "where": "US72 EB/WB @ MP 137.12",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.705576,
-   "lon": -86.58832799999999,
-   "start": "2026-11-20T20:40:22Z",
-   "end": "2026-11-20T21:40:22Z",
-   "updated": "2026-11-20T14:43:51Z"
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.648164,
+   "lon": -86.03231199999999,
+   "start": "2026-11-20T21:24:14Z",
+   "end": "2026-11-20T22:24:14Z",
+   "updated": "2026-11-20T15:25:12Z"
   },
   {
    "type": "Crash",
@@ -68,22 +40,36 @@
    "lat": 34.748135999999995,
    "lon": -86.690432,
    "start": "2026-11-20T20:51:10Z",
-   "end": "2026-11-20T21:51:10Z",
-   "updated": "2026-11-20T14:52:50Z"
+   "end": "2026-11-20T22:30:00Z",
+   "updated": "2026-11-20T21:48:27.7828274Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 354.9",
+   "where": "US31 NB/SB @ MP 356.8",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
    "city": "Decatur",
-   "lat": 34.560884,
-   "lon": -86.973624,
-   "start": "2026-11-20T20:27:07Z",
-   "end": "2026-11-20T21:27:07Z",
-   "updated": "2026-11-20T14:28:12Z"
+   "lat": 34.588111999999995,
+   "lon": -86.98071999999999,
+   "start": "2026-11-20T21:50:49Z",
+   "end": "2026-11-20T22:50:49Z",
+   "updated": "2026-11-20T15:51:57Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 300.74",
+   "detail": "Crash with lane blockage. Please use catuion when traveling through this area.",
+   "county": "Morgan",
+   "city": "Lacey Spring",
+   "lat": 34.501096,
+   "lon": -86.601224,
+   "start": "2026-11-20T21:20:35Z",
+   "end": "2026-11-20T22:20:35Z",
+   "updated": "2026-11-20T15:21:37Z"
   },
   {
    "type": "Crash",
@@ -96,8 +82,22 @@
    "lat": 34.598408,
    "lon": -86.980232,
    "start": "2026-11-20T20:38:02Z",
-   "end": "2026-11-20T21:38:02Z",
-   "updated": "2026-11-20T14:38:46Z"
+   "end": "2026-11-20T23:00:00Z",
+   "updated": "2026-11-20T21:37:37.3101544Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 356.5",
+   "detail": "Crash with lane blockage. Please use caution when traveling though this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.582527999999996,
+   "lon": -86.980032,
+   "start": "2026-11-20T21:49:02Z",
+   "end": "2026-11-20T22:49:02Z",
+   "updated": "2026-11-20T15:50:08Z"
   },
   {
    "type": "Incident",
