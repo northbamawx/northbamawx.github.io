@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T20:05:20+00:00",
+ "updated": "2026-11-20T20:35:22+00:00",
  "events": [
   {
    "type": "Crash",
@@ -19,34 +19,6 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 7.9",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.923888,
-   "lon": -87.839792,
-   "start": "2026-11-20T18:56:27Z",
-   "end": "2026-11-20T20:30:00Z",
-   "updated": "2026-11-20T19:59:05.2659558Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 42.5",
-   "detail": "",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.580459999999995,
-   "lon": -87.02068799999999,
-   "start": "2026-11-20T19:23:17Z",
-   "end": "2026-11-20T20:23:17Z",
-   "updated": "2026-11-20T13:25:02Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
    "where": "AL67 NB/SB @ MP 40",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
@@ -56,6 +28,34 @@
    "start": "2026-11-20T19:53:58Z",
    "end": "2026-11-20T20:53:58Z",
    "updated": "2026-11-20T13:54:39Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 354.9",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.560884,
+   "lon": -86.973624,
+   "start": "2026-11-20T20:27:07Z",
+   "end": "2026-11-20T21:27:07Z",
+   "updated": "2026-11-20T14:28:12Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 349.99",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.490864,
+   "lon": -86.96516,
+   "start": "2026-11-20T20:04:37Z",
+   "end": "2026-11-20T21:04:37Z",
+   "updated": "2026-11-20T14:05:24Z"
   },
   {
    "type": "Incident",
