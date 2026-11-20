@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T22:35:21+00:00",
+ "updated": "2026-11-20T22:50:22+00:00",
  "events": [
   {
    "type": "Crash",
@@ -27,7 +27,7 @@
    "lon": -86.571488,
    "start": "2026-11-20T22:27:55Z",
    "end": "2026-11-20T23:27:55Z",
-   "updated": "2026-11-20T16:30:25Z"
+   "updated": "2026-11-20T22:37:40.2143754Z"
   },
   {
    "type": "Crash",
@@ -56,20 +56,6 @@
    "start": "2026-11-20T21:50:49Z",
    "end": "2026-11-20T22:50:49Z",
    "updated": "2026-11-20T15:51:57Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 356.5",
-   "detail": "Crash with lane blockage. Please use caution when traveling though this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.582527999999996,
-   "lon": -86.980032,
-   "start": "2026-11-20T21:49:02Z",
-   "end": "2026-11-20T22:49:02Z",
-   "updated": "2026-11-20T15:50:08Z"
   },
   {
    "type": "Incident",
