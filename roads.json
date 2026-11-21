@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-21T04:05:24+00:00",
+ "updated": "2026-11-21T05:05:18+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 159.11",
-   "detail": "Crash with lane blockage. pleaser use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Bridgeport",
-   "lat": 34.8991,
-   "lon": -85.809056,
-   "start": "2026-11-21T03:08:12Z",
-   "end": "2026-11-21T04:08:12Z",
-   "updated": "2026-11-20T21:10:45Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
