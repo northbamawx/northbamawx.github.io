@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-21T12:05:20+00:00",
+ "updated": "2026-11-21T13:05:19+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL35 NB/SB @ MP 43.71",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Section",
-   "lat": 34.601408,
-   "lon": -85.99231999999999,
-   "start": "2026-11-21T11:22:57Z",
-   "end": "2026-11-21T12:22:57Z",
-   "updated": "2026-11-21T05:25:12Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
