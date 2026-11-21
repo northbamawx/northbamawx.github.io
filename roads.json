@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-21T06:05:19+00:00",
+ "updated": "2026-11-21T07:05:19+00:00",
  "events": [
   {
    "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 272.75",
+   "severity": "MajorDelay",
+   "title": "Overturned Vehicle",
+   "where": "I-565 EB @ MP 12.79",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Guntersville",
-   "lat": 34.359159999999996,
-   "lon": -86.42992,
-   "start": "2026-11-21T05:03:00Z",
-   "end": "2026-11-21T06:45:00Z",
-   "updated": "2026-11-21T06:02:54.2556049Z"
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.6976,
+   "lon": -86.697024,
+   "start": "2026-11-21T06:10:44Z",
+   "end": "2026-11-21T08:00:00Z",
+   "updated": "2026-11-21T07:04:25.4517012Z"
   },
   {
    "type": "Incident",
