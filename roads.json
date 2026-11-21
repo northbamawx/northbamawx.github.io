@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-21T17:43:24+00:00",
+ "updated": "2026-11-21T18:05:19+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 SB @ MP 326.46",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.173876,
-   "lon": -86.843136,
-   "start": "2026-11-21T16:56:42Z",
-   "end": "2026-11-21T17:56:42Z",
-   "updated": "2026-11-21T10:58:00Z"
-  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
