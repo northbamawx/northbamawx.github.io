@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-21T19:05:23+00:00",
+ "updated": "2026-11-21T20:05:21+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL279 NB/SB @ MP 1.61",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.628043999999996,
-   "lon": -86.05091999999999,
-   "start": "2026-11-21T18:44:35Z",
-   "end": "2026-11-21T19:44:35Z",
-   "updated": "2026-11-21T12:57:58Z"
-  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
