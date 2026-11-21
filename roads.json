@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:05:21+00:00",
+ "updated": "2026-11-21T17:20:22+00:00",
  "events": [
   {
    "type": "Crash",
@@ -28,20 +28,6 @@
    "start": "2026-11-21T16:56:42Z",
    "end": "2026-11-21T17:56:42Z",
    "updated": "2026-11-21T10:58:00Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Minor Crash",
-   "where": "US72 WB @ MP 39.37",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.847412,
-   "lon": -87.57647999999999,
-   "start": "2026-11-21T14:56:52Z",
-   "end": "2026-11-21T17:15:00Z",
-   "updated": "2026-11-21T16:46:46.9919773Z"
   },
   {
    "type": "Incident",
