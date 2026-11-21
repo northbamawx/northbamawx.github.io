@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:05:20+00:00",
+ "updated": "2026-11-21T10:03:07+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,22 @@
    "lat": 34.650456,
    "lon": -86.81935999999999,
    "start": "2026-11-21T08:56:16Z",
-   "end": "2026-11-21T09:56:16Z",
-   "updated": "2026-11-21T02:58:45Z"
+   "end": "2026-11-21T10:15:00Z",
+   "updated": "2026-11-21T09:54:28.0705357Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB @ MP 347.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Hazel Green",
+   "lat": 34.910588,
+   "lon": -86.571872,
+   "start": "2026-11-21T09:56:39Z",
+   "end": "2026-11-21T10:56:39Z",
+   "updated": "2026-11-21T03:57:38Z"
   },
   {
    "type": "Crash",
@@ -26,36 +40,8 @@
    "lat": 34.6976,
    "lon": -86.697024,
    "start": "2026-11-21T06:10:44Z",
-   "end": "2026-11-21T10:00:00Z",
-   "updated": "2026-11-21T08:59:48.8586802Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 WB @ MP 12.99",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.698656,
-   "lon": -86.69376799999999,
-   "start": "2026-11-21T08:17:38Z",
-   "end": "2026-11-21T09:17:38Z",
-   "updated": "2026-11-21T08:27:28.7968755Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 356.1",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.578268,
-   "lon": -86.977088,
-   "start": "2026-11-21T08:13:18Z",
-   "end": "2026-11-21T09:13:18Z",
-   "updated": "2026-11-21T02:14:16Z"
+   "end": "2026-11-21T10:30:00Z",
+   "updated": "2026-11-21T09:59:49.8237923Z"
   },
   {
    "type": "Incident",
