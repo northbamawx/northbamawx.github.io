@@ -1,6 +1,48 @@
 {
- "updated": "2026-11-21T14:05:19+00:00",
+ "updated": "2026-11-21T15:05:19+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Minor Crash",
+   "where": "US72 WB @ MP 39.37",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.847412,
+   "lon": -87.57647999999999,
+   "start": "2026-11-21T14:56:52Z",
+   "end": "2026-11-21T15:56:52Z",
+   "updated": "2026-11-21T08:57:27Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 36.51",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.831399999999995,
+   "lon": -87.621112,
+   "start": "2026-11-21T14:36:08Z",
+   "end": "2026-11-21T15:36:08Z",
+   "updated": "2026-11-21T14:52:33.4048121Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 310.86",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.636407999999996,
+   "lon": -86.567072,
+   "start": "2026-11-21T14:49:50Z",
+   "end": "2026-11-21T15:49:50Z",
+   "updated": "2026-11-21T15:03:16.4825157Z"
+  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
@@ -12,8 +54,8 @@
    "lat": 34.63474,
    "lon": -87.11344,
    "start": "2026-11-21T13:10:02Z",
-   "end": "2026-11-21T14:10:02Z",
-   "updated": "2026-11-21T07:13:48Z"
+   "end": "2026-11-23T14:10:02Z",
+   "updated": "2026-11-21T14:09:11.824475Z"
   },
   {
    "type": "Incident",
