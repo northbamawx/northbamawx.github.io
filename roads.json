@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T01:05:21+00:00",
+ "updated": "2026-11-21T02:01:18+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,8 @@
    "lat": 34.014379999999996,
    "lon": -86.865984,
    "start": "2026-11-20T23:48:13Z",
-   "end": "2026-11-21T01:15:00Z",
-   "updated": "2026-11-21T00:59:47.6388759Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL251 NB/SB @ MP 2.41",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.82114,
-   "lon": -86.912376,
-   "start": "2026-11-20T23:41:50Z",
-   "end": "2026-11-21T01:15:00Z",
-   "updated": "2026-11-21T00:59:47.6388611Z"
+   "end": "2026-11-21T02:00:00Z",
+   "updated": "2026-11-21T01:16:19.9783694Z"
   },
   {
    "type": "Crash",
@@ -44,20 +30,6 @@
    "updated": "2026-11-20T19:01:07Z"
   },
   {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 43.3",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.590688,
-   "lon": -87.029528,
-   "start": "2026-11-21T00:11:05Z",
-   "end": "2026-11-21T01:11:05Z",
-   "updated": "2026-11-20T18:58:56Z"
-  },
-  {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
@@ -68,8 +40,8 @@
    "lat": 33.939532,
    "lon": -86.86899199999999,
    "start": "2026-11-21T00:27:45Z",
-   "end": "2026-11-21T01:30:00Z",
-   "updated": "2026-11-20T18:29:28Z"
+   "end": "2026-11-21T02:00:00Z",
+   "updated": "2026-11-21T01:32:43.0219563Z"
   },
   {
    "type": "Incident",
