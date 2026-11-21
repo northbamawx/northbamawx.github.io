@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-21T21:05:20+00:00",
+ "updated": "2026-11-21T21:50:22+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 76.67",
+   "where": "I-65 NB/SB @ MP 6.21",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.783336,
-   "lon": -86.940632,
-   "start": "2026-11-21T20:10:33Z",
-   "end": "2026-11-21T21:10:33Z",
-   "updated": "2026-11-21T20:29:58.0957484Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.207623999999996,
+   "lon": -86.879024,
+   "start": "2026-11-21T21:04:18Z",
+   "end": "2026-11-21T22:04:18Z",
+   "updated": "2026-11-21T15:05:08Z"
   },
   {
    "type": "Crash",
@@ -26,8 +26,8 @@
    "lat": 34.755432,
    "lon": -86.714368,
    "start": "2026-11-21T20:46:20Z",
-   "end": "2026-11-21T21:46:20Z",
-   "updated": "2026-11-21T20:57:25.2934971Z"
+   "end": "2026-11-21T22:45:00Z",
+   "updated": "2026-11-21T21:47:14.7220708Z"
   },
   {
    "type": "Incident",
