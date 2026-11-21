@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-21T05:05:18+00:00",
+ "updated": "2026-11-21T05:35:22+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL69 NB/SB @ MP 272.75",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Guntersville",
+   "lat": 34.359159999999996,
+   "lon": -86.42992,
+   "start": "2026-11-21T05:03:00Z",
+   "end": "2026-11-21T06:03:00Z",
+   "updated": "2026-11-20T23:04:40Z"
+  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
