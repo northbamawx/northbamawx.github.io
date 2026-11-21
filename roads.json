@@ -1,34 +1,6 @@
 {
- "updated": "2026-11-21T22:05:19+00:00",
+ "updated": "2026-11-21T22:48:36+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB/SB @ MP 6.21",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.207623999999996,
-   "lon": -86.879024,
-   "start": "2026-11-21T21:04:18Z",
-   "end": "2026-11-21T22:30:00Z",
-   "updated": "2026-11-21T22:03:28.3027314Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 90.19",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Madison",
-   "lat": 34.755432,
-   "lon": -86.714368,
-   "start": "2026-11-21T20:46:20Z",
-   "end": "2026-11-21T22:45:00Z",
-   "updated": "2026-11-21T21:58:03.1252195Z"
-  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
