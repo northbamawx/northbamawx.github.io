@@ -1,48 +1,6 @@
 {
- "updated": "2026-11-21T02:01:18+00:00",
+ "updated": "2026-11-21T02:05:20+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 296.57",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.014379999999996,
-   "lon": -86.865984,
-   "start": "2026-11-20T23:48:13Z",
-   "end": "2026-11-21T02:00:00Z",
-   "updated": "2026-11-21T01:16:19.9783694Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 316.25",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.711448,
-   "lon": -86.59067999999999,
-   "start": "2026-11-21T00:59:54Z",
-   "end": "2026-11-21T01:59:54Z",
-   "updated": "2026-11-20T19:01:07Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 NB @ MP 291.28",
-   "detail": "Congestion building northbound. Please use caution when traveling through this area",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 33.939532,
-   "lon": -86.86899199999999,
-   "start": "2026-11-21T00:27:45Z",
-   "end": "2026-11-21T02:00:00Z",
-   "updated": "2026-11-21T01:32:43.0219563Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
