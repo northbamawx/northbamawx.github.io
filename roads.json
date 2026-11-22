@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-22T03:50:22+00:00",
+ "updated": "2026-11-22T04:05:21+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 139.13",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.670332,
+   "lon": -86.00878399999999,
+   "start": "2026-11-22T03:50:00Z",
+   "end": "2026-11-22T04:50:00Z",
+   "updated": "2026-11-21T21:50:47Z"
+  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
