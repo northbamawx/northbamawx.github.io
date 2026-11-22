@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-22T22:05:23+00:00",
+ "updated": "2026-11-22T23:05:23+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 339.58",
+   "detail": "",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.621567999999996,
+   "lon": -86.90060799999999,
+   "start": "2026-11-22T22:51:16Z",
+   "end": "2026-11-22T23:51:16Z",
+   "updated": "2026-11-22T16:51:41Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB @ MP 339.55",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.800684,
+   "lon": -86.574232,
+   "start": "2026-11-22T22:40:19Z",
+   "end": "2026-11-22T23:40:19Z",
+   "updated": "2026-11-22T22:49:19.249477Z"
+  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
