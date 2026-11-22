@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T23:05:23+00:00",
+ "updated": "2026-11-22T23:43:31+00:00",
  "events": [
   {
    "type": "Crash",
@@ -19,15 +19,29 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US231/431 NB @ MP 339.55",
+   "where": "US431 NB @ MP 314.69",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.800684,
-   "lon": -86.574232,
-   "start": "2026-11-22T22:40:19Z",
-   "end": "2026-11-22T23:40:19Z",
-   "updated": "2026-11-22T22:49:19.249477Z"
+   "city": "New Hope",
+   "lat": 34.523323999999995,
+   "lon": -86.408936,
+   "start": "2026-11-22T23:17:45Z",
+   "end": "2026-11-23T00:17:45Z",
+   "updated": "2026-11-22T23:31:55.0936162Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
+   "title": "Overturned Vehicle",
+   "where": "AL67 SB @ MP 34.91",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.536032,
+   "lon": -86.909264,
+   "start": "2026-11-22T23:19:41Z",
+   "end": "2026-11-23T00:19:41Z",
+   "updated": "2026-11-22T23:42:29.3144431Z"
   },
   {
    "type": "Incident",
