@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-22T01:05:22+00:00",
+ "updated": "2026-11-22T02:05:21+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 NB @ MP 10.48",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.8318,
+   "lon": -87.628576,
+   "start": "2026-11-22T01:18:22Z",
+   "end": "2026-11-22T02:18:22Z",
+   "updated": "2026-11-21T19:19:16Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL251 NB/SB @ MP 3.11",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.825648,
+   "lon": -86.901,
+   "start": "2026-11-22T01:36:47Z",
+   "end": "2026-11-22T02:36:47Z",
+   "updated": "2026-11-21T19:37:42Z"
+  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
