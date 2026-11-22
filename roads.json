@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-22T03:20:22+00:00",
+ "updated": "2026-11-22T03:50:22+00:00",
  "events": [
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US431 NB/SB @ MP 292",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
-   "county": "Marshall",
-   "city": "Albertville",
-   "lat": 34.305788,
-   "lon": -86.289232,
-   "start": "2026-11-22T02:36:51Z",
-   "end": "2026-11-22T03:36:51Z",
-   "updated": "2026-11-21T20:38:09Z"
+   "title": "Debris",
+   "where": "AL17 NB/SB @ MP 334.84",
+   "detail": "Debris in the roadway. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.841955999999996,
+   "lon": -87.670504,
+   "start": "2026-11-22T03:28:56Z",
+   "end": "2026-11-22T04:28:56Z",
+   "updated": "2026-11-21T21:29:41Z"
   },
   {
    "type": "Incident",
