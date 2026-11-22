@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-22T05:05:24+00:00",
+ "updated": "2026-11-22T06:05:26+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 49.62",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Elgin",
+   "lat": 34.851344,
+   "lon": -87.39979199999999,
+   "start": "2026-11-22T05:31:34Z",
+   "end": "2026-11-22T06:31:34Z",
+   "updated": "2026-11-21T23:32:37Z"
+  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
