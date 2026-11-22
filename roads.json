@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-22T08:05:20+00:00",
+ "updated": "2026-11-22T08:50:22+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL36 EB/WB @ MP 8.71",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Danville",
+   "lat": 34.416208,
+   "lon": -87.148432,
+   "start": "2026-11-22T08:20:31Z",
+   "end": "2026-11-22T09:20:31Z",
+   "updated": "2026-11-22T02:21:37Z"
+  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
