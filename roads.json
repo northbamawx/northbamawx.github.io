@@ -1,34 +1,6 @@
 {
- "updated": "2026-11-22T21:05:22+00:00",
+ "updated": "2026-11-22T21:35:23+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL69 NB/SB @ MP 263.74",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Joppa",
-   "lat": 34.297564,
-   "lon": -86.557664,
-   "start": "2026-11-22T19:42:17Z",
-   "end": "2026-11-22T21:45:00Z",
-   "updated": "2026-11-22T20:41:52.0482684Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 293.32",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Marshall",
-   "city": "Arab",
-   "lat": 34.414035999999996,
-   "lon": -86.527928,
-   "start": "2026-11-22T19:27:59Z",
-   "end": "2026-11-22T21:45:00Z",
-   "updated": "2026-11-22T20:36:32.1388335Z"
-  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
