@@ -1,34 +1,6 @@
 {
- "updated": "2026-11-22T12:05:21+00:00",
+ "updated": "2026-11-22T13:05:20+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 0.69",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.1929,
-   "lon": -86.786808,
-   "start": "2026-11-22T11:41:56Z",
-   "end": "2026-11-22T12:41:56Z",
-   "updated": "2026-11-22T05:43:38Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL71 NB/SB @ MP 8.63",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
-   "county": "Jackson",
-   "city": "Pisgah",
-   "lat": 34.64194,
-   "lon": -85.852744,
-   "start": "2026-11-22T11:39:47Z",
-   "end": "2026-11-22T12:39:47Z",
-   "updated": "2026-11-22T05:40:58Z"
-  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
