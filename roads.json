@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-22T09:05:22+00:00",
+ "updated": "2026-11-22T10:05:20+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL36 EB/WB @ MP 8.71",
+   "where": "AL207 NB/SB @ MP 1.5",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Danville",
-   "lat": 34.416208,
-   "lon": -87.148432,
-   "start": "2026-11-22T08:20:31Z",
-   "end": "2026-11-22T09:20:31Z",
-   "updated": "2026-11-22T02:21:37Z"
+   "county": "Lauderdale",
+   "city": "Rogersville",
+   "lat": 34.84554,
+   "lon": -87.293864,
+   "start": "2026-11-22T09:17:31Z",
+   "end": "2026-11-22T10:17:31Z",
+   "updated": "2026-11-22T03:18:47Z"
   },
   {
    "type": "Incident",
