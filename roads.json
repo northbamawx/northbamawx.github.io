@@ -1,34 +1,6 @@
 {
- "updated": "2026-11-23T12:05:23+00:00",
+ "updated": "2026-11-23T13:05:27+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB @ MP 326.16",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.169751999999995,
-   "lon": -86.84064,
-   "start": "2026-11-23T11:41:03Z",
-   "end": "2026-11-23T12:41:03Z",
-   "updated": "2026-11-23T05:42:02Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "MinorDelay",
-   "title": "Other",
-   "where": "AL20 EB/WB @ MP 60.81",
-   "detail": "Please use caution when traveling through this area.",
-   "county": "Lawrence",
-   "city": "Hillsboro",
-   "lat": 34.63474,
-   "lon": -87.11344,
-   "start": "2026-11-21T13:10:02Z",
-   "end": "2026-11-23T14:10:02Z",
-   "updated": "2026-11-21T14:09:11.824475Z"
-  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
