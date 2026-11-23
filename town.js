@@ -16,6 +16,28 @@ window.rainTiming = function (periods) {
   return s === 0 ? `${what} now${end} (up to ${max}%).` : `${what} starting around ${at(hrs[s].t)}${end} (up to ${max}%).`;
 };
 
+// What an NWS station report says is falling right now ('Light rain', 'Thunderstorms'...), or null.
+// Same rules as index.html rainNow: reports from the last 90 minutes only; mist (BR) and
+// vicinity-only showers (VCSH) don't count, so radar echoes that never land can't trigger it.
+window.precipNow = function (ob) {
+  if (!ob || !ob.timestamp || Date.now() - new Date(ob.timestamp) > 90 * 60000) return null;
+  const raw = (ob.presentWeather || []).map(w => w.rawString || '').join(' ');
+  if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
+  const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
+    : /SN/.test(raw) ? 'Snow' : /PL|GR|GS/.test(raw) ? 'Sleet or hail'
+    : /DZ/.test(raw) && !/RA/.test(raw) ? 'Drizzle' : 'Rain';
+  return /(^|\s)-/.test(raw) && what !== 'Thunderstorms' ? 'Light ' + what.toLowerCase() : what;
+};
+// hits: [{what, place}] from the town's nearest stations; forecast: the rainTiming() sentence.
+window.rainNowText = function (hits, forecast) {
+  if (/ now[,( ]/.test(forecast)) return forecast;          // the forecast already says it's raining now
+  const places = [...new Set(hits.map(h => h.place))];
+  const lead = `${hits[0].what} reported at ${places.length > 2 ? 'several nearby weather stations' : places.join(' and ')} right now.`;
+  return /^No rain expected/.test(forecast)
+    ? `${lead} The forecast doesn't expect any more rain in the next 12 hours.`
+    : `${lead} ${forecast}`;
+};
+
 // Shared script for the town pages (towns/*.html). Each page sets
 // data-name, data-lat and data-lon on <body>.
 (() => {
@@ -97,12 +119,33 @@ window.rainTiming = function (periods) {
     } catch (e) { $('t-desc').textContent = 'Current conditions unavailable'; }
   }
 
+  // Rain actually falling at the town's nearest official stations (up to 3, within 25 miles).
+  async function rainNearby(p) {
+    const sts = (await (await fetch(p.observationStations, NWS)).json()).features || [];
+    const rad = d => d * Math.PI / 180;
+    const miles = ([slon, slat]) => 3959 * 2 * Math.asin(Math.sqrt(Math.sin(rad(slat - lat) / 2) ** 2
+      + Math.cos(rad(lat)) * Math.cos(rad(slat)) * Math.sin(rad(slon - lon) / 2) ** 2));
+    const near = sts.filter(s => s.geometry && miles(s.geometry.coordinates) <= 25).slice(0, 3);
+    const hits = await Promise.all(near.map(async s => {
+      try {
+        const r = await fetch(s.id + '/observations/latest', NWS);
+        if (!r.ok) return null;
+        const what = window.precipNow((await r.json()).properties);
+        // "Albertville Regional Airport-Thomas J Brumlik Field" -> "Albertville Regional Airport"
+        return what ? { what, place: s.properties.name.split(/\s*[-–]\s*/)[0] } : null;
+      } catch (e) { return null; }
+    }));
+    return hits.filter(Boolean);
+  }
+
   async function loadForecast() {
     const box = $('t-fc');
     try {
       const p = await point();
       const [fc, hr] = await Promise.all([fetch(p.forecast, NWS).then(r => r.json()), fetch(p.forecastHourly, NWS).then(r => r.json())]);
-      $('t-rain').textContent = window.rainTiming ? window.rainTiming(hr.properties.periods) : '';
+      const rainFc = window.rainTiming ? window.rainTiming(hr.properties.periods) : '';
+      $('t-rain').textContent = rainFc;
+      if (rainFc) rainNearby(p).then(h => { if (h.length) $('t-rain').textContent = window.rainNowText(h, rainFc); }).catch(() => {});
       box.textContent = '';
       fc.properties.periods.slice(0, 14).forEach(d => {
         const el = document.createElement('div'); el.className = 'fcd' + (d.isDaytime ? '' : ' night');

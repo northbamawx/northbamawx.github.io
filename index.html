@@ -2294,7 +2294,7 @@ window.rainTiming = function (periods) {
 // was on the radar. Only real reports from the last 90 minutes count; vicinity-only
 // showers (VCSH) don't, and radar echoes that never reach the ground can't trigger it.
 const RAIN_NOW_STATIONS = [['KDCU', 'Decatur'], ['KHSV', 'Huntsville'], ['KMDQ', 'Madison County'],
-  ['KMSL', 'Muscle Shoals'], ['K4A6', 'Scottsboro'], ['KFYM', 'Fayetteville, TN']];
+  ['KMSL', 'Muscle Shoals'], ['K4A6', 'Scottsboro'], ['KBFZ', 'Albertville'], ['KFYM', 'Fayetteville, TN']];
 window.rainNow = async function () {
   const looks = await Promise.all(RAIN_NOW_STATIONS.map(async ([id, place]) => {
     try {
