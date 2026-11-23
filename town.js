@@ -16,12 +16,25 @@ window.rainTiming = function (periods) {
   return s === 0 ? `${what} now${end} (up to ${max}%).` : `${what} starting around ${at(hrs[s].t)}${end} (up to ${max}%).`;
 };
 
-// What an NWS station report says is falling right now ('Light rain', 'Thunderstorms'...), or null.
-// Same rules as index.html rainNow: reports from the last 90 minutes only; mist (BR) and
-// vicinity-only showers (VCSH) don't count, so radar echoes that never land can't trigger it.
-window.precipNow = function (ob) {
-  if (!ob || !ob.timestamp || Date.now() - new Date(ob.timestamp) > 90 * 60000) return null;
-  const raw = (ob.presentWeather || []).map(w => w.rawString || '').join(' ');
+// Current airport reports from Iowa State's IEM, which is up to date within minutes (the
+// api.weather.gov station feed ran over an hour behind on 2026-11-23 and showed drizzle
+// that had already stopped). Same rules as index.html rainNow.
+window.STATION_PLACES = { DCU: 'Decatur', HSV: 'Huntsville', MDQ: 'Madison County', MSL: 'Muscle Shoals',
+  '9A4': 'Courtland', CMD: 'Cullman', '8A1': 'Guntersville', BFZ: 'Albertville', '4A6': 'Scottsboro',
+  '4A9': 'Fort Payne', '1M4': 'Haleyville', GZS: 'Pulaski, TN', FYM: 'Fayetteville, TN', BGF: 'Winchester, TN',
+  '2M2': 'Lawrenceburg, TN', THA: 'Tullahoma, TN', SYI: 'Shelbyville, TN', LUG: 'Lewisburg, TN' };
+window.stationsNow = async function () {
+  const nets = await Promise.all(['AL_ASOS', 'TN_ASOS'].map(n =>
+    fetch(`https://mesonet.agron.iastate.edu/api/1/currents.json?network=${n}`)
+      .then(r => (r.ok ? r.json() : {})).catch(() => ({}))));
+  return nets.flatMap(j => j.data || []);
+};
+// 'Light rain', 'Thunderstorms'... for an IEM current report, or null. Only a station's
+// newest report counts, and only if it's under 75 minutes old; mist (BR) and vicinity-only
+// showers (VCSH) don't count, so radar echoes that never reach the ground can't trigger it.
+window.precipNow = function (row) {
+  if (!row || !row.utc_valid || Date.now() - new Date(row.utc_valid) > 75 * 60000) return null;
+  const raw = row.wxcodes || '';
   if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
   const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
     : /SN/.test(raw) ? 'Snow' : /PL|GR|GS/.test(raw) ? 'Sleet or hail'
@@ -32,7 +45,7 @@ window.precipNow = function (ob) {
 window.rainNowText = function (hits, forecast) {
   if (/ now[,( ]/.test(forecast)) return forecast;          // the forecast already says it's raining now
   const places = [...new Set(hits.map(h => h.place))];
-  const lead = `${hits[0].what} reported at ${places.length > 2 ? 'several nearby weather stations' : places.join(' and ')} right now.`;
+  const lead = `${hits[0].what} reported ${places.length > 2 ? 'at several nearby weather stations' : 'in ' + places.join(' and ')} right now.`;
   return /^No rain expected/.test(forecast)
     ? `${lead} The forecast doesn't expect any more rain in the next 12 hours.`
     : `${lead} ${forecast}`;
@@ -120,22 +133,19 @@ window.rainNowText = function (hits, forecast) {
   }
 
   // Rain actually falling at the town's nearest official stations (up to 3, within 25 miles).
-  async function rainNearby(p) {
-    const sts = (await (await fetch(p.observationStations, NWS)).json()).features || [];
+  async function rainNearby() {
     const rad = d => d * Math.PI / 180;
-    const miles = ([slon, slat]) => 3959 * 2 * Math.asin(Math.sqrt(Math.sin(rad(slat - lat) / 2) ** 2
-      + Math.cos(rad(lat)) * Math.cos(rad(slat)) * Math.sin(rad(slon - lon) / 2) ** 2));
-    const near = sts.filter(s => s.geometry && miles(s.geometry.coordinates) <= 25).slice(0, 3);
-    const hits = await Promise.all(near.map(async s => {
-      try {
-        const r = await fetch(s.id + '/observations/latest', NWS);
-        if (!r.ok) return null;
-        const what = window.precipNow((await r.json()).properties);
-        // "Albertville Regional Airport-Thomas J Brumlik Field" -> "Albertville Regional Airport"
-        return what ? { what, place: s.properties.name.split(/\s*[-–]\s*/)[0] } : null;
-      } catch (e) { return null; }
-    }));
-    return hits.filter(Boolean);
+    const miles = r => 3959 * 2 * Math.asin(Math.sqrt(Math.sin(rad(r.lat - lat) / 2) ** 2
+      + Math.cos(rad(lat)) * Math.cos(rad(r.lat)) * Math.sin(rad(r.lon - lon) / 2) ** 2));
+    const near = (await window.stationsNow()).filter(r => r.lat != null && r.lon != null)
+      .map(r => [miles(r), r]).filter(([d]) => d <= 25).sort((a, b) => a[0] - b[0]).slice(0, 3);
+    return near.map(([, r]) => {
+      const what = window.precipNow(r);
+      if (!what) return null;
+      const place = window.STATION_PLACES[r.station]
+        || (r.name || r.station).split('/')[0].toLowerCase().replace(/\b\w/g, c => c.toUpperCase()) + (r.state === 'TN' ? ', TN' : '');
+      return { what, place };
+    }).filter(Boolean);
   }
 
   async function loadForecast() {
@@ -145,7 +155,7 @@ window.rainNowText = function (hits, forecast) {
       const [fc, hr] = await Promise.all([fetch(p.forecast, NWS).then(r => r.json()), fetch(p.forecastHourly, NWS).then(r => r.json())]);
       const rainFc = window.rainTiming ? window.rainTiming(hr.properties.periods) : '';
       $('t-rain').textContent = rainFc;
-      if (rainFc) rainNearby(p).then(h => { if (h.length) $('t-rain').textContent = window.rainNowText(h, rainFc); }).catch(() => {});
+      if (rainFc) rainNearby().then(h => { if (h.length) $('t-rain').textContent = window.rainNowText(h, rainFc); }).catch(() => {});
       box.textContent = '';
       fc.properties.periods.slice(0, 14).forEach(d => {
         const el = document.createElement('div'); el.className = 'fcd' + (d.isDaytime ? '' : ' night');

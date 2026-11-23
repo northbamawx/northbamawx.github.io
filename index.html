@@ -2289,34 +2289,45 @@ window.rainTiming = function (periods) {
   return s === 0 ? `${what} now${end} (up to ${max}%).` : `${what} starting around ${at(hrs[s].t)}${end} (up to ${max}%).`;
 };
 
-// Rain falling right now at nearby official weather stations (airport reports).
+// Rain falling right now at official weather stations around the area (airport reports).
 // The line above is forecast-only, so it could say "No rain expected" while light rain
-// was on the radar. Only real reports from the last 90 minutes count; vicinity-only
-// showers (VCSH) don't, and radar echoes that never reach the ground can't trigger it.
-const RAIN_NOW_STATIONS = [['KDCU', 'Decatur'], ['KHSV', 'Huntsville'], ['KMDQ', 'Madison County'],
-  ['KMSL', 'Muscle Shoals'], ['K4A6', 'Scottsboro'], ['KBFZ', 'Albertville'], ['KFYM', 'Fayetteville, TN']];
+// was on the radar. Reports come from Iowa State's IEM, which is current within minutes
+// (the api.weather.gov station feed ran over an hour behind on 2026-11-23 and showed
+// drizzle that had already stopped). Each station's newest report counts only if it's
+// under 75 minutes old; mist (BR) and vicinity-only showers (VCSH) don't count, so radar
+// echoes that never reach the ground can't trigger it.
+window.STATION_PLACES = { DCU: 'Decatur', HSV: 'Huntsville', MDQ: 'Madison County', MSL: 'Muscle Shoals',
+  '9A4': 'Courtland', CMD: 'Cullman', '8A1': 'Guntersville', BFZ: 'Albertville', '4A6': 'Scottsboro',
+  '4A9': 'Fort Payne', '1M4': 'Haleyville', GZS: 'Pulaski, TN', FYM: 'Fayetteville, TN', BGF: 'Winchester, TN',
+  '2M2': 'Lawrenceburg, TN', THA: 'Tullahoma, TN', SYI: 'Shelbyville, TN', LUG: 'Lewisburg, TN' };
+const RAIN_NOW_STATIONS = ['DCU', 'HSV', 'MDQ', 'MSL', '9A4', 'CMD', '8A1', 'BFZ', '4A6', '4A9', 'GZS', 'FYM', 'BGF'];
+window.stationsNow = async function () {
+  const nets = await Promise.all(['AL_ASOS', 'TN_ASOS'].map(n =>
+    fetch(`https://mesonet.agron.iastate.edu/api/1/currents.json?network=${n}`)
+      .then(r => (r.ok ? r.json() : {})).catch(() => ({}))));
+  return nets.flatMap(j => j.data || []);
+};
+// 'Light rain', 'Thunderstorms'... for an IEM current report, or null if nothing is falling.
+window.precipNow = function (row) {
+  if (!row || !row.utc_valid || Date.now() - new Date(row.utc_valid) > 75 * 60000) return null;
+  const raw = row.wxcodes || '';
+  if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
+  const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
+    : /SN/.test(raw) ? 'Snow' : /PL|GR|GS/.test(raw) ? 'Sleet or hail'
+    : /DZ/.test(raw) && !/RA/.test(raw) ? 'Drizzle' : 'Rain';
+  return /(^|\s)-/.test(raw) && what !== 'Thunderstorms' ? 'Light ' + what.toLowerCase() : what;
+};
 window.rainNow = async function () {
-  const looks = await Promise.all(RAIN_NOW_STATIONS.map(async ([id, place]) => {
-    try {
-      const r = await fetch(`https://api.weather.gov/stations/${id}/observations/latest`, { headers: { Accept: 'application/geo+json' } });
-      if (!r.ok) return null;
-      const p = (await r.json()).properties;
-      if (!p.timestamp || Date.now() - new Date(p.timestamp) > 90 * 60000) return null;
-      const raw = (p.presentWeather || []).map(w => w.rawString || '').join(' ');
-      if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
-      const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
-        : /SN/.test(raw) ? 'Snow' : /PL|GR|GS/.test(raw) ? 'Sleet or hail'
-        : /DZ/.test(raw) && !/RA/.test(raw) ? 'Drizzle' : 'Rain';
-      const light = /(^|\s)-/.test(raw) && what !== 'Thunderstorms';
-      return { what: light ? 'Light ' + what.toLowerCase() : what, place };
-    } catch (e) { return null; }
-  }));
-  return looks.filter(Boolean);
+  const rows = await window.stationsNow();
+  return RAIN_NOW_STATIONS.map(id => {
+    const what = window.precipNow(rows.find(r => r.station === id));
+    return what ? { what, place: window.STATION_PLACES[id] } : null;
+  }).filter(Boolean);
 };
 window.rainNowText = function (hits, forecast) {
   if (/ now[,( ]/.test(forecast)) return forecast;          // the forecast already says it's raining now
   const places = [...new Set(hits.map(h => h.place))];
-  const where = places.length > 2 ? 'at several nearby weather stations' : 'in ' + places.join(' and ');
+  const where = places.length > 2 ? 'at several weather stations around the area' : 'in ' + places.join(' and ');
   const lead = `${hits[0].what} reported ${where} right now.`;
   return /^No rain expected/.test(forecast)
     ? `${lead} The forecast doesn't expect any more rain in the next 12 hours.`
