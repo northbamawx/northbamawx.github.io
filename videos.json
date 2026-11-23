@@ -1,6 +1,12 @@
 {
- "updated": 1795395932,
+ "updated": 1795399521,
  "items": [
+  {
+   "id": "lcTHJ2YLkt8",
+   "title": "North Alabama Week Ahead: Rain Wednesday",
+   "short": true,
+   "published": 1795396001
+  },
   {
    "id": "0HKcBgZmifI",
    "title": "Storm Coverage - North Alabama - November 22, 2026",
@@ -36,12 +42,6 @@
    "title": "Storm Coverage - North Alabama - November 20, 2026",
    "short": true,
    "published": 1795205878
-  },
-  {
-   "id": "CpsVXEpihiQ",
-   "title": "Friday Night Football Forecast: Mostly Cloudy & 57° at Kickoff",
-   "short": true,
-   "published": 1795201304
   }
  ]
 }

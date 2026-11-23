@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-23T01:05:32+00:00",
+ "updated": "2026-11-23T02:05:21+00:00",
  "events": [
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 SB @ MP 316.95",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.720072,
-   "lon": -86.593792,
-   "start": "2026-11-23T00:39:50Z",
-   "end": "2026-11-23T01:39:50Z",
-   "updated": "2026-11-22T18:41:11Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 93.88",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.737276,
-   "lon": -86.652808,
-   "start": "2026-11-23T00:47:42Z",
-   "end": "2026-11-23T01:47:42Z",
-   "updated": "2026-11-22T18:48:33Z"
+   "title": "Debris",
+   "where": "AL20 EB/WB @ MP 17.46",
+   "detail": "Debris in the roadway. Please use caution when traveling through this area.  n",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.822455999999995,
+   "lon": -87.728376,
+   "start": "2026-11-23T01:39:28Z",
+   "end": "2026-11-23T02:39:28Z",
+   "updated": "2026-11-22T19:40:18Z"
   },
   {
    "type": "Incident",
