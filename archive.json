@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T06:05:20+00:00",
+ "updated": "2026-11-23T07:05:21+00:00",
  "days": [
   {
    "date": "2026-11-01",
@@ -412,8 +412,8 @@
     {
      "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0004",
      "counties": [
-      "Madison",
       "Jackson",
+      "Madison",
       "Franklin TN"
      ],
      "time": "1:24 PM"
@@ -446,8 +446,8 @@
     {
      "url": "https://mesonet.agron.iastate.edu/vtec/?year=2026&wfo=KHUN&phenomena=TO&significance=W&eventid=0008",
      "counties": [
-      "Jackson",
-      "Madison"
+      "Madison",
+      "Jackson"
      ],
      "time": "7:17 PM"
     }
