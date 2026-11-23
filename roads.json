@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-23T02:05:21+00:00",
+ "updated": "2026-11-23T03:05:21+00:00",
  "events": [
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "AL20 EB/WB @ MP 17.46",
-   "detail": "Debris in the roadway. Please use caution when traveling through this area.  n",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.822455999999995,
-   "lon": -87.728376,
-   "start": "2026-11-23T01:39:28Z",
-   "end": "2026-11-23T02:39:28Z",
-   "updated": "2026-11-22T19:40:18Z"
-  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
