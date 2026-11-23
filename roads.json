@@ -1,6 +1,48 @@
 {
- "updated": "2026-11-23T03:05:21+00:00",
+ "updated": "2026-11-23T04:05:21+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "I-65 SB @ MP 296",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.029528,
+   "lon": -86.87164,
+   "start": "2026-11-23T03:35:30Z",
+   "end": "2026-11-23T04:35:30Z",
+   "updated": "2026-11-22T21:36:33Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB/SB @ MP 345.05",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "Madison",
+   "city": "Meridianville",
+   "lat": 34.877676,
+   "lon": -86.56926399999999,
+   "start": "2026-11-23T03:02:48Z",
+   "end": "2026-11-23T05:00:00Z",
+   "updated": "2026-11-23T04:02:47.7757306Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Overturned Vehicle",
+   "where": "AL69 NB/SB @ MP 274.35",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "Marshall",
+   "city": "Guntersville",
+   "lat": 34.362452,
+   "lon": -86.40404,
+   "start": "2026-11-23T03:05:19Z",
+   "end": "2026-11-23T05:15:00Z",
+   "updated": "2026-11-23T04:02:47.7757708Z"
+  },
   {
    "type": "Incident",
    "severity": "MinorDelay",
