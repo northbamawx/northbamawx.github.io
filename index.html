@@ -1812,7 +1812,9 @@ async function loadHourly() {
     const allHrs = (await r.json()).properties.periods;
     const hrs = allHrs.slice(0, 48);
     const rl = document.getElementById('rain-line');
-    rl.textContent = window.rainTiming(allHrs) || 'Rain timing unavailable right now.';
+    const fc = window.rainTiming(allHrs);
+    rl.textContent = fc || 'Rain timing unavailable right now.';
+    if (fc) window.rainNow().then(h => { if (h.length) rl.textContent = window.rainNowText(h, fc); }).catch(() => {});
     const W = 1100, H = 260, L = 44, R = 44, T = 24, B = 46;
     const iw = W - L - R, ih = H - T - B, n = hrs.length, step = iw / n;
     const temps = hrs.map(h => h.temperature);
@@ -2285,6 +2287,40 @@ window.rainTiming = function (periods) {
   const what = (storm ? 'Storms' : 'Rain') + (max >= 60 ? ' likely' : ' possible');
   const end = e + 1 < hrs.length ? `, ending around ${at(new Date(hrs[e].t.getTime() + 3600000))}` : ', lasting past the next 12 hours';
   return s === 0 ? `${what} now${end} (up to ${max}%).` : `${what} starting around ${at(hrs[s].t)}${end} (up to ${max}%).`;
+};
+
+// Rain falling right now at nearby official weather stations (airport reports).
+// The line above is forecast-only, so it could say "No rain expected" while light rain
+// was on the radar. Only real reports from the last 90 minutes count; vicinity-only
+// showers (VCSH) don't, and radar echoes that never reach the ground can't trigger it.
+const RAIN_NOW_STATIONS = [['KDCU', 'Decatur'], ['KHSV', 'Huntsville'], ['KMDQ', 'Madison County'],
+  ['KMSL', 'Muscle Shoals'], ['K4A6', 'Scottsboro'], ['KFYM', 'Fayetteville, TN']];
+window.rainNow = async function () {
+  const looks = await Promise.all(RAIN_NOW_STATIONS.map(async ([id, place]) => {
+    try {
+      const r = await fetch(`https://api.weather.gov/stations/${id}/observations/latest`, { headers: { Accept: 'application/geo+json' } });
+      if (!r.ok) return null;
+      const p = (await r.json()).properties;
+      if (!p.timestamp || Date.now() - new Date(p.timestamp) > 90 * 60000) return null;
+      const raw = (p.presentWeather || []).map(w => w.rawString || '').join(' ');
+      if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
+      const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
+        : /SN/.test(raw) ? 'Snow' : /PL|GR|GS/.test(raw) ? 'Sleet or hail'
+        : /DZ/.test(raw) && !/RA/.test(raw) ? 'Drizzle' : 'Rain';
+      const light = /(^|\s)-/.test(raw) && what !== 'Thunderstorms';
+      return { what: light ? 'Light ' + what.toLowerCase() : what, place };
+    } catch (e) { return null; }
+  }));
+  return looks.filter(Boolean);
+};
+window.rainNowText = function (hits, forecast) {
+  if (/ now[,( ]/.test(forecast)) return forecast;          // the forecast already says it's raining now
+  const places = [...new Set(hits.map(h => h.place))];
+  const where = places.length > 2 ? 'at several nearby weather stations' : 'in ' + places.join(' and ');
+  const lead = `${hits[0].what} reported ${where} right now.`;
+  return /^No rain expected/.test(forecast)
+    ? `${lead} The forecast doesn't expect any more rain in the next 12 hours.`
+    : `${lead} ${forecast}`;
 };
 
 // ---- Load heavy things (maps, cameras) only when they're about to scroll into view ----
