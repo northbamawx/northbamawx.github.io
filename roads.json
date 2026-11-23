@@ -1,47 +1,19 @@
 {
- "updated": "2026-11-23T14:05:25+00:00",
+ "updated": "2026-11-23T15:05:46+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 63.58",
+   "where": "AL67 NB/SB @ MP 43.3",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Morgan",
    "city": "Decatur",
-   "lat": 34.620163999999995,
-   "lon": -87.070184,
-   "start": "2026-11-23T13:46:03Z",
-   "end": "2026-11-23T14:46:03Z",
-   "updated": "2026-11-23T07:46:22Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 302.74",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Lacey Spring",
-   "lat": 34.525148,
-   "lon": -86.589,
-   "start": "2026-11-23T12:46:11Z",
-   "end": "2026-11-23T14:15:00Z",
-   "updated": "2026-11-23T13:43:30.2912399Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 EB @ MP 4.88",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Huntsville",
-   "lat": 34.649612,
-   "lon": -86.821688,
-   "start": "2026-11-23T13:30:40Z",
-   "end": "2026-11-23T14:30:40Z",
-   "updated": "2026-11-23T07:30:58Z"
+   "lat": 34.590736,
+   "lon": -87.029472,
+   "start": "2026-11-23T14:12:25Z",
+   "end": "2026-11-23T15:12:25Z",
+   "updated": "2026-11-23T08:13:32Z"
   },
   {
    "type": "Incident",
