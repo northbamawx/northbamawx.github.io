@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-23T17:05:23+00:00",
+ "updated": "2026-11-23T17:50:26+00:00",
  "events": [
   {
-   "type": "Incident",
+   "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-65 SB @ MP 321.3",
-   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Falkville",
-   "lat": 34.360592,
-   "lon": -86.89171999999999,
-   "start": "2026-11-23T16:06:37Z",
-   "end": "2026-11-23T22:00:00Z",
-   "updated": "2026-11-23T10:07:56Z"
+   "title": "Moderate Crash",
+   "where": "AL35 NB/SB @ MP 50.69",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.673544,
+   "lon": -86.027064,
+   "start": "2026-11-23T17:12:37Z",
+   "end": "2026-11-23T18:12:37Z",
+   "updated": "2026-11-23T11:29:39Z"
   },
   {
    "type": "Incident",
