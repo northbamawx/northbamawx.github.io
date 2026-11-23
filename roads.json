@@ -1,89 +1,19 @@
 {
- "updated": "2026-11-23T21:05:21+00:00",
+ "updated": "2026-11-23T22:05:23+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL157 NB/SB @ MP 77.27",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.848596,
-   "lon": -87.69000799999999,
-   "start": "2026-11-23T20:47:46Z",
-   "end": "2026-11-23T21:47:46Z",
-   "updated": "2026-11-23T14:51:57Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 75.28",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.788568,
-   "lon": -86.964152,
-   "start": "2026-11-23T20:07:17Z",
-   "end": "2026-11-23T21:07:17Z",
-   "updated": "2026-11-23T14:07:48Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB/WB @ MP 80.59",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.765556,
-   "lon": -86.87732799999999,
-   "start": "2026-11-23T19:43:13Z",
-   "end": "2026-11-23T21:30:00Z",
-   "updated": "2026-11-23T20:40:44.0090876Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 WB @ MP 86.09",
+   "where": "US231 NB @ MP 316.05",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
-   "city": "Madison",
-   "lat": 34.747872,
-   "lon": -86.78616,
-   "start": "2026-11-23T20:52:46Z",
-   "end": "2026-11-23T21:52:46Z",
-   "updated": "2026-11-23T21:02:19.1120287Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 358.31",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.609124,
-   "lon": -86.978128,
-   "start": "2026-11-23T20:28:18Z",
-   "end": "2026-11-23T21:28:18Z",
-   "updated": "2026-11-23T14:29:28Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL36 EB/WB @ MP 23.14",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.449408,
-   "lon": -86.90892,
-   "start": "2026-11-23T20:56:43Z",
-   "end": "2026-11-23T21:56:43Z",
-   "updated": "2026-11-23T14:58:19Z"
+   "city": "Huntsville",
+   "lat": 34.709067999999995,
+   "lon": -86.590048,
+   "start": "2026-11-23T21:22:35Z",
+   "end": "2026-11-23T22:22:35Z",
+   "updated": "2026-11-23T15:23:50Z"
   }
  ]
 }
