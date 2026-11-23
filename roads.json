@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-23T19:20:24+00:00",
+ "updated": "2026-11-23T19:50:27+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 327.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.184495999999996,
+   "lon": -86.849288,
+   "start": "2026-11-23T19:22:29Z",
+   "end": "2026-11-23T20:22:29Z",
+   "updated": "2026-11-23T13:23:23Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 80.59",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.765556,
+   "lon": -86.87732799999999,
+   "start": "2026-11-23T19:43:13Z",
+   "end": "2026-11-23T20:43:13Z",
+   "updated": "2026-11-23T13:43:37Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +40,8 @@
    "lat": 34.744375999999995,
    "lon": -86.67764,
    "start": "2026-11-23T17:46:41Z",
-   "end": "2026-11-23T19:45:00Z",
-   "updated": "2026-11-23T18:47:09.5568867Z"
+   "end": "2026-11-23T20:45:00Z",
+   "updated": "2026-11-23T19:46:49.4747821Z"
   }
  ]
 }
