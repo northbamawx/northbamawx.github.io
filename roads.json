@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-23T16:05:33+00:00",
+ "updated": "2026-11-23T17:05:23+00:00",
  "events": [
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 SB @ MP 321.3",
+   "detail": "Congestion is building in the area. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Falkville",
+   "lat": 34.360592,
+   "lon": -86.89171999999999,
+   "start": "2026-11-23T16:06:37Z",
+   "end": "2026-11-23T22:00:00Z",
+   "updated": "2026-11-23T10:07:56Z"
+  },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
