@@ -2294,7 +2294,7 @@ window.rainTiming = function (periods) {
 // was on the radar. Reports come from Iowa State's IEM, which is current within minutes
 // (the api.weather.gov station feed ran over an hour behind on 2026-11-23 and showed
 // drizzle that had already stopped). Each station's newest report counts only if it's
-// under 75 minutes old; mist (BR) and vicinity-only showers (VCSH) don't count, so radar
+// under 60 minutes old; mist (BR) and vicinity-only showers (VCSH) don't count, so radar
 // echoes that never reach the ground can't trigger it.
 window.STATION_PLACES = { DCU: 'Decatur', HSV: 'Huntsville', MDQ: 'Madison County', MSL: 'Muscle Shoals',
   '9A4': 'Courtland', CMD: 'Cullman', '8A1': 'Guntersville', BFZ: 'Albertville', '4A6': 'Scottsboro',
@@ -2309,7 +2309,7 @@ window.stationsNow = async function () {
 };
 // 'Light rain', 'Thunderstorms'... for an IEM current report, or null if nothing is falling.
 window.precipNow = function (row) {
-  if (!row || !row.utc_valid || Date.now() - new Date(row.utc_valid) > 75 * 60000) return null;
+  if (!row || !row.utc_valid || Date.now() - new Date(row.utc_valid) > 60 * 60000) return null;
   const raw = row.wxcodes || '';
   if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
   const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
@@ -2320,15 +2320,33 @@ window.precipNow = function (row) {
 window.rainNow = async function () {
   const rows = await window.stationsNow();
   return RAIN_NOW_STATIONS.map(id => {
-    const what = window.precipNow(rows.find(r => r.station === id));
-    return what ? { what, place: window.STATION_PLACES[id] } : null;
+    const row = rows.find(r => r.station === id);
+    const what = window.precipNow(row);
+    return what ? { what, place: window.STATION_PLACES[id], t: new Date(row.utc_valid) } : null;
   }).filter(Boolean);
 };
 window.rainNowText = function (hits, forecast) {
   if (/ now[,( ]/.test(forecast)) return forecast;          // the forecast already says it's raining now
-  const places = [...new Set(hits.map(h => h.place))];
-  const where = places.length > 2 ? 'at several weather stations around the area' : 'in ' + places.join(' and ');
-  const lead = `${hits[0].what} reported ${where} right now.`;
+  // Lead with the most serious thing reported, then mention the rest, so a storm in one town
+  // and light rain in another don't read as storms in both.
+  const ORDER = ['Thunderstorms', 'Freezing rain', 'Light freezing rain', 'Sleet or hail', 'Light sleet or hail',
+    'Snow', 'Rain', 'Light snow', 'Light rain', 'Drizzle', 'Light drizzle'];
+  const rank = w => (ORDER.indexOf(w) < 0 ? 99 : ORDER.indexOf(w));
+  const groups = [];
+  hits.slice().sort((a, b) => rank(a.what) - rank(b.what)).forEach(h => {
+    const g = groups.find(x => x.what === h.what);
+    if (!g) groups.push({ what: h.what, places: [h.place] });
+    else if (!g.places.includes(h.place)) g.places.push(h.place);
+  });
+  // Say when, not "right now": a station may report only every 20-60 minutes, and a passing
+  // sprinkle can show up in one report and be gone by the next (Courtland, 2026-11-23).
+  const at = hits.length === 1
+    ? 'at ' + hits[0].t.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Chicago' })
+    : 'in the last hour';
+  const inPlaces = p => (p.length > 2 ? 'at several weather stations around the area' : 'in ' + p.join(' and '));
+  let lead = `${groups[0].what} reported ${inPlaces(groups[0].places)} ${at}.`;
+  const rest = groups.slice(1);
+  if (rest.length) lead += ` ${rest.length === 1 ? rest[0].what : 'Rain'} also reported ${inPlaces(rest.flatMap(g => g.places))}.`;
   return /^No rain expected/.test(forecast)
     ? `${lead} The forecast doesn't expect any more rain in the next 12 hours.`
     : `${lead} ${forecast}`;

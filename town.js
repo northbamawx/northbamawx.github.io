@@ -30,10 +30,10 @@ window.stationsNow = async function () {
   return nets.flatMap(j => j.data || []);
 };
 // 'Light rain', 'Thunderstorms'... for an IEM current report, or null. Only a station's
-// newest report counts, and only if it's under 75 minutes old; mist (BR) and vicinity-only
+// newest report counts, and only if it's under 60 minutes old; mist (BR) and vicinity-only
 // showers (VCSH) don't count, so radar echoes that never reach the ground can't trigger it.
 window.precipNow = function (row) {
-  if (!row || !row.utc_valid || Date.now() - new Date(row.utc_valid) > 75 * 60000) return null;
+  if (!row || !row.utc_valid || Date.now() - new Date(row.utc_valid) > 60 * 60000) return null;
   const raw = row.wxcodes || '';
   if (!/DZ|RA|SN|PL|GR|GS|TS|UP/.test(raw)) return null;
   const what = /TS/.test(raw) ? 'Thunderstorms' : /FZ(RA|DZ)/.test(raw) ? 'Freezing rain'
@@ -41,11 +41,29 @@ window.precipNow = function (row) {
     : /DZ/.test(raw) && !/RA/.test(raw) ? 'Drizzle' : 'Rain';
   return /(^|\s)-/.test(raw) && what !== 'Thunderstorms' ? 'Light ' + what.toLowerCase() : what;
 };
-// hits: [{what, place}] from the town's nearest stations; forecast: the rainTiming() sentence.
+// hits: [{what, place, t}] from the town's nearest stations; forecast: the rainTiming() sentence.
 window.rainNowText = function (hits, forecast) {
   if (/ now[,( ]/.test(forecast)) return forecast;          // the forecast already says it's raining now
-  const places = [...new Set(hits.map(h => h.place))];
-  const lead = `${hits[0].what} reported ${places.length > 2 ? 'at several nearby weather stations' : 'in ' + places.join(' and ')} right now.`;
+  // Lead with the most serious thing reported, then mention the rest, so a storm in one town
+  // and light rain in another don't read as storms in both.
+  const ORDER = ['Thunderstorms', 'Freezing rain', 'Light freezing rain', 'Sleet or hail', 'Light sleet or hail',
+    'Snow', 'Rain', 'Light snow', 'Light rain', 'Drizzle', 'Light drizzle'];
+  const rank = w => (ORDER.indexOf(w) < 0 ? 99 : ORDER.indexOf(w));
+  const groups = [];
+  hits.slice().sort((a, b) => rank(a.what) - rank(b.what)).forEach(h => {
+    const g = groups.find(x => x.what === h.what);
+    if (!g) groups.push({ what: h.what, places: [h.place] });
+    else if (!g.places.includes(h.place)) g.places.push(h.place);
+  });
+  // Say when, not "right now": a station may report only every 20-60 minutes, and a passing
+  // sprinkle can show up in one report and be gone by the next (Courtland, 2026-11-23).
+  const at = hits.length === 1
+    ? 'at ' + hits[0].t.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Chicago' })
+    : 'in the last hour';
+  const inPlaces = p => (p.length > 2 ? 'at several nearby weather stations' : 'in ' + p.join(' and '));
+  let lead = `${groups[0].what} reported ${inPlaces(groups[0].places)} ${at}.`;
+  const rest = groups.slice(1);
+  if (rest.length) lead += ` ${rest.length === 1 ? rest[0].what : 'Rain'} also reported ${inPlaces(rest.flatMap(g => g.places))}.`;
   return /^No rain expected/.test(forecast)
     ? `${lead} The forecast doesn't expect any more rain in the next 12 hours.`
     : `${lead} ${forecast}`;
@@ -144,7 +162,7 @@ window.rainNowText = function (hits, forecast) {
       if (!what) return null;
       const place = window.STATION_PLACES[r.station]
         || (r.name || r.station).split('/')[0].toLowerCase().replace(/\b\w/g, c => c.toUpperCase()) + (r.state === 'TN' ? ', TN' : '');
-      return { what, place };
+      return { what, place, t: new Date(r.utc_valid) };
     }).filter(Boolean);
   }
 
