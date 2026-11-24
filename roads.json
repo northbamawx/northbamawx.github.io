@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-24T06:05:52+00:00",
+ "updated": "2026-11-24T08:05:22+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 330",
+   "where": "I-59 SB @ MP 200",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.  n",
+   "county": "DeKalb",
+   "city": "Collinsville",
+   "lat": 34.236328,
+   "lon": -85.912888,
+   "start": "2026-11-24T07:43:52Z",
+   "end": "2026-11-24T08:43:52Z",
+   "updated": "2026-11-24T01:45:01Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 88.69",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.486216,
-   "lon": -86.898208,
-   "start": "2026-11-24T05:31:06Z",
-   "end": "2026-11-24T06:31:06Z",
-   "updated": "2026-11-23T23:32:42Z"
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.753988,
+   "lon": -86.74112,
+   "start": "2026-11-24T07:50:05Z",
+   "end": "2026-11-24T08:50:05Z",
+   "updated": "2026-11-24T01:54:11Z"
   }
  ]
 }
