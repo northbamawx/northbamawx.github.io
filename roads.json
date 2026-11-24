@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-23T23:05:23+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 SB @ MP 359.19",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.618196,
-   "lon": -86.967776,
-   "start": "2026-11-23T22:52:06Z",
-   "end": "2026-11-23T23:52:06Z",
-   "updated": "2026-11-23T16:53:01Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB @ MP 316.05",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.709067999999995,
-   "lon": -86.590048,
-   "start": "2026-11-23T21:22:35Z",
-   "end": "2026-11-23T23:15:00Z",
-   "updated": "2026-11-23T22:45:45.4128324Z"
-  }
- ]
+ "updated": "2026-11-24T01:05:22+00:00",
+ "events": []
 }
