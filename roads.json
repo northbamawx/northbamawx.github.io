@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-24T01:05:22+00:00",
- "events": []
+ "updated": "2026-11-24T02:05:22+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 102.19",
+   "detail": "Crash with lane blockage. Please use cation when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.773944,
+   "lon": -86.5386,
+   "start": "2026-11-24T01:51:38Z",
+   "end": "2026-11-24T02:51:38Z",
+   "updated": "2026-11-23T19:53:09Z"
+  }
+ ]
 }
