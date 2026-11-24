@@ -1,19 +1,47 @@
 {
- "updated": "2026-11-24T02:05:22+00:00",
+ "updated": "2026-11-24T03:52:21+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 102.19",
-   "detail": "Crash with lane blockage. Please use cation when traveling through this area.",
+   "where": "US72 WB @ MP 89.19",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Madison",
+   "lat": 34.755516,
+   "lon": -86.731856,
+   "start": "2026-11-24T03:32:02Z",
+   "end": "2026-11-24T04:32:02Z",
+   "updated": "2026-11-23T21:41:39Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB/SB @ MP 337.67",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Madison",
    "city": "Huntsville",
-   "lat": 34.773944,
-   "lon": -86.5386,
-   "start": "2026-11-24T01:51:38Z",
-   "end": "2026-11-24T02:51:38Z",
-   "updated": "2026-11-23T19:53:09Z"
+   "lat": 34.773108,
+   "lon": -86.585296,
+   "start": "2026-11-24T03:41:17Z",
+   "end": "2026-11-24T04:41:17Z",
+   "updated": "2026-11-24T03:49:41.980697Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231/431 NB/SB @ MP 349.79",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Hazel Green",
+   "lat": 34.94544,
+   "lon": -86.57205599999999,
+   "start": "2026-11-24T03:30:12Z",
+   "end": "2026-11-24T04:30:12Z",
+   "updated": "2026-11-23T21:37:20Z"
   }
  ]
 }
