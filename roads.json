@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-24T14:35:41+00:00",
+ "updated": "2026-11-24T15:05:23+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US431 SB @ MP 330.62",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.712064,
+   "lon": -86.54464,
+   "start": "2026-11-24T14:35:58Z",
+   "end": "2026-11-24T15:35:58Z",
+   "updated": "2026-11-24T08:36:51Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -13,7 +27,21 @@
    "lon": -86.777912,
    "start": "2026-11-24T14:16:16Z",
    "end": "2026-11-24T15:16:16Z",
-   "updated": "2026-11-24T14:30:49.8481021Z"
+   "updated": "2026-11-24T14:41:30.0320381Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 EB/WB @ MP 64.57",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Decatur",
+   "lat": 34.61982,
+   "lon": -87.052328,
+   "start": "2026-11-24T14:42:07Z",
+   "end": "2026-11-24T15:42:07Z",
+   "updated": "2026-11-24T14:57:32.3685686Z"
   }
  ]
 }
