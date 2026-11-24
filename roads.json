@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T23:05:23+00:00",
+ "updated": "2026-11-24T23:45:59+00:00",
  "events": [
   {
    "type": "Crash",
@@ -19,15 +19,57 @@
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL53 NB @ MP 321.08",
+   "where": "AL20 EB/WB @ MP 17",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.749672,
-   "lon": -86.634472,
-   "start": "2026-11-24T22:08:57Z",
-   "end": "2026-11-24T23:08:57Z",
-   "updated": "2026-11-24T16:09:39Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.828379999999996,
+   "lon": -87.73157599999999,
+   "start": "2026-11-24T23:15:40Z",
+   "end": "2026-11-25T00:15:40Z",
+   "updated": "2026-11-24T23:23:58.3785144Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 WB @ MP 73.37",
+   "detail": "Crash with lane blockage. P:lease use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.628299999999996,
+   "lon": -86.913072,
+   "start": "2026-11-24T23:42:23Z",
+   "end": "2026-11-25T00:42:23Z",
+   "updated": "2026-11-24T17:43:18Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL20 WB @ MP 71.23",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.62946,
+   "lon": -86.94990399999999,
+   "start": "2026-11-24T23:16:58Z",
+   "end": "2026-11-25T00:16:58Z",
+   "updated": "2026-11-24T23:45:22.4701457Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 84.39",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.750712,
+   "lon": -86.814448,
+   "start": "2026-11-24T23:11:15Z",
+   "end": "2026-11-25T00:11:15Z",
+   "updated": "2026-11-24T17:12:15Z"
   },
   {
    "type": "Crash",
@@ -40,22 +82,36 @@
    "lat": 34.858875999999995,
    "lon": -86.57144,
    "start": "2026-11-24T22:17:17Z",
-   "end": "2026-11-24T23:17:17Z",
-   "updated": "2026-11-24T22:41:15.2158309Z"
+   "end": "2026-11-25T00:30:00Z",
+   "updated": "2026-11-24T23:45:22.469945Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "MajorDelay",
+   "title": "Overturned Vehicle",
+   "where": "AL69 NB/SB @ MP 266.95",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Marshall",
+   "city": "Arab",
+   "lat": 34.314628,
+   "lon": -86.51044,
+   "start": "2026-11-24T23:33:39Z",
+   "end": "2026-11-25T00:33:39Z",
+   "updated": "2026-11-24T17:35:58Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US72 EB @ MP 101.49",
+   "where": "AL67 NB/SB @ MP 35.11",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.771384,
-   "lon": -86.548912,
-   "start": "2026-11-24T22:55:08Z",
-   "end": "2026-11-24T23:55:08Z",
-   "updated": "2026-11-24T16:58:39Z"
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.53778,
+   "lon": -86.912104,
+   "start": "2026-11-24T23:09:24Z",
+   "end": "2026-11-25T00:09:24Z",
+   "updated": "2026-11-24T17:10:19Z"
   },
   {
    "type": "Crash",
@@ -68,8 +124,22 @@
    "lat": 34.415631999999995,
    "lon": -86.703896,
    "start": "2026-11-24T21:32:05Z",
-   "end": "2026-11-24T23:30:00Z",
-   "updated": "2026-11-24T22:57:16.8034039Z"
+   "end": "2026-11-25T00:00:00Z",
+   "updated": "2026-11-24T23:29:18.8928532Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB/SB @ MP 303.75",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Lacey Spring",
+   "lat": 34.53968,
+   "lon": -86.588224,
+   "start": "2026-11-24T23:42:40Z",
+   "end": "2026-11-25T00:42:40Z",
+   "updated": "2026-11-24T17:44:03Z"
   },
   {
    "type": "Incident",
@@ -84,20 +154,6 @@
    "start": "2026-11-24T22:56:40Z",
    "end": "2026-11-25T00:30:00Z",
    "updated": "2026-11-24T16:58:04Z"
-  },
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Congestion",
-   "where": "I-565 WB @ MP 12.89",
-   "detail": "Congestion building westbound. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.6984,
-   "lon": -86.695312,
-   "start": "2026-11-24T22:53:06Z",
-   "end": "2026-11-24T23:45:00Z",
-   "updated": "2026-11-24T16:54:42Z"
   }
  ]
 }
