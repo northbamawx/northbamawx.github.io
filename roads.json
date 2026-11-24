@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-24T05:05:26+00:00",
- "events": []
+ "updated": "2026-11-24T06:05:52+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 330",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Hartselle",
+   "lat": 34.486216,
+   "lon": -86.898208,
+   "start": "2026-11-24T05:31:06Z",
+   "end": "2026-11-24T06:31:06Z",
+   "updated": "2026-11-23T23:32:42Z"
+  }
+ ]
 }
