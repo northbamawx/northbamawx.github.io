@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-25T15:05:47+00:00",
+ "updated": "2026-11-25T16:05:24+00:00",
  "events": [
   {
-   "type": "Crash",
+   "type": "Incident",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US72 EB @ MP 19.09",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Colbert",
-   "city": "Tuscumbia",
-   "lat": 34.71756,
-   "lon": -87.787792,
-   "start": "2026-11-25T14:57:03Z",
-   "end": "2026-11-25T15:57:03Z",
-   "updated": "2026-11-25T08:59:24Z"
+   "title": "Debris",
+   "where": "US72 WB @ MP 110",
+   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.73046,
+   "lon": -86.422152,
+   "start": "2026-11-25T15:45:56Z",
+   "end": "2026-11-25T16:45:56Z",
+   "updated": "2026-11-25T15:52:56.188999Z"
   }
  ]
 }
