@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-25T02:05:24+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL304 EB/WB",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Tanner",
-   "lat": 34.731532,
-   "lon": -86.95707999999999,
-   "start": "2026-11-25T01:31:08Z",
-   "end": "2026-11-25T02:31:08Z",
-   "updated": "2026-11-24T19:32:24Z"
-  }
- ]
+ "updated": "2026-11-25T03:05:23+00:00",
+ "events": []
 }
