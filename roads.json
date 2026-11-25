@@ -1,47 +1,19 @@
 {
- "updated": "2026-11-25T01:05:23+00:00",
+ "updated": "2026-11-25T02:05:24+00:00",
  "events": [
   {
    "type": "Crash",
-   "severity": "Closed",
-   "title": "Overturned Vehicle",
-   "where": "AL91 NB/SB @ MP 23.54",
-   "detail": "Overturned vehicle with road blockage. Please seek alternate route.",
-   "county": "Cullman",
-   "city": "Hanceville",
-   "lat": 34.049272,
-   "lon": -86.77917599999999,
-   "start": "2026-11-24T22:38:02Z",
-   "end": "2026-11-25T03:00:00Z",
-   "updated": "2026-11-25T01:00:28.1572737Z"
-  },
-  {
-   "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US43 NB/SB @ MP 295.8",
+   "where": "AL304 EB/WB",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Franklin",
-   "city": "Russellville",
-   "lat": 34.512983999999996,
-   "lon": -87.71748,
-   "start": "2026-11-25T00:17:22Z",
-   "end": "2026-11-25T01:17:22Z",
-   "updated": "2026-11-25T00:38:49.3135857Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL20 EB/WB @ MP 11.6",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.886192,
-   "lon": -87.79345599999999,
-   "start": "2026-11-25T00:36:42Z",
-   "end": "2026-11-25T01:36:42Z",
-   "updated": "2026-11-24T18:38:09Z"
+   "county": "Limestone",
+   "city": "Tanner",
+   "lat": 34.731532,
+   "lon": -86.95707999999999,
+   "start": "2026-11-25T01:31:08Z",
+   "end": "2026-11-25T02:31:08Z",
+   "updated": "2026-11-24T19:32:24Z"
   }
  ]
 }
