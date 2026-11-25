@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-25T16:05:24+00:00",
- "events": [
-  {
-   "type": "Incident",
-   "severity": "ModerateDelay",
-   "title": "Debris",
-   "where": "US72 WB @ MP 110",
-   "detail": "Debris with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.73046,
-   "lon": -86.422152,
-   "start": "2026-11-25T15:45:56Z",
-   "end": "2026-11-25T16:45:56Z",
-   "updated": "2026-11-25T15:52:56.188999Z"
-  }
- ]
+ "updated": "2026-11-25T18:05:26+00:00",
+ "events": []
 }
