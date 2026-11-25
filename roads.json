@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-25T20:05:25+00:00",
+ "updated": "2026-11-25T21:05:25+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 317.54",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Hanceville",
+   "lat": 34.0617,
+   "lon": -86.77072799999999,
+   "start": "2026-11-25T20:29:59Z",
+   "end": "2026-11-25T21:29:59Z",
+   "updated": "2026-11-25T14:31:32Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,36 +26,22 @@
    "lat": 33.965171999999995,
    "lon": -86.865888,
    "start": "2026-11-25T19:51:53Z",
-   "end": "2026-11-25T20:51:53Z",
-   "updated": "2026-11-25T13:52:58Z"
+   "end": "2026-11-25T21:30:00Z",
+   "updated": "2026-11-25T20:57:26.7370001Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US278 EB/WB @ MP 92.58",
+   "where": "US278 EB/WB @ MP 88.36",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Cullman",
-   "city": "Holly Pond",
-   "lat": 34.174276,
-   "lon": -86.617752,
-   "start": "2026-11-25T19:01:21Z",
-   "end": "2026-11-25T20:30:00Z",
-   "updated": "2026-11-25T19:58:35.3145603Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US31 NB @ MP 345.89",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Hartselle",
-   "lat": 34.437087999999996,
-   "lon": -86.94010399999999,
-   "start": "2026-11-25T19:12:07Z",
-   "end": "2026-11-25T20:12:07Z",
-   "updated": "2026-11-25T13:29:35Z"
+   "city": "Holy Pond",
+   "lat": 34.171648,
+   "lon": -86.690432,
+   "start": "2026-11-25T20:44:44Z",
+   "end": "2026-11-25T21:44:44Z",
+   "updated": "2026-11-25T14:45:57Z"
   }
  ]
 }
