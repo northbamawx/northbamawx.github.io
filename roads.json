@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-25T11:05:23+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL127 NB/SB @ MP 0.7",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.829752,
-   "lon": -86.972968,
-   "start": "2026-11-25T10:44:09Z",
-   "end": "2026-11-25T11:44:09Z",
-   "updated": "2026-11-25T04:45:33Z"
-  }
- ]
+ "updated": "2026-11-25T11:50:38+00:00",
+ "events": []
 }
