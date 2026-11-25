@@ -1,6 +1,12 @@
 {
- "updated": 1795608322,
+ "updated": 1795619147,
  "items": [
+  {
+   "id": "MhsSCU5hTgo",
+   "title": "Huntsville Weather Forecast: Rain Showers & 59° Wednesday",
+   "short": true,
+   "published": 1795610554
+  },
   {
    "id": "RC0Lll9KpzY",
    "title": "Thanksgiving Travel Forecast: Wet Weather in Huntsville, Nashville Wednesday",
@@ -42,12 +48,6 @@
    "title": "North Alabama Week Ahead: Rain Wednesday",
    "short": true,
    "published": 1795396001
-  },
-  {
-   "id": "0HKcBgZmifI",
-   "title": "Storm Coverage - North Alabama - November 22, 2026",
-   "short": true,
-   "published": 1795371481
   }
  ]
 }
