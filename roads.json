@@ -1,47 +1,19 @@
 {
- "updated": "2026-11-26T02:05:26+00:00",
+ "updated": "2026-11-26T04:05:25+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL35 NB/SB @ MP 49.71",
+   "where": "I-565 EB @ MP 5.98",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Jackson",
-   "city": "Scottsboro",
-   "lat": 34.665272,
-   "lon": -86.017208,
-   "start": "2026-11-26T01:11:28Z",
-   "end": "2026-11-26T02:11:28Z",
-   "updated": "2026-11-25T19:13:13Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 340.11",
-   "detail": "Crash with lane blockage. please use caution when traveling through this area.",
    "county": "Limestone",
-   "city": "Ardmore",
-   "lat": 34.977328,
-   "lon": -86.805816,
-   "start": "2026-11-26T01:59:12Z",
-   "end": "2026-11-26T02:59:12Z",
-   "updated": "2026-11-25T20:00:47Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 35.51",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.540768,
-   "lon": -86.919144,
-   "start": "2026-11-26T00:58:50Z",
-   "end": "2026-11-26T02:15:00Z",
-   "updated": "2026-11-26T01:57:04.8491097Z"
+   "city": "Huntsville",
+   "lat": 34.656316,
+   "lon": -86.80365599999999,
+   "start": "2026-11-26T03:38:16Z",
+   "end": "2026-11-26T04:38:16Z",
+   "updated": "2026-11-26T03:54:14.3614508Z"
   }
  ]
 }
