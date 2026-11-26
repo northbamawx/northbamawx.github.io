@@ -1,47 +1,61 @@
 {
- "updated": "2026-11-25T21:05:25+00:00",
+ "updated": "2026-11-26T01:53:57+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 317.54",
+   "where": "AL35 NB/SB @ MP 49.71",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Hanceville",
-   "lat": 34.0617,
-   "lon": -86.77072799999999,
-   "start": "2026-11-25T20:29:59Z",
-   "end": "2026-11-25T21:29:59Z",
-   "updated": "2026-11-25T14:31:32Z"
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.665272,
+   "lon": -86.017208,
+   "start": "2026-11-26T01:11:28Z",
+   "end": "2026-11-26T02:11:28Z",
+   "updated": "2026-11-25T19:13:13Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 294",
+   "where": "I-65 SB @ MP 366.02",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 33.965171999999995,
-   "lon": -86.865888,
-   "start": "2026-11-25T19:51:53Z",
-   "end": "2026-11-25T21:30:00Z",
-   "updated": "2026-11-25T20:57:26.7370001Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.989204,
+   "lon": -86.880256,
+   "start": "2026-11-25T23:32:50Z",
+   "end": "2026-11-26T02:00:00Z",
+   "updated": "2026-11-26T01:30:28.7117521Z"
   },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US278 EB/WB @ MP 88.36",
+   "where": "US72 EB @ MP 83.09",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Holy Pond",
-   "lat": 34.171648,
-   "lon": -86.690432,
-   "start": "2026-11-25T20:44:44Z",
-   "end": "2026-11-25T21:44:44Z",
-   "updated": "2026-11-25T14:45:57Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.758728,
+   "lon": -86.833944,
+   "start": "2026-11-26T01:04:31Z",
+   "end": "2026-11-26T02:04:31Z",
+   "updated": "2026-11-25T19:05:39Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB/SB @ MP 35.51",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Priceville",
+   "lat": 34.540768,
+   "lon": -86.919144,
+   "start": "2026-11-26T00:58:50Z",
+   "end": "2026-11-26T01:58:50Z",
+   "updated": "2026-11-25T18:59:50Z"
   }
  ]
 }
