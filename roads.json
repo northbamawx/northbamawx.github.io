@@ -1,33 +1,4 @@
 {
- "updated": "2026-11-26T08:35:37+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL53 NB/SB @ MP 338.71",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Ardmore",
-   "lat": 34.967492,
-   "lon": -86.798568,
-   "start": "2026-11-26T06:48:38Z",
-   "end": "2026-11-26T09:00:00Z",
-   "updated": "2026-11-26T08:28:20.7372358Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "MajorDelay",
-   "title": "Major Crash",
-   "where": "US72 WB @ MP 93.88",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.737128,
-   "lon": -86.652864,
-   "start": "2026-11-26T06:29:29Z",
-   "end": "2026-11-26T08:45:00Z",
-   "updated": "2026-11-26T08:28:20.737196Z"
-  }
- ]
+ "updated": "2026-11-26T09:05:25+00:00",
+ "events": []
 }
