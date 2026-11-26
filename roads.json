@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-26T14:05:26+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-565 EB @ MP 19",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.730328,
-   "lon": -86.59702399999999,
-   "start": "2026-11-26T12:27:19Z",
-   "end": "2026-11-26T14:30:00Z",
-   "updated": "2026-11-26T13:52:59.2960389Z"
-  }
- ]
+ "updated": "2026-11-26T14:20:37+00:00",
+ "events": []
 }
