@@ -833,17 +833,44 @@ function showMeteors() {
       `${rate} under dark skies · Moon ${lit}% lit${lit > 60 ? ', which will wash out fainter meteors' : ''}`));
   });
 }
+// Next full moons in UTC: USNO when it answers, else Meeus's formula (within ~1 minute of USNO).
+// 2026-11-26: USNO's API went down and the list said "Unavailable right now."
+function fullMoonsAfter(t, n) {
+  const out = [], r = Math.PI / 180, s = Math.sin;
+  let k = Math.floor((t.getUTCFullYear() + (t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 31557600000 - 2000) * 12.3685) - 1;
+  while (out.length < n) {
+    const kk = k + 0.5, T = kk / 1236.85, E = 1 - 0.002516 * T;
+    const M = (2.5534 + 29.1053567 * kk) * r, Mp = (201.5643 + 385.81693528 * kk + 0.0107582 * T * T) * r;
+    const F = (160.7108 + 390.67050284 * kk) * r, Om = (124.7746 - 1.56375588 * kk) * r;
+    let jde = 2451550.09766 + 29.530588861 * kk + 0.00015437 * T * T;
+    jde += -0.40614 * s(Mp) + 0.17302 * E * s(M) + 0.01614 * s(2 * Mp) + 0.01043 * s(2 * F)
+      + 0.00734 * E * s(Mp - M) - 0.00515 * E * s(Mp + M) + 0.00209 * E * E * s(2 * M)
+      - 0.00111 * s(Mp - 2 * F) - 0.00057 * s(Mp + 2 * F) + 0.00056 * E * s(2 * Mp + M)
+      - 0.00042 * s(3 * Mp) + 0.00042 * E * s(M + 2 * F) + 0.00038 * E * s(M - 2 * F)
+      - 0.00024 * E * s(2 * Mp - M) - 0.00017 * s(Om);
+    const when = new Date((jde - 2440587.5) * 86400000 - 69000);
+    if (when > t) out.push(when);
+    k++;
+  }
+  return out;
+}
 async function loadMoons() {
   const ul = document.getElementById('moon-list');
+  let times;
   try {
-    const d = await (await fetch(`https://aa.usno.navy.mil/api/moon/phases/date?date=${new Date().toLocaleDateString('en-CA')}&nump=12`)).json();
-    ul.textContent = '';
-    d.phasedata.filter(x => x.phase === 'Full Moon').slice(0, 3).forEach(x => {
-      const t = new Date(Date.UTC(x.year, x.month - 1, x.day, ...x.time.split(':').map(Number)));
-      const local = new Date(t.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
-      ul.append(skyLi(`${MOON_NAMES[local.getMonth()]} Moon`, t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })));
-    });
-  } catch (e) { ul.innerHTML = '<li>Unavailable right now.</li>'; }
+    const d = await (await fetch(`https://aa.usno.navy.mil/api/moon/phases/date?date=${new Date().toLocaleDateString('en-CA')}&nump=12`,
+      { signal: AbortSignal.timeout(8000) })).json();
+    times = d.phasedata.filter(x => x.phase === 'Full Moon').slice(0, 3)
+      .map(x => new Date(Date.UTC(x.year, x.month - 1, x.day, ...x.time.split(':').map(Number))));
+    if (!times.length) throw new Error('no full moons');
+  } catch (e) {
+    times = fullMoonsAfter(new Date(), 3);
+  }
+  ul.textContent = '';
+  times.forEach(t => {
+    const local = new Date(t.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+    ul.append(skyLi(`${MOON_NAMES[local.getMonth()]} Moon`, t.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })));
+  });
 }
 // Space station passes, computed in the browser from today's orbit (satellite.js).
 function sunEci(date) {
