@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-26T21:05:26+00:00",
+ "updated": "2026-11-26T22:05:25+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "MinorDelay",
-   "title": "Minor Crash",
-   "where": "I-65 NB @ MP 316.61",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.29482,
-   "lon": -86.91139199999999,
-   "start": "2026-11-26T20:11:07Z",
-   "end": "2026-11-26T21:11:07Z",
-   "updated": "2026-11-26T14:12:22Z"
-  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL67 NB @ MP 28.3",
+   "where": "AL133 NB/SB @ MP 11.38",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Somerville",
-   "lat": 34.478432,
-   "lon": -86.81743999999999,
-   "start": "2026-11-26T19:39:46Z",
-   "end": "2026-11-26T21:30:00Z",
-   "updated": "2026-11-26T20:40:52.1536976Z"
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.841316,
+   "lon": -87.638232,
+   "start": "2026-11-26T21:35:23Z",
+   "end": "2026-11-26T22:35:23Z",
+   "updated": "2026-11-26T15:36:27Z"
   }
  ]
 }
