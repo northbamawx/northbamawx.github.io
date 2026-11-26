@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-26T19:05:25+00:00",
- "events": []
+ "updated": "2026-11-26T19:47:02+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL67 NB @ MP 28.3",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Morgan",
+   "city": "Somerville",
+   "lat": 34.478432,
+   "lon": -86.81743999999999,
+   "start": "2026-11-26T19:39:46Z",
+   "end": "2026-11-26T20:39:46Z",
+   "updated": "2026-11-26T13:40:27Z"
+  }
+ ]
 }
