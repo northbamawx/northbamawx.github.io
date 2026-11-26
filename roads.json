@@ -1,20 +1,6 @@
 {
- "updated": "2026-11-26T07:05:24+00:00",
+ "updated": "2026-11-26T08:35:37+00:00",
  "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL99 NB/SB @ MP 12.66",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.912327999999995,
-   "lon": -87.10928,
-   "start": "2026-11-26T06:56:41Z",
-   "end": "2026-11-26T07:56:41Z",
-   "updated": "2026-11-26T00:57:47Z"
-  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -26,22 +12,8 @@
    "lat": 34.967492,
    "lon": -86.798568,
    "start": "2026-11-26T06:48:38Z",
-   "end": "2026-11-26T07:48:38Z",
-   "updated": "2026-11-26T00:49:42Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "US231 NB/SB @ MP 309.35",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Huntsville",
-   "lat": 34.613976,
-   "lon": -86.56719199999999,
-   "start": "2026-11-26T06:31:01Z",
-   "end": "2026-11-26T07:31:01Z",
-   "updated": "2026-11-26T06:56:08.0399698Z"
+   "end": "2026-11-26T09:00:00Z",
+   "updated": "2026-11-26T08:28:20.7372358Z"
   },
   {
    "type": "Crash",
@@ -54,8 +26,8 @@
    "lat": 34.737128,
    "lon": -86.652864,
    "start": "2026-11-26T06:29:29Z",
-   "end": "2026-11-26T07:29:29Z",
-   "updated": "2026-11-26T06:56:08.0399459Z"
+   "end": "2026-11-26T08:45:00Z",
+   "updated": "2026-11-26T08:28:20.737196Z"
   }
  ]
 }
