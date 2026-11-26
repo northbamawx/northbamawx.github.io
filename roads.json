@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-26T22:05:25+00:00",
+ "updated": "2026-11-26T23:05:27+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 11.38",
+   "where": "AL53 NB/SB @ MP 328.99",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.841316,
-   "lon": -87.638232,
-   "start": "2026-11-26T21:35:23Z",
-   "end": "2026-11-26T22:35:23Z",
-   "updated": "2026-11-26T15:36:27Z"
+   "county": "Madison",
+   "city": "Harvest",
+   "lat": 34.845892,
+   "lon": -86.71241599999999,
+   "start": "2026-11-26T22:26:00Z",
+   "end": "2026-11-26T23:26:00Z",
+   "updated": "2026-11-26T22:58:44.8380281Z"
   }
  ]
 }
