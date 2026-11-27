@@ -1,6 +1,12 @@
 {
- "updated": 1795781126,
+ "updated": 1795784726,
  "items": [
+  {
+   "id": "fxXr_ZXA3DA",
+   "title": "Huntsville Weather Forecast: Mostly Cloudy & 48° Friday",
+   "short": true,
+   "published": 1795783346
+  },
   {
    "id": "D0FAKjV4-ik",
    "title": "Winter Storm Warning in Missouri Montana Washington Wyoming",
@@ -42,12 +48,6 @@
    "title": "Huntsville Weather Forecast: Clear & 36° Tuesday Night",
    "short": true,
    "published": 1795524150
-  },
-  {
-   "id": "D5MXPil3GhE",
-   "title": "Pattern Watch: Warm Turn After Thanksgiving",
-   "short": true,
-   "published": 1795467976
   }
  ]
 }
