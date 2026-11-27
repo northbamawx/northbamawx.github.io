@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-27T03:05:26+00:00",
+ "updated": "2026-11-27T04:05:26+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Overturned Vehicle",
-   "where": "AL53 NB/SB @ MP 327.79",
+   "title": "Moderate Crash",
+   "where": "US72 EB @ MP 74.88",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Madison",
-   "city": "Harvest",
-   "lat": 34.831012,
-   "lon": -86.700136,
-   "start": "2026-11-27T02:21:30Z",
-   "end": "2026-11-27T03:21:30Z",
-   "updated": "2026-11-26T20:29:25Z"
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.790127999999996,
+   "lon": -86.971128,
+   "start": "2026-11-27T03:15:34Z",
+   "end": "2026-11-27T04:15:34Z",
+   "updated": "2026-11-26T21:16:16Z"
   }
  ]
 }
