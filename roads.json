@@ -1,4 +1,33 @@
 {
- "updated": "2026-11-27T10:05:25+00:00",
- "events": []
+ "updated": "2026-11-27T11:05:26+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 303.04",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.106836,
+   "lon": -86.866208,
+   "start": "2026-11-27T10:17:18Z",
+   "end": "2026-11-27T11:17:18Z",
+   "updated": "2026-11-27T04:18:16Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 EB/WB @ MP 137.12",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Scottsboro",
+   "lat": 34.64866,
+   "lon": -86.03159199999999,
+   "start": "2026-11-27T10:53:04Z",
+   "end": "2026-11-27T11:53:04Z",
+   "updated": "2026-11-27T04:55:09Z"
+  }
+ ]
 }
