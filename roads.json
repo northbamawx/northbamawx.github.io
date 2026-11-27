@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-27T02:05:26+00:00",
+ "updated": "2026-11-27T02:40:30+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL251 NB/SB",
+   "title": "Overturned Vehicle",
+   "where": "AL53 NB/SB @ MP 327.79",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Limestone",
-   "city": "Athens",
-   "lat": 34.807328,
-   "lon": -86.949384,
-   "start": "2026-11-27T01:37:35Z",
-   "end": "2026-11-27T02:37:35Z",
-   "updated": "2026-11-26T19:40:04Z"
+   "county": "Madison",
+   "city": "Harvest",
+   "lat": 34.831012,
+   "lon": -86.700136,
+   "start": "2026-11-27T02:21:30Z",
+   "end": "2026-11-27T03:21:30Z",
+   "updated": "2026-11-26T20:29:25Z"
   }
  ]
 }
