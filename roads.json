@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-27T16:05:24+00:00",
+ "updated": "2026-11-27T17:05:26+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL67 NB/SB @ MP 42.8",
+   "where": "I-65 SB @ MP 310.59",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Decatur",
-   "lat": 34.584084,
-   "lon": -87.02355999999999,
-   "start": "2026-11-27T15:10:57Z",
-   "end": "2026-11-27T16:10:57Z",
-   "updated": "2026-11-27T09:11:40Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.21478,
+   "lon": -86.87816,
+   "start": "2026-11-27T16:53:08Z",
+   "end": "2026-11-27T17:53:08Z",
+   "updated": "2026-11-27T10:55:24Z"
   }
  ]
 }
