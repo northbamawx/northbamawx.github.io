@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T17:05:26+00:00",
+ "updated": "2026-11-27T18:05:32+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,8 +12,22 @@
    "lat": 34.21478,
    "lon": -86.87816,
    "start": "2026-11-27T16:53:08Z",
-   "end": "2026-11-27T17:53:08Z",
-   "updated": "2026-11-27T10:55:24Z"
+   "end": "2026-11-27T18:30:00Z",
+   "updated": "2026-11-27T17:51:54.4510096Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 SB @ MP 312.99",
+   "detail": "Congestion building in the area. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.247316,
+   "lon": -86.887344,
+   "start": "2026-11-27T17:20:07Z",
+   "end": "2026-11-27T18:20:07Z",
+   "updated": "2026-11-27T11:21:29Z"
   }
  ]
 }
