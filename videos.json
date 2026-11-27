@@ -1,6 +1,12 @@
 {
- "updated": 1795802732,
+ "updated": 1795806326,
  "items": [
+  {
+   "id": "XgsniX-ab88",
+   "title": "Friday Night Football Forecast: Partly Cloudy & 41° at Kickoff",
+   "short": true,
+   "published": 1795806145
+  },
   {
    "id": "d1yuFnMjTo0",
    "title": "Winter Storm Warnings in Colorado, Montana, and Wyoming",
@@ -42,12 +48,6 @@
    "title": "Thanksgiving Travel Forecast: Wet Weather in Huntsville, Nashville Wednesday",
    "short": true,
    "published": 1795554172
-  },
-  {
-   "id": "Rzh_iJhR5Yo",
-   "title": "Flood Warnings in Arizona, California, Florida and Winter Weather Advisory in Mo",
-   "short": true,
-   "published": 1795543429
   }
  ]
 }

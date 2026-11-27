@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T18:05:32+00:00",
+ "updated": "2026-11-27T19:05:26+00:00",
  "events": [
   {
    "type": "Crash",
@@ -12,22 +12,36 @@
    "lat": 34.21478,
    "lon": -86.87816,
    "start": "2026-11-27T16:53:08Z",
-   "end": "2026-11-27T18:30:00Z",
-   "updated": "2026-11-27T17:51:54.4510096Z"
+   "end": "2026-11-27T20:30:00Z",
+   "updated": "2026-11-27T19:01:03.4953852Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL35 NB/SB @ MP 60.41",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Jackson",
+   "city": "Woodville",
+   "lat": 34.67196,
+   "lon": -86.186976,
+   "start": "2026-11-27T18:21:42Z",
+   "end": "2026-11-27T19:21:42Z",
+   "updated": "2026-11-27T12:25:23Z"
   },
   {
    "type": "Incident",
    "severity": "ModerateDelay",
    "title": "Congestion",
-   "where": "I-65 SB @ MP 312.99",
+   "where": "I-65 SB @ MP 312.79",
    "detail": "Congestion building in the area. Please use caution when traveling through this area.",
    "county": "Cullman",
    "city": "Cullman",
-   "lat": 34.247316,
-   "lon": -86.887344,
-   "start": "2026-11-27T17:20:07Z",
-   "end": "2026-11-27T18:20:07Z",
-   "updated": "2026-11-27T11:21:29Z"
+   "lat": 34.245039999999996,
+   "lon": -86.885544,
+   "start": "2026-11-27T18:19:16Z",
+   "end": "2026-11-27T19:19:16Z",
+   "updated": "2026-11-27T12:20:33Z"
   }
  ]
 }
