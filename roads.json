@@ -1,19 +1,4 @@
 {
- "updated": "2026-11-27T00:05:28+00:00",
- "events": [
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "AL101 NB/SB @ MP 20.18",
-   "detail": "Crash with lane blockage. Please use caution when traveling through htis area.",
-   "county": "Lawrence",
-   "city": "Town Creek",
-   "lat": 34.74388,
-   "lon": -87.4062,
-   "start": "2026-11-26T23:27:37Z",
-   "end": "2026-11-27T00:27:37Z",
-   "updated": "2026-11-26T17:28:53Z"
-  }
- ]
+ "updated": "2026-11-27T01:05:24+00:00",
+ "events": []
 }
