@@ -1,4 +1,89 @@
 {
- "updated": "2026-11-27T21:05:37+00:00",
- "events": []
+ "updated": "2026-11-27T22:05:24+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL133 SB @ MP 11.18",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Florence",
+   "lat": 34.839819999999996,
+   "lon": -87.63596,
+   "start": "2026-11-27T21:25:33Z",
+   "end": "2026-11-27T22:25:33Z",
+   "updated": "2026-11-27T15:26:45Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 371.57",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.790152,
+   "lon": -86.956552,
+   "start": "2026-11-27T21:36:50Z",
+   "end": "2026-11-27T22:36:50Z",
+   "updated": "2026-11-27T15:37:32Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 SB @ MP 363.76",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.973403999999995,
+   "lon": -86.88418399999999,
+   "start": "2026-11-27T21:28:48Z",
+   "end": "2026-11-27T22:28:48Z",
+   "updated": "2026-11-27T21:40:23.4030942Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL251 NB/SB @ MP 3.51",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.828455999999996,
+   "lon": -86.895872,
+   "start": "2026-11-27T21:23:54Z",
+   "end": "2026-11-27T22:23:54Z",
+   "updated": "2026-11-27T15:24:57Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "I-65 NB @ MP 365.92",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.987296,
+   "lon": -86.880736,
+   "start": "2026-11-27T21:32:59Z",
+   "end": "2026-11-27T22:32:59Z",
+   "updated": "2026-11-27T15:33:49Z"
+  },
+  {
+   "type": "Incident",
+   "severity": "ModerateDelay",
+   "title": "Congestion",
+   "where": "I-65 SB @ MP 303.14",
+   "detail": "Congestion building in the area southbound. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.109076,
+   "lon": -86.866424,
+   "start": "2026-11-27T21:19:57Z",
+   "end": "2026-11-28T00:15:00Z",
+   "updated": "2026-11-27T15:21:10Z"
+  }
+ ]
 }
