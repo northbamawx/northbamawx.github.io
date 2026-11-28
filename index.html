@@ -508,6 +508,15 @@ body.storm-mode #drought, body.storm-mode #fire, body.storm-mode #hurricanes { d
 .tabs button[aria-selected="true"] { color: var(--night); background: var(--radar); border-color: var(--radar); }
 .tabs button:focus-visible { outline: 2px solid var(--radar); outline-offset: 2px; }
 .outlook-img { display: block; width: 100%; max-width: 900px; height: auto; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+/* Southeast crop of SPC's 1630x1110 US map: box x 700-1630, y 545-1110 (2026-11-28) */
+.outlook-crop { position: relative; display: block; width: 100%; max-width: 900px; aspect-ratio: 930 / 565; overflow: hidden;
+  border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+.outlook-crop .outlook-img { position: absolute; max-width: none; width: 175.27%; height: auto; left: -75.27%; top: -96.46%; border: 0; border-radius: 0; }
+.outlook-pin { position: absolute; left: 46.77%; top: 27.43%; transform: translate(-50%, -50%); pointer-events: none;
+  font: 700 13px/1 var(--display); letter-spacing: 0.04em; color: #0a1626; white-space: nowrap; }
+.outlook-pin::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 5px; vertical-align: -1px;
+  border-radius: 50%; background: #0a1626; box-shadow: 0 0 0 2px #fff; }
+.outlook-pin span { background: rgba(255,255,255,0.85); padding: 2px 4px; border-radius: 3px; }
 .outlook-key { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 12px/1.4 var(--data); color: var(--ink-dim); }
 .outlook-key span::before { content: ""; display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--k); }
 
@@ -1070,7 +1079,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 
 <section class="band" aria-labelledby="spc-title" id="outlook">
   <h2 id="spc-title">Severe Weather Outlook</h2>
-  <p class="lede">The Storm Prediction Center's risk of severe storms across the country for the next three days.</p>
+  <p class="lede">The Storm Prediction Center's risk of severe storms for North Alabama, Southern Tennessee and the rest of the Southeast for the next three days. Tap the map for the full U.S. view.</p>
   <div class="tabs" role="tablist" aria-label="Outlook day">
     <button type="button" role="tab" aria-selected="true" data-day="1">Today</button>
     <button type="button" role="tab" aria-selected="false" data-day="2">Tomorrow</button>
@@ -1082,8 +1091,9 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
     <button type="button" role="tab" aria-selected="false" data-haz="hail">Hail</button>
     <button type="button" role="tab" aria-selected="false" data-haz="wind">Wind</button>
   </div>
-  <a href="https://www.spc.noaa.gov/products/outlook/" target="_blank" rel="noopener">
+  <a class="outlook-crop" href="https://www.spc.noaa.gov/products/outlook/" target="_blank" rel="noopener">
     <img class="outlook-img" id="spc-img" src="https://www.spc.noaa.gov/products/outlook/day1otlk.png" alt="Storm Prediction Center Day 1 convective outlook map" width="815" height="555" loading="lazy" decoding="async">
+    <div class="outlook-pin" aria-hidden="true"><span>Huntsville</span></div>
   </a>
   <p class="lsr-src" id="haz-note" hidden>Percent chance of that hazard within 25 miles of any point. Hatched areas mean the strongest storms (EF2+ tornadoes, 2-inch hail or 75 mph winds) are possible.</p>
   <div class="outlook-key" aria-label="Risk levels" id="cat-key">
