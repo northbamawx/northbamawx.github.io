@@ -7,6 +7,7 @@ Huntsville TV station and is about weather). Quiet weather can mean few or no he
 news.json is written with an empty list and the site says so (stale national items never linger).
 """
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -58,6 +59,11 @@ def is_local(title, source):
 
 
 def main(out='news.json'):
+    # Google News stopped answering GitHub's servers on 2026-11-27, so the bot PC's
+    # news_publish.py task now runs this and publishes news.json. Skip in the Action.
+    if os.environ.get('GITHUB_ACTIONS') == 'true':
+        print('News is updated by the bot PC (news_publish.py); skipping here.')
+        return
     req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0 (NorthBamaWX news updater)'})
     root = None
     for attempt in range(2):        # short feed outages: retry once, then keep news.json
