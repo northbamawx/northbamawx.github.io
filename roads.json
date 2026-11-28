@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-28T02:50:29+00:00",
+ "updated": "2026-11-28T03:05:28+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US31 NB/SB @ MP 327.27",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.18452,
+   "lon": -86.849328,
+   "start": "2026-11-28T02:52:56Z",
+   "end": "2026-11-28T03:52:56Z",
+   "updated": "2026-11-27T20:54:50Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL17 NB/SB @ MP 345.78",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lauderdale",
+   "city": "Zip City",
+   "lat": 34.992132,
+   "lon": -87.671784,
+   "start": "2026-11-28T02:25:10Z",
+   "end": "2026-11-28T03:25:10Z",
+   "updated": "2026-11-27T20:51:28Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +40,8 @@
    "lat": 34.737415999999996,
    "lon": -86.65294399999999,
    "start": "2026-11-28T02:01:19Z",
-   "end": "2026-11-28T03:01:19Z",
-   "updated": "2026-11-28T02:11:46.5223535Z"
+   "end": "2026-11-28T03:30:00Z",
+   "updated": "2026-11-28T03:04:50.13713Z"
   }
  ]
 }
