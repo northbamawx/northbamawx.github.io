@@ -1119,8 +1119,8 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
 </section>
 
 <section class="band" aria-labelledby="news-title" id="weather-news">
-  <h2 id="news-title">National Weather News</h2>
-  <p class="lede">The latest weather headlines from around the country. Updated every 30 minutes.</p>
+  <h2 id="news-title">Local Weather News</h2>
+  <p class="lede">Weather headlines from North Alabama and Southern Tennessee over the last 3 days. Updated every 30 minutes.</p>
   <ul class="news" id="news"><li class="news-empty">Loading headlines…</li></ul>
 </section>
 
@@ -1413,6 +1413,10 @@ async function loadNews() {
       const r = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
       if (r.ok) { data = await r.json(); break; }
     } catch (e) {}
+  }
+  if (data && data.items && !data.items.length) {
+    list.innerHTML = '<li class="news-empty">No local weather headlines in the last 3 days. Quiet weather is good news.</li>';
+    return;
   }
   if (!data || !data.items || !data.items.length) {
     if (!list.querySelector('a')) list.innerHTML = '<li class="news-empty">Headlines are unavailable right now. Check back soon.</li>';
