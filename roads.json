@@ -1,4 +1,19 @@
 {
- "updated": "2026-11-28T14:05:22+00:00",
- "events": []
+ "updated": "2026-11-28T15:05:20+00:00",
+ "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US231 NB @ MP 312.36",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.658048,
+   "lon": -86.56933599999999,
+   "start": "2026-11-28T14:03:08Z",
+   "end": "2026-11-28T15:30:00Z",
+   "updated": "2026-11-28T15:05:12.9085469Z"
+  }
+ ]
 }
