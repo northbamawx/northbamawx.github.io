@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-28T15:05:20+00:00",
+ "updated": "2026-11-28T15:50:22+00:00",
  "events": [
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL157 NB @ MP 39.6",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Lawrence",
+   "city": "Moulton",
+   "lat": 34.513888,
+   "lon": -87.29084,
+   "start": "2026-11-28T15:26:10Z",
+   "end": "2026-11-28T16:26:10Z",
+   "updated": "2026-11-28T09:27:46Z"
+  },
   {
    "type": "Crash",
    "severity": "ModerateDelay",
@@ -12,8 +26,22 @@
    "lat": 34.658048,
    "lon": -86.56933599999999,
    "start": "2026-11-28T14:03:08Z",
-   "end": "2026-11-28T15:30:00Z",
-   "updated": "2026-11-28T15:05:12.9085469Z"
+   "end": "2026-11-28T16:15:00Z",
+   "updated": "2026-11-28T15:42:52.7189439Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "US72 WB @ MP 91.09",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Madison",
+   "city": "Huntsville",
+   "lat": 34.750912,
+   "lon": -86.700096,
+   "start": "2026-11-28T15:31:15Z",
+   "end": "2026-11-28T16:31:15Z",
+   "updated": "2026-11-28T15:42:52.7189847Z"
   }
  ]
 }
