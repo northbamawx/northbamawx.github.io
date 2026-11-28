@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-28T00:05:25+00:00",
+ "updated": "2026-11-28T02:05:32+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "US31 NB/SB @ MP 325.05",
+   "where": "AL69 NB/SB @ MP 242.27",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
    "county": "Cullman",
    "city": "Cullman",
-   "lat": 34.15518,
-   "lon": -86.834384,
-   "start": "2026-11-27T23:22:53Z",
-   "end": "2026-11-28T00:22:53Z",
-   "updated": "2026-11-27T17:23:23Z"
+   "lat": 34.1518,
+   "lon": -86.843024,
+   "start": "2026-11-28T01:00:12Z",
+   "end": "2026-11-28T02:30:00Z",
+   "updated": "2026-11-28T02:01:10.0413936Z"
   }
  ]
 }
