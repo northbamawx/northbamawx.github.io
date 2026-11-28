@@ -1,33 +1,19 @@
 {
- "updated": "2026-11-27T23:05:24+00:00",
+ "updated": "2026-11-28T00:05:25+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "AL133 NB/SB @ MP 12.67",
-   "detail": "Crash with lane blockage. Please use caution when traveling through this area,",
-   "county": "Lauderdale",
-   "city": "Florence",
-   "lat": 34.84388,
-   "lon": -87.66127999999999,
-   "start": "2026-11-27T22:52:16Z",
-   "end": "2026-11-27T23:52:16Z",
-   "updated": "2026-11-27T16:53:23Z"
-  },
-  {
-   "type": "Crash",
-   "severity": "ModerateDelay",
-   "title": "Moderate Crash",
-   "where": "I-65 SB @ MP 336.01",
+   "where": "US31 NB/SB @ MP 325.05",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Morgan",
-   "city": "Priceville",
-   "lat": 34.571743999999995,
-   "lon": -86.910392,
-   "start": "2026-11-27T22:48:40Z",
-   "end": "2026-11-27T23:48:40Z",
-   "updated": "2026-11-27T23:00:09.4174234Z"
+   "county": "Cullman",
+   "city": "Cullman",
+   "lat": 34.15518,
+   "lon": -86.834384,
+   "start": "2026-11-27T23:22:53Z",
+   "end": "2026-11-28T00:22:53Z",
+   "updated": "2026-11-27T17:23:23Z"
   }
  ]
 }
