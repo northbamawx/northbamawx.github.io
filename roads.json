@@ -1,19 +1,33 @@
 {
- "updated": "2026-11-28T05:05:23+00:00",
+ "updated": "2026-11-28T06:05:22+00:00",
  "events": [
   {
    "type": "Crash",
    "severity": "ModerateDelay",
    "title": "Moderate Crash",
-   "where": "I-65 NB @ MP 309.09",
+   "where": "I-565 WB @ MP 0.4",
    "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
-   "county": "Cullman",
-   "city": "Cullman",
-   "lat": 34.193239999999996,
-   "lon": -86.878672,
-   "start": "2026-11-28T04:28:22Z",
-   "end": "2026-11-28T05:28:22Z",
-   "updated": "2026-11-27T22:29:08Z"
+   "county": "Limestone",
+   "city": "Decatur",
+   "lat": 34.629315999999996,
+   "lon": -86.89531199999999,
+   "start": "2026-11-28T05:45:05Z",
+   "end": "2026-11-28T06:45:05Z",
+   "updated": "2026-11-27T23:45:56Z"
+  },
+  {
+   "type": "Crash",
+   "severity": "ModerateDelay",
+   "title": "Moderate Crash",
+   "where": "AL99 NB/SB @ MP 15.47",
+   "detail": "Crash with lane blockage. Please use caution when traveling through this area.",
+   "county": "Limestone",
+   "city": "Athens",
+   "lat": 34.935316,
+   "lon": -87.14043199999999,
+   "start": "2026-11-28T05:26:31Z",
+   "end": "2026-11-28T06:26:31Z",
+   "updated": "2026-11-27T23:27:15Z"
   }
  ]
 }
