@@ -1000,6 +1000,7 @@ footer { padding-block: 26px 40px; border-top: 1px solid var(--rule); font-size:
   <h2 id="cams-title">Local Cameras</h2>
   <p class="lede">Live road views across North Alabama. Pictures refresh every minute. Tap one to watch live on ALGO Traffic.</p>
   <div class="cams" id="cams"></div>
+  <p class="lede" id="cams-off" hidden>The road cameras aren't available right now. Check back later.</p>
   <div class="cams-src">Cameras: Alabama Department of Transportation (ALGO Traffic)</div>
 </section>
 
@@ -1591,6 +1592,12 @@ const CAMS = [
   [30965, 'Hartselle', 'I-65 at AL 36'],
   [31557, 'Albertville', 'US 431 at AL 75'],
 ];
+// ALGO Traffic sends a 3072x1920 "No camera" picture (not an error) for a camera ID it no longer has.
+const isNoCam = im => im.naturalWidth === 3072 && im.naturalHeight === 1920;
+function camsNote() {
+  const tiles = document.querySelectorAll('#cams .cam');
+  document.getElementById('cams-off').hidden = !tiles.length || [...tiles].some(t => !t.hidden);
+}
 function buildCams() {
   const box = document.getElementById('cams');
   CAMS.forEach(([id, where, road]) => {
@@ -1600,7 +1607,8 @@ function buildCams() {
     const img = document.createElement('img');
     img.alt = 'Traffic camera: ' + road + ', ' + where; img.loading = 'lazy'; img.dataset.cam = id;
     img.src = 'https://api.algotraffic.com/v4/Cameras/' + id + '/snapshot.jpg?t=' + Date.now();
-    img.onerror = () => { a.hidden = true; };
+    img.onerror = () => { a.hidden = true; camsNote(); };
+    img.onload = () => { a.hidden = isNoCam(img); camsNote(); };
     shot.appendChild(img);
     const cap = document.createElement('div'); cap.className = 'cap';
     const w = document.createElement('div'); w.className = 'where'; w.textContent = where;
@@ -1614,7 +1622,11 @@ function refreshCams() {
   document.querySelectorAll('img[data-cam]').forEach(img => {
     const next = new Image();
     const url = 'https://api.algotraffic.com/v4/Cameras/' + img.dataset.cam + '/snapshot.jpg?t=' + Date.now();
-    next.onload = () => { img.src = url; };
+    next.onload = () => {
+      const a = img.closest('.cam');
+      if (isNoCam(next)) { a.hidden = true; } else { img.src = url; a.hidden = false; }
+      camsNote();
+    };
     next.src = url;
   });
 }
